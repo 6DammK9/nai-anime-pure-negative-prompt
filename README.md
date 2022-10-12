@@ -2,7 +2,7 @@
 
 A research about "NAI anime" art with pure negative prompt. Such observation may be useful for "data visualization" to show that how the "number" works.
 
-[Pixiv account for storing the images](https://www.pixiv.net/en/users/11525730)
+[Pixiv album for storing the images](https://www.pixiv.net/en/tags/PureNegativePrompt/artworks)
 
 ### Core concept ###
 - [UNCONDITIONAL DIFFUSION GUIDANCE](https://openreview.net/pdf?id=lsQCDXjOl3k) (I have no connection to any of the scholars.)
@@ -11,8 +11,8 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 - Therefore you can "guide" the AI to somewhat generate waifu in a *almost pure random sense* without mentioning a positive prompt.
 
 ### How NovelAI / Stable Diffusion / CLIP works ###
-- [Video.](https://www.youtube.com/watch?v=1CIpzeNxIhU&ab_channel=Computerphile)
-- [Lenghty explaination which is expected.](https://blog.novelai.net/novelai-improvements-on-stable-diffusion-e10d38db82ac).
+- [Video](https://www.youtube.com/watch?v=1CIpzeNxIhU&ab_channel=Computerphile)
+- [Lenghty explaination which is expected](https://blog.novelai.net/novelai-improvements-on-stable-diffusion-e10d38db82ac).
 
 ### Basic settings ###
 
