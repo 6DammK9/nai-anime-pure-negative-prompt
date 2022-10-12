@@ -53,18 +53,17 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 |Aspect ratio|Pose (sometime count)|From 4:1 to 1:4|
 |CFG|Brightnes, *in a complicated way*|Somehow scale with dimension. 512x512 will be stable at 12~16|
 |Solvers|Minor art style (major one is the network itself)|Currnetly **Eular** only|
-|"W"|*Density of objects*|1 for standard. 0.9 is "High risk high reward".|
+|"W"|*Density of objects*|1 for simplicity. 0.9 is "High risk high reward".|
 
 |Dimension|CFG|STEP|W|
 |---|---|---|---|
-|512x512|12~16|150|0.9|
-|512x512|12~16|150|0.9|
-|512x768|18~24|150|0.9|
-|768x512|18~24|150|0.9|
+|512x512|12~16 (12)|150|1|
+|512x768|18~24 (16)|150|1|
+|768x512|18~24 (21)|150|1|
 
 |W|What will happen|
 |---|---|
-|0.9|A lot more objects and "human" may disappear|
+|0.9|A lot more objects and "human" may disappear. **I've got some cars and bikes.**|
 |0.95|The "human" will interact with objects|
 |1.0|Average to what you usually seen in internet|
 |1.05|"Object inside objects" will be only simple geometry|
