@@ -34,15 +34,22 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 ```
 
+- Obviously more prompts can be added, however I'm not going to generate fap material. They've already flooded the internet.
+
 ### General result ###
 
 - The range may varies across different random seed.
 
-|Data field|What will be changed|
-|random seed| theme.
+|Field|Content|Range|
+|---|---|---|
+|Random seed|Theme|`int()`|
+|Dimension|Count of objects|No more than 4x area of 512x512|
+|Aspect ratio|Pose (sometime count)|From 4:1 to 1:4|
+|CFG|Brightnes, *in a complicated way*|Currently 9 to 20|
+|Solvers|Minor art style (major one is the network itself)|Currnetly **Eular** only|
 
-```
-512*512: CFG 12~16, 150 STEP
-512*768: CFG 18~20, 150 STEP
-768*512: NG
-```
+|Dimension|CFG|STEP|
+|---|---|---|
+512x512|12~16|150|
+512x768|18~20|150|
+768x512|NG|150|
