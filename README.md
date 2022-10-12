@@ -34,6 +34,12 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 ```
 
+- Step up: `node step [ratio]`. See [this guide](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis) for guessing the step size. Too large will get a "ring".
+
+```
+(lowres:1), (bad anatomy:1), (bad hands:1), (text:1), (error:1), (missing fingers:1), (extra digit:1), (fewer digits:1), (cropped:1), (worst quality:1), (low quality:1), (normal quality:1), (jpeg artifacts:1), (signature:1), (watermark:1), (username:1), (blurry:1), (artist name:1)
+```
+
 - Obviously more prompts can be added, however I'm not going to generate fap material. They've already flooded the internet.
 
 ### General result ###
@@ -43,13 +49,24 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 |Field|Content|Range|
 |---|---|---|
 |Random seed|Theme|`int()`|
-|Dimension|Count of objects|No more than 4x area of 512x512|
+|Dimension|*Count of objects*|No more than 4x area of 512x512|
 |Aspect ratio|Pose (sometime count)|From 4:1 to 1:4|
-|CFG|Brightnes, *in a complicated way*|Currently 9 to 20|
+|CFG|Brightnes, *in a complicated way*|Somehow scale with dimension. 512x512 will be stable at 12~16|
 |Solvers|Minor art style (major one is the network itself)|Currnetly **Eular** only|
+|"W"|*Density of objects*|1 for simplicity. 0.9 is "High risk high reward".|
 
-|Dimension|CFG|STEP|
-|---|---|---|
-512x512|12~16|150|
-512x768|18~20|150|
-768x512|NG|150|
+|Dimension|CFG|STEP|W|
+|---|---|---|---|
+|512x512|12~16|150|1|
+|512x512|12~16|150|1|
+|512x768|18~24|150|1|
+|768x512|18~24|150|1|
+
+|W|What will happen|
+|---|---|
+|0.9|A lot more objects and "human" may disappear|
+|0.95|The "human" will interact with objects|
+|1.0|Average to what you usually seen in internet|
+|1.05|"Object inside objects" will be only simple geometry|
+|1.1|Almost no "Object inside objects"|
+|2.0|Simple geometry with a unique bright sphere|
