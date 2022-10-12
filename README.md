@@ -10,7 +10,7 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 - The [Gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) inside the neural network is also somewhat a kind of [Reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning)
 - Therefore you can "guide" the AI to somewhat generate waifu in a *almost pure random sense* without mentioning a positive prompt.
 
-### How it works ###
+### How NovelAI / Stable Diffusion / CLIP works ###
 - [Video.](https://www.youtube.com/watch?v=1CIpzeNxIhU&ab_channel=Computerphile)
 - [Lenghty explaination which is expected.](https://blog.novelai.net/novelai-improvements-on-stable-diffusion-e10d38db82ac).
 
