@@ -37,7 +37,7 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 - Step up: `node step [ratio]`. See [this guide](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis) for guessing the step size. Too large will get a "ring".
 
 ```
-(lowres:1), (bad anatomy:1), (bad hands:1), (text:1), (error:1), (missing fingers:1), (extra digit:1), (fewer digits:1), (cropped:1), (worst quality:1), (low quality:1), (normal quality:1), (jpeg artifacts:1), (signature:1), (watermark:1), (username:1), (blurry:1), (artist name:1)
+(lowres:0.9), (bad anatomy:0.9), (bad hands:0.9), (text:0.9), (error:0.9), (missing fingers:0.9), (extra digit:0.9), (fewer digits:0.9), (cropped:0.9), (worst quality:0.9), (low quality:0.9), (normal quality:0.9), (jpeg artifacts:0.9), (signature:0.9), (watermark:0.9), (username:0.9), (blurry:0.9), (artist name:0.9)
 ```
 
 - Obviously more prompts can be added, however I'm not going to generate fap material. They've already flooded the internet.
@@ -53,14 +53,14 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 |Aspect ratio|Pose (sometime count)|From 4:1 to 1:4|
 |CFG|Brightnes, *in a complicated way*|Somehow scale with dimension. 512x512 will be stable at 12~16|
 |Solvers|Minor art style (major one is the network itself)|Currnetly **Eular** only|
-|"W"|*Density of objects*|1 for simplicity. 0.9 is "High risk high reward".|
+|"W"|*Density of objects*|1 for standard. 0.9 is "High risk high reward".|
 
 |Dimension|CFG|STEP|W|
 |---|---|---|---|
-|512x512|12~16|150|1|
-|512x512|12~16|150|1|
-|512x768|18~24|150|1|
-|768x512|18~24|150|1|
+|512x512|12~16|150|0.9|
+|512x512|12~16|150|0.9|
+|512x768|18~24|150|0.9|
+|768x512|18~24|150|0.9|
 
 |W|What will happen|
 |---|---|
