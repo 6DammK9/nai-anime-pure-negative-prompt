@@ -62,33 +62,52 @@ node aspect512.js [16] [9]
 |Field|Content|Range|
 |---|---|---|
 |Random seed|Theme|`int()`|
-|Dimension / area|*Count of objects*|No more than 4x area of 512x512|
+|Dimension / area|*Count of objects*|No more than 3x area of 512x512|
 |Aspect ratio|Pose (sometime count)|From 4:1 to 1:4|
-|CFG|Brightnes, *in a complicated way*|Somehow scale with dimension. 512x512 will be stable at 12~16|
+|CFG|Brightnes, *scaled with detailing*|Somehow scale with dimension. 512x512 will be stable at 12~16|
 |Solvers|Minor art style (major one is the network itself)|Currnetly **Eular** only|
-|"W"|*Density of objects*|1 for simplicity. 0.9 is "High risk high reward".|
+|"W"|"Gradient of RL". *Density of objects*|1 for simplicity. 0.9 is "High risk high reward".|
 
-|Dimension|CFG|STEP|W|
-|---|---|---|---|
-|512x512|12~16 (12)|150|0.9|
-|512x768|18~24 (16)|150|0.9|
-|576x768|18~24 (24)|150|0.9|
-|768x512|18~24 (21)|150|0.9|
-|768x576|18~24 (18)|150|0.9|
-
+|Dimension|CFG Range|CFG Recommended|
+|---|---|---|
+|512x512|12~16|12|
+|512x768|18~24|16|
+|576x768|18~24|24|
+|768x512|18~24|21|
+|768x576|18~24|18|
+|1024x576|24~30|27|
+|576x1024|12~30|27|
+|768x768|30|30|
+|1408x512|30|30|
+|512x1408|30|30|
+|384x640|12~16|16|
 
 |W|What will happen|
 |---|---|
-|0.9|A lot more objects and "human" may disappear. **I've got some cars and bikes.**|
+|0.9|A lot more objects and "human" may disappear. Maybe sceneary, but **I've got some cars and bikes.**|
 |0.95|The "human" will interact with objects|
 |1.0|Average to what you usually seen in internet|
 |1.05|"Object inside objects" will be only simple geometry|
 |1.1|Almost no "Object inside objects"|
 |2.0|Simple geometry with a unique bright sphere|
 
+|Area over 512x512|What will happen|
+|---|---|
+|<1.0|**Cropped images**|
+|1.0|Standatd object. Any traceable error will form tiny regular objects|
+|1.5|Either rich background, or some malfromed objects|
+|>2.0|Start having multiple objects. **Or anything above combined.**|
+
+|Aspect ratio|What will happen|
+|---|---|
+|<0.5|Something may appear on top of the human's head.|
+|0.7 to 1.0|~~Don't abuse OK?~~|
+|>1.0|You may get human or objects with sceneary, ~~but sometimes malformed~~. Recommend to enlarge the area above 1.0.|
+
 ### Bizzare result ###
 
-- Looks like some prompts favors for the AI, maybe useful to stablelize the result:
+- Looks like the "random stuffs" may refers to images in resnet / captcha. At least they really looks like something.  
+- Converting them into postive prompts may favour for the AI, and useful to stablelize the result:
 
 ```
 car
