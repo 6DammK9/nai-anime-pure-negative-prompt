@@ -30,17 +30,30 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 - The **most general** you can find in the internet. However weighting may be adjusted.
 - Somewhat they are really mandatory otherwise it create the image *exactly match the tags*.
 
-```
+```txt
 lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 ```
 
 - Step up: `node step [ratio]`. See [this guide](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis) for guessing the step size. Too large will get a "ring".
 
-```
+```txt
 (lowres:0.9), (bad anatomy:0.9), (bad hands:0.9), (text:0.9), (error:0.9), (missing fingers:0.9), (extra digit:0.9), (fewer digits:0.9), (cropped:0.9), (worst quality:0.9), (low quality:0.9), (normal quality:0.9), (jpeg artifacts:0.9), (signature:0.9), (watermark:0.9), (username:0.9), (blurry:0.9), (artist name:0.9)
 ```
 
 - Obviously more prompts can be added, however I'm not going to generate fap material. They've already flooded the internet.
+
+### (Optional) Force to have human (face) by limiting aspect ratio and area ###
+
+- Some friend told me that [SD / NAI is being incoherent with total area more than 512x512](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025). **Also the tensors forced the unit of 64px**. I have added a script also `node aspect512.js [w] [h]`:
+
+```txt
+node aspect512.js [4] [3]
+> [576, 384]
+node aspect512.js [16] [9]
+> [640, 384]
+```
+
+- Note that you usually unable to keep the expected aspect ratio. However I choose to *not following this guide* even it looks promising. **Also you may get cropped image.**
 
 ### General result ###
 
@@ -49,7 +62,7 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 |Field|Content|Range|
 |---|---|---|
 |Random seed|Theme|`int()`|
-|Dimension|*Count of objects*|No more than 4x area of 512x512|
+|Dimension / area|*Count of objects*|No more than 4x area of 512x512|
 |Aspect ratio|Pose (sometime count)|From 4:1 to 1:4|
 |CFG|Brightnes, *in a complicated way*|Somehow scale with dimension. 512x512 will be stable at 12~16|
 |Solvers|Minor art style (major one is the network itself)|Currnetly **Eular** only|
@@ -57,9 +70,12 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 
 |Dimension|CFG|STEP|W|
 |---|---|---|---|
-|512x512|12~16 (12)|150|1|
-|512x768|18~24 (16)|150|1|
-|768x512|18~24 (21)|150|1|
+|512x512|12~16 (12)|150|0.9|
+|512x768|18~24 (16)|150|0.9|
+|576x768|18~24 (24)|150|0.9|
+|768x512|18~24 (21)|150|0.9|
+|768x576|18~24 (18)|150|0.9|
+
 
 |W|What will happen|
 |---|---|
@@ -69,3 +85,17 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 |1.05|"Object inside objects" will be only simple geometry|
 |1.1|Almost no "Object inside objects"|
 |2.0|Simple geometry with a unique bright sphere|
+
+### Bizzare result ###
+
+- Looks like some prompts favors for the AI, maybe useful to stablelize the result:
+
+```
+car
+```
+
+- For example, combining the prompt **and the corrosponding aspect ratio** and a few more can generate some *nice* image with only a few token:
+
+|Size|Prompt|
+|---|---|
+|768x576|`((miku)) 1girl car`|
