@@ -69,7 +69,7 @@ node aspect512.js [16] [9]
 |"W"|"Gradient of RL". *Density of objects*|1 for simplicity. 0.9 is "High risk high reward".|
 
 |Dimension|CFG Range|CFG Recommended|STEP|
-|---|---|---|
+|---|---|---|---|
 |512x512|12~16|12|150|
 |512x768|18~24|16|150|
 |576x768|18~24|24|150|
