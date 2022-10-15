@@ -21,7 +21,7 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 - Only `txt2img` is used.
 - No high-res fix.
 - Only output dimension, CFG and random seed is modified.
-- Training step: **MORE THAN 150**. Sometimes it failed to converge to a "reasonable" image.
+- **Training step will exceed 150**. Edit `ui-config.json` to increase the limit. Sometimes it failed to converge to a "reasonable" image. If you see pale background. Keep increasing STEP, until you see background. 
 - **Cherry pick unless I'm sure how to generate with consistent quality** i.e. most of the contents inside is recognizable and approved by me.
 - Therefore no scipt / notebook yet.
 
@@ -68,20 +68,21 @@ node aspect512.js [16] [9]
 |Solvers|Minor art style (major one is the network itself)|Currnetly **Eular** only|
 |"W"|"Gradient of RL". *Density of objects*|1 for simplicity. 0.9 is "High risk high reward".|
 
-|Dimension|CFG Range|CFG Recommended|
+|Dimension|CFG Range|CFG Recommended|STEP|
 |---|---|---|
-|512x512|12~16|12|
-|512x768|18~24|16|
-|576x768|18~24|24|
-|768x512|18~24|21|
-|768x576|18~24|18|
-|1024x576|24~30|27|
-|576x1024|12~30|27|
-|768x768|30|30|
-|1408x512|30|30|
-|512x1408|30|30|
+|512x512|12~16|12|150|
+|512x768|18~24|16|150|
+|576x768|18~24|24|150|
+|768x512|18~24|21|150|
+|768x576|18~24|18|150|
+|1024x576|24~30|27|150|
+|576x1024|12~30|27|150|
+|768x768|27~36|32|**1000**|
+|1408x512|27~36|?|150|
+|512x1408|27~36|?|150|
 
 |Dimension (Area fixed)|CFG Range|CFG Recommended|
+|---|---|---|
 |384x640|12~16|12|
 |640x384|12~16|12|
 |896x256|12~16|12|
