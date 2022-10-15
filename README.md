@@ -80,7 +80,14 @@ node aspect512.js [16] [9]
 |768x768|30|30|
 |1408x512|30|30|
 |512x1408|30|30|
-|384x640|12~16|16|
+
+|Dimension (Area fixed)|CFG Range|CFG Recommended|
+|384x640|12~16|12|
+|640x384|12~16|12|
+|896x256|12~16|12|
+|256x896|12~16|12|
+|1024x256|12~16|12|
+|256x1024|12~16|12|
 
 |W|What will happen|
 |---|---|
@@ -101,8 +108,8 @@ node aspect512.js [16] [9]
 |Aspect ratio|What will happen|
 |---|---|
 |<0.5|Something may appear on top of the human's head.|
-|0.7 to 1.0|~~Don't abuse OK?~~|
-|>1.0|You may get human or objects with sceneary, ~~but sometimes malformed~~. Recommend to enlarge the area above 1.0.|
+|0.6 to 0.75|~~Don't abuse OK?~~|
+|>0.75|**1.0 inclued**. You may get human or objects with sceneary, ~~but sometimes malformed~~. Recommend to enlarge the area above 1.0|
 
 ### Bizzare result ###
 
@@ -111,6 +118,8 @@ node aspect512.js [16] [9]
 
 ```
 car
+house
+park
 ```
 
 - For example, combining the prompt **and the corrosponding aspect ratio** and a few more can generate some *nice* image with only a few token:
@@ -118,3 +127,14 @@ car
 |Size|Prompt|
 |---|---|
 |768x576|`((miku)) 1girl car`|
+
+### Bizzare result (in batch) ###
+
+- For the `W=0.9` approch, sometimes it fails to generate human even it is in `512x512`. Probability will be shown in below.
+
+|Dimension|Sample size|Pattern|Object or Sceneary|Malformed Human|Legit Human|Body shape|
+|---|---|---|---|---|---|---|
+|512x512|20|4|3|5|8|Normal|
+|576x768|20|0|2|5|13|Thicc|
+|1024x576|20|0|12|4|4|Normal|
+|576x1024|20|0|2|2|16|Mixed|
