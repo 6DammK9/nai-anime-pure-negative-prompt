@@ -25,19 +25,28 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 - **Cherry pick unless I'm sure how to generate with consistent quality** i.e. most of the contents inside is recognizable and approved by me.
 - Therefore no scipt / notebook yet.
 
+### Endless sampling step ###
+In art sense, this AI (or this kind of AI aka "diffuser") doesn't have logic in counting or physic. However, we can create [Isometric projection](https://en.wikipedia.org/wiki/Isometric_projection) and fractal art such as [Affine transformation](https://en.wikipedia.org/wiki/Affine_transformation). With a RL approch and such kind of visual trick (and the "minor" datasets hidden inside the neural network), **we can create fine art with this approch**. Minimal positive prompt and BAM. **1000 STEP is proven, comparing with 150 STEP as default maximum range.**
+
 ### Negative prompt used ###
 
 - The **most general** you can find in the internet. However weighting may be adjusted.
 - Somewhat they are really mandatory otherwise it create the image *exactly match the tags*.
+- Also, **even negative prompt should keep minimal** (18 tokens). *It won't able to create art without creavity.* 
 
 ```txt
 lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 ```
 
-- Step up: `node step [ratio]`. See [this guide](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis) for guessing the step size. Too large will get a "ring".
+- Step up: `node step [ratio]`. See [this guide](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis) for guessing the *step size*. Too large will unable to form an object but a simple pattern. 0.9 is somewhat balanced. The *hyperparameter* is regaulated under [https://en.wikipedia.org/wiki/No_free_lunch_theorem](https://en.wikipedia.org/wiki/No_free_lunch_theorem). Both side is abstract idea: *How to make sure the creativity lead into productivity?*
 
 ```txt
 (lowres:0.9), (bad anatomy:0.9), (bad hands:0.9), (text:0.9), (error:0.9), (missing fingers:0.9), (extra digit:0.9), (fewer digits:0.9), (cropped:0.9), (worst quality:0.9), (low quality:0.9), (normal quality:0.9), (jpeg artifacts:0.9), (signature:0.9), (watermark:0.9), (username:0.9), (blurry:0.9), (artist name:0.9)
+```
+
+- This extended set can be a lot lower (92 tokens)
+```txt
+(bad_anatomy:0.91), (bad_feet:0.91), (bad_hands:0.91), (bad_perspective:0.91), (bad_proportions:0.91), (comic:0.91), (cropped:0.91), (cropped_arms:0.91), (cropped_head:0.91), (cropped_legs:0.91), (cropped_shoulders:0.91), (cropped_torso:0.91), (english_text:0.91), (error:0.91), (extra:0.91), (low quality:0.91), (lowres:0.91), (missing_eye:0.91), (missing_finger:0.91), (missing_limb:0.91), (no_humans:0.91), (normal quality:0.91), (outside_border:0.91), (speech_bubble:0.91), (text_focus:0.91), (worst quality:0.91)
 ```
 
 - Obviously more prompts can be added, however I'm not going to generate fap material. They've already flooded the internet.
@@ -68,18 +77,18 @@ node aspect512.js [16] [9]
 |Solvers|Minor art style (major one is the network itself)|Currnetly **Eular** only|
 |"W"|"Gradient of RL". *Density of objects*|1 for simplicity. 0.9 is "High risk high reward".|
 
-|Dimension|CFG Range|CFG Recommended|STEP|
-|---|---|---|---|
-|512x512|12~16|12|150|
-|512x768|18~24|16|150|
-|576x768|18~24|24|150|
-|768x512|18~24|21|150|
-|768x576|18~24|18|150|
-|1024x576|24~30|27|150|
-|576x1024|12~30|27|150|
-|768x768|27~36|32|**1000**|
-|1408x512|27~36|?|150|
-|512x1408|27~36|?|150|
+|Dimension|CFG Range|CFG Recommended|
+|---|---|---|
+|512x512|12~16|12|
+|512x768|18~24|16|
+|576x768|18~24|24|
+|768x512|18~24|21|
+|768x576|18~24|18|
+|1024x576|24~30|27|
+|576x1024|12~30|27|
+|768x768|27~36|32|
+|1408x512|27~36|27|
+|512x1408|27~36|27|
 
 |Dimension (Area fixed)|CFG Range|CFG Recommended|
 |---|---|---|
@@ -121,6 +130,7 @@ node aspect512.js [16] [9]
 car
 house
 park
+sky
 ```
 
 - For example, combining the prompt **and the corrosponding aspect ratio** and a few more can generate some *nice* image with only a few token:
@@ -139,3 +149,4 @@ park
 |576x768|20|0|2|5|13|Thicc|
 |1024x576|20|0|12|4|4|Normal|
 |576x1024|20|0|2|2|16|Mixed|
+|768x768|15|1|4|7|3|Normal|
