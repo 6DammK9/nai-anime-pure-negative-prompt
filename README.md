@@ -44,9 +44,9 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 (lowres:0.9), (bad anatomy:0.9), (bad hands:0.9), (text:0.9), (error:0.9), (missing fingers:0.9), (extra digit:0.9), (fewer digits:0.9), (cropped:0.9), (worst quality:0.9), (low quality:0.9), (normal quality:0.9), (jpeg artifacts:0.9), (signature:0.9), (watermark:0.9), (username:0.9), (blurry:0.9), (artist name:0.9)
 ```
 
-- This extended set can be a lot lower (92 tokens)
+- This extended set can be a lot lower (81 tokens). Note that **I've dropped missing_x intentionally.**
 ```txt
-(bad_anatomy:0.91), (bad_feet:0.91), (bad_hands:0.91), (bad_perspective:0.91), (bad_proportions:0.91), (comic:0.91), (cropped:0.91), (cropped_arms:0.91), (cropped_head:0.91), (cropped_legs:0.91), (cropped_shoulders:0.91), (cropped_torso:0.91), (english_text:0.91), (error:0.91), (extra:0.91), (low quality:0.91), (lowres:0.91), (missing_eye:0.91), (missing_finger:0.91), (missing_limb:0.91), (no_humans:0.91), (normal quality:0.91), (outside_border:0.91), (speech_bubble:0.91), (text_focus:0.91), (worst quality:0.91)
+(bad_anatomy:0.82), (bad_feet:0.82), (bad_hands:0.82), (bad_perspective:0.82), (bad_proportions:0.82), (comic:0.82), (cropped:0.82), (cropped_arms:0.82), (cropped_head:0.82), (cropped_legs:0.82), (cropped_shoulders:0.82), (cropped_torso:0.82), (english_text:0.82), (error:0.82), (extra:0.82), (low quality:0.82), (lowres:0.82), (no_humans:0.82), (normal quality:0.82), (outside_border:0.82), (speech_bubble:0.82), (text_focus:0.82), (worst quality:0.82)
 ```
 
 - Obviously more prompts can be added, however I'm not going to generate fap material. They've already flooded the internet.
@@ -75,7 +75,10 @@ node aspect512.js [16] [9]
 |Aspect ratio|Pose (sometime count)|From 4:1 to 1:4|
 |CFG|Brightnes, *scaled with detailing*|Somehow scale with dimension. 512x512 will be stable at 12~16|
 |Solvers|Minor art style (major one is the network itself)|Currnetly **Eular** only|
-|"W"|"Gradient of RL". *Density of objects*|1 for simplicity. 0.9 is "High risk high reward".|
+|"W"|"Gradient of RL". *Density of objects*|1 for standard. Lower then 1 to introduce randomness. Currently 0.82 with modified prompt.|
+
+- For the "0.91" approch, follow the scale with base 16.
+- For the "0.82" approch, follow the scale with base 12.
 
 |Dimension|CFG Range|CFG Recommended|
 |---|---|---|
@@ -86,7 +89,7 @@ node aspect512.js [16] [9]
 |768x576|18~24|18|
 |1024x576|24~30|27|
 |576x1024|12~30|27|
-|768x768|27~36|32|
+|768x768|27~36|27|
 |1408x512|27~36|27|
 |512x1408|27~36|27|
 
@@ -137,7 +140,10 @@ sky
 
 |Size|Prompt|
 |---|---|
-|768x576|`((miku)) 1girl car`|
+|768x576|`(miku:1.0), (1girl:0.91), (car:0.75)`|
+
+- *Sequence of the words will create slight difference.* However no major difference is found.
+- **Recommended to keep the weight into NEGATIVE EXPONENTIAL SCALE.** For example, 0.95 for the character, then 0.91 for some basic requirement, then 0.82 for characteristics, and 0.75 for "good to have" detail. AI will "choose" how to include the stuffs. 
 
 ### Bizzare result (in batch) ###
 
