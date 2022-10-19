@@ -28,7 +28,7 @@ Fgrcf: 50, Fnzcyre: Rhyre, PST fpnyr: 12, Frrq: 418647112, Fvmr: 384k640, Zbqry 
 - Positive prompts are **adjusted and arranged** carefully.
 - Effects on most combinations are observed in **batch (20) and low steps (20)**.
 - Record the *yield* and "good random seeds". Then try to increase the STEP.
-- Alternatively, **XY plot** with STEP size with a constant batch. Time consuming.
+- Alternatively, **XY plot** with STEP size (Currently in exponential scale `16,24,32,64,256,1024`) with a constant batch. Time consuming.
 - Hand pick the good result and enjoy!
 
 ### Fusing contradict tags ###
