@@ -1,4 +1,4 @@
-# nai-anime-pure-negative-prompt #
+# "NAI Anine" Pure Negative Prompt #
 
 A research about "NAI anime" art with pure negative prompt. Such observation may be useful for "data visualization" to show that how the "number" works.
 
@@ -142,7 +142,8 @@ sky
 |---|---|
 |768x576|`(miku:1.0), (1girl:0.91), (car:0.75)`|
 
-- *Sequence of the words will create slight difference.* However no major difference is found.
+- *Sequence of the words will create slight difference.* However no major difference is found. It is because the transformer itself was design for [NLP](https://en.wikipedia.org/wiki/Natural_language_processing), however both SD and NAI was trained heavily in [CLI](https://en.wikipedia.org/wiki/Command-line_interface) style ("tags" instead of paragraph corpus). 
+- Try to arrange the tags in [SVO](https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order) style, mark the strength according to the importance (person > plot > details), and finally arrange them in decreasing order.
 - **Recommended to keep the weight into NEGATIVE EXPONENTIAL SCALE.** For example, 0.95 for the character, then 0.91 for some basic requirement, then 0.82 for characteristics, and 0.75 for "good to have" detail. AI will "choose" how to include the stuffs. 
 
 ### Bizzare result (in batch) ###
@@ -156,3 +157,7 @@ sky
 |1024x576|20|0|12|4|4|Normal|
 |576x1024|20|0|2|2|16|Mixed|
 |768x768|15|1|4|7|3|Normal|
+
+### Awesome result ###
+
+- See [astolfo_fate.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_fate.md)
