@@ -3,6 +3,9 @@
 - [ROT13 Encrypted](https://rot13.com/).
 
 - [NSFW demo pic](https://www.pixiv.net/en/artworks/102059177).
+- [NSFW trail "before production"](https://www.pixiv.net/en/artworks/102077685).
+- [Procuction (questionable)](https://www.pixiv.net/en/artworks/102101077)
+- [Procuction (NSFW)](https://www.pixiv.net/en/artworks/102101135)
 
 ```txt
 cnenzrgref
@@ -38,3 +41,10 @@ Fgrcf: 50, Fnzcyre: Rhyre, PST fpnyr: 12, Frrq: 418647112, Fvmr: 384k640, Zbqry 
 - Some contradict tags (-0.91~-0.95) will be strongly rejected (they will become greyish noise again), but some superset (data instead of tag) can be tolerated (0.71~0.82).
 - Obviously some individual images will fail to produce (e.g. some "blank area" failed to fill in contents, yea the tag is so OP). Try to produce in batch to see the *yield*. This example lies on *20% success rate* which is very good.
 - Fusing the tags is a [dual problem](https://en.wikipedia.org/wiki/Duality_(optimization)). **Best results lies on a variable STEP size**. Observe the result closely and don't jump to the conclusion.
+
+### Yield rate ###
+- Sample size: 20. Pass rate: 0.65, Pass with R-18: 0.35. So scary.
+
+|Failed|16|24|32|64|256|1024|
+|---|---|---|---|---|---|---|
+|7|1|1|3|3|3|2|
