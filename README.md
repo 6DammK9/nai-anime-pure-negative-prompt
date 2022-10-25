@@ -49,6 +49,13 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 (bad_anatomy:0.82), (bad_feet:0.82), (bad_hands:0.82), (bad_perspective:0.82), (bad_proportions:0.82), (comic:0.82), (cropped:0.82), (cropped_arms:0.82), (cropped_head:0.82), (cropped_legs:0.82), (cropped_shoulders:0.82), (cropped_torso:0.82), (english_text:0.82), (error:0.82), (extra:0.82), (low quality:0.82), (lowres:0.82), (no_humans:0.82), (normal quality:0.82), (outside_border:0.82), (speech_bubble:0.82), (text_focus:0.82), (worst quality:0.82)
 ```
 
+- **Remove when it is solved** All underscore `_` in WebUI doesn't work! Do not pay attention on the prompts with `_`!
+- e.g. `on_back` or `on back` will be split as `on` and `back` and getting irrelevant images.
+- This will greatly alter the contents below. **28 tokens.** I keep `_` for "not being too gibberish".
+```txt
+(bad:0.557), (comic:0.557), (cropped:0.557), (error:0.557), (extra:0.557), (low:0.557), (lowres:0.557), (monochrome:0.557), (normal:0.557), (outside_border:0.557), (speech_bubble:0.557), (worst:0.557)
+```
+
 - Obviously more prompts can be added, however I'm not going to generate fap material. They've already flooded the internet.
 
 ### (Optional) Force to have human (face) by limiting aspect ratio and area ###
@@ -79,32 +86,33 @@ node aspect512.js [16] [9]
 
 - For the "0.91" approch, follow the scale with base 16.
 - For the "0.82" approch, follow the scale with base 12.
+- For the "0.557" approch, follow the scale with base 10.5.
 
 |Dimension|CFG Range|CFG Recommended|
 |---|---|---|
-|512x512|12~16|12|
+|512x512|12~16|~~12~~10.5|
 |512x768|18~24|16|
 |576x768|18~24|24|
-|768x512|18~24|21|
+|768x512|18~24|~~21~~16|
 |768x576|18~24|18|
 |1024x576|24~30|27|
 |576x1024|12~30|27|
-|768x768|27~36|27|
+|768x768|27~36|~~27~~24|
 |1408x512|27~36|27|
 |512x1408|27~36|27|
 
 |Dimension (Area fixed)|CFG Range|CFG Recommended|
 |---|---|---|
-|384x640|12~16|12|
-|640x384|12~16|12|
-|896x256|12~16|12|
-|256x896|12~16|12|
-|1024x256|12~16|12|
-|256x1024|12~16|12|
+|384x640|12~16|~~12~~10.5|
+|640x384|12~16|~~12~~10.5|
+|896x256|12~16|~~12~~10.5|
+|256x896|12~16|~~12~~10.5|
+|1024x256|12~16|~~12~~10.5|
+|256x1024|12~16|~~12~~10.5|
 
 |W|What will happen|
 |---|---|
-|0.9|A lot more objects and "human" may disappear. Maybe sceneary, but **I've got some cars and bikes.**|
+|0.9|A lot more objects and "human" may disappear. Maybe sceneary, but **I've got some cars and bulidings.**|
 |0.95|The "human" will interact with objects|
 |1.0|Average to what you usually seen in internet|
 |1.05|"Object inside objects" will be only simple geometry|
