@@ -62,3 +62,18 @@ Fgrcf: 192, Fnzcyre: Rhyre, PST fpnyr: 12, Frrq: 2538523372, Fvmr: 384k640, Zbqr
 |Failed|16|24|32|64|256|1024|
 |---|---|---|---|---|---|---|
 |7|1|1|3|3|3|2|
+
+### Yield rate (3/4) ###
+- Sample size: 16. Pass rate: 0.56, Pass with R-18: 0.50. Desired pose: 0.31.
+- More than 1000 STEP?
+
+|Failed|16|24|32|64|256|1024|
+|---|---|---|---|---|---|---|
+|7|1|0|2|0|1|5|
+
+### Yield rate (4/4) ###
+- Sample size: 16. Pass rate: 0.31. Pass with R-18: 0.31. Desired pose: 0.19. Hard to generate.
+
+|Failed|16|24|32|64|256|1024|
+|---|---|---|---|---|---|---|
+|11|0|0|0|1|2|2|
