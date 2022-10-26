@@ -26,7 +26,7 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 - Therefore no scipt / notebook yet.
 
 ### Endless sampling step ###
-In art sense, this AI (or this kind of AI aka "diffuser") doesn't have logic in counting or physic. However, we can create [Isometric projection](https://en.wikipedia.org/wiki/Isometric_projection) and fractal art such as [Affine transformation](https://en.wikipedia.org/wiki/Affine_transformation). With a RL approch and such kind of visual trick (and the "minor" datasets hidden inside the neural network), **we can create fine art with this approch**. Minimal positive prompt and BAM. **1000 STEP is proven, comparing with 150 STEP as default maximum range.**
+In art sense, this AI (or this kind of AI aka "diffuser") doesn't have logic in counting or physic. However, we can create [Isometric projection](https://en.wikipedia.org/wiki/Isometric_projection) and fractal art such as [Affine transformation](https://en.wikipedia.org/wiki/Affine_transformation). With a RL approch and such kind of visual trick (and the "minor" datasets hidden inside the neural network), **we can create fine art with this approch**. Minimal positive prompt and BAM. **~~1000~~ 768 STEP is proven, comparing with 150 STEP as default maximum range.**
 
 ### Negative prompt used ###
 
@@ -38,7 +38,7 @@ In art sense, this AI (or this kind of AI aka "diffuser") doesn't have logic in 
 lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 ```
 
-- Step up: `node step [ratio]`. See [this guide](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis) for guessing the *step size*. Too large will unable to form an object but a simple pattern. 0.9 is somewhat balanced. The *hyperparameter* is regaulated under [https://en.wikipedia.org/wiki/No_free_lunch_theorem](https://en.wikipedia.org/wiki/No_free_lunch_theorem). Both side is abstract idea: *How to make sure the creativity lead into productivity?*
+- Step up: `node step [ratio] [full]`. `ratio` can be negative (exponential scale) or floating point (free type) or SD brackets (integer). `full` will apply the format to each word instead of whole sequence. See [this guide](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis) for guessing the *step size*. Too large will unable to form an object but a simple pattern. 0.9 is somewhat balanced. The *hyperparameter* is regaulated under [https://en.wikipedia.org/wiki/No_free_lunch_theorem](https://en.wikipedia.org/wiki/No_free_lunch_theorem). Both side is abstract idea: *How to make sure the creativity lead into productivity?*
 
 ```txt
 (lowres:0.9), (bad anatomy:0.9), (bad hands:0.9), (text:0.9), (error:0.9), (missing fingers:0.9), (extra digit:0.9), (fewer digits:0.9), (cropped:0.9), (worst quality:0.9), (low quality:0.9), (normal quality:0.9), (jpeg artifacts:0.9), (signature:0.9), (watermark:0.9), (username:0.9), (blurry:0.9), (artist name:0.9)
@@ -51,9 +51,14 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 
 - **Remove when it is solved** All underscore `_` in WebUI doesn't work! Do not pay attention on the prompts with `_`!
 - e.g. `on_back` or `on back` will be split as `on` and `back` and getting irrelevant images.
-- This will greatly alter the contents below. **28 tokens.** I keep `_` for "not being too gibberish".
+- This will greatly alter the contents below. **22 tokens.** I keep `_` for "not being too gibberish".
+- Meanwhile I revise the keywords extensively, and going to **bear risk** to mine fine arts.
 ```txt
-(bad:0.557), (comic:0.557), (cropped:0.557), (error:0.557), (extra:0.557), (low:0.557), (lowres:0.557), (monochrome:0.557), (normal:0.557), (outside_border:0.557), (speech_bubble:0.557), (worst:0.557)
+(bad:0.564), (comic:0.564), (cropped:0.564), (error:0.564), (extra:0.564), (low:0.564), (lowres:0.564), (normal:0.564), (speech_bubble:0.564), (worst:0.564)
+```
+- In non WebUI style:
+```txt
+[[[[[[bad]]]]]], [[[[[[comic]]]]]], [[[[[[cropped]]]]]], [[[[[[error]]]]]], [[[[[[extra]]]]]], [[[[[[low]]]]]], [[[[[[lowres]]]]]], [[[[[[normal]]]]]], [[[[[[speech_bubble]]]]]], [[[[[[worst]]]]]]
 ```
 
 - Obviously more prompts can be added, however I'm not going to generate fap material. They've already flooded the internet.
@@ -71,6 +76,14 @@ node aspect512.js [16] [9]
 
 - Note that you usually unable to keep the expected aspect ratio. However I choose to *not following this guide* even it looks promising. **Also you may get cropped image.**
 
+### Inference with SD prompts ###
+- Maybe I can find some negative prompts EXCLUSIVE from SD dataset. ere is some positive prompts which is fun to play in NAI:
+```txt
+Mercedes-Benz, AMG
+husky with heterochromia
+apocalypse
+```
+
 ### General result ###
 
 - The range may varies across different random seed.
@@ -85,8 +98,8 @@ node aspect512.js [16] [9]
 |"W"|"Gradient of RL". *Density of objects*|1 for standard. Lower then 1 to introduce randomness. Currently 0.82 with modified prompt.|
 
 - For the "0.91" approch, follow the scale with base 16.
-- For the "0.82" approch, follow the scale with base 12.
-- For the "0.557" approch, follow the scale with base 10.5.
+- For the "0.82" (`2x[`) approch, follow the scale with base 12.
+- For the "0.564" (`6x[`) approch, follow the scale with base 10.5.
 
 |Dimension|CFG Range|CFG Recommended|
 |---|---|---|
