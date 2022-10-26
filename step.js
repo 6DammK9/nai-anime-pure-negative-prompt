@@ -1,18 +1,19 @@
 const fs = require("fs");
-const step = process.argv[2] || 1.0;
+const step = parseFloat(process.argv[2]) || 1.0;
+const full = !!(process.argv[3]) || false;
 
 const prompts = [
     //    `
     //lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
     //`,
-    `
-lowres, worst quality, low quality, normal quality, 
-bad_anatomy, bad_feet, bad_hands, bad_proportions, bad_perspective, 
-extra, speech_bubble, english_text, text_focus, error, no_humans, comic, 
-cropped, cropped_legs, outside_border, cropped_torso, cropped_shoulders, cropped_arms, cropped_head
-`,
-    //missing_limb, missing_eye, missing_finger, 
-    //
+    //`
+    //lowres, worst quality, low quality, normal quality, 
+    //bad_anatomy, bad_feet, bad_hands, bad_proportions, bad_perspective, 
+    //extra, speech_bubble, english_text, text_focus, error, no_humans, comic, 
+    //cropped, cropped_legs, outside_border, cropped_torso, cropped_shoulders, cropped_arms, cropped_head
+    //`,
+    `bad, comic, cropped, error, extra, worst, lowres, speech_bubble, low, monochrome, grayscale, normal`
+
     /**
         `
     ugly, pregnant, vore, duplicate, long arms, 
@@ -64,4 +65,23 @@ for (const p0 of prompts) {
 merged_prompts = merged_prompts.sort((a, b) => a.localeCompare(b));
 console.log(merged_prompts.length);
 console.log(merged_prompts);
-fs.writeFileSync(`step.txt`, merged_prompts.map(s => `(${s}:${step})`).join(", "));
+
+let txt = "";
+switch (true) {
+    case ((step < 0) && !full):
+        txt = `${''.padStart(Math.abs(step), '[')}${merged_prompts.join(", ")}${''.padStart(Math.abs(step), ']')}`; break;
+    case ((step < 0) && full):
+        txt = merged_prompts.map(s => `${''.padStart(Math.abs(step), '[')}${s}${''.padStart(Math.abs(step), ']')}`).join(", "); break;
+    case ((step > 1) && Number.isInteger(step) && !full):
+        txt = `${''.padStart(step, '{')}${merged_prompts.join(", ")}${''.padStart(step, '}')}`; break;
+    case ((step > 1) && Number.isInteger(step) && full):
+        txt = merged_prompts.map(s => `${''.padStart(step, '{')}${s}${''.padStart(step, '}')}`).join(", "); break;
+    case ((!isNaN(step)) && full):
+        txt = merged_prompts.map(s => `(${s}:${step})`).join(", "); break;
+    case ((!isNaN(step)) && !full):
+        txt = `(${merged_prompts.join(", ")}:${step})`; break;
+    default:
+        txt = merged_prompts.join(", ");
+}
+
+fs.writeFileSync(`step.txt`, txt);
