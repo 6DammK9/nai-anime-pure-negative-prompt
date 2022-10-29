@@ -182,3 +182,4 @@ sky
 ### Awesome result ###
 
 - See [astolfo_fate.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_fate.md)
+- Astolfo go racing. [astolfo_wrc.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_wrc.md)
