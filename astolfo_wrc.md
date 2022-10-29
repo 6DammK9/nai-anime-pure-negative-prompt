@@ -1,8 +1,8 @@
 # Astolfo going to WRC: Fusing between SD and NAI #
 
-## Pixiv links
+## Pixiv links and figures (numbers)
 
-- [Images up to 256 STEPS.](https://www.pixiv.net/en/artworks/102316214) 10 hours for 20 images with `1.5s/it`.
+- [Images up to 256 STEPS.](https://www.pixiv.net/en/artworks/102316214) 10 hours for 20 images with `1.5s/it`. Yield rate: 0.6 (legit images with ANY subjects), 0.3-0.4 (car with human)
 
 
 ## Prommpts
