@@ -6,6 +6,8 @@
 - [Firearm. Up to 384 STEPS.](https://www.pixiv.net/en/artworks/102375552). Yield > 0.5
 - [Firearm. Up to 384 STEPS.](https://www.pixiv.net/en/artworks/102411717). Yield < 0.2 *Prompt issue*
 - [Motorcycle. 48 STEPS.](https://www.pixiv.net/en/artworks/102441940). Yield < 0.2 *Wrong image size*
+- [Motorcycle. 1024 STEPS.](https://www.pixiv.net/en/artworks/102467018). Yield > 0.6
+- [Motorcycle + firearm. 1024 STEPS.](https://www.pixiv.net/en/artworks/102633954). **Yield < 4 / 256 = 0.016** *Technical limit.* ["Trilemma".](https://en.wikipedia.org/wiki/Trilemma)
 
 ## Prommpts
 
@@ -40,7 +42,7 @@ Steps: 384, Sampler: Euler, CFG scale: 24, Seed: 1274018323, Size: 1024x576, Mod
 
 ### Firearm
 
-```
+```txt
 [[watch dogs]], [[frontline]], [[[firearm]]], [[[rifle]]], [[[pistol]]], [[[handgun]]], [face mask], [[[sunglasses]]], [[solo]], [[astolfo]], [[aiming]]
 Negative prompt: [[[[[[bad]]]]]], [[[[[[comic]]]]]], [[[[[[cropped]]]]]], [[[[[[error]]]]]], [[[[[[extra]]]]]], [[[[[[low]]]]]], [[[[[[lowres]]]]]], [[[[[[speech]]]]]], [[[[[[worst]]]]]]
 Steps: 768, Sampler: Euler, CFG scale: 10.5, Seed: 4043866474, Size: 512x512, Model hash: 925997e9, Clip skip: 2
@@ -53,7 +55,7 @@ Steps: 768, Sampler: Euler, CFG scale: 10.5, Seed: 4043866474, Size: 512x512, Mo
 
 ### Motorcycle
 
-```
+```txt
 [[kawasaki ninja]], [[[watch dogs]]], [[1boy]], [[astolfo]], [[motorcycle]]
 Negative prompt: [[[[[[bad]]]]]], [[[[[[comic]]]]]], [[[[[[cropped]]]]]], [[[[[[error]]]]]], [[[[[[extra]]]]]], [[[[[[low]]]]]], [[[[[[lowres]]]]]], [[[[[[speech]]]]]], [[[[[[worst]]]]]]
 Steps: 32, Sampler: Euler, CFG scale: 10.5, Seed: 1668969449, Size: 384x640, Model hash: 925997e9, Clip skip: 2
@@ -63,3 +65,18 @@ Steps: 32, Sampler: Euler, CFG scale: 10.5, Seed: 1668969449, Size: 384x640, Mod
 - `kawasaki ninja` works with NAI stuffs, meanwhile `kawasaki KX` still works alone.
 - Just include `motorcycle` (SD + NAI) then it works. He is already *on* the motorcycle.
 - I love this combination and sequence. So clean.  
+
+### Motorcycle + firearm
+
+```txt
+parameters
+[[[[watch dogs, 1boy astolfo]] sitting on [[ducati]]]] [holding gun]
+Negative prompt: [[[[[bad]]]]]], [[[[[[comic]]]]]], [[[[[[cropped]]]]]], [[[[[[error]]]]]], [[[[[[extra]]]]]], [[[[[[low]]]]]], [[[[[[lowres]]]]]], [[[[[[speech]]]]]], [[[[[[worst]]]]]]
+Steps: 1024, Sampler: Euler, CFG scale: 24, Seed: 1756904767, Size: 768x768, Model hash: 925997e9, Clip skip: 2
+```
+
+- `ducati` is more precise with larger image dataset.
+- `watch dogs` sometimes breaks and generate a legit `dog` (`watch` usually appears also). Same with `desert eagle` which you'll see a desert road.
+- **Stacked 2D prompts.** `sitting on` and `holding` is proven, also the only `,`.
+- `gun` itself is a NAI word. Tried `rifle, pistol, glock, carbine, m4, m1911` etc, **all failed.** Even SD cannot help. The weightings are *polluted by girls' frontline.*
+- The "screening process" is something like "256 IMAGES * 48 STEPS" > "26 IMAGES * 256 STEPS" > "20 IMAGES * 512 STEPS" > "8 IMAGES * 1024 STEPS" > "4 IMAGES with different STEPS".
