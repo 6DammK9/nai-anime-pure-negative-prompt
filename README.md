@@ -26,7 +26,7 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 - Therefore no scipt / notebook yet.
 
 ### Endless sampling step ###
-In art sense, this AI (or this kind of AI aka "diffuser") doesn't have logic in counting or physic. However, we can create [Isometric projection](https://en.wikipedia.org/wiki/Isometric_projection) and fractal art such as [Affine transformation](https://en.wikipedia.org/wiki/Affine_transformation). With a RL approch and such kind of visual trick (and the "minor" datasets hidden inside the neural network), **we can create fine art with this approch**. Minimal positive prompt and BAM. **~~1000~~ 768 STEP is proven, comparing with 150 STEP as default maximum range.**
+In art sense, this AI (or this kind of AI aka "diffuser") doesn't have logic in counting or physic. However, we can create [Isometric projection](https://en.wikipedia.org/wiki/Isometric_projection) and fractal art such as [Affine transformation](https://en.wikipedia.org/wiki/Affine_transformation). With a RL approch and such kind of visual trick (and the "minor" datasets hidden inside the neural network), **we can create fine art with this approch**. Minimal positive prompt and BAM. **~~1000~~ ~~768~~ 1536+ STEP is proven, comparing with 150 STEP as default maximum range.**
 
 ### Negative prompt used ###
 
@@ -61,6 +61,11 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 [[[[[[bad]]]]]], [[[[[[comic]]]]]], [[[[[[cropped]]]]]], [[[[[[error]]]]]], [[[[[[extra]]]]]], [[[[[[low]]]]]], [[[[[[lowres]]]]]], [[[[[[normal]]]]]], [[[[[[speech_bubble]]]]]], [[[[[[worst]]]]]]
 ```
 
+- (Already not focusing on drawing human with this approch) Furthr examine the dataset and rule out more prompts (a.k.a. *-9x0.564*):
+```txt
+[[[[[bad]]]]]], [[[[[[comic]]]]]], [[[[[[cropped]]]]]], [[[[[[error]]]]]], [[[[[[extra]]]]]], [[[[[[low]]]]]], [[[[[[lowres]]]]]], [[[[[[speech]]]]]], [[[[[[worst]]]]]]
+```
+
 - Obviously more prompts can be added, however I'm not going to generate fap material. They've already flooded the internet.
 
 ### (Optional) Force to have human (face) by limiting aspect ratio and area ###
@@ -74,7 +79,7 @@ node aspect512.js [16] [9]
 > [640, 384]
 ```
 
-- Note that you usually unable to keep the expected aspect ratio. However I choose to *not following this guide* even it looks promising. **Also you may get cropped image.**
+- Note that you usually unable to keep the expected aspect ratio. ~~However I choose to *not following this guide* even it looks promising. **Also you may get cropped image.**~~ After days I confirmed it scaled with *person / entity* in a non-standard way. `w * h = f(p * nai(nai_entities), q * sd(sd_entities))`. Observe the *yield* of the images. But with this case, *follow the contents below is fine*.
 
 ### Inference with SD prompts ###
 - Maybe I can find some negative prompts EXCLUSIVE from SD dataset. ere is some positive prompts which is fun to play in NAI:
@@ -145,10 +150,10 @@ apocalypse
 |0.6 to 0.75|~~Don't abuse OK?~~|
 |>0.75|**1.0 inclued**. You may get human or objects with sceneary, ~~but sometimes malformed~~. Recommend to enlarge the area above 1.0|
 
-### Bizzare result ###
+### ~~Bizzare result~~ Fusion with SD prompts ###
 
-- Looks like the "random stuffs" may refers to images in resnet / captcha. At least they really looks like something.  
-- Converting them into postive prompts may favour for the AI, and useful to stablelize the result:
+- ~~Looks like the "random stuffs" may refers to images in resnet / captcha. At least they really looks like something.~~ It is SD's LAION dataset.  
+- ~~Converting them into postive prompts may favour for the AI, and useful to stablelize the result:~~ These are actually keywords in LAION.
 
 ```
 car
@@ -157,15 +162,15 @@ park
 sky
 ```
 
-- For example, combining the prompt **and the corrosponding aspect ratio** and a few more can generate some *nice* image with only a few token:
+- ~~For example, combining the prompt **and the corrosponding aspect ratio** and a few more can generate some *nice* image with only a few token~~ See [astolfo_wrc.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_wrc.md):
 
 |Size|Prompt|
 |---|---|
 |768x576|`(miku:1.0), (1girl:0.91), (car:0.75)`|
 
-- *Sequence of the words will create slight difference.* However no major difference is found. It is because the transformer itself was design for [NLP](https://en.wikipedia.org/wiki/Natural_language_processing), however both SD and NAI was trained heavily in [CLI](https://en.wikipedia.org/wiki/Command-line_interface) style ("tags" instead of paragraph corpus). 
-- Try to arrange the tags in [SVO](https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order) style, mark the strength according to the importance (person > plot > details), and finally arrange them in decreasing order.
-- **Recommended to keep the weight into NEGATIVE EXPONENTIAL SCALE.** For example, 0.95 for the character, then 0.91 for some basic requirement, then 0.82 for characteristics, and 0.75 for "good to have" detail. AI will "choose" how to include the stuffs. 
+- ~~*Sequence of the words will create slight difference.* However no major difference is found.~~ *It is actually "SD grammar" with NAI vocabulary*. It is because the transformer itself was design for [NLP](https://en.wikipedia.org/wiki/Natural_language_processing), however both SD and NAI was trained heavily in [CLI](https://en.wikipedia.org/wiki/Command-line_interface) style ("tags" instead of paragraph corpus). 
+- Try to arrange the tags in [SVO](https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order) style (*subject depends on result, flip S / O if yield is too low*), mark the strength according to the importance (person > plot > details), and finally arrange them in decreasing order.
+- **Recommended to keep the weight into NEGATIVE EXPONENTIAL SCALE.** For example, 0.95 for the character, then 0.91 for some basic requirement, then 0.82 for characteristics, and 0.75 for "good to have" detail. *Currently `[[`*. AI will "choose" how to include the stuffs. 
 
 ### Bizzare result (in batch) ###
 
@@ -179,7 +184,9 @@ sky
 |576x1024|20|0|2|2|16|Mixed|
 |768x768|15|1|4|7|3|Normal|
 
+- "-9*0.564" seldom gives "Legit Human", but it fit well when there is postive prompt. Use with caution.
+
 ### Awesome result ###
 
 - See [astolfo_fate.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_fate.md)
-- Astolfo go racing. [astolfo_wrc.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_wrc.md)
+- Astolfo go racing **and do other stuffs**. [astolfo_wrc.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_wrc.md)
