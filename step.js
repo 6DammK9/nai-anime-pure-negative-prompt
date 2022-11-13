@@ -12,7 +12,7 @@ const prompts = [
     //extra, speech_bubble, english_text, text_focus, error, no_humans, comic, 
     //cropped, cropped_legs, outside_border, cropped_torso, cropped_shoulders, cropped_arms, cropped_head
     //`,
-    `bad, comic, cropped, error, extra, worst, lowres, speech_bubble, low, monochrome, grayscale, normal`
+    `bad, comic, cropped, error, extra, worst, lowres, speech, low, normal`
 
     /**
         `
