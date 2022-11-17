@@ -35,9 +35,9 @@ switch (true) {
     case ((step > 1) && Number.isInteger(step) && full):
         txt = merged_prompts.map(s => `${''.padStart(step, '{')}${s}${''.padStart(step, '}')}`).join(", "); break;
     case ((!isNaN(step)) && full):
-        txt = merged_prompts.map(s => `(${s}: ${step})`).join(", "); break;
+        txt = merged_prompts.map(s => `(${s}:${step})`).join(", "); break;
     case ((!isNaN(step)) && !full):
-        txt = `(${merged_prompts.join(", ")}: ${step})`; break;
+        txt = `(${merged_prompts.join(", ")}:${step})`; break;
     default:
         txt = merged_prompts.join(", ");
 }
