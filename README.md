@@ -9,3 +9,4 @@ A research about "NAI anime" art with pure negative prompt. Such observation may
 - NAI / **Focusing on character**: [astolfo_fate.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_fate.md)
 - NAI / **Focusing on object interation**: [astolfo_wrc.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_wrc.md)
 - AV3 / **General exploration**: [6569e224.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/6569e224.md)
+- AV3 / **Focusing on character**: [astolfo_v3.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_v3.md)
