@@ -4,7 +4,7 @@
 
 ### His gender is somewhat unique here ###
 
-```
+```txt
 [[male]], [[astolfo]], [[boxers]], [[underwear]], [[bulge]], [[erection]], [[calvin klein]]
 ```
 
@@ -16,3 +16,13 @@
 - `erection` somehow prevent the chance to have multiple human.
 - `calvin klein`... A striped underwear? The yield rate is too low to confirm. As you see, half of them are girl panties...
 - ~~I think the body shape is improved. Keep comparing with the NAI version.~~
+
+### Aw this model really bias ###
+
+```txt
+(znyr:0.99),(nfgbysb:0.99),[[rerpgvba]],[[rwnphyngvba]],[[grfgvpyrf]],[[cravf]]
+```
+
+- `1.0` will break. `[[` also break. `0.99` is somewhat safe with barely enough freedom.
+- Others are straight forward. I choose `er_____n` to initiate the "reaction".
+- Sadly I'm moving to next model. No more chapter in short period even it will be famous.
