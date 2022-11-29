@@ -1,6 +1,16 @@
 const fs = require("fs");
-const step = parseFloat(process.argv[2]) || 1.0;
+const step = isNaN(parseFloat(process.argv[2])) ? 1.0 : parseFloat(process.argv[2]);
 const full = !!(process.argv[3]) || false;
+
+//https://stackoverflow.com/questions/1685680/how-to-avoid-scientific-notation-for-large-numbers-in-javascript
+function toPlainString(num) {
+    return ('' + +num).replace(/(-?)(\d*)\.?(\d*)e([+-]\d+)/,
+        function (a, b, c, d, e) {
+            return e < 0
+                ? b + '0.' + Array(1 - e - c.length).join(0) + c + d
+                : b + c + d + Array(e - d.length + 1).join(0);
+        });
+}
 
 const prompts = [
     //`lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name`
@@ -35,9 +45,9 @@ switch (true) {
     case ((step > 1) && Number.isInteger(step) && full):
         txt = merged_prompts.map(s => `${''.padStart(step, '{')}${s}${''.padStart(step, '}')}`).join(", "); break;
     case ((!isNaN(step)) && full):
-        txt = merged_prompts.map(s => `(${s}:${step})`).join(", "); break;
+        txt = merged_prompts.map(s => `(${s}:${toPlainString(step)})`).join(", "); break;
     case ((!isNaN(step)) && !full):
-        txt = `(${merged_prompts.join(", ")}:${step})`; break;
+        txt = `(${merged_prompts.join(", ")}:${toPlainString(step)})`; break;
     default:
         txt = merged_prompts.join(", ");
 }
