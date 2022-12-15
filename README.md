@@ -15,7 +15,7 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 **No explaination. Read the articles instead.**
 - **Generic research methods** (CFG-STEP scan) when an *unknown anime model* is received.
 - My hands-on experience on [txt2img](https://en.wikipedia.org/wiki/Text-to-image_model) *only*. **Another prompting research.**
-- **Generic prompting guide** for a [webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) compatable. Mainly *anime model*.
+- **Generic prompting guide** for a [webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) compatable "anime model". Core concept (heck what application will support negative prompts?) is viable.
 - **Docuementry, journal and ranting.** Read for drama. Actually some of them are *primary sources*. 
 - ~~**Astolfo is a good boy.**~~
 
