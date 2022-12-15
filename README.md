@@ -37,6 +37,6 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 
 ## Contact ##
 **Seriously? I'm no different than a random anon in this field.**
-Discord: 6DammK9#2533
-GMail: 6DammK9@gmail.com
-Pixiv: [6DammK9](https://www.pixiv.net/en/users/11525730)
+- Discord: 6DammK9#2533
+- GMail: 6DammK9@gmail.com
+- Pixiv: [6DammK9](https://www.pixiv.net/en/users/11525730)
