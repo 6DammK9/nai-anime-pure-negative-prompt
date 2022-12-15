@@ -1,6 +1,6 @@
 # "NAI Anine" / "anything-v3" Pure Negative Prompt #
 
-[test.png](ch00/test.png)
+![test.png](ch00/test.png)
 
 A research about "NAI anime" art with pure negative prompt. Such observation may be useful for "data visualization" to show that how the "number" works.
 
