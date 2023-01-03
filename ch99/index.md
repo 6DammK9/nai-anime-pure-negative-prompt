@@ -1,3 +1,6 @@
+# ch99: Uncategorized / old content #
+
+It should be fully revamped.
 
 ### Content has been splitted ###
 - NAI / **theory and explanation**: [925997e9.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/925997e9.md)

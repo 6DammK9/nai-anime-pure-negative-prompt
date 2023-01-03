@@ -18,6 +18,7 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 - **Generic prompting guide** for a [webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) compatable "anime model". Core concept (heck what application will support negative prompts?) is viable.
 - **Docuementry, journal and ranting.** Read for drama. Actually some of them are *primary sources*. 
 - ~~**Astolfo is a good boy.**~~
+- Beware of **random docuement style** because I don't have time to explain or even expand it.
 
 ## Index ##
 **Too lazy to update constantly. Just iterlate the directories. You will find the pattern.**
@@ -25,6 +26,7 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 - ch01: Common content across models. **Most theory / explaination / derive goes there.**
 - ch02: Model specific contents. **Assumed you've already read ch01 and know the context.**
 - ch03: (coming soon)
+- ch98: Backup from discord server because I think it is not safe to leave them there forever.
 - ch99: Old segments. I didn't expect this repo draws stars and some attention. The format is being unsuitable again.
 
 ## So where to start? ##
@@ -34,6 +36,9 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 - `step.js [step] [split_comma]`: **I use it frequently.** Generate global static emphasis level on the prompts.
 - `node listseed [full_directory]`: Extract seeds inside the filenames, which reduce human error when iterlating mass image production. Use `[seed]-[width]-[height]-[cfg]-[steps]-[datetime]` as Settings > Images filename pattern.
 - `aspect512.js [w] [h]`: Find actual width / height with aspect ratio `w:h` under 512x512 px also in unit of 64px.
+
+## Scripts (broken shell scripts) ##
+- `anifusion2_win11_vscode_miniconda.sh`: Install Anifusion-SD with Win11 + conda. Run it line by line in manual.
 
 ## Contact ##
 **Seriously? I'm no different than a random anon in this field.**
