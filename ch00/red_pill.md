@@ -2,12 +2,12 @@
 
 - ~~Coming soon~~ Screw it I have no time to write anything. Even do AI arts.
 
-## Blue pills (wiki) ##
+## Blue pill (wiki) ##
 
 - Looking for a "wiki"? [AI艺术天堂](https://a2a.top/)
 - Search for "元素法典" for prompt samples. Same as "tag".
 
-## Blue pills (commiunity) ##
+## More Blue pill (commiunity) ##
 
 - **Some official discord may be omitted.**
 - (Advanced) AI Art: [場外AI繪圖討論區](https://discord.gg/k57gkxWgev) 
