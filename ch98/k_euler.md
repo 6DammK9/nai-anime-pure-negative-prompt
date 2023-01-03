@@ -12,6 +12,7 @@
 - 以上比較 / 機制應該是跟 CFG 獨立? 搜系數時可以分開處理?
 
 https://zhuanlan.zhihu.com/p/563661713
+
 https://zhuanlan.zhihu.com/p/565698027
 
 https://twitter.com/iScienceLuvr/status/1564847749073276928/photo/1
@@ -20,9 +21,13 @@ https://twitter.com/iScienceLuvr/status/1564847749073276928/photo/1
 https://arxiv.org/pdf/1511.06251.pdf
 
 ... 不懂
+
 https://arxiv.org/pdf/2110.15739.pdf
+
 ..."SGMs"?
+
 https://openreview.net/pdf/73d0f0136e580fe58d9e2ceb5a0317ad7aeb3d24.pdf
+
 https://nv-tlabs.github.io/CLD-SGM/
 
 噪點分 DDIM / EULER.
@@ -30,24 +35,27 @@ https://nv-tlabs.github.io/CLD-SGM/
 k_diffuser 的 implementation 很謎, 期末後再看代碼 (今次沒 paper 解釋)
 
 - DDIM
-![xy_grid-0024-4126143029-6528-3661-6-2048-20221204042613.jpg](xy_grid-0024-4126143029-6528-3661-6-2048-20221204042613.jpg)
+![img/xy_grid-0024-4126143029-6528-3661-6-2048-20221204042613.jpg](img/xy_grid-0024-4126143029-6528-3661-6-2048-20221204042613.jpg)
 
 - Euler
-![xy_grid-0025-4126143029-6528-3661-6-2048-20221204045837.jpg](xy_grid-0025-4126143029-6528-3661-6-2048-20221204045837.jpg)
+![img/xy_grid-0025-4126143029-6528-3661-6-2048-20221204045837.jpg](img/xy_grid-0025-4126143029-6528-3661-6-2048-20221204045837.jpg)
 
 - 對比: 2~500 步
 - DDIM: `500,200,143,100,67,33,17,13,7,4,3,2`
 
-![xy_grid-0026-2115221498-2816-9906-12.5-500-20221204142147.jpg](xy_grid-0026-2115221498-2816-9906-12.5-500-20221204142147.jpg)
+![img/xy_grid-0026-2115221498-2816-9906-12.5-500-20221204142147.jpg](img/xy_grid-0026-2115221498-2816-9906-12.5-500-20221204142147.jpg)
 
 ## 查找驗証後 ##
 
 ~~在坐車，回家要搞 cheat cheet~~
+
 多謝 A1111 再次改壞名
+
 人家是 “momentum sampler” 再加個 euler (sgd 相關）
 
 momentum (euler) 那至少不會被污名（還在看 momentum 在哪）
-直少 adam 帶 momentum 成份，間接證明這個 euler 為何不比 ddim 慢一整個數量級
+
+至少 adam 帶 momentum 成份，間接證明這個 euler 為何不比 ddim 慢一整個數量級
 
 是咁的，k diffuser 不管是 euler 還是 heun, 因為是 **momentum sampler**, 那就是可以跟 ddim 一比，而不會有數量級的差距
 

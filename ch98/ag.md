@@ -3,7 +3,7 @@
 ### 論文才 2022 年 9 月出, 沒中文解說呀 ###
 
 - [啥來的](https://github.com/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients)
-- [啥提的](https://arxiv.org/abs/2209.12330)
+- [誰提的](https://arxiv.org/abs/2209.12330)
 - [啥來的](https://zhuanlan.zhihu.com/p/538403355) (CLIP 中 DDIM 的一個有關刷 "美学质量评估" 的機制)]
 - 美学质量评估中, 原文提及的 [Aesthetics Quality Assessment on AVA](https://paperswithcode.com/sota/aesthetics-quality-assessment-on-ava)
 - [AVA 又是啥來的](https://zhuanlan.zhihu.com/p/31865988) (人提的分, 但那些人沒看二次元)
