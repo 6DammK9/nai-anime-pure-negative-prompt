@@ -6,6 +6,8 @@
 
 - Looking for a "wiki"? [AI艺术天堂](https://a2a.top/)
 - Search for "元素法典" for prompt samples. Same as "tag".
+- Looking for models? [AI绘画模型博物馆](https://aimodel.subrecovery.top/)
+- Similar to [SD RESOURCE GOLDMINE](https://rentry.org/sdgoldmine)
 
 ## More Blue pill (commiunity) ##
 
