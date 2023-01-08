@@ -1,0 +1,21 @@
+# Merging models #
+
+- We had a hard tome to find something related. [Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time](https://arxiv.org/abs/2203.05482)
+
+- [Some Chinese articles](https://www.zhihu.com/question/521497951)
+
+- As stated in [6569e224.md](../ch99/6569e224.md), *try to theorize things formally.* You may archive more if a more appropriate mechanism is applied.
+
+- [A nice merge: WD1.4 with SD2.1 TTE.](https://huggingface.co/p1atdev/wd-fix). ~~The TTE in WD1.4 is awful. No astolfo must be a failure. No execuses.~~
+
+## Try to read thesis and don't try to dream about the blackbox. ##
+
+- [Why We Will Never Open Deep Learning’s Black Box.](https://towardsdatascience.com/why-we-will-never-open-deep-learnings-black-box-4c27cd335118)
+
+- [Nope.](https://twitter.com/butamanyasan/status/1608763093659832321)
+
+![img/photo_2023-01-01_02-45-25.jpg](img/photo_2023-01-01_02-45-25.jpg)
+
+- [Where is the bleach?](https://t.me/StableDiffusion_CN/625588)
+
+![img/photo_2023-01-01_03-02-49.jpg](img/photo_2023-01-01_03-02-49.jpg)
