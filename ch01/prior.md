@@ -12,8 +12,11 @@ ACertainsStrategyTalk](https://huggingface.co/spaces/JosephusCheung/ACertainsStr
 - Same minimal prompt, generate a large batch of images.
 - See what it is inside.
 
+- [bp_nman_e29](https://huggingface.co/Crosstyan/BPModel/blob/main/NMFSAN/README.md)
+![img/grid-0189](img/grid-0189.jpg)
+
 - Should be `888886dc.ckpt`. I forgot.
 ![img/grid-0086.jpg](img/grid-0086.jpg)
 
-- Should be EVT_V3. I forgot.
+- Should be EVT_V3. I forgot also.
 ![img/xy_grid-0012-1168228247-15360-3559-11-48-20221127143432.jpg](img/xy_grid-0012-1168228247-15360-3559-11-48-20221127143432.jpg)

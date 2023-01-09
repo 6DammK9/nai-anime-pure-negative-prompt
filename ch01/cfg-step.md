@@ -29,6 +29,11 @@
 - *Or just choose what you think is good.*
 
 ### Example (obvious) ###
+- [NAI](../ch99/925997e9.md)
+- Result: **CFG 10, STEP 48**. ~~Originally choose 10.5~~
+![img/xy_grid-0097-1337-6528-6221-7-20-20230108183221.jpg](img/xy_grid-0097-1337-6528-6221-7-20-20230108183221.jpg)
+
+
 - [WD 1.4](https://huggingface.co/hakurei/waifu-diffusion-v1-4)
 - Result: **CFG 8, STEP 96**
 ![img/xy_grid-0086-1337-6528-6221-8-96-20230101132703.jpg](img/xy_grid-0086-1337-6528-6221-8-96-20230101132703.jpg)
@@ -41,3 +46,9 @@
 
 - Then I choose CFG 13.5 (6*2.25) for 768x768:
 ![img/xy_grid-0094-3642480259-2112-3189-9-48-20230102024956.jpg](img/xy_grid-0094-3642480259-2112-3189-9-48-20230102024956.jpg)
+
+### Example (even harder) ###
+
+- [bp_nman_e29](https://huggingface.co/Crosstyan/BPModel/blob/main/NMFSAN/README.md)
+- Result: **CFG 5, STEP 64**.
+![img/xy_grid-0104-2758110372-6528-6221-9-64-20230109001426.jpg](img/xy_grid-0104-2758110372-6528-6221-9-64-20230109001426.jpg)
