@@ -5,6 +5,7 @@
 ## Blue pill (wiki) ##
 
 - Looking for a "wiki"? [AI艺术天堂](https://a2a.top/)
+- Looking for "another wiki"? [AiDraw - AiDraw](https://stable-diffusion-book.vercel.app/en/)
 - Search for "元素法典" for prompt samples. Same as "tag".
 - Looking for models? [AI绘画模型博物馆](https://aimodel.subrecovery.top/)
 - Similar to [SD RESOURCE GOLDMINE](https://rentry.org/sdgoldmine)

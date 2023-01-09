@@ -38,6 +38,8 @@ ending, that discussion.</p>
 - https://twitter.com/8co28/status/1603186112985698304
 - https://www.inside.com.tw/article/30245-stanford-research-finds-codes-are-more-unsecure-with-AI-assistance 
 - https://twitter.com/TheDevelop3r/status/1609980041449902080
+- https://jweb.kl.edu.tw/userfiles/811/document/11835_%E8%A6%96%E8%A6%BA%E8%97%9D%E8%A1%93%E5%89%B5%E4%BD%9C%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95%E4%B9%8B%E7%90%86%E8%AB%96%E5%9F%BA%E7%A4%8E%E6%8E%A2%E6%9E%90.pdf
+- https://twitter.com/KenAkamatsu/status/1612023820050890754
 
 ### 短文. 看懂可以跳過下面. ###
 
