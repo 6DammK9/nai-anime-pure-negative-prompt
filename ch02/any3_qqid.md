@@ -18,6 +18,8 @@
 
 - Then **this screenshot** in [QQ APP](https://apps.apple.com/cn/app/qq/id444934666). All conents in Chinese APP are hidden as [national level deep web](https://en.wikipedia.org/wiki/Deep_web) and **invisible in search engines**. See [this app also](https://apps.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E9%97%B2%E4%B8%8D%E4%BD%8F-%E4%B8%8A%E9%97%B2%E9%B1%BC/id510909506). ~~Can you search any second hand goods in CN as in "2.taobao"?~~
 
+- Also. The Baidu URL is **exact match** with the [rentry record](https://rentry.org/NAI-Anything_v3_0_n_v2_1). See `1r--2XuWV--MVoKKmTftM-g` in the image. [Cross valid with another rentry record](https://rentry.org/sdmodels#anything-v30-38c1ebe3-1a7df6b8-6569e224)
+
 ![img/IMG_6807.png](img/IMG_6807.jpg)
 
 - Now *can you see the **exact same account name.** Then finally by **another screenshot** and everthing is solved.

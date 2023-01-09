@@ -12,10 +12,16 @@ ACertainsStrategyTalk](https://huggingface.co/spaces/JosephusCheung/ACertainsStr
 - Same minimal prompt, generate a large batch of images.
 - See what it is inside.
 
-- [bp_nman_e29](https://huggingface.co/Crosstyan/BPModel/blob/main/NMFSAN/README.md)
+- [bp_nman_e29](https://huggingface.co/Crosstyan/BPModel/blob/main/NMFSAN/README.md): Yep, "editor's choice".
 ![img/grid-0189](img/grid-0189.jpg)
 
-- Should be `888886dc.ckpt`. I forgot.
+- [Anything V3](https://huggingface.co/Linaqruf/anything-v3.0): **So biased. But SOTA anyway.** **So [momoko / momoco](https://www.pixiv.net/en/users/1113943) **
+![img/grid-0198](img/grid-0198.jpg)
+
+- NAI again. **No comment. Looks like there are more hidden datasets.**
+![img/grid-0199](img/grid-0199.jpg)
+
+- Should be `888886dc.ckpt`. I forgot. 
 ![img/grid-0086.jpg](img/grid-0086.jpg)
 
 - Should be EVT_V3. I forgot also.
