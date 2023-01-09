@@ -18,15 +18,15 @@
 
 - Then **this screenshot** in [QQ APP](https://apps.apple.com/cn/app/qq/id444934666). All conents in Chinese APP are hidden as [national level deep web](https://en.wikipedia.org/wiki/Deep_web) and **invisible in search engines**. See [this app also](https://apps.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E9%97%B2%E4%B8%8D%E4%BD%8F-%E4%B8%8A%E9%97%B2%E9%B1%BC/id510909506). ~~Can you search any second hand goods in CN as in "2.taobao"?~~
 
-![img/IMG_6807.png](img/IMG_6807.png)
+![img/IMG_6807.png](img/IMG_6807.jpg)
 
 - Now *can you see the **exact same account name.** Then finally by **another screenshot** and everthing is solved.
 
-![img/IMG_6803.png](img/IMG_6803.png)
+![img/IMG_6803.png](img/IMG_6803.jpg)
 
 - Wow, what a famous person in CN. ~~Famous on trashtalk and being doxxed there.~~ Note: His trashtalk is omitted here. Common as a high school student (yes, age is also PUBLIC there).
 
-![img/IMG_6805.png](img/IMG_6805.png)
+![img/IMG_6805.png](img/IMG_6805.jpg)
 
 - Well, "Anything V3.1" gains a lot less attention [because of obvious reason so the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
 
