@@ -30,9 +30,9 @@
 
 - Well, "Anything V3.1" gains a lot less attention [because of obvious reason so the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
 
-![img/35277-1337-.png](img/35277-1337-.png)
+![img/35281-1663800267-.png](img/35281-1663800267-.png)
 
 ```
 Negative prompt: (bad:0), (comic:0), (cropped:0), (error:0), (extra:0), (low:0), (lowres:0), (speech:0), (worst:0)
-Steps: 128, Sampler: Euler, CFG scale: 8, Seed: 1337, Size: 512x512, Model hash: 9d163b9c, Clip skip: 2, ENSD: 31337
+Steps: 128, Sampler: Euler a, CFG scale: 8, Seed: 1663800267, Size: 512x512, Model hash: 6569e224, Clip skip: 2, ENSD: 31337
 ```
