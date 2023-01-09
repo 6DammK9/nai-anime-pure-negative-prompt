@@ -15,7 +15,7 @@ ACertainsStrategyTalk](https://huggingface.co/spaces/JosephusCheung/ACertainsStr
 - [bp_nman_e29](https://huggingface.co/Crosstyan/BPModel/blob/main/NMFSAN/README.md): Yep, "editor's choice".
 ![img/grid-0189](img/grid-0189.jpg)
 
-- [Anything V3](https://huggingface.co/Linaqruf/anything-v3.0): **So biased. But SOTA anyway.** **So [momoko / momoco](https://www.pixiv.net/en/users/1113943) **
+- [Anything V3](https://huggingface.co/Linaqruf/anything-v3.0): **So biased. But SOTA anyway.** **So [momoko / momoco](https://www.pixiv.net/en/users/1113943)**
 ![img/grid-0198](img/grid-0198.jpg)
 
 - NAI again. **No comment. Looks like there are more hidden datasets.**
