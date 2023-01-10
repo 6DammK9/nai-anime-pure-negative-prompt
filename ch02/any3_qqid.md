@@ -4,6 +4,8 @@
 
 **I have no intention to doxx a person. I am just investigate the model stolen / leak multiple times until it reached to huggingface (and being SOTA model) by a random anon who have absolutely no connection to the original author. QQ ID is PUBLIC there. No personal information has been disclosed.** ~~[Maybe isn't.](https://www.163.com/dy/article/F845NGFC0539B46R.html)~~
 
+- Assumption: *One consistent owner*.
+
 - First, [this](https://huggingface.co/Linaqruf/anything-v3.0) is just a mirror uploaded by a random anon. He contacted me already. That's all.
 
 - The real author is just a person who never involved in any international commuinities, and have no public apperance outside GFW, so he stayed myster for a long period of time. Even a [QQ-involved repo](https://github.com/lllyasviel/style2paints) once wrongly cited the person in HF. [Git issue](https://github.com/lllyasviel/style2paints/issues/205).
@@ -16,23 +18,29 @@
 
 ![img/IMG_6792.png](img/IMG_6792.png)
 
-- Then **this screenshot** in [QQ APP](https://apps.apple.com/cn/app/qq/id444934666). All conents in Chinese APP are hidden as [national level deep web](https://en.wikipedia.org/wiki/Deep_web) and **invisible in search engines**. See [this app also](https://apps.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E9%97%B2%E4%B8%8D%E4%BD%8F-%E4%B8%8A%E9%97%B2%E9%B1%BC/id510909506). ~~Can you search any second hand goods in CN as in "2.taobao"?~~
+- Then **this screenshot** in [QQ APP](https://apps.apple.com/cn/app/qq/id444934666). Contents from there are *invisible from search engines*. 
 
 - Also. The Baidu URL is **exact match** with the [rentry record](https://rentry.org/NAI-Anything_v3_0_n_v2_1). See `1r--2XuWV--MVoKKmTftM-g` in the image. [Cross valid with another rentry record](https://rentry.org/sdmodels#anything-v30-38c1ebe3-1a7df6b8-6569e224)
 
 ![img/IMG_6807.png](img/IMG_6807.jpg)
 
-- Now *can you see the **exact same account name.** Then finally by **another screenshot** and everthing is solved.
+- Finally this screenshot shows the recent account name with the QQ ID with the matching "model release notes". **Notice the account name.**
+
+![img/IMG_6813.jpg](img/IMG_6813.jpg)
+
+- Now you can see the **exact same account name.** Then finally by **another screenshot** and everthing is solved.
 
 ![img/IMG_6803.png](img/IMG_6803.jpg)
 
-- Wow, what a famous person in CN. ~~Famous on trashtalk and being doxxed there.~~ Note: His trashtalk is omitted here. Common as a high school student (yes, age is also PUBLIC there).
+- Now the proof is solid.
 
 ![img/IMG_6805.png](img/IMG_6805.jpg)
 
-- Well, "Anything V3.1" gains a lot less attention [because of obvious reason so the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
+- Well, "Anything V3.1" gains a lot less attention "because of obvious reason". [So the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
 
 ![img/35281-1663800267-.png](img/35281-1663800267-.png)
+
+- However, *due to an incident after the initial release of this article*, **some mystery remains** even I have gathered such amount of information. However it doesn't affect the proof, and the model in the HF mirror is still legit.
 
 ```
 Negative prompt: (bad:0), (comic:0), (cropped:0), (error:0), (extra:0), (low:0), (lowres:0), (speech:0), (worst:0)
