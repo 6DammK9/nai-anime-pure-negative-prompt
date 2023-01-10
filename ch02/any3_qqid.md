@@ -24,7 +24,7 @@
 
 ![img/IMG_6807.png](img/IMG_6807.jpg)
 
-- Finally this screenshot shows the recent account name with the QQ ID with the matching "model release notes". **Notice the account name.**
+- Finally this screenshot shows the recent account name with the QQ ID with the matching "model release notes". **Notice that the account name is inconsistent, and the versioning is somewhat changed.** However the URL is still exact same.
 
 ![img/IMG_6811.jpg](img/IMG_6811.jpg)
 
