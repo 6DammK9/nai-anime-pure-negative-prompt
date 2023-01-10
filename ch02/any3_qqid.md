@@ -32,9 +32,9 @@
 
 ![img/IMG_6803.png](img/IMG_6803.jpg)
 
-- Well, "Anything V3.1" gains a lot less attention "because of obvious reason". [So the proof is left as an exercise](https://matheducators.stackexchange.co
+- Well, "Anything V3.1" gains a lot less attention "because of obvious reason". [So the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
 
-![img/IMG_6805.png](img/IMG_6805.jpg)m/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
+![img/IMG_6805.png](img/IMG_6805.jpg)
 
 - However, *due to an incident after the initial release of this article*, **some mystery remains** even I have gathered such amount of information. However it doesn't affect the proof, and the model in the HF mirror is still legit.
 
