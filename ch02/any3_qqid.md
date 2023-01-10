@@ -26,7 +26,7 @@
 
 - Finally this screenshot shows the recent account name with the QQ ID with the matching "model release notes". **Notice the account name.**
 
-![img/IMG_6813.jpg](img/IMG_6813.jpg)
+![img/IMG_6811.jpg](img/IMG_6811.jpg)
 
 - Now you can see the **exact same account name.** Then finally by **another screenshot** and everthing is solved.
 
