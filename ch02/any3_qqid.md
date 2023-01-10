@@ -28,19 +28,17 @@
 
 ![img/IMG_6811.jpg](img/IMG_6811.jpg)
 
-- Now you can see the **exact same account name.** Then finally by **another screenshot** and everthing is solved.
+- Now everthing is solved, and the proof is solid. ~~It also gives you some idea how the model is made.~~
 
 ![img/IMG_6803.png](img/IMG_6803.jpg)
 
-- Now the proof is solid.
+- Well, "Anything V3.1" gains a lot less attention "because of obvious reason". [So the proof is left as an exercise](https://matheducators.stackexchange.co
 
-![img/IMG_6805.png](img/IMG_6805.jpg)
-
-- Well, "Anything V3.1" gains a lot less attention "because of obvious reason". [So the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
-
-![img/35281-1663800267-.png](img/35281-1663800267-.png)
+![img/IMG_6805.png](img/IMG_6805.jpg)m/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
 
 - However, *due to an incident after the initial release of this article*, **some mystery remains** even I have gathered such amount of information. However it doesn't affect the proof, and the model in the HF mirror is still legit.
+
+![img/35281-1663800267-.png](img/35281-1663800267-.png)
 
 ```
 Negative prompt: (bad:0), (comic:0), (cropped:0), (error:0), (extra:0), (low:0), (lowres:0), (speech:0), (worst:0)
