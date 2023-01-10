@@ -38,9 +38,9 @@
 
 - However, *due to an incident after the initial release of this article*, **some mystery remains** even I have gathered such amount of information. However it doesn't affect the proof, and the model in the HF mirror is still legit.
 
-![img/35281-1663800267-.png](img/35281-1663800267-.png)
+![img/22102403-1663800267-512-512-8-256-20230110232907.png](img/22102403-1663800267-512-512-8-256-20230110232907.png)
 
 ```
 Negative prompt: (bad:0), (comic:0), (cropped:0), (error:0), (extra:0), (low:0), (lowres:0), (speech:0), (worst:0)
-Steps: 128, Sampler: Euler a, CFG scale: 8, Seed: 1663800267, Size: 512x512, Model hash: 6569e224, Clip skip: 2, ENSD: 31337
+Steps: 256, Sampler: Euler, CFG scale: 8, Seed: 1663800267, Size: 512x512, Model hash: 6569e224, Clip skip: 2
 ```
