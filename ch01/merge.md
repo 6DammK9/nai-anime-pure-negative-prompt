@@ -2,6 +2,8 @@
 
 - We had a hard tome to find something related. [Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time](https://arxiv.org/abs/2203.05482)
 
+- Oh my god there is some discussion. [Robust fine-tuning of zero-shot models](https://arxiv.org/abs/2109.01903)
+
 - [Some Chinese articles](https://www.zhihu.com/question/521497951)
 
 - As stated in [6569e224.md](../ch99/6569e224.md), *try to theorize things formally.* You may archive more if a more appropriate mechanism is applied.
@@ -16,6 +18,6 @@
 
 ![img/photo_2023-01-01_02-45-25.jpg](img/photo_2023-01-01_02-45-25.jpg)
 
-- [Where is the bleach?](https://t.me/StableDiffusion_CN/625588)
+- [Where is the bleach?](https://t.me/StableDiffusion_CN/625588) [However there is visualization tools.](https://github.com/hnmr293/stable-diffusion-webui-dumpunet) [There is always people interested.](https://medium.com/sfu-cspmp/unveiling-the-hidden-layers-of-neural-networks-6269615fb8a9) [Make sure what you're doing.](https://www.quora.com/Is-there-any-way-to-interpret-the-meanings-of-hidden-layers-and-reasoning-them-what-the-unit-values-account-for-possible-in-neural-network-learning)
 
 ![img/photo_2023-01-01_03-02-49.jpg](img/photo_2023-01-01_03-02-49.jpg)
