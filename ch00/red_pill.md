@@ -12,17 +12,18 @@
 
 ## More Blue pill (commiunity) ##
 
-- **Some official discord may be omitted.**
-- (Advanced) AI Art: [場外AI繪圖討論區](https://discord.gg/k57gkxWgev) 
-- (General) AI Art: [鳥巢AI 藝術學園](https://discord.gg/gUSqkYE7)
-- AI detector: [Illuminarty](https://discord.gg/YeTYaUe8)
-- AI general (with legal and debate): [AI 絵作り研究会](https://discord.gg/ai-art)
-- AI application developer based: [Shinonome AI Lab](https://discord.gg/RcRKUMu5)
-- Waifu Diffusion: [東方Project AI](https://discord.gg/touhouai)
-- Pure debate server: [議論一般チャンネル](https://discord.gg/xpjUU2nK)
-- 2b2t: [SDCN](https://t.me/StableDiffusion_CN)
-- Russian: [Novel AI](https://t.me/Novel_AI_Group)
-- More Russian: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
+- **Some official discord may be omitted. Use [i18n code](https://github.com/ladjs/i18n-locales) instead of natural language.**
+- (Advanced) AI Art `zh`: [場外AI繪圖討論區](https://discord.gg/k57gkxWgev) 
+- (General) AI Art `zh`: [鳥巢AI 藝術學園](https://discord.gg/gUSqkYE7)
+- AI detector `en/ko`: [Illuminarty](https://discord.gg/YeTYaUe8)
+- AI general (with legal and debate)  `ja`: [AI 絵作り研究会](https://discord.gg/ai-art)
+- AI application developer based `en`: [Shinonome AI Lab](https://discord.gg/RcRKUMu5)
+- Waifu Diffusion `en/ja`: [東方Project AI](https://discord.gg/touhouai)
+- Pure debate server `ja`: [議論一般チャンネル](https://discord.gg/xpjUU2nK)
+- 2b2t `zh`: [SDCN](https://t.me/StableDiffusion_CN)
+- ~~victim~~ `ru`: [Novel AI](https://t.me/Novel_AI_Group)
+- ~~attacker~~ `ru`: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
+- Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)
 
 ## Before taking the red pill ##
 
