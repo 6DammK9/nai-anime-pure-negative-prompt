@@ -1,0 +1,20 @@
+# BasilMix #
+
+- Url: https://huggingface.co/nuigurumi/basil_mix
+
+- I use `animevae.pt` for VAE instead.
+
+- **NO COSPLAYER HAS BEEN HURT DURING PRODUCTION.**
+
+- The very first "mix" which "cosplay" is possible, and... in [deepfake](https://en.wikipedia.org/wiki/Deepfake) tier.
+
+![img/00120.png](img/00120.png)
+
+```
+parameters
+(astolfo:0.98)
+Negative prompt: (bad:0), (comic:0), (cropped:0), (error:0), (extra:0), (low:0), (lowres:0), (speech:0), (worst:0), [[breasts]]
+Steps: 128, Sampler: Euler, CFG scale: 9, Seed: 1015825498, Size: 512x512, Model hash: 4de704d8, Clip skip: 2
+extras
+Upscale: 4, visibility: 1.0, model:Lanczos
+```
