@@ -6,7 +6,7 @@
 
 - Assumption: *One consistent owner*.
 
-- First, [this](https://huggingface.co/Linaqruf/anything-v3.0) is just a mirror uploaded by a random anon. He contacted me already. That's all.
+- First, [this](https://huggingface.co/Linaqruf/anything-v3.0) is just a mirror uploaded by a random anon. He contacted me already. ~~That's all~~ [It will be gone](https://huggingface.co/Linaqruf/anything-v3.0/discussions/133) and [there will be a spiritual successor](https://huggingface.co/andite/anything-v4.0).
 
 - The real author is just a person who never involved in any international commuinities, and have no public apperance outside GFW, so he stayed myster for a long period of time. Even a [QQ-involved repo](https://github.com/lllyasviel/style2paints) once wrongly cited the person in HF. [Git issue](https://github.com/lllyasviel/style2paints/issues/205).
 
@@ -38,7 +38,7 @@
 
 - However, *due to an incident after the initial release of this article*, **some mystery remains** even I have gathered such amount of information. However it doesn't affect the proof, and the model in the HF mirror is still legit.
 
-- Also, just forget any future version (e.g. [v4](https://huggingface.co/andite/anything-v4.0)). Insider told me even v3.1 doesn't even published.
+- Also, just forget any future version. Insider told me even v3.1 doesn't even published.
 
 ![img/22102403-1663800267-512-512-8-256-20230110232907.png](img/22102403-1663800267-512-512-8-256-20230110232907.png)
 
