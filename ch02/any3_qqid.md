@@ -38,6 +38,8 @@
 
 - However, *due to an incident after the initial release of this article*, **some mystery remains** even I have gathered such amount of information. However it doesn't affect the proof, and the model in the HF mirror is still legit.
 
+- Also, just forget any future version (e.g. [v4](https://huggingface.co/andite/anything-v4.0)). Insider told me even v3.1 doesn't even published.
+
 ![img/22102403-1663800267-512-512-8-256-20230110232907.png](img/22102403-1663800267-512-512-8-256-20230110232907.png)
 
 ```

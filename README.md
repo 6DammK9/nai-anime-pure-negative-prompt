@@ -19,13 +19,14 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 - **Docuementry, journal and ranting.** Read for drama. Actually some of them are *primary sources*. 
 - ~~**Astolfo is a good boy.**~~
 - Beware of **random docuement style** because I don't have time to explain or even expand it.
+- Also beware [model hasing algorithm has been changed into SHA256 for entire model.](https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/a95f1353089bdeaccd7c266b40cdd79efedfe632) I'll use the new hash, but old hash remains (usually they are famous model isn't it?)
 
 ## Index ##
 **Too lazy to update constantly. Just iterlate the directories. You will find the pattern.**
 - [ch00](ch00/readme.md): ~~My content is probably not popular / legit and even completely non-sense. You shold leave if you want nice AI art.~~ Why I'm writing all these stuffs.
 - [ch01](ch01/readme.md): Common content across models. **Most theory / explaination / derive goes there.**
 - [ch02](ch02/readme.md): Model specific contents. **Assumed you've already read ch01 and know the context.**
-- ch03: (coming soon)
+- [ch03](ch03/readme.md): **Theme not decided yet.** Maybe situational articles.
 - [ch98](ch98/readme.md): Backup from discord server because I think it is not safe to leave them there forever.
 - [ch99](ch99/readme.md): Old segments. I didn't expect this repo draws stars and some attention. The format is being unsuitable again.
 
