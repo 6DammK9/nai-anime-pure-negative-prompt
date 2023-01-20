@@ -26,7 +26,7 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 - [ch00](ch00/readme.md): ~~My content is probably not popular / legit and even completely non-sense. You shold leave if you want nice AI art.~~ Why I'm writing all these stuffs.
 - [ch01](ch01/readme.md): Common content across models. **Most theory / explaination / derive goes there.**
 - [ch02](ch02/readme.md): Model specific contents. **Assumed you've already read ch01 and know the context.**
-- [ch03](ch03/readme.md): **Theme not decided yet.** Maybe situational articles.
+- [ch03](ch03/readme.md): **Data analysis.**  Usually involves model comparasion.
 - [ch98](ch98/readme.md): Backup from discord server because I think it is not safe to leave them there forever.
 - [ch99](ch99/readme.md): Old segments. I didn't expect this repo draws stars and some attention. The format is being unsuitable again.
 
