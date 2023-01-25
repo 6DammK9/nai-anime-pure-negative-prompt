@@ -4,6 +4,7 @@
         "model_ema.decay"
     ],
     "db": [],
+    "err": [],
     "kv": {
         "alphas_cumprod": 0.0,
         "alphas_cumprod_prev": 0.0,

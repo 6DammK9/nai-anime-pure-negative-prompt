@@ -1,6 +1,7 @@
 {
     "da": [],
     "db": [],
+    "err": [],
     "kv": {
         "decoder.conv_in.bias": 0.11401522904634476,
         "decoder.conv_in.weight": 0.6125987768173218,

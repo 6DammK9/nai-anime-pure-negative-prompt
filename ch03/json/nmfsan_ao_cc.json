@@ -1,6 +1,7 @@
 {
     "da": [],
     "db": [],
+    "err": [],
     "kv": {
         "model.diffusion_model.input_blocks.0.0.bias": 0.01856043189764023,
         "model.diffusion_model.input_blocks.0.0.weight": 0.17917442321777344,

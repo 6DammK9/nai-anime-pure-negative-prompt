@@ -4,6 +4,7 @@
         "model_ema.decay"
     ],
     "db": [],
+    "err": [],
     "kv": {
         "cond_stage_model.transformer.text_model.embeddings.position_embedding.weight": 0.0015784288989380002,
         "cond_stage_model.transformer.text_model.embeddings.position_ids": 0.027713105082511902,
