@@ -21,3 +21,8 @@
 - [Where is the bleach?](https://t.me/StableDiffusion_CN/625588) [However there is visualization tools.](https://github.com/hnmr293/stable-diffusion-webui-dumpunet) [There is always people interested.](https://medium.com/sfu-cspmp/unveiling-the-hidden-layers-of-neural-networks-6269615fb8a9) [Make sure what you're doing.](https://www.quora.com/Is-there-any-way-to-interpret-the-meanings-of-hidden-layers-and-reasoning-them-what-the-unit-values-account-for-possible-in-neural-network-learning)
 
 ![img/photo_2023-01-01_03-02-49.jpg](img/photo_2023-01-01_03-02-49.jpg)
+
+- [The bruteforced result (Layer 7) is not useful for other tasks...](https://huggingface.co/syaimu/7th_Layer), [even it is supported by another popular merge model (AOM2)...](https://huggingface.co/WarriorMama777/OrangeMixs)
+
+![img/0af5496675d3d85b8879bf46b3602b79e3a3c7c0160f98448b01c16b5242801f.png](img/0af5496675d3d85b8879bf46b3602b79e3a3c7c0160f98448b01c16b5242801f.png)
+
