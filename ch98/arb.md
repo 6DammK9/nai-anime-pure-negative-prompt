@@ -2,7 +2,12 @@
 
 先答你那個 "直圖" / "橫圖":
 - SD / DB 默認是跑 CenterCrop, 所以 BOOM
+
+然後 "ARB" (機制) 除了分 bucket:
+- Bucket 權重有做分配
+- RandomCrop 
 - Ref: https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/train_dreambooth.py
+- Ref: https://github.com/Mikubill/naifu-diffusion/blob/main/scripts/encode_to_latent.py
 
 ```py
 self.image_transforms = transforms.Compose(
@@ -15,9 +20,6 @@ self.image_transforms = transforms.Compose(
 )
 ```
 
-然後 "ARB" (機制) 除了分 bucket:
-- Bucket 權重有做分配
-- RandomCrop 
 - Ref: https://github.com/CCRcmcpe/scal-sdt/blob/main/modules/dataset/datasets.py
 
 ```py
