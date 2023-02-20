@@ -30,10 +30,10 @@
 ### Procedure (after prompt engineering) ###
 - Find a stable PC (RTX 2080ti with 33% TDP cap), count for expected time amount (6 hours), divide by large STEPS (STEP 256 batch 200).
 - **HAVE A GOOD SLEEP, OR A GOOD DAY.** ("generative art")
-- Cluster 200 images (glitched / missing detail / bad aesthetic / just not good enough etc.) and **pick at most best 20 images.** This requires extensive art sense. See [phil.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch98/phil.md) to try learn the formal aesthetic.
+- Cluster 200 images (glitched / missing detail / bad aesthetic / just not good enough etc.) and **pick at most best 20 images.** This requires extensive art sense. See [aesthetic.md](aesthetic.md) to try learn the formal aesthetic.
 - Post to Pixiv. Done.
 
-
+![img/104740639_p11.png](img/104740639_p11.png)
 
 ```
 parameters
