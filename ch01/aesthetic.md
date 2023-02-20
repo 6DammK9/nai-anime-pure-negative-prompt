@@ -1,4 +1,4 @@
-# Aesthetic Discussion #
+# Materials on aesthetic analysis #
 
 - If you denies the formal rules in art school, and parise for big data: [AVA](https://paperswithcode.com/sota/aesthetics-quality-assessment-on-ava), [WD](https://cafeai.notion.site/WD-1-5-Beta-Release-Notes-967d3a5ece054d07bb02cba02e8199b7).
 - Not watched but more CS approach: [MIT lecture video](https://www.youtube.com/watch?v=MABLFo7IV3I&t=8s&ab_channel=AliJahanian)
