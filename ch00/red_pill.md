@@ -27,7 +27,7 @@
 
 ## Blue pill (Photorealistic community) ##
 
-Why there is so many TG CN groups: As there are some sensitive LoRA and abusive use of [some models](https://huggingface.co/TASUKU2023/Chilloutmix), some big community groups has been shut down [img](img/Screenshot_2023-02-20-20-00-53-46_18fe6f119af5ae2c728d929083699df1.jpg) [img](Screenshot_2023-02-20-20-00-48-50_18fe6f119af5ae2c728d929083699df1.jpg).
+Why there is so many TG CN groups: As there are some sensitive LoRA and abusive use of [some models](https://huggingface.co/TASUKU2023/Chilloutmix), some big community groups has been shut down [img](img/Screenshot_2023-02-20-20-00-53-46_18fe6f119af5ae2c728d929083699df1.jpg) [img](img/Screenshot_2023-02-20-20-00-48-50_18fe6f119af5ae2c728d929083699df1.jpg) [img](img/photo_2023-02-22_01-11-17.jpg).
 
 - [ai绘画色图群](https://t.me/aisetu2333)
 - [AI绘画xp交流群](https://t.me/AIpainting)
