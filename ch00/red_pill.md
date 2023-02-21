@@ -25,6 +25,17 @@
 - ~~attacker~~ `ru`: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
 - Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)
 
+## Seperated Blue pill (Photorealistic) ##
+
+Why there is so many TG CN groups: As there are some sensitive LoRA and abusive use of [some models](https://huggingface.co/TASUKU2023/Chilloutmix), some big community groups has been shut down [img](img/Screenshot_2023-02-20-20-00-53-46_18fe6f119af5ae2c728d929083699df1.jpg) [img](Screenshot_2023-02-20-20-00-48-50_18fe6f119af5ae2c728d929083699df1.jpg).
+
+- [ai绘画色图群](https://t.me/aisetu2333)
+- [AI绘画xp交流群](https://t.me/AIpainting)
+- [元素法典 魔法交流群](https://t.me/+6Qj1Zr714ZI4OTRl)
+- [三次元讨论群](https://t.me/huatu3d)
+
+Note that "SDCN" is not categorized here.
+
 ## Before taking the red pill ##
 
 - **Here are just my original works. Not even a proper academic research!** Make sure you're skeptical on me.
