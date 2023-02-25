@@ -20,9 +20,19 @@
 - [A book on photography](https://baike.baidu.hk/item/攝影構圖學/12978052). Probably is a textbook somewhere.
 - [Wiki](https://en.wikipedia.org/wiki/Aesthetics#Computational_approaches)
 
+### Copied from somewhere else (Chinese) ###
+
+"為甚麼你會選擇現在才放上來" 
+"因为XXX算是真正有创作者思维的人" [Link](https://discord.com/channels/1033769426216046622/1033769426216046625/1078602594143961118)
+
+- https://b23.tv/HvgtLiT
+- https://b23.tv/32OvDkn
+- https://b23.tv/4sS6bum
+- https://b23.tv/Fm5QctS
+- https://b23.tv/KaqMg2R 
+
 ### Archives (Will reorganize) ###
 - [ch98/phil.md](../ch98/phil.md)
-
 
 ### My theorey ###
 
