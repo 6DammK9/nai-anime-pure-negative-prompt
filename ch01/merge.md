@@ -6,7 +6,7 @@
 
 - Some explaination (how to use instead of why): [BlockMergeExplained](https://rentry.org/BlockMergeExplained)
 
-- Current meta: Merging multiple LoRAs. I don't know the procedure because I never do merging.
+- Current meta: Merging multiple LoRAs. I don't know the procedure because I never do either LoRA or merging.
 
 ### Nice merges ###
 
@@ -19,6 +19,21 @@
 - [Lawlas's yiffymix](https://huggingface.co/Airic/lawlas-yiff-mix): There is way too many speices to train. AI will get confused. [yiffy-e18](https://huggingface.co/Doubleyobro/yiffy-e18) is an example.
 
 - [AnythingV3](https://huggingface.co/Linaqruf/anything-v3.0): SOTA for hitting the perfect spot of the market desire.
+
+### Merge by attention blocks (exclusive) ###
+
+- [Swapping attention per layers](https://gist.github.com/crosstyan/95d14111e8e1eeb3348ef947818b338f) [ref](https://github.com/CCRcmcpe/scal-sdt/blob/e3e6a945fccb04245ad06b4ea1983852a93c7ea6/ckpt_tool.py#L254-L347). 
+
+- [Some hints to perform such merge](https://t.me/StableDiffusion_CN/730058):
+```
+targets:
+  - index: ["attentions"]
+    targets:
+      - targets:
+          - index: ["attn1"]
+```
+
+- "CC" found that there is *no clear pattern* per model, as some models contribute by "FF", meanwhile some others are "sattn / xattn". [Twitter post](https://twitter.com/cross_tyan/status/1616437854208684036).
 
 ### Start ranting ###
 

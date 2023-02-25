@@ -6,7 +6,7 @@
 
 - Just [directly compare the images](https://towardsdatascience.com/image-similarity-with-deep-learning-c17d83068f59) based from a **common input with certain output**. "Maybe treat the blackbox as a [person](https://en.wikipedia.org/wiki/Personal_identity)". **I'm not talking about the strong AI. The task has been clearly specified.**
 
-- "CFG 1 = No CFG". Look for math derive [CN](https://kexue.fm/archives/9257/comment-page-1) [EN](https://benanne.github.io/2022/05/26/guidance.html). Minimal prompts = greatest degree on "viewing the prior implemented on the model". Aka "draw what AI has been learnt".
+- "CFG 1 = No CFG". Look for math derive [CN](https://kexue.fm/archives/9257/comment-page-1) [EN](https://benanne.github.io/2022/05/26/guidance.html). Minimal prompts = greatest degree on "viewing the prior implemented on the model". Aka "draw what AI has been learnt". See [prior.md](prior.md) for details.
 
 - Now here is the **ground truth from the famous model**:
 
@@ -26,4 +26,6 @@ Steps: 256, Sampler: Euler, CFG scale: 1, Seed: 1337, Size: 512x512, Model hash:
 
 - You may see text / capes / human face / resturant with open kitchen / chairs etc. Given such variety on the interpreption of an "abstract art", the similarity is a lot more obvious to understand without looking for figures.
 
-- However, no conclusion is derived ~~(cannot be derived actually?)~~ because I am not intereseted on it. [Focus on real artist instead.](https://arxiv.org/abs/2212.03860). Given a score metric, what will be the threshold value to accuse? There is no [DAC control](https://en.wikipedia.org/wiki/Discretionary_access_control) for an AI model. Just move on.
+- There is some [research on forgery](https://arxiv.org/abs/2212.03860)on investigaing such effect, and some attempts of [DAC control](https://en.wikipedia.org/wiki/Discretionary_access_control) such as [GLAZE](https://arxiv.org/abs/2212.03860) has been proposed, but looks like there is no definitive mehods to justify such issue.
+
+- [mega_cmp_v3](../ch03/mega_cmp_v3.ipynb) will be based from this method.
