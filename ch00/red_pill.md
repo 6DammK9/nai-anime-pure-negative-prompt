@@ -9,6 +9,7 @@
 - Search for "元素法典" for prompt samples. Same as "tag".
 - Looking for models? [AI绘画模型博物馆](https://aimodel.subrecovery.top/)
 - Similar to [SD RESOURCE GOLDMINE](https://rentry.org/sdgoldmine)
+- "Stashes" [SD - WebUI 资源站](123114514.xyz)
 
 ## Blue pill (General community) ##
 
