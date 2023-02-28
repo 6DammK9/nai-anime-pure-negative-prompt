@@ -33,6 +33,7 @@ Why there is so many TG CN groups: As there are some sensitive LoRA and abusive 
 - [AI绘画xp交流群](https://t.me/AIpainting)
 - [元素法典 魔法交流群](https://t.me/+6Qj1Zr714ZI4OTRl)
 - [三次元讨论群](https://t.me/huatu3d)
+- [AI Stable Diffusion [1011 Pic Share]](uggcf://g.zr/NV_FgnoyrQvsshfvba_Ybyv) **ROT13**
 
 Note that "SDCN" is not categorized here.
 
