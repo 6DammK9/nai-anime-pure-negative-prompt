@@ -16,6 +16,13 @@ ACertainsStrategyTalk](https://huggingface.co/spaces/JosephusCheung/ACertainsStr
 - [ACertainDraft](https://huggingface.co/JosephusCheung/Draft). A model [trained with AIGC](https://arxiv.org/abs/2210.07574) to "make it mathically not like NAI".
 ![img/grid-0087.jpg](img/grid-0087.jpg)
 
+- [ABPModel](https://huggingface.co/Crosstyan/BPModel/blob/main/NMFSAN/README.md)
+ep99. "No human".
+![img/grid-0298.jpg](img/grid-0298.jpg)
+
+- [ACertainThing](https://huggingface.co/JosephusCheung/ACertainThing). A model [trained with AIGC](https://arxiv.org/abs/2210.07574) to "make it more overfitting".
+![img/grid-0294.jpg](img/grid-0294.jpg)
+
 ## Procedure (V1) ##
 
 - Assumed that you've already found the optimal CFG / STEP combination. Otherwise you may never able to get any valid image.
