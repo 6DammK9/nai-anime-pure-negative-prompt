@@ -1,5 +1,46 @@
 # Merging models #
 
+### Current materials before ranting ###
+
+- Merge with any recognizable patterns: [sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger)
+
+- Some explaination (how to use instead of why): [BlockMergeExplained](https://rentry.org/BlockMergeExplained)
+
+- Current meta: Merging multiple LoRAs. I don't know the procedure because I never do either LoRA or merging.
+
+- Great potential: Select best merging hyperparameters by Reinforcement Learning [Medium article](https://medium.com/@media_97267/the-automated-stable-diffusion-checkpoint-merger-autombw-44f8dfd38871) [sdweb-auto-MBW](https://github.com/Xerxemi/sdweb-auto-MBW). Note: Score metric may not fit everybody. It may ne
+
+### Nice merges ###
+
+- [Chilloutmix](https://huggingface.co/TASUKU2023/Chilloutmix): Cosplay model. However there is no cosplayer in dataset. Just merging "real photo" and "anime" together.
+
+- [AbyssOrangeMix2](https://huggingface.co/WarriorMama777/OrangeMixs#abyssorangemix2_nsfw-aom2n): Realistic anime style. More focus on muscle and proportions, which is lack in most anime models. Merging "real photo" and "anime" also.
+
+- [PastelMix](https://huggingface.co/andite/pastel-mix): At least there is a clear theme, without owning the dataset.
+
+- [Lawlas's yiffymix](https://huggingface.co/Airic/lawlas-yiff-mix): There is way too many speices to train. AI will get confused. [yiffy-e18](https://huggingface.co/Doubleyobro/yiffy-e18) is an example.
+
+- [AnythingV3](https://huggingface.co/Linaqruf/anything-v3.0): SOTA for hitting the perfect spot of the market desire.
+
+- [SD-Silicon](https://huggingface.co/Xynon/SD-Silicon): A model using auto RL to select merging hyperparameters.
+
+### Merge by attention blocks (exclusive) ###
+
+- [Swapping attention per layers](https://gist.github.com/crosstyan/95d14111e8e1eeb3348ef947818b338f) [ref](https://github.com/CCRcmcpe/scal-sdt/blob/e3e6a945fccb04245ad06b4ea1983852a93c7ea6/ckpt_tool.py#L254-L347). 
+
+- [Some hints to perform such merge](https://t.me/StableDiffusion_CN/730058):
+```
+targets:
+  - index: ["attentions"]
+    targets:
+      - targets:
+          - index: ["attn1"]
+```
+
+- "CC" found that there is *no clear pattern* per model, as some models contribute by "FF", meanwhile some others are "sattn / xattn". [Twitter post](https://twitter.com/cross_tyan/status/1616437854208684036).
+
+### Start ranting ###
+
 - We had a hard tome to find something related. [Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time](https://arxiv.org/abs/2203.05482)
 
 - Oh my god there is some discussion. [Robust fine-tuning of zero-shot models](https://arxiv.org/abs/2109.01903)

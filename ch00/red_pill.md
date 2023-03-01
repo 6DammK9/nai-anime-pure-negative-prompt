@@ -9,8 +9,9 @@
 - Search for "元素法典" for prompt samples. Same as "tag".
 - Looking for models? [AI绘画模型博物馆](https://aimodel.subrecovery.top/)
 - Similar to [SD RESOURCE GOLDMINE](https://rentry.org/sdgoldmine)
+- "Stashes" [SD - WebUI 资源站](123114514.xyz)
 
-## More Blue pill (commiunity) ##
+## Blue pill (General community) ##
 
 - **Some official discord may be omitted. Use [i18n code](https://github.com/ladjs/i18n-locales) instead of natural language.**
 - (Advanced) AI Art `zh`: [場外AI繪圖討論區](https://discord.gg/k57gkxWgev) 
@@ -24,6 +25,33 @@
 - ~~victim~~ `ru`: [Novel AI](https://t.me/Novel_AI_Group)
 - ~~attacker~~ `ru`: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
 - Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)
+
+## Blue pill (Photorealistic community) ##
+
+Why there is so many TG CN groups: As there are some sensitive LoRA and abusive use of [some models](https://huggingface.co/TASUKU2023/Chilloutmix), some big community groups has been shut down [img](img/Screenshot_2023-02-20-20-00-53-46_18fe6f119af5ae2c728d929083699df1.jpg) [img](img/Screenshot_2023-02-20-20-00-48-50_18fe6f119af5ae2c728d929083699df1.jpg) [img](img/photo_2023-02-22_01-11-17.jpg).
+
+- [ai绘画色图群](https://t.me/aisetu2333)
+- [AI绘画xp交流群](https://t.me/AIpainting)
+- [元素法典 魔法交流群](https://t.me/+6Qj1Zr714ZI4OTRl)
+- [三次元讨论群](https://t.me/huatu3d)
+- [AI Stable Diffusion [Ybyv Pic Share]](https://t.me/AI_StableDiffusion_Ybyv) **ROT13**
+
+Note that "SDCN" is not categorized here.
+
+## Blue pill (AI art platform) ## 
+
+Definitely not Pixiv.
+
+- `jp`: [AIPIC](https://ai-arts-iota.vercel.app/zh)
+- `kr`: [NOVELLAL.IO](https://novelai.io/)
+- `en`: [Prompt Search](https://ptsearch.info/)
+- `en`: [Draft](https://draft.art/)
+- `jp`: [MajinAI](https://majinai.art/)
+- `jp`: [Aivy](https://aivy.run/)
+- `jp`: [chichi-pui（ちちぷい](https://www.chichi-pui.com/)
+- `en`: [AIBooru](https://aibooru.online/)
+- `kr`: [PixAI](https://pixai.art/)
+- `jp`: [AIピクターズ](https://www.aipictors.com/)
 
 ## Before taking the red pill ##
 
