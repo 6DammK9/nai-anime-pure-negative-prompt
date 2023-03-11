@@ -22,7 +22,7 @@
 
 - [AnythingV3](https://huggingface.co/Linaqruf/anything-v3.0): SOTA for hitting the perfect spot of the market desire.
 
-- [SD-Silicon](https://huggingface.co/Xynon/SD-Silicon): A model using auto RL to select merging hyperparameters.
+- [Bayesian Merger](https://github.com/s1dlx/sd-webui-bayesian-merger), [SD-Silicon](https://huggingface.co/Xynon/SD-Silicon): A model using auto RL to select merging hyperparameters.
 
 ### Merge by attention blocks (exclusive) ###
 
