@@ -36,9 +36,19 @@
 
 ![img/IMG_6805.png](img/IMG_6805.jpg)
 
-- However, *due to an incident after the initial release of this article*, **some mystery remains** even I have gathered such amount of information. However it doesn't affect the proof, and the model in the HF mirror is still legit.
+- However, *due to an incident after the initial release of this article*, ~~**some mystery remains** even I have gathered such amount of information.~~ It is resolved after the release of AnythingV5. However it doesn't affect the proof, and the model in the HF mirror is still legit.
 
-- Also, just forget any future version. Insider told me even v3.1 doesn't even published.
+- ~~Also, just forget any future version.~~ Insider told me even v3.1 doesn't even published.
+
+- [With the suprising official successor AnythingV5](https://civitai.com/models/9409/anything-v5-or-anything-diffusion-original), the identity in Civitai should be a lot certain. Note that the icon / metadata still matches.
+
+![img/IMG_7607.png](img/IMG_7607.jpg)
+
+![img/IMG_7617.png](img/IMG_7617.jpg)
+
+- With the [confirmation on one of his LoRA](https://civitai.com/models/22870/or-refrigerator-sticker-style), ~~smurf QQ accounts exists (proof left for exercise).~~ *OPSEC intensifies.*
+
+![img/2023-04-02-131072.png](img/2023-04-02-131072.png)
 
 ![img/22102403-1663800267-512-512-8-256-20230110232907.png](img/22102403-1663800267-512-512-8-256-20230110232907.png)
 

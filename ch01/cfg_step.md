@@ -10,13 +10,13 @@
 ```
 
 - Sampler: Euler (Momentum based, smooth curve.)
-- SEED: 1337 (Or any seed you can see legit images on "initial setting")
+- SEED: ~~1337~~ 4015663762 (Or any seed you can see legit images on "initial setting")
 - Initial settings: **CFG 7, STEP 48** (Most models should work)
 
 - STEP (512x512): `4,6,8,12,16,24,32,48,64,96,128,192` (Exponential scale)
 - CFG (512x512): `1,2,3,4,5,6,7,8,9,10,11,12` (Linear scale)
 
-- STEP (512x512): `48,64,96` (Exponential scale
+- STEP (512x512): `48,64,96` (Exponential scale)
 - CFG (768x768): `11.0,11.5,12.0,12.5,13.0,13.5` (2.25 * "512x512")
 - CFG (768x768): `13.5,15.0,16.0,18.0,20.0` (2.25 * "512x512")
 
@@ -24,7 +24,7 @@
 - Use "initial settings" to search "SEED".
 - XY-prompt, size 512x512, STEPxCFG.
 - Choose the optimal setting for *reconizable and legit objects*.
-- Usual result: **CFG 6-8, STEP 48-96.** (some biased models may hit CFG 3-4)
+- Usual result: **CFG 6-8, STEP 48-96.** (some biased / well trained models may hit as low as 2)
 - Repeat for 768x768. **Usually 2-2.25x CFG in 512x512.** (maybe 1x if there is prompt fillers)
 - *Or just choose what you think is good.*
 
@@ -52,3 +52,18 @@
 - [bp_nman_e29](https://huggingface.co/Crosstyan/BPModel/blob/main/NMFSAN/README.md)
 - Result: **CFG 5, STEP 64**.
 ![img/xy_grid-0104-2758110372-6528-6221-9-64-20230109001426.jpg](img/xy_grid-0104-2758110372-6528-6221-9-64-20230109001426.jpg)
+
+### Example (very hard) ###
+
+- [VBP2.2](https://t.me/StableDiffusion_CN/924998)
+- Result: **CFG 3, STEP 48**. Yep just try segmentation by yourself.
+![img/xyz_grid-0012-4015663762-6528-6221-3-64-20230312023717](img/xyz_grid-0012-4015663762-6528-6221-3-64-20230312023717)
+
+- Somehow I tried CFG 5 / 7 for 768x768:
+![img/xyz_grid-0017-2389211285-2880-2411-3-128-20230312040517.jpg](img/xyz_grid-0017-2389211285-2880-2411-3-128-20230312040517.jpg)
+
+### Example (very hard) ###
+
+- [AnythingV5](https://civitai.com/models/9409/anything-v5-or-anything-diffusion-original)
+- Result: **CFG 2, STEP 24**. Later I use CFG 4.5 in 768 x 768, which is so low.
+![img/xyz_grid-0028-4015663762-6528-6221-1.0-4-20230329001216.jpg](img/xyz_grid-0028-4015663762-6528-6221-1.0-4-20230329001216.jpg)

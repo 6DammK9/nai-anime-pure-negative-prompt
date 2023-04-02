@@ -30,7 +30,7 @@
 (bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)(,:1.5)(bad:0)
 ```
 
-- From the original 18 long words, to my own single word (down to token).
+- From the original 18 long words, to my own 9 single word (down to token). *It will produce random images.*
 
 ```
 (bad:0), (comic:0), (cropped:0), (error:0), (extra:0), (low:0), (lowres:0), (speech:0), (worst:0)
@@ -41,6 +41,17 @@
 ```
 (_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_:0)
 ```
+
+- From the "9 single word", to the "2 + 8" after dealing with [WD 1.5 Beta 2 - Frost Aesthetic Ver.](https://huggingface.co/waifu-diffusion/wd-1-5-beta2-extra). *Instead of random images, it will generate logos.*
+
+```
++ve
+(aesthetic:0), (quality:0)
+-ve
+(worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0)
+```
+
+- **My base prompt are usually from either the "9 words" or the "8 + 2 words". **
 
 ### Image to make it not 100% boring ###
 
