@@ -30,6 +30,6 @@ Steps: 256, Sampler: Euler, CFG scale: 4.8, Seed: 3190768820, Size: 1024x576, Mo
 - To choose the hyperparameter (I2I denoise ratio), it depends on model, as most people are saying 0.5 is fine, but I need 0.7:
 
 |Denoise ratio|Too low|Just right|Too high|Absolute value|
-|---|---|---|---|
+|---|---|---|---|---|
 |My case|0.5|0.7|0.9|0.95|
 |Observation|Blurry image|Consistant content, with some fused area fixed|Inconsistant content, some details are changed|Another image, kind of interpolate|
