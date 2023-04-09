@@ -27,3 +27,9 @@ Steps: 256, Sampler: Euler, CFG scale: 4.8, Seed: 3190768820, Size: 1024x576, Mo
 - Therefore, instead of "fixing images in Hi-Res", **it also "fixing corrupted details in original dimension".** To decide if it is "corrupted details", you can look for an area if it is *fused and blurred*, like not being sampling well in the original T2I process. However this case is rarly seen with popular "human portrait", which would be easily overlooked. 
 - One of the possible use case would be "2x latent upscale + 2x oridinary upscaler" instead of directly "4x upscaler". The image will be fixed with *both latent content and image  noise*. Latent upscaling doesn't always "fix" stuffs, you still need to familiar with the probilities estimation with new introduced hyperparameter (my case is denoising 0.7 instead of 0.5, which 0.5 produce blurry images, but 0.9 may alter the contents.)
 - If you prefer full body image, standing, but in landscape image, because of sceanary or wide objects, this would be a handy fix to increase yield. For this case, yield increase *from "1 out of 200" to "1 out of 2"*. However, **it is an expansive fix, with average 8x time per image.** If the yield is high (1/8 obviously), just discard the image and keep rolling.
+- To choose the hyperparameter (I2I denoise ratio), it depends on model, as most people are saying 0.5 is fine, but I need 0.7:
+
+|Denoise ratio|Too low|Just right|Too high|Absolute value|
+|---|---|---|---|
+|My case|0.5|0.7|0.9|0.95|
+|Observation|Blurry image|Consistant content, with some fused area fixed|Inconsistant content, some details are changed|Another image, kind of interpolate|
