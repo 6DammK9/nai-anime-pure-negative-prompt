@@ -1,5 +1,9 @@
 # Merging models #
 
+### Blue pill ###
+
+- [Articles in Rentry](https://rentry.org/RentrySD/#11112-extensions-for-model-merging)
+
 ### Current materials before ranting ###
 
 - Merge with any recognizable patterns: [sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger)
@@ -52,6 +56,8 @@ targets:
 - [The SD related repo. Not even merged into webui](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion)
 
 - [Some related discussion.](https://discord.com/channels/1038249716149928046/1038278959315570758/1042529239662084116)
+
+- [JP artocle.](https://wikiwiki.jp/sd_toshiaki/Checkpoint%20Merger) [The GUI.](https://github.com/diStyApps/Merge-Stable-Diffusion-models-without-distortion-gui) 
 
 ### Start ranting ###
 
