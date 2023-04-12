@@ -39,6 +39,16 @@ targets:
 
 - "CC" found that there is *no clear pattern* per model, as some models contribute by "FF", meanwhile some others are "sattn / xattn". [Twitter post](https://twitter.com/cross_tyan/status/1616437854208684036).
 
+### Random mentions because I cannot find all the references ###
+
+- [Docuement in Official repo.](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#checkpoint-merger)
+
+- [The paper I'm trying to relate. Should be related to a uncited webui extension](https://arxiv.org/abs/2209.04836)
+
+- [Twitter post to figur out the timeline](https://twitter.com/moyix/status/1581390268368302080)
+
+- [Paper's code (Not related to SD)](https://github.com/samuela/git-re-basin)
+
 ### Start ranting ###
 
 - We had a hard tome to find something related. [Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time](https://arxiv.org/abs/2203.05482)
