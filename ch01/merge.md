@@ -39,15 +39,19 @@ targets:
 
 - "CC" found that there is *no clear pattern* per model, as some models contribute by "FF", meanwhile some others are "sattn / xattn". [Twitter post](https://twitter.com/cross_tyan/status/1616437854208684036).
 
-### Random mentions because I cannot find all the references ###
+### The original and eatly stage on merging ###
 
-- [Docuement in Official repo.](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#checkpoint-merger)
+- [Docuement in Official repo.](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#checkpoint-merger) 
 
-- [The paper I'm trying to relate. Should be related to a uncited webui extension](https://arxiv.org/abs/2209.04836)
+### The mergin method that was forgotten (nice try?) ###
+
+- [Cross-Domain Few-Shot Learning with Meta Fine-Tuning.](https://arxiv.org/abs/2209.04836) Note: Not designed for SD!
 
 - [Twitter post to figur out the timeline](https://twitter.com/moyix/status/1581390268368302080)
 
-- [Paper's code (Not related to SD)](https://github.com/samuela/git-re-basin)
+- [The SD related repo. Not even merged into webui](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion)
+
+- [Some related discussion.](https://discord.com/channels/1038249716149928046/1038278959315570758/1042529239662084116)
 
 ### Start ranting ###
 
