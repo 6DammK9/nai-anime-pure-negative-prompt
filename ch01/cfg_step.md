@@ -1,8 +1,14 @@
-# Common content across models #
+# CFG-STEP scan #
 
-## CFG-STEP scan ##
+- [Do not read because it's my rant.](../ch98/cfg.md)
+
+- [Diffusion Models — DDPMs, DDIMs, and Classifier Free Guidance](https://betterprogramming.pub/diffusion-models-ddpms-ddims-and-classifier-free-guidance-e07b297b2869#5cf1)
+
+- This "scan" (procedure) aims to find the sweet spot for the balance between "richness of content" and "obediance for prompts". Although both score](https://en.wikipedia.org/wiki/Fr%C3%A9chet_inception_distance) and [subjective justification](https://pubmed.ncbi.nlm.nih.gov/26903834/) are not effective or accurate to evaluate the performance of a model, they are the best obtainable and interpretable information without relying or waiting for external judgement, which changes constantly.
 
 - Perform this procedure when you received a new moedel. CFG depends on the model and the trained dataset, why will be hard to determince once you include prompts to "guide the model".
+
+- In rare occurance (e.g. [ALunarDream V1.5](https://huggingface.co/lunachan/ALunarDream)), you may find the "scan results" contains multiple kinds of content. For example, both anime and realistic images (not posted because of NSFW).
 
 - Prompt: Just the **minimal prompt which can generate legit images** (e.g. reconizable objects)
 ```
