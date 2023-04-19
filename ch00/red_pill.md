@@ -9,7 +9,7 @@
 - Search for "元素法典" for prompt samples. Same as "tag".
 - Looking for models? [AI绘画模型博物馆](https://aimodel.subrecovery.top/)
 - Similar to [SD RESOURCE GOLDMINE](https://rentry.org/sdgoldmine)
-- "Stashes" [SD - WebUI 资源站](123114514.xyz)
+- "Stashes" [SD - WebUI 资源站](https://www.123114514.xyz/)
 
 ## Blue pill (General community) ##
 
@@ -17,10 +17,10 @@
 - (Advanced) AI Art `zh`: [場外AI繪圖討論區](https://discord.gg/k57gkxWgev) 
 - (General) AI Art `zh`: [鳥巢AI 藝術學園](https://discord.gg/gUSqkYE7)
 - AI detector `en/ko`: [Illuminarty](https://discord.gg/YeTYaUe8)
-- AI general (with legal and debate)  `ja`: [AI 絵作り研究会](https://discord.gg/ai-art)
-- AI application developer based `en`: [Shinonome AI Lab](https://discord.gg/RcRKUMu5)
+- AI general (with legal and debate)  `ja`: [AI 絵作り研究会](https://discord.gg/ai-jp)
+- AI application developer based `en`: ~~Shinonome AI Lab~~ [sail](https://discord.gg/TXW8tAvU)
 - Waifu Diffusion `en/ja`: [東方Project AI](https://discord.gg/touhouai)
-- Pure debate server `ja`: [議論一般チャンネル](https://discord.gg/xpjUU2nK)
+- Pure debate server `ja`: [議論一般チャンネル](https://discord.gg/HjYRv2rZ)
 - 2b2t `zh`: [SDCN](https://t.me/StableDiffusion_CN)
 - ~~victim~~ `ru`: [Novel AI](https://t.me/Novel_AI_Group)
 - ~~attacker~~ `ru`: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
