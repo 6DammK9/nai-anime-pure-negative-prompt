@@ -33,3 +33,9 @@ Steps: 256, Sampler: Euler, CFG scale: 4.8, Seed: 3190768820, Size: 1024x576, Mo
 |---|---|---|---|---|
 |My case|0.5|0.7|0.9|0.95|
 |Observation|Blurry image|Consistant content, with some fused area fixed|Inconsistant content, some details are changed|Another image, kind of interpolate|
+
+- "CBP", another 1024 ARB model.
+
+![img/xyz_grid-0047-263326320-16896-1773-4.5-48-20230428221606.jpg](img/xyz_grid-0047-263326320-16896-1773-4.5-48-20230428221606.jpg)
+
+![img/2210194-263326320-768-768-4.5-256-20230428215526.png](img/2210194-263326320-768-768-4.5-256-20230428215526.png)
