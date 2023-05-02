@@ -36,16 +36,20 @@
 - 2b2t `zh`: [SDCN](https://t.me/StableDiffusion_CN)
 - ~~victim~~ `ru`: [Novel AI](https://t.me/Novel_AI_Group)
 - ~~attacker~~ `ru`: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
-- Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)
+- Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)- 
+- FB, Average `en`: [Stable Diffusion AI ( HK 香港 )](https://www.facebook.com/groups/401633922161662/)
+- FB, Active `zh`: [Stable Diffusion 台灣社群v2](https://www.facebook.com/groups/619813739922551/)
 
 ## Blue pill (Photorealistic community) ##
 
 Why there is so many TG CN groups: As there are some sensitive LoRA and abusive use of [some models](https://huggingface.co/TASUKU2023/Chilloutmix), some big community groups has been shut down [img](img/Screenshot_2023-02-20-20-00-53-46_18fe6f119af5ae2c728d929083699df1.jpg) [img](img/Screenshot_2023-02-20-20-00-48-50_18fe6f119af5ae2c728d929083699df1.jpg) [img](img/photo_2023-02-22_01-11-17.jpg).
 
-- [ai绘画色图群](https://t.me/aisetu2333)
-- [AI绘画xp交流群](https://t.me/AIpainting)
-- [元素法典 魔法交流群](https://t.me/+6Qj1Zr714ZI4OTRl)
-- [三次元讨论群](https://t.me/huatu3d)
+- TG, Active `zh`: [ai绘画色图群](https://t.me/aisetu2333)
+- TG, Inactive `zh`: [AI绘画xp交流群](https://t.me/AIpainting)
+- TG, Inactive `zh`: [元素法典 魔法交流群](https://t.me/+6Qj1Zr714ZI4OTRl)
+- TG, Average `zn`: [三次元讨论群](https://t.me/huatu3d)
+- TG, Active `zh`: [AI乐园](https://t.me/majicplayground)
+- TG, R18G `zh`: [令人不安的AI](https://t.me/+YEB-REeOIFRmNGRl)- 
 - ~~[AI Stable Diffusion [Ybyv Pic Share]](https://t.me/AI_StableDiffusion_Ybyv)~~  **ROT13**
 
 Note that "SDCN" is not categorized here.
