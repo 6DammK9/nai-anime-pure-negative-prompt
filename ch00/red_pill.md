@@ -12,6 +12,17 @@
 - "Stashes" [SD - WebUI 资源站](https://www.123114514.xyz/)
 - "Stashes" but encrypted [PCIA](https://huggingface.co/Cinnamomo/pcia)
 
+## Blue pill (Variants) ##
+
+- [VLAD Diffusion](https://github.com/vladmandic/automatic), [EN article](https://generativeai.pub/complete-guide-to-vlad-diffusion-installation-an-automatic1111-alternative-for-stable-diffusion-25b43fbc67e7), [CN article](https://zhuanlan.zhihu.com/p/624417721)
+- [ComgyUI](https://github.com/comfyanonymous/ComfyUI), [CN article](https://zhuanlan.zhihu.com/p/620297462)
+
+## Blue pill (一鍵安裝包) ##
+
+- **Just learn CLI and DIY!**
+- [A1111 WebUI Easy Installer and Launcher](https://github.com/EmpireMediaScience/A1111-Web-UI-Installer)
+- Super Easy AI Installer Tool: [Github](https://github.com/diStyApps/seait), [CivitAI](https://civitai.com/models/27574/super-easy-ai-installer-tool)
+
 ## Blue pill (General community) ##
 
 - **Some official discord may be omitted. Use [i18n code](https://github.com/ladjs/i18n-locales) instead of natural language.**
@@ -35,7 +46,7 @@ Why there is so many TG CN groups: As there are some sensitive LoRA and abusive 
 - [AI绘画xp交流群](https://t.me/AIpainting)
 - [元素法典 魔法交流群](https://t.me/+6Qj1Zr714ZI4OTRl)
 - [三次元讨论群](https://t.me/huatu3d)
-- [AI Stable Diffusion [Ybyv Pic Share]](https://t.me/AI_StableDiffusion_Ybyv) **ROT13**
+- ~~[AI Stable Diffusion [Ybyv Pic Share]](https://t.me/AI_StableDiffusion_Ybyv)~~  **ROT13**
 
 Note that "SDCN" is not categorized here.
 
