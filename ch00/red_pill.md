@@ -14,8 +14,8 @@
 
 ## Blue pill (Variants) ##
 
-- [VLAD Diffusion](https://github.com/vladmandic/automatic), [EN article](https://generativeai.pub/complete-guide-to-vlad-diffusion-installation-an-automatic1111-alternative-for-stable-diffusion-25b43fbc67e7), [CN article](https://zhuanlan.zhihu.com/p/624417721)
-- [ComgyUI](https://github.com/comfyanonymous/ComfyUI), [CN article](https://zhuanlan.zhihu.com/p/620297462)
+- [VLAD Diffusion](https://github.com/vladmandic/automatic): [EN article](https://generativeai.pub/complete-guide-to-vlad-diffusion-installation-an-automatic1111-alternative-for-stable-diffusion-25b43fbc67e7), [CN article](https://zhuanlan.zhihu.com/p/624417721)
+- [ComgyUI](https://github.com/comfyanonymous/ComfyUI): [CN article](https://zhuanlan.zhihu.com/p/620297462)
 
 ## Blue pill (一鍵安裝包) ##
 
