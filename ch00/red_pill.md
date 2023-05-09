@@ -44,12 +44,13 @@
 
 Why there is so many TG CN groups: As there are some sensitive LoRA and abusive use of [some models](https://huggingface.co/TASUKU2023/Chilloutmix), some big community groups has been shut down [img](img/Screenshot_2023-02-20-20-00-53-46_18fe6f119af5ae2c728d929083699df1.jpg) [img](img/Screenshot_2023-02-20-20-00-48-50_18fe6f119af5ae2c728d929083699df1.jpg) [img](img/photo_2023-02-22_01-11-17.jpg).
 
-- TG, Active `zh`: [ai绘画色图群](https://t.me/aisetu2333)
+- TG, Active `zh`: [丹鼎派炼丹房](https://t.me/aisetu2333)
 - TG, Inactive `zh`: [AI绘画xp交流群](https://t.me/AIpainting)
 - TG, Inactive `zh`: [元素法典 魔法交流群](https://t.me/+6Qj1Zr714ZI4OTRl)
 - TG, Average `zn`: [三次元讨论群](https://t.me/huatu3d)
-- TG, Active `zh`: [AI乐园](https://t.me/majicplayground)
-- TG, R18G `zh`: [令人不安的AI](https://t.me/+YEB-REeOIFRmNGRl)- 
+- ~~TG, Active `zh`: Deleted by request~~
+- ~~TG, R18G `zh`: Deleted by request~~
+- TG, Inactive `zh`: [AI绘图 福利群R18](https://t.me/AIaek86)
 - ~~[AI Stable Diffusion [Ybyv Pic Share]](https://t.me/AI_StableDiffusion_Ybyv)~~  **ROT13**
 
 Note that "SDCN" is not categorized here.
