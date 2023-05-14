@@ -12,7 +12,7 @@
 - "Stashes" [SD - WebUI 资源站](https://www.123114514.xyz/)
 - "Stashes" but encrypted [PCIA](https://huggingface.co/Cinnamomo/pcia)
 
-## Blue pill (Variants) ##
+## Blue pill (WebUI Variants) ##
 
 - [VLAD Diffusion](https://github.com/vladmandic/automatic): [EN article](https://generativeai.pub/complete-guide-to-vlad-diffusion-installation-an-automatic1111-alternative-for-stable-diffusion-25b43fbc67e7), [CN article](https://zhuanlan.zhihu.com/p/624417721)
 - [ComgyUI](https://github.com/comfyanonymous/ComfyUI): [CN article](https://zhuanlan.zhihu.com/p/620297462)
@@ -37,8 +37,9 @@
 - ~~victim~~ `ru`: [Novel AI](https://t.me/Novel_AI_Group)
 - ~~attacker~~ `ru`: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
 - Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)- 
-- FB, Average `en`: [Stable Diffusion AI ( HK 香港 )](https://www.facebook.com/groups/401633922161662/)
+- ~~FB, Average `en`: [Stable Diffusion AI ( HK 香港 )](https://www.facebook.com/groups/401633922161662/)~~
 - FB, Active `zh`: [Stable Diffusion 台灣社群v2](https://www.facebook.com/groups/619813739922551/)
+- FB, Active `zh`: [AIGC視覺藝創聯盟 ( 原 Midjourney AI 台灣社群 )](https://www.facebook.com/groups/1014779572745632/) 
 
 ## Blue pill (Photorealistic community) ##
 
@@ -69,6 +70,9 @@ Definitely not Pixiv.
 - `en`: [AIBooru](https://aibooru.online/)
 - `kr`: [PixAI](https://pixai.art/)
 - `jp`: [AIピクターズ](https://www.aipictors.com/)
+
+## Not red pill ##
+- [Someone focusing on video via SD](https://github.com/ReaLifecyborg/My-Stable-Diffusion-Notes)
 
 ## Before taking the red pill ##
 
