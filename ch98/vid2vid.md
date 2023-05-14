@@ -27,6 +27,7 @@
 
 - [volotat/SD-CN-Animation](https://github.com/volotat/SD-CN-Animation)
 - [VTuber 系的 vid2vid (解說)](https://note.com/alone1m/n/n5579c1b170c7)
+- [效果展示](https://twitter.com/kaizirod/status/1655420585714028551)
 
 ### "對練" 模型 (人家有 B 站) ###
 - [AC 系列](https://huggingface.co/JosephusCheung/ACertainty)
