@@ -1,4 +1,4 @@
-# ch98: Backuping contents from discord #
+# ch98: Uncatrgorized / backup contents from discord #
 
 I did it in hurry. Only broken Chinese / English which is almost gibberish to oridinary people.
 
@@ -9,3 +9,8 @@ I did it in hurry. Only broken Chinese / English which is almost gibberish to or
 - When lengthy prompt works: [77_token.md](77_token.md) 
 - Philosophy stuffs (Human value / aesthics / ambitious AI etc. mostly reading materials): [phil.md](phil.md)
 - Effectiveness of "Aspect Ratio Bucketing": [arb.md](arb.md)
+- A SoK on vid2vid(and seperate from text2vid): [vid2vid.md](vid2vid.md)
+
+These are created for... surviving in internet.
+- ["/purgeme"](purgeme.py)
+- [A list shouldn't exist](0299d.md)
