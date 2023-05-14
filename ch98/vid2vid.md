@@ -2,7 +2,7 @@
 
 ## Abstract ##
 
-- "Blue pill" 一枚. 因為格式問題, 暫時丟來 ch98.
+- "Blue pill" (極簡版 [SoK](https://blog.csdn.net/u010970698/article/details/109106690)) 一枚. 因為格式問題, 暫時丟來 ch98.
 - **大部份展示皆含代碼.**
 
 ## Introduction ##
