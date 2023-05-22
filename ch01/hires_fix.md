@@ -5,6 +5,7 @@
 - [Original description.](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#hires-fix)
 - [Hi-Res Fix in ComfyUI.](https://comfyanonymous.github.io/ComfyUI_examples/2_pass_txt2img/)
 - [Hi-Res Fix in a JP Blog.](https://kurokumasoft.com/2023/04/06/web-ui-hires-fix/)
+- [Hi-Res Fix in a Youtube video](https://youtu.be/hM1dRXYAGWw)
 
 ### My findings (Result first) ###
 
