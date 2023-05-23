@@ -23,14 +23,14 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 
 ## Index ##
 **Too lazy to update constantly. Just iterlate the directories. You will find the pattern.**
-- [ch00](ch00/readme.md): ~~My content is probably not popular / legit and even completely non-sense. You shold leave if you want nice AI art.~~ Why I'm writing all these stuffs.
-- [ch01](ch01/readme.md): Common content across models. **Most theory / explaination / derive goes there.**
-- [ch02](ch02/readme.md): Model specific contents. **Assumed you've already read ch01 and know the context.**
-- [ch03](ch03/readme.md): **Data analysis.**  Usually involves model comparasion.
-- [ch04](ch04/readme.md): *A (very dumb) batch script for multiple WebUI instances.*
-- [ch97](ch97/readme.md): **Uncategorized contents.** Usually "not article".
-- [ch98](ch98/readme.md): Backup from discord server because I think it is not safe to leave them there forever.
-- [ch99](ch99/readme.md): Old segments. I didn't expect this repo draws stars and some attention. The format is being unsuitable again.
+- [ch00](ch00): ~~My content is probably not popular / legit and even completely non-sense. You shold leave if you want nice AI art.~~ Why I'm writing all these stuffs.
+- [ch01](ch01): Common content across models. **Most theory / explaination / derive goes there.**
+- [ch02](ch02): Model specific contents. **Assumed you've already read ch01 and know the context.**
+- [ch03](ch03): **Data analysis.**  Usually involves model comparasion.
+- [ch04](ch04): *A (very dumb) batch script for multiple WebUI instances.*
+- [ch97](ch97): **Uncategorized contents.** Usually "not article".
+- [ch98](ch98): Backup from discord server because I think it is not safe to leave them there forever.
+- [ch99](ch99): Old segments. I didn't expect this repo draws stars and some attention. The format is being unsuitable again.
 
 ## So where to start? ##
 - Take the *blue pill* to return the major comminuty and continue drawing. Take the [red pill](ch00/red_pill.md) if you're prepared to my ~~observation with some legit ML / NLP / AI knowledge~~ complete non-sense (or somewhat closest to the ~~reality of bugs / expolits / [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior)~~ dystopia of the released AI models).
