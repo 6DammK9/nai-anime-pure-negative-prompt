@@ -16,7 +16,17 @@
 
 - Circulating in QQ: [MBW魔法密录02-14](https://t.me/StableDiffusion_CN/1083749)
 
+### Not "merge" but worth mentioning ###
+
+- [LoRA to complete model](https://github.com/kohya-ss/sd-scripts/blob/main/networks/merge_lora.py).
+
+- [LoCon / LyCORIS to complete model](https://github.com/KohakuBlueleaf/LyCORIS/blob/main/tools/merge.py).
+
+- Now "merging" is a *sustainable* act.
+
 ### Nice merges ###
+
+- [majicMIX realistic](https://civitai.com/models/43331/majicmix-realistic): Better cosplay model (series). The "chained" mix is great, covering nice models from all "dimensions".
 
 - [Chilloutmix](https://huggingface.co/TASUKU2023/Chilloutmix): Cosplay model. However there is no cosplayer in dataset. Just merging "real photo" and "anime" together.
 
