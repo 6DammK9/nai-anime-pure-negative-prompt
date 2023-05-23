@@ -8,8 +8,8 @@ Usually "not article".
 
 ## Scripts (surviving in the internet) ##
 
-- `purgeme.py`: "/purgeme"
-- `PixivDataAnalysis.py`: Statistics without Pixiv Premium
+- `purgeme.py`: "/purgeme". Related to [trojblue/telegram-scraper](https://github.com/trojblue/telegram-scraper) but not scraping.
+- `PixivDataAnalysis.py`: Statistics without Pixiv Premium. Prototype of [trojblue/pixivAnalytics](https://github.com/trojblue/pixivAnalytics).
 - `0299d.md`: A list shouldn't exist
 
 ## Scripts (manual scripts for webui) ##
