@@ -40,6 +40,8 @@
 - ~~FB, Average `en`: [Stable Diffusion AI ( HK 香港 )](https://www.facebook.com/groups/401633922161662/)~~
 - FB, Active `zh`: [Stable Diffusion 台灣社群v2](https://www.facebook.com/groups/619813739922551/)
 - FB, Active `zh`: [AIGC視覺藝創聯盟 ( 原 Midjourney AI 台灣社群 )](https://www.facebook.com/groups/1014779572745632/) 
+- Forum, Active `kr`: [AI 그림 채널](https://arca.live/b/aiart)
+- Blog, Active `zh`: [AI加速器社区](https://www.acceleratori.com/d/11152)
 
 ## Blue pill (Photorealistic community) ##
 
@@ -72,7 +74,8 @@ Definitely not Pixiv.
 - `jp`: [AIピクターズ](https://www.aipictors.com/)
 
 ## Not red pill ##
-- [Someone focusing on video via SD](https://github.com/ReaLifecyborg/My-Stable-Diffusion-Notes)
+- `en`: [ReaLifecyborg/My-Stable-Diffusion-Notes](https://github.com/ReaLifecyborg/My-Stable-Diffusion-Notes)
+- `jp`: [sp8999.log](https://sp8999.com/)
 
 ## Before taking the red pill ##
 

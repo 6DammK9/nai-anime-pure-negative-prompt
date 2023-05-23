@@ -1,4 +1,6 @@
-# Common content across models #
+# Chapter 01: Common content across models #
+
+General discovery. Theories, procedures, practices etc. However not model specific.
 
 - CFG-STEP scan: [cfg_step.md](cfg_step.md)
 - Prior scan: [prior.md](prior.md)

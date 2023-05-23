@@ -1,4 +1,4 @@
-# Chapter 0: Why and what to expect #
+# Chapter 00: Why and what to expect #
 
 Looks like you're really interested...
 

@@ -27,19 +27,13 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 - [ch01](ch01/readme.md): Common content across models. **Most theory / explaination / derive goes there.**
 - [ch02](ch02/readme.md): Model specific contents. **Assumed you've already read ch01 and know the context.**
 - [ch03](ch03/readme.md): **Data analysis.**  Usually involves model comparasion.
+- [ch04](ch04/readme.md): *A (very dumb) batch script for multiple WebUI instances.*
+- [ch97](ch97/readme.md): **Uncategorized contents.** Usually "not article".
 - [ch98](ch98/readme.md): Backup from discord server because I think it is not safe to leave them there forever.
 - [ch99](ch99/readme.md): Old segments. I didn't expect this repo draws stars and some attention. The format is being unsuitable again.
 
 ## So where to start? ##
-- Take the blue pill to return the major comminuty and continue drawing. Take the [red pill](ch00/red_pill.md) if you're prepared to my ~~observation with some legit ML / NLP / AI knowledge~~ complete non-sense (or somewhat closest to the ~~reality of bugs / expolits / [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior)~~ dystopia of the released AI models).
-
-## Scripts (manual scripts for webui) ##
-- `step.js [step] [split_comma]`: **I use it frequently.** Generate global static emphasis level on the prompts.
-- `node listseed [full_directory]`: Extract seeds inside the filenames, which reduce human error when iterlating mass image production. Use `[seed]-[width]-[height]-[cfg]-[steps]-[datetime]` as Settings > Images filename pattern.
-- `aspect512.js [w] [h]`: Find actual width / height with aspect ratio `w:h` under 512x512 px also in unit of 64px.
-
-## Scripts (broken shell scripts) ##
-- `anifusion2_win11_vscode_miniconda.sh`: Install Anifusion-SD with Win11 + conda. Run it line by line in manual.
+- Take the *blue pill* to return the major comminuty and continue drawing. Take the [red pill](ch00/red_pill.md) if you're prepared to my ~~observation with some legit ML / NLP / AI knowledge~~ complete non-sense (or somewhat closest to the ~~reality of bugs / expolits / [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior)~~ dystopia of the released AI models).
 
 ## Contact ##
 **Seriously? I'm no different than a random anon in this field.**
