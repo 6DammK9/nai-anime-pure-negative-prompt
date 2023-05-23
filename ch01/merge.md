@@ -18,7 +18,7 @@
 
 ### Not "merge" but worth mentioning ###
 
-- [LoRA to complete model](https://github.com/kohya-ss/sd-scripts/blob/main/networks/merge_lora.py).
+- [LoRA to complete model](https://github.com/kohya-ss/sd-scripts/blob/main/networks/merge_lora.py). [Video tutorial](https://www.youtube.com/watch?v=X-ZCRLBZbP0).
 
 - [LoCon / LyCORIS to complete model](https://github.com/KohakuBlueleaf/LyCORIS/blob/main/tools/merge.py).
 
