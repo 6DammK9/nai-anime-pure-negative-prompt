@@ -28,4 +28,4 @@ Note: I never use any of them. It is just some examples to intercept manually, i
 
 - [Github repo](https://github.com/XingangPan/DragGAN)
 
-- [Is a LDM (sort of)](https://kexue.fm/archives/9662
+- [Is a LDM (sort of)](https://kexue.fm/archives/9662)
