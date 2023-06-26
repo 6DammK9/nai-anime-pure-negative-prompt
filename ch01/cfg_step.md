@@ -2,6 +2,8 @@
 
 - [Do not read because it's my rant.](../ch98/cfg.md)
 
+- Not to be confused with [Dynamic CFG / CFG rescale](./dynamic_cfg.md). This article is to encourage user ~~artist~~ to actively **search exhaustively for hyperparameters**.
+
 - [Diffusion Models — DDPMs, DDIMs, and Classifier Free Guidance](https://betterprogramming.pub/diffusion-models-ddpms-ddims-and-classifier-free-guidance-e07b297b2869#5cf1)
 
 - This "scan" (procedure) aims to find the sweet spot for the balance between "richness of content" and "obediance for prompts". Although both score](https://en.wikipedia.org/wiki/Fr%C3%A9chet_inception_distance) and [subjective justification](https://pubmed.ncbi.nlm.nih.gov/26903834/) are not effective or accurate to evaluate the performance of a model, they are the best obtainable and interpretable information without relying or waiting for external judgement, which changes constantly.
