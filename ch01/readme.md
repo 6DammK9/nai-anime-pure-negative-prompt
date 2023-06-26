@@ -11,3 +11,4 @@ General discovery. Theories, procedures, practices etc. However not model specif
 - Materials on aesthetic analysis: [aesthetic.md](aesthetic.md)
 - Extended use cases on AI art drawings: [controlnet.md](controlnet.md)
 - Findings on "Hi-Res" fix: [hires_fix.md](hires_fix.md)
+- Findings on "Dynamic CFG / CFG rescale": [dynamic_cfg.md](dynamic_cfg.md)
