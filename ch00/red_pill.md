@@ -73,6 +73,13 @@ Definitely not Pixiv.
 - `kr`: [PixAI](https://pixai.art/)
 - `jp`: [AIピクターズ](https://www.aipictors.com/)
 
+## Blue pill (AI marketplace) ##
+
+- `zh`: [LiblibAI•哩布哩布AI](https://www.liblibai.com/)
+- `zh`: [吐司 Tusi.Art](https://tusi.art/)
+- `en`: ~~[Hugging Face](https://huggingface.co/)~~
+- `kr`: [Civitai](https://civitai.com/)
+
 ## Not red pill ##
 - `en`: [ReaLifecyborg/My-Stable-Diffusion-Notes](https://github.com/ReaLifecyborg/My-Stable-Diffusion-Notes)
 - `jp`: [sp8999.log](https://sp8999.com/)
