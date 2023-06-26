@@ -31,6 +31,6 @@
 - "You know your prompt". $std(x_pos)$ is an **unknown intrinsic property** ([example in computer vision](https://towardsdatascience.com/what-are-intrinsic-and-extrinsic-camera-parameters-in-computer-vision-7071b72fb8ec)) depends on prompts only. Meanwhile static CFG $std(x_cfg)$ is an **extrinsic property** depends on both model and prompts, which is a little bit more obvious.
 - Looks like my prompt (tons of "weight 0" trick) makes $std(x_pos)$ reachs 0, which make $\varphi=0.7$ invalidate. Meanwhile the common SD1.x model (heavily merged and finetuned) steers the optimal value more futher.
 
-![screencap-23062601.png]([./img/screencap-23062601.png)
+![screencap-23062601.png](./img/screencap-23062601.png)
 
 *Original images and prompts coming soon.*
