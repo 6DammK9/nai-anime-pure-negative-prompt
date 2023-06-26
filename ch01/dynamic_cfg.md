@@ -24,6 +24,8 @@
 
 ![IMG_9400.jpg](./img/IMG_9400.jpg)
 
+![xyz_grid-0061-3150724351-4320-3640-3.0-48-20230627003700.jpg](./img/xyz_grid-0061-3150724351-4320-3640-3.0-48-20230627003700.jpg)
+
 - For the "just right" value, I see the facial expresson is even more ~~irregular~~ natural, instead of something mediocore. ~~"Closer to the mean of a cluster."~~
 
 ## Down to the paper ##
@@ -33,4 +35,11 @@
 
 ![screencap-23062601.png](./img/screencap-23062601.png)
 
-*Original images and prompts coming soon.*
+```
+parameters
+(aesthetic:0), (quality:0), (solo:0), (boy:0), (astolfo:0.98)
+Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (breasts:0.5)
+Steps: 256, Sampler: Euler, CFG scale: 4.5, Seed: 1100683391, Size: 768x768, Model hash: f59359c175, Model: VBP23-1024-ep49, Denoising strength: 0.7, Clip skip: 2, Hires upscale: 2, Hires upscaler: Latent, CFG Rescale φ: 0.3, Version: v1.3.2-1-gaf2705ea
+```
+
+![230722-1100683391-1536-1536-4.5-256-20230625235720.png](./img/230722-1100683391-1536-1536-4.5-256-20230625235720.png)
