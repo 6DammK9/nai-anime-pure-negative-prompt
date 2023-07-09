@@ -37,7 +37,7 @@
 - ~~victim~~ `ru`: [Novel AI](https://t.me/Novel_AI_Group)
 - ~~attacker~~ `ru`: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
 - Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)- 
-- ~~FB, Average `en`: [Stable Diffusion AI ( HK 香港 )](https://www.facebook.com/groups/401633922161662/)~~
+- FB, Average `en`: [Stable Diffusion AI ( HK 香港 )](https://www.facebook.com/groups/401633922161662/) ~~Blocked my main account lol~~
 - FB, Active `zh`: [Stable Diffusion 台灣社群v2](https://www.facebook.com/groups/619813739922551/)
 - FB, Active `zh`: [AIGC視覺藝創聯盟 ( 原 Midjourney AI 台灣社群 )](https://www.facebook.com/groups/1014779572745632/) 
 - Forum, Active `kr`: [AI 그림 채널](https://arca.live/b/aiart)
