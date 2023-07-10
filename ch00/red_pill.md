@@ -80,6 +80,12 @@ Definitely not Pixiv.
 - `en`: ~~[Hugging Face](https://huggingface.co/)~~
 - `kr`: [Civitai](https://civitai.com/)
 
+## Not blue pill ##
+
+*Stolen from [internet](https://t.me/StableDiffusion_CN/1199467)*. I will recover and format the content if I have time (probably don't). Ignore the `zh` comments because *all platforms are similar.*
+
+![img/photo_2023-07-10_12-18-04.jpg](img/photo_2023-07-10_12-18-04.jpg)
+
 ## Not red pill ##
 - `en`: [ReaLifecyborg/My-Stable-Diffusion-Notes](https://github.com/ReaLifecyborg/My-Stable-Diffusion-Notes)
 - `jp`: [sp8999.log](https://sp8999.com/)
