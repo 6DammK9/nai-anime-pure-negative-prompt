@@ -16,7 +16,7 @@
 
 - Circulating in QQ: [MBW魔法密录02-14](https://t.me/StableDiffusion_CN/1083749), [模型基础理论](https://docs.qq.com/doc/p/a36aa471709d1cf5758151d68ef5b59397421b2e)
 
-- [Commentary by GhostShell, author of GhostMix](https://zhuanlan.zhihu.com/p/641434725), [description of GhostMix](https://zhuanlan.zhihu.com/p/632710727), just cite for docuemtary purpose.
+- [Commentary by GhostShell, author of GhostMix](https://zhuanlan.zhihu.com/p/641434725), [description of GhostMix](https://zhuanlan.zhihu.com/p/632710727), just cite for docuemtary purpose. [Bilibili mirror 1](https://www.bilibili.com/read/cv23963021?spm_id_from=333.999.list.card_opus.click), [Bilibili mirror 2](https://www.bilibili.com/read/cv23877039?spm_id_from=333.999.list.card_opus.click)
 
 ### Not "merge" but worth mentioning ###
 
