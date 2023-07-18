@@ -6,11 +6,14 @@ Usually "not article".
 
 - A SoK on vid2vid(and seperate from text2vid): [vid2vid.md](vid2vid.md)
 
+- A list shouldn't exist: [0299d.md](0299d.md)
+
+- A flowchart about current "APP" making use of "AI art" ~~definitely not face swap~~ : [swap_face_app.md](swap_face_app.md)
+
 ## Scripts (surviving in the internet) ##
 
 - `purgeme.py`: "/purgeme". Related to [trojblue/telegram-scraper](https://github.com/trojblue/telegram-scraper) but not scraping.
 - `PixivDataAnalysis.py`: Statistics without Pixiv Premium. Prototype of [trojblue/pixivAnalytics](https://github.com/trojblue/pixivAnalytics).
-- `0299d.md`: A list shouldn't exist
 
 ## Scripts (manual scripts for webui) ##
 
@@ -19,4 +22,5 @@ Usually "not article".
 - `aspect512.js [w] [h]`: Find actual width / height with aspect ratio `w:h` under 512x512 px also in unit of 64px.
 
 ## Scripts (broken shell scripts) ##
+
 - `anifusion2_win11_vscode_miniconda.sh`: Install Anifusion-SD with Win11 + conda. Run it line by line in manual.
