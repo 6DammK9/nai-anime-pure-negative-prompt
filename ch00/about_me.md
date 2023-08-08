@@ -13,3 +13,7 @@ No. I'm not going to reveal my idenity. You may able to track me down with relat
 ## How about you showing pics with unreleased models / and the coincidence of ACertainty prototypes ##
 
 This is just anons showing respects on each others. No such organization. If you try hard as me to ask about AnythingV3, you will get the same answer. I see no "group models" *but model series exists*. This is different from *some famous models*.
+
+## I see you being inactive ##
+
+Usually it means: There is no new models worth to explore (likely after SDXL release), or I am busy in my personal life. **I am not interested with multimedia AI, or any non drawing related AI.** I will make a new repo if I am really interested. 
