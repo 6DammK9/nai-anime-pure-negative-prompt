@@ -22,6 +22,10 @@
 - **Just learn CLI and DIY!**
 - [A1111 WebUI Easy Installer and Launcher](https://github.com/EmpireMediaScience/A1111-Web-UI-Installer)
 - Super Easy AI Installer Tool: [Github](https://github.com/diStyApps/seait), [CivitAI](https://civitai.com/models/27574/super-easy-ai-installer-tool)
+- [Easy Diffusion](https://github.com/easydiffusion/easydiffusion)
+- SD-WebUI启动器 / 秋葉aaaki 整合包: [CN article](https://zhuanlan.zhihu.com/p/607573450), [CN article](https://zhuanlan.zhihu.com/p/596417901), [CN article](https://zhuanlan.zhihu.com/p/607573450), [CN article](https://blog.csdn.net/supperman_009/article/details/130618045), [Author's Discord](https://discord.gg/Uu3syD9PnR), [Author's Bilibili](https://space.bilibili.com/12566101)
+- [绘世启动器](https://apps.microsoft.com/store/detail/%E7%BB%98%E4%B8%96%E5%90%AF%E5%8A%A8%E5%99%A8/9NXBR1M0V7M1?hl=zh-cn&gl=cn)
+- ["App Store" (multimedia focused)](https://pinokio.computer/)
 
 ## Blue pill (General community) ##
 
@@ -39,7 +43,8 @@
 - Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)- 
 - FB, Average `en`: [Stable Diffusion AI ( HK 香港 )](https://www.facebook.com/groups/401633922161662/) ~~Blocked my main account lol~~
 - FB, Active `zh`: [Stable Diffusion 台灣社群v2](https://www.facebook.com/groups/619813739922551/)
-- FB, Active `zh`: [AIGC視覺藝創聯盟 ( 原 Midjourney AI 台灣社群 )](https://www.facebook.com/groups/1014779572745632/) 
+- FB, Active `zh`: [AIGC視覺藝創聯盟 ( 原 Midjourney AI 台灣社群 )](https://www.facebook.com/groups/1014779572745632/)
+- FB, Active `kr`: [Stable Diffusion Korea](https://www.facebook.com/groups/1394143228095187)
 - Forum, Active `kr`: [AI 그림 채널](https://arca.live/b/aiart)
 - Blog, Active `zh`: [AI加速器社区](https://www.acceleratori.com/d/11152)
 
