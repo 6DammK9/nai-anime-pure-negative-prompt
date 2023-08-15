@@ -7,7 +7,18 @@
 
 ## Dynamic CFG ##
 
-- Is an extension. ~~I will revisit later, no hands on experience yet.~~
+- Is an extension. [Comparasion with CFG rescale](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/10555#issuecomment-1679346072). Maybe read the remaining session first. I use this extension after a month.
+
+|Parameter|Recommended value|Description / Reason|
+|---|---|---|
+|Mimic CFG Scale|1|As low as you can, as long as φ is low in precise|
+|Top percentile of latents to clamp|100|Same as your original CFG|
+|Interpolate Phi|Same φ in CFG rescale||
+|Mimic Scale Scheduler|Constant|Too much parameter for me|
+|CFG Scale Scheduler|Constant|Too much parameter for me|
+|Separate Feature Channels|OFF|CFG is a "global static" operation. It can preserve some content created in high CFG state|
+|Scaling Startpoint|MEAN||
+|Variability Measure|AD|Was expecting STD|
 
 ## CFG rescale ##
 
