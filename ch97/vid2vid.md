@@ -56,6 +56,10 @@
 - 最好無視生成文本 (text) 跟成品視頻 (video) 的關係, 分開生成. (數學) 模型用途不能更改.
 - 風格 merge / 大型 finentune + LoRA / EMB 細節補充為 *獨立題目*.
 
+## Ackowledgement ##
+
+- [感謝 RL 對此的持續研究。](https://github.com/ReaLifecyborg/MaskAnimationDiffusion/blob/main/README.md) 
+
 ## Reference ##
 
 *互聯網*
