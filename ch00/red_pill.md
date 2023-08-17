@@ -45,6 +45,7 @@
 - FB, Active `zh`: [Stable Diffusion 台灣社群v2](https://www.facebook.com/groups/619813739922551/)
 - FB, Active `zh`: [AIGC視覺藝創聯盟 ( 原 Midjourney AI 台灣社群 )](https://www.facebook.com/groups/1014779572745632/)
 - FB, Active `kr`: [Stable Diffusion Korea](https://www.facebook.com/groups/1394143228095187)
+- FB, Active `th`: [Stable Diffusion Thailand](https://www.facebook.com/groups/1091513994797057)
 - Forum, Active `kr`: [AI 그림 채널](https://arca.live/b/aiart)
 - Blog, Active `zh`: [AI加速器社区](https://www.acceleratori.com/d/11152)
 
