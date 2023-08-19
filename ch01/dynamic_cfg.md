@@ -18,7 +18,7 @@
 |CFG Scale Scheduler|Constant|Too much parameter for me|
 |Separate Feature Channels|OFF|CFG is a "global static" operation. It can preserve some content created in high CFG state|
 |Scaling Startpoint|MEAN||
-|Variability Measure|AD|Was expecting STD|
+|Variability Measure|~~AD~~ STD|CFG rescale looks like AD|
 
 ## CFG rescale ##
 
