@@ -28,6 +28,7 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 - [ch02](ch02): Model specific contents. **Assumed you've already read ch01 and know the context.**
 - [ch03](ch03): **Data analysis.**  Usually involves model comparasion.
 - [ch04](ch04): *A (very dumb) batch script for multiple WebUI instances.*
+- [ch05](ch05): *Astolfo mix. Existing technology, original idea.*
 - [ch97](ch97): **Uncategorized contents.** Usually "not article".
 - [ch98](ch98): Backup from discord server because I think it is not safe to leave them there forever.
 - [ch99](ch99): Old segments. I didn't expect this repo draws stars and some attention. The format is being unsuitable again.

@@ -8,4 +8,3 @@ I did it in hurry. Only broken Chinese / English which is almost gibberish to or
 - My thought of Aesthetic Gradients, which is... interpolation with a confusing scoring: [ag.md](ag.md)
 - When lengthy prompt works: [77_token.md](77_token.md) 
 - Philosophy stuffs (Human value / aesthics / ambitious AI etc. mostly reading materials): [phil.md](phil.md)
-- Effectiveness of "Aspect Ratio Bucketing": [arb.md](arb.md)

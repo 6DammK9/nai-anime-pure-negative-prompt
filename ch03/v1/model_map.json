@@ -418,5 +418,60 @@
                 ]
             ]
         ]
+    ],
+    [
+        "te_cmp",
+        [
+            [
+                [
+                    "mzpikas",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/mzpikas_tmnd_enhanced-fp16.safetensors"
+                ],
+                [
+                    "sd14",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/sd-v1-4.ckpt"
+                ]
+            ],
+            [
+                [
+                    "s29",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/Silicon29-dark.safetensors"
+                ],
+                [
+                    "sd14",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/sd-v1-4.ckpt"
+                ]
+            ],
+            [
+                [
+                    "marble",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/marble_v141.fp16.safetensors"
+                ],
+                [
+                    "sd14",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/sd-v1-4.ckpt"
+                ]
+            ],
+            [
+                [
+                    "any5",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/anythingV5Anything_anythingV5PrtRE.safetensors"
+                ],
+                [
+                    "sd14",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/sd-v1-4.ckpt"
+                ]
+            ],
+            [
+                [
+                    "majic",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/majicmixRealistic_v6.safetensors"
+                ],
+                [
+                    "sd14",
+                    "../../stable-diffusion-webui/models/Stable-diffusion/sd-v1-4.ckpt"
+                ]
+            ]
+        ]
     ]
 ]
