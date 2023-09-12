@@ -30,6 +30,7 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 |[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|
 |[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|
 |[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|
+|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|
 
 - Given the success of ["2.5D" models](../ch02/4de704d8.md), I expect there will be suprise when I merge them together (however it is hard to preprocess the model, see below).
 
@@ -68,3 +69,7 @@ parameters
 Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (breasts:0.5)
 Steps: 48, Sampler: Euler, CFG scale: 4.5, Seed: 342433587, Size: 1024x576, Model hash: 6100f3b2ae, Model: vcbp_mzpikas_tmnd-sd-v1.4, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, Hires upscale: 2, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, Version: v1.6.0
 ```
+
+- *Seems that merging Hi-Res models is a training method one step beyond*
+
+![xyz_grid-0081-599520664-6144-2017-4.5-48-20230913012204.jpg](img/xyz_grid-0081-599520664-6144-2017-4.5-48-20230913012204.jpg)
