@@ -56,9 +56,11 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 
 - **Proposed merge: autombw.** Use [autombw v2](https://github.com/Xerxemi/auto-MBW-rt). Technical details are under analysis. It has been known as *memory intensive* instead of *GPU intensive*. I have some ex-mining SSDs which may help the process.
 
-- Model to be merged (in order): VBP, CBP, MzPikas TMND Enhanced, CGA, SD Sillicon, BP, any models I think can generate hires images.
+- Model to be merged (in order): VBP, CBP, MzPikas TMND Enhanced, *DreamShaperV8*, CGA, SD Sillicon, BP, any models I think can generate hires images.
 
 ### Baseline Merge ###
+
+- *Current resolution limit is 1280x1280 (native T2I), hires 1.4x (2080Ti 11G)*
 
 ![230926-342433587-2048-1152-4.5-48-20230911080644.jpg](img/230926-342433587-2048-1152-4.5-48-20230911080644.jpg)
 
