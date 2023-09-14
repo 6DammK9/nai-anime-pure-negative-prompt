@@ -11,7 +11,7 @@ Self explained. Written for ex-mining rig if I can get one of them eventually.
 
 # Chapter 04b: (Extra) Making use of M40 24GB for generating LARGE images #
 
-- [Brief description as Youtube Video.](https://www.youtube.com/watch?v=bVbqSobos04&ab_channel=NovaspiritTech) [(CN) A guide to make it perform some simple 3D tasks (not my case).](https://www.youtube.com/watch?v=K1emL7pwDH0&ab_channel=%E7%A5%9E%E5%90%9B%E5%90%9B)
+- [Brief description as Youtube Video.](https://www.youtube.com/watch?v=bVbqSobos04&ab_channel=NovaspiritTech) [(CN) A guide to make it perform some simple 3D tasks (not my case).](https://www.youtube.com/watch?v=K1emL7pwDH0&ab_channel=%E7%A5%9E%E5%90%9B%E5%90%9B) [(EN) Got a much older guide.](https://www.reddit.com/r/pcmasterrace/comments/m6evvp/gaming_on_a_tesla_m40_gtx_titan_x_performance_for/)
 - [Attempts on hardware mod.](https://extremehw.net/topic/1228-trying-to-improve-a-tesla-m40/) *However I have a [dead 1070](https://www.hkepc.com/16077/Dual_Slot%E9%9B%99%E9%A2%A8%E6%89%87%E8%A8%AD%E8%A8%88_Inno3D_GeForce_GTX_1070_Ti_X2) which makes things really easy.* [(ch2.2) Some more compatable models. Any 900 / 10 Reference PCB models with dual fan / triple fan will work.](https://zhuanlan.zhihu.com/p/536850498)
 - *Will try adding PCB parts for display because I have dead cards, for example, Titan X. Hope no software mod is needed.*
 
