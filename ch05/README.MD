@@ -2,6 +2,14 @@
 
 Maybe I write it here first. I don't have idea to seperate the contents into any subheader / article yet.
 
+## What is the mix? ##
+
+- Currently, it is a *uniform merge of 5 models*.
+
+## Generated Images ##
+
+- ["AstolfoMix" in Pixiv.](https://www.pixiv.net/en/tags/AstolfoMix/artworks)
+
 ## Why make a model? ##
 
 - I have found that the potential of *community supported* SD1.X model still not fully explorered. Meanwhile, although SDXL is greatly improved, it is still lack of *THE proper anime finetune* (e.g. "full danbooru"). Therefore, would there be something to be explorered by making a model with my own discoveries (theory)?
@@ -24,15 +32,21 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 
 ### Merging models from different background ###
 
-|Model Name|Model source|
-|---|---|
-|[VBP](../ch02/f59359c175.md)|"NAI SFW"|
-|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|
-|[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|
-|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|
-|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|
+- Here is a list of merged, or "may be merged" of models:
+
+|Model Name|Model source|Merged?|
+|---|---|---|
+|[VBP](../ch02/f59359c175.md)|"NAI SFW"|Yes|
+|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|Not yet|
+|[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|Yes|
+|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|Yes|
+|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|Yes|
+|[CoffeeWithLiquor](https://huggingface.co/StereoBartender/CoffeeWithLiquor)|NAI (Lots of LoRAs)|Yes|
+|[ALunarDream](https://discord.com/channels/930499730843250783/1087111248447017172)|NAI (Style Blending)|Not yet|
 
 - Given the success of ["2.5D" models](../ch02/4de704d8.md), I expect there will be suprise when I merge them together (however it is hard to preprocess the model, see below).
+
+- Note that some of them are also merges of other models, I expect that I can be benefied from the inherited contents also, for example, *style embeddings* and more keywords.
 
 ### Nice merge will introduce "union" effect on prompt interpretation ###
 
@@ -56,22 +70,21 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 
 - **Proposed merge: autombw.** Use [autombw v2](https://github.com/Xerxemi/auto-MBW-rt). Technical details are under analysis. It has been known as *memory intensive* instead of *GPU intensive*. I have some ex-mining SSDs which may help the process.
 
-- Model to be merged (in order): VBP, CBP, MzPikas TMND Enhanced, *DreamShaperV8*, CGA, SD Sillicon, BP, any models I think can generate hires images.
+- [Get a capable GPU to output such kind of images.](../ch04/readme.md#chapter-04b-extra-making-use-of-m40-24gb-for-generating-large-images) I'm suprised that *it pulls 19GB of VRAM already*.
 
 ### Baseline Merge ###
 
-- *Current resolution limit is 1280x1280 (native T2I), hires 1.4x (2080Ti 11G)*
+- *Current resolution limit is 1280x1280 (native T2I), hires 1.4x (2080Ti 11G), or 2.0x (Tesla M40)*.
 
-![230926-342433587-2048-1152-4.5-48-20230911080644.jpg](img/230926-342433587-2048-1152-4.5-48-20230911080644.jpg)
+![231077-3179120050-2688-1536-4.5-64-20230917093912.jpg](img/231077-3179120050-2688-1536-4.5-64-20230917093912.jpg)
 
 ```
 parameters
-
-(aesthetic:0), (quality:0), (car:0), [[mercedes]], (1girl:0), (boy:0), [[braid]], [astolfo]
+(aesthetic:0), (quality:0), (solo:0), (boy:0), (ushanka:0.98), [[braid]], [astolfo], [[moscow, russia]] 
 Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (breasts:0.5)
-Steps: 48, Sampler: Euler, CFG scale: 4.5, Seed: 342433587, Size: 1024x576, Model hash: 6100f3b2ae, Model: vcbp_mzpikas_tmnd-sd-v1.4, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, Hires upscale: 2, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, Version: v1.6.0
+Steps: 64, Sampler: Euler, CFG scale: 4.5, Seed: 3179120050, Size: 1344x768, Model hash: f52ee1e6b3, Model: vcbp_mtd8_cwl-sd, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, Hires upscale: 2, Hires steps: 32, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, Version: v1.6.0
 ```
 
 - *Seems that merging Hi-Res models is a training method one step beyond*
 
-![xyz_grid-0081-599520664-6144-2017-4.5-48-20230913012204.jpg](img/xyz_grid-0081-599520664-6144-2017-4.5-48-20230913012204.jpg)
+![xyz_grid-0083-342433587-10240-1656-4.5-48-20230916031640.jpg](img/xyz_grid-0083-342433587-10240-1656-4.5-48-20230916031640.jpg)
