@@ -6,7 +6,7 @@
 
 ### Current materials before ranting ###
 
-- Merge with any recognizable patterns: [sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger)
+- Merge with any recognizable patterns: [sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger), ["Elemental Merge" in sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger/blob/main/elemental_en.md)
 
 - Some explaination (how to use instead of why): [BlockMergeExplained](https://rentry.org/BlockMergeExplained)
 
