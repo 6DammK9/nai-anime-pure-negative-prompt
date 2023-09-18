@@ -42,6 +42,10 @@
 
 - [Bayesian Merger](https://github.com/s1dlx/sd-webui-bayesian-merger), [SD-Silicon](https://huggingface.co/Xynon/SD-Silicon): A model using auto RL to select merging hyperparameters.
 
+### My merge (shameless advertisement) ###
+
+- ["Uniform merge" of lots of models (original theory).](../ch05/)
+
 ### Merge by attention blocks (exclusive) ###
 
 - [Swapping attention per layers](https://gist.github.com/crosstyan/95d14111e8e1eeb3348ef947818b338f) [ref](https://github.com/CCRcmcpe/scal-sdt/blob/e3e6a945fccb04245ad06b4ea1983852a93c7ea6/ckpt_tool.py#L254-L347). 
