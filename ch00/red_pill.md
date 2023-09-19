@@ -78,6 +78,7 @@ Definitely not Pixiv.
 - `en`: [AIBooru](https://aibooru.online/)
 - `kr`: [PixAI](https://pixai.art/)
 - `jp`: [AIピクターズ](https://www.aipictors.com/)
+- `jp`: [PerfTile ART](https://perftile.art/)
 
 ## Blue pill (AI marketplace) ##
 
