@@ -34,19 +34,32 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 
 - Here is a list of merged, or "may be merged" of models:
 
-|Model Name|Model source|Merged?|
+|Model Name|Model source|Merged yet? (Baseline / Extended / In review)|
 |---|---|---|
-|[VBP](../ch02/f59359c175.md)|"NAI SFW"|Yes|
-|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|Not yet|
-|[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|Yes|
-|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|Yes|
-|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|Yes|
-|[CoffeeWithLiquor](https://huggingface.co/StereoBartender/CoffeeWithLiquor)|NAI (Lots of LoRAs)|Yes|
-|[ALunarDream](https://discord.com/channels/930499730843250783/1087111248447017172)|NAI (Style Blending)|Not yet|
+|[VBP](../ch02/f59359c175.md)|"NAI SFW"|Baseline|
+|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|*Extended*|
+|[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|Baseline|
+|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|Baseline|
+|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|Baseline|
+|[CoffeeWithLiquor](https://huggingface.co/StereoBartender/CoffeeWithLiquor)|NAI (Lots of LoRAs)|Baseline|
+|[ALunarDream](https://discord.com/channels/930499730843250783/1087111248447017172)|NAI (Style Blending)|*In review*|
+|[BreakDomain](https://civitai.com/models/117192/breakdomainowners-model-i-have-no-rights-if-he-want-it-will-be-taken-down)|NAI|Baseline|
+|[AIWMix](https://civitai.com/models/74165?modelVersionId=78888)|"SD"|Baseline|
+|[AIDv2.10](https://civitai.com/models/16828/aidv210-anime-illust-diffusion)|NAI (Style Blending)|Extended|
+
+- Note that all models are [abruptly replaced with SD1.4's Text Encoder.](https://huggingface.co/6DammK9/bpmodel-sd14-merge) Original desired contents (e.g. specific anime contents) will be disabled.
+
+|Merge Batch|Description|
+|---|---|
+|Baseline|This model is **capable to output images well with 1024x1024 native, with great varity contents.** *Identifying Astolfo is a plus* (LAION has a few images of him).|
+|Extended|This model is **either** capable to do any one of them above. It means that the model has experienced radical finetuning, and the output diversity is damaged.|
+|In review|This model **sounds** that it has been finetuned in a menaingful way. It is mostly not effective with great tradeoff, and it need to be carefully merged **under sequence** (i.e. very last).|
 
 - Given the success of ["2.5D" models](../ch02/4de704d8.md), I expect there will be suprise when I merge them together (however it is hard to preprocess the model, see below).
 
 - Note that some of them are also merges of other models, I expect that I can be benefied from the inherited contents also, for example, *style embeddings* and more keywords.
+
+- (Not proven) The *inheritance* is not straightforward, it may requires replacing the Text Encoder with the child's instead of the master SD1.x's. See below for how I discover the phenomenon.
 
 ### Nice merge will introduce "union" effect on prompt interpretation ###
 
