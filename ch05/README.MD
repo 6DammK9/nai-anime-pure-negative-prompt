@@ -46,6 +46,7 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 |[BreakDomain](https://civitai.com/models/117192/breakdomainowners-model-i-have-no-rights-if-he-want-it-will-be-taken-down)|NAI|Baseline|
 |[AIWMix](https://civitai.com/models/74165?modelVersionId=78888)|["SD"](../ch97/0299d.md)|Baseline|
 |[AIDv2.10](https://civitai.com/models/16828/aidv210-anime-illust-diffusion)|NAI (Style Blending)|Extended|
+|[Ether Blu Mix](https://civitai.com/models/17427/ether-blu-mix)|Merges of famous A|Baseline|
 
 - Note that all models are [abruptly replaced with SD1.4's Text Encoder.](https://huggingface.co/6DammK9/bpmodel-sd14-merge) Original desired contents (e.g. specific anime contents) will be disabled.
 
@@ -72,6 +73,51 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 - [ch02/animevae_pt](../ch02/animevae_pt.md#extra-text-encoder): Other then VAE, *NAI also used SD's orignal TE*. This is special for SD1.X because the CLIP / ViT used *was trained with uncropped LAION dataset, including the NSFW words*. It is in theory knowing most vocabulary, even the token count is less then SDXL. It shuold be reminded that NSFW SDXL / SD2.X models are *almost inexist*, with a [little exception](https://cafeai.notion.site/WD-1-5-Beta-2-Release-Notes-2852db5a9cdd456ba52fc5730b91acfd). [Rare artwork done by me.](https://www.pixiv.net/en/artworks/105947222). It further supports "nice content may be better then nice structure".
 
 - [ch03](../ch03): Hhowever, most finetuned models used [TTE (train text encoder)](https://github.com/kohya-ss/sd-scripts) to create "triger word" effect, but variance has been greatly sacrificed. Note that it is *highly doubtful* because most models are TTE enabled, and it is hard to proof or even verify.
+
+### Verifying the merge is precise ###
+
+- I experienced [floating point error](https://www.geeksforgeeks.org/floating-point-error-in-python/) while merging. *It is not merger error. This is natural for most programming languages.* The merged model must be verified with [toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit) to make sure **the offset counter must be (XXXX/0000/0000).** 
+
+- I further verify [with the scripts extracting metadata in model](../ch97/extract_merge_info.js) [by batch](../ch97/batch_extract.cmd) to make sure I am merging the right model (however the "merge chain" is wiped when I reset the Text Encoder):
+
+```json
+{
+    "__metadata__": {
+        "sd_merge_recipe": {
+            "type": "webui",
+            "primary_model_hash": null,
+            "secondary_model_hash": "aba1307666acb7f5190f8639e1bc28b2d4a1d23b92934ab9fc35abf703e8783d",
+            "tertiary_model_hash": null,
+            "interp_method": "Weighted sum",
+            "multiplier": 0.125,
+            "save_as_half": true,
+            "custom_name": "08-vcbpmt_d8cwlbd_aweb5-sd",
+            "config_source": 0,
+            "bake_in_vae": "None",
+            "discard_weights": "",
+            "is_inpainting": false,
+            "is_instruct_pix2pix": false
+        },
+        "format": "pt",
+        "sd_merge_models": {
+            "fe38511e88a8b7110a61658af6a0ff6a6b707852ff2893a38bc8fa0f92b3ace4": {
+                "name": "07-vcbp_mtd8cwl_bdaw-sd.safetensors",
+                "legacy_hash": "72982c20",
+                "sd_merge_recipe": null
+            },
+            "aba1307666acb7f5190f8639e1bc28b2d4a1d23b92934ab9fc35abf703e8783d": {
+                "name": "etherBluMix5-sd-v1-4.safetensors",
+                "legacy_hash": "25d4f007",
+                "sd_merge_recipe": null
+            }
+        }
+    }
+}
+```
+
+- Personally I prefer using [vae-ft-mse-840000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.ckpt) for VAE, but I'll keep it neutral while merging.
+
+- For the merge ratio, I *round to 3 d.p.* which is engough for the first 20 merges.
 
 ## My action list ##
 
@@ -101,3 +147,14 @@ Steps: 64, Sampler: Euler, CFG scale: 4.5, Seed: 3179120050, Size: 1344x768, Mod
 - *Seems that merging Hi-Res models is a training method one step beyond*
 
 ![xyz_grid-0083-342433587-10240-1656-4.5-48-20230916031640.jpg](img/xyz_grid-0083-342433587-10240-1656-4.5-48-20230916031640.jpg)
+
+- **You can switch Text Encoder to what you're familiar with. The model still remember how it looks.**
+
+![xyz_grid-0106-978318572-3072-1012-4.5-48-20230922003223.png](img/xyz_grid-0106-978318572-3072-1012-4.5-48-20230922003223.png)
+
+```
+parameters
+(aesthetic:0), (quality:0), (solo:0), (1girl:0), (gawr_gura:0.98)
+Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0)
+Steps: 48, Sampler: Euler, CFG scale: 4.5, Seed: 978318572, Size: 768x768, Model hash: d94d7363a0, Model: 08-vcbpmt_d8cwlbd_aweb5-cwl, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Clip skip: 2, Version: v1.6.0
+```

@@ -24,3 +24,8 @@ Usually "not article".
 ## Scripts (broken shell scripts) ##
 
 - `anifusion2_win11_vscode_miniconda.sh`: Install Anifusion-SD with Win11 + conda. Run it line by line in manual.
+
+## Scripts (reading metadata for a model by batch) ##
+
+- `extract_merge_info.js`: Extract the actual JSON from [safetensors_util](https://github.com/by321/safetensors_util). *Author closed my PR. Fine.*
+- `batch_extract.cmd`: By batch. *May fail a lot.*
