@@ -13,3 +13,4 @@ General discovery. Theories, procedures, practices etc. However not model specif
 - Findings on "Hi-Res" fix: [hires_fix.md](hires_fix.md)
 - Findings on "Dynamic CFG / CFG rescale": [dynamic_cfg.md](dynamic_cfg.md)
 - Findings on "Aspect Ratio Bucketing" (moved from CH98): [arb.md](arb.md)
+- Findings on "FreeU": [freeu.md]
