@@ -2,7 +2,7 @@
 
 ### I am really watching the whole series ###
 
-- Notes in discord: [CS side](https://discord.com/channels/1033769426216046622/1067116591021568001/1067116591021568001), [VA side](https://discord.com/channels/1027129024054575174/1077834709821833216/1077834709821833216). **I strongly encourage to watch the very first video on each series.** Such "computional" "art" can be theorized. It is not a mystery.
+- Notes in discord: [CS side](https://discord.com/channels/1027129024054575174/1077525010421383241), [VA side](https://discord.com/channels/1027129024054575174/1077834709821833216). **I strongly encourage to watch the very first video on each series.** Such "computional" "art" can be theorized. It is not a mystery.
 
 - CS side: [MIT lecture videos](https://www.youtube.com/watch?v=MABLFo7IV3I&t=8s&ab_channel=AliJahanian) [Course page](https://ali-design.github.io/deepcreativity/)
 - VA side: [Art expert commentary](https://www.youtube.com/@YouDianYiSi)
