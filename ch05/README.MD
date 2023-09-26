@@ -4,7 +4,7 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 
 ## What is the mix? ##
 
-- Currently, it is a *uniform merge of 5 models*.
+- Currently, it is a *uniform merge of 8 models*.
 
 ## Generated Images ##
 
