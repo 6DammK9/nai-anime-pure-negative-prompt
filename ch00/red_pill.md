@@ -87,6 +87,15 @@ Definitely not Pixiv.
 - `en`: ~~[Hugging Face](https://huggingface.co/)~~
 - `kr`: [Civitai](https://civitai.com/)
 
+## Blue pill (Hand drawn community) ##
+
+*Please respect culture difference.*
+
+- `zh`: [(ㅎ. ㅎ)](https://discord.gg/rARtekBPXQ)
+- `zh`: [紫將養老院](https://discord.gg/yZnWKtj9)
+- `zh`: [申申孤兒院](https://discord.gg/H6WcWRq4HV)
+- `zh`: [二十五小時繪社](https://discord.gg/jjcPyPhr)
+
 ## Not blue pill ##
 
 *Stolen from [internet](https://t.me/StableDiffusion_CN/1199467)*. I will recover and format the content if I have time (probably don't). Ignore the `zh` comments because *all platforms are similar.*
