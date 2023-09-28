@@ -2,6 +2,10 @@
 
 Note: I never use any of them. It is just some examples to intercept manually, instead of "automatic approach".
 
+## Guides (For docuementry, I never draw) ##
+
+- [重绘学派法术绪论1.2](https://docs.qq.com/pdf/DR2pJcWdTRXVpWEty)
+
 ### ControlNet ###
 
 - [Github repo](https://github.com/lllyasviel/ControlNet)

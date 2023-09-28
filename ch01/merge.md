@@ -6,7 +6,7 @@
 
 ### Current materials before ranting ###
 
-- Merge with any recognizable patterns: [sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger)
+- Merge with any recognizable patterns: [sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger), ["Elemental Merge" in sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger/blob/main/elemental_en.md)
 
 - Some explaination (how to use instead of why): [BlockMergeExplained](https://rentry.org/BlockMergeExplained)
 
@@ -41,6 +41,10 @@
 - [AnythingV3](https://huggingface.co/Linaqruf/anything-v3.0): SOTA for hitting the perfect spot of the market desire.
 
 - [Bayesian Merger](https://github.com/s1dlx/sd-webui-bayesian-merger), [SD-Silicon](https://huggingface.co/Xynon/SD-Silicon): A model using auto RL to select merging hyperparameters.
+
+### My merge (shameless advertisement) ###
+
+- ["Uniform merge" of lots of models (original theory).](../ch05/)
 
 ### Merge by attention blocks (exclusive) ###
 

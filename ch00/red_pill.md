@@ -78,6 +78,7 @@ Definitely not Pixiv.
 - `en`: [AIBooru](https://aibooru.online/)
 - `kr`: [PixAI](https://pixai.art/)
 - `jp`: [AIピクターズ](https://www.aipictors.com/)
+- `jp`: [PerfTile ART](https://perftile.art/)
 
 ## Blue pill (AI marketplace) ##
 
@@ -85,6 +86,15 @@ Definitely not Pixiv.
 - `zh`: [吐司 Tusi.Art](https://tusi.art/)
 - `en`: ~~[Hugging Face](https://huggingface.co/)~~
 - `kr`: [Civitai](https://civitai.com/)
+
+## Blue pill (Hand drawn community) ##
+
+*Please respect culture difference.*
+
+- `zh`: [(ㅎ. ㅎ)](https://discord.gg/rARtekBPXQ)
+- `zh`: [紫將養老院](https://discord.gg/yZnWKtj9)
+- `zh`: [申申孤兒院](https://discord.gg/H6WcWRq4HV)
+- `zh`: [二十五小時繪社](https://discord.gg/jjcPyPhr)
 
 ## Not blue pill ##
 
