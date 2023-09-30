@@ -34,19 +34,21 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 
 - Here is a list of merged, or "may be merged" of models:
 
-|Model Name|Model source|Merged yet? (Baseline / Extended / In review)|
-|---|---|---|
-|[VBP](../ch02/f59359c175.md)|"NAI SFW"|Baseline|
-|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|*Extended*|
-|[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|Baseline|
-|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|Baseline|
-|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|Baseline|
-|[CoffeeWithLiquor](https://huggingface.co/StereoBartender/CoffeeWithLiquor)|NAI (Lots of LoRAs)|Baseline|
-|[ALunarDream](https://discord.com/channels/930499730843250783/1087111248447017172)|NAI (Style Blending)|*In review*|
-|[BreakDomain](https://civitai.com/models/117192/breakdomainowners-model-i-have-no-rights-if-he-want-it-will-be-taken-down)|NAI|Baseline|
-|[AIWMix](https://civitai.com/models/74165?modelVersionId=78888)|["SD"](../ch97/0299d.md)|Baseline|
-|[AIDv2.10](https://civitai.com/models/16828/aidv210-anime-illust-diffusion)|NAI (Style Blending)|Extended|
-|[Ether Blu Mix](https://civitai.com/models/17427/ether-blu-mix)|Merges of famous A|Baseline|
+|Index|Model Name|Model source|Merged yet? (Baseline / Extended / In review)|
+|---|---|---|---|
+|01|[VBP](../ch02/f59359c175.md)|"NAI SFW"|Baseline|
+|xx|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|*Extended*|
+|02|[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|Baseline|
+|03|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|Baseline|
+|04|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|Baseline|
+|05|[CoffeeWithLiquor](https://huggingface.co/StereoBartender/CoffeeWithLiquor)|NAI (Lots of LoRAs)|Baseline|
+|xx|[ALunarDream](https://discord.com/channels/930499730843250783/1087111248447017172)|NAI (Style Blending)|*In review*|
+|06|[BreakDomain](https://civitai.com/models/117192/breakdomainowners-model-i-have-no-rights-if-he-want-it-will-be-taken-down)|NAI|Baseline|
+|07|[AIWMix](https://civitai.com/models/74165?modelVersionId=78888)|["SD"](../ch97/0299d.md)|Baseline|
+|xx|[AIDv2.10](https://civitai.com/models/16828/aidv210-anime-illust-diffusion)|NAI (Style Blending)|Extended|
+|08|[Ether Blu Mix](https://civitai.com/models/17427/ether-blu-mix)|Merges of famous A|Baseline|
+|09|[majicMIX realistic](https://civitai.com/models/43331?modelVersionId=94640)|Merges of MJ + "2.5" + [NWSJ](https://civitai.com/models/53601/nwsjrealistic)|Baseline|
+|10|[Silicon29](https://huggingface.co/Xynon/SD-Silicon)|MBW of "2.5"|Baseline|
 
 - Note that all models are [abruptly replaced with SD1.4's Text Encoder.](https://huggingface.co/6DammK9/bpmodel-sd14-merge) Original desired contents (e.g. specific anime contents) will be disabled.
 
@@ -56,7 +58,7 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 |Extended|This model is **either** capable to do any one of them above. It means that the model has experienced radical finetuning, and the output diversity is damaged.|
 |In review|This model **sounds** that it has been finetuned in a menaingful way. It is mostly not effective with great tradeoff, and it need to be carefully merged **under sequence** (i.e. very last).|
 
-- Given the success of ["2.5D" models](../ch02/4de704d8.md), I expect there will be suprise when I merge them together (however it is hard to preprocess the model, see below).
+- Given the success of ["2.99D" models](../ch02/4de704d8.md) and ["2.5D" models](https://huggingface.co/WarriorMama777/OrangeMixs), I expect there will be suprise when I merge them together (however it is hard to preprocess the model, see below).
 
 - Note that some of them are also merges of other models, I expect that I can be benefied from the inherited contents also, for example, *style embeddings* and more keywords.
 
@@ -125,13 +127,13 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 
 - **Recover, and even replace TE.** [Models have been uploaded to HuggingFace.](https://huggingface.co/6DammK9/bpmodel-sd14-merge) Thanks *@gesen2gee (Discord)* for mentioning [stable-diffusion-webui-model-toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit). After some simple test (make sure it can run, can being merged afterward), **I'll post into HuggingFace for reference.** [Here is the scirpt segment to remove TE.](https://github.com/CCRcmcpe/scal-sdt/blob/963ac6a20151139b90f4d0dc7216c036a57964cd/ckpt_tool.py#L40) Recovering them is unknown. Probably need to program it myself. [Here is a script potentially useful.](https://github.com/kohya-ss/sd-scripts/blob/main/tools/convert_diffusers20_original_sd.py) 
 
-- **Baseline merge: Uniform merge.** [Models have been uploaded to HuggingFace.](https://huggingface.co/6DammK9/AstolfoMix) As easy as the "Checkpoint Merger" does. To make sure all of them are in [uniform distribution](https://en.wikipedia.org/wiki/Discrete_uniform_distribution), merge with weight $1/x$ for $x > 1$. Therefore 50% for the 2nd model, 33% for the 3rd model, and so on. The process should be **parameterless**. [A random gold medal Kaggle notebook using an ensemble of 10 models with average weight first, then further optimize with Regressor OVER the weights](https://www.kaggle.com/code/ipythonx/tf-keras-hybrid-efficientnet-swin-transformer-tpu).
+- **Baseline merge: Uniform merge a.k.a bagging.** [Models have been uploaded to HuggingFace.](https://huggingface.co/6DammK9/AstolfoMix) As easy as the "Checkpoint Merger" does. To make sure all of them are in [uniform distribution](https://en.wikipedia.org/wiki/Discrete_uniform_distribution), merge with weight $1/x$ for $x > 1$. Therefore 50% for the 2nd model, 33% for the 3rd model, and so on. The process should be **parameterless**. 
 
-- **Proposed merge: autombw.** Use [autombw v2](https://github.com/Xerxemi/auto-MBW-rt). Technical details are under analysis. It has been known as *memory intensive* instead of *GPU intensive*. I have some ex-mining SSDs which may help the process.
+- **Proposed merge: autombw.** Use [autombw v2](https://github.com/Xerxemi/auto-MBW-rt). Technical details are under analysis. It has been known as *memory intensive* instead of *GPU intensive*. I have some ex-mining SSDs which may help the process. **This will not happen soon.** I didn't expect for merging 10+ models. [Boosting](https://chih-sheng-huang821.medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-ensemble-learning%E4%B9%8Bbagging-boosting%E5%92%8Cadaboost-af031229ebc3) in such scale requires a new software from ground up. *I am still using pure GUI with minimum coding.*
 
 - [Get a capable GPU to output such kind of images.](../ch04/readme.md#chapter-04b-extra-making-use-of-m40-24gb-for-generating-large-images) I'm suprised that *it pulls 19GB of VRAM already*.
 
-### Baseline Merge ###
+## Finding on "Baseline Merge" ##
 
 - *Current resolution limit is 1280x1280 (native T2I), hires 1.4x (2080Ti 11G), or 2.0x (Tesla M40)*.
 
@@ -144,9 +146,21 @@ Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), 
 Steps: 64, Sampler: Euler, CFG scale: 4.5, Seed: 3179120050, Size: 1344x768, Model hash: f52ee1e6b3, Model: vcbp_mtd8_cwl-sd, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, Hires upscale: 2, Hires steps: 32, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, Version: v1.6.0
 ```
 
-- *Seems that merging Hi-Res models is a training method one step beyond*
+- [Associative property](https://en.wikipedia.org/wiki/Associative_property) has been observed. First, these are comparasion between 10 models without pre processing:
 
-![xyz_grid-0083-342433587-10240-1656-4.5-48-20230916031640.jpg](img/xyz_grid-0083-342433587-10240-1656-4.5-48-20230916031640.jpg)
+![xyz_grid-0184-3972813705-25600-2067-4.5-48-20230929235846.jpg](img/xyz_grid-0184-3972813705-25600-2067-4.5-48-20230929235846.jpg)
+
+- And then mixing them together, you will find the "intelligence agent" *successfully choose to "draw" the most confident one*:
+
+![xyz_grid-0183-3972813705-25600-2067-4.5-48-20230929231817.jpg](img/xyz_grid-0183-3972813705-25600-2067-4.5-48-20230929231817.jpg)
+
+- This time all models are replaced with original SD's CLIP / Text Encoder:
+
+![xyz_grid-0182-3972813705-25600-2069-4.5-48-20230929185331.jpg](img/xyz_grid-0182-3972813705-25600-2069-4.5-48-20230929185331.jpg)
+
+- Finally mixing them together again, now it is capable to "draw" in 1344x768x2.0, which SD was supposed to be trained with 512px images:
+
+![xyz_grid-0181-3972813705-25600-2067-4.5-48-20230929010338.jpg](img/xyz_grid-0181-3972813705-25600-2067-4.5-48-20230929010338.jpg)
 
 - **You can switch Text Encoder to what you're familiar with. The model still remember how it looks.**
 
@@ -158,3 +172,9 @@ parameters
 Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0)
 Steps: 48, Sampler: Euler, CFG scale: 4.5, Seed: 978318572, Size: 768x768, Model hash: d94d7363a0, Model: 08-vcbpmt_d8cwlbd_aweb5-cwl, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Clip skip: 2, Version: v1.6.0
 ```
+
+### "Uniform merge" as a variant of bagging / ensemble averaging ### 
+
+- [This is random gold medal Kaggle notebook using an ensemble of 10 models with average weight first, then further optimize with Regressor OVER the weights.](https://www.kaggle.com/code/ipythonx/tf-keras-hybrid-efficientnet-swin-transformer-tpu). 
+
+- ["Ensemble" is a well known method on ML field, and it is possible to have ensemble over neural networks.](https://towardsdatascience.com/ensembles-the-almost-free-lunch-in-machine-learning-91af7ebe5090#2871)["Ensemble averaging" without soft voting is the most simple approach, it shows improvement on ML tasks by resolving bias-variance dilemma in the fundamental way.](https://towardsdatascience.com/ensemble-averaging-improve-machine-learning-performance-by-voting-246106c753ee)[Hinted by "evolutionary computing"](https://en.wikipedia.org/wiki/Ensemble_averaging_(machine_learning)),["polyak averaging" (average out models in different aspect, including time) makes the model easier to converge while transversing in high dimensional latent space, i.e. generating sementic fragements from noise.](https://machinelearningmastery.com/polyak-neural-network-model-weight-ensemble/) [Althoguh it is a technique in RL field, ](https://arxiv.org/abs/2112.14582) *it is applicable on open-end, real-world problem which communities keep envolving / iterlating the same SD model in their "artistic way" across this year (2022 Aug - 2023 Sept).* [Such artistic problem has been discused, and attempted to be formulated ("latent space") before SD or even LDA model, as soon as StyleGAN in 2019, I believe that such complex problem can be related in interdisciplinary manner, like computer vision / computer graphic in BIM / GIS / CFD, and even acoustic.)](../ch01/aesthetic.md) 
