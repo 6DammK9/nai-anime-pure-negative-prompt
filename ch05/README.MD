@@ -117,6 +117,8 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 }
 ```
 
+- For full receipe, see [receipe-10a.json](./receipe-10a.json).Replace with SD original CLIP / VAE to obtain "10", *however the equivalence may not in file hash precision because of floating point error.*
+
 - Personally I prefer using [vae-ft-mse-840000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.ckpt) for VAE, but I'll keep it neutral while merging.
 
 - For the merge ratio, I *round to 3 d.p.* which is engough for the first 20 merges.
@@ -135,6 +137,8 @@ Maybe I write it here first. I don't have idea to seperate the contents into any
 
 ## Finding on "Baseline Merge" ##
 
+### Boosted Resolution ###
+
 - *Current resolution limit is 1280x1280 (native T2I), hires 1.4x (2080Ti 11G), or 2.0x (Tesla M40)*.
 
 ![231077-3179120050-2688-1536-4.5-64-20230917093912.jpg](img/231077-3179120050-2688-1536-4.5-64-20230917093912.jpg)
@@ -145,6 +149,8 @@ parameters
 Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (breasts:0.5)
 Steps: 64, Sampler: Euler, CFG scale: 4.5, Seed: 3179120050, Size: 1344x768, Model hash: f52ee1e6b3, Model: vcbp_mtd8_cwl-sd, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, Hires upscale: 2, Hires steps: 32, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, Version: v1.6.0
 ```
+
+### Associative property ###
 
 - [Associative property](https://en.wikipedia.org/wiki/Associative_property) has been observed. First, these are comparasion between 10 models without pre processing:
 
@@ -162,7 +168,21 @@ Steps: 64, Sampler: Euler, CFG scale: 4.5, Seed: 3179120050, Size: 1344x768, Mod
 
 ![xyz_grid-0181-3972813705-25600-2067-4.5-48-20230929010338.jpg](img/xyz_grid-0181-3972813705-25600-2067-4.5-48-20230929010338.jpg)
 
-- **You can switch Text Encoder to what you're familiar with. The model still remember how it looks.**
+```
+(aesthetic:0), (quality:0), (car:0), [[mercedes]], (1girl:0), (boy:0), [astolfo] Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (breasts:0.5) Steps: 48, Sampler: Euler, CFG scale: 4.5, Seed: 3972813705, Size: 1024x576, Model hash: 8cbe307462, Model: VBP23-1024-ep49-sd-v1-4, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.2, \"skip_factor\": 0.9}, {\"backbone_factor\": 1.4, \"skip_factor\": 0.2}]", FreeU Schedule: "0.0, 1.0, 0.0", Hires upscale: 2.5, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.7, Threshold percentile: 100, Script: X/Y/Z plot, X Type: Checkpoint name, X Values: "VBP23-1024-ep49-sd-v1-4.safetensors [8cbe307462],02-vbp23-cbp2-sd.safetensors [6075160ea7],03-vcbp-mzpikas_tmnd-sd.safetensors [4f4da1e956],04-vcbp_mzpt_d8-sd.safetensors [4b36d29be3],05-vcbp_mtd8_cwl-sd.safetensors [84c1865c1e],06-vcbp_mtd8cwl_bd-sd.safetensors [dd1d0b7fc4],07-vcbp_mtd8cwl_bdaw-sd.safetensors [fe38511e88],08-vcbpmt_d8cwlbd_aweb5-sd.safetensors [b21ea2b267],09-vcbpmt_d8cwlbd_aweb5m-sd.safetensors [f32f9b8e99],10-vcbpmtd8_cwlbdaw_eb5ms29-sd.safetensors [6ffdb39acd]", Version: v1.6.0
+```
+
+- (*Diagram coming soon*) The "merge pipeline" is drawn below. With "uniform merge", merge order is arbitrary, you will get the same mixture eventually. *You can verify if you "bag of SD" is performing as expected.*
+
+$$merge(merge(model_1,model_2,\tfrac{1}{2}),model_3,\tfrac{1}{3}) \equiv merge(merge(model_2,model_3,\tfrac{1}{2}),model_1,\tfrac{1}{3})$$
+
+- Also, merging 10 "CLIP / TE reseted" models is same as merg 10 models and then "reset CLIP / TE". *In practice, you may suffer [floating point error](https://www.geeksforgeeks.org/floating-point-error-in-python/), making the "hash" is different in [toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit)*:
+
+$$ResetCLIP(merge(model_1,model_2,\tfrac{1}{2})) \equiv merge(ResetCLIP(model_1),ResetCLIP(model_2),\tfrac{1}{2})$$
+
+### Swapping CLIP / TE with other models ###
+
+- You can switch Text Encoder to what you're familiar with. The model still remember how it looks. However it tends to be effective for an entity instead of abstract art style (including nsfw).
 
 ![xyz_grid-0106-978318572-3072-1012-4.5-48-20230922003223.png](img/xyz_grid-0106-978318572-3072-1012-4.5-48-20230922003223.png)
 

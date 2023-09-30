@@ -1,0 +1,224 @@
+{
+    "__metadata__": {
+        "sd_merge_recipe": {
+            "type": "webui",
+            "primary_model_hash": "1f57e8f6dedec63a26bdd4547d23f9398f4c1b65b07a5f38e204dd429850b803",
+            "secondary_model_hash": "0b162e45d0c4ffc5d27fcf93942aa6a52ea397f4843a322e8b2140a4db6959a1",
+            "tertiary_model_hash": null,
+            "interp_method": "Weighted sum",
+            "multiplier": 0.1,
+            "save_as_half": true,
+            "custom_name": "10-vcbpmtd8_cwlbdaw_eb5ms29-sd",
+            "config_source": 0,
+            "bake_in_vae": "None",
+            "discard_weights": "",
+            "is_inpainting": false,
+            "is_instruct_pix2pix": false
+        },
+        "sd_merge_models": {
+            "1f57e8f6dedec63a26bdd4547d23f9398f4c1b65b07a5f38e204dd429850b803": {
+                "name": "09a-vcbpmt_d8cwlbd_aweb5m.safetensors",
+                "legacy_hash": "01916529",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "433c3ec911c4ca5f54eb330b7b3ed93a2b422800406fa312405bed5f6501df36",
+                    "secondary_model_hash": "e4a30e4607faeb06b5d590b2ed8e092690c631da0b2becb6224d4bb5327104b7",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.111,
+                    "save_as_half": true,
+                    "custom_name": "09a-vcbpmt_d8cwlbd_aweb5m",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "433c3ec911c4ca5f54eb330b7b3ed93a2b422800406fa312405bed5f6501df36": {
+                "name": "08a-vcbpmt_d8cwlbd_aweb5.safetensors",
+                "legacy_hash": "3a444b92",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "d211801e59b4d40b2a1f16545db41b90b1778e1dfb8d06a1bfc71d9408ee6635",
+                    "secondary_model_hash": "6965f33b20a2d5611d8efb608ec14ece3e1134273c84cabc26c5a1a20fd24801",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.125,
+                    "save_as_half": true,
+                    "custom_name": "08a-vcbpmt_d8cwlbd_aweb5",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "d211801e59b4d40b2a1f16545db41b90b1778e1dfb8d06a1bfc71d9408ee6635": {
+                "name": "07a-vcbp_mtd8cwl_bdaw.safetensors",
+                "legacy_hash": "1b586263",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "8fe47a0812922531680fc953e74c223e79b1d51d61ca88c52c31b9ec46f1d2d1",
+                    "secondary_model_hash": "d21dff6670db60b6d8dbc834bf003fe121cbc305faca6362f422185ae9e8e453",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.143,
+                    "save_as_half": true,
+                    "custom_name": "07a-vcbp_mtd8cwl_bdaw",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "8fe47a0812922531680fc953e74c223e79b1d51d61ca88c52c31b9ec46f1d2d1": {
+                "name": "06a-vcbp_mtd8cwl_bd.safetensors",
+                "legacy_hash": "39eb45a6",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "297369744d7a434e00aa2162bb171b7ff05ab8775acac42a1d1ed5cae87889f4",
+                    "secondary_model_hash": "f1c731fd51bd589a30345c7f0266bea5a8416489010bcca9521829ea341816be",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.167,
+                    "save_as_half": true,
+                    "custom_name": "06a-vcbp_mtd8cwl_bd",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "297369744d7a434e00aa2162bb171b7ff05ab8775acac42a1d1ed5cae87889f4": {
+                "name": "05a-vcbp_mtd8_cwl.safetensors",
+                "legacy_hash": "f33350f5",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "c4b1c24a7c81c8e5dd1493635392b8dcf1cf13c2117e36e530bafeecb2082eab",
+                    "secondary_model_hash": "529af58cd99830029b49d81f1e34a2c41992290bbcc54790be3febe99badc3ea",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.2,
+                    "save_as_half": true,
+                    "custom_name": "05a-vcbp_mtd8_cwl",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "c4b1c24a7c81c8e5dd1493635392b8dcf1cf13c2117e36e530bafeecb2082eab": {
+                "name": "04a-vcbp_mzpt_d8.safetensors",
+                "legacy_hash": "b304be00",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "463e1920e5e250e6bc7563a669176b3759a9119106f63689b1d23599b77b98c7",
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.25,
+                    "save_as_half": true,
+                    "custom_name": "04a-vcbp_mzpt_d8",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "463e1920e5e250e6bc7563a669176b3759a9119106f63689b1d23599b77b98c7": {
+                "name": "03a-vcbp-mzpikas_tmnd.safetensors",
+                "legacy_hash": "17ed6f4c",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "1cbcf6a1ea57643dd8ab212041b3c1dd8a13830c18130f24127576d1de9a1316",
+                    "secondary_model_hash": "5b0e9868919b841ec1b933a09a934c43740d1b7a732a095e6f95602d75fcf266",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.333,
+                    "save_as_half": true,
+                    "custom_name": "03a-vcbp-mzpikas_tmnd",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "1cbcf6a1ea57643dd8ab212041b3c1dd8a13830c18130f24127576d1de9a1316": {
+                "name": "02a-vbp23-cbp2.safetensors",
+                "legacy_hash": "8fd2b397",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "8cbe307462ba262c804026bb5332d88bf6d4581a3537048b56651470966dc4a5",
+                    "secondary_model_hash": "9ee66a996785851a211702b7e3149cb3ae308a113f4f0ebff8322b75d807e8b9",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "02a-vbp23-cbp2",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "8cbe307462ba262c804026bb5332d88bf6d4581a3537048b56651470966dc4a5": {
+                "name": "VBP23-1024-ep49-sd-v1-4.safetensors",
+                "legacy_hash": "25d4f007",
+                "sd_merge_recipe": null
+            },
+            "9ee66a996785851a211702b7e3149cb3ae308a113f4f0ebff8322b75d807e8b9": {
+                "name": "cbp2-e60-sd-v1-4.safetensors",
+                "legacy_hash": "25d4f007",
+                "sd_merge_recipe": null
+            },
+            "5b0e9868919b841ec1b933a09a934c43740d1b7a732a095e6f95602d75fcf266": {
+                "name": "mzpikas_tmnd_enhanced-fp16.safetensors",
+                "legacy_hash": "2462008c",
+                "sd_merge_recipe": null
+            },
+            "879db523c30d3b9017143d56705015e15a2cb5628762c11d086fed9538abd7fd": {
+                "name": "dreamshaper_8.safetensors",
+                "legacy_hash": "9d40847d",
+                "sd_merge_recipe": null
+            },
+            "529af58cd99830029b49d81f1e34a2c41992290bbcc54790be3febe99badc3ea": {
+                "name": "CoffeeWithLiquor(heat).safetensors",
+                "legacy_hash": "1a9b84fb",
+                "sd_merge_recipe": null
+            },
+            "f1c731fd51bd589a30345c7f0266bea5a8416489010bcca9521829ea341816be": {
+                "name": "breakdomainownersMODELIHAVENO_v10.safetensors",
+                "legacy_hash": "15f7afca",
+                "sd_merge_recipe": null
+            },
+            "d21dff6670db60b6d8dbc834bf003fe121cbc305faca6362f422185ae9e8e453": {
+                "name": "aiwmix_v10.ckpt",
+                "legacy_hash": "edb6ac8f",
+                "sd_merge_recipe": null
+            },
+            "6965f33b20a2d5611d8efb608ec14ece3e1134273c84cabc26c5a1a20fd24801": {
+                "name": "etherBluMix_etherBluMix5.safetensors",
+                "legacy_hash": "28f95cbd",
+                "sd_merge_recipe": null
+            },
+            "e4a30e4607faeb06b5d590b2ed8e092690c631da0b2becb6224d4bb5327104b7": {
+                "name": "majicmixRealistic_v6.safetensors",
+                "legacy_hash": "1d5a534e",
+                "sd_merge_recipe": null
+            },
+            "0b162e45d0c4ffc5d27fcf93942aa6a52ea397f4843a322e8b2140a4db6959a1": {
+                "name": "Silicon29.safetensors",
+                "legacy_hash": "4c061471",
+                "sd_merge_recipe": null
+            }
+        },
+        "format": "pt"
+    }
+}
