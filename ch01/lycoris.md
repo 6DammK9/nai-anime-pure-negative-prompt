@@ -2,12 +2,24 @@
 
 *I never do any finetune. This is for docuementry purpose.*
 
-- [Github Repo.](https://github.com/KohakuBlueleaf/LyCORIS)
+- [arXiv paper.](https://arxiv.org/abs/2309.14859)
+
+- [Github Repo. (15 pages main chapter)](https://github.com/KohakuBlueleaf/LyCORIS)
+
+- [Github Repo. (60 pages appendix)](https://github.com/cyber-meow/LyCORIS-evaluation)
 
 - [Official Discord server](https://discord.gg/VtTFKrj9gJ).
 
-- [arXiv paper.](https://arxiv.org/abs/2309.14859)
-
 - [Official guideline.](https://hackmd.io/@mnsU_qVcTcmtFbnuyVyP8A/rkmLMwB0n)
 
-- [Rentry article (I forgot the official lengthy article)](https://rentry.org/59xed3#lycoris-lohaloconetc)
+- [Official article](https://civitai.com/models/26415/a-certain-theory-for-lora-transfer), [Pointed to Rentry](https://rentry.org/LyCORIS-experiments#a-certain-theory-on-lora-transfer), [Some example in that era](https://huggingface.co/alea31415/blue-archive-22characters)
+
+- [Non-official Rentry article](https://rentry.org/59xed3#lycoris-lohaloconetc)
+
+## Extra: Full auto Crawler + Trainer + Publish pipeline ##
+
+- [Discussion on censorship in CivitAI](https://civitai.com/articles/2355/hugging-face-index-for-the-unapproved-models), [regarding to the pipeline (huge output)](https://huggingface.co/CyberHarem)
+
+> 他们目前，对safe/r13/r17/r18，以及对[[REDACATED]]的检测
+还都是基于[[REDACATED]]提供的一个类似clip的通用云服务搞得
+（来自[[REDACATED]]亲自爆料
