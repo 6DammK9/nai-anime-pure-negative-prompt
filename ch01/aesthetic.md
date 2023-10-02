@@ -7,7 +7,15 @@
 - CS side: [MIT lecture videos](https://www.youtube.com/watch?v=MABLFo7IV3I&t=8s&ab_channel=AliJahanian) [Course page](https://ali-design.github.io/deepcreativity/)
 - VA side: [Art expert commentary](https://www.youtube.com/@YouDianYiSi)
 
-### If you have no time and prefer articles ###
+### Papers (finally there is some) ###
+
+- [Emu](https://ai.meta.com/research/publications/emu-enhancing-image-generation-models-using-photogenic-needles-in-a-haystack/)
+
+- [LyCORIS](https://arxiv.org/abs/2309.14859)
+
+- [ImageReward](https://arxiv.org/abs/2304.05977)
+
+### Articles (my stuffs) ###
 
 [Full list in discord.](https://discord.com/channels/1033769426216046622/1067116591021568001/1067116591021568001)
 
