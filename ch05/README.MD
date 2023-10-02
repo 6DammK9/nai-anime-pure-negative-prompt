@@ -160,7 +160,7 @@ Steps: 256, Sampler: Euler, CFG scale: 4.5, Seed: 132385090, Size: 1344x768, Mod
 
 ![xyz_grid-0184-3972813705-25600-2067-4.5-48-20230929235846.jpg](img/xyz_grid-0184-3972813705-25600-2067-4.5-48-20230929235846.jpg)
 
-- And then mixing them together, you will find the "intelligence agent" *successfully choose to "draw" the most confident one*:
+- And then mixing them together, you will find the [intelligence agent](https://en.wikipedia.org/wiki/Intelligent_agent) *successfully choose to "draw" the most confident one*:
 
 ![xyz_grid-0183-3972813705-25600-2067-4.5-48-20230929231817.jpg](img/xyz_grid-0183-3972813705-25600-2067-4.5-48-20230929231817.jpg)
 
@@ -202,3 +202,13 @@ Steps: 48, Sampler: Euler, CFG scale: 4.5, Seed: 978318572, Size: 768x768, Model
 - [This is random gold medal Kaggle notebook using an ensemble of 10 models with average weight first, then further optimize with Regressor OVER the weights.](https://www.kaggle.com/code/ipythonx/tf-keras-hybrid-efficientnet-swin-transformer-tpu). 
 
 - ["Ensemble" is a well known method on ML field, and it is possible to have ensemble over neural networks.](https://towardsdatascience.com/ensembles-the-almost-free-lunch-in-machine-learning-91af7ebe5090#2871) ["Ensemble averaging" without soft voting is the most simple approach, it shows improvement on ML tasks by resolving bias-variance dilemma in the fundamental way.](https://towardsdatascience.com/ensemble-averaging-improve-machine-learning-performance-by-voting-246106c753ee) [Hinted by "evolutionary computing",](https://en.wikipedia.org/wiki/Ensemble_averaging_(machine_learning)) ["polyak averaging" (average out models in different aspect, including time) makes the model easier to converge while transversing in high dimensional latent space, i.e. generating sementic fragements from noise.](https://machinelearningmastery.com/polyak-neural-network-model-weight-ensemble/) [Althoguh it is a technique in RL field,](https://arxiv.org/abs/2112.14582) *it is applicable on open-end, real-world problem which communities keep envolving / iterlating the same SD model in their "artistic way" across this year (2022 Aug - 2023 Sept).* [Such artistic problem has been discused, and attempted to be formulated ("latent space") before SD or even LDA model, as soon as StyleGAN in 2019, I believe that such complex problem can be related in interdisciplinary manner, like computer vision / computer graphic in BIM / GIS / CFD, and even acoustic.)](../ch01/aesthetic.md) 
+
+### Phenomenon: Convergent to a equilibrium in an arbitary space ###
+
+- **Note that it is not validated or verified, even if it is possible to do so in CS + Art manner.** This should depends on [model selection](https://en.wikipedia.org/wiki/Model_selection), but the [dimensionless]( dimensionless) [MSE](https://en.wikipedia.org/wiki/Mean_squared_error) somehow show [correlation](https://en.wikipedia.org/wiki/Correlation) to the image difference in the xy plots (Astolfo with Mercedes) above. *If the correlation is legit*, the equilibrium will let the intelligence agent try to draw most objects with lowest variance disregarding any art style it have learnt (almost no impact on bias). 
+
+![am0_unet_xy.png](../ch03/v2a/img/am0_unet_xy.png)
+
+![am2_unet_xy.png](../ch03/v2a/img/am2_unet_xy.png)
+
+- The proof of correlation should be an extended work in [ch03](../ch03/readme.md) but I have no time to write the script. Image difference can be calculated with MSE with [SIFT](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform) or encoded by [Swin Transformer](https://huggingface.co/docs/transformers/model_doc/swin). [So the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
