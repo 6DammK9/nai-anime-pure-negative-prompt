@@ -1,10 +1,12 @@
 # Chapter 05: Astolfo mix. #
 
-Maybe I write it here first. I don't have idea to seperate the contents into any subheader / article yet.
+- [CivitAI model page.](https://civitai.com/models/155604) The style there is a bit different.
+
+- [HuggingFace model page.](https://huggingface.co/6DammK9/AstolfoMix) The style is also different.
 
 ## What is the mix? ##
 
-- Currently, it is a ~~ensemble of 10 SDs~~ *uniform merge of 10 models*.
+- Currently, it is an ~~Ensemble averaging of 10 neural networks~~ Uniform Merge of 10 SD models.
 
 ## Generated Images ##
 
