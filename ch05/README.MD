@@ -44,24 +44,25 @@
 |04|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|Baseline|
 |05|[CoffeeWithLiquor](https://huggingface.co/StereoBartender/CoffeeWithLiquor)|NAI (Lots of LoRAs)|Baseline|
 |06|[BreakDomain](https://civitai.com/models/117192/breakdomainowners-model-i-have-no-rights-if-he-want-it-will-be-taken-down)|NAI|Baseline|
-|07|[AIWMix](https://civitai.com/models/74165?modelVersionId=78888)|["SD"](../ch97/0299d.md)|Baseline|
+|07|[AIWMix](https://civitai.com/models/74165?modelVersionId=78888)|["SD"](../ch97/0299d.md), |Baseline|
 |08|[Ether Blu Mix](https://civitai.com/models/17427/ether-blu-mix)|Merges of famous A|Baseline|
 |09|[majicMIX realistic](https://civitai.com/models/43331?modelVersionId=94640)|Merges of MJ + "2.5" + [NWSJ](https://civitai.com/models/53601/nwsjrealistic)|Baseline|
 |10|[Silicon29](https://huggingface.co/Xynon/SD-Silicon)|MBW of "2.5"|Baseline|
-|xx|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|*Extended*|
+|11|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|Extended|
+|12|[CGA9](https://t.me/StableDiffusion_CN/1170018)|AutoMBW|Extended|
+|13|[LimeREmix](https://civitai.com/models/153081?modelVersionId=23379)|Human evaluated merge|Extended|
 |xx|[ALunarDream](https://discord.com/channels/930499730843250783/1087111248447017172)|NAI (Style Blending)|*In review*|
-|xx|[Dreamlike Anime](https://huggingface.co/dreamlike-art/dreamlike-anime-1.0)|Non NAI based Anime|Extended|
-|xx|[CGA9](https://t.me/StableDiffusion_CN/1170018)|AutoMBW|Extended|
+|xx|[Dreamlike Anime](https://huggingface.co/dreamlike-art/dreamlike-anime-1.0)|Non NAI based Anime|*Rejected (legal issue)*|
 |xx|[ORCHIDHEART](https://huggingface.co/reroti/ORCHIDHEART)|Similar to CGA|Extended|
-|xx|[Marbel V182](https://discord.com/channels/1027129024054575174/1155074634274844693)|human evaluated merge|*In review*|
-|xx|[AIDv2.10](https://civitai.com/models/16828/aidv210-anime-illust-diffusion)|NAI (Style Blending)|Extended|
+|xx|[Marbel V182](https://discord.com/channels/1027129024054575174/1155074634274844693)|Human evaluated merge|*In review*|
+|xx|[AIDv2.10](https://civitai.com/models/16828/aidv210-anime-illust-diffusion)|NAI (Style Blending)|*In review*|
 
 - Note that all models are [abruptly replaced with SD1.4's Text Encoder.](https://huggingface.co/6DammK9/bpmodel-sd14-merge) Original desired contents (e.g. specific anime contents) will be disabled.
 
 |Merge Batch|Description|
 |---|---|
 |Baseline|This model is **capable to output images well with 1024x1024 native, with great varity contents.** *Identifying Astolfo is a plus* (LAION has a few images of him).|
-|Extended|This model is **either** capable to do any one of them above. It means that the model has experienced radical finetuning, and the output diversity is damaged.|
+|Extended|This model is **either** capable to do any one of them above. It means that the model has experienced radical finetuning, and the output diversity is damaged. ~~(Or it is just too late to be spotted, such as 13)~~ |
 |In review|This model **sounds** that it has been finetuned in a menaingful way. It is mostly not effective with great tradeoff, and it need to be carefully merged **under sequence** (i.e. very last).|
 
 - Given the success of ["2.99D" models](../ch02/4de704d8.md) and ["2.5D" models](https://huggingface.co/WarriorMama777/OrangeMixs), I expect there will be suprise when I merge them together (however it is hard to preprocess the model, see below).
