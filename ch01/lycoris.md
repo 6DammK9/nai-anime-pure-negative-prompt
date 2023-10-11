@@ -18,8 +18,16 @@
 
 ## Extra: Full auto Crawler + Trainer + Publish pipeline ##
 
+- Collaboration with [DeepGHS](https://huggingface.co/deepghs) a.k.a [CyberHarem](https://huggingface.co/CyberHarem) 
+
 - [Discussion on censorship in CivitAI](https://civitai.com/articles/2355/hugging-face-index-for-the-unapproved-models), [regarding to the pipeline (huge output)](https://huggingface.co/CyberHarem)
 
 > 他们目前，对safe/r13/r17/r18，以及对[[REDACATED]]的检测
 还都是基于[[REDACATED]]提供的一个类似clip的通用云服务搞得
 （来自[[REDACATED]]亲自爆料
+
+- [Some data analysis while making the pipeline](https://civitai.com/articles/2479/2023-10-7-survey-of-v14-training-automation-and-planning-of-version-v15)
+
+- [Updated lyCoris Training guide](https://civitai.com/articles/2494/making-better-loras-with-pivotal-tuning)
+  
+- [Introduction of the pipeline](https://civitai.com/articles/2383/a-99percent-automatized-pipeline-to-construct-character-pack-training-set-from-anime)
