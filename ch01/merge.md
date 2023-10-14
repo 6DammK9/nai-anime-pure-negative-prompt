@@ -4,7 +4,21 @@
 
 - [Articles in Rentry](https://rentry.org/RentrySD/#11112-extensions-for-model-merging)
 
+### Blue pill, but in thesis paper ###
+
+- [ZipIt! Merging Models from Different Tasks without Training](https://arxiv.org/abs/2305.03053)
+
+- [Merging Models with Fisher-Weighted Averaging](https://arxiv.org/abs/2111.09832)
+
+- [Acceleration of Stochastic Approximation by Averaging](https://epubs.siam.org/doi/abs/10.1137/0330046?journalCode=sjcodc) a.k.a "Polyak averaging"
+
+- [Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time](https://arxiv.org/abs/2203.05482)
+
+- [Two-Tailed Averaging: Anytime, Adaptive, Once-in-a-While Optimal Weight Averaging for Better Generalization](https://arxiv.org/abs/2209.12581)
+
 ### Current materials before ranting ###
+
+- [My merge.](../ch05/README.MD) Merge / Ensemble with *Average weighting* is a well discussed method. It is a good choice, at least for generalization.
 
 - Merge with any recognizable patterns: [sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger), ["Elemental Merge" in sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger/blob/main/elemental_en.md)
 
@@ -75,11 +89,11 @@ targets:
 
 - [Some related discussion.](https://discord.com/channels/1038249716149928046/1038278959315570758/1042529239662084116)
 
-- [JP artocle.](https://wikiwiki.jp/sd_toshiaki/Checkpoint%20Merger) [The GUI.](https://github.com/diStyApps/Merge-Stable-Diffusion-models-without-distortion-gui) 
+- [JP article.](https://wikiwiki.jp/sd_toshiaki/Checkpoint%20Merger) [The GUI.](https://github.com/diStyApps/Merge-Stable-Diffusion-models-without-distortion-gui) 
 
 ### Start ranting ###
 
-- We had a hard tome to find something related. [Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time](https://arxiv.org/abs/2203.05482)
+- ~~We had a hard tome to find something related thesis / papers.~~ (Moved to top session)
 
 - Oh my god there is some discussion. [Robust fine-tuning of zero-shot models](https://arxiv.org/abs/2109.01903)
 
