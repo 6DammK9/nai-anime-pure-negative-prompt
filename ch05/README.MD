@@ -283,9 +283,11 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 ![am3_unet_vg.png](../ch03/v2a/img/am3_unet_vg.png)
 
-![am4_unet_vg.png](../ch03/v2a/img/am4_unet_vg.png)
-
 ![am5_unet_vg.png](../ch03/v2a/img/am5_unet_vg.png)
+
+- For the ["a posteriori style"](https://en.wikipedia.org/wiki/A_priori_and_a_posteriori), it is "western anime (2.5D) close to photorealism (2.99D) but proportion is more realistic, more like [impressionism oil painting](https://en.wikipedia.org/wiki/Impressionism) with modern content". It can be related to the "relational coorinate of stylish models":
+
+![am4_unet_vg.png](../ch03/v2a/img/am4_unet_vg.png)
 
 - Comparing to baseline, since the art style varies, it shows less convergent. It actually drifts outward.
 
