@@ -56,6 +56,8 @@
 |16|[BB95 Furry Mix](https://civitai.com/models/17649/bb95-furry-mix)|[E621](https://knowyourmeme.com/memes/sites/e621)|Extended|
 |17|[Indigo Furry mix](https://civitai.com/models/34469?modelVersionId=167882)|[E621](https://knowyourmeme.com/memes/sites/e621)|Extended|
 |18|[AOAOKO [PVC Style Model]](https://civitai.com/models/15509/aoaoko-pvc-style-model)|[PVC](https://huggingface.co/datasets/p1atdev/pvc)|Extended|
+|19|[GuoFeng3](https://civitai.com/models/10415/3-guofeng3)|[Chinese fantasy](https://en.wikipedia.org/wiki/Xianxia)|Extended|
+|20|[YiffyMix](https://civitai.com/models/3671?modelVersionId=189192)|[E621](https://knowyourmeme.com/memes/sites/e621)|Extended|
 |xx|[ALunarDream](https://discord.com/channels/930499730843250783/1087111248447017172)|NAI (Style Blending)|*In review*|
 |xx|[Dreamlike Anime](https://huggingface.co/dreamlike-art/dreamlike-anime-1.0)|Non NAI based Anime|*Rejected (legal issue)*|
 |xx|[Marbel V182](https://discord.com/channels/1027129024054575174/1155074634274844693)|Human evaluated merge|*In review*|
@@ -152,7 +154,7 @@
 
 - *Current resolution limit is 1280x1280 (native T2I), hires 1.4x (2080Ti 11G), or 2.0x (Tesla M40)*.
 
-![230958-132385090-2688-1536-4.5-256-20230930203540.png](img/230958-132385090-2688-1536-4.5-256-20230930203540.png)
+![230958-132385090-2688-1536-4.5-256-20230930203540.jpg](img/230958-132385090-2688-1536-4.5-256-20230930203540.jpg)
 
 ```
 parameters
@@ -219,3 +221,76 @@ Steps: 48, Sampler: Euler, CFG scale: 4.5, Seed: 978318572, Size: 768x768, Model
 ![am2_unet_vg.png](../ch03/v2a/img/am2_unet_vg.png)
 
 - The proof of correlation should be an extended work in [ch03](../ch03/readme.md) but I have no time to write the script. Image difference can be calculated with MSE with [SIFT](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform) or encoded by [Swin Transformer](https://huggingface.co/docs/transformers/model_doc/swin). [So the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
+
+## Finding on "Baseline Merge Extended" ##
+
+### "Robustness" ###
+
+- Model doesn't break even I've merged some radical models.
+- Recommended CFG has been reduced from 4.5 to 4.
+![img/231111-341693176-2688-1536-4-256-20231021050214.jpg](img/231111-341693176-2688-1536-4-256-20231021050214.jpg)
+```
+
+parameters
+(aesthetic:0), (quality:0), (1girl:0), (boy:0), [[shirt]], [[midriff]], [[braid]], [astolfo], [[[[sydney opera house]]]]
+Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (breasts:0.5)
+Steps: 256, Sampler: Euler, CFG scale: 4, Seed: 341693176, Size: 1344x768, Model hash: 41429fdee1, Model: 20-bpcga9-lracrc2oh-b11i75pvc-gf34ym34-sd, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.2, \"skip_factor\": 0.9}, {\"backbone_factor\": 1.4, \"skip_factor\": 0.2}]", FreeU Schedule: "0.0, 1.0, 0.0", Hires upscale: 2, Hires steps: 64, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.7, Threshold percentile: 100, Version: v1.6.0
+```
+
+- With DynamicCFG and FreeU enabled, CFG1 can produce reasonable images, however pure negative prompt is harder to be effective.
+
+### Compatibility on embedding / LoRAs ###
+
+- For Embedding, as what we've seen in CivitAI, [VBP's embeddings](../ch02/f59359c175.md) works, LoRA also works. *Hint: [Do you know "momoko", the unfourtunate person styled as AnythingV3 and mmk-e?](https://twitter.com/momoco_haru)*
+![img/xyz_grid-0310-1920996841-7680-2018-4-48-20231014163322.jpg](img/xyz_grid-0310-1920996841-7680-2018-4-48-20231014163322.jpg)
+```
+parameters
+(aesthetic:0), (quality:0), (solo:0), (boy:0), (momoko=momopoco_ms100:0.98), (astolfo:0.98)
+Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (breasts:0.5)
+Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Model hash: 8cbe307462, Model: 01-VBP23-1024-ep49-sd-v1-4, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.2, \"skip_factor\": 0.9}, {\"backbone_factor\": 1.4, \"skip_factor\": 0.2}]", FreeU Schedule: "0.0, 1.0, 0.0", Hires upscale: 1.5, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.7, Threshold percentile: 100, TI hashes: "momoko=momopoco_ms100: 8fe99091c82b, momoko=momopoco_ms100: 8fe99091c82b", Script: X/Y/Z plot, X Type: Checkpoint name, X Values: "01-VBP23-1024-ep49-sd-v1-4.safetensors [8cbe307462],17-bpcga9-lracrc2-ohb11i75-sd.safetensors [d80def2643],aoaokoPVC-sd.safetensors [20c0e77565],anythingV5-sd.safetensors [3d8e2d96c4],_11-bp_nman_e29-sd-v1-4.safetensors [4a15b47ed1]", Version: v1.6.0
+```
+
+- However we should make sure the EMB / LoRA should be trained on NAI or SD for best expectancy. **Ideal match will not affect any other parameters, and it serves as another prompt keyword.** See [this LoRA's info](https://civitai.com/models/168404/igawa-asagi-suit-or-taimanin) for example (first session, [artwork](https://www.pixiv.net/en/artworks/112744854)):
+```json
+{
+    "ss_sd_model_name": "Animefull-final-pruned.ckpt",
+    "ss_clip_skip": "2",
+    "ss_num_train_images": "92",
+    "ss_tag_frequency": {
+        "train_data": {
+            "asagisuit": 46,
+            "1girl": 46,
+            "solo": 41
+        }
+    }
+}
+```
+
+- If the EMB / LoRA is trained on other "popular models" (e.g. AnyLora / AOM3 / Pastel), [such as this LoRA](https://civitai.com/models/156120/arcaea-saya?modelVersionId=175198) ([artwork](https://www.pixiv.net/en/artworks/112661463)), the compability should remains unchanged. Usually the "maximum resolution" will be dropped to be the original training resolution. For this merge, it drops from 1344x768 x2.0 to 1344x768 x1.0, which there is no hires scaling.
+
+### Comparasion with Baseline (Associativity) ###
+
+- And then here is the xy plots as in Baseline:
+
+![img/xyz_grid-0328-3972813705-25600-2069-4-48-20231021190402.jpg](img/xyz_grid-0328-3972813705-25600-2069-4-48-20231021190402.jpg)
+![img/xyz_grid-0329-3972813705-25600-2069-4-48-20231021192917.jpg](img/xyz_grid-0329-3972813705-25600-2069-4-48-20231021192917.jpg)
+![img/xyz_grid-0330-3972813705-25600-2069-4-48-20231021201454.jpg](img/xyz_grid-0330-3972813705-25600-2069-4-48-20231021201454.jpg)
+![img/xyz_grid-0331-3972813705-25600-2069-4-48-20231021233059.jpg](img/xyz_grid-0331-3972813705-25600-2069-4-48-20231021233059.jpg)
+
+- For full receipe, see [receipe-20a.json](./receipe-20a.json).
+
+- Now the L2 distance graph (*both X-Y axis are arbitary picked, in order to visually seperate the points*):
+
+![am3_unet_vg.png](../ch03/v2a/img/am3_unet_vg.png)
+
+![am4_unet_vg.png](../ch03/v2a/img/am4_unet_vg.png)
+
+![am5_unet_vg.png](../ch03/v2a/img/am5_unet_vg.png)
+
+- Comparing to baseline, since the art style varies, it shows less convergent. It atually drifts outward.
+
+![am3_unet_xy.png](../ch03/v2a/img/am3_unet_xy.png)
+
+![am5_unet_xy.png](../ch03/v2a/img/am5_unet_xy.png)
+
+- In artistic sense, we can see that *the human face has been slightly changed, and the background is more clean and consistant.* [Could it be correlated to other statistical tools?](https://github.com/deepghs/imgutils) [Once again the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
