@@ -6,7 +6,7 @@
 
 ## What is the mix? ##
 
-- Currently, it is an ~~Ensemble averaging of 10 neural networks~~ Uniform Merge of 10 SD models.
+- Currently, it is an ~~Ensemble averaging of 10 neural networks~~ Uniform Merge of ~~10~~ 20 SD models.
 
 ## Generated Images ##
 
@@ -22,7 +22,7 @@
 
 - [ch01/merge](../ch01/merge.md): Even it is not well theorized, merging models is an relatively effective method to "ensemble" models without prior knowledge, includes dataset, and training procedures. 
 
-- *Finetuning SDXL has been a engineering challenge*, without any publicized models trained with 1M+ images after a month. The largest scale of [pure finetune](https://civitai.com/models/136719/nekorayxl) or [mixed approach](https://civitai.com/models/136389/kohaku-xl) are only 300k images, way less then the [publicized 4M "full danbooru" dataset](https://huggingface.co/datasets/animelover/danbooru2022). For me not investing on expensive GPUs, e.g. [8x A40 for WD](https://gist.github.com/harubaru/f727cedacae336d1f7877c4bbe2196e1#training-process), or even a single RTX4090, finetuning, or even LoRA, sounds impossible for me. Also, given *my hiatus for 2 months because of other hobbies (hint: PC hardware)*, I won't have time to explore the hyperparameters for model finetuning, or even image tagging, and gathering dataset. Therefore brutally merging models sounds feasible for me.
+- *Finetuning SDXL has been a engineering challenge*, without any publicized models trained with 1M+ images after a month. The largest scale of [pure finetune](https://civitai.com/models/136719/nekorayxl) or [mixed approach](https://civitai.com/models/136389/kohaku-xl) are only 300k images, way less then the [publicized 4M "full danbooru" dataset](https://huggingface.co/datasets/animelover/danbooru2022). For me not investing on expensive GPUs, e.g. [8x A40 for WD](https://gist.github.com/harubaru/f727cedacae336d1f7877c4bbe2196e1#training-process), or even a single RTX4090, finetuning, or even LoRA, sounds impossible for me. Also, given *my hiatus for 2 months because of other hobbies (hint: PC hardware)*, I won't have time to explore the hyperparameters for model finetuning, or even image tagging, and gathering dataset. Therefore brutally merging models sounds feasible for me. Moreover, [even I have two 3090s now,](https://www.instagram.com/p/CyoHFQGSMv6) I can choose to spend all the efforts on making lots of images instead of training models.
 
 ### Imporvement on model structure vs learnt experience ###
 
@@ -287,7 +287,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 ![am5_unet_vg.png](../ch03/v2a/img/am5_unet_vg.png)
 
-- Comparing to baseline, since the art style varies, it shows less convergent. It atually drifts outward.
+- Comparing to baseline, since the art style varies, it shows less convergent. It actually drifts outward.
 
 ![am3_unet_xy.png](../ch03/v2a/img/am3_unet_xy.png)
 
