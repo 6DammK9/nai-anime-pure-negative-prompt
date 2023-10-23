@@ -60,7 +60,14 @@ Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), 
 Steps: 24, Sampler: DDIM, CFG scale: 6, Seed: 680973778, Size: 768x768, Model hash: 41429fdee1, Model: 20-bpcga9-lracrc2oh-b11i75pvc-gf34ym34-sd, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.2, \"skip_factor\": 0.9}, {\"backbone_factor\": 1.4, \"skip_factor\": 0.2}]", FreeU Schedule: "0.0, 1.0, 0.0", FreeU Version: 2, Lora hashes: "ph_draw: 3e4f2671b6f7", Version: v1.6.0
 ```
 
-![img/00030-680973778.mp4](img/00030-680973778.mp4)
+<details>
+    <summary>Click to open img/00030-680973778.mp4</summary>
+
+
+https://github.com/6DammK9/nai-anime-pure-negative-prompt/assets/10937874/5b9d99d3-5dd6-4f38-b798-4951184abd44
+
+
+</details>
 
 ```
 (aesthetic:0), (quality:0), (solo:0), (boy:0), [[navel]], (astolfo:0.98), <lora:ph_draw:0.9>
@@ -84,18 +91,33 @@ Steps: 24, Sampler: DDIM, CFG scale: 6, Seed: 680973778, Size: 768x768, Model ha
 
 |Style|PNG (no CNet / Animediff)|Result|
 |---|---|---|
-|Default|![img/231202-2541798183-768-768-6-48-20231024010558.png](img/231202-2541798183-768-768-6-48-20231024010558.png)|![img/00037-2541798183.mp4](img/00037-2541798183.mp4)|
-|Moderate style|![img/231201-2541798183-768-768-6-48-20231024010531.png](img/231201-2541798183-768-768-6-48-20231024010531.png)|![img/00038-2541798183.mp4](img/00038-2541798183.mp4)|
+|Default|![img/231202-2541798183-768-768-6-48-20231024010558.png](img/231202-2541798183-768-768-6-48-20231024010558.png)|`![img/00037-2541798183.mp4](img/00037-2541798183.mp4)`|
+|Moderate style|![img/231201-2541798183-768-768-6-48-20231024010531.png](img/231201-2541798183-768-768-6-48-20231024010531.png)|`![img/00038-2541798183.mp4](img/00038-2541798183.mp4)`|
 |Another style|![img/231203-2541798183-768-768-6-48-20231024010649.png](img/231203-2541798183-768-768-6-48-20231024010649.png)|Coming soon|
 |Agressive style|![img/231204-2541798183-768-768-6-48-20231024010652.png](img/231204-2541798183-768-768-6-48-20231024010652.png)|Coming soon|
+
+<details>
+    <summary>Click to open img/00037-2541798183.mp4</summary>
+
+https://github.com/6DammK9/nai-anime-pure-negative-prompt/assets/10937874/61ae8d74-1599-4f24-a5ab-a4ebbdb3f016
+
+</details>
+
+<details>
+    <summary>Click to open img/00038-2541798183.mp4</summary>
+
+https://github.com/6DammK9/nai-anime-pure-negative-prompt/assets/10937874/990799a8-c8fe-4d5a-bb37-37e042004b5d
+
+</details>
 
 ### Why it works ###
 
 - Consider as [Layered IPO Model](https://en.wikipedia.org/wiki/IPO_model).
 
-|Layer / Order|Input|Processor|Output|
-|Zero|Base Model (SD) + LoRA|Art Style (Color / shape / semantics / linguistics)|
-|One|ControlNet|Coordination|
-|Two|AnimateDiff|Motion (Relation between Coordinates)|
+|Layer or Order|Input|Processor|Output|
+|---|---|---|---|
+|Zero|Text Prompt|Base Model (SD) + LoRA|Art Style (Color / shape / semantics / linguistics)|
+|One|Preprocessed source video Frame|ControlNet|Coordination|
+|Two|Text Prompt with result video frames|AnimateDiff|Motion (Relation between Coordinates)|
 
 - It tries to [deompose the complicated question in to subproblems, and solve them together](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm). Since SD and related models successfully [shows "coorporation" together](../ch05/README.MD#associative-property) (however "common ground" is not easy to find), it ["sounds"](https://en.wikipedia.org/wiki/Soundness) feasible.
