@@ -15,6 +15,10 @@
 - [damo-vilab/text-to-video-ms-1.7b](https://huggingface.co/damo-vilab/text-to-video-ms-1.7b)
 - [人家 demo](https://huggingface.co/spaces/damo-vilab/modelscope-text-to-video-synthesis)
 
+### (231023 更新) 整合至 SD, 帶有 motion module 的 text2video ###
+- [AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning](https://arxiv.org/abs/2307.04725)
+- [WebUI 整合](https://github.com/continue-revolution/sd-webui-animatediff)
+
 ## Methods ##
 
 ### 每幀 i2i 的 v2v (用了 anythingv3) ###
