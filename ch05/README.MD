@@ -268,7 +268,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - If the EMB / LoRA is trained on other "popular models" (e.g. AnyLora / AOM3 / Pastel), [such as this LoRA](https://civitai.com/models/156120/arcaea-saya?modelVersionId=175198) ([artwork](https://www.pixiv.net/en/artworks/112661463)), the compability should remains unchanged. Usually the "maximum resolution" will be dropped to be the original training resolution. For this merge, it drops from 1344x768 x2.0 to 1344x768 x1.0, which there is no hires scaling.
 
-### Comparasion with Baseline (Associativity) ###
+### Comparasion with Baseline (Associative property) ###
 
 - And then here is the xy plots as in Baseline:
 

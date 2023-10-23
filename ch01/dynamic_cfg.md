@@ -9,6 +9,8 @@
 
 - Is an extension. [Comparasion with CFG rescale](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/10555#issuecomment-1679346072). Maybe read the remaining session first. I use this extension after a month.
 
+- **It does not support DDIM**. You will received `Cannot use sampler DDIM with Dynamic Thresholding`. Meanwhile [AnimateDiff](./animatediff.md) need DDIM for its own operation, I will update if there is updates. 
+
 |Parameter|Recommended value|Description / Reason|
 |---|---|---|
 |Mimic CFG Scale|1|As low as you can, as long as φ is low in precise|

@@ -24,7 +24,7 @@
 
 ### It should be changed ###
 
-- Sampler: **DDIM** (You will see `Setting DDIM alpha.`)
+- Sampler: **DDIM** from Euler. You will see `Setting DDIM alpha.` in console log. [Slight difference may be amplified in process.](../ch98/k_euler.md)
 
 - CFG: **Slightly increase to 6** from 4. 8 is too high.
 
@@ -34,17 +34,21 @@
 
 - Sampling Steps: "Keep it low" (24 or 48). I won't use 256 as usual.
 
-- Dimension: 768x768. 1024x1024 will give you OOM with 24GB card (currently 3090). 
+- Dimension: 768x768. 1024x1024 will ~~give you OOM with 24GB card (currently 3090)~~ crash instantly. 
+
+- Looks like it is not recoverable. Reboot WebUI then.
 
 - Number of frames / FPS: 32 / 8 (For testing)
 
 ### No change from text2img ###
 
-- [FreeU](./freeu.md) / [Dynamic CFG](./dynamic_cfg.md). They just compatable. 
+- [FreeU](./freeu.md) is compatable. 
+
+- [Dynamic CFG](./dynamic_cfg.md) is compatable, but effect is not good. If you choose DDIM, it will automatically disabled because it doesn't support DDIM.
 
 - VAE / UNET (original text2img model) / LoRA: *There shouldn't be limitation.*
 
-## Result ##
+## Result (text2vid) ##
 
 - Off AnimateDiff. Note that [style LoRA](https://civitai.com/models/164160/ph-draw-style) has been used.
 
@@ -63,3 +67,9 @@ Steps: 24, Sampler: DDIM, CFG scale: 6, Seed: 680973778, Size: 768x768, Model ha
 Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (breasts:0.5)
 Steps: 24, Sampler: DDIM, CFG scale: 6, Seed: 680973778, Size: 768x768, Model hash: 41429fdee1, Model: 20-bpcga9-lracrc2oh-b11i75pvc-gf34ym34-sd, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.2, \"skip_factor\": 0.9}, {\"backbone_factor\": 1.4, \"skip_factor\": 0.2}]", FreeU Schedule: "0.0, 1.0, 0.0", FreeU Version: 2, Lora hashes: "ph_draw: 3e4f2671b6f7", Version: v1.6.0
 ```
+
+## Applying with ControlNet ##
+
+- Read [the guide about ControlNet first](./controlnet.md). The parameter searching will based from there.
+
+- Now we are good to go.
