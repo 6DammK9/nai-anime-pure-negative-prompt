@@ -91,10 +91,10 @@ Steps: 24, Sampler: DDIM, CFG scale: 6, Seed: 680973778, Size: 768x768, Model ha
 
 |Style|PNG (no CNet / Animediff)|Result|
 |---|---|---|
-|Default|![img/231202-2541798183-768-768-6-48-20231024010558.png](img/231202-2541798183-768-768-6-48-20231024010558.png)|`![img/00037-2541798183.mp4](img/00037-2541798183.mp4)`|
+|Default|![img/231202-2541798183-768-768-6-48-20231024010558.png](img/231202-2541798183-768-768-6-48-20231024010558.png)|!`[img/00037-2541798183.mp4](img/00037-2541798183.mp4)`|
 |Moderate style|![img/231201-2541798183-768-768-6-48-20231024010531.png](img/231201-2541798183-768-768-6-48-20231024010531.png)|`![img/00038-2541798183.mp4](img/00038-2541798183.mp4)`|
-|Another style|![img/231203-2541798183-768-768-6-48-20231024010649.png](img/231203-2541798183-768-768-6-48-20231024010649.png)|Coming soon|
-|Agressive style|![img/231204-2541798183-768-768-6-48-20231024010652.png](img/231204-2541798183-768-768-6-48-20231024010652.png)|Coming soon|
+|Another style|![img/231203-2541798183-768-768-6-48-20231024010649.png](img/231203-2541798183-768-768-6-48-20231024010649.png)|`![img/00040-2541798183.mp4](img/00040-2541798183.mp4)`|
+|Agressive style|![img/231204-2541798183-768-768-6-48-20231024010652.png](img/231204-2541798183-768-768-6-48-20231024010652.png)|`![img/00039-2541798183.mp4](img/00039-2541798183.mp4)`|
 
 <details>
     <summary>Click to open img/00037-2541798183.mp4</summary>
@@ -107,6 +107,20 @@ https://github.com/6DammK9/nai-anime-pure-negative-prompt/assets/10937874/61ae8d
     <summary>Click to open img/00038-2541798183.mp4</summary>
 
 https://github.com/6DammK9/nai-anime-pure-negative-prompt/assets/10937874/990799a8-c8fe-4d5a-bb37-37e042004b5d
+
+</details>
+
+<details>
+    <summary>Click to open img/00039-2541798183.mp4</summary>
+
+https://github.com/6DammK9/nai-anime-pure-negative-prompt/assets/10937874/16e49637-2205-491e-8af4-6ff52ed2ca52
+
+</details>
+
+<details>
+    <summary>Click to open img/00040-2541798183.mp4</summary>
+
+https://github.com/6DammK9/nai-anime-pure-negative-prompt/assets/10937874/45370dae-d250-45d8-b130-924520ed37fc
 
 </details>
 
