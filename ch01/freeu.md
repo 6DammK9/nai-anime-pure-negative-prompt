@@ -13,3 +13,22 @@
 
 ![xyz_grid-0127-1986506139-5120-1754-4.5-192-20230924004356.jpg](img/xyz_grid-0127-1986506139-5120-1754-4.5-192-20230924004356.jpg)
 
+- Also it supports Controlnet, and potentially Animatediff.
+
+## Findings on "Version 2" ##
+
+- *If you cannot update the extension via WebUI, head to the extention directory (`SD_DIR/extensions/sd-webui-freeu`) and then `git pull`.*
+
+- [Github closed issue.](https://github.com/ljleb/sd-webui-freeu/issues/37) [And the "updated FreeU code".](https://github.com/ChenyangSi/FreeU#freeu-code)
+
+- I am not fully understand the mentioned "hidden mean" in the paper, but this should have been reinterprepted:
+
+![img/screencap-23102301.png](img/screencap-23102301.png)
+
+- Sure it has slight difference. 
+
+![img/xyz_grid-0333-3972813705-5120-1754-4-256-20231023133638.jpg](img/xyz_grid-0333-3972813705-5120-1754-4-256-20231023133638.jpg)
+
+- Now the optimal CFG $\varphi$ go down to 0.5. 
+
+![img/xyz_grid-0335-3972813705-7040-7514-4-256-20231023143805.jpg](img/xyz_grid-0335-3972813705-7040-7514-4-256-20231023143805.jpg)
