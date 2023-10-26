@@ -19,6 +19,13 @@
 - [AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning](https://arxiv.org/abs/2307.04725)
 - [WebUI 整合](https://github.com/continue-revolution/sd-webui-animatediff)
 
+### (231028 更新) m2m / mov2mov 相關 ###
+
+- *小心一詞多義.*
+- [video-to-video](https://stable-diffusion-art.com/video-to-video/)
+- [mov2mov](https://github.com/Scholar01/sd-webui-mov2mov)
+- [controlnet-m2m](https://github.com/lllyasviel/ControlNet/issues/184), [link](https://github.com/Mikubill/sd-webui-controlnet/discussions/546), [x](https://twitter.com/toyxyz3/status/1632731437941268481)
+
 ## Methods ##
 
 ### 每幀 i2i 的 v2v (用了 anythingv3) ###
