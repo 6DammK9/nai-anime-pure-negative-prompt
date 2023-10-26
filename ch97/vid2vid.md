@@ -25,6 +25,7 @@
 - [video-to-video](https://stable-diffusion-art.com/video-to-video/)
 - [mov2mov](https://github.com/Scholar01/sd-webui-mov2mov)
 - [controlnet-m2m](https://github.com/lllyasviel/ControlNet/issues/184), [link](https://github.com/Mikubill/sd-webui-controlnet/discussions/546), [x](https://twitter.com/toyxyz3/status/1632731437941268481)
+- [ebsynth+cnet (seg)](https://v.douyin.com/idG87j8J/)
 
 ## Methods ##
 
