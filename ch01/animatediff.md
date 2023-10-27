@@ -8,6 +8,16 @@
 
 - It introduce a whole lot of new parameters to explore (including models), it will be tedious. I'll try my best to correlate the parameters I've used.
 
+## Worth Mentioning ##
+
+- [Article in ch97](../ch97/vid2vid.md)
+
+- [animatediff-cli-prompt-travel](https://github.com/s9roll7/animatediff-cli-prompt-travel): As [manuscript](https://en.wikipedia.org/wiki/Manuscript#Film_and_theatre)
+
+- [ffmpeg](https://stackoverflow.com/questions/10957412/fastest-way-to-extract-frames-using-ffmpeg): Per frame basis to unlock more fearues / integrations (e.g. contents below)
+
+- [Segmentation tool](https://segment-anything.com/), [cv2](https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html): Preprocess tool (like upsampler)
+
 ## Explorered hyperparameters ##
 
 - It will be arranged in order from "do not touch" to "just change it".
@@ -135,3 +145,49 @@ https://github.com/6DammK9/nai-anime-pure-negative-prompt/assets/10937874/45370d
 |Two|Text Prompt with result video frames|AnimateDiff|Motion (Relation between Coordinates)|
 
 - It tries to [deompose the complicated question in to subproblems, and solve them together](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm). Since SD and related models successfully [shows "coorporation" together](../ch05/README.MD#associative-property) (however "common ground" is not easy to find), it ["sounds"](https://en.wikipedia.org/wiki/Soundness) feasible.
+
+## Further tuning the ControlNet strengh ##
+
+- *XY plot takes time.* 
+
+<details>
+    <summary>ref</summary>
+
+![img/xyz_grid-0348-2541798183-12032-3236-6-48-20231025221929.jpg](img/xyz_grid-0348-2541798183-12032-3236-6-48-20231025221929.jpg)
+
+</details>
+
+<details>
+    <summary>line</summary>
+
+![img/xyz_grid-0350-2541798183-12032-3236-6-48-20231025225452.jpg](img/xyz_grid-0350-2541798183-12032-3236-6-48-20231025225452.jpg)
+
+</details>
+
+<details>
+    <summary>seg</summary>
+
+![img/xyz_grid-0352-2541798183-12032-3236-6-48-20231025233155.jpg](img/xyz_grid-0352-2541798183-12032-3236-6-48-20231025233155.jpg)
+
+</details>
+
+- And then the parameter again. Streamline suggested that "seg <= line < ref" and "all shoud be Controlnet is more important".
+
+|video|style|lora|seg|line|ref|light|mode|
+|---|---|---|---|---|---|---|---|
+|00052-1735226490|kiwi|0.9|0.25|0.25|0.5|0.25|all balanced|
+|00057-4009248655|none|0|0.5|0.5|0.5|0.25|all balanced|
+
+<details>
+    <summary>Click to open img/00052-1735226490.mp4</summary>
+
+[coming soon](img/00052-1735226490.mp4)
+
+</details>
+
+<details>
+    <summary>Click to open img/00057-4009248655.mp4</summary>
+
+[coming soon](img/00057-4009248655.mp4)
+
+</details>

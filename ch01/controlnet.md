@@ -116,3 +116,5 @@ Steps: 24, Sampler: DDIM, CFG scale: 6, Seed: 1847485688, Size: 1024x1024, Model
 - Finally we roll a batch for consistancy (accidentally applied style LoRA). It looks good, *but style transfer is not obvious. Seems that the weight above should be tuned.*
 
 ![img/grid-0199-2791288649-3072-3072-6-24-20231023232848.jpg](img/grid-0199-2791288649-3072-3072-6-24-20231023232848.jpg)
+
+- More tuning in [animatediff](./animatediff.md), which optimal parameters are very hard to find.
