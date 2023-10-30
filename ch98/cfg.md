@@ -48,4 +48,4 @@ PS: 沒提及 TI / DB / DA 那些. 效率可以低下, 但方向可是容易掌�
 
 - [DA 評價平平, 大眾仍然偏好 TI: DreamArtist](https://github.com/7eu7d7/DreamArtist-stable-diffusion)
 - [SD 模型有很多限制, 而且 SFW, 2.0 都一樣](https://github.com/CCRcmcpe/scal-sdt/wiki)
-- [CFG 玄學 (大量抽圖仍然是王道)](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/925997e9.md)
+- [CFG 玄學 (大量抽圖仍然是王道)](../ch99/925997e9.md)

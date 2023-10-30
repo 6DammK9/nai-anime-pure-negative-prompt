@@ -36,7 +36,7 @@ Fgrcf: 192, Fnzcyre: Rhyre, PST fpnyr: 12, Frrq: 2538523372, Fvmr: 384k640, Zbqr
 
 ## Theory ##
 
-- Already explained in [README.md](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/README.md). Otherwise, ~~I know you won't.~~ It's fine.
+- Already explained in [README.md](../README.md). Otherwise, ~~I know you won't.~~ It's fine.
 
 - **Dimension, CFG and Sampling method is fixed.** It is proven with random topics.
 - All prompts has strength in **negative log** from 1.0.

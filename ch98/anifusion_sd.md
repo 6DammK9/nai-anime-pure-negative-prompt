@@ -23,6 +23,6 @@ https://medium.com/@enryu9000/anifusion-sd-91a59431a6dd
 
 Win11 的我:
 
-https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch99/anifusion2_win11_vscode_miniconda.sh
+[anifusion2_win11_vscode_miniconda.sh](../ch97/anifusion2_win11_vscode_miniconda.sh)
 
 ps: email 作者後, 人家不打算參與任何群組.

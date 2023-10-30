@@ -142,9 +142,9 @@
 
 - **Recover, and even replace TE.** [Models have been uploaded to HuggingFace.](https://huggingface.co/6DammK9/bpmodel-sd14-merge) Thanks *@gesen2gee (Discord)* for mentioning [stable-diffusion-webui-model-toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit). After some simple test (make sure it can run, can being merged afterward), **I'll post into HuggingFace for reference.** [Here is the scirpt segment to remove TE.](https://github.com/CCRcmcpe/scal-sdt/blob/963ac6a20151139b90f4d0dc7216c036a57964cd/ckpt_tool.py#L40) Recovering them is unknown. Probably need to program it myself. [Here is a script potentially useful.](https://github.com/kohya-ss/sd-scripts/blob/main/tools/convert_diffusers20_original_sd.py) 
 
-- **Baseline merge: Uniform merge a.k.a bagging.** [Models have been uploaded to HuggingFace.](https://huggingface.co/6DammK9/AstolfoMix) As easy as the "Checkpoint Merger" does. To make sure all of them are in [uniform distribution](https://en.wikipedia.org/wiki/Discrete_uniform_distribution), merge with weight $1/x$ for $x > 1$. Therefore 50% for the 2nd model, 33% for the 3rd model, and so on. The process should be **parameterless**. 
+- **Baseline merge: Uniform merge a.k.a ~~bagging~~ averaging.** [Models have been uploaded to HuggingFace.](https://huggingface.co/6DammK9/AstolfoMix) As easy as the "Checkpoint Merger" does. To make sure all of them are in [uniform distribution](https://en.wikipedia.org/wiki/Discrete_uniform_distribution), merge with weight $1/x$ for $x > 1$. Therefore 50% for the 2nd model, 33% for the 3rd model, and so on. The process should be **parameterless**. 
 
-- **Proposed merge: autombw.** Use [autombw v2](https://github.com/Xerxemi/auto-MBW-rt). Technical details are under analysis. It has been known as *memory intensive* instead of *GPU intensive*. I have some ex-mining SSDs which may help the process. **This will not happen soon.** I didn't expect for merging 10+ models. [Boosting](https://chih-sheng-huang821.medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-ensemble-learning%E4%B9%8Bbagging-boosting%E5%92%8Cadaboost-af031229ebc3) in such scale requires a new software from ground up. *I am still using pure GUI with minimum coding.*
+- **Proposed merge: autombw a.k.a boosting.** Use [my own fork](https://github.com/6DammK9/auto-MBW-rt/tree/webui-160-update) of [autombw v2](https://github.com/Xerxemi/auto-MBW-rt). Technical details are under analysis. It has been known as *memory intensive* instead of *GPU intensive*. I have some ex-mining SSDs which may help the process. **This will not happen soon.** I didn't expect for merging 10+ models. [Boosting](https://chih-sheng-huang821.medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-ensemble-learning%E4%B9%8Bbagging-boosting%E5%92%8Cadaboost-af031229ebc3) in such scale requires a new software from ground up. *I am still using pure GUI with minimum coding.*
 
 - [Get a capable GPU to output such kind of images.](../ch04/readme.md#chapter-04b-extra-making-use-of-m40-24gb-for-generating-large-images) I'm suprised that *it pulls 19GB of VRAM already*.
 
@@ -206,7 +206,9 @@ Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), 
 Steps: 48, Sampler: Euler, CFG scale: 4.5, Seed: 978318572, Size: 768x768, Model hash: d94d7363a0, Model: 08-vcbpmt_d8cwlbd_aweb5-cwl, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Clip skip: 2, Version: v1.6.0
 ```
 
-### "Uniform merge" as a variant of bagging / ensemble averaging ### 
+### "Uniform merge" as a variant of ~~bagging~~ ensemble averaging ### 
+
+- [Referenced papers.](../ch01/merge.md#blue-pill-but-in-thesis-paper)
 
 - [This is random gold medal Kaggle notebook using an ensemble of 10 models with average weight first, then further optimize with Regressor OVER the weights.](https://www.kaggle.com/code/ipythonx/tf-keras-hybrid-efficientnet-swin-transformer-tpu). 
 
@@ -296,3 +298,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 ![am5_unet_xy.png](../ch03/v2a/img/am5_unet_xy.png)
 
 - In artistic sense, we can see that *the human face has been slightly changed, and the background is more clean and consistant.* [Could it be correlated to other statistical tools?](https://github.com/deepghs/imgutils) [Once again the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
+
+## Finding on "autombw a.k.a boosting" ##
+
+- *Currently in rabbit hole.* I'll update when it works.

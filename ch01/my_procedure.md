@@ -11,7 +11,7 @@
 
 ## Before prompt engineering ##
 
-- Find a model you're interested (I prefer non merged or TTE-ed, preferable original FT approaches with absolutely no idea on results). [VBP2.3](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch02/f59359c175.md) is a good testing subject.
+- Find a model you're interested (I prefer non merged or TTE-ed, preferable original FT approaches with absolutely no idea on results). [VBP2.3](../ch02/f59359c175.md) is a good testing subject.
 - Prior knowledge (heard from author, observation in discussion): Trained with artists with rich background. Authour feels "overfit", **and it is SFW.**
 - [CFG-STEP scan.](./cfg_step.md) Result: CFG 4.5 in 768 x 768, no change with hires fix, even in 2x.
 - [Hi-Res Fix scan.](./hires_fix.md) Result: 2x (yay~) with denoise ratio 0.7.

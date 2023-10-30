@@ -22,8 +22,8 @@ Steps: 384, Sampler: Euler, CFG scale: 24, Seed: 1274018323, Size: 1024x576, Mod
 
 ## Theory
 
-- [The weak negative prompts, and discovering the pros (car) in NAI.](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/README.md)
-- [Playing Astolfo with some weird stuffs.](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/astolfo_fate.md)
+- [The weak negative prompts, and discovering the pros (car) in NAI.](../README.md)
+- [Playing Astolfo with some weird stuffs.](./astolfo_fate.md)
 - This time only replacing ~~segs~~ with some legit stuffs (`car` > `WRC`). [There is so many WRC images in the SD dataset therefore it is good on WRC / rally cars](https://www.reddit.com/r/rally/comments/x1yj6w/ai_stable_diffusion_rally_car/). [Someone try to mod with Tesla images and it still works.](https://www.xiaote.com/r/63182dbd73206168b2f7a5d4). **Therefore placing a human inside should be fesible.**
 - This time the prompts are weak enough to let SD kick in. Therefore the sequence is important. **Main character must come first.** ~~Sorry Astolfo.~~ Banning `bad` is somehow most effective as there are sufficient datasets supporting it. 
 - `race_queen` (danbooru tag) works, `racer` / `crew` (SD tag) doesn't. The prompt is unique enough to be effective.
