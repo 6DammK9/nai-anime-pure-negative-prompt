@@ -301,4 +301,10 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 ## Finding on "autombw a.k.a boosting" ##
 
-- *Currently in rabbit hole.* I'll update when it works.
+- [*Currently in rabbit hole.*](https://github.com/6DammK9/auto-MBW-rt/tree/webui-160-update). Yes I write codes again.
+
+- Academically this process resembles [RLHF](https://en.wikipedia.org/wiki/Reinforcement_learning) or [Boosting](https://en.wikipedia.org/wiki/Boosting_(machine_learning)). 
+
+- Philosophicaly, *by belief*, the [MBW (Merge Block Weight)](https://rentry.org/RentrySD/#11112-extensions-for-model-merging) here serves a [framework](https://en.wikipedia.org/wiki/Conceptual_framework) which a whole "SD" is simplified (affirmed) as "12 layers of UNet with a whole CLIP". Checkout [my findings / opionions](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch01/merge.md) if interested.
+
+- Therefore "Auto" "MBW" is a kind of cheap way to "train" a SD model [from an ensemble of SD models](https://en.wikipedia.org/wiki/Ensemble_learning), without millions of images ["6M"](https://huggingface.co/datasets/animelover/danbooru2022) ["10e"](https://www.reddit.com/r/NovelAi/comments/xydjc6/announcement_proprietary_software_source_code/) [for "the anime model"](https://twitter.com/novelaiofficial/status/1573844864390791169), disregarding [the original LAION5B for SD](https://laion.ai/blog/laion-5b/), which is "5B".
