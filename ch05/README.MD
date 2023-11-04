@@ -303,6 +303,27 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - [*Currently in rabbit hole.*](https://github.com/6DammK9/auto-MBW-rt/tree/webui-160-update). Yes I write codes again.
 
+### Studying for recommended parameters ###
+
+- For [Bayesian Optimization](https://jonathan-hui.medium.com/bayesian-linear-regression-gaussian-process-with-normal-distribution-e686f7846ad1), the library used [Hyperactive](https://github.com/SimonBlanke/Hyperactive/tree/master) for implementation, Check out [this guide (very bottom) for description.](https://nbviewer.org/github/SimonBlanke/hyperactive-tutorial/blob/main/notebooks/hyperactive_tutorial.ipynb) From [this code](https://github.com/SimonBlanke/Hyperactive/blob/master/examples/optimization_techniques/bayesian_optimization.py), it points to [this code](https://github.com/SimonBlanke/Gradient-Free-Optimizers/blob/master/gradient_free_optimizers/optimizers/smb_opt/bayesian_optimization.py), which make use of [GaussianProcessRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html). The `xi` is the only hyperparameter, which makes "warm start" `warm_start_smbo` sounds irrelevant.
+
+- I think [ImageReward](https://github.com/THUDM/ImageReward) is the SOTA of the general evaluation metric, which is advanced from the [original AVA](https://paperswithcode.com/dataset/aesthetic-visual-analysis) used by SD, or [Cafe's Aesthetic score](https://huggingface.co/cafeai/cafe_aesthetic) in anime community, [and the hybird approach](https://cafeai.notion.site/WD-1-5-Beta-2-Release-Notes-2852db5a9cdd456ba52fc5730b91acfd)
+
+- For the payloads, my Astolfo is already a great [testing dataset](https://en.wikipedia.org/wiki/Training,_validation,_and_test_data_sets). All 20 models has almost none data related to him, or any actual location, or vehicles. The problem is I'm not sure how the BLIP inside ImageReward treat the prompts. By NLP sense, [BPE](https://en.wikipedia.org/wiki/Byte_pair_encoding) should handle the syntax and punctuations well, especially the training progress in ImageReward involves tag-styled prompts. Also, "batch count" (`n_iter`) is important, which I can make use of averaged score:
+
+```py
+    if tally_type == "Arithmetic Mean":
+        testscore = statistics.mean(imagescores)
+```
+
+- For choosing [Arithmetic Mean](https://en.wikipedia.org/wiki/Arithmetic_mean), [Bayesian ~~statistics~~](https://en.wikipedia.org/wiki/Bayesian_statistics) Optimization relies on [MAP](https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation) and [MLE](https://en.wikipedia.org/wiki/Maximum_likelihood), which are purely arithmetic.
+
+- For comparasion with other optimizers and related parameters, you can search of ML related articles. As stated in the original notebook, [and this paper](https://arxiv.org/abs/2009.08166), if the problem is complicated ~~art is pure abstract~~ and it is costly to try ~~60x of payload~~, *I should invest on the most statistic advanced algorithm.*
+
+- *For other parameters I have not mentioned, they are against consistancy and overcomplicated. Even I need to read actual codes to understand what they means, because they are original ideas from origianl author, which are not explained.*
+
+### "AutoMBW" as a variant of Boosting ###
+
 - Academically this process resembles [RLHF](https://en.wikipedia.org/wiki/Reinforcement_learning) or [Boosting](https://en.wikipedia.org/wiki/Boosting_(machine_learning)). 
 
 - Philosophicaly, *by belief*, the [MBW (Merge Block Weight)](https://rentry.org/RentrySD/#11112-extensions-for-model-merging) here serves a [framework](https://en.wikipedia.org/wiki/Conceptual_framework) which a whole "SD" is simplified (affirmed) as "12 layers of UNet with a whole CLIP". Checkout [my findings / opionions](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch01/merge.md) if interested.
