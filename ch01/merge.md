@@ -28,6 +28,8 @@
 
 - Great potential: Select best merging hyperparameters by Reinforcement Learning [Medium article](https://medium.com/@media_97267/the-automated-stable-diffusion-checkpoint-merger-autombw-44f8dfd38871) [sdweb-auto-MBW](https://github.com/Xerxemi/sdweb-auto-MBW). Note: Score metric may not fit everybody, just like what WD / SD / NAI did. [ImageReward would be more relatable.](https://arxiv.org/abs/2304.05977)
 
+- Now boosting is available as [sd-webui-bayesian-merger](https://github.com/s1dlx/sd-webui-bayesian-merger). [autombw v2](https://github.com/Xerxemi/auto-MBW-rt) supports both bayesian boosting and ImageReward. [I will include it in my next merge](../ch05/README.MD). Currently [using my own fork to make them works, mainly code update.](https://github.com/6DammK9/auto-MBW-rt/tree/webui-160-update)
+
 - Circulating in QQ: [MBW魔法密录02-14](https://t.me/StableDiffusion_CN/1083749), [模型基础理论](https://docs.qq.com/doc/p/a36aa471709d1cf5758151d68ef5b59397421b2e)
 
 - [Commentary by GhostShell, author of GhostMix](https://zhuanlan.zhihu.com/p/641434725), [description of GhostMix](https://zhuanlan.zhihu.com/p/632710727), just cite for docuemtary purpose. [Bilibili mirror 1](https://www.bilibili.com/read/cv23963021?spm_id_from=333.999.list.card_opus.click), [Bilibili mirror 2](https://www.bilibili.com/read/cv23877039?spm_id_from=333.999.list.card_opus.click)
