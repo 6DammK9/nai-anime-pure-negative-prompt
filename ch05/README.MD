@@ -38,26 +38,26 @@
 
 |Index|Model Name|Model source|Merged yet? (Baseline / Extended / In review)|
 |---|---|---|---|
-|01|[VBP](../ch02/f59359c175.md)|"NAI SFW"|Baseline|
-|02|[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|Baseline|
-|03|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|Baseline|
-|04|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|Baseline|
-|05|[CoffeeWithLiquor](https://huggingface.co/StereoBartender/CoffeeWithLiquor)|NAI (Lots of LoRAs)|Baseline|
-|06|[BreakDomain](https://civitai.com/models/117192/breakdomainowners-model-i-have-no-rights-if-he-want-it-will-be-taken-down)|NAI|Baseline|
-|07|[AIWMix](https://civitai.com/models/74165?modelVersionId=78888)|["SD"](../ch97/0299d.md), |Baseline|
-|08|[Ether Blu Mix](https://civitai.com/models/17427/ether-blu-mix)|Merges of famous A|Baseline|
-|09|[majicMIX realistic](https://civitai.com/models/43331?modelVersionId=94640)|Merges of MJ + "2.5" + [NWSJ](https://civitai.com/models/53601/nwsjrealistic)|Baseline|
-|10|[Silicon29](https://huggingface.co/Xynon/SD-Silicon)|MBW of "2.5"|Baseline|
-|11|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|Extended|
-|12|[CGA9](https://t.me/StableDiffusion_CN/1170018)|AutoMBW|Extended|
-|13|[LimeREmix](https://civitai.com/models/153081?modelVersionId=23379)|Human evaluated merge|Extended|
-|14|[CyberRealistic Classic](https://civitai.com/models/71185/cyberrealistic-classic)|Pure Realistic Merge|Extended
-|15|[ORCHIDHEART](https://huggingface.co/reroti/ORCHIDHEART)|Similar to CGA|Extended|
-|16|[BB95 Furry Mix](https://civitai.com/models/17649/bb95-furry-mix)|[E621](https://knowyourmeme.com/memes/sites/e621)|Extended|
-|17|[Indigo Furry mix](https://civitai.com/models/34469?modelVersionId=167882)|[E621](https://knowyourmeme.com/memes/sites/e621)|Extended|
-|18|[AOAOKO [PVC Style Model]](https://civitai.com/models/15509/aoaoko-pvc-style-model)|[PVC](https://huggingface.co/datasets/p1atdev/pvc)|Extended|
-|19|[GuoFeng3](https://civitai.com/models/10415/3-guofeng3)|[Chinese fantasy](https://en.wikipedia.org/wiki/Xianxia)|Extended|
-|20|[YiffyMix](https://civitai.com/models/3671?modelVersionId=189192)|[E621](https://knowyourmeme.com/memes/sites/e621)|Extended|
+|`01`|[VBP](../ch02/f59359c175.md)|"NAI SFW"|Baseline|
+|`_02`|[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|Baseline|
+|`_03`|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|Baseline|
+|`_04`|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|Baseline|
+|`_05`|[CoffeeWithLiquor](https://huggingface.co/StereoBartender/CoffeeWithLiquor)|NAI (Lots of LoRAs)|Baseline|
+|`_06`|[BreakDomain](https://civitai.com/models/117192/breakdomainowners-model-i-have-no-rights-if-he-want-it-will-be-taken-down)|NAI|Baseline|
+|`_07`|[AIWMix](https://civitai.com/models/74165?modelVersionId=78888)|["SD"](../ch97/0299d.md), |Baseline|
+|`_08`|[Ether Blu Mix](https://civitai.com/models/17427/ether-blu-mix)|Merges of famous A|Baseline|
+|`_09`|[majicMIX realistic](https://civitai.com/models/43331?modelVersionId=94640)|Merges of MJ + "2.5" + [NWSJ](https://civitai.com/models/53601/nwsjrealistic)|Baseline|
+|`_10`|[Silicon29](https://huggingface.co/Xynon/SD-Silicon)|MBW of "2.5"|Baseline|
+|`_11`|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|Extended|
+|`_12`|[CGA9](https://t.me/StableDiffusion_CN/1170018)|AutoMBW|Extended|
+|`_13`|[LimeREmix](https://civitai.com/models/153081?modelVersionId=23379)|Human evaluated merge|Extended|
+|`_14`|[CyberRealistic Classic](https://civitai.com/models/71185/cyberrealistic-classic)|Pure Realistic Merge|Extended
+|`_15`|[ORCHIDHEART](https://huggingface.co/reroti/ORCHIDHEART)|Similar to CGA|Extended|
+|`_16`|[BB95 Furry Mix](https://civitai.com/models/17649/bb95-furry-mix)|[E621](https://knowyourmeme.com/memes/sites/e621)|Extended|
+|`_17`|[Indigo Furry mix](https://civitai.com/models/34469?modelVersionId=167882)|[E621](https://knowyourmeme.com/memes/sites/e621)|Extended|
+|`_18`|[AOAOKO [PVC Style Model]](https://civitai.com/models/15509/aoaoko-pvc-style-model)|[PVC](https://huggingface.co/datasets/p1atdev/pvc)|Extended|
+|`_19`|[GuoFeng3](https://civitai.com/models/10415/3-guofeng3)|[Chinese fantasy](https://en.wikipedia.org/wiki/Xianxia)|Extended|
+|`_20`|[YiffyMix](https://civitai.com/models/3671?modelVersionId=189192)|[E621](https://knowyourmeme.com/memes/sites/e621)|Extended|
 |xx|[ALunarDream](https://discord.com/channels/930499730843250783/1087111248447017172)|NAI (Style Blending)|*In review*|
 |xx|[Dreamlike Anime](https://huggingface.co/dreamlike-art/dreamlike-anime-1.0)|Non NAI based Anime|*Rejected (legal issue)*|
 |xx|[Marbel V182](https://discord.com/channels/1027129024054575174/1155074634274844693)|Human evaluated merge|*In review*|
@@ -69,7 +69,7 @@
 |---|---|
 |Baseline|This model is **capable to output images well with 1024x1024 native, with great varity contents.** *Identifying Astolfo is a plus* (LAION has a few images of him).|
 |Extended|This model is **either** capable to do any one of them above. It means that the model has experienced radical finetuning, and the output diversity is damaged. ~~(Or it is just too late to be spotted, such as 13)~~ |
-|In review|This model **sounds** that it has been finetuned in a menaingful way. It is mostly not effective with great tradeoff, and it need to be carefully merged **under sequence** (i.e. very last).|
+|In review|This model **sounds** that it has been finetuned in a menaingful way. It is mostly not effective with great tradeoff, and it need to be carefully merged **under sequence** (i.e. very last). **Now they are put on hold because I have 20 models already.**|
 
 - Given the success of ["2.99D" models](../ch02/4de704d8.md) and ["2.5D" models](https://huggingface.co/WarriorMama777/OrangeMixs), I expect there will be suprise when I merge them together (however it is hard to preprocess the model, see below).
 
@@ -318,9 +318,53 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - For choosing [Arithmetic Mean](https://en.wikipedia.org/wiki/Arithmetic_mean), [Bayesian ~~statistics~~](https://en.wikipedia.org/wiki/Bayesian_statistics) Optimization relies on [MAP](https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation) and [MLE](https://en.wikipedia.org/wiki/Maximum_likelihood), which are purely arithmetic.
 
-- For comparasion with other optimizers and related parameters, you can search of ML related articles. As stated in the original notebook, [and this paper](https://arxiv.org/abs/2009.08166), if the problem is complicated ~~art is pure abstract~~ and it is costly to try ~~60x of payload~~, *I should invest on the most statistic advanced algorithm.*
+- For comparasion with other optimizers and related parameters, check out [this discussion](https://stats.stackexchange.com/questions/193306/optimization-when-cost-function-slow-to-evaluate). Usually it is compared with LIPO, or randomized search. Hillclimb (Gradient descent) is also legit, but evalulation time and hyperparameter count is way too high. As stated in the original notebook, [and this paper](https://arxiv.org/abs/2009.08166), if the problem is complicated ~~art is pure abstract~~ and it is costly to try ~~60x of payload~~, *I should invest on the most statistic advanced algorithm.*
+
+- Now I am worried on the "training time" (optimization time on AuboMBW). "RLHF" (the optimization) went wild. With the "payload" of 12 recent artworks (directly from *Baseline*), it takes almost 30 minutes to complete. Since all 12 artworks has different prompts and seeds (even they are highly similar), setting "early stopping" as 25 best iterlations is too large, I will reduce after analyzing the first successful merge. The time limit (2880 minutes, 48 hours) will be followed, although I have a more "flexible range" up to 10000 minutes (close to a week).
 
 - *For other parameters I have not mentioned, they are against consistancy and overcomplicated. Even I need to read actual codes to understand what they means, because they are original ideas from origianl author, which are not explained.*
+
+### Index of each merge ###
+
+- This time I'm doubt that if *associative property* still remains in boosting. The mean (just naively take average of 26 parameters) of the merged weight is ranged from 0.33-0.45, with minimal as 0.1 (0.05 will throw runtime error), which yields to uneven merge. Instead of merging in sequence, this time I will use [parallel merge](https://en.wikipedia.org/wiki/Merge_algorithm), which tends to save the "good bias" in progress, while I still need to survive the tedious merges. Since it is not a perfect binary tree, the "better 4" model merges will be preserved for a round.
+
+- Special case: `01` = `_01a`. 
+- Assume `15b` is the "best among `11b` to `15b`"
+- Cannot parallel since `15b` to `20b`
+- `20b` is yet to be decided (AutoMBW with `20a`?)
+
+|Model Index|Description|
+|---|---|
+|`10`|The 10th uniform merge model with TE reset.|
+|`10a`|The 10th uniform merge model without TE reset.|
+|`_10`|The 10th raw model without TE reset.|
+|`_10a`|The 10th raw model with TE reset.|
+|`10b`|The 10th autoMBW model with TE reset, sequential merge, started from `20` with `_01a`.|
+|`10c`|The 10th autoMBW model with TE reset, parallel merge, started from `_01a` with `_02a`.|
+
+|Model O|Model A|Model B|
+|---|---|---|
+|`01b`|`_01a`|`_02a`|
+|`02b`|`_03a`|`_04a`|
+|`03b`|`_05a`|`_06a`|
+|`04b`|`_07a`|`_08a`|
+|`05b`|`_09a`|`_10a`|
+|`06b`|`_11a`|`_12a`|
+|`07b`|`_13a`|`_14a`|
+|`08b`|`_15a`|`_16a`|
+|`09b`|`_17a`|`_18a`|
+|`10b`|`_19a`|`_20a`|
+|`11b`|`01b`|`02b`|
+|`12b`|`03b`|`04b`|
+|`13b`|`05b`|`06b`|
+|`14b`|`07b`|`08b`|
+|`15b`|`09b`|`10b`|
+|`16b`|`11b`|`12b`|
+|`17b`|`13b`|`14b`|
+|`18b`|`15b`|`16b`|
+|`19b`|`17b`|`18b`|
+
+- With `20a`, `20b`, `20c` presents, I may make `20d` by uniform merge them again.
 
 ### "AutoMBW" as a variant of Boosting ###
 

@@ -8,6 +8,8 @@
 
 - [ZipIt! Merging Models from Different Tasks without Training](https://arxiv.org/abs/2305.03053)
 
+- [AdapterSoup: Weight Averaging to Improve Generalization of Pretrained Language Models](https://arxiv.org/abs/2302.07027)
+
 - [Merging Models with Fisher-Weighted Averaging](https://arxiv.org/abs/2111.09832)
 
 - [Acceleration of Stochastic Approximation by Averaging](https://epubs.siam.org/doi/abs/10.1137/0330046?journalCode=sjcodc) a.k.a "Polyak averaging"
