@@ -339,8 +339,8 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 |`10a`|The 10th uniform merge model without TE reset.|
 |`_10`|The 10th raw model without TE reset.|
 |`_10a`|The 10th raw model with TE reset.|
-|`10b`|The 10th autoMBW model with TE reset, sequential merge, started from `20` with `_01a`.|
-|`10c`|The 10th autoMBW model with TE reset, parallel merge, started from `_01a` with `_02a`.|
+|`10b`|The 10th autoMBW model with TE reset, parallel merge, started from `_01a` with `_02a`.|
+|`10c`|The 10th autoMBW model with TE reset, sequential merge, started from `20` with `_01a`.|
 
 |Model O|Model A|Model B|
 |---|---|---|
