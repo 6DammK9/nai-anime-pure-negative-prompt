@@ -1,0 +1,49 @@
+modelA=E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\01-VBP23-1024-ep49-sd-v1-4.safetensors
+modelB=E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\_02-cbp2-e60-sd-v1-4.safetensors
+position_id_fix=Keep Original
+output_mode=Max Precision
+0.05,0.1,0.2,0.45,1.0,0.8,0.5,0.95,1.0,0.0,0.65,0.35,0.9,0.75,0.7,0.15,0.1,0.15,0.35,0.9,0.95,0.2,0.85,0.9,0.5,0.75,0.25
+
+[0] hyper_score (Bayesian Optimization):  40%| | 101/250 [46:44:55<68:57:57, 1666.29s/it, best_iter=0, 
+
+
+Results: 'hyper_score'  
+   Best score: 0.5242462374039804  
+   Best parameter set:
+      '0'  : 0.05  
+      '1'  : 0.1  
+      '2'  : 0.2  
+      '3'  : 0.45  
+      '4'  : 1.0  
+      '5'  : 0.8  
+      '6'  : 0.5  
+      '7'  : 0.95  
+      '8'  : 1.0  
+      '9'  : 0.0  
+      '10' : 0.65  
+      '11' : 0.35  
+      '12' : 0.9  
+      '13' : 0.75  
+      '14' : 0.75  
+      '15' : 0.7  
+      '16' : 0.15
+      '17' : 0.1  
+      '18' : 0.15  
+      '19' : 0.35  
+      '20' : 0.9  
+      '21' : 0.95  
+      '22' : 0.2  
+      '23' : 0.85  
+      '24' : 0.9  
+      '25' : 0.5  
+      '26' : 0.25  
+   Best iteration: 0  
+ 
+   Random seed: 1201246259  
+ 
+   Evaluation time   : 168229.3105931282 sec    [99.97 %]
+   Optimization time : 57.26119351387024 sec    [0.03 %]
+   Iteration time    : 168286.57178664207 sec    [673.15 sec/iter]
+ 
+2023-11-08 00:40:53,644 - AutoMBWrt - INFO - merge completed.
+2023-11-08 00:40:54,065 - AutoMBWrt - INFO - injection disabled (hopefully).

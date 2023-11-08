@@ -301,7 +301,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 ## Finding on "autombw a.k.a boosting" ##
 
-- [*Currently in rabbit hole.*](https://github.com/6DammK9/auto-MBW-rt). Yes I write codes again.
+- *Currently in rabbit hole.* Forked [auto-MBW-rt](https://github.com/6DammK9/auto-MBW-rt) and [sd-webui-runtime-block-merge](https://github.com/6DammK9/sd-webui-runtime-block-merge). Yes I write codes again.
 
 ### Studying for recommended parameters ###
 
@@ -344,27 +344,29 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 |Model O|Model A|Model B|
 |---|---|---|
-|`01b`|`_01a`|`_02a`|
-|`02b`|`_03a`|`_04a`|
-|`03b`|`_05a`|`_06a`|
-|`04b`|`_07a`|`_08a`|
-|`05b`|`_09a`|`_10a`|
-|`06b`|`_11a`|`_12a`|
-|`07b`|`_13a`|`_14a`|
-|`08b`|`_15a`|`_16a`|
-|`09b`|`_17a`|`_18a`|
-|`10b`|`_19a`|`_20a`|
-|`11b`|`01b`|`02b`|
-|`12b`|`03b`|`04b`|
-|`13b`|`05b`|`06b`|
-|`14b`|`07b`|`08b`|
-|`15b`|`09b`|`10b`|
-|`16b`|`11b`|`12b`|
-|`17b`|`13b`|`14b`|
-|`18b`|`15b`|`16b`|
-|`19b`|`17b`|`18b`|
+|`02b`|`_01a`|`_02a`|
+|`03b`|`_03a`|`_04a`|
+|`04b`|`_05a`|`_06a`|
+|`05b`|`_07a`|`_08a`|
+|`06b`|`_09a`|`_10a`|
+|`07b`|`_11a`|`_12a`|
+|`08b`|`_13a`|`_14a`|
+|`09b`|`_15a`|`_16a`|
+|`10b`|`_17a`|`_18a`|
+|`11b`|`_19a`|`_20a`|
+|`12b`|`02b`|`03b`|
+|`13b`|`04b`|`05b`|
+|`14b`|`06b`|`07b`|
+|`15b`|`08b`|`09b`|
+|`16b`|`10b`|`11b`|
+|`17b`|`12b`|`13b`|
+|`18b`|`14b`|`15b`|
+|`19b`|`16b`|`17b`|
+|`20b`|`18b`|`19b`|
 
 - With `20a`, `20b`, `20c` presents, I may make `20d` by uniform merge them again.
+
+- For payloads and receipes, see [folder autombw](./autombw).
 
 ### "AutoMBW" as a variant of Boosting ###
 
