@@ -1,0 +1,54 @@
+modelA=_05a-CoffeeWithLiquor-sd-v1-4.safetensors
+modelB=_06a-breakdomain-A0440-sd-v1-4.safetensors
+modelO=03b-AstolfoMix-_05a_06a
+position_id_fix=Keep Original
+output_mode=Max Precision
+0.9,0.1,0.5,1.0,0.7,0.3,0.4,0.5,0.3,0.3,1.0,0.0,0.8,0.8,0.6,0.4,0.6,0.6,0.4,0.4,0.0,0.1,0.5,0.5,1.0,0.3,0.8
+
+[0] hyper_score (Bayesian Optimization):  32%| | 86/270 [43:02:27<92:05:16, 1801.72s/it, best_iter=0, best_pos=[ 9  1  5 10  7  3
+
+
+Results: 'hyper_score'  
+   Best score: 0.5395429759369222  
+   Best parameter set:
+      '0'  : 0.9  
+      '1'  : 0.1  
+      '2'  : 0.5  
+      '3'  : 1.0
+      '4'  : 0.7  
+      '5'  : 0.3  
+      '6'  : 0.4  
+      '7'  : 0.5  
+      '8'  : 0.3  
+      '9'  : 0.3  
+      '10' : 1.0  
+      '11' : 0.0  
+      '12' : 0.8  
+      '13' : 0.3  
+      '14' : 0.8  
+      '15' : 0.6  
+      '16' : 0.4  
+      '17' : 0.6  
+      '18' : 0.6  
+      '19' : 0.4  
+      '20' : 0.4  
+      '21' : 0.0  
+      '22' : 0.1  
+      '23' : 0.5  
+      '24' : 0.5  
+      '25' : 1.0  
+      '26' : 0.8  
+   Best iteration: 0  
+ 
+   Random seed: 1619437646  
+
+   Evaluation time   : 154897.2041168213 sec    [99.97 %]
+   Optimization time : 43.34067702293396 sec    [0.03 %]
+   Iteration time    : 154940.54479384422 sec    [573.85 sec/iter]
+
+2023-11-10 19:41:41,229 - MBWrt - DEBUG - Gathering MBW info
+2023-11-10 19:41:41,229 - MBWrt - DEBUG - Reading model A
+2023-11-10 19:41:45,476 - MBWrt - DEBUG - Saving receipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\03b-AstolfoMix-_05a_06a.recipe.txt
+2023-11-10 19:41:47,892 - MBWrt - INFO - Checkpoint saved to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\03b-AstolfoMix-_05a_06a.safetensors.
+2023-11-10 19:41:48,149 - AutoMBWrt - INFO - merge completed.
+2023-11-10 19:41:48,657 - AutoMBWrt - INFO - injection disabled (hopefully).

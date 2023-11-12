@@ -1,0 +1,55 @@
+modelA=_07a-aiwmix-sd-v1-4.safetensors
+modelB=_08a-etherBluMix5-sd-v1-4.safetensors
+modelO=05b-AstolfoMix-_07a_08a
+position_id_fix=Keep Original
+output_mode=Max Precision
+0.4,0.5,0.1,0.1,0.3,0.0,0.8,0.7,0.7,0.6,1.0,0.1,0.0,0.9,0.6,0.9,0.9,0.5,0.0,0.0,0.6,0.4,0.2,0.5,0.1,0.6,0.0
+
+2023-11-10 20:59:28,195 - AutoMBWrt - INFO - test score: 0.49942311475609197
+[0] hyper_score (Bayesian Optimization):  36%| | 96/270 [44:17:59<80:17:36, 1661.25s/it, best_iter=0, b
+
+
+Results: 'hyper_score'  
+   Best score: 0.5177156803116064  
+   Best parameter set:
+      '0'  : 0.4  
+      '1'  : 0.5  
+      '2'  : 0.1  
+      '3'  : 0.1  
+      '4'  : 0.3  
+      '5'  : 0.0  
+      '6'  : 0.8  
+      '7'  : 0.7  
+      '8'  : 0.7  
+      '9'  : 0.6  
+      '10' : 1.0  
+      '11' : 0.1  
+      '12' : 0.0  
+      '13' : 0.6  
+      '14' : 0.9  
+      '15' : 0.6  
+      '16' : 0.9  
+      '17' : 0.9  
+      '18' : 0.5  
+      '19' : 0.0  
+      '20' : 0.0  
+      '21' : 0.6  
+      '22' : 0.4  
+      '23' : 0.2  
+      '24' : 0.5  
+      '25' : 0.1  
+      '26' : 0.0  
+   Best iteration: 0  
+ 
+   Random seed: 514525242  
+ 
+   Evaluation time   : 159402.10243558884 sec    [99.96 %]
+   Optimization time : 68.2332272529602 sec    [0.04 %]
+   Iteration time    : 159470.3356628418 sec    [590.63 sec/iter]
+
+2023-11-10 20:59:29,013 - MBWrt - DEBUG - Gathering MBW info
+2023-11-10 20:59:29,014 - MBWrt - DEBUG - Reading model A
+2023-11-10 20:59:33,007 - MBWrt - DEBUG - Saving receipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\05b-AstolfoMix-_07a_08a.recipe.txt
+2023-11-10 20:59:36,771 - MBWrt - INFO - Checkpoint saved to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\05b-AstolfoMix-_07a_08a.safetensors.
+2023-11-10 20:59:37,037 - AutoMBWrt - INFO - merge completed.
+2023-11-10 20:59:37,576 - AutoMBWrt - INFO - injection disabled (hopefully).

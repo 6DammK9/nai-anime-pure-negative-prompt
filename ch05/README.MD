@@ -40,14 +40,14 @@
 |---|---|---|---|
 |`01`|[VBP](../ch02/f59359c175.md)|"NAI SFW"|Baseline|
 |`_02`|[CBP](../ch02/ae2b38ac14.md)|"NAI NSFW"|Baseline|
-|`_03`|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*|Baseline|
+|`_03`|[MzPikas TMND Enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced)|AutoMBW~~NAI + [OpenNiji](https://huggingface.co/ShoukanLabs/OpenNiji-V2) *Speculated*~~ [AutoMBW](https://github.com/ashen-sensored/sd-webui-runtime-block-merge)|Baseline|
 |`_04`|[DreamShaperV8](https://civitai.com/models/4384/dreamshaper)|"A>R" Merge, realistic nxxes|Baseline|
 |`_05`|[CoffeeWithLiquor](https://huggingface.co/StereoBartender/CoffeeWithLiquor)|NAI (Lots of LoRAs)|Baseline|
 |`_06`|[BreakDomain](https://civitai.com/models/117192/breakdomainowners-model-i-have-no-rights-if-he-want-it-will-be-taken-down)|NAI|Baseline|
 |`_07`|[AIWMix](https://civitai.com/models/74165?modelVersionId=78888)|["SD"](../ch97/0299d.md), |Baseline|
 |`_08`|[Ether Blu Mix](https://civitai.com/models/17427/ether-blu-mix)|Merges of famous A|Baseline|
 |`_09`|[majicMIX realistic](https://civitai.com/models/43331?modelVersionId=94640)|Merges of MJ + "2.5" + [NWSJ](https://civitai.com/models/53601/nwsjrealistic)|Baseline|
-|`_10`|[Silicon29](https://huggingface.co/Xynon/SD-Silicon)|MBW of "2.5"|Baseline|
+|`_10`|[Silicon29](https://huggingface.co/Xynon/SD-Silicon)|[AutoMBW](https://github.com/Xerxemi/auto-MBW-rt) of "2.5"|Baseline|
 |`_11`|[BP](https://huggingface.co/Crosstyan/BPModel)|[ACertainty](ACertainty)|Extended|
 |`_12`|[CGA9](https://t.me/StableDiffusion_CN/1170018)|AutoMBW|Extended|
 |`_13`|[LimeREmix](https://civitai.com/models/153081?modelVersionId=23379)|Human evaluated merge|Extended|

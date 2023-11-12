@@ -5,6 +5,7 @@ General discovery. Theories, procedures, practices etc. However not model specif
 - CFG-STEP scan: [cfg_step.md](cfg_step.md)
 - Prior scan: [prior.md](prior.md)
 - Any theory about merging model? [merge.md](merge.md)
+- Maybe any theory about AutoMBW? [autombw.md](autombw.md)
 - Any theory to compare a model? [similarity_cfg1.md](similarity_cfg1.md)
 - Prompt dystopia: [prompt.md](prompt.md)
 - My procedure for making arts: [my_procedure.md](my_procedure.md)
