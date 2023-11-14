@@ -1,0 +1,57 @@
+modelA=_09a-majicmixRealistic_v6-sd-v1-4.safetensors
+modelB=_10a-Silicon29-sd.safetensors
+modelO=06b-AstolfoMix-_09a_10a
+position_id_fix=Keep Original
+output_mode=Max Precision
+0.0,0.6,0.1,0.8,0.3,0.6,0.1,0.0,0.6,0.3,0.1,0.1,0.6,0.3,0.8,1.0,0.0,0.2,0.7,0.8,0.4,0.3,0.8,0.4,0.3,0.5,0.9
+
+2023-11-14 02:22:38,355 - AutoMBWrt - INFO - test score: 0.539030575927934
+[0] hyper_score (Bayesian Optimization):  22%| | 60/270 [34:36:18<121:07:06, 2076.32s/it, best_iter=0, be
+
+
+Results: 'hyper_score'  
+   Best score: 0.5550625134664815  
+   Best parameter set:
+      '0'  : 0.0  
+      '1'  : 0.6  
+      '2'  : 0.1  
+      '3'  : 0.8  
+      '4'  : 0.3  
+      '5'  : 0.6  
+      '6'  : 0.1  
+      '7'  : 0.0  
+      '8'  : 0.6  
+      '9'  : 0.3  
+      '10' : 0.1  
+      '11' : 0.1  
+      '12' : 0.6  
+      '13' : 0.5  
+      '14' : 0.3  
+      '15' : 0.8  
+      '16' : 1.0  
+      '17' : 0.0  
+      '18' : 0.2  
+      '19' : 0.7
+      '20' : 0.8  
+      '21' : 0.4
+      '22' : 0.3
+      '23' : 0.8
+      '24' : 0.4
+      '25' : 0.3
+      '26' : 0.9
+   Best iteration: 0
+
+   Random seed: 2063124912
+
+   Evaluation time   : 124560.46774411201 sec    [99.99 %]
+   Optimization time : 13.619088172912598 sec    [0.01 %]
+   Iteration time    : 124574.08683228493 sec    [461.39 sec/iter]
+
+2023-11-14 02:22:38,891 - AutoMBWrt - INFO - Writing merge history to $E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\extensions\auto-MBW-rt\csv\history.tsv
+2023-11-14 02:22:38,898 - AutoMBWrt - INFO - Saving checkpoint to $06b-AstolfoMix-_09a_10a
+2023-11-14 02:22:38,898 - MBWrt - DEBUG - Gathering MBW info
+2023-11-14 02:22:38,899 - MBWrt - DEBUG - Reading model A
+2023-11-14 02:22:42,012 - MBWrt - DEBUG - Saving receipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\06b-AstolfoMix-_09a_10a.recipe.txt
+2023-11-14 02:22:44,170 - MBWrt - INFO - Checkpoint saved to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\06b-AstolfoMix-_09a_10a.safetensors.
+2023-11-14 02:22:44,297 - AutoMBWrt - INFO - merge completed.
+2023-11-14 02:22:44,297 - AutoMBWrt - INFO - Disable injection.

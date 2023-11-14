@@ -144,7 +144,7 @@
 
 - **Baseline merge: Uniform merge a.k.a ~~bagging~~ averaging.** [Models have been uploaded to HuggingFace.](https://huggingface.co/6DammK9/AstolfoMix) As easy as the "Checkpoint Merger" does. To make sure all of them are in [uniform distribution](https://en.wikipedia.org/wiki/Discrete_uniform_distribution), merge with weight $1/x$ for $x > 1$. Therefore 50% for the 2nd model, 33% for the 3rd model, and so on. The process should be **parameterless**. 
 
-- **Proposed merge: autombw a.k.a boosting.** Use [my own fork](https://github.com/6DammK9/auto-MBW-rt) of [autombw v2](https://github.com/Xerxemi/auto-MBW-rt). Technical details are under analysis. It has been known as *memory intensive* instead of *GPU intensive*. I have some ex-mining SSDs which may help the process. **This will not happen soon.** I didn't expect for merging 10+ models. [Boosting](https://chih-sheng-huang821.medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-ensemble-learning%E4%B9%8Bbagging-boosting%E5%92%8Cadaboost-af031229ebc3) in such scale requires a new software from ground up. *I am still using pure GUI with minimum coding.*
+- **Proposed merge: autombw a.k.a ~~boosting~~ RL.** Use [my own fork](https://github.com/6DammK9/auto-MBW-rt) of [autombw v2](https://github.com/Xerxemi/auto-MBW-rt). ~~Technical details are under analysis. It has been known as *memory intensive* instead of *GPU intensive*. I have some ex-mining SSDs which may help the process. **This will not happen soon.** I didn't expect for merging 10+ models. [Boosting](https://chih-sheng-huang821.medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-ensemble-learning%E4%B9%8Bbagging-boosting%E5%92%8Cadaboost-af031229ebc3) in such scale requires a new software from ground up. *I am still using pure GUI with minimum coding.*~~ It is not memory intensive. It is just time consuming. See [my findings on autombw](../ch01/autombw.md). Also it is more like [RL](https://en.wikipedia.org/wiki/Reinforcement_learning) instead of boosting.
 
 - [Get a capable GPU to output such kind of images.](../ch04/readme.md#chapter-04b-extra-making-use-of-m40-24gb-for-generating-large-images) I'm suprised that *it pulls 19GB of VRAM already*.
 
@@ -299,7 +299,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - In artistic sense, we can see that *the human face has been slightly changed, and the background is more clean and consistant.* [Could it be correlated to other statistical tools?](https://github.com/deepghs/imgutils) [Once again the proof is left as an exercise](https://matheducators.stackexchange.com/questions/1896/are-the-words-easy-basic-clearly-obviously-etc-ever-helpful).
 
-## Finding on "autombw a.k.a boosting" ##
+## Finding on "autombw a.k.a ~~boosting~~ RL." ##
 
 - *Currently in rabbit hole.* Forked [auto-MBW-rt](https://github.com/6DammK9/auto-MBW-rt) and [sd-webui-runtime-block-merge](https://github.com/6DammK9/sd-webui-runtime-block-merge). Yes I write codes again.
 
@@ -326,7 +326,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 ### Index of each merge ###
 
-- This time I'm doubt that if *associative property* still remains in boosting. The mean (just naively take average of 26 parameters) of the merged weight is ranged from 0.33-0.45, with minimal as 0.1 (0.05 will throw runtime error), which yields to uneven merge. Instead of merging in sequence, this time I will use [parallel merge](https://en.wikipedia.org/wiki/Merge_algorithm), which tends to save the "good bias" in progress, while I still need to survive the tedious merges. Since it is not a perfect binary tree, the "better 4" model merges will be preserved for a round.
+- This time I'm doubt that if *associative property* still remains in ~~boosting~~ RL. The mean (just naively take average of 26 parameters) of the merged weight is ranged from 0.33-0.45, with minimal as 0.1 (0.05 will throw runtime error), which yields to uneven merge. Instead of merging in sequence, this time I will use [parallel merge](https://en.wikipedia.org/wiki/Merge_algorithm), which tends to save the "good bias" in progress, while I still need to survive the tedious merges. Since it is not a perfect binary tree, the "better 4" model merges will be preserved for a round.
 
 - Special case: `01` = `_01a`. 
 - Assume `15b` is the "best among `11b` to `15b`"
@@ -368,9 +368,9 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - For payloads and receipes, see [folder autombw](./autombw).
 
-### "AutoMBW" as a variant of Boosting ###
+### "AutoMBW" as a variant of ~~Boosting~~ RL ###
 
-- Academically this process resembles [RLHF](https://en.wikipedia.org/wiki/Reinforcement_learning) or [Boosting](https://en.wikipedia.org/wiki/Boosting_(machine_learning)). 
+- Academically this process resembles [RL](https://en.wikipedia.org/wiki/Reinforcement_learning) or [Boosting](https://en.wikipedia.org/wiki/Boosting_(machine_learning)). It is not RLHF in strict sence, because the "human feedback" is not directly involved.  
 
 - Philosophicaly, *by belief*, the [MBW (Merge Block Weight)](https://rentry.org/RentrySD/#11112-extensions-for-model-merging) here serves a [framework](https://en.wikipedia.org/wiki/Conceptual_framework) which a whole "SD" is simplified (affirmed) as "12 layers of UNet with a whole CLIP". Checkout [my findings / opionions](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch01/merge.md) if interested.
 
