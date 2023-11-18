@@ -366,7 +366,9 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - With `20a`, `20b`, `20c` presents, I may make `20d` by uniform merge them again.
 
-- For payloads and receipes, see [folder autombw](./autombw).
+- For payloads and receipes, see [folder autombw](./autombw). [Plot has been added](./plot_rl.ipynb).
+
+![img/rl_plot.png](img/rl_plot.png)
 
 ### "AutoMBW" as a variant of ~~Boosting~~ RL ###
 
