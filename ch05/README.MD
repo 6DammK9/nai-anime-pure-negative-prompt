@@ -329,8 +329,8 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 - This time I'm doubt that if *associative property* still remains in ~~boosting~~ RL. The mean (just naively take average of 26 parameters) of the merged weight is ranged from 0.33-0.45, with minimal as 0.1 (0.05 will throw runtime error), which yields to uneven merge. Instead of merging in sequence, this time I will use [parallel merge](https://en.wikipedia.org/wiki/Merge_algorithm), which tends to save the "good bias" in progress, while I still need to survive the tedious merges. Since it is not a perfect binary tree, the "better 4" model merges will be preserved for a round.
 
 - Special case: `01` = `_01a`. 
-- Assume `15b` is the "best among `11b` to `15b`"
-- Cannot parallel since `15b` to `20b`
+- (After days) `14b` has the best score among `12b` to `16b`.
+- Cannot parallel since `17b` to `20b`
 - `20b` is yet to be decided (AutoMBW with `20a`?)
 
 |Model Index|Description|
@@ -360,8 +360,8 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 |`15b`|`08b`|`09b`|
 |`16b`|`10b`|`11b`|
 |`17b`|`12b`|`13b`|
-|`18b`|`14b`|`15b`|
-|`19b`|`16b`|`17b`|
+|`18b`|`15b`|`16b`|
+|`19b`|`14b`|`17b`|
 |`20b`|`18b`|`19b`|
 
 - With `20a`, `20b`, `20c` presents, I may make `20d` by uniform merge them again.
