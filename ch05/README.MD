@@ -366,9 +366,19 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - With `20a`, `20b`, `20c` presents, I may make `20d` by uniform merge them again.
 
-- For payloads and receipes, see [folder autombw](./autombw). [Plot has been added](./autombw/plot_rl.ipynb).
+- For payloads and receipes, see [folder autombw](./autombw). [Plot has been added](./autombw/plot_rl.ipynb). Since I've found the later models (`15b` , `16b`) failed to early exit within time limit, I slightly increase to 4320 minutes (3 days)
 
 ![img/rl_plot.png](img/rl_plot.png)
+
+### Comparasion between merges ###
+
+- *Preview only. I will switch to different topic because the Mercedes is included in the payloads.*
+
+![img/xyz_grid-0416-3972813705-28160-2069-4-48-20231121233052.jpg](img/xyz_grid-0416-3972813705-28160-2069-4-48-20231121233052.jpg)
+
+![img/xyz_grid-0415-3972813705-12800-1957-4-48-20231121231922/jpg](img/xyz_grid-0415-3972813705-12800-1957-4-48-20231121231922.jpg)
+
+- The "count of merged models" should exceed 6 to successfully output the legit image, which matches with the session above.
 
 ### "AutoMBW" as a variant of ~~Boosting~~ RL ###
 
