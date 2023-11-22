@@ -40,6 +40,8 @@
 
 - "I have no idea either": [random-prompt](https://github.com/crosstyan/random-prompt)
 
+- "We need a webui": [Kohaku-NAI](https://github.com/KohakuBlueleaf/Kohaku-NAI)
+
 ## Preview ##
 
 - I didn't made this PNG, but *technically there is no copyright...?*
