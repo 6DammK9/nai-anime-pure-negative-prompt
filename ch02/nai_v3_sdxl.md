@@ -6,6 +6,14 @@
 
 - [My opinion on V3 (not my tweet). NAI should explain why so many artists and copyright materials are trained.](https://x.com/laz75n/status/1725042286088880587?s=20)
 
+## Blue Pill ##
+
+- *A little bit of citation is the greatest support for me already.* Also, *be skeptic on any information, including mine.*
+
+- `jp` [Article.](https://min.togetter.com/qDBZuI8)
+
+- `cn` [Article.](https://weibo.com/7152334518/4969214732142387)
+
 ## Datasets / Training specs ##
 
 - Given the "modified" prompt system (apart from A1111 and comfyUI, closer to [Nijijourney](https://nijijourney.com/en/)), **long prompts will be ineffective.** Although officially clarified, *it was once considered that some prompt segments are actually mapping to trigger LoRAs.* The swapping performance is fast (compared with PCs) because of the large H100 cluster. 
