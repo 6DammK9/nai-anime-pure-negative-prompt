@@ -6,6 +6,14 @@
 
 - [My opinion on V3 (not my tweet). NAI should explain why so many artists and copyright materials are trained.](https://x.com/laz75n/status/1725042286088880587?s=20)
 
+## Blue Pill ##
+
+- *A little bit of citation is the greatest support for me already.* Also, *be skeptic on any information, including mine.*
+
+- `jp` [Article.](https://min.togetter.com/qDBZuI8)
+
+- `cn` [Article.](https://weibo.com/7152334518/4969214732142387)
+
 ## Datasets / Training specs ##
 
 - Given the "modified" prompt system (apart from A1111 and comfyUI, closer to [Nijijourney](https://nijijourney.com/en/)), **long prompts will be ineffective.** Although officially clarified, *it was once considered that some prompt segments are actually mapping to trigger LoRAs.* The swapping performance is fast (compared with PCs) because of the large H100 cluster. 
@@ -26,11 +34,21 @@
 
 - Testing the artist name in Danbooru / E621 is easy (how about testing `deleted` artist?), [here is a list spotted in wild.](https://pastebin.com/T557XrsH). ~~Do not ask why the Miku artist below is not included in the list, so as VBP's 273 artists, or CivitAI's wild model etc.~~
 
+- [Here is a "binding of presets". Put all of them into negative prompts.](https://t.me/StableDiffusion_CN/1343820)
+
 - For quality tag (`absurdres`, `amazing quality`, `very aesthetic`), see [WD 1.5's release note](https://saltacc.notion.site/saltacc/WD-1-5-Beta-3-Release-Notes-1e35a0ed1bb24c5b93ec79c45c217f63) for idea. It is similar, but WD's execution is too bad *faceplam to justify the impact on model performance. You can see [NekoRayXL](https://civitai.com/models/136719/nekorayxl) which does not have such system applied.
 
 ![img/23111401.png](img/23111401.png)
 
 - *My generic prompts may work also.* However SDXL's original contents, such as `wrc`, `ice cube`, are faded.
+
+## Use at your own risk. ##
+
+- "API key is dead": [NaiDrawBot](https://github.com/sudoskys/NaiDrawBot) *Current speculation is a hidden rate limit checking only, around 9k per day.*
+
+- "I have no idea either": [random-prompt](https://github.com/crosstyan/random-prompt)
+
+- "We need a webui": [Kohaku-NAI](https://github.com/KohakuBlueleaf/Kohaku-NAI)
 
 ## Preview ##
 
