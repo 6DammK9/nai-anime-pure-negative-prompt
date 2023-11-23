@@ -1,0 +1,56 @@
+modelA=12b-AstolfoMix-02b03b.safetensors
+modelB=13b-AstolfoMix-04b05b.safetensors
+modelO=17b-AstolfoMix-12b13b
+position_id_fix=Keep Original
+output_mode=Max Precision
+0.7,0.4,0.4,0.5,0.6,0.1,0.4,0.5,0.6,0.3,0.2,0.2,0.6,0.7,0.0,0.2,0.5,0.1,0.0,0.0,0.2,0.5,0.2,0.1,0.9,0.8,0.0
+
+[0] hyper_score (Bayesian Optimization):  14%| | 37/270 [21:47:54<137:16:18, 2120.94s/it, best_iter=0, bes
+
+
+Results: 'hyper_score'  
+   Best score: 0.5368949759743122  
+   Best parameter set:
+      '0'  : 0.7  
+      '1'  : 0.4  
+      '2'  : 0.4  
+      '3'  : 0.5  
+      '4'  : 0.6  
+      '5'  : 0.1  
+      '6'  : 0.4
+      '7'  : 0.5
+      '8'  : 0.6
+      '9'  : 0.3
+      '10' : 0.2  
+      '11' : 0.2
+      '12' : 0.6
+      '13' : 0.8
+      '14' : 0.7
+      '15' : 0.0
+      '16' : 0.2
+      '17' : 0.5
+      '18' : 0.1
+      '19' : 0.0
+      '20' : 0.0
+      '21' : 0.2
+      '22' : 0.5
+      '23' : 0.2
+      '24' : 0.1
+      '25' : 0.9
+      '26' : 0.0
+   Best iteration: 0
+
+   Random seed: 1147902848
+
+   Evaluation time   : 78466.0445432663 sec    [99.99 %]
+   Optimization time : 5.526340007781982 sec    [0.01 %]
+   Iteration time    : 78471.57088327408 sec    [290.64 sec/iter]
+
+2023-11-23 05:17:01,798 - AutoMBWrt - INFO - Writing merge history to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\extensions\auto-MBW-rt\csv\history.tsv
+2023-11-23 05:17:01,800 - AutoMBWrt - INFO - Saving checkpoint to 17b-AstolfoMix-12b13b
+2023-11-23 05:17:01,800 - MBWrt - DEBUG - Gathering MBW info
+2023-11-23 05:17:01,801 - MBWrt - DEBUG - Reading model A
+2023-11-23 05:17:05,653 - MBWrt - DEBUG - Saving receipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\17b-AstolfoMix-12b13b.recipe.txt
+2023-11-23 05:17:07,912 - MBWrt - INFO - Checkpoint saved to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\17b-AstolfoMix-12b13b.safetensors.
+2023-11-23 05:17:08,109 - AutoMBWrt - INFO - merge completed.
+2023-11-23 05:17:08,109 - AutoMBWrt - INFO - Disable injection.
