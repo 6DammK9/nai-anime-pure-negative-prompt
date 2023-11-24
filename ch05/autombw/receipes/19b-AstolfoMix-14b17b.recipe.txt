@@ -1,0 +1,56 @@
+modelA=14b-AstolfoMix-06b07b.safetensors
+modelB=17b-AstolfoMix-12b13b.safetensors
+modelO=19b-AstolfoMix-14b17b
+position_id_fix=Keep Original
+output_mode=Max Precision
+0.5,0.1,0.2,0.4,0.7,1.0,0.6,0.2,0.5,0.0,0.3,0.0,0.7,0.8,0.6,0.5,0.9,0.1,0.6,0.6,0.0,0.5,0.3,0.4,0.1,0.6,0.0
+
+[0] hyper_score (Bayesian Optimization):  21%| | 58/270 [24:25:52<89:18:01, 1516.42s/it, best_iter=0, best
+
+
+Results: 'hyper_score'  
+   Best score: 0.5543611622625749  
+   Best parameter set:
+      '0'  : 0.5  
+      '1'  : 0.1  
+      '2'  : 0.2  
+      '3'  : 0.4  
+      '4'  : 0.7  
+      '5'  : 1.0  
+      '6'  : 0.6  
+      '7'  : 0.2  
+      '8'  : 0.5  
+      '9'  : 0.0  
+      '10' : 0.3  
+      '11' : 0.0  
+      '12' : 0.7  
+      '13' : 0.6  
+      '14' : 0.8  
+      '15' : 0.6  
+      '16' : 0.5  
+      '17' : 0.9  
+      '18' : 0.1
+      '19' : 0.6
+      '20' : 0.6
+      '21' : 0.0
+      '22' : 0.5
+      '23' : 0.3
+      '24' : 0.4
+      '25' : 0.1
+      '26' : 0.0
+   Best iteration: 0
+
+   Random seed: 1034879287
+
+   Evaluation time   : 87936.03477668762 sec    [99.99 %]
+   Optimization time : 12.122251749038696 sec    [0.01 %]
+   Iteration time    : 87948.15702843666 sec    [325.73 sec/iter]
+
+2023-11-24 08:25:27,905 - AutoMBWrt - INFO - Writing merge history to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\extensions\auto-MBW-rt\csv\history.tsv
+2023-11-24 08:25:27,918 - AutoMBWrt - INFO - Saving checkpoint to 19b-AstolfoMix-14b17b
+2023-11-24 08:25:27,918 - MBWrt - DEBUG - Gathering MBW info
+2023-11-24 08:25:27,919 - MBWrt - DEBUG - Reading model A
+2023-11-24 08:25:32,051 - MBWrt - DEBUG - Saving receipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\19b-AstolfoMix-14b17b.recipe.txt
+2023-11-24 08:25:35,889 - MBWrt - INFO - Checkpoint saved to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\19b-AstolfoMix-14b17b.safetensors.
+2023-11-24 08:25:36,129 - AutoMBWrt - INFO - merge completed.
+2023-11-24 08:25:36,130 - AutoMBWrt - INFO - Disable injection.
