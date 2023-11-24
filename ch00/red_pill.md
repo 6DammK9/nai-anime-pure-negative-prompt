@@ -23,19 +23,21 @@
 - [A1111 WebUI Easy Installer and Launcher](https://github.com/EmpireMediaScience/A1111-Web-UI-Installer)
 - Super Easy AI Installer Tool: [Github](https://github.com/diStyApps/seait), [CivitAI](https://civitai.com/models/27574/super-easy-ai-installer-tool)
 - [Easy Diffusion](https://github.com/easydiffusion/easydiffusion)
-- SD-WebUI启动器 / 秋葉aaaki 整合包: [CN article](https://zhuanlan.zhihu.com/p/607573450), [CN article](https://zhuanlan.zhihu.com/p/596417901), [CN article](https://zhuanlan.zhihu.com/p/607573450), [CN article](https://blog.csdn.net/supperman_009/article/details/130618045), [Author's Discord](https://discord.gg/Uu3syD9PnR), [Author's Bilibili](https://space.bilibili.com/12566101)
+- SD-WebUI启动器 / 秋葉aaaki 整合包: [CN article](https://zhuanlan.zhihu.com/p/607573450), [CN article](https://zhuanlan.zhihu.com/p/596417901), [CN article](https://zhuanlan.zhihu.com/p/607573450), [CN article](https://blog.csdn.net/supperman_009/article/details/130618045), [Author's Discord](https://discord.gg/YJQJAvepX3), [Author's Bilibili](https://space.bilibili.com/12566101)
 - [绘世启动器](https://apps.microsoft.com/store/detail/%E7%BB%98%E4%B8%96%E5%90%AF%E5%8A%A8%E5%99%A8/9NXBR1M0V7M1?hl=zh-cn&gl=cn)
 - ["App Store" (multimedia focused)](https://pinokio.computer/)
+
 
 ## Blue pill (General community) ##
 
 - **Some official discord may be omitted. Use [i18n code](https://github.com/ladjs/i18n-locales) instead of natural language.**
-- (Advanced) AI Art `zh`: [場外AI繪圖討論區](https://discord.gg/k57gkxWgev) 
+- (Advanced) AI Art `zh`: [場外AI繪圖討論區](https://discord.gg/FdvjW3jy) 
 - (General) AI Art `zh`: [鳥巢AI 藝術學園](https://discord.gg/gUSqkYE7)
+- AI Art `zh`: [AI繪圖-初級咒術師魔法學院🔰](https://discord.gg/AF7JqWbb)
 - AI detector `en/ko`: [Illuminarty](https://discord.gg/YeTYaUe8)
 - AI general (with legal and debate)  `ja`: [AI 絵作り研究会](https://discord.gg/ai-jp)
-- AI application developer based `en`: ~~Shinonome AI Lab~~ [sail](https://discord.gg/TXW8tAvU)
 - Waifu Diffusion `en/ja`: [東方Project AI](https://discord.gg/touhouai)
+- Developer related `en`: [camenduru's server](https://discord.gg/y55khHPn)
 - Pure debate server `ja`: [議論一般チャンネル](https://discord.gg/HjYRv2rZ)
 - 2b2t `zh`: [SDCN](https://t.me/StableDiffusion_CN)
 - ~~victim~~ `ru`: [Novel AI](https://t.me/Novel_AI_Group)
@@ -63,6 +65,11 @@ Why there is so many TG CN groups: As there are some sensitive LoRA and abusive 
 - ~~[AI Stable Diffusion [Ybyv Pic Share]](https://t.me/AI_StableDiffusion_Ybyv)~~  **ROT13**
 
 Note that "SDCN" is not categorized here.
+
+## Blue Pill (LLM) ## 
+
+- Discord, Active `zh`: [自由AI阵线](https://discord.gg/jfbvYHeTrB)
+- AI application developer based `en`: ~~Shinonome AI Lab~~ [sail](https://discord.gg/TXW8tAvU)
 
 ## Blue pill (AI art platform) ## 
 
