@@ -394,9 +394,8 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - **Just feel it.** [I can't further rationalize without anything to refer.](https://www.youtube.com/watch?v=zFdc1rMc2IU&t=1575s&ab_channel=AtticPhilosophy) 
 
-[![If you read through here, enjoy the BGM. "Nice merge" (It is called mashup).](https://img.youtube.com/vi/2H9lcq6u8es/hqdefault.jpg)](https://www.youtube.com/embed/2H9lcq6u8es)
-
-[<img src="https://img.youtube.com/vi/2H9lcq6u8es/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/2H9lcq6u8es)
-
 ![img/not_hsv.png](img/not_hsv.png)
+
+- *If you read through here, enjoy the BGM. "Nice merge" (It is called mashup).*
+
+[![bruh](https://img.youtube.com/vi/2H9lcq6u8es/hqdefault.jpg)](https://www.youtube.com/2H9lcq6u8es)
