@@ -364,7 +364,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 |`19b`|`14b`|`17b`|
 |`20b`|`18b`|`19b`|
 
-- With `20a`, `20b`, `20c` presents, I may make `20d` by uniform merge them again.
+- With `20a`, `20b`, `20c` presents, I may make `21` by uniform merge `20` + `20b`, and `21b` by one more autombw with `20` + `20b`. See the chapter below for ~~explainantion~~ expression.
 
 - For payloads and receipes, see [folder autombw](./autombw). [Plot has been added](./autombw/plot_rl.ipynb). Since I've found the later models (`15b` , `16b`) failed to early exit within time limit, I slightly increase to 4320 minutes (3 days)
 
@@ -387,3 +387,16 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 - Philosophicaly, *by belief*, the [MBW (Merge Block Weight)](https://rentry.org/RentrySD/#11112-extensions-for-model-merging) here serves a [framework](https://en.wikipedia.org/wiki/Conceptual_framework) which a whole "SD" is simplified (affirmed) as "12 layers of UNet with a whole CLIP". Checkout [my findings / opionions](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch01/merge.md) if interested.
 
 - Therefore "Auto" "MBW" is a kind of cheap way to "train" a SD model [from an ensemble of SD models](https://en.wikipedia.org/wiki/Ensemble_learning), without millions of images ["6M"](https://huggingface.co/datasets/animelover/danbooru2022) ["10e"](https://www.reddit.com/r/NovelAi/comments/xydjc6/announcement_proprietary_software_source_code/) [for "the anime model"](https://twitter.com/novelaiofficial/status/1573844864390791169), disregarding [the original LAION5B for SD](https://laion.ai/blog/laion-5b/), which is "5B".
+
+## Findings on "AstolfoMix 21(b)" ##
+
+- `21` and `21b` is a pair of model. `21` try to "understand more from it other self", and `21b` enrich itself with the missing ["add difference"](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5218) with $b-c=a+1$, and the "1" is expressed as "difference between 20 and 20b, in unit of art" (no meaning, just arbitary).
+
+- **Just feel it.** [I can't further rationalize without anything to refer.](https://www.youtube.com/watch?v=zFdc1rMc2IU&t=1575s&ab_channel=AtticPhilosophy) 
+
+[![If you read through here, enjoy the BGM. "Nice merge" (It is called mashup).](https://img.youtube.com/vi/2H9lcq6u8es/hqdefault.jpg)](https://www.youtube.com/embed/2H9lcq6u8es)
+
+[<img src="https://img.youtube.com/vi/2H9lcq6u8es/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/2H9lcq6u8es)
+
+![img/not_hsv.png](img/not_hsv.png)
