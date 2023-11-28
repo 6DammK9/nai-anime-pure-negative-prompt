@@ -399,3 +399,9 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 - *If you read through here, enjoy the BGM. "Nice merge" (It is called mashup).*
 
 [![bruh](https://img.youtube.com/vi/2H9lcq6u8es/hqdefault.jpg)](https://www.youtube.com/2H9lcq6u8es)
+
+- Since I have included model info in [auto-MBW-rt](https://github.com/6DammK9/auto-MBW-rt), I need to "wipe model info" by replacing a dummy CIP with [toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit) (but identical), otherwise you will get `TypeError: argument 'metadata': 'dict' object cannot be converted to 'PyString'`.
+
+- Although `20b` has the highest score on ImageReward, it tends to blur background. Merge with the original `20` gained back the nice background generation, with autombw again to "select the best balance" again.
+
+![img/xyz_grid-0460-3275361899-10240-2069-4-256-20231129000845.jpg](img/xyz_grid-0460-3275361899-10240-2069-4-256-20231129000845.jpg)
