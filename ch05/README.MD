@@ -372,13 +372,17 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 ### Comparasion between merges ###
 
-- *Preview only. I will switch to different topic because the Mercedes is included in the payloads.*
+- The "feature" may be preserved across the merge iterlations, make sure you follow the merge pattern. Since `09b` has the highest score (excluding `20b`) while merging, it is expected that most contents come from there. ~~Obviously Astolfo won't appear anthro because other models will contribute.~~
 
-![img/xyz_grid-0416-3972813705-28160-2069-4-48-20231121233052.jpg](img/xyz_grid-0416-3972813705-28160-2069-4-48-20231121233052.jpg)
+- *RL does introduce bias*, therefore the background is not rich, comparing to both `09b` or `20`.
 
-![img/xyz_grid-0415-3972813705-12800-1957-4-48-20231121231922/jpg](img/xyz_grid-0415-3972813705-12800-1957-4-48-20231121231922.jpg)
+- The "count of merged iterlations" should exceed 6 to successfully output the legit image, which matches with the session above.
 
-- The "count of merged models" should exceed 6 to successfully output the legit image, which matches with the session above.
+![img/xyz_grid-0462-142097049-25600-2047-4-256-20231129010255.jpg](img/xyz_grid-0462-142097049-25600-2047-4-256-20231129010255.jpg)
+
+![img/xyz_grid-0463-142097049-25600-2069-4-256-20231129033211.jpg](img/xyz_grid-0463-142097049-25600-2069-4-256-20231129033211.jpg)
+
+- *L2 graph coming soon. Since it requires O(N^2) space therefore I may omit the lowest layer, or shows only a segment of the ["tree"]https://en.wikipedia.org/wiki/Tree_(data_structure) only.* 
 
 ### "AutoMBW" as a variant of ~~Boosting~~ RL ###
 
