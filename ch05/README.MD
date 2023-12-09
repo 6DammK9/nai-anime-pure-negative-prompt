@@ -382,7 +382,11 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 ![img/xyz_grid-0463-142097049-25600-2069-4-256-20231129033211.jpg](img/xyz_grid-0463-142097049-25600-2069-4-256-20231129033211.jpg)
 
-- *L2 graph coming soon. Since it requires O(N^2) space therefore I may omit the lowest layer, or shows only a segment of the ["tree"]https://en.wikipedia.org/wiki/Tree_(data_structure) only.* 
+- ~~L2 graph coming soon.~~ L2 graph is generated. Since it requires O(N^2) space therefore I may omit the lowest layer, or shows only a segment of the ["tree"]https://en.wikipedia.org/wiki/Tree_(data_structure) only. **Convergence still appears, and it seems drifts towards where "20" stay.** However it is debunked in the next session, where merge "20" and "20b" once more.+
+
+![mbw_unet_vg.png](../ch03/v2a/img/mbw_unet_vg.png)
+
+![mbw_unet_xy.png](../ch03/v2a/img/mbw_unet_xy.png)
 
 ### "AutoMBW" as a variant of ~~Boosting~~ RL ###
 
@@ -394,9 +398,22 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 ## Findings on "AstolfoMix 21(b)" ##
 
+### "Leap of faith" ###
+
+![img/231366-873435189-3584-1536-4-256-20231209081326.jpg](img/231366-873435189-3584-1536-4-256-20231209081326.jpg)
+
+```
+parameters
+(aesthetic:0), (quality:0), (solo:0.98), (boy:0), (ushanka:0.98), [[braid]], [astolfo], [[moscow, russia]]
+Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (breasts:0.5)
+Steps: 256, Sampler: Euler, CFG scale: 4, Seed: 873435189, Size: 1792x768, Model hash: 28adb7ba78, Model: 21b-AstolfoMix-2020b, VAE hash: 551eac7037, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.2, \"skip_factor\": 0.9}, {\"backbone_factor\": 1.4, \"skip_factor\": 0.2}]", FreeU Schedule: "0.0, 1.0, 0.0", FreeU Version: 2, Hires upscale: 2, Hires steps: 64, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.5, Threshold percentile: 100, Version: v1.6.1
+```
+
 - `21` and `21b` is a pair of model. `21` try to "understand more from it other self", and `21b` enrich itself with the missing ["add difference"](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5218) with $b-c=a+1$, and the "1" is expressed as "difference between 20 and 20b, in unit of art" (no meaning, just arbitary).
 
 - **Just feel it.** [I can't further rationalize without anything to refer.](https://www.youtube.com/watch?v=zFdc1rMc2IU&t=1575s&ab_channel=AtticPhilosophy) 
+
+- *This comparasion works for weight level, however it is inverted for image output (see below).*
 
 ![img/not_hsv.png](img/not_hsv.png)
 
@@ -409,3 +426,31 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 - Although `20b` has the highest score on ImageReward, it tends to blur background. Merge with the original `20` gained back the nice background generation, with autombw again to "select the best balance" again.
 
 ![img/xyz_grid-0460-3275361899-10240-2069-4-256-20231129000845.jpg](img/xyz_grid-0460-3275361899-10240-2069-4-256-20231129000845.jpg)
+
+### Optimal prior ###
+
+- And then here is a forgotten [prior test](../ch01/prior.md), with model "20", "20b" and "21b" (top to bottom)
+
+![img/grid-0176-1-2560-2048-1-48-20231209122035.jpg](img/grid-0176-1-2560-2048-1-48-20231209122035.jpg)
+
+![img/grid-0167-1-2560-2048-1-48-20231209123525.jpg](img/grid-0167-1-2560-2048-1-48-20231209123525.jpg)
+
+![img/grid-0175-1-2560-2048-1-48-20231209110752.jpg](img/grid-0175-1-2560-2048-1-48-20231209110752.jpg)
+
+- With pure random content, we can see the *bias and variance* of the model. "20" tends to generate noisy fragement (even it is very robust already, images from general models are hard to identify), meanwhile "20b" generate identifiable but blurry images. "21b" has a *good balance* to keep everything in place, although it does not have a high score of ImageReward. *Correlation matters here, like most psychological studies instead of computer science.*
+
+### "Adjustment" towards a better direction ###
+
+- This VG chart is not expected. **The triangle is legit,** with the L2 distance matches with low difference.
+
+![21b_unet_vg.png](../ch03/v2a/img/21b_unet_vg.png)
+
+- Could this be explained in academic / technical sense? [I don't know.](https://arstechnica.com/ai/2023/12/the-real-research-behind-the-wild-rumors-about-openais-q-project/) [I really don't know.](https://openai.com/blog/introducing-superalignment) *This may be an original idea which makes its own tier and have nothing to compare.* How on earth there is a SD model "trained" with the most general objective which cannot be described, and just try to "replace the inital original SD model", and start the new fintuning cycle? The idea of "use no images" is already weird enough. *Maybe this is art.*
+
+## Future plan ##
+
+- Repeat in SD2.1 (aw)
+
+- Repeat in SDXL, but I need to rewrite the extension.
+
+- Keep testing the models with new technology (LCM, SDXL Turbo etc.). CUrrently I know my model **has maximum capability** on CS level to observe and discover new or ignored technologies, as what I do in [ch01](../ch01/).

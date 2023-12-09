@@ -1,5 +1,11 @@
 # Discussion about Aspect Ratio Bucketing #
 
+## (New) Statistic of aspect ratio in dataset ##
+
+- The dataset should be danbooru2023. Note that 21:9 (WQHD) images are rare. Pay attention to [the inclusive / exclusive range](https://courses.lumenlearning.com/suny-osalgebratrig/chapter/domain-and-range/).
+
+![img/photo_2023-12-07_01-16-44.jpg](img/photo_2023-12-07_01-16-44.jpg)
+
 ## (New) Finding models trained with ARB ##
 
 - It can be found in [metadata inside model header](https://github.com/by321/safetensors_util). However there is limitation, old SD1.X models are not applicable. Seems that there is no proof unless the original training script is given. [My findings.](https://github.com/by321/safetensors_util/pull/3) SDXL will be fine.

@@ -4,7 +4,7 @@
 
 - Do not mixed up with [V1](../ch99/925997e9.md) and V2, which is based from SD1.X.
 
-- [My opinion on V3 (not my tweet). NAI should explain why so many artists and copyright materials are trained.](https://x.com/laz75n/status/1725042286088880587?s=20)
+- [My opinion on V3 (not my tweet). NAI should explain why so many artists and copyright materials are trained.](https://x.com/laz75n/status/1725042286088880587?s=20) [Another lengthy article about AI anime contents.](https://note.com/felelihasima/n/n6c29134bf5a7)
 
 ## Blue Pill ##
 
@@ -13,6 +13,20 @@
 - `jp` [Article.](https://min.togetter.com/qDBZuI8)
 
 - `cn` [Article.](https://weibo.com/7152334518/4969214732142387)
+
+- `cn` [Video.](https://www.bilibili.com/video/BV1xG411i71m)
+
+### Prompting guide / Tag Explorer ###
+
+- *analysis in lower session*.
+
+- `en` [Danbooru Tags Explorer](https://nsk.sh/tools/danbooru-tags-explorer/), [analysis in the same site](https://nsk.sh/posts/an-analysis-of-danbooru-tags-and-metadata/)
+
+- `en` [NAIDv3artisttagtestoverview](https://rentry.co/NAIDv3artisttagtestoverview)
+
+- `en` NovelAI (NAI) v3 15000 Artist Comparison. [Discord thread](https://discord.com/channels/930499730843250783/1180293593336926270) [Mega](https://mega.nz/folder/AE8mFI4Z#t2A1tm6HYiXOHOj9Fk8Ncw) [HuggingFace](https://huggingface.co/datasets/deus-ex-machina/novelai-anime-v3-artist-comparison)
+
+- `cn` 副本-500画风-NovelAI V3示例. [Discord](https://discord.com/channels/930499730843250783/1181771420045422613) [上](https://docs.qq.com/doc/DSmtHTUdHT1liaFRs) [下](https://docs.qq.com/doc/DSm5SVUVuVG5mbVNP)
 
 ## Datasets / Training specs ##
 
@@ -23,6 +37,12 @@
 - **Unfiltered** Danbooru's "6M" and E621's "3M" is likely included. Anime screencaps / pixiv / instagram / sankakucomplex is less likely, but would be included also. 
 
 - *Speculation* With estimation of "100-200M seen per day (256x H100s)", "trained for around 2 weeks", it would be around "10M 280EP", which is scary but effective for SDXL. 
+
+- Obviously, with the superior [procurement](https://en.wikipedia.org/wiki/Procurement), [sponsership](https://en.wikipedia.org/wiki/Sponsor_(commercial)), and [financing](https://www.investopedia.com/terms/f/financing.asp) (*NAI is the "top 50 AI unicorn" in some media sources*), it is obviously "not in competition with community". Also, *it is not that hard to understand when "we" meet with groups of PhD students and postDocs to analyze an AI model*. Enjoy the taunt.
+
+![img/photo_2023-12-08_17-03-01.jpg](img/photo_2023-12-08_17-03-01.jpg)
+
+![img/photo_2023-12-08_18-55-34.jpg](img/photo_2023-12-08_18-55-34.jpg)
 
 ## Prompts ##
 
@@ -40,7 +60,17 @@
 
 ![img/23111401.png](img/23111401.png)
 
+- *Enjoy the taunt once again.*
+
+![img/photo_2023-12-08_17-46-14.jpg](img/photo_2023-12-08_17-46-14.jpg)
+
 - *My generic prompts may work also.* However SDXL's original contents, such as `wrc`, `ice cube`, are faded.
+
+## Stranges thoughts ##
+
+- *NAIv3 should be exclusive in NovelAI only.* It won't be available in community. Therefore this news is just a news, instead of skeak peek of some new features.
+
+![img/photo_2023-12-06_15-00-43.jpg](img/photo_2023-12-06_15-00-43.jpg)
 
 ## Use at your own risk. ##
 
@@ -48,7 +78,13 @@
 
 - "I have no idea either": [random-prompt](https://github.com/crosstyan/random-prompt)
 
-- "We need a webui": [Kohaku-NAI](https://github.com/KohakuBlueleaf/Kohaku-NAI)
+- "We need a webui, an account pool, and a QoS system": [Kohaku-NAI](https://github.com/KohakuBlueleaf/Kohaku-NAI)
+
+![img/photo_2023-12-08_22-03-39.jpg](img/photo_2023-12-08_22-03-39.jpg)
+
+- *Taunt. As usual.*
+
+![img/photo_2023-12-08_22-42-17.jpg](img/photo_2023-12-08_22-42-17.jpg)
 
 ## Preview ##
 

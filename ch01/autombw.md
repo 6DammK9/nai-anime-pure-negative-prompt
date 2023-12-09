@@ -24,6 +24,8 @@
 
 - [CGA9](https://t.me/StableDiffusion_CN/1170018)
 
+- [218XL](https://civitai.com/models/216159/218xl)
+
 - [~~AstolfoMix Boosted~~](../ch05/README.MD)
 
 ## Linking the concept between "AutoMBW" with AI / ML techniques ##
