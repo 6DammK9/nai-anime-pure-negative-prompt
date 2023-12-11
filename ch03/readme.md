@@ -7,3 +7,9 @@ Usually involves model comparasion.
 - Archived reports / diagrams: [v2a/results.7z](v2a/results.7z)
 
 ![v2a/img/main_unet.png](v2a/img/main_unet.png)
+
+## Extra: Visualizing UNET ##
+
+- Tired of diagrams drawn by hand? How about generated solely by program? [view_unet.ipynb](./view_unet.ipynb)
+
+![sd1_unet.png](sd1_unet.png)
