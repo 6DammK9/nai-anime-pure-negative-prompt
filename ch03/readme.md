@@ -10,6 +10,16 @@ Usually involves model comparasion.
 
 ## Extra: Visualizing UNET ##
 
-- Tired of diagrams drawn by hand? How about generated solely by program? [view_unet.ipynb](./view_unet.ipynb)
+- Tired of diagrams drawn by hand? How about generated solely by program? [view_unet.ipynb](./view_unet/view_unet.ipynb)
 
-![sd1_unet.png](sd1_unet.png)
+SD1
+
+![sd1_unet.png](./view_unet/sd1_unet.png)
+
+SD2
+
+![sd2_unet.png](./view_unet/sd1_unet.png)
+
+SDXL
+
+![sdxl_unet.png](./view_unet/sd1_unet.png)
