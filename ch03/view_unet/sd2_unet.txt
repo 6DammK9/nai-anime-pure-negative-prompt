@@ -1,344 +1,344 @@
 ===========================================================================================================================================================
 Layer (type:depth-idx)                                                           Input Shape               Output Shape              Param #
 ===========================================================================================================================================================
-UNet2DConditionModel                                                             --                        [1280, 4, 20, 20]         --
-├─Timesteps: 1-1                                                                 [1280]                    [1280, 320]               --
-├─TimestepEmbedding: 1-2                                                         [1280, 320]               [1280, 1280]              1,639,680
-│    └─LoRACompatibleLinear: 2-1                                                 [1280, 320]               [1280, 1280]              410,880
-├─SiLU: 1-3                                                                      [1280, 1280]              [1280, 1280]              --
+UNet2DConditionModel                                                             --                        [1, 4, 96, 96]            --
+├─Timesteps: 1-1                                                                 [1]                       [1, 320]                  --
+├─TimestepEmbedding: 1-2                                                         [1, 320]                  [1, 1280]                 1,639,680
+│    └─LoRACompatibleLinear: 2-1                                                 [1, 320]                  [1, 1280]                 410,880
+├─SiLU: 1-3                                                                      [1, 1280]                 [1, 1280]                 --
 ├─TimestepEmbedding: 1-4                                                         --                        --                        (recursive)
-│    └─LoRACompatibleLinear: 2-2                                                 [1280, 1280]              [1280, 1280]              1,639,680
-├─Conv2d: 1-5                                                                    [1280, 4, 20, 20]         [1280, 320, 20, 20]       11,840
+│    └─LoRACompatibleLinear: 2-2                                                 [1, 1280]                 [1, 1280]                 1,639,680
+├─Conv2d: 1-5                                                                    [1, 4, 96, 96]            [1, 320, 96, 96]          11,840
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
-│    └─CrossAttnDownBlock2D: 2-3                                                 --                        [1280, 320, 10, 10]       8,597,120
+│    └─CrossAttnDownBlock2D: 2-3                                                 --                        [1, 320, 48, 48]          8,597,120
 │    │    └─ModuleList: 3-9                                                      --                        --                        (recursive)
-├─SiLU: 1-7                                                                      [1280, 320, 20, 20]       [1280, 320, 20, 20]       --
-├─ModuleList: 1-54                                                               --                        --                        (recursive)
-│    └─CrossAttnDownBlock2D: 2-9                                                 --                        --                        (recursive)
-│    │    └─ModuleList: 3-9                                                      --                        --                        (recursive)
-├─SiLU: 1-9                                                                      [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-7                                                                      [1, 320, 96, 96]          [1, 320, 96, 96]          --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-9                                                 --                        --                        (recursive)
 │    │    └─ModuleList: 3-9                                                      --                        --                        (recursive)
-├─SiLU: 1-11                                                                     [1280, 320, 20, 20]       [1280, 320, 20, 20]       --
+├─SiLU: 1-9                                                                      [1, 1280]                 [1, 1280]                 --
+├─ModuleList: 1-54                                                               --                        --                        (recursive)
+│    └─CrossAttnDownBlock2D: 2-9                                                 --                        --                        (recursive)
+│    │    └─ModuleList: 3-9                                                      --                        --                        (recursive)
+├─SiLU: 1-11                                                                     [1, 320, 96, 96]          [1, 320, 96, 96]          --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-9                                                 --                        --                        (recursive)
 │    │    └─ModuleList: 3-9                                                      --                        --                        (recursive)
 │    │    └─ModuleList: 3-10                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-9                                                      --                        --                        (recursive)
-├─SiLU: 1-13                                                                     [1280, 320, 20, 20]       [1280, 320, 20, 20]       --
+├─SiLU: 1-13                                                                     [1, 320, 96, 96]          [1, 320, 96, 96]          --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-9                                                 --                        --                        (recursive)
 │    │    └─ModuleList: 3-9                                                      --                        --                        (recursive)
-├─SiLU: 1-15                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-15                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-9                                                 --                        --                        (recursive)
 │    │    └─ModuleList: 3-9                                                      --                        --                        (recursive)
-├─SiLU: 1-17                                                                     [1280, 320, 20, 20]       [1280, 320, 20, 20]       --
+├─SiLU: 1-17                                                                     [1, 320, 96, 96]          [1, 320, 96, 96]          --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-9                                                 --                        --                        (recursive)
 │    │    └─ModuleList: 3-9                                                      --                        --                        (recursive)
 │    │    └─ModuleList: 3-10                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-11                                                     --                        --                        921,920
-│    └─CrossAttnDownBlock2D: 2-10                                                --                        [1280, 640, 5, 5]         30,915,840
+│    └─CrossAttnDownBlock2D: 2-10                                                --                        [1, 640, 24, 24]          30,915,840
 │    │    └─ModuleList: 3-20                                                     --                        --                        (recursive)
-├─SiLU: 1-19                                                                     [1280, 320, 10, 10]       [1280, 320, 10, 10]       --
+├─SiLU: 1-19                                                                     [1, 320, 48, 48]          [1, 320, 48, 48]          --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-16                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-20                                                     --                        --                        (recursive)
-├─SiLU: 1-21                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-21                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-16                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-20                                                     --                        --                        (recursive)
-├─SiLU: 1-23                                                                     [1280, 640, 10, 10]       [1280, 640, 10, 10]       --
+├─SiLU: 1-23                                                                     [1, 640, 48, 48]          [1, 640, 48, 48]          --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-16                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-20                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-21                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-20                                                     --                        --                        (recursive)
-├─SiLU: 1-25                                                                     [1280, 640, 10, 10]       [1280, 640, 10, 10]       --
+├─SiLU: 1-25                                                                     [1, 640, 48, 48]          [1, 640, 48, 48]          --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-16                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-20                                                     --                        --                        (recursive)
-├─SiLU: 1-27                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-27                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-16                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-20                                                     --                        --                        (recursive)
-├─SiLU: 1-29                                                                     [1280, 640, 10, 10]       [1280, 640, 10, 10]       --
+├─SiLU: 1-29                                                                     [1, 640, 48, 48]          [1, 640, 48, 48]          --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-16                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-20                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-21                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-22                                                     --                        --                        3,687,040
-│    └─CrossAttnDownBlock2D: 2-17                                                --                        [1280, 1280, 3, 3]        116,718,080
+│    └─CrossAttnDownBlock2D: 2-17                                                --                        [1, 1280, 12, 12]         116,718,080
 │    │    └─ModuleList: 3-31                                                     --                        --                        (recursive)
-├─SiLU: 1-31                                                                     [1280, 640, 5, 5]         [1280, 640, 5, 5]         --
+├─SiLU: 1-31                                                                     [1, 640, 24, 24]          [1, 640, 24, 24]          --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-23                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-31                                                     --                        --                        (recursive)
-├─SiLU: 1-33                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-33                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-23                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-31                                                     --                        --                        (recursive)
-├─SiLU: 1-35                                                                     [1280, 1280, 5, 5]        [1280, 1280, 5, 5]        --
+├─SiLU: 1-35                                                                     [1, 1280, 24, 24]         [1, 1280, 24, 24]         --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-23                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-31                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-32                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-31                                                     --                        --                        (recursive)
-├─SiLU: 1-37                                                                     [1280, 1280, 5, 5]        [1280, 1280, 5, 5]        --
+├─SiLU: 1-37                                                                     [1, 1280, 24, 24]         [1, 1280, 24, 24]         --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-23                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-31                                                     --                        --                        (recursive)
-├─SiLU: 1-39                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-39                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-23                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-31                                                     --                        --                        (recursive)
-├─SiLU: 1-41                                                                     [1280, 1280, 5, 5]        [1280, 1280, 5, 5]        --
+├─SiLU: 1-41                                                                     [1, 1280, 24, 24]         [1, 1280, 24, 24]         --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─CrossAttnDownBlock2D: 2-23                                                --                        --                        (recursive)
 │    │    └─ModuleList: 3-31                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-32                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-33                                                     --                        --                        14,746,880
-│    └─DownBlock2D: 2-24                                                         --                        [1280, 1280, 3, 3]        31,138,560
+│    └─DownBlock2D: 2-24                                                         --                        [1, 1280, 12, 12]         31,138,560
 │    │    └─ModuleList: 3-40                                                     --                        --                        (recursive)
-├─SiLU: 1-43                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+├─SiLU: 1-43                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─DownBlock2D: 2-30                                                         --                        --                        (recursive)
 │    │    └─ModuleList: 3-40                                                     --                        --                        (recursive)
-├─SiLU: 1-45                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-45                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─DownBlock2D: 2-30                                                         --                        --                        (recursive)
 │    │    └─ModuleList: 3-40                                                     --                        --                        (recursive)
-├─SiLU: 1-47                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+├─SiLU: 1-47                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─DownBlock2D: 2-30                                                         --                        --                        (recursive)
 │    │    └─ModuleList: 3-40                                                     --                        --                        (recursive)
-├─SiLU: 1-49                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+├─SiLU: 1-49                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─DownBlock2D: 2-30                                                         --                        --                        (recursive)
 │    │    └─ModuleList: 3-40                                                     --                        --                        (recursive)
-├─SiLU: 1-51                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-51                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─DownBlock2D: 2-30                                                         --                        --                        (recursive)
 │    │    └─ModuleList: 3-40                                                     --                        --                        (recursive)
-├─SiLU: 1-53                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+├─SiLU: 1-53                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─ModuleList: 1-54                                                               --                        --                        (recursive)
 │    └─DownBlock2D: 2-30                                                         --                        --                        (recursive)
 │    │    └─ModuleList: 3-40                                                     --                        --                        (recursive)
-├─UNetMidBlock2DCrossAttn: 1-55                                                  [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        66,554,880
+├─UNetMidBlock2DCrossAttn: 1-55                                                  [1, 1280, 12, 12]         [1, 1280, 12, 12]         66,554,880
 │    └─ModuleList: 2-39                                                          --                        --                        (recursive)
-│    │    └─ResnetBlock2D: 3-41                                                  [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        31,138,560
-├─SiLU: 1-56                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+│    │    └─ResnetBlock2D: 3-41                                                  [1, 1280, 12, 12]         [1, 1280, 12, 12]         31,138,560
+├─SiLU: 1-56                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─UNetMidBlock2DCrossAttn: 1-67                                                  --                        --                        (recursive)
 │    └─ModuleList: 2-39                                                          --                        --                        (recursive)
 │    │    └─ResnetBlock2D: 3-44                                                  --                        --                        (recursive)
-├─SiLU: 1-58                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-58                                                                     [1, 1280]                 [1, 1280]                 --
 ├─UNetMidBlock2DCrossAttn: 1-67                                                  --                        --                        (recursive)
 │    └─ModuleList: 2-39                                                          --                        --                        (recursive)
 │    │    └─ResnetBlock2D: 3-44                                                  --                        --                        (recursive)
-├─SiLU: 1-60                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+├─SiLU: 1-60                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─UNetMidBlock2DCrossAttn: 1-67                                                  --                        --                        (recursive)
 │    └─ModuleList: 2-39                                                          --                        --                        (recursive)
 │    │    └─ResnetBlock2D: 3-44                                                  --                        --                        (recursive)
 │    └─ModuleList: 2-35                                                          --                        --                        --
-│    │    └─Transformer2DModel: 3-45                                             [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        35,416,320
+│    │    └─Transformer2DModel: 3-45                                             [1, 1280, 12, 12]         [1, 1280, 12, 12]         35,416,320
 │    └─ModuleList: 2-39                                                          --                        --                        (recursive)
-│    │    └─ResnetBlock2D: 3-46                                                  [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        31,138,560
-├─SiLU: 1-62                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+│    │    └─ResnetBlock2D: 3-46                                                  [1, 1280, 12, 12]         [1, 1280, 12, 12]         31,138,560
+├─SiLU: 1-62                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─UNetMidBlock2DCrossAttn: 1-67                                                  --                        --                        (recursive)
 │    └─ModuleList: 2-39                                                          --                        --                        (recursive)
 │    │    └─ResnetBlock2D: 3-49                                                  --                        --                        (recursive)
-├─SiLU: 1-64                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-64                                                                     [1, 1280]                 [1, 1280]                 --
 ├─UNetMidBlock2DCrossAttn: 1-67                                                  --                        --                        (recursive)
 │    └─ModuleList: 2-39                                                          --                        --                        (recursive)
 │    │    └─ResnetBlock2D: 3-49                                                  --                        --                        (recursive)
-├─SiLU: 1-66                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+├─SiLU: 1-66                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─UNetMidBlock2DCrossAttn: 1-67                                                  --                        --                        (recursive)
 │    └─ModuleList: 2-39                                                          --                        --                        (recursive)
 │    │    └─ResnetBlock2D: 3-49                                                  --                        --                        (recursive)
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─UpBlock2D: 2-40                                                           --                        [1280, 1280, 5, 5]        113,076,480
+│    └─UpBlock2D: 2-40                                                           --                        [1, 1280, 24, 24]         113,076,480
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
-├─SiLU: 1-69                                                                     [1280, 2560, 3, 3]        [1280, 2560, 3, 3]        --
+├─SiLU: 1-69                                                                     [1, 2560, 12, 12]         [1, 2560, 12, 12]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─UpBlock2D: 2-49                                                           --                        --                        (recursive)
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
-├─SiLU: 1-71                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-71                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─UpBlock2D: 2-49                                                           --                        --                        (recursive)
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
-├─SiLU: 1-73                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+├─SiLU: 1-73                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─UpBlock2D: 2-49                                                           --                        --                        (recursive)
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
-├─SiLU: 1-75                                                                     [1280, 2560, 3, 3]        [1280, 2560, 3, 3]        --
+├─SiLU: 1-75                                                                     [1, 2560, 12, 12]         [1, 2560, 12, 12]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─UpBlock2D: 2-49                                                           --                        --                        (recursive)
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
-├─SiLU: 1-77                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-77                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─UpBlock2D: 2-49                                                           --                        --                        (recursive)
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
-├─SiLU: 1-79                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+├─SiLU: 1-79                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─UpBlock2D: 2-49                                                           --                        --                        (recursive)
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
-├─SiLU: 1-81                                                                     [1280, 2560, 3, 3]        [1280, 2560, 3, 3]        --
+├─SiLU: 1-81                                                                     [1, 2560, 12, 12]         [1, 2560, 12, 12]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─UpBlock2D: 2-49                                                           --                        --                        (recursive)
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
-├─SiLU: 1-83                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-83                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─UpBlock2D: 2-49                                                           --                        --                        (recursive)
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
-├─SiLU: 1-85                                                                     [1280, 1280, 3, 3]        [1280, 1280, 3, 3]        --
+├─SiLU: 1-85                                                                     [1, 1280, 12, 12]         [1, 1280, 12, 12]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─UpBlock2D: 2-49                                                           --                        --                        (recursive)
 │    │    └─ModuleList: 3-59                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-60                                                     --                        --                        14,746,880
-│    └─CrossAttnUpBlock2D: 2-50                                                  --                        [1280, 1280, 10, 10]      211,132,160
+│    └─CrossAttnUpBlock2D: 2-50                                                  --                        [1, 1280, 48, 48]         211,132,160
 │    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-├─SiLU: 1-87                                                                     [1280, 2560, 5, 5]        [1280, 2560, 5, 5]        --
+├─SiLU: 1-87                                                                     [1, 2560, 24, 24]         [1, 2560, 24, 24]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-├─SiLU: 1-89                                                                     [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-89                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-├─SiLU: 1-91                                                                     [1280, 1280, 5, 5]        [1280, 1280, 5, 5]        --
-├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
-│    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-│    │    └─ModuleList: 3-75                                                     --                        --                        (recursive)
-│    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-├─SiLU: 1-93                                                                     [1280, 2560, 5, 5]        [1280, 2560, 5, 5]        --
-├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
-│    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-├─SiLU: 1-95                                                                     [1280, 1280]              [1280, 1280]              --
-├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
-│    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-├─SiLU: 1-97                                                                     [1280, 1280, 5, 5]        [1280, 1280, 5, 5]        --
+├─SiLU: 1-91                                                                     [1, 1280, 24, 24]         [1, 1280, 24, 24]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-75                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-├─SiLU: 1-99                                                                     [1280, 1920, 5, 5]        [1280, 1920, 5, 5]        --
+├─SiLU: 1-93                                                                     [1, 2560, 24, 24]         [1, 2560, 24, 24]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-├─SiLU: 1-101                                                                    [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-95                                                                     [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
-├─SiLU: 1-103                                                                    [1280, 1280, 5, 5]        [1280, 1280, 5, 5]        --
+├─SiLU: 1-97                                                                     [1, 1280, 24, 24]         [1, 1280, 24, 24]         --
+├─ModuleList: 1-140                                                              --                        --                        (recursive)
+│    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
+│    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
+│    │    └─ModuleList: 3-75                                                     --                        --                        (recursive)
+│    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
+├─SiLU: 1-99                                                                     [1, 1920, 24, 24]         [1, 1920, 24, 24]         --
+├─ModuleList: 1-140                                                              --                        --                        (recursive)
+│    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
+│    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
+├─SiLU: 1-101                                                                    [1, 1280]                 [1, 1280]                 --
+├─ModuleList: 1-140                                                              --                        --                        (recursive)
+│    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
+│    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
+├─SiLU: 1-103                                                                    [1, 1280, 24, 24]         [1, 1280, 24, 24]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-59                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-74                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-75                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-76                                                     --                        --                        14,746,880
-│    └─CrossAttnUpBlock2D: 2-60                                                  --                        [1280, 640, 20, 20]       55,594,880
+│    └─CrossAttnUpBlock2D: 2-60                                                  --                        [1, 640, 96, 96]          55,594,880
 │    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-├─SiLU: 1-105                                                                    [1280, 1920, 10, 10]      [1280, 1920, 10, 10]      --
+├─SiLU: 1-105                                                                    [1, 1920, 48, 48]         [1, 1920, 48, 48]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-├─SiLU: 1-107                                                                    [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-107                                                                    [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-├─SiLU: 1-109                                                                    [1280, 640, 10, 10]       [1280, 640, 10, 10]       --
-├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
-│    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-│    │    └─ModuleList: 3-91                                                     --                        --                        (recursive)
-│    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-├─SiLU: 1-111                                                                    [1280, 1280, 10, 10]      [1280, 1280, 10, 10]      --
-├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
-│    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-├─SiLU: 1-113                                                                    [1280, 1280]              [1280, 1280]              --
-├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
-│    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-├─SiLU: 1-115                                                                    [1280, 640, 10, 10]       [1280, 640, 10, 10]       --
+├─SiLU: 1-109                                                                    [1, 640, 48, 48]          [1, 640, 48, 48]          --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-91                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-├─SiLU: 1-117                                                                    [1280, 960, 10, 10]       [1280, 960, 10, 10]       --
+├─SiLU: 1-111                                                                    [1, 1280, 48, 48]         [1, 1280, 48, 48]         --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-├─SiLU: 1-119                                                                    [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-113                                                                    [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
-├─SiLU: 1-121                                                                    [1280, 640, 10, 10]       [1280, 640, 10, 10]       --
+├─SiLU: 1-115                                                                    [1, 640, 48, 48]          [1, 640, 48, 48]          --
+├─ModuleList: 1-140                                                              --                        --                        (recursive)
+│    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
+│    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
+│    │    └─ModuleList: 3-91                                                     --                        --                        (recursive)
+│    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
+├─SiLU: 1-117                                                                    [1, 960, 48, 48]          [1, 960, 48, 48]          --
+├─ModuleList: 1-140                                                              --                        --                        (recursive)
+│    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
+│    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
+├─SiLU: 1-119                                                                    [1, 1280]                 [1, 1280]                 --
+├─ModuleList: 1-140                                                              --                        --                        (recursive)
+│    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
+│    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
+├─SiLU: 1-121                                                                    [1, 640, 48, 48]          [1, 640, 48, 48]          --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-69                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-90                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-91                                                     --                        --                        (recursive)
 │    │    └─ModuleList: 3-92                                                     --                        --                        3,687,040
-│    └─CrossAttnUpBlock2D: 2-70                                                  --                        [1280, 320, 20, 20]       14,895,040
+│    └─CrossAttnUpBlock2D: 2-70                                                  --                        [1, 320, 96, 96]          14,895,040
 │    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-├─SiLU: 1-123                                                                    [1280, 960, 20, 20]       [1280, 960, 20, 20]       --
+├─SiLU: 1-123                                                                    [1, 960, 96, 96]          [1, 960, 96, 96]          --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-├─SiLU: 1-125                                                                    [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-125                                                                    [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-├─SiLU: 1-127                                                                    [1280, 320, 20, 20]       [1280, 320, 20, 20]       --
-├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
-│    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-│    │    └─ModuleList: 3-107                                                    --                        --                        (recursive)
-│    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-├─SiLU: 1-129                                                                    [1280, 640, 20, 20]       [1280, 640, 20, 20]       --
-├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
-│    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-├─SiLU: 1-131                                                                    [1280, 1280]              [1280, 1280]              --
-├─ModuleList: 1-140                                                              --                        --                        (recursive)
-│    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
-│    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-├─SiLU: 1-133                                                                    [1280, 320, 20, 20]       [1280, 320, 20, 20]       --
+├─SiLU: 1-127                                                                    [1, 320, 96, 96]          [1, 320, 96, 96]          --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
 │    │    └─ModuleList: 3-107                                                    --                        --                        (recursive)
 │    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-├─SiLU: 1-135                                                                    [1280, 640, 20, 20]       [1280, 640, 20, 20]       --
+├─SiLU: 1-129                                                                    [1, 640, 96, 96]          [1, 640, 96, 96]          --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-├─SiLU: 1-137                                                                    [1280, 1280]              [1280, 1280]              --
+├─SiLU: 1-131                                                                    [1, 1280]                 [1, 1280]                 --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
-├─SiLU: 1-139                                                                    [1280, 320, 20, 20]       [1280, 320, 20, 20]       --
+├─SiLU: 1-133                                                                    [1, 320, 96, 96]          [1, 320, 96, 96]          --
 ├─ModuleList: 1-140                                                              --                        --                        (recursive)
 │    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
 │    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
 │    │    └─ModuleList: 3-107                                                    --                        --                        (recursive)
-├─GroupNorm: 1-141                                                               [1280, 320, 20, 20]       [1280, 320, 20, 20]       640
-├─SiLU: 1-142                                                                    [1280, 320, 20, 20]       [1280, 320, 20, 20]       --
-├─Conv2d: 1-143                                                                  [1280, 320, 20, 20]       [1280, 4, 20, 20]         11,524
+│    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
+├─SiLU: 1-135                                                                    [1, 640, 96, 96]          [1, 640, 96, 96]          --
+├─ModuleList: 1-140                                                              --                        --                        (recursive)
+│    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
+│    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
+├─SiLU: 1-137                                                                    [1, 1280]                 [1, 1280]                 --
+├─ModuleList: 1-140                                                              --                        --                        (recursive)
+│    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
+│    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
+├─SiLU: 1-139                                                                    [1, 320, 96, 96]          [1, 320, 96, 96]          --
+├─ModuleList: 1-140                                                              --                        --                        (recursive)
+│    └─CrossAttnUpBlock2D: 2-79                                                  --                        --                        (recursive)
+│    │    └─ModuleList: 3-106                                                    --                        --                        (recursive)
+│    │    └─ModuleList: 3-107                                                    --                        --                        (recursive)
+├─GroupNorm: 1-141                                                               [1, 320, 96, 96]          [1, 320, 96, 96]          640
+├─SiLU: 1-142                                                                    [1, 320, 96, 96]          [1, 320, 96, 96]          --
+├─Conv2d: 1-143                                                                  [1, 320, 96, 96]          [1, 4, 96, 96]            11,524
 ===========================================================================================================================================================
 Total params: 2,053,784,324
 Trainable params: 2,053,784,324
 Non-trainable params: 0
-Total mult-adds (T): 27.51
+Total mult-adds (G): 471.04
 ===========================================================================================================================================================
-Input size (MB): 205.95
-Forward/backward pass size (MB): 168178.48
+Input size (MB): 0.23
+Forward/backward pass size (MB): 2837.61
 Params size (MB): 1731.82
-Estimated Total Size (MB): 170116.25
+Estimated Total Size (MB): 4569.66
 ===========================================================================================================================================================
