@@ -36,7 +36,7 @@
 
 - **Unfiltered** Danbooru's "6M" and E621's "3M" is likely included. Anime screencaps / pixiv / instagram / sankakucomplex is less likely, but would be included also. 
 
-- *Speculation* With estimation of "100-200M seen per day (256x H100s)", "trained for around 2 weeks", it would be around "10M 280EP", which is scary but effective for SDXL. 
+- *Speculation* With estimation of "100-200M seen per day ( 256 H100 not 252 ~~SEO boost~~ )", "trained for around 2 weeks", it would be around "10M 280EP", which is scary but effective for SDXL. 
 
 - Obviously, with the superior [procurement](https://en.wikipedia.org/wiki/Procurement), [sponsership](https://en.wikipedia.org/wiki/Sponsor_(commercial)), and [financing](https://www.investopedia.com/terms/f/financing.asp) (*NAI is the "top 50 AI unicorn" in some media sources*), it is obviously "not in competition with community". Also, *it is not that hard to understand when "we" meet with groups of PhD students and postDocs to analyze an AI model*. Enjoy the taunt.
 
