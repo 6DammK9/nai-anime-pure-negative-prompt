@@ -40,7 +40,7 @@
 - Developer related `en`: [camenduru's server](https://discord.gg/y55khHPn)
 - Pure debate server `ja`: [議論一般チャンネル](https://discord.gg/HjYRv2rZ)
 - AI Art `es`: [IA en Español](https://discord.gg/tQDm7kU5)
-- 2b2t `zh`: [SDCN](https://t.me/StableDiffusion_CN)
+- **2b2t** `zh`: [SDCN](https://t.me/StableDiffusion_CN)
 - ~~victim~~ `ru`: [Novel AI](https://t.me/Novel_AI_Group)
 - ~~attacker~~ `ru`: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
 - Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)- 
@@ -67,10 +67,15 @@ Why there is so many TG CN groups: As there are some sensitive LoRA and abusive 
 
 Note that "SDCN" is not categorized here.
 
+## Blue pill (AI animation) ##
+
+- Discord, Active `en`: [banodoco](https://discord.gg/ckwNzuJg)
+- FB, Active `en`: [AI ANIMATION & VIDEO: Deforum / PikaLabs / Kaiber / Zeroscope / Runway / SD](https://www.facebook.com/groups/aianimationonly)
+
 ## Blue Pill (LLM) ## 
 
 - Discord, Active `zh`: [自由AI阵线](https://discord.gg/jfbvYHeTrB)
-- AI application developer based `en`: ~~Shinonome AI Lab~~ [sail](https://discord.gg/TXW8tAvU)
+- AI application developer based `en`: ~~Shinonome AI Lab~~ [SAIL](https://discord.gg/TXW8tAvU)
 
 ## Blue pill (AI art platform) ## 
 
