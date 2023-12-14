@@ -14,7 +14,7 @@ Usually involves model comparasion.
 
 SD1
 
-![sd1_unet.png](./view_unet/sd1_unet.png)
+![sd1_unet_marked.png](./view_unet/sd1_unet_marked.png)
 
 SD2
 
