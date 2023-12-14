@@ -77,10 +77,10 @@
 - For the part *"kohaku is not pleased"*: That article didn't consult or even notice him, and somehow it is "cited" in a strange way. Also the claims in the article is not even accurate from the source (private QQ group). Here is the "observation" redirected from an anon:
 
 > 討論內容是:
-"至少"有100EP
-"至少"幾個星期 
+> "至少"有100EP
+> "至少"幾個星期 
 
-![img/23121401.png](img/23121401.png)
+![img/23121401.PNG](img/23121401.PNG)
 
 ## Use at your own risk. ##
 
