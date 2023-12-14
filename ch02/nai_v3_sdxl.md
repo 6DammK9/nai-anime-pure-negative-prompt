@@ -40,6 +40,8 @@
 
 - *Speculation* With estimation of "100-200M seen per day ( 256 H100 not 252 ~~SEO boost~~ )", "trained for around 2 weeks", it would be around "10M 280EP", which is scary but effective for SDXL. 
 
+- Supportive materials on "256 H100": [Official NAI blog (in name of Anlatan)](https://blog.novelai.net/anlatan-acquires-hgx-h100-cluster-4b7a2e6a631e) > mention of "NVIDIA HGX H100 compute clusters" > "256 H100 GPU Pod" in [offical product page](https://developer.nvidia.com/blog/introducing-nvidia-hgx-h100-an-accelerated-server-platform-for-ai-and-high-performance-computing/). *If you see the mentioning of 252 H100 without supporting media, that's probably due to the poor translation inside the screenshot 🤣 (I am Astolfo, not Kohaku)*
+
 - Obviously, with the superior [procurement](https://en.wikipedia.org/wiki/Procurement), [sponsership](https://en.wikipedia.org/wiki/Sponsor_(commercial)), and [financing](https://www.investopedia.com/terms/f/financing.asp) (*NAI is the "top 50 AI unicorn" in some media sources*), it is obviously "not in competition with community". Also, *it is not that hard to understand when "we" meet with groups of PhD students and postDocs to analyze an AI model*. Enjoy the taunt.
 
 ![img/photo_2023-12-08_17-03-01.jpg](img/photo_2023-12-08_17-03-01.jpg)
