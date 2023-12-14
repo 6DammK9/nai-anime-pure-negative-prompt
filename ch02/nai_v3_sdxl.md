@@ -16,6 +16,8 @@
 
 - `cn` [Video.](https://www.bilibili.com/video/BV1xG411i71m)
 
+- `cn` [NAI-V3的使用守则](https://civitai.com/articles/3179/nai-v3) *Kohaku is not pleased, see blow*
+
 ### Prompting guide / Tag Explorer ###
 
 - *analysis in lower session*.
@@ -66,11 +68,19 @@
 
 - *My generic prompts may work also.* However SDXL's original contents, such as `wrc`, `ice cube`, are faded.
 
-## Stranges thoughts ##
+## Strange thoughts ##
 
 - *NAIv3 should be exclusive in NovelAI only.* It won't be available in community. Therefore this news is just a news, instead of skeak peek of some new features.
 
 ![img/photo_2023-12-06_15-00-43.jpg](img/photo_2023-12-06_15-00-43.jpg)
+
+- For the part *"kohaku is not pleased"*: That article didn't consult or even notice him, and somehow it is "cited" in a strange way. Also the claims in the article is not even accurate from the source (private QQ group). Here is the "observation" redirected from an anon:
+
+> 討論內容是:
+"至少"有100EP
+"至少"幾個星期 
+
+![img/23121401.png](img/23121401.png)
 
 ## Use at your own risk. ##
 
