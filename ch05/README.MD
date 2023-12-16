@@ -4,6 +4,8 @@
 
 - [HuggingFace model page.](https://huggingface.co/6DammK9/AstolfoMix) The style is also different.
 
+- [CivitAI article page.](https://civitai.com/articles/3409) Summary of here.
+
 ## What is the mix? ##
 
 - Currently, it is an ~~Ensemble averaging of 10 neural networks~~ ~~Uniform~~ AutoMBW [(Bayesian Merge)](https://github.com/s1dlx/sd-webui-bayesian-merger) of ~~10~~ 20+1 SD models.
