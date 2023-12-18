@@ -77,6 +77,11 @@ Note that "SDCN" is not categorized here.
 - Discord, Active `zh`: [自由AI阵线](https://discord.gg/jfbvYHeTrB)
 - AI application developer based `en`: ~~Shinonome AI Lab~~ [SAIL](https://discord.gg/TXW8tAvU)
 
+## Blue Pill (adversial tools) ##
+
+- Glaze (Glaze's partner web platform) `en`: [Cara Beta](https://discord.gg/qrh7qnuz)
+- Mist, V2 `en`: [Mist](https://discord.gg/23K375NG) ([What is it?](https://huggingface.co/spaces/mf666/mist-fucker))
+
 ## Blue pill (AI art platform) ## 
 
 Definitely not Pixiv.
