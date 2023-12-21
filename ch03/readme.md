@@ -22,4 +22,4 @@ SD2
 
 SDXL
 
-![sdxl_unet.png](./view_unet/sd1_unet_marked.png)
+![sdxl_unet.png](./view_unet/sdxl_unet_marked.png)
