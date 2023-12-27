@@ -1,5 +1,17 @@
 # Findings on AutoMBW #
 
+## Notice on 231228 ##
+
+- Since there is [active development](https://github.com/s1dlx/sd-webui-bayesian-merger/pull/110) in `sd-webui-bayesian-merger`, which suprised me a lot, I will switch to their extension and keep updating my findings.
+
+- Also, [I have included some comments in the original PR](https://github.com/Xerxemi/auto-MBW-rt/issues/3)
+
+- And do not expect the original repo will have further developement:
+
+![23122801.png](img/23122801.png)
+
+![23122802.png](img/23122802.png)
+
 ## What is it? ##
 
 - [This WebUI extension.](https://github.com/Xerxemi/sdweb-auto-MBW) Sadly there is scarce infomration about the whole mechanism.
@@ -49,3 +61,15 @@
 - The description of [mzpikas_tmnd_enhanced](https://huggingface.co/ashen-sensored/mzpikas_tmnd_enhanced) is somewhat a bit exaggerated. From the extension [sd-webui-runtime-block-merge](https://github.com/ashen-sensored/sd-webui-runtime-block-merge) and [sd_webui_SAG](https://github.com/ashen-sensored/sd_webui_SAG), it is probably **an AutoMBW model based on SAG score, and payloads generating 2048x2048 images.** Note that the "payload" is an "action" from ["agent"](https://en.wikipedia.org/wiki/Intelligent_agent), which is not related to ["training"](https://www.tensorflow.org/js/guide/train_models).
 
 - [SiliconSD](https://medium.com/@media_97267/the-automated-stable-diffusion-checkpoint-merger-autombw-44f8dfd38871) used a ["Binary Mid Pass" searching](https://github.com/Xerxemi/sdweb-auto-MBW/blob/master/scripts/mbw/auto_mbw.py#L612). *It is not an effective optimization algorithm* (comparing with [Random Search](https://en.wikipedia.org/wiki/Random_search)). The cloest approximation is [A* search algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) or [Monte Carlo tree search](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search) which treat the "searching space" as a huge binary tree.
+
+## Related Papers ##
+
+*May not mentioned above. It is included way later, when I joined [Bayesian Merger discord "MEHrgers"](https://github.com/s1dlx/sd-webui-bayesian-merger).*
+
+- Training Diffusion Models with Reinforcement Learning. [arxiv](https://arxiv.org/abs/2305.13301), [github](https://github.com/jannerm/ddpo/tree/main), [huggingface](https://huggingface.co/kvablack)
+
+- Diffusion Models for Reinforcement Learning: A Survey. [arxiv](https://arxiv.org/abs/2311.01223).
+
+- Diffusion Model Alignment Using Direct Preference Optimization. [arxiv](https://arxiv.org/abs/2311.12908), [hf trainer](https://huggingface.co/docs/trl/main/en/ddpo_trainer), [hf model](https://huggingface.co/mhdang/dpo-sd1.5-text2image-v1).
+
+- Bayesian Reinforcement Learning: A Survey. [arxiv](https://arxiv.org/abs/1609.04436)
