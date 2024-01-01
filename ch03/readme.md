@@ -18,8 +18,8 @@ SD1
 
 SD2
 
-![sd2_unet.png](./view_unet/sd1_unet_marked.png)
+![sd2_unet_marked.png](./view_unet/sd1_unet_marked.png)
 
 SDXL
 
-![sdxl_unet.png](./view_unet/sdxl_unet_marked.png)
+![sdxl_unet_marked.png](./view_unet/sdxl_unet_marked.png)

@@ -8,7 +8,9 @@
 
 ## What is the mix? ##
 
-- Currently, it is an ~~Ensemble averaging of 10 neural networks~~ ~~Uniform~~ AutoMBW [(Bayesian Merge)](https://github.com/s1dlx/sd-webui-bayesian-merger) of ~~10~~ 20+1 SD models.
+- Currently, it is an ~~Ensemble averaging of 10 neural networks~~ ~~Uniform~~ AutoMBW [(Bayesian Merge)](https://github.com/s1dlx/sd-webui-bayesian-merger) of ~~10~~ 20+1 SD1.5 models.
+
+- Although I'm going to repeat the "mix" for [SD2](./README_SD2.MD) and SDXL (maybe SDXL Turbo?) models, I will seperate the *exclusive findings* there. If you find unexplained stuffs there, read this article instead.
 
 ## Generated Images ##
 
@@ -89,7 +91,7 @@
 
 - [ch02/animevae_pt](../ch02/animevae_pt.md#extra-text-encoder): Other then VAE, *NAI also used SD's orignal TE*. This is special for SD1.X because the CLIP / ViT used *was trained with uncropped LAION dataset, including the NSFW words*. It is in theory knowing most vocabulary, even the token count is less then SDXL. It shuold be reminded that NSFW SDXL / SD2.X models are *almost inexist*, with a [little exception](https://cafeai.notion.site/WD-1-5-Beta-2-Release-Notes-2852db5a9cdd456ba52fc5730b91acfd). [Rare artwork done by me.](https://www.pixiv.net/en/artworks/105947222). It further supports "nice content may be better then nice structure".
 
-- [ch03](../ch03): Hhowever, most finetuned models used [TTE (train text encoder)](https://github.com/kohya-ss/sd-scripts) to create "triger word" effect, but variance has been greatly sacrificed. Note that it is *highly doubtful* because most models are TTE enabled, and it is hard to proof or even verify.
+- [ch03](../ch03): However, most finetuned models used [TTE (train text encoder)](https://github.com/kohya-ss/sd-scripts) to create "triger word" effect, but variance has been greatly sacrificed. Note that it is *highly doubtful* because most models are TTE enabled, and it is hard to proof or even verify.
 
 ### Verifying the merge is precise ###
 
@@ -451,8 +453,8 @@ Steps: 256, Sampler: Euler, CFG scale: 4, Seed: 873435189, Size: 1792x768, Model
 
 ## Future plan ##
 
-- Repeat in SD2.1 (aw)
+- Repeat in SD2.1: [In progress.](./README_SD2.MD)
 
-- Repeat in SDXL, but I need to rewrite the extension.
+- Repeat in SDXL, ~~but I need to rewrite the extension~~ done. Will start after SD2. May switch to [WhiteWipe/sd-webui-bayesian-merger](https://github.com/WhiteWipe/sd-webui-bayesian-merger/tree/main) because of active development.
 
 - Keep testing the models with new technology (LCM, SDXL Turbo etc.). CUrrently I know my model **has maximum capability** on CS level to observe and discover new or ignored technologies, as what I do in [ch01](../ch01/).
