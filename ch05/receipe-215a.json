@@ -1,0 +1,444 @@
+{
+    "__metadata__": {
+        "sd_merge_models": {
+            "177db1e8dbf54ecb71db2ef6893bb1d094787bb8c2d09a932366f8cc0d4a1153": {
+                "name": "213a-AstolfoMix-209a210a.safetensors",
+                "legacy_hash": "0eb3318b",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "c656e388e803c4c3ba7a8a4fcac617f6426a32c137e63ecebffefea8393f976e",
+                    "secondary_model_hash": "55723e3627172dfc2f4c3deac96de4bd8fc904466de04bbd811bdf463fd8847c",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "213a-AstolfoMix-209a210a",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "c656e388e803c4c3ba7a8a4fcac617f6426a32c137e63ecebffefea8393f976e": {
+                "name": "209a-AstolfoMix-201a202a.safetensors",
+                "legacy_hash": "0eb3318b",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "ac7e255d599f8bca78dc8a401bff29d1b5e7327c1e7e76f42f15419b0636a441",
+                    "secondary_model_hash": "d738311a771c5c649d2b04cfc8245b323648927f552b3290ec0683cc5ec3c8cc",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "209a-AstolfoMix-201a202a",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "ac7e255d599f8bca78dc8a401bff29d1b5e7327c1e7e76f42f15419b0636a441": {
+                "name": "201a-AstolfoMix-_201_202.safetensors",
+                "legacy_hash": "0eb3318b",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "d662865fde28be11af4f87ac4f92878c00aa56bb326cd96c0cc9a391d67f83af",
+                    "secondary_model_hash": "014930c62424c758cefb9d1bd323fba651a44a6f934a8d6e4fbfd6b9abe16db7",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "201a-AstolfoMix-_201_202",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "d662865fde28be11af4f87ac4f92878c00aa56bb326cd96c0cc9a391d67f83af": {
+                "name": "_201-allworkforkrowk_v10768x1024.safetensors",
+                "legacy_hash": "0eb3318b",
+                "sd_merge_recipe": {
+                    "type": "sd-webui-supermerger",
+                    "weights_alpha": null,
+                    "weights_beta": null,
+                    "weights_alpha_orig": null,
+                    "weights_beta_orig": null,
+                    "model_a": "efa28214b3e962a73d414d4c168238637ed635c0980faee87d592c4e5437a067",
+                    "model_b": "66c501ec3bdc830b6ae176e97f6336af261b681b53f53bae4bfa81c2ad51a702",
+                    "model_c": "efa28214b3e962a73d414d4c168238637ed635c0980faee87d592c4e5437a067",
+                    "base_alpha": 0.5,
+                    "base_beta": 0.5,
+                    "mode": "Weight sum",
+                    "mbw": false,
+                    "elemental_merge": "",
+                    "calcmode": "tensor",
+                    "Off": [
+                        ""
+                    ]
+                }
+            },
+            "efa28214b3e962a73d414d4c168238637ed635c0980faee87d592c4e5437a067": {
+                "name": "HellNineth_BC00001-12-10_AllWorkForkRowkV_1-5_1024",
+                "legacy_hash": "0eb3318b"
+            },
+            "66c501ec3bdc830b6ae176e97f6336af261b681b53f53bae4bfa81c2ad51a702": {
+                "name": "HellNineth_CA00024_16-11_ForkRowk_UNETgigaresSFWcomputerFisso-redo_1e-6_001offset",
+                "legacy_hash": "a149572b"
+            },
+            "014930c62424c758cefb9d1bd323fba651a44a6f934a8d6e4fbfd6b9abe16db7": {
+                "name": "_202-artiusV21NSFW_v21.safetensors",
+                "legacy_hash": "0eb3318b",
+                "sd_merge_recipe": null
+            },
+            "d738311a771c5c649d2b04cfc8245b323648927f552b3290ec0683cc5ec3c8cc": {
+                "name": "202a-AstolfoMix-_203_204.safetensors",
+                "legacy_hash": "d7b9e5c9",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "a1e877d37541d21cf155cdeddb0ee20206b4adf388967fb6da571fddc2ab7698",
+                    "secondary_model_hash": "3fa2af39e8eb558899adfaaa904903adcc333690756f382986a8374510d26c1b",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "202a-AstolfoMix-_203_204",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "a1e877d37541d21cf155cdeddb0ee20206b4adf388967fb6da571fddc2ab7698": {
+                "name": "_203-e621RisingV2AStable_v20.safetensors",
+                "legacy_hash": "8fb2946d",
+                "sd_merge_recipe": null
+            },
+            "3fa2af39e8eb558899adfaaa904903adcc333690756f382986a8374510d26c1b": {
+                "name": "_204-hakomayd_v10.safetensors",
+                "legacy_hash": "de2f2560",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "beca3519f30cbec55631be22cda6cf5dcc1b4ebbe222ee4e4b2cb68f612bd345",
+                    "secondary_model_hash": "8ffacd03f4def8fb47ea27886d3394729b503cab29cc5c7048c3eac476bfd3b8",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0,
+                    "save_as_half": true,
+                    "custom_name": "hakoMayD0",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "beca3519f30cbec55631be22cda6cf5dcc1b4ebbe222ee4e4b2cb68f612bd345": {
+                "name": "hakoMayD2-half.safetensors",
+                "legacy_hash": "de2f2560",
+                "sd_merge_recipe": null
+            },
+            "8ffacd03f4def8fb47ea27886d3394729b503cab29cc5c7048c3eac476bfd3b8": {
+                "name": "hakoMayB.safetensors",
+                "legacy_hash": "0eb3318b",
+                "sd_merge_recipe": null
+            },
+            "55723e3627172dfc2f4c3deac96de4bd8fc904466de04bbd811bdf463fd8847c": {
+                "name": "210a-AstolfoMix-203a204a.safetensors",
+                "legacy_hash": "0eb3318b",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "6b854104d7beeba7e08c7672084e29246490256737fa7e4c0c950919bc613ba3",
+                    "secondary_model_hash": "9eb846b422576dbadf60f46b302f5c39c252ee3e45478f6839657c91ad5d8b30",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "210a-AstolfoMix-203a204a",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "6b854104d7beeba7e08c7672084e29246490256737fa7e4c0c950919bc613ba3": {
+                "name": "203a-AstolfoMix-_205_206.safetensors",
+                "legacy_hash": "0eb3318b",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "cae1bee30e67339dd931925f98c12d2b86fe9f4786795137040e4956f4bfcffe",
+                    "secondary_model_hash": "2ab91fc5283cc7e7591e446a076fcdf90ec8c4701a6c17ec785fcff3d73d1a18",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "203a-AstolfoMix-_205_206",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "cae1bee30e67339dd931925f98c12d2b86fe9f4786795137040e4956f4bfcffe": {
+                "name": "_205-illuminatiDiffusionV1_v11.safetensors",
+                "legacy_hash": "a149572b",
+                "sd_merge_recipe": null
+            },
+            "2ab91fc5283cc7e7591e446a076fcdf90ec8c4701a6c17ec785fcff3d73d1a18": {
+                "name": "_206-mishiAnime_v1.safetensors",
+                "legacy_hash": "2b3c9291",
+                "sd_merge_recipe": null
+            },
+            "9eb846b422576dbadf60f46b302f5c39c252ee3e45478f6839657c91ad5d8b30": {
+                "name": "204a-AstolfoMix-_207_208.safetensors",
+                "legacy_hash": "8911dcc4",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "a441d0187aaafcb0b10c965743e51e28afaf52a09c25c1ac8df4d423d4fa6a7d",
+                    "secondary_model_hash": "cdeba7501291449061577786db6b1930c15e4a9e81fa06645f8dcbb8f2da0aab",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "204a-AstolfoMix-_207_208",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "a441d0187aaafcb0b10c965743e51e28afaf52a09c25c1ac8df4d423d4fa6a7d": {
+                "name": "_207-nijidiffusion_half.safetensors",
+                "legacy_hash": "d4e00573",
+                "sd_merge_recipe": null
+            },
+            "cdeba7501291449061577786db6b1930c15e4a9e81fa06645f8dcbb8f2da0aab": {
+                "name": "_208-plat-v1-3-1-fp16.safetensors",
+                "legacy_hash": "b1c259ec",
+                "sd_merge_recipe": null
+            },
+            "1e0c24dd1e67ef2ecc5a11f7b7d70a8c16ac5c6baeed88b6629cab0722f8b6d6": {
+                "name": "214a-AstolfoMix-211a212a.safetensors",
+                "legacy_hash": "9a098fef",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "d9d86129f10833d2b66b1db70c4ea4893d6b68171da716a17a24d9cd4bc3445a",
+                    "secondary_model_hash": "86849b182d7663891805e9d2e7abe68b57ca1192459fae50fafbd5dc12f502a4",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "214a-AstolfoMix-211a212a",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "d9d86129f10833d2b66b1db70c4ea4893d6b68171da716a17a24d9cd4bc3445a": {
+                "name": "211a-AstolfoMix-205a206a.safetensors",
+                "legacy_hash": "fb8201cf",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "dbea42af8eb66b734e5a6dca5a63225ba26b48e6a6186bbe8b563ae35357d0d3",
+                    "secondary_model_hash": "248c8909ea1ae1be6d1ddc7666d490712d74bf08651b96b1849cb3c2deb89474",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "211a-AstolfoMix-205a206a",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "dbea42af8eb66b734e5a6dca5a63225ba26b48e6a6186bbe8b563ae35357d0d3": {
+                "name": "205a-AstolfoMix-_209_210.safetensors",
+                "legacy_hash": "eb290bca",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "01d56786239d26b0708948581c9c24871c914f7a215cb04a1c6794844da40bc7",
+                    "secondary_model_hash": "654f1be427166fafac8a187824417bceb8ceb94e731fef6059743222e07699cd",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "205a-AstolfoMix-_209_210",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "01d56786239d26b0708948581c9c24871c914f7a215cb04a1c6794844da40bc7": {
+                "name": "_209-pvc-v4-5-fp16.safetensors",
+                "legacy_hash": "f68dce93",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "d38e7795464024781aef8d28ef2101e9ddad3d6efc3fb09ca53b56f0d74e412c",
+                    "secondary_model_hash": "d6f33708c68ee9646b938e0de89f91fc2bec067810c0d2694cf1de01ae6e62ad",
+                    "tertiary_model_hash": "b7c378c76a88f1b67b97455df116564d694d9bee12153d160b46d28a1dfe8dbb",
+                    "interp_method": "Add difference",
+                    "multiplier": 1,
+                    "save_as_half": true,
+                    "custom_name": "pvc-v4-5-fp16",
+                    "config_source": 3,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "d38e7795464024781aef8d28ef2101e9ddad3d6efc3fb09ca53b56f0d74e412c": {
+                "name": "_215-wd-beta3-base-fp16.safetensors",
+                "legacy_hash": "6d081f69",
+                "sd_merge_recipe": null
+            },
+            "d6f33708c68ee9646b938e0de89f91fc2bec067810c0d2694cf1de01ae6e62ad": {
+                "name": "pvc-v4-fp16.safetensors",
+                "legacy_hash": "a2fa5a65",
+                "sd_merge_recipe": null
+            },
+            "b7c378c76a88f1b67b97455df116564d694d9bee12153d160b46d28a1dfe8dbb": {
+                "name": "wd-15-2.6-186k.safetensors",
+                "legacy_hash": "685ff1cd",
+                "sd_merge_recipe": null
+            },
+            "654f1be427166fafac8a187824417bceb8ceb94e731fef6059743222e07699cd": {
+                "name": "_210-quattro4mergeI_v1.safetensors",
+                "legacy_hash": "10eaf341",
+                "sd_merge_recipe": null
+            },
+            "248c8909ea1ae1be6d1ddc7666d490712d74bf08651b96b1849cb3c2deb89474": {
+                "name": "206a-AstolfoMix-_211_212.safetensors",
+                "legacy_hash": "e1802a73",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "cf65f48ecfd2fb6b7b8a83eb3f99448d6e85b1ef4261c2f9ecc743d0f72decf0",
+                    "secondary_model_hash": "6fdb703d7db88d8edd7bf77ece2f08cf170d4f629ae8a86d72e32edcde7460aa",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "206a-AstolfoMix-_211_212",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "cf65f48ecfd2fb6b7b8a83eb3f99448d6e85b1ef4261c2f9ecc743d0f72decf0": {
+                "name": "_211-Replicant-V3.0_fp16.safetensors",
+                "legacy_hash": "de2f2560",
+                "sd_merge_recipe": null
+            },
+            "6fdb703d7db88d8edd7bf77ece2f08cf170d4f629ae8a86d72e32edcde7460aa": {
+                "name": "_212-ponyDiffusionV5_v55.safetensors",
+                "legacy_hash": "9cd9edfe",
+                "sd_merge_recipe": null
+            },
+            "86849b182d7663891805e9d2e7abe68b57ca1192459fae50fafbd5dc12f502a4": {
+                "name": "212a-AstolfoMix-207a208a.safetensors",
+                "legacy_hash": "bf4a95c8",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "2b2771c3053816f47f12bfc698e1f1ea778c2ecc2f29ab2e7f81ae8b292032a3",
+                    "secondary_model_hash": "8645389110f07cc3cabebc231909a3791b5b23520e15b5988141ee34f3804e67",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "212a-AstolfoMix-207a208a",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "2b2771c3053816f47f12bfc698e1f1ea778c2ecc2f29ab2e7f81ae8b292032a3": {
+                "name": "207a-AstolfoMix-_213_214.safetensors",
+                "legacy_hash": "6b47e7f3",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "25d0b8d5947005252e2fabc0007e6806fe283c0bb5eeb9e56633b05a40f7c5af",
+                    "secondary_model_hash": "4bf1855f4d12824b96d9350ad325ac709a488a1b6fb417f0f6f87f85f4b5e1ee",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "207a-AstolfoMix-_213_214",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "25d0b8d5947005252e2fabc0007e6806fe283c0bb5eeb9e56633b05a40f7c5af": {
+                "name": "_213-v2-1-2.safetensors",
+                "legacy_hash": "38e15a59",
+                "sd_merge_recipe": null
+            },
+            "4bf1855f4d12824b96d9350ad325ac709a488a1b6fb417f0f6f87f85f4b5e1ee": {
+                "name": "_214-wd-1-5-beta2-fp16.safetensors",
+                "legacy_hash": "0b910e4b",
+                "sd_merge_recipe": null
+            },
+            "8645389110f07cc3cabebc231909a3791b5b23520e15b5988141ee34f3804e67": {
+                "name": "208a-AstolfoMix-_215_216.safetensors",
+                "legacy_hash": "814eb2c0",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "d38e7795464024781aef8d28ef2101e9ddad3d6efc3fb09ca53b56f0d74e412c",
+                    "secondary_model_hash": "5eb89c678e2a8bf5dbe47f80b53fc7a8153b38699b3ac1c7c97f5886c7fe9acf",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "208a-AstolfoMix-_215_216",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "5eb89c678e2a8bf5dbe47f80b53fc7a8153b38699b3ac1c7c97f5886c7fe9acf": {
+                "name": "_216-yiffai2322_yai2322.safetensors",
+                "legacy_hash": "eaffaba6",
+                "sd_merge_recipe": null
+            }
+        },
+        "db_epoch": "1",
+        "db_global_step": "10",
+        "format": "pt",
+        "sd_merge_recipe": {
+            "type": "webui",
+            "primary_model_hash": "177db1e8dbf54ecb71db2ef6893bb1d094787bb8c2d09a932366f8cc0d4a1153",
+            "secondary_model_hash": "1e0c24dd1e67ef2ecc5a11f7b7d70a8c16ac5c6baeed88b6629cab0722f8b6d6",
+            "tertiary_model_hash": null,
+            "interp_method": "Weighted sum",
+            "multiplier": 0.5,
+            "save_as_half": true,
+            "custom_name": "215a-AstolfoMix-213a214a",
+            "config_source": 0,
+            "bake_in_vae": "None",
+            "discard_weights": "",
+            "is_inpainting": false,
+            "is_instruct_pix2pix": false
+        }
+    }
+}
