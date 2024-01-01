@@ -1,4 +1,4 @@
-# Chapter 05: Astolfo mix. #
+# Chapter 05-SD2: Astolfo mix SD2. #
 
 - [(SD1) CivitAI model page.](https://civitai.com/models/155604) The style there is a bit different.
 
@@ -74,7 +74,7 @@ As the metaphor in [mega_cmp](../ch03/v2a/mega_cmp.ipynb), Ceiling (by Author of
 
 ### Model selection ###
 
-- Model seleciton is a **NP Hard** ($O(N!)$) question. However with [pattern recognition](https://en.wikipedia.org/wiki/Pattern_recognition) by visual inspection (since total number is still 23), it reduced to a core concept of **"Replicant-V3 UNET + WD1.5B3 CLIP"**. With some further matching, **10 UNETs and 4 CLIP / TEs** are picked for this version of AstolfoMix.
+- Model seleciton is a **NP Hard** ( $O(N!)$ ) question. However with [pattern recognition](https://en.wikipedia.org/wiki/Pattern_recognition) by visual inspection (since total number is still 23), it reduced to a core concept of **"Replicant-V3 UNET + WD1.5B3 CLIP"**. With some further matching, **10 UNETs and 4 CLIP / TEs** are picked for this version of AstolfoMix.
 
 - Builtin VAE will be `kl-f8-anime2.ckpt`. But I'm still using `vae-ft-mse-840000-ema-pruned.ckpt` for WebUI. Choose what you want.
 
@@ -101,7 +101,7 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 
 ### Considering CLIP / TE combinations individually ###
 
-- This time [stable-diffusion-webui-model-toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit) will be used frequently, because I need to keep extracting and importing UNETs / CLIPs together. It also saves the model as FP16 safetensors, which is commonly used, reliable and take less disk space. *Now I've generated 80+ models which is huge* ($O(N)$ for space)
+- This time [stable-diffusion-webui-model-toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit) will be used frequently, because I need to keep extracting and importing UNETs / CLIPs together. It also saves the model as FP16 safetensors, which is commonly used, reliable and take less disk space. *Now I've generated 80+ models which is huge* ( $O(N)$ for space)
 
 - [Effects on swapping CLIP / TE has been discovered in the SD1 version](./README.MD#swapping-clip--te-with-other-models). This time I used to discover any useful CLIP (somehow SD2.1's CLIP is still competitive for general purpose).
 
