@@ -10,6 +10,8 @@
 
 ## Blue Pill ##
 
+- `en` [Rentry "wiki". Recommended.](https://rentry.org/hdg-nai-v3)
+
 - *A little bit of citation is the greatest support for me already.* Also, *be skeptic on any information, including mine.*
 
 - `jp` [Article.](https://min.togetter.com/qDBZuI8)
