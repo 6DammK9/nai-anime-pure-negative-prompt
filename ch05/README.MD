@@ -6,6 +6,10 @@
 
 - [CivitAI article page.](https://civitai.com/articles/3409) Summary of here.
 
+- [BEST REVIEW EVER.](https://boards.4chan.org/g/thread/98213245#p98214678) *Thanks anon. Never thought it reached 4chan.*
+
+![img/24010501.png](img/24010501.png)
+
 ## What is the mix? ##
 
 - Currently, it is an ~~Ensemble averaging of 10 neural networks~~ ~~Uniform~~ AutoMBW [(Bayesian Merge)](https://github.com/s1dlx/sd-webui-bayesian-merger) of ~~10~~ 20+1 SD1.5 models.
