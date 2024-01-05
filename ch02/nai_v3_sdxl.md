@@ -6,7 +6,11 @@
 
 - [My opinion on V3 (not my tweet). NAI should explain why so many artists and copyright materials are trained.](https://x.com/laz75n/status/1725042286088880587?s=20) [Another lengthy article about AI anime contents.](https://note.com/felelihasima/n/n6c29134bf5a7)
 
+- **(240103) Extra: "MidJourney Name List"** from a court case: [PDF](https://storage.courtlistener.com/recap/gov.uscourts.cand.407208/gov.uscourts.cand.407208.129.10.pdf)
+
 ## Blue Pill ##
+
+- `en` [Rentry "wiki". Recommended.](https://rentry.org/hdg-nai-v3)
 
 - *A little bit of citation is the greatest support for me already.* Also, *be skeptic on any information, including mine.*
 
