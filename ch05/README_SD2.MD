@@ -40,6 +40,8 @@ As the metaphor in [mega_cmp](../ch03/v2a/mega_cmp.ipynb), Ceiling (by Author of
 
 - Here is a list of merged, or "may be merged" of models. Explainantion of the selection will be listed in below session.
 
+- Y(a) means it is included in the "Baseline Merge" only. Y(b) means it is included in the "RL Merge" only. Explainantion in "RL merge" session.
+
 |Index|Model name (with URL)|UNET used?|CLIP used?|
 |---|---|---|---|
 |`_201`|[AllWorkForkRowk](https://civitai.com/models/136088?modelVersionId=233682)|||
@@ -47,7 +49,7 @@ As the metaphor in [mega_cmp](../ch03/v2a/mega_cmp.ipynb), Ceiling (by Author of
 |`_203`|[E621 Rising v2](https://civitai.com/models/32423/e621-rising-v2-a-stable-diffusion-21-furry-model?modelVersionId=38862)|||
 |`_204`|[hakoMayD](https://civitai.com/models/72668/hakomayd?modelVersionId=77394)|Y||
 |`_205`|[Illuminati Diffusion v1.1](https://civitai.com/models/11193/illuminati-diffusion-v11?modelVersionId=13259)|||
-|`_206`|[Mishi Anime](https://civitai.com/models/7742/mishi-anime?modelVersionId=9125)|Y||
+|`_206`|[Mishi Anime](https://civitai.com/models/7742/mishi-anime?modelVersionId=9125)|Y(a)||
 |`_207`|[NijiDiffusion](https://civitai.com/models/55495/nijidiffusion?modelVersionId=59885)|||
 |`_208`|[Plat Diffusion v1.3.1](https://huggingface.co/p1atdev/plat-diffusion)|||
 |`_209`|[PVC v4](https://huggingface.co/p1atdev/pvc-v4/tree/checkpoints)|||
@@ -61,7 +63,7 @@ As the metaphor in [mega_cmp](../ch03/v2a/mega_cmp.ipynb), Ceiling (by Author of
 |`_217`|[Stable Diffusion v2-1](https://huggingface.co/stabilityai/stable-diffusion-2-1)||Y|
 |`_218`|[RuminationDiffusion](https://huggingface.co/JosephusCheung/RuminationDiffusion)|Y||
 |`_219`|[Scream-SemiRealistic](https://civitai.com/models/99040/sd2scream-semirealistic?modelVersionId=140498)|Y||
-|`_220`|[Realgar-v2.1](https://civitai.com/models/70713?modelVersionId=111486)||Y|
+|`_220`|[Realgar-v2.1](https://civitai.com/models/70713?modelVersionId=111486)|Y(b)|Y|
 |`_221`|[RheaSilvia](https://civitai.com/models/68163?modelVersionId=78114)|Y||
 |`_222`|[MuaccaMix](https://civitai.com/models/26087/muaccamix?modelVersionId=112322)|Y||
 |`_223`|[hakoMayBoy](https://huggingface.co/852wa/hakoMay/blob/main/hakoMayBoy.safetensors)|Y||
@@ -166,3 +168,59 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 - Continue what I did in SD1, but in a more efficient way. This time I'm not interested in the intermediate steps.
 
 - *Make it support NSFW by merging the only 1 or 2 discovered NSFW models.*
+
+- *Dropped any "hopeless" models, if the merge breaks a lot (See next chapter)*
+
+## Finding on "SD2 RL Merge" ##
+
+### Crap, I need to drop model! ###
+
+- *Notation and merge sequence follows the SD1 version. I won't repeat them.*
+
+- I've got **runtime errors, exact same score across whole merge, and consistant glitched images** when merging `_206a` against `_210a`. Note that the mentioned 4 layers is actually working, when I reverse the sequence, i.e. merging `_210a` against `_206a`.
+
+```log
+RuntimeError: Error(s) in loading state_dict for TimestepEmbedSequential:
+        size mismatch for 1.proj_in.weight: copying a param with shape torch.Size([320, 320]) from checkpoint, the shape in current model is torch.Size([320, 320, 1, 1]).
+        size mismatch for 1.transformer_blocks.0.attn2.to_k.weight: copying a param with shape torch.Size([320, 1024]) from checkpoint, the shape in current model is torch.Size([320, 768]).
+        size mismatch for 1.transformer_blocks.0.attn2.to_v.weight: copying a param with shape torch.Size([320, 1024]) from checkpoint, the shape in current model is torch.Size([320, 768]).
+        size mismatch for 1.proj_out.weight: copying a param with shape torch.Size([320, 320]) from checkpoint, the shape in current model is torch.Size([320, 320, 1, 1]).
+```
+
+- I have found that it is because `_210a` has ema layers, even after purning, hence the additional layers to crash MBW (1242 vs 1228 layers).
+
+![xyz_grid-0603-1915869920-7680-1230-6-48-20240106093710.jpg](img/xyz_grid-0603-1915869920-7680-1230-6-48-20240106093710.jpg)
+
+- Then I made a "oridinary merge" between `_206a` and `_210a` with $M=1$, which use the weights from `_210a` entirely. I expected reduced layers will trigger the glitched images, however it doesn't:
+
+![xyz_grid-0604-1915869920-3072-1244-6-48-20240106100134.jpg](img/xyz_grid-0604-1915869920-3072-1244-6-48-20240106100134.jpg)
+
+- Seems that `_206a` contains corrupted weight (how? NaN? why?). It forced me to focus on finding alternative models e.g. `_220a`. I can use the entire Hakomay and RheaSilvia series for even more choices, but the damaged diversity will make the ensemble ineffective. 
+
+![xyz_grid-0608-640303141-4608-1244-6-48-20240106103107.jpg](img/xyz_grid-0608-640303141-4608-1244-6-48-20240106103107.jpg)
+
+- Then I try to merge `_210a` and `_220a` again, it works. Sorry `_206a`.
+
+![xyz_grid-0609-1768006530-4096-1343-6-48-20240106121924.jpg](img/xyz_grid-0609-1768006530-4096-1343-6-48-20240106121924.jpg)
+
+### Figures ###
+
+- It follows the pattern of SD1. I won't repeat the description. 
+
+- Note that since it is not a perfect $2^n$ models, "pick the best" among `206b` / `207b` will be applied.
+
+|Model O|Model A|Model B|
+|---|---|---|
+|`201b`|`_202a`|`_204a`|
+|`202b`|`_210a`|`_220a`|
+|`203b`|`_211a`|`_218a`|
+|`204b`|`_221a`|`_222a`|
+|`205b`|`_219a`|`_223a`|
+|`206b`|`201b`|`202b`|
+|`207b`|`203b`|`204b`|
+|`208b`|`205b`|`206b`|
+|`209b`|`207b`|`208b`|
+
+- This plot will be updated among progress.
+
+![img/rl_plot_sd2.png](img/rl_plot_sd2.png)
