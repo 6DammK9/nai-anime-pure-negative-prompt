@@ -1,6 +1,6 @@
 # Chapter 05-SD2: Astolfo mix SD2. #
 
-- [(SD1) CivitAI model page.](https://civitai.com/models/155604) The style there is a bit different.
+- [CivitAI model page.](https://civitai.com/models/255754) The style there is a bit different.
 
 - [HuggingFace model page.](https://huggingface.co/6DammK9/AstolfoMix-SD2) The style is also different.
 
@@ -153,7 +153,7 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 
 ### L2 graph is not working ###
 
-- I may solve the tedious NP-hard question to "visualize" the model weights in a meaningful way. But this time PonyDiffusion (a big finetune) made the chart look skewed.
+- I may solve the tedious NP-hard question to "visualize" the model weights in a meaningful way. ~~But this time PonyDiffusion (a big finetune) made the chart look skewed.~~ If the weight diverse too much, such a 2D plane is impossible to visualize a *skewed high dimension shape.*
 
 ![sd2_unet_vg.png](../ch03/v2a/img/sd2_unet_vg.png)
 
@@ -202,6 +202,8 @@ RuntimeError: Error(s) in loading state_dict for TimestepEmbedSequential:
 - Then I try to merge `_210a` and `_220a` again, it works. Sorry `_206a`.
 
 ![xyz_grid-0609-1768006530-4096-1343-6-48-20240106121924.jpg](img/xyz_grid-0609-1768006530-4096-1343-6-48-20240106121924.jpg)
+
+- For the "same score", turns out that it is memory / IO problem. Since I explictly print the score out, restart WebUI, and close the webpage it returns normal.
 
 ### Figures ###
 
