@@ -218,7 +218,7 @@ RuntimeError: Error(s) in loading state_dict for TimestepEmbedSequential:
 |`205b`|`_219a`|`_223a`|
 |`206b`|`201b`|`202b`|
 |`207b`|`203b`|`204b`|
-|`208b`|`205b`|`206b`|
+|`208b`|`205b`|`206b` (pick)|
 |`209b`|`207b`|`208b`|
 
 - This plot will be updated among progress.
