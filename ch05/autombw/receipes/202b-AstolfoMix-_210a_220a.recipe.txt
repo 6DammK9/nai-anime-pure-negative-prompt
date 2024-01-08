@@ -1,0 +1,57 @@
+modelA=_210a-203te-1228layers.safetensors
+modelB=_220a-203te.safetensors
+modelO=202b-AstolfoMix-_210a_220a
+position_id_fix=Keep Original
+output_mode=Max Precision
+0.8,0.0,0.1,0.2,0.6,0.0,0.2,0.1,0.0,0.1,1.0,0.1,0.6,0.3,0.7,0.8,0.9,0.9,0.8,0.6,0.7,0.9,0.3,0.7,0.4,0.5,0.1
+
+[0] hyper_score (Bayesian Optimization):  31%| | 85/270 [18:49:18<40:57:54, 797.16s/it, best_iter=0, best_
+
+
+Results: 'hyper_score'  
+   Best score: 0.605875669859387  
+   Best parameter set:
+      '0'  : 0.8  
+      '1'  : 0.0  
+      '2'  : 0.1  
+      '3'  : 0.2  
+      '4'  : 0.6  
+      '5'  : 0.0  
+      '6'  : 0.2  
+      '7'  : 0.1  
+      '8'  : 0.0  
+      '9'  : 0.1  
+      '10' : 1.0  
+      '11' : 0.1  
+      '12' : 0.6  
+      '13' : 0.5  
+      '14' : 0.3  
+      '15' : 0.7  
+      '16' : 0.8  
+      '17' : 0.9
+      '18' : 0.9  
+      '19' : 0.8  
+      '20' : 0.6  
+      '21' : 0.7  
+      '22' : 0.9  
+      '23' : 0.3  
+      '24' : 0.7  
+      '25' : 0.4  
+      '26' : 0.1  
+   Best iteration: 0  
+
+   Random seed: 802336151
+
+   Evaluation time   : 67654.81344509125 sec    [99.86 %]
+   Optimization time : 92.46108865737915 sec    [0.14 %]
+   Iteration time    : 67747.27453374863 sec    [250.92 sec/iter]
+
+2024-01-07 08:49:46,024 - AutoMBWrt - INFO - Writing merge history to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\extensions\auto-MBW-rt\csv\history.tsv
+2024-01-07 08:49:46,032 - AutoMBWrt - INFO - Saving checkpoint to 202b-AstolfoMix-_210a_220a
+2024-01-07 08:49:46,032 - MBWrt - DEBUG - Gathering MBW info
+2024-01-07 08:49:46,033 - MBWrt - DEBUG - Reading model A
+2024-01-07 08:49:50,220 - MBWrt - DEBUG - Saving receipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\202b-AstolfoMix-_210a_220a.recipe.txt
+2024-01-07 08:49:53,891 - MBWrt - INFO - Checkpoint saved to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\202b-AstolfoMix-_210a_220a.safetensors. If you want to merge with other 
+SD versions, please restart WebUI.
+2024-01-07 08:49:53,967 - AutoMBWrt - INFO - merge completed.
+2024-01-07 08:49:53,967 - AutoMBWrt - INFO - Disable injection.
