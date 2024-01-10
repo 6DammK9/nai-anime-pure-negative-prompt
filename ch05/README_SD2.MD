@@ -161,6 +161,26 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 
 ![sd2_vae_vg.png](../ch03/v2a/img/sd2_vae_vg.png)
 
+- (Written after the receipe is being chosen) After model selection by solely *editor's choice* (i.e. my choice **without relying on automatic system**), the chart is being more clear with 2 outliers (explained why I dropped `_206` on RL merge):
+
+![am6_unet_vg.png](../ch03/v2a/img/am6_unet_vg.png)
+
+![am6_te_vg.png](../ch03/v2a/img/am6_te_vg.png)
+
+- And then removing the outlier manually:
+
+![am7_unet_vg.png](../ch03/v2a/img/am7_unet_vg.png)
+
+![am7_te_vg.png](../ch03/v2a/img/am7_te_vg.png)
+
+- Now it shows that *most models are quite close together.* The capability did improved (quite a lot), but it is still hard to be consistent in art style, which is a lot worse in SD1 version. *Art style is expensive.*
+
+![am7b_te_vg.png](../ch03/v2a/img/am7b_te_vg.png)
+
+- And then, VG graph of chosen CLIP is close in weight also. WD1.5B3 was described as "undertrained", however I think it's not the case. Small and biased dataset tends to break the balance and make the model "hard to use". As shown in SD1 version also, "easy CLIPs" are still close to SD's original CLIP, which make the CLIP merge optional (and absent in SD1).
+
+- *I should make a script to correlate the image similarity, even it is another dirty L2 instead of SIFT.*
+
 ## My action list ##
 
 - **Docuement first.** If you see any content not covered in this article, it is either an idea just appeared, or I really havn't considered. Most idea in this article is original and relies on my own experience. 
