@@ -1,0 +1,6 @@
+modelA=211-AstolfoMix-209210-203te.safetensors
+modelB=209b-AstolfoMix-207b_208b.safetensors
+modelO=210b-AstolfoMix-211209b
+position_id_fix=Keep Original
+output_mode=Max Precision
+0.3,0.9,0.1,0.8,0.7,0.5,0.0,0.8,0.7,0.2,0.5,0.8,0.4,0.4,0.0,1.0,0.5,0.5,1.0,0.3,0.5,0.5,0.2,0.3,0.9,0.9,0.3

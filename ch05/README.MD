@@ -311,6 +311,8 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - *Currently in rabbit hole.* Forked [auto-MBW-rt](https://github.com/6DammK9/auto-MBW-rt) and [sd-webui-runtime-block-merge](https://github.com/6DammK9/sd-webui-runtime-block-merge). Yes I write codes again.
 
+![231342-142097205-2560-1440-4-256-20231127224612.jpg](img/231342-142097205-2560-1440-4-256-20231127224612.jpg)
+
 ### Studying for recommended parameters ###
 
 - For [Bayesian Optimization](https://jonathan-hui.medium.com/bayesian-linear-regression-gaussian-process-with-normal-distribution-e686f7846ad1), the library used [Hyperactive](https://github.com/SimonBlanke/Hyperactive/tree/master) for implementation, Check out [this guide (very bottom) for description.](https://nbviewer.org/github/SimonBlanke/hyperactive-tutorial/blob/main/notebooks/hyperactive_tutorial.ipynb) From [this code](https://github.com/SimonBlanke/Hyperactive/blob/master/examples/optimization_techniques/bayesian_optimization.py), it points to [this code](https://github.com/SimonBlanke/Gradient-Free-Optimizers/blob/master/gradient_free_optimizers/optimizers/smb_opt/bayesian_optimization.py), which make use of [GaussianProcessRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html). The `xi` is the only hyperparameter, which makes "warm start" `warm_start_smbo` sounds irrelevant.
@@ -406,8 +408,6 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 ## Findings on "AstolfoMix 21(b)" ##
 
-### "Leap of faith" ###
-
 ![img/231366-873435189-3584-1536-4-256-20231209081326.jpg](img/231366-873435189-3584-1536-4-256-20231209081326.jpg)
 
 ```
@@ -419,15 +419,7 @@ Steps: 256, Sampler: Euler, CFG scale: 4, Seed: 873435189, Size: 1792x768, Model
 
 - `21` and `21b` is a pair of model. `21` try to "understand more from it other self", and `21b` enrich itself with the missing ["add difference"](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/5218) with $b-c=a+1$, and the "1" is expressed as "difference between 20 and 20b, in unit of art" (no meaning, just arbitary).
 
-- **Just feel it.** [I can't further rationalize without anything to refer.](https://www.youtube.com/watch?v=zFdc1rMc2IU&t=1575s&ab_channel=AtticPhilosophy) 
-
-- *This comparasion works for weight level, however it is inverted for image output (see below).*
-
-![img/not_hsv.png](img/not_hsv.png)
-
-- *If you read through here, enjoy the BGM. "Nice merge" (It is called mashup).*
-
-[![bruh](https://img.youtube.com/vi/2H9lcq6u8es/hqdefault.jpg)](https://www.youtube.com/2H9lcq6u8es)
+- ~~Deleted some hyped paragraphs. Not hyped anymore.~~ 
 
 - Since I have included model info in [auto-MBW-rt](https://github.com/6DammK9/auto-MBW-rt), I need to "wipe model info" by replacing a dummy CIP with [toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit) (but identical), otherwise you will get `TypeError: argument 'metadata': 'dict' object cannot be converted to 'PyString'`.
 
@@ -459,6 +451,6 @@ Steps: 256, Sampler: Euler, CFG scale: 4, Seed: 873435189, Size: 1792x768, Model
 
 - Repeat in SD2.1: [In progress.](./README_SD2.MD)
 
-- Repeat in SDXL, ~~but I need to rewrite the extension~~ done. Will start after SD2. May switch to [WhiteWipe/sd-webui-bayesian-merger](https://github.com/WhiteWipe/sd-webui-bayesian-merger/tree/main) because of active development.
+- Repeat in SDXL, ~~but I need to rewrite the extension~~ [AutoMBW is rewritten](https://github.com/6DammK9/sd-webui-runtime-block-merge?tab=readme-ov-file#notes-on-merging-sdxl-models). Will start after SD2. May switch to [WhiteWipe/sd-webui-bayesian-merger](https://github.com/WhiteWipe/sd-webui-bayesian-merger/tree/main) because of active development.
 
 - Keep testing the models with new technology (LCM, SDXL Turbo etc.). CUrrently I know my model **has maximum capability** on CS level to observe and discover new or ignored technologies, as what I do in [ch01](../ch01/).

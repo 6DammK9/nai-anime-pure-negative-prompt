@@ -8,7 +8,7 @@
 
 ## What is the mix? ##
 
-- Currently, it is an ~~Ensemble averaging~~ Uniform merge of 10 UNETS + 4 CLIPS, picked from 23 discovered SD2.1 models.
+- Currently, it is an ~~Ensemble averaging~~ Uniform merge of 12 UNETS + 4 CLIPS (from 15 models), selected from 24 discovered SD2.1 models.
 
 - I will include *exclusive findings* here only. Read the ["master" article](./README.MD) for general ideas.
 
@@ -67,6 +67,7 @@ As the metaphor in [mega_cmp](../ch03/v2a/mega_cmp.ipynb), Ceiling (by Author of
 |`_221`|[RheaSilvia](https://civitai.com/models/68163?modelVersionId=78114)|Y||
 |`_222`|[MuaccaMix](https://civitai.com/models/26087/muaccamix?modelVersionId=112322)|Y||
 |`_223`|[hakoMayBoy](https://huggingface.co/852wa/hakoMay/blob/main/hakoMayBoy.safetensors)|Y||
+|`_224`|[Hurricane](https://civitai.com/models/204162?modelVersionId=240829)|Y(a)||
 
 - Instead of [abruptly replaced with SD1.4's Text Encoder](https://huggingface.co/6DammK9/bpmodel-sd14-merge), this time *I don't trust SD's original TE, and somehow eventually used it.*
 
@@ -181,6 +182,23 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 
 - *I should make a script to correlate the image similarity, even it is another dirty L2 instead of SIFT.*
 
+### Boosted Resolution (less then SD1) ###
+
+- *Written after 210b was made.* I was not expecting resolution boost since most models are not trained in 1024x1024. However I'm wrong: It cannot generate large images with cars / bikes, but sceneary is still intact. You can't see the effect within a few images, because the overall (latent) diversity i.e. variance is larger then SD1.
+
+![240160-3195552242-2688-1536-6-256-20240114120436.jpg](img/240160-3195552242-2688-1536-6-256-20240114120436.jpg)
+
+```
+parameters
+(aesthetic:0), (quality:0), (anime:0), (solo:0), (boy:0), (geisha:0.98), [[braid]], [astolfo], [[kyoto]]
+Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (photorealisitc:0)
+Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 3195552242, Size: 1344x768, Model hash: a85153fd84, Model: 209-AstolfoMix-207208-203te, VAE hash: df3c506e51, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.1, \"skip_factor\": 0.9}, {\"backbone_factor\": 1.2, \"skip_factor\": 0.2}]", FreeU Schedule: "0.0, 1.0, 0.0", FreeU Version: 2, Hires upscale: 2, Hires steps: 64, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, Version: v1.7.0
+```
+
+### NSFW capability ###
+
+- *Better then original SD2, but worse from the receipe models.* Such capability is sacrificed for content diversity.
+
 ## My action list ##
 
 - **Docuement first.** If you see any content not covered in this article, it is either an idea just appeared, or I really havn't considered. Most idea in this article is original and relies on my own experience. 
@@ -192,6 +210,15 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 - *Dropped any "hopeless" models, if the merge breaks a lot (See next chapter)*
 
 ## Finding on "SD2 RL Merge" ##
+
+![240126-372021954-1536-864-6-256-20240111000506.jpg](img/240126-372021954-1536-864-6-256-20240111000506.jpg)
+
+```
+parameters
+(aesthetic:0), (quality:0), (anime:0), (race queen:0.98), [[braid]], [[bulge]], [astolfo], [[[[nascar, nurburgring]]]]
+Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (photorealisitc:0), (breasts:0.5)
+Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 372021954, Size: 1024x576, Model hash: 510ede6f03, Model: 209b-AstolfoMix-207b_208b, VAE hash: df3c506e51, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.1, \"skip_factor\": 0.9}, {\"backbone_factor\": 1.2, \"skip_factor\": 0.2}]", FreeU Schedule: "0.0, 1.0, 0.0", FreeU Version: 2, Hires upscale: 1.5, Hires steps: 64, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, Version: v1.7.0
+```
 
 ### Crap, I need to drop model! ###
 
@@ -246,3 +273,40 @@ RuntimeError: Error(s) in loading state_dict for TimestepEmbedSequential:
 - This plot will be updated among progress.
 
 ![img/rl_plot_sd2.png](img/rl_plot_sd2.png)
+
+- The L2 graph is more easy to read. Out of my expectation, `_211a`, which is considered as the "root of model variant", tends to be the middle of the graph.
+
+![am8_unet_vg.png](../ch03/v2a/img/am8_unet_vg.png)
+
+### Boosted contrast ###
+
+- It will be explained in next session "210b", as it is shown in SD1 also [(20b in Comparasion in SD1)](../README.md#findings-on-astolfomix-21b), **produced images tends to be higher contrast and less content in background.** *Although automatic aesthetic scoring model's behaviour are yet to be explained* (I'm not convinced about the cherry-picked result, and tends to desire more psychological test and comparative study), multiple passes of aesthetic scoring model yields to a model more consistant on selected content, as kind of [feature extraction](https://en.wikipedia.org/wiki/Feature_engineering). It can be visible content, or just image effect such as **hue / brightness and contrast**. Obviously it can be done by human also, [here is an examaple about making such effect on fiddling on UNET output.](https://github.com/hako-mikan/sd-webui-supermerger?tab=readme-ov-file#4-contrastdetail) However, I don't think the actual number generated from AutoMBW can relate on the "alpha" attribute there.
+
+### NSFW capability ###
+
+- *NSFW capability is improved*, making me review and discovered some receipe model is actually have basic NSFW content. I guess, *since aesthetic feature is focused on human related content*, it is easy to relate to NSFW.
+
+## Findings on "AstolfoMix-SD2 210b" ##
+
+![240240-802596570-1536-864-6-192-20240114013047.jpg](img/240240-802596570-1536-864-6-192-20240114013047.jpg)
+
+```
+parameters
+(aesthetic:0), (quality:0), (solo:0), (anime:0), (boy:0), (construction helmet:0.98), [[jeans]], [[braid]], [astolfo], [[new york]]
+Negative prompt: (worst:0), (low:0), (bad:0), (exceptional:0), (masterpiece:0), (comic:0), (extra:0), (lowres:0), (photorealisitc:0)
+Steps: 192, Sampler: Euler, CFG scale: 6, Seed: 802596570, Size: 1024x576, Model hash: 13696ee702, Model: 210b-AstolfoMix-211209b, VAE hash: df3c506e51, VAE: vae-ft-mse-840000-ema-pruned.ckpt, Denoising strength: 0.7, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.1, \"skip_factor\": 0.9}, {\"backbone_factor\": 1.2, \"skip_factor\": 0.2}]", FreeU Schedule: "0.0, 1.0, 0.0", FreeU Version: 2, Hires upscale: 1.5, Hires upscaler: Latent, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, Version: v1.7.0
+```
+
+### More model has been added ###
+
+- I have extended 2 more models (`_220`, `_224`) since the weight of `_206` is bad for RL merge. Therefore `210b` is actually come from `211` and `209b`.
+
+- Contrast is greater, making the image can accept lower CFG, or generate better image with intiution.
+
+![xyz_grid-0631-1915869920-7680-1230-6-48-20240112080654.jpg](img/xyz_grid-0631-1915869920-7680-1230-6-48-20240112080654.jpg)
+
+![xyz_grid-0632-537248211-7680-1230-6-48-20240112080804.jpg](img/xyz_grid-0632-537248211-7680-1230-6-48-20240112080804.jpg)
+
+- Other effect is similar to SD1's "21b", I won't repeat again. L2 graph is similar to SD1.
+
+![am9_unet_vg.png](../ch03/v2a/img/am9_unet_vg.png)
