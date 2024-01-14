@@ -16,13 +16,11 @@
 
 - ["AstolfoMix" in Pixiv.](https://www.pixiv.net/en/tags/AstolfoMix/artworks)
 
-## Why make a model? ##
+## Why make such a model? ##
 
-- SD2.1 is the best proving ground for an original idea. Whole history of SD2 and its finetunes (especially WD1.5) is a total tragedy. If my mix *looks reasonable* out of merging total unuseable models, I will discover a lot more exlucsive findings, and *get closer to the ground truth.* 
+- ["All models are wrong but some are useful."](https://en.wikipedia.org/wiki/All_models_are_wrong) ["所有模型都是错的，但其中有些是有用的！"](https://cloud.tencent.com/developer/article/1460573)
 
->  Distance metric is not meaningful, **but the identity does.**
-
-As the metaphor in [mega_cmp](../ch03/v2a/mega_cmp.ipynb), Ceiling (by Author of AnythingV3) is not meaningful, **but the ground truth does.**
+- SD2.1 is the best proving ground for an original idea. Whole history of SD2 and its finetunes (especially WD1.5) is a tragedy. If my mix *looks reasonable* out of merging total unuseable models, I will discover a lot more exlucsive findings, and *get closer to the ground truth.* 
 
 ## My discoveries ##
 
@@ -63,7 +61,7 @@ As the metaphor in [mega_cmp](../ch03/v2a/mega_cmp.ipynb), Ceiling (by Author of
 |`_217`|[Stable Diffusion v2-1](https://huggingface.co/stabilityai/stable-diffusion-2-1)||Y|
 |`_218`|[RuminationDiffusion](https://huggingface.co/JosephusCheung/RuminationDiffusion)|Y||
 |`_219`|[Scream-SemiRealistic](https://civitai.com/models/99040/sd2scream-semirealistic?modelVersionId=140498)|Y||
-|`_220`|[Realgar-v2.1](https://civitai.com/models/70713?modelVersionId=111486)|Y(b)|Y|
+|`_220`|[Realgar-v2.1](https://civitai.com/models/70713?modelVersionId=111486)|Y|Y|
 |`_221`|[RheaSilvia](https://civitai.com/models/68163?modelVersionId=78114)|Y||
 |`_222`|[MuaccaMix](https://civitai.com/models/26087/muaccamix?modelVersionId=112322)|Y||
 |`_223`|[hakoMayBoy](https://huggingface.co/852wa/hakoMay/blob/main/hakoMayBoy.safetensors)|Y||
@@ -77,7 +75,7 @@ As the metaphor in [mega_cmp](../ch03/v2a/mega_cmp.ipynb), Ceiling (by Author of
 
 ### Model selection ###
 
-- Model seleciton is a **NP Hard** ( $O(N!)$ ) question. However with [pattern recognition](https://en.wikipedia.org/wiki/Pattern_recognition) by visual inspection (since total number is still 23), it reduced to a core concept of **"Replicant-V3 UNET + WD1.5B3 CLIP"**. With some further matching, **10 UNETs and 4 CLIP / TEs** are picked for this version of AstolfoMix.
+- [Model seleciton](https://en.wikipedia.org/wiki/Model_selection) is a **NP Hard** ( $O(N!)$ ) question. However with [pattern recognition](https://en.wikipedia.org/wiki/Pattern_recognition) by visual inspection (since total number is still 23), it reduced to a core concept of **"Replicant-V3 UNET + WD1.5B3 CLIP"**. With some further matching, **10 UNETs and 4 CLIP / TEs** are picked for this version of AstolfoMix.
 
 - Builtin VAE will be `kl-f8-anime2.ckpt`. But I'm still using `vae-ft-mse-840000-ema-pruned.ckpt` for WebUI. Choose what you want.
 
@@ -310,3 +308,15 @@ Steps: 192, Sampler: Euler, CFG scale: 6, Seed: 802596570, Size: 1024x576, Model
 - Other effect is similar to SD1's "21b", I won't repeat again. L2 graph is similar to SD1.
 
 ![am9_unet_vg.png](../ch03/v2a/img/am9_unet_vg.png)
+
+## Model merge / MBW / AutoMBW works, but reason matters ##
+
+*Given the nice models circulating in internet, such methodology should be explained scientifically, instead of naively asserted with mystic and random theory. In artistic study, reasoning and critical thinking is still essential.*
+
+- Picking models to merge: [Model selection](https://en.wikipedia.org/wiki/Model_selection) (Human did this without acknowledge)
+
+- "Uniform Merge": [Ensemble Averaging](https://en.wikipedia.org/wiki/Ensemble_averaging_(machine_learning)) 
+
+- MBW: [Feature extraction](https://en.wikipedia.org/wiki/Feature_engineering) (27 parameters in somewhat useful areas)
+
+- AutoMBW / Bayesian merge: [Reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning) (with proper reward models / payloads as environment), or [Multi-armed bandit](https://en.wikipedia.org/wiki/Multi-armed_bandit) in a more strict and specific sense.
