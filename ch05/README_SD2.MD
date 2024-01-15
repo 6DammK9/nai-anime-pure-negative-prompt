@@ -4,7 +4,7 @@
 
 - [HuggingFace model page.](https://huggingface.co/6DammK9/AstolfoMix-SD2) The style is also different.
 
-- [(SD1) CivitAI article page.](https://civitai.com/articles/3409) Summary of here.
+- [CivitAI article page.](https://civitai.com/articles/3409) Summary of here (as additional content with SD1).
 
 ## What is the mix? ##
 
