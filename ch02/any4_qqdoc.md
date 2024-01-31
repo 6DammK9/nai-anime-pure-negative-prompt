@@ -22,13 +22,17 @@
 
 ### What I know then ###
 
-- (Source missing) Not long after ther model release, "andite" was accepting donation, and being sponsered by some AIGC platforms (e.g. fantasy.ai), and disappeared and deleted the stuffs in Hugging face on June 2023. I believe some drama was happened (about doxxing on early 2023, aw). 
+- Not long after ther model release, "andite" was accepting donation, and being sponsered by some AIGC platforms (e.g. fantasy.ai), and disappeared and deleted the stuffs in Hugging face on June 2023. I believe some drama was happened (about doxxing on early 2023, aw).
 
 - [One of the very original Discord release post](https://discord.com/channels/930499730843250783/1063504188081971201/1063504188081971201) still exist in "Touhou Project AI Discord" (WD Discord).
 
 ![24020102.png](./img/24020102.png)
 
-- I cannot retrieve the chat history a year ago (considering WD discord is as active as SDCN), a private chat was initiated when a screenshot was somehow leaked, showing Anything "better VAE" 3.1, meanwhile the official 3.1 was never released.
+- A private chat was initiated when a screenshot was somehow leaked, showing Anything "better VAE" 3.1, meanwhile the official 3.1 was never released.
+
+- The actual chat history is **GONE** because the JP discord group was shutted down on Mid 2023. Pay attention to the posted screenshot.
+
+![24020105.png](img/24020105.png)
 
 - Anything 4.5 is the "better VAE" 4.0.
 
