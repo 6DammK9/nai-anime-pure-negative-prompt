@@ -34,7 +34,7 @@
 
 ![24020101.png](./img/24020101.png)
 
-- Also, it is a "mix with forgotten recipe". *That was a common knowledge that "Anything is something like you merge until you forget what you've done".* That was so common on merge belivers at that time, because no one had enough resource and knowledge to "native finetune" a model. All they can do is keep making Dreambooth / LoRAs and merge them into a nice base model. **
+- Also, it is a "mix with forgotten recipe". *That was a common knowledge that "Anything is something like you merge until you forget what you've done".* That was so common on merge belivers at that time, because no one had enough resource and knowledge to "native finetune" a model. All they can do is keep making Dreambooth / LoRAs and merge them into a nice base model.
 
 ![NVIDIA_Share_23-03-09_173615.webp](./img/NVIDIA_Share_23-03-09_173615.webp)
 
