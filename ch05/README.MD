@@ -138,7 +138,7 @@
 }
 ```
 
-- For full receipe, see [receipe-10a.json](./receipe-10a.json).Replace with SD original CLIP / VAE to obtain "10", *however the equivalence may not in file hash precision because of floating point error.*
+- For full recipe, see [receipe-10a.json](./receipe-10a.json).Replace with SD original CLIP / VAE to obtain "10", *however the equivalence may not in file hash precision because of floating point error.*
 
 - Personally I prefer using [vae-ft-mse-840000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.ckpt) for VAE, but I'll keep it neutral while merging.
 
@@ -287,7 +287,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 ![img/xyz_grid-0330-3972813705-25600-2069-4-48-20231021201454.jpg](img/xyz_grid-0330-3972813705-25600-2069-4-48-20231021201454.jpg)
 ![img/xyz_grid-0331-3972813705-25600-2069-4-48-20231021233059.jpg](img/xyz_grid-0331-3972813705-25600-2069-4-48-20231021233059.jpg)
 
-- For full receipe, see [receipe-20a.json](./receipe-20a.json).
+- For full recipe, see [receipe-20a.json](./receipe-20a.json).
 
 - Now the L2 distance graph (*both X-Y axis are arbitary picked, in order to visually seperate the points*):
 
@@ -376,7 +376,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 
 - With `20a`, `20b`, `20c` presents, I may make `21` by uniform merge `20` + `20b`, and `21b` by one more autombw with `20` + `20b`. See the chapter below for ~~explainantion~~ expression.
 
-- For payloads and receipes, see [folder autombw](./autombw). [Plot has been added](./autombw/plot_rl.ipynb). Since I've found the later models (`15b` , `16b`) failed to early exit within time limit, I slightly increase to 4320 minutes (3 days)
+- For payloads and recipes, see [folder autombw](./autombw). [Plot has been added](./autombw/plot_rl.ipynb). Since I've found the later models (`15b` , `16b`) failed to early exit within time limit, I slightly increase to 4320 minutes (3 days)
 
 ![img/rl_plot.png](img/rl_plot.png)
 

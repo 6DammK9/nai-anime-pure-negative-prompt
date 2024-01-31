@@ -51,7 +51,7 @@ Results: 'hyper_score'
 2023-11-14 02:22:38,898 - AutoMBWrt - INFO - Saving checkpoint to $06b-AstolfoMix-_09a_10a
 2023-11-14 02:22:38,898 - MBWrt - DEBUG - Gathering MBW info
 2023-11-14 02:22:38,899 - MBWrt - DEBUG - Reading model A
-2023-11-14 02:22:42,012 - MBWrt - DEBUG - Saving receipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\06b-AstolfoMix-_09a_10a.recipe.txt
+2023-11-14 02:22:42,012 - MBWrt - DEBUG - Saving recipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\06b-AstolfoMix-_09a_10a.recipe.txt
 2023-11-14 02:22:44,170 - MBWrt - INFO - Checkpoint saved to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\06b-AstolfoMix-_09a_10a.safetensors.
 2023-11-14 02:22:44,297 - AutoMBWrt - INFO - merge completed.
 2023-11-14 02:22:44,297 - AutoMBWrt - INFO - Disable injection.

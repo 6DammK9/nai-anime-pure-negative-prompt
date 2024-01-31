@@ -50,7 +50,7 @@ Results: 'hyper_score'
 2024-01-07 08:49:46,032 - AutoMBWrt - INFO - Saving checkpoint to 202b-AstolfoMix-_210a_220a
 2024-01-07 08:49:46,032 - MBWrt - DEBUG - Gathering MBW info
 2024-01-07 08:49:46,033 - MBWrt - DEBUG - Reading model A
-2024-01-07 08:49:50,220 - MBWrt - DEBUG - Saving receipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\202b-AstolfoMix-_210a_220a.recipe.txt
+2024-01-07 08:49:50,220 - MBWrt - DEBUG - Saving recipe file as E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\202b-AstolfoMix-_210a_220a.recipe.txt
 2024-01-07 08:49:53,891 - MBWrt - INFO - Checkpoint saved to E:\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\models\Stable-diffusion\202b-AstolfoMix-_210a_220a.safetensors. If you want to merge with other 
 SD versions, please restart WebUI.
 2024-01-07 08:49:53,967 - AutoMBWrt - INFO - merge completed.

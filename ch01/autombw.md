@@ -20,7 +20,7 @@
 
 - It will be explained by my forked on [auto-MBW-rt](https://github.com/6DammK9/auto-MBW-rt) and [sd-webui-runtime-block-merge](https://github.com/6DammK9/sd-webui-runtime-block-merge). Note that the actual UI may varies. Docuements has been maded there. It won't be repeated here.
 
-- It requires "payloads", "search algorithm (optimizer)", and an "image classifier" to work. Generally the *optimizer* finds the best "MBW receipe" for 2 models *to obtain the highest score* from "image classifier".
+- It requires "payloads", "search algorithm (optimizer)", and an "image classifier" to work. Generally the *optimizer* finds the best "MBW recipe" for 2 models *to obtain the highest score* from "image classifier".
 
 ![img/autombw-ui.png](img/autombw-ui.png)
 

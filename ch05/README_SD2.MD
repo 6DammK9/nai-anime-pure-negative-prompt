@@ -112,17 +112,17 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 
 - **Then I blindly merge all models together.** At that point, only 16 models are discovered. Obviously, it is a total mess. 
 
-- For full receipe, see [receipe-215a.json](./receipe-215a.json).
+- For full recipe, see [receipe-215a.json](./receipe-215a.json).
 
 ![img/xyz_grid-0541-2381024291-24576-1230-6-48-20231227011817.jpg](./img/xyz_grid-0541-2381024291-24576-1230-6-48-20231227011817.jpg)
 
-- Then I apply each receipe model's CLIP in to the blindly merged model. Notice that some highly similar images appeared. Also, it shows BOTH a car and a person (although the person is messed up).
+- Then I apply each recipe model's CLIP in to the blindly merged model. Notice that some highly similar images appeared. Also, it shows BOTH a car and a person (although the person is messed up).
 
 - **Now I can identify the useful CLIPs.** Make sure repeat such batch image generation for different topics. Here I show only a single topic.
 
 ![img/xyz_grid-0543-2381024291-26112-1230-6-48-20231228011101.jpg](./img/xyz_grid-0543-2381024291-26112-1230-6-48-20231228011101.jpg)
 
-- Finally merge all "useful CLIPs" as whole model, then **join all receipe models with the new merged CLIP**.
+- Finally merge all "useful CLIPs" as whole model, then **join all recipe models with the new merged CLIP**.
 
 - **Now I can identify the useful UNETs.**
 
@@ -134,7 +134,7 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 
 - To expand the "set of models" I've find that I really need more models to "adjust the weight" even it is just an uniform merge. Somehow I've found 6 more models and repeated the whole process. Note that since it is parallel merge, I can "add" the new merge instead of deleting all intermediate models.
 
-- For full receipe, see [receipe-209.json](./receipe-209.json). Note that [stable-diffusion-webui-model-toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit) doesn't preserve metadata, therefore I only show `209` instead of `209-203te`.
+- For full recipe, see [receipe-209.json](./receipe-209.json). Note that [stable-diffusion-webui-model-toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit) doesn't preserve metadata, therefore I only show `209` instead of `209-203te`.
 
 ![img/xyz_grid-0593-3569717888-3072-1224-6-48-20231231031129.jpg](./img/xyz_grid-0593-3569717888-3072-1224-6-48-20231231031129.jpg)
 
@@ -160,7 +160,7 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 
 ![sd2_vae_vg.png](../ch03/v2a/img/sd2_vae_vg.png)
 
-- (Written after the receipe is being chosen) After model selection by solely *editor's choice* (i.e. my choice **without relying on automatic system**), the chart is being more clear with 2 outliers (explained why I dropped `_206` on RL merge):
+- (Written after the recipe is being chosen) After model selection by solely *editor's choice* (i.e. my choice **without relying on automatic system**), the chart is being more clear with 2 outliers (explained why I dropped `_206` on RL merge):
 
 ![am6_unet_vg.png](../ch03/v2a/img/am6_unet_vg.png)
 
@@ -195,7 +195,7 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 3195552242, Size: 1344x768, Mode
 
 ### NSFW capability ###
 
-- *Better then original SD2, but worse from the receipe models.* Such capability is sacrificed for content diversity.
+- *Better then original SD2, but worse from the recipe models.* Such capability is sacrificed for content diversity.
 
 ## My action list ##
 
@@ -282,7 +282,7 @@ RuntimeError: Error(s) in loading state_dict for TimestepEmbedSequential:
 
 ### NSFW capability ###
 
-- *NSFW capability is improved*, making me review and discovered some receipe model is actually have basic NSFW content. I guess, *since aesthetic feature is focused on human related content*, it is easy to relate to NSFW.
+- *NSFW capability is improved*, making me review and discovered some recipe model is actually have basic NSFW content. I guess, *since aesthetic feature is focused on human related content*, it is easy to relate to NSFW.
 
 ## Findings on "AstolfoMix-SD2 210b" ##
 
