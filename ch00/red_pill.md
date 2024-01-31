@@ -12,6 +12,7 @@
 - Similar to [SD RESOURCE GOLDMINE](https://rentry.org/sdgoldmine)
 - "Stashes" [SD - WebUI 资源站](https://www.123114514.xyz/)
 - "Stashes" but encrypted [PCIA](https://huggingface.co/Cinnamomo/pcia)
+- Never seen Github Issue instead of Wiki [WangShuXian6/blog](https://github.com/WangShuXian6/blog/issues)
 
 ## Blue pill (WebUI Variants) ##
 
