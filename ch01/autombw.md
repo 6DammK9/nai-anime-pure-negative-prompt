@@ -73,3 +73,5 @@
 - Diffusion Model Alignment Using Direct Preference Optimization. [arxiv](https://arxiv.org/abs/2311.12908), [hf trainer](https://huggingface.co/docs/trl/main/en/ddpo_trainer), [hf model](https://huggingface.co/mhdang/dpo-sd1.5-text2image-v1).
 
 - Bayesian Reinforcement Learning: A Survey. [arxiv](https://arxiv.org/abs/1609.04436)
+
+- An Image is Worth Multiple Words: Multi-attribute Inversion for Constrained Text-to-Image Synthesis. [arxiv](https://arxiv.org/abs/2311.11919v1)

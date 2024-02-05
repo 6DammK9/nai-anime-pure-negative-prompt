@@ -8,7 +8,7 @@
 
 ## What is the mix? ##
 
-- Currently, it is an ~~Ensemble averaging~~ Uniform merge of 12 UNETS + 4 CLIPS (from 15 models), selected from 24 discovered SD2.1 models.
+- Currently, it is an ~~Ensemble averaging~~ ~~Uniform merge~~ "Exotic merge" of 12 UNETS + 4 CLIPS (from 15 models), selected from 24 discovered SD2.1 models.
 
 - I will include *exclusive findings* here only. Read the ["master" article](./README.MD) for general ideas.
 
