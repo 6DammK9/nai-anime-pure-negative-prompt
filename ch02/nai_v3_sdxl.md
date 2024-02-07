@@ -76,7 +76,7 @@
 
 ## Watermark (Other then PNG info / EXIF data) ##
 
-- *Looks like there is already covered by another anon ago: * [See this gist.](https://gist.github.com/catboxanon/ca46eb79ce55e3216aecab49d5c7a3fb) Keyword: `stealth_pngcomp`
+- *Looks like there is already covered by another anon long ago:* [See this gist.](https://gist.github.com/catboxanon/ca46eb79ce55e3216aecab49d5c7a3fb) Keyword: `stealth_pngcomp`
 
 - An anon discovered that the [official website](https://novelai.net/inspect) can identify / read metadata from images generated from NAIv3, even the EXIF data was wiped and converted to JPEG, until it is compressed to a large extent.
 
