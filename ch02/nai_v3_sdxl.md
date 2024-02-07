@@ -1,4 +1,4 @@
-![image](https://github.com/6DammK9/nai-anime-pure-negative-prompt/assets/10937874/246392cd-05b5-4899-b7b2-911fa9ba5787)# Observation from NovelAIDiffusionV3 #
+# Observation from NovelAIDiffusionV3 #
 
 - *Observation only.* I don't have membership, and I have no hands on experience about this.
 
