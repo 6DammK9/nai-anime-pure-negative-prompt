@@ -59,7 +59,9 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 > Notably, we find a distinct distribution of causal states across visual attributes in the UNet, while the text-encoder maintains a single causal state.
 
-*img coming soon*
+![24020903.JPG](img/24020903.JPG)
+
+![24020904.JPG](img/24020904.JPG)
 
 - It implies the great risk and scarification with "Train Text Encoder" option while fintuning a massive base model, and more important, **merging with different finetuned CLIPs**. This problem is dodged in SD1, [because I sticked with the OG CLIP](./README.MD#the-power-of-the-original-sd-1xs-text-encoder), and experienced in SD2. Agressively merging 2 CLIPs in the SDXL will make the model failed to understand most concepts. More in the next section.
 
@@ -67,13 +69,13 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 - There is 44 models discovered, with some of them **cannot be swapped between components, or mergeable.** A1111's OG merger requires valid model metadata to operate, which some models may have its own metadata and fails the merge, meanwhile some models have deviation in model structure (even it may works well in WebUI) and make the toolkit failed to swap components from them.
 
-- For example, it will show "V1-BROKEN-VAE" when parsing the model: 
+- For example, it will show "VAE-v1-BROKEN" when parsing the model: 
 
-*img coming soon*
+![24020901.JPG](./img/24020901.JPG)
 
 - And it may throw error while merging:
 
-*img coming soon*
+![24020902.JPG](./img/24020902.JPG)
 
 - Here is a full list of discovered models: 
 
@@ -81,6 +83,55 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
     <summary>Table with 40+ rows. Click to open.</summary>
 
 *mega table coming soon*
+
+```log
+_x01-deepDarkHentaiMixNSFW_v12.safetensors
+_x02-animeAntifreezingSolutionXL_v10.safetensors
+_x03-hsxl_base_1.0.f16.safetensors
+_x04-OpenDalleV1.1.safetensors
+_x05-copaxTimelessxlSDXL1_v8.safetensors
+_x06-juggernautXL_v8Rundiffusion.safetensors
+_x07-kohakuXLBeta_beta7.safetensors
+_x08-animagineXLV3_v30.safetensors
+_x09-animeboysxl_v10.safetensors
+_x10-dreamshaperXL_alpha2Xl10.safetensors
+_x11-SDXLRonghua_v40.safetensors
+_x12-bluePencilXL_v310.safetensors
+_x13-leosamsHelloworldSDXL_helloworldSDXL32DPO.safetensors
+_x14-ponyDiffusionV6XL_v6.safetensors
+_x15-animagineXL_v20.safetensors
+_x16-wdxl-aesthetic-0.9.safetensors
+_x17-leosamsHelloworldSDXLModel_helloworldSDXL10.safetensors
+_x18-nekoray-xl-1.5m-fp16mixed_e02.safetensors
+_x19-nekoray-xl-1.5m-pdg32_e02.safetensors
+_x20-explicitFreedomNSFW_beta.safetensors
+_x21-nd-run8-weighted-3.safetensors
+_x22-kohakuXL_alpha7.safetensors
+_x23-nekorayxl_v06W3.safetensors
+_x24-SwimInLatent-alpha.fp16.safetensors
+_x25-sd_xl_base_1.0.safetensors
+_x26-enjoyXLAdvancedEdition_v7AdvancedVersion.safetensors
+_x27-explicitFreedomNSFW_alpha.safetensors
+_x28-heartOfAppleXL_v10.safetensors
+_x29-kohakuXLGamma_rev1.safetensors
+_x30-aamXLAnimeMix_v10.safetensors
+_x31-counterfeitxl_v25.safetensors
+_x32-enjoyPandoraXL_v10.safetensors
+_x33-4Guofeng4XL_v12.safetensors
+_x34-animeIllustDiffusion_v061.safetensors
+_x35-brightprotonukeBPNNo_bpn13.safetensors
+_x36-devlishphotorealism_sdxl15.safetensors
+_x37-himawarimix_xlV4.safetensors
+_x38-aio_v10.safetensors
+_x39-sakumix_v10.safetensors
+_x40-218xl_.safetensors
+_x41-riotDiffusionXLLeagueOfLegendsSplash_v20.safetensors
+_x42-himawarimix_xlV5.safetensors
+_x43-SDXLAnimeBulldozer_v20.safetensors
+_x44-kohakuXLGamma_rev2.safetensors
+_x45-awmo-xl.safetensors
+_x46-realvisxlV30Turbo_v30Bakedvae.safetensors
+```
 
 </details>
 
@@ -90,15 +141,43 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 - First I choose **CLIP**, or `conditioner.embedders.0`:
 
-*4 images coming soon*
+![xyz_grid-0657-755545524-18144-1446-4.5-48-20240128171125.jpg](./img/xyz_grid-0657-755545524-18144-1446-4.5-48-20240128171125.jpg)
+
+![xyz_grid-0660-755545524-20160-1446-4.5-48-20240128190750.jpg](./img/xyz_grid-0660-755545524-20160-1446-4.5-48-20240128190750.jpg)
+
+![xyz_grid-0663-755545524-20160-1446-4.5-48-20240129024005.jpg](./img/xyz_grid-0663-755545524-20160-1446-4.5-48-20240129024005.jpg)
+
+![xyz_grid-0666-755545524-14784-963-4.5-48-20240130011803.jpg](./img/xyz_grid-0666-755545524-14784-963-4.5-48-20240130011803.jpg)
 
 - Then I choose *CLIP-AUX**, or `conditioner.embedders.1`:
 
-*4 images coming soon*
+![xyz_grid-0658-755545524-18144-1446-4.5-48-20240128171148.jpg](./img/xyz_grid-0658-755545524-18144-1446-4.5-48-20240128171148.jpg)
+
+![xyz_grid-0661-755545524-20160-1446-4.5-48-20240128191024.jpg](./img/xyz_grid-0661-755545524-20160-1446-4.5-48-20240128191024.jpg)
+
+![xyz_grid-0664-755545524-20160-1446-4.5-48-20240129024047.jpg](./img/xyz_grid-0664-755545524-20160-1446-4.5-48-20240129024047.jpg)
+
+![xyz_grid-0667-755545524-14784-963-4.5-48-20240130011818.jpg](./img/xyz_grid-0667-755545524-14784-963-4.5-48-20240130011818.jpg)
+
+- For reference, I also see what will happen when I apply both CLIPs:
+
+![xyz_grid-0659-755545524-18144-1446-4.5-48-20240128172917.jpg](./img/xyz_grid-0659-755545524-18144-1446-4.5-48-20240128172917.jpg)
+
+![xyz_grid-0662-755545524-20160-1446-4.5-48-20240128192923.jpg](./img/xyz_grid-0662-755545524-20160-1446-4.5-48-20240128192923.jpg)
+
+![xyz_grid-0665-755545524-20160-1446-4.5-48-20240129025805.jpg](./img/xyz_grid-0665-755545524-20160-1446-4.5-48-20240129025805.jpg)
+
+![xyz_grid-0668-755545524-14784-963-4.5-48-20240130013447.jpg](./img/xyz_grid-0668-755545524-14784-963-4.5-48-20240130013447.jpg)
 
 - For selecting UNETs, CLIPs will be the merged model which is `x13te0` and `x14te1`. Note that I have reused the merge models to save disk space.
 
-*4 images coming soon*
+![xyz_grid-0684-755545524-12096-974-4.5-48-20240203134450.jpg](./img/xyz_grid-0684-755545524-12096-974-4.5-48-20240203134450.jpg)
+
+![xyz_grid-0685-755545524-13440-1098-4.5-48-20240203134527.jpg](./img/xyz_grid-0685-755545524-13440-1098-4.5-48-20240203134527.jpg)
+
+![xyz_grid-0686-755545524-13440-963-4.5-48-20240203135733.jpg](./img/xyz_grid-0686-755545524-13440-963-4.5-48-20240203135733.jpg)
+
+![xyz_grid-0687-755545524-14784-963-4.5-48-20240203135824.jpg](./img/xyz_grid-0687-755545524-14784-963-4.5-48-20240203135824.jpg)
 
 - Afterthat, I record all the accept model IDs and start merging pairwise. 
 
