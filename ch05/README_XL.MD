@@ -137,6 +137,16 @@ _x46-realvisxlV30Turbo_v30Bakedvae.safetensors
 
 ## Deriving the "recipe" a.k.a model selection ##
 
+- First, it is less obvious when I view the raw model:
+
+![xyz_grid-0633-3416143198-10240-1343-6-48-20240122001143.jpg](./img/xyz_grid-0633-3416143198-10240-1343-6-48-20240122001143.jpg)
+
+![xyz_grid-0634-3416143198-10240-1343-6-48-20240122002138.jpg](./img/xyz_grid-0634-3416143198-10240-1343-6-48-20240122002138.jpg)
+
+![xyz_grid-0637-3416143198-12288-1343-6-48-20240122004442.jpg](./img/xyz_grid-0637-3416143198-12288-1343-6-48-20240122004442.jpg)
+
+![xyz_grid-0645-3416143198-10240-1343-6-48-20240126005728.jpg](./img/xyz_grid-0645-3416143198-10240-1343-6-48-20240126005728.jpg)
+
 - For selecting CLIPs, UNET is `x39a` which is the global average model. VAE is the original VAE of SDXL.
 
 - First I choose **CLIP**, or `conditioner.embedders.0`:
@@ -240,4 +250,9 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 
 *coming soon*
 
+![img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg](img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg)
+
 ![img/xyz_grid-0700-1355548248-10080-1631-4.5-48-20240204013956.jpg](img/xyz_grid-0700-1355548248-10080-1631-4.5-48-20240204013956.jpg)
+
+![img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg](img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg)
+
