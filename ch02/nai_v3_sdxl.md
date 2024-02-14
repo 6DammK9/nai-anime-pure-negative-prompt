@@ -76,6 +76,8 @@
 
 ## Watermark (Other then PNG info / EXIF data) ##
 
+- Official image inspector: [/inspect](https://novelai.net/inspect)
+
 - *Looks like there is already covered by another anon long ago:* [See this gist.](https://gist.github.com/catboxanon/ca46eb79ce55e3216aecab49d5c7a3fb) Keyword: `stealth_pngcomp`
 
 - An anon discovered that the [official website](https://novelai.net/inspect) can identify / read metadata from images generated from NAIv3, even the EXIF data was wiped and converted to JPEG, until it is compressed to a large extent.
@@ -106,7 +108,35 @@ alpha - 254 = bit
 
 ![photo_2024-02-07_02-15-00.jpg](img/photo_2024-02-07_02-15-00.jpg)
 
-- *Seems that there will be drama all over the internet soon.*
+- *It may be useful for other WebUIs to implement watermark to fufill regulation.*
+
+## Model hash / update ##
+
+- Looks like the "NAIv3" model will be updated when new content comes. Given `"lora_unet_weights": null, "lora_clip_weights": null` in the metadata, LoRA may be hooked, *or it is left for placeholder.* 
+
+![24021401.png](img/24021401.png)
+
+- From this [Korean post](https://arca.live/b/aiart/91848239?p=1), **more than a model hash can be found**, and confirmed with [this deviantart post](https://www.deviantart.com/canpon1992x/art/Ishtar-of-FGO-lying-naked-with-her-eyes-closed-1012778520).
+
+|Hash|Type|Description
+|---|---|---|
+|`Stable Diffusion XL C1E1DE52`|`"request_type": "PromptGenerateRequest"`  or `"request_type": "Img2ImgRequest"`|"Text to Image" or "Image to Image"|
+|`Stable Diffusion XL 8BA2AF87`|`"request_type": "NativeInfillingRequest"`|"Inpainting"|
+|(rot13)`Fgnoyr Qvsshfvba KY O0OQS6P1`|unreleased|unreleased|
+
+- More model hash (e.g. legendary `Stable Diffusion 81274D13`) can be found as previous version also. *Note that I'll post the popular hash only.* Note that "inpainting" can use the same model, instead of distinct model in V3.
+
+|Name|Hash|
+|---|---|
+|NAI Diffusion Anime V1 (Full)|`Stable Diffusion 81274D13`|
+|NAI Diffusion Anime V1 (Curated)|`Stable Diffusion 1D44365E`|
+|NAI Diffusion Furry (Beta V1.3)|`Stable Diffusion 1D09D794`|
+|NAI Diffusion Anime V2|`Stable Diffusion F1022D28`|
+|NAI Diffusion Anime V3|`Stable Diffusion XL C1E1DE52`|
+
+## Strange area ##
+
+![24021402.png](img/24021402.png)
 
 ## Strange thoughts ##
 
@@ -127,6 +157,8 @@ alpha - 254 = bit
 ## Use at your own risk. ##
 
 - "API key is dead": [NaiDrawBot](https://github.com/sudoskys/NaiDrawBot) *Current speculation is a hidden rate limit checking only, around 9k per day.*
+
+- "Distillation": [nai3_train](https://github.com/wochenlong/nai3_train)
 
 - "I have no idea either": [random-prompt](https://github.com/crosstyan/random-prompt)
 
