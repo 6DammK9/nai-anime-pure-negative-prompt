@@ -16,3 +16,4 @@ General discovery. Theories, procedures, practices etc. However not model specif
 - Findings on "Aspect Ratio Bucketing" (moved from CH98): [arb.md](arb.md)
 - Some record about "LyCORIS": [lycoris.md]
 - Findings on "FreeU": [freeu.md]
+- Findings on "Git Re-Basin" in SD: [rebasin.md]
