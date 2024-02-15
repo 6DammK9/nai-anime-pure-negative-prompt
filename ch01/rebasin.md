@@ -11,7 +11,7 @@
     
 (spoiler: It is a ___ algorithm)
 
-<details>
+</details>
 
 - Alg. 1: "Activation Matching"
 - Alg. 2: "Weight Matching"
