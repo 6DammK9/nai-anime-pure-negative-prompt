@@ -47,9 +47,9 @@
 
 ## Notes on the seminar ##
 
-18:20: author does mentioning "finetuning Stable Diffusion".
-19:30: He don't know if applying rebasin on "SD layers" works
-20:45: If the model weights contradict each other, rebasin won't help
+- 18:20: author does mentioning "finetuning Stable Diffusion".
+- 19:30: He don't know if applying rebasin on "SD layers" works
+- 20:45: If the model weights contradict each other, rebasin won't help
 
 ## Article to track history of implementation ##
 
