@@ -1,0 +1,1565 @@
+{
+    "__metadata__": {
+        "modelspec.usage_hint": "Use with ComfyUI, Automatic1111, Stable Swarm UI and Diffusers library as SDXL Checkpoint.",
+        "format": "pt",
+        "modelspec.title": "kohaku-xl-base4",
+        "modelspec.encoder_layer": "1",
+        "modelspec.hash_sha256": "0x5e756477ea9ddde7a552c6e2d7926f849e8b0dfd2f0b513ff17b7d31faedd79f",
+        "modelspec.prediction_type": "epsilon",
+        "modelspec.author": "StabilityAI",
+        "modelspec.trigger_phrase": "This first iteration is trained with Genshin Impact and the Honkai series. You can add the respective character name as a prompt.",
+        "sd_merge_models": {
+            "05d05f408df0b6e1c08e8abacd856d36660fafc4546bb20f3244e79123bde7de": {
+                "name": "x38a-x36ax37a.safetensors",
+                "legacy_hash": "57fbf146",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "5f2b4b3e58f93b9d8ec377d27956f233e1f792431f0abb0b15301fb2436a10f6",
+                    "secondary_model_hash": "99990c09a1bb2ae3468bab171dbc0db60a8862b72b3bbd5d963bb529680382be",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x38a-x36ax37a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "5f2b4b3e58f93b9d8ec377d27956f233e1f792431f0abb0b15301fb2436a10f6": {
+                "name": "x36a-x31ax32a.safetensors",
+                "legacy_hash": "3a5db708",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "a7c0343a3c96b1d7e22333e7a18d5dfb0db54b74c45f3262fa86c24596c1ae8f",
+                    "secondary_model_hash": "7ce75716d9115a6a5ee5e869d36723454023d055fadb8ac585b6c16a84628205",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x36a-x31ax32a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "a7c0343a3c96b1d7e22333e7a18d5dfb0db54b74c45f3262fa86c24596c1ae8f": {
+                "name": "x31a-x21ax22a.safetensors",
+                "legacy_hash": "848958d1",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "89c891128e06e5fafea7eae948079bc3fd4d55dd990d0b815adfcf257d277822",
+                    "secondary_model_hash": "43346664f826a1b87839a6b607bb92bb0971f43348ced68c96133feae460b569",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x31a-x21ax22a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "89c891128e06e5fafea7eae948079bc3fd4d55dd990d0b815adfcf257d277822": {
+                "name": "x21a-x01ax02a.safetensors",
+                "legacy_hash": "b0e183b6",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "8f59f528661a3247327769be898e80340260f5e892b16df9e7ac83a215e93f91",
+                    "secondary_model_hash": "0171653e7fde21c316cf0aac98152415b03f7407185b2abf9ecb382391c54514",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x21a-x01ax02a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "8f59f528661a3247327769be898e80340260f5e892b16df9e7ac83a215e93f91": {
+                "name": "x01a-_x01_x02.safetensors",
+                "legacy_hash": "43eefc0c",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": null,
+                    "secondary_model_hash": "84253a87b01ab5c3bbb38132c6d81eca6f09165a26d5d1a92b0cb57a1e36cbe7",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x01a-_x01_x02",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "ffd935ff67582aa92277711c19640615070aa1c94aec0e02c2bb073e0dfc420a": {
+                "name": "_x01-deepDarkHentaiMixNSFW_v12.safetensors",
+                "legacy_hash": "5a948571",
+                "sd_merge_recipe": null
+            },
+            "84253a87b01ab5c3bbb38132c6d81eca6f09165a26d5d1a92b0cb57a1e36cbe7": {
+                "name": "_x02-animeAntifreezingSolutionXL_v10.safetensors",
+                "legacy_hash": "80c5afc1",
+                "sd_merge_recipe": null
+            },
+            "0171653e7fde21c316cf0aac98152415b03f7407185b2abf9ecb382391c54514": {
+                "name": "x02a-_x03_x41.safetensors",
+                "legacy_hash": "e8a1fc1c",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "3766a1f615bc6e46a3d7efe45978f5b60c73b294e9f7e1207bc32b6223e9586c",
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x02a-_x03_x41",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "3766a1f615bc6e46a3d7efe45978f5b60c73b294e9f7e1207bc32b6223e9586c": {
+                "name": "_x03-hsxl_base_1.0.f16.safetensors",
+                "legacy_hash": "d4f450d0",
+                "sd_merge_recipe": null
+            },
+            "75cc450c7d67c4df83a43650886f102dc0385c9c02e45b278be048f6f0f5bce0": {
+                "name": "_x41-riotDiffusionXLLeagueOfLegendsSplash_v20.safetensors",
+                "legacy_hash": "41ee5b72",
+                "sd_merge_recipe": null
+            },
+            "43346664f826a1b87839a6b607bb92bb0971f43348ced68c96133feae460b569": {
+                "name": "x22a-x03ax04a.safetensors",
+                "legacy_hash": "02f91ab1",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "9c74c2f862b23611a1a6fd503a22ab1f748ebc812555f8b97335c3fb992e5867",
+                    "secondary_model_hash": "8312e2d38f59c935069b02ec96cc90b7f072cf04168b4d159b30b3e5bcb46ad0",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x22a-x03ax04a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "9c74c2f862b23611a1a6fd503a22ab1f748ebc812555f8b97335c3fb992e5867": {
+                "name": "x03a-_x05_x06.safetensors",
+                "legacy_hash": "664344c7",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "a771b2b5e8d2a3c23a3a65f9a51e675f253f101c34be7dc06fd18d534579d8f8",
+                    "secondary_model_hash": "aeb7e9e6897a1e58b10494bd989d001e3d4bc9b634633cd7b559838f612c2867",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x03a-_x05_x06",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "a771b2b5e8d2a3c23a3a65f9a51e675f253f101c34be7dc06fd18d534579d8f8": {
+                "name": "_x05-copaxTimelessxlSDXL1_v8.safetensors",
+                "legacy_hash": "6047dfce",
+                "sd_merge_recipe": null
+            },
+            "aeb7e9e6897a1e58b10494bd989d001e3d4bc9b634633cd7b559838f612c2867": {
+                "name": "_x06-juggernautXL_v8Rundiffusion.safetensors",
+                "legacy_hash": "e80db5ed",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": null,
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "No interpolation",
+                    "multiplier": 0,
+                    "save_as_half": false,
+                    "custom_name": "JuggernautXL_RunDiffusionPhoto_V8Final",
+                    "config_source": 0,
+                    "bake_in_vae": "sdxl_vae_fp16-fix.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "ade3c1dcdf4afecdfdc99a9e90bfd794f38e2cbff28e487e344ac2b2af7eaa17": {
+                "name": "test3.fp16.safetensors",
+                "legacy_hash": "732e9315",
+                "sd_merge_recipe": null
+            },
+            "8312e2d38f59c935069b02ec96cc90b7f072cf04168b4d159b30b3e5bcb46ad0": {
+                "name": "x04a-_x07_x08.safetensors",
+                "legacy_hash": "cce02a74",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "43c75e6831c193eb2dc4be611c942161a02c95a0ff5b389e6679c92da415c02a",
+                    "secondary_model_hash": "1449e5b0b9de87b0f414c5f29cb11ce3b3dc61fa2b320e784c9441720bf7b766",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x04a-_x07_x08",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "43c75e6831c193eb2dc4be611c942161a02c95a0ff5b389e6679c92da415c02a": {
+                "name": "kohaku-xl-beta7.safetensors",
+                "legacy_hash": "86a6c4f2",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "7b9489093b4e05c2480f7a23d4883b27dcec16294bd9f2311c2af9dbf95b5a5d",
+                    "secondary_model_hash": "d458ba2b3ec73d6da9c55ceffbeb1727c1f41162cff97e02bc48dd86311432e7",
+                    "tertiary_model_hash": "b0de2e2a87f7946ad92ebf486633ec50746f435a50f1076dcb6d61bc556af632",
+                    "interp_method": "Add difference",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-xl-beta7",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "7b9489093b4e05c2480f7a23d4883b27dcec16294bd9f2311c2af9dbf95b5a5d": {
+                "name": "kohaku-xl-beta5.safetensors",
+                "legacy_hash": "fb0255fe",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "24063706d143808d67968762781e9b2ccdbb9c8e9af7094de4dc5055e51ae834",
+                    "secondary_model_hash": "c53dabc181d7a606645e18e774275d18fdc0916ed6adb1add5209b7886e90344",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.65,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-xl-beta5",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "24063706d143808d67968762781e9b2ccdbb9c8e9af7094de4dc5055e51ae834": {
+                "name": "sdxl\\\\kohaku-xl-base3-step00020000.safetensors",
+                "legacy_hash": "8755f396",
+                "sd_merge_recipe": null
+            },
+            "c53dabc181d7a606645e18e774275d18fdc0916ed6adb1add5209b7886e90344": {
+                "name": "sdxl\\\\nd-run8-weighted-3.safetensors",
+                "legacy_hash": "89181e81",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "7905d26dfe976f59c99a33ebba37fd6039d487df0776c7197f33eeb163090f36",
+                    "secondary_model_hash": "14180b8647dd3c5f8bb771e9a189d67bfca6a3dfa8cb845eda256bb77ee84947",
+                    "tertiary_model_hash": "e6bb9ea85bbf7bf6478a7c6d18b71246f22e95d41bcdd80ed40aa212c33cfeff",
+                    "interp_method": "Add difference",
+                    "multiplier": 0.3,
+                    "save_as_half": true,
+                    "custom_name": "nd-run8-weighted-3",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "7905d26dfe976f59c99a33ebba37fd6039d487df0776c7197f33eeb163090f36": {
+                "name": "nd-run8-weighted-2.safetensors",
+                "legacy_hash": "1d3b11e1",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "020385193da0d13a24c4571296d6d0ce396a9ed00f62b2a7a21dc1277f483dc3",
+                    "secondary_model_hash": "9a0157cad218ec02ecf0ee207593d7b2335aca800839062c586c868a1b51d0db",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.7,
+                    "save_as_half": true,
+                    "custom_name": "nd-run8-weighted-2",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "020385193da0d13a24c4571296d6d0ce396a9ed00f62b2a7a21dc1277f483dc3": {
+                "name": "checkpoint_run8_epoch2.ckpt",
+                "legacy_hash": "e9a45306",
+                "sd_merge_recipe": null
+            },
+            "9a0157cad218ec02ecf0ee207593d7b2335aca800839062c586c868a1b51d0db": {
+                "name": "counterfeit-1.0.safetensors",
+                "legacy_hash": "5334ebad",
+                "sd_merge_recipe": null
+            },
+            "14180b8647dd3c5f8bb771e9a189d67bfca6a3dfa8cb845eda256bb77ee84947": {
+                "name": "_x38-aio_v10.safetensors",
+                "legacy_hash": "532b3e28",
+                "sd_merge_recipe": null
+            },
+            "e6bb9ea85bbf7bf6478a7c6d18b71246f22e95d41bcdd80ed40aa212c33cfeff": {
+                "name": "sd_xl_base_1.0_0.9vae.safetensors",
+                "legacy_hash": "be9edd61",
+                "sd_merge_recipe": null
+            },
+            "d458ba2b3ec73d6da9c55ceffbeb1727c1f41162cff97e02bc48dd86311432e7": {
+                "name": "sdxl\\\\kohaku-xl-base4-step00050000.safetensors",
+                "legacy_hash": "97730110",
+                "sd_merge_recipe": null
+            },
+            "b0de2e2a87f7946ad92ebf486633ec50746f435a50f1076dcb6d61bc556af632": {
+                "name": "sdxl\\\\sdxl-0.9.safetensors",
+                "legacy_hash": "43f3b8e2",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": null,
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "No interpolation",
+                    "multiplier": 0.75,
+                    "save_as_half": true,
+                    "custom_name": "sdxl-0.9",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "1f697312617db511045698dbf419ae1e2999427d4e4423a321b461cc180d1a97": {
+                "name": "sdxl\\\\sd_xl_base_0.9.safetensors",
+                "legacy_hash": "4b64ace6",
+                "sd_merge_recipe": null
+            },
+            "1449e5b0b9de87b0f414c5f29cb11ce3b3dc61fa2b320e784c9441720bf7b766": {
+                "name": "sdxl\\\\animagine-xl-3.0.safetensors",
+                "legacy_hash": "75f2f05b",
+                "sd_merge_recipe": null
+            },
+            "7ce75716d9115a6a5ee5e869d36723454023d055fadb8ac585b6c16a84628205": {
+                "name": "x32a-x23ax24a.safetensors",
+                "legacy_hash": "1560715f",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "37917483629e33025214fe0eb681bf8a0e2a7551165f53eeb245a00274037c6d",
+                    "secondary_model_hash": "47d20d70db8ba1e7ff0671374f59bc26306ecd609556968f90d19747b9086e2f",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x32a-x23ax24a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "37917483629e33025214fe0eb681bf8a0e2a7551165f53eeb245a00274037c6d": {
+                "name": "x23a-x05ax06a.safetensors",
+                "legacy_hash": "f59785b1",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "1be853030d23a123497059d7fe0923a3fa2cd37b0d5751cf7e69661fbe7c76f2",
+                    "secondary_model_hash": "e8d904bfea1b617ba8365bba57f5cea49cb315de0fc05806d421c5c46b85ca83",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x23a-x05ax06a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "1be853030d23a123497059d7fe0923a3fa2cd37b0d5751cf7e69661fbe7c76f2": {
+                "name": "x05a-_x09_x10.safetensors",
+                "legacy_hash": "ead363a3",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "edfbded41251562643b56e69f50d900cf09741dfb16d513be482ac5e42c040ac",
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x05a-_x09_x10",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "edfbded41251562643b56e69f50d900cf09741dfb16d513be482ac5e42c040ac": {
+                "name": "_x09-animeboysxl_v10.safetensors",
+                "legacy_hash": "b1facb5b",
+                "sd_merge_recipe": null
+            },
+            "c40d3f13c19e4d7b378faf58aa590c4b8f24f94e5d8e7ca71ad4f074a9832d21": {
+                "name": "_x10b-dreamshaperXL_alpha2Xl10.safetensors",
+                "legacy_hash": "b1facb5b",
+                "sd_merge_recipe": null
+            },
+            "e8d904bfea1b617ba8365bba57f5cea49cb315de0fc05806d421c5c46b85ca83": {
+                "name": "x06a-_x11_x12.safetensors",
+                "legacy_hash": "010e339e",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "07211a97c04a27dfa0f8c41a7933a82aff1f1ca306b846a7851111787b0c9fcc",
+                    "secondary_model_hash": "77b1007aa5d6d316f4d3b2a0805c4689f2b90c97b6788e0dcc7dbdd31ff9ce78",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x06a-_x11_x12",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "07211a97c04a27dfa0f8c41a7933a82aff1f1ca306b846a7851111787b0c9fcc": {
+                "name": "_x11-SDXLRonghua_v40.safetensors",
+                "legacy_hash": "2c6f3d4d",
+                "sd_merge_recipe": null
+            },
+            "77b1007aa5d6d316f4d3b2a0805c4689f2b90c97b6788e0dcc7dbdd31ff9ce78": {
+                "name": "_x12-bluePencilXL_v310.safetensors",
+                "legacy_hash": "b1facb5b",
+                "sd_merge_recipe": null
+            },
+            "47d20d70db8ba1e7ff0671374f59bc26306ecd609556968f90d19747b9086e2f": {
+                "name": "x24a-x07ax08a.safetensors",
+                "legacy_hash": "2312f5c1",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "c3cda405c8a930a1ad24bb68e53b03b5d8c9c6385bccff928ecfcf95898db8b7",
+                    "secondary_model_hash": "a2fe4049fd47e7807e531670f0f89916fb1f9b1303bd0a001d3df7105f3bfc85",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x24a-x07ax08a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "c3cda405c8a930a1ad24bb68e53b03b5d8c9c6385bccff928ecfcf95898db8b7": {
+                "name": "x07a-_x13_x14.safetensors",
+                "legacy_hash": "ea5e3b0c",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "dfe73aa42d2b2852ba89e41444c930cb557d2669321433c34e50a009fe4172ee",
+                    "secondary_model_hash": "67ab2fd8ec439a89b3fedb15cc65f54336af163c7eb5e4f2acc98f090a29b0b3",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x07a-_x13_x14",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "dfe73aa42d2b2852ba89e41444c930cb557d2669321433c34e50a009fe4172ee": {
+                "name": "_x13-leosamsHelloworldSDXL_helloworldSDXL32DPO.safetensors",
+                "legacy_hash": "995cd1df",
+                "sd_merge_recipe": null
+            },
+            "67ab2fd8ec439a89b3fedb15cc65f54336af163c7eb5e4f2acc98f090a29b0b3": {
+                "name": "_x14-ponyDiffusionV6XL_v6.safetensors",
+                "legacy_hash": "e577480d",
+                "sd_merge_recipe": null
+            },
+            "a2fe4049fd47e7807e531670f0f89916fb1f9b1303bd0a001d3df7105f3bfc85": {
+                "name": "x08a-_x15_x16.safetensors",
+                "legacy_hash": "439ae38d",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "fd0dfa7b4f8e91b586fc5a388e09291cd9f6717b014ba7731e099ffb9215eef6",
+                    "secondary_model_hash": "4cb266f966c51f9d029108140ca44bf058dfc9320574218db09b47dc97bb20c9",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x08a-_x15_x16",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "fd0dfa7b4f8e91b586fc5a388e09291cd9f6717b014ba7731e099ffb9215eef6": {
+                "name": "_x15-animagineXL_v20.safetensors",
+                "legacy_hash": "5334ebad",
+                "sd_merge_recipe": null
+            },
+            "4cb266f966c51f9d029108140ca44bf058dfc9320574218db09b47dc97bb20c9": {
+                "name": "_x16-wdxl-aesthetic-0.9.safetensors",
+                "legacy_hash": "56718179",
+                "sd_merge_recipe": null
+            },
+            "99990c09a1bb2ae3468bab171dbc0db60a8862b72b3bbd5d963bb529680382be": {
+                "name": "x37a-x33ax34a.safetensors",
+                "legacy_hash": "4a35e7d8",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "c8ffd1a3f053c753b25a8ed29de387108a1e7e183b893c6dcbc6375abd2a53fe",
+                    "secondary_model_hash": "9d092da511f8fa140bb40d955a21d6839a61e23ac6ecf85cfc91952419358a6c",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x37a-x33ax34a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "c8ffd1a3f053c753b25a8ed29de387108a1e7e183b893c6dcbc6375abd2a53fe": {
+                "name": "x33a-x25ax26a.safetensors",
+                "legacy_hash": "953c4e6f",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "4eacb210b7265afad0bce101f7b494bc5fcc736682d6d4ed6ab1771e500798cb",
+                    "secondary_model_hash": "1d9fa4ec9709a45dec72436d110c41ffe9557693e6da5046a878f1d744acb293",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x33a-x25ax26a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "4eacb210b7265afad0bce101f7b494bc5fcc736682d6d4ed6ab1771e500798cb": {
+                "name": "x25a-x09ax10a.safetensors",
+                "legacy_hash": "51a564a4",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "bddf0f1501c0812ec384dc9bcba5edfaef0a1f90fbbe64df5dce95e703371cae",
+                    "secondary_model_hash": "3c1ee806f7386ce7327183e049fcc27f18955ee22ef98e422ab67e8059d9ceb3",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x25a-x09ax10a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "bddf0f1501c0812ec384dc9bcba5edfaef0a1f90fbbe64df5dce95e703371cae": {
+                "name": "x09a-_x17_x18.safetensors",
+                "legacy_hash": "3e3e8116",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "bcfd4aa1c047ce4987191b5146f45e7a057a6867a490700491220c2413d40426",
+                    "secondary_model_hash": "5c51cd921305d3ab4693083d18482382fc403c04ec0b488463ee6dd34758e9ec",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x09a-_x17_x18",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "bcfd4aa1c047ce4987191b5146f45e7a057a6867a490700491220c2413d40426": {
+                "name": "_x17-leosamsHelloworldSDXLModel_helloworldSDXL10.safetensors",
+                "legacy_hash": "bb20f881",
+                "sd_merge_recipe": null
+            },
+            "5c51cd921305d3ab4693083d18482382fc403c04ec0b488463ee6dd34758e9ec": {
+                "name": "_x18-nekoray-xl-1.5m-fp16mixed_e02.safetensors",
+                "legacy_hash": "dedb75ff",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": null,
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "No interpolation",
+                    "multiplier": 0.3,
+                    "save_as_half": true,
+                    "custom_name": "",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "135bfc91715a35a391f2e3d73f6c65c9ec220c0abe77397c4f7c6b93eb978411": {
+                "name": "sdxl-fulldan-1.5m-fp16mixed_run3_epoch-02.ckpt",
+                "legacy_hash": "edfdbc8d",
+                "sd_merge_recipe": null
+            },
+            "3c1ee806f7386ce7327183e049fcc27f18955ee22ef98e422ab67e8059d9ceb3": {
+                "name": "x10a-_x19_x20.safetensors",
+                "legacy_hash": "72059f35",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "72e17afb34d9b9f07920a33e7711fc875798d13272b0a354b1811b9f4b14b2c0",
+                    "secondary_model_hash": "0adb6c634176f16dd1b5dd7254cbb0a5a847de81129abf2b24fca1e27f709b61",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x10a-_x19_x20",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "72e17afb34d9b9f07920a33e7711fc875798d13272b0a354b1811b9f4b14b2c0": {
+                "name": "_x19-nekoray-xl-1.5m-pdg32_e02.safetensors",
+                "legacy_hash": "5ad5a4a2",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "769efe7034b3dc987806ab6cc9510db2126ea9e95c64e8d8630068eb07598d84",
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "No interpolation",
+                    "multiplier": 0.3,
+                    "save_as_half": true,
+                    "custom_name": "",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "769efe7034b3dc987806ab6cc9510db2126ea9e95c64e8d8630068eb07598d84": {
+                "name": "sdxl_fulldan_1.5m_prodigy32_20800.ckpt",
+                "legacy_hash": "edfdbc8d",
+                "sd_merge_recipe": null
+            },
+            "0adb6c634176f16dd1b5dd7254cbb0a5a847de81129abf2b24fca1e27f709b61": {
+                "name": "_x20-explicitFreedomNSFW_beta.safetensors",
+                "legacy_hash": "41b735c6",
+                "sd_merge_recipe": null
+            },
+            "1d9fa4ec9709a45dec72436d110c41ffe9557693e6da5046a878f1d744acb293": {
+                "name": "x26a-x11ax12a.safetensors",
+                "legacy_hash": "77625ae9",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "b90134cc43d3542b709722190a11e4bd0651445e5846e15cc7bc80e09d4cc148",
+                    "secondary_model_hash": "023e3e3ff97d66968187b91fc606cf4e2177bf7b1b3b7d8b072a5a5972b24a5b",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x26a-x11ax12a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "b90134cc43d3542b709722190a11e4bd0651445e5846e15cc7bc80e09d4cc148": {
+                "name": "x11a-_x21_x22.safetensors",
+                "legacy_hash": "2708acb4",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "c53dabc181d7a606645e18e774275d18fdc0916ed6adb1add5209b7886e90344",
+                    "secondary_model_hash": "82bc6f6ae9a469e2b541e4b784c670fc3dde4b587d2e690379754dc38bd1f14b",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x11a-_x21_x22",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "82bc6f6ae9a469e2b541e4b784c670fc3dde4b587d2e690379754dc38bd1f14b": {
+                "name": "_x22-kohakuXL_alpha7.safetensors",
+                "legacy_hash": "ad448cd0",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "eb5da5220a6019e4d6d34e31674e4f66033d0aba36528f64b2cdffcd4da1a60e",
+                    "secondary_model_hash": "9a0157cad218ec02ecf0ee207593d7b2335aca800839062c586c868a1b51d0db",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.25,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-xl-alpha7",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "eb5da5220a6019e4d6d34e31674e4f66033d0aba36528f64b2cdffcd4da1a60e": {
+                "name": "kohaku-xl-alpha6.safetensors",
+                "legacy_hash": "2f37b3eb",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": null,
+                    "secondary_model_hash": "77c534d6823a15513c96614a158d50905389667fe2587edd32df261d4a787401",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.15,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-xl-alpha6",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "dfee80e87026127468b4fb09f76693ba8fe511a6f9208864032db0f16005635a": {
+                "name": "sdxl\\\\kohaku-xl-alpha3.safetensors",
+                "legacy_hash": "411ae022",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "e6417fff4792d7c8b8d20f8ffef271c3447c407691771f8589be2ce201c52f2b",
+                    "secondary_model_hash": "14180b8647dd3c5f8bb771e9a189d67bfca6a3dfa8cb845eda256bb77ee84947",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.1,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-xl-alpha3",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "e6417fff4792d7c8b8d20f8ffef271c3447c407691771f8589be2ce201c52f2b": {
+                "name": "kohaku-xl-alpha2.safetensors",
+                "legacy_hash": "117fa0ca",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "938ba6499b48b94aa4a6e3143f6c0edd79c9a70364f1915d6d2c57df07a1e7a2",
+                    "secondary_model_hash": "b182bcffe6534a89a51af61c846d0d6d4ff69f3f5b3bbe2102e0b8a85761d3c1",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.2,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-xl-alpha2",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "938ba6499b48b94aa4a6e3143f6c0edd79c9a70364f1915d6d2c57df07a1e7a2": {
+                "name": "kohaku-acifo-xl-2.safetensors",
+                "legacy_hash": "0961ca92",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "b182bcffe6534a89a51af61c846d0d6d4ff69f3f5b3bbe2102e0b8a85761d3c1",
+                    "secondary_model_hash": "686e75c63b571fe1289fe1e1026d2e8e34b17694e191c6992b97a861864748c0",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.4,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-acifo-xl-2",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "b182bcffe6534a89a51af61c846d0d6d4ff69f3f5b3bbe2102e0b8a85761d3c1": {
+                "name": "kohaku-aio-xl.safetensors",
+                "legacy_hash": "3b83d791",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "f1fcd75df8ce0ce79d8e1e5930ea2d8d52b8b6db8c86e8cdf3c45c3c849ee407",
+                    "secondary_model_hash": "7798d108bf300facd0d2934f11344cdaf991cba3952832aa12b2ba6aa3407231",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-aio-xl",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "f1fcd75df8ce0ce79d8e1e5930ea2d8d52b8b6db8c86e8cdf3c45c3c849ee407": {
+                "name": "aio_v10_fp16.safetensors",
+                "legacy_hash": "bf38ac84",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "14180b8647dd3c5f8bb771e9a189d67bfca6a3dfa8cb845eda256bb77ee84947",
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "No interpolation",
+                    "multiplier": 0.3,
+                    "save_as_half": true,
+                    "custom_name": "aio_v10_fp16",
+                    "config_source": 0,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "7798d108bf300facd0d2934f11344cdaf991cba3952832aa12b2ba6aa3407231": {
+                "name": "kohaku-xl-base-fp16.safetensors",
+                "legacy_hash": "abcbb320",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "77c534d6823a15513c96614a158d50905389667fe2587edd32df261d4a787401",
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "No interpolation",
+                    "multiplier": 0.3,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-xl-base-fp16",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "77c534d6823a15513c96614a158d50905389667fe2587edd32df261d4a787401": {
+                "name": "sdxl\\\\kohaku-xl-base.safetensors",
+                "legacy_hash": "5bea4f44",
+                "sd_merge_recipe": null
+            },
+            "686e75c63b571fe1289fe1e1026d2e8e34b17694e191c6992b97a861864748c0": {
+                "name": "kohaku-cf-xl.safetensors",
+                "legacy_hash": "793d7e2f",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "7798d108bf300facd0d2934f11344cdaf991cba3952832aa12b2ba6aa3407231",
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-cf-xl",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "023e3e3ff97d66968187b91fc606cf4e2177bf7b1b3b7d8b072a5a5972b24a5b": {
+                "name": "x12a-_x23_x24.safetensors",
+                "legacy_hash": "f42ca775",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "c53dabc181d7a606645e18e774275d18fdc0916ed6adb1add5209b7886e90344",
+                    "secondary_model_hash": "610066b3b1287e04ba86db936218e870c27e60f6af5f9e3d5917f7e11a1bb685",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x12a-_x23_x24",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "610066b3b1287e04ba86db936218e870c27e60f6af5f9e3d5917f7e11a1bb685": {
+                "name": "_x24-SwimInLatent-alpha.fp16.safetensors",
+                "legacy_hash": "f38fefff",
+                "sd_merge_recipe": null
+            },
+            "9d092da511f8fa140bb40d955a21d6839a61e23ac6ecf85cfc91952419358a6c": {
+                "name": "x34a-x27ax28a.safetensors",
+                "legacy_hash": "29f14e0b",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "df4b33a7c527bd8d08bcdef40493fa484a6515ed35a45179b8c57256fc5f671a",
+                    "secondary_model_hash": "7ff12f71639a8723d9fb4a6c8f6de16d244c6199dce123684b46504936b342f2",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x33a-x27ax28a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "df4b33a7c527bd8d08bcdef40493fa484a6515ed35a45179b8c57256fc5f671a": {
+                "name": "x27a-x13ax14a.safetensors",
+                "legacy_hash": "74190238",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "211948d3b05471549312d4606f3f337594fadb7c3553a2f2b44a3ca7acd38db3",
+                    "secondary_model_hash": "21c0eecabada67547c69598a4d326d26902e4aaaf9881dabe88acf48a0924a8e",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x27a-x13ax14a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "211948d3b05471549312d4606f3f337594fadb7c3553a2f2b44a3ca7acd38db3": {
+                "name": "x13a-_x25_x26.safetensors",
+                "legacy_hash": "27ddd648",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b",
+                    "secondary_model_hash": "95a1dce27b43df225bbb848b58face20b6e3e12a9766a1215fb5f5f9bbb0178f",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x13a-_x25_x26",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b": {
+                "name": "sd_xl_base_1.0.safetensors",
+                "legacy_hash": "be9edd61",
+                "sd_merge_recipe": null
+            },
+            "95a1dce27b43df225bbb848b58face20b6e3e12a9766a1215fb5f5f9bbb0178f": {
+                "name": "_x26-enjoyXLAdvancedEdition_v7AdvancedVersion.safetensors",
+                "legacy_hash": "3881a4c9",
+                "sd_merge_recipe": null
+            },
+            "21c0eecabada67547c69598a4d326d26902e4aaaf9881dabe88acf48a0924a8e": {
+                "name": "x14a-_x27_x28.safetensors",
+                "legacy_hash": "efc25464",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "11dc336fdf867bd24de152ca2386eebe1dd1567bf6400132f7232b6facb6895e",
+                    "secondary_model_hash": "7aa4a90429f9572440dcb774164386d8fb2dbb89cba975f50da63252b7c3fcb1",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x14a-_x27_x28",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "11dc336fdf867bd24de152ca2386eebe1dd1567bf6400132f7232b6facb6895e": {
+                "name": "_x27-explicitFreedomNSFW_alpha.safetensors",
+                "legacy_hash": "8f4652da",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "a50d66ac925443d36676a1831a161fbfc0cd4d79b39bf22558e18a489a63f221",
+                    "secondary_model_hash": "dce7eb84496adc6e3c7e37c2d608fea7a9733e891143963a14ae8bbf630406c8",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.1,
+                    "save_as_half": false,
+                    "custom_name": "anime11",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "a50d66ac925443d36676a1831a161fbfc0cd4d79b39bf22558e18a489a63f221": {
+                "name": "anime10.safetensors",
+                "legacy_hash": "713b7f8a",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "8e9fb33c3e3addda345040ab89797b034f1341a3c77edb7704a4c3cfecc02c3d",
+                    "secondary_model_hash": "579568f4d2576642c733ddf7f9d262f9117bedf3537757b035d862782a1eef43",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.3,
+                    "save_as_half": false,
+                    "custom_name": "anime10",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "8e9fb33c3e3addda345040ab89797b034f1341a3c77edb7704a4c3cfecc02c3d": {
+                "name": "anime9.safetensors",
+                "legacy_hash": "8b05b661",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "61d72d3cfd0a3b5432234c071ef96e47ecdfbac2f90a1b7d2fe84e6f218516af",
+                    "secondary_model_hash": "6f91a92b5bb025112d6c628aeec4fa81d87d0c9f5750f6ed2aa2d451877f3536",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.3,
+                    "save_as_half": false,
+                    "custom_name": "anime9",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "61d72d3cfd0a3b5432234c071ef96e47ecdfbac2f90a1b7d2fe84e6f218516af": {
+                "name": "anime8.safetensors",
+                "legacy_hash": "10c1dad2",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "ae3718dc71b15e1460e8c522182a66e2a9e9299b62493630cdfe223d30f7abe4",
+                    "secondary_model_hash": "19bb1cca9472f785e925f3d74667998de9a0548bb85e1cd6952659f6dcf5f53c",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.3,
+                    "save_as_half": false,
+                    "custom_name": "anime8",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "ae3718dc71b15e1460e8c522182a66e2a9e9299b62493630cdfe223d30f7abe4": {
+                "name": "anime7.safetensors",
+                "legacy_hash": "e29a9335",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "649026bbc6de05b38b9c4c31915d34b261a4ef868030b5ddc1cdedfe8236b23f",
+                    "secondary_model_hash": "19bb1cca9472f785e925f3d74667998de9a0548bb85e1cd6952659f6dcf5f53c",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.1,
+                    "save_as_half": false,
+                    "custom_name": "anime7",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "649026bbc6de05b38b9c4c31915d34b261a4ef868030b5ddc1cdedfe8236b23f": {
+                "name": "anime6.safetensors",
+                "legacy_hash": "efedc985",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "a0b2f3b95bb0c0f73433bb2b0153231171d625989bd67069b5a80224778fba58",
+                    "secondary_model_hash": "9a0157cad218ec02ecf0ee207593d7b2335aca800839062c586c868a1b51d0db",
+                    "tertiary_model_hash": "a926be52b44e373b4832f6ab950f6b25a3ef185c9180cc2e364dd3a0de25c07d",
+                    "interp_method": "Add difference",
+                    "multiplier": 0.9,
+                    "save_as_half": false,
+                    "custom_name": "anime6",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "a0b2f3b95bb0c0f73433bb2b0153231171d625989bd67069b5a80224778fba58": {
+                "name": "anime4.safetensors",
+                "legacy_hash": "c462cbf7",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "a926be52b44e373b4832f6ab950f6b25a3ef185c9180cc2e364dd3a0de25c07d",
+                    "secondary_model_hash": "579568f4d2576642c733ddf7f9d262f9117bedf3537757b035d862782a1eef43",
+                    "tertiary_model_hash": "31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b",
+                    "interp_method": "Add difference",
+                    "multiplier": 0.75,
+                    "save_as_half": false,
+                    "custom_name": "anime4",
+                    "config_source": 0,
+                    "bake_in_vae": "None",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "a926be52b44e373b4832f6ab950f6b25a3ef185c9180cc2e364dd3a0de25c07d": {
+                "name": "breakdomainxl_v03d.safetensors",
+                "legacy_hash": "ed992d05",
+                "sd_merge_recipe": null
+            },
+            "579568f4d2576642c733ddf7f9d262f9117bedf3537757b035d862782a1eef43": {
+                "name": "reproductionSDXL_v31.safetensors",
+                "legacy_hash": "edbcfce9",
+                "sd_merge_recipe": {
+                    "type": "sd-webui-supermerger",
+                    "weights_alpha": null,
+                    "weights_beta": null,
+                    "weights_alpha_orig": null,
+                    "weights_beta_orig": null,
+                    "model_a": "98d6355ed655e4ff4b3c372d0a6adcd26edc4ccd1a4275c551075d569fc2b3e1",
+                    "model_b": "6ea7884bc7e52f0b389c1b7fbddd07a753480ddf380bf8e1292ae3bb10b45bb7",
+                    "model_c": "071a0ed959a467d3c1130eae2bc750d55505d9a2919ac18c9391bc010add49d5",
+                    "base_alpha": 0.3,
+                    "base_beta": 0.3,
+                    "mode": "Triple sum:A*(1-alpha-beta)+B*alpha+C*beta",
+                    "mbw": false,
+                    "elemental_merge": "",
+                    "calcmode": "normal"
+                }
+            },
+            "98d6355ed655e4ff4b3c372d0a6adcd26edc4ccd1a4275c551075d569fc2b3e1": {
+                "name": "0820_05.fp16",
+                "legacy_hash": "2d7c98dd"
+            },
+            "6ea7884bc7e52f0b389c1b7fbddd07a753480ddf380bf8e1292ae3bb10b45bb7": {
+                "name": "bluePencilXL_v010",
+                "legacy_hash": "e59e31d0"
+            },
+            "071a0ed959a467d3c1130eae2bc750d55505d9a2919ac18c9391bc010add49d5": {
+                "name": "animeNaturalLanguage_v10",
+                "legacy_hash": "bef2a590"
+            },
+            "19bb1cca9472f785e925f3d74667998de9a0548bb85e1cd6952659f6dcf5f53c": {
+                "name": "bluePencilXL_v021.safetensors",
+                "legacy_hash": "2b853d89",
+                "sd_merge_recipe": null
+            },
+            "6f91a92b5bb025112d6c628aeec4fa81d87d0c9f5750f6ed2aa2d451877f3536": {
+                "name": "finebreake.safetensors",
+                "legacy_hash": "8a8040a5",
+                "sd_merge_recipe": null
+            },
+            "dce7eb84496adc6e3c7e37c2d608fea7a9733e891143963a14ae8bbf630406c8": {
+                "name": "test7.fp16.safetensors",
+                "legacy_hash": "99b12622",
+                "sd_merge_recipe": null
+            },
+            "7aa4a90429f9572440dcb774164386d8fb2dbb89cba975f50da63252b7c3fcb1": {
+                "name": "_x28-heartOfAppleXL_v10.safetensors",
+                "legacy_hash": "197571ec",
+                "sd_merge_recipe": null
+            },
+            "7ff12f71639a8723d9fb4a6c8f6de16d244c6199dce123684b46504936b342f2": {
+                "name": "x28a-x15ax16a.safetensors",
+                "legacy_hash": "deefb70a",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "9e4c7938dfa537366c79eeed61f692136971ad7abd38a1a2aed224b7d0bd465e",
+                    "secondary_model_hash": "f9c56270e782f8e828e91053a9511520b0e3379fe4ae14884e890fb1fb699ab8",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x28a-x15ax16a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "9e4c7938dfa537366c79eeed61f692136971ad7abd38a1a2aed224b7d0bd465e": {
+                "name": "x15a-_x29_x30.safetensors",
+                "legacy_hash": "8cf1b215",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "cd2cbbaed7ae71f4a8066a005f1681105ae88365a84b196c9ce7acc95234328e",
+                    "secondary_model_hash": "d48c2391e04f7dbc83d8538b71be8a30991f3e4e2ff1a8a757b849381f769a8b",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x15a-_x29_x30",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "cd2cbbaed7ae71f4a8066a005f1681105ae88365a84b196c9ce7acc95234328e": {
+                "name": "_x29-kohakuXLGamma_rev1.safetensors",
+                "legacy_hash": "f6977b49",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "bd6419a57fd3ecdeaad045f1b61135bb7668dcc72a3e08b01e5926235e0d6f69",
+                    "secondary_model_hash": null,
+                    "tertiary_model_hash": "43c75e6831c193eb2dc4be611c942161a02c95a0ff5b389e6679c92da415c02a",
+                    "interp_method": "Add difference",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "kohaku-xl-gamma-rev1",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "bd6419a57fd3ecdeaad045f1b61135bb7668dcc72a3e08b01e5926235e0d6f69": {
+                "name": "temp.safetensors",
+                "legacy_hash": "94783c34",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "43c75e6831c193eb2dc4be611c942161a02c95a0ff5b389e6679c92da415c02a",
+                    "secondary_model_hash": "1449e5b0b9de87b0f414c5f29cb11ce3b3dc61fa2b320e784c9441720bf7b766",
+                    "tertiary_model_hash": "5d973c1f8ac15263463a6bb197bb293d479a0c58cb194c712cef3bcabeb680e8",
+                    "interp_method": "Add difference",
+                    "multiplier": 0.8,
+                    "save_as_half": true,
+                    "custom_name": "temp",
+                    "config_source": 3,
+                    "bake_in_vae": "sdxl_vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "5d973c1f8ac15263463a6bb197bb293d479a0c58cb194c712cef3bcabeb680e8": {
+                "name": "sdxl\\\\animagine-xl-2.0.safetensors",
+                "legacy_hash": "bd6512df",
+                "sd_merge_recipe": null
+            },
+            "fe955951a160ebf05db80178ba7225ecb003f339969d2e868058664fd120e053": {
+                "name": "sdxl\\\\kohaku-xl-base7-lion-step00006000.safetensors",
+                "legacy_hash": "6096fcf4",
+                "sd_merge_recipe": null
+            },
+            "d48c2391e04f7dbc83d8538b71be8a30991f3e4e2ff1a8a757b849381f769a8b": {
+                "name": "_x30-aamXLAnimeMix_v10.safetensors",
+                "legacy_hash": "488f085e",
+                "sd_merge_recipe": null
+            },
+            "f9c56270e782f8e828e91053a9511520b0e3379fe4ae14884e890fb1fb699ab8": {
+                "name": "x16a-_x31_x32.safetensors",
+                "legacy_hash": "c8eea24e",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "a310b4c195d6c388398ac8a57c6b197fc1d0f4d8db051a9b06b900f902670241",
+                    "secondary_model_hash": "726fb29adb432cfaf208be95e9b67be3003514bd0a2ebfee7ad1b48031d3de6e",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x15a-_x31_x32",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "a310b4c195d6c388398ac8a57c6b197fc1d0f4d8db051a9b06b900f902670241": {
+                "name": "_x31-counterfeitxl_v25.safetensors",
+                "legacy_hash": "a8714fe3",
+                "sd_merge_recipe": null
+            },
+            "726fb29adb432cfaf208be95e9b67be3003514bd0a2ebfee7ad1b48031d3de6e": {
+                "name": "_x32-enjoyPandoraXL_v10.safetensors",
+                "legacy_hash": "54a1535f",
+                "sd_merge_recipe": null
+            },
+            "498ad85e5561177926149226a8752abbe585026d9c8cdc650bb772988ff7abcf": {
+                "name": "x35a-x29ax30a.safetensors",
+                "legacy_hash": "c48ca71c",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "0706af6bedb1bae7cae98108874c2590128b96841d1904e0103a6a93d220a912",
+                    "secondary_model_hash": "b3e86381ea22e1da664e8016bf2d0147138cd9023d32ca0467b253d066eeaba9",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x35a-x29ax30a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "0706af6bedb1bae7cae98108874c2590128b96841d1904e0103a6a93d220a912": {
+                "name": "x29a-x17ax18a.safetensors",
+                "legacy_hash": "225c27ad",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "6d8e10f0c44d8271f16511c1602ea994310479789486e1f5fd9109eb4a280fbe",
+                    "secondary_model_hash": "9a2e478f20b416fbb83d386066ff0dd152194e08ddfcc632b6e69118e21ab661",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x29a-x17ax18a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "6d8e10f0c44d8271f16511c1602ea994310479789486e1f5fd9109eb4a280fbe": {
+                "name": "x17a-_x33_x34.safetensors",
+                "legacy_hash": "b38ab4b3",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "9748eda16ea474d3fc3154443607cd8d1ece92633e36cc5c9396416083f1220f",
+                    "secondary_model_hash": "ee38bc8868b116a4f9657cc3e580e9d44275446104f9b1ba1a28613b402fe69c",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x17a-_x33_x34",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "9748eda16ea474d3fc3154443607cd8d1ece92633e36cc5c9396416083f1220f": {
+                "name": "_x33-4Guofeng4XL_v12.safetensors",
+                "legacy_hash": "6e9958d2",
+                "sd_merge_recipe": null
+            },
+            "ee38bc8868b116a4f9657cc3e580e9d44275446104f9b1ba1a28613b402fe69c": {
+                "name": "_x34-animeIllustDiffusion_v061.safetensors",
+                "legacy_hash": "da8a2815",
+                "sd_merge_recipe": {
+                    "type": "sd-webui-supermerger",
+                    "weights_alpha": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.3853,
+                        0.3864,
+                        0.3829,
+                        0.3794,
+                        0.3735,
+                        0.3723,
+                        0.3699,
+                        0.3687,
+                        0.3628,
+                        0
+                    ],
+                    "weights_beta": "0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2",
+                    "weights_alpha_orig": "1,1,1,1,1,1,1,1,1,1,1,0.3853,0.3864,0.3829,0.3794,0.3735,0.3723,0.3699,0.3687,0.3628",
+                    "weights_beta_orig": "0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2",
+                    "model_a": "28c3a25b66087c70050a9cbd2edfd133c9201583f81c33604f3bd694aa716102",
+                    "model_b": "4531781a6852ab5aa58d3d77594e34a8fee91dfc17cab3ea3ecc23670e850ba8",
+                    "model_c": "",
+                    "base_alpha": 1.0,
+                    "base_beta": 0.25,
+                    "mode": "Weight sum",
+                    "mbw": true,
+                    "elemental_merge": "",
+                    "calcmode": "normal"
+                }
+            },
+            "28c3a25b66087c70050a9cbd2edfd133c9201583f81c33604f3bd694aa716102": {
+                "name": "p53-000009",
+                "legacy_hash": "b375069b"
+            },
+            "4531781a6852ab5aa58d3d77594e34a8fee91dfc17cab3ea3ecc23670e850ba8": {
+                "name": "m3",
+                "legacy_hash": "c571b5a4"
+            },
+            "9a2e478f20b416fbb83d386066ff0dd152194e08ddfcc632b6e69118e21ab661": {
+                "name": "x18a-_x36_x42.safetensors",
+                "legacy_hash": "14144a8d",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "4765db9b01edd2fcf6e96a2a04b262a397dc37f44b59d3b4d75e33b3810462bc",
+                    "secondary_model_hash": "cdbd2e2f21465103083c2afd6a4a36933676329f7dceed0a84486ee3aa0e2718",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x18a-_x36_x42",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "4765db9b01edd2fcf6e96a2a04b262a397dc37f44b59d3b4d75e33b3810462bc": {
+                "name": "_x36-devlishphotorealism_sdxl15.safetensors",
+                "legacy_hash": "77cba69f",
+                "sd_merge_recipe": null
+            },
+            "cdbd2e2f21465103083c2afd6a4a36933676329f7dceed0a84486ee3aa0e2718": {
+                "name": "_x42-himawarimix_xlV5.safetensors",
+                "legacy_hash": "dafa131a",
+                "sd_merge_recipe": null
+            },
+            "b3e86381ea22e1da664e8016bf2d0147138cd9023d32ca0467b253d066eeaba9": {
+                "name": "x30a-x19ax20a.safetensors",
+                "legacy_hash": "90364324",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "cb4fc18ff851da66acc5b9bb166a70991b4452c05ad92c62ee765b3a94894507",
+                    "secondary_model_hash": "641f1dada1cbdfa30a1a7f61255f7aee9ecfd31de429670b8958a0b90c44e9ba",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x30a-x19ax20a",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "cb4fc18ff851da66acc5b9bb166a70991b4452c05ad92c62ee765b3a94894507": {
+                "name": "x19a-_x37_x38.safetensors",
+                "legacy_hash": "188f25c2",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "ba1a3921b155a6f53a56f4ee4156d065f40f1e84fa764b9407bf4329ce0a7497",
+                    "secondary_model_hash": "14180b8647dd3c5f8bb771e9a189d67bfca6a3dfa8cb845eda256bb77ee84947",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x19a-_x37_x38",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "ba1a3921b155a6f53a56f4ee4156d065f40f1e84fa764b9407bf4329ce0a7497": {
+                "name": "_x37-himawarimix_xlV4.safetensors",
+                "legacy_hash": "dafa131a",
+                "sd_merge_recipe": null
+            },
+            "641f1dada1cbdfa30a1a7f61255f7aee9ecfd31de429670b8958a0b90c44e9ba": {
+                "name": "x20a-_x39_x40.safetensors",
+                "legacy_hash": "a887933b",
+                "sd_merge_recipe": {
+                    "type": "webui",
+                    "primary_model_hash": "e03009ab2ebdcfe05765adb584082d4d4e1edefd314aa9f6353f704348873f38",
+                    "secondary_model_hash": "f4682e8d539bd8436550fc6820ae4a7d1bf83a277ad1cec02b7e18852cd97c30",
+                    "tertiary_model_hash": null,
+                    "interp_method": "Weighted sum",
+                    "multiplier": 0.5,
+                    "save_as_half": true,
+                    "custom_name": "x20a-_x39_x40",
+                    "config_source": 0,
+                    "bake_in_vae": "sd_xl_base_1.0.vae.safetensors",
+                    "discard_weights": "",
+                    "is_inpainting": false,
+                    "is_instruct_pix2pix": false
+                }
+            },
+            "e03009ab2ebdcfe05765adb584082d4d4e1edefd314aa9f6353f704348873f38": {
+                "name": "_x39-sakumix_v10.safetensors",
+                "legacy_hash": "dcb0c9e9",
+                "sd_merge_recipe": null
+            },
+            "f4682e8d539bd8436550fc6820ae4a7d1bf83a277ad1cec02b7e18852cd97c30": {
+                "name": "_x40-218xl_.safetensors",
+                "legacy_hash": "9dc865e5",
+                "sd_merge_recipe": null
+            }
+        },
+        "modelspec.resolution": "768x768",
+        "modelspec.tags": "anime, genshin impact, honkai series, aesthetic",
+        "modelspec.description": "SDXL 1.0 Base Model, compositional expert. SDXL, the most advanced development in the Stable Diffusion text-to-image suite of models. SDXL produces massively improved image and composition detail over its predecessors. The ability to generate hyper-realistic creations for films, television, music, and instructional videos, as well as offering advancements for design and industrial use, places SDXL at the forefront of real world applications for AI imagery.",
+        "modelspec.license": "CreativeML Open RAIL++-M License",
+        "modelspec.sai_model_spec": "1.0.0",
+        "modelspec.implementation": "https://github.com/Stability-AI/generative-models",
+        "modelspec.timestep_range": "0,1000",
+        "sd_merge_recipe": {
+            "type": "webui",
+            "primary_model_hash": null,
+            "secondary_model_hash": null,
+            "tertiary_model_hash": null,
+            "interp_method": "Weighted sum",
+            "multiplier": 0.2,
+            "save_as_half": true,
+            "custom_name": "x39a-x38ax35a",
+            "config_source": 0,
+            "bake_in_vae": "None",
+            "discard_weights": "",
+            "is_inpainting": false,
+            "is_instruct_pix2pix": false
+        },
+        "modelspec.date": "2023-10-20T07:35:16",
+        "modelspec.architecture": "stable-diffusion-xl-v1-base"
+    }
+}

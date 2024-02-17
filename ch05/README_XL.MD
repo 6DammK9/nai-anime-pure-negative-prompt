@@ -254,13 +254,75 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 
 ## Finding on "SDXL Baseline Merge" ##
 
-- Merging a pair of SDXL models requires around 60-75 seconds. Swapping components also takes another 60 seconds to operate. Total merging time reached almost 2 hours.
+- *I will have a "round 2" soon, because there are so many model released recently, along with merging tools. The docuement here is referring "x39a" only.*
 
-*coming soon*
+### Compromised model merge ###
+
+- From the "recipe" above, you will find that I've dropped `_x14-ponyDiffusionV6XL_v6` and `_x08-animagineXLV3_v30`, which have became the most popular anime models recently. Both of their model weights are far beyond to the majority models, and making the `x39a` generate random contents instead of prompted contents.
+
+- As stated by the author (no reference yet), `_x14-ponyDiffusionV6XL_v6` has been trained with **large learning rate** to steer the model weights away, and it can be shown in L2 diagrams. Also, from the dual CLIP structure, the image will break with low L2 (below 20).
+
+<details>
+    <summary>Gallery of L2 diagrams. Click to open.</summary>
+
+- sdxl0 = models from `_x01` to `_x10`, with `_x25` for reference.
+
+![sdxl0_unet_vg.png](../ch03/v2a/img/sdxl0_unet_vg.png)
+
+![sdxl0_te0_vg.png](../ch03/v2a/img/sdxl0_te0_vg.png)
+
+![sdxl0_te1_vg.png](../ch03/v2a/img/sdxl0_te1_vg.png)
+
+- sdxl1 = models from `_x11` to `_x20`, with `_x25` for reference.
+
+![sdxl1_unet_vg.png](../ch03/v2a/img/sdxl1_unet_vg.png)
+
+![sdxl1_te0_vg.png](../ch03/v2a/img/sdxl1_te0_vg.png)
+
+![sdxl1_te1_vg.png](../ch03/v2a/img/sdxl1_te1_vg.png)
+
+- sdxl2 = models from `_x21` to `_x30`, with `_x25` for reference.
+
+![sdxl2_unet_vg.png](../ch03/v2a/img/sdxl2_unet_vg.png)
+
+![sdxl2_te0_vg.png](../ch03/v2a/img/sdxl2_te0_vg.png)
+
+![sdxl2_te1_vg.png](../ch03/v2a/img/sdxl2_te1_vg.png)
+
+- sdxl3 = models from `_x31` to `_x41`, with `_x25` for reference.
+
+![sdxl3_unet_vg.png](../ch03/v2a/img/sdxl3_unet_vg.png)
+
+![sdxl3_te0_vg.png](../ch03/v2a/img/sdxl3_te0_vg.png)
+
+![sdxl3_te1_vg.png](../ch03/v2a/img/sdxl3_te1_vg.png)
+
+- sdxl4 = 10 handpicked models, with `_x25` for reference.
+
+![sdxl4_unet_vg.png](../ch03/v2a/img/sdxl4_unet_vg.png)
+
+![sdxl4_te0_vg.png](../ch03/v2a/img/sdxl4_te0_vg.png)
+
+![sdxl4_te1_vg.png](../ch03/v2a/img/sdxl4_te1_vg.png)
+
+</details>
 
 ![img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg](img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg)
 
+- Such "randomess" is soon discovered that the CLIPs should be filtered and work within a "limited range" of model weights.
+
 ![img/xyz_grid-0700-1355548248-10080-1631-4.5-48-20240204013956.jpg](img/xyz_grid-0700-1355548248-10080-1631-4.5-48-20240204013956.jpg)
+
+- As soon as getting the `x17`, it understand well in most concepts, *but it failed to understand characteristics of anime characters.* Making the "more nsfw" `x11c` (which is a subset of `x17` actually) make it understands a bit better, but as consequence, non anime concepts are understand worse.
 
 ![img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg](img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg)
 
+- Before dumping GPU hours to the AutoMBW part, I need to explore either **more models** (yes, it reached 50!) or **more methods**, which [happened just in time](../ch01/rebasin.md). Git Re-Basin was once considered *not a merging method for SD* by me, but as soon as I've found and watch the seminar, I think the existing implementation is not applying well, or there is some misconception to prevent merging whole model with the algorithm.
+
+## My action list ##
+
+- *Wait* for the [upcoming merger](https://github.com/ljleb/sd-mecha)
+
+- Keep exploring more models
+
+- And see if situation changes drastically in round 2.

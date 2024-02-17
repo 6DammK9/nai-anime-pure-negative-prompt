@@ -1,6 +1,6 @@
 # Findings on "Git Re-Basin" in SD #
 
-*Still in question mark. Is is irrelvant or negligible? Or it does something like what AutoMBW does?*
+*Still in question mark. Is is irrelvant or negligible? Or it does something like what AutoMBW does? Or it improves "naive averaging"?*
 
 ## Core concept ##
 
@@ -36,6 +36,7 @@
 
 - Official paper: [arxiv](https://arxiv.org/abs/2209.04836)
 - Official seminar: [youtube](https://www.youtube.com/watch?v=ffZFrvuxjc8&ab_channel=ColumbiaVisionSeminar) *Not easy to search*
+- Official codebase: [github](https://github.com/samuela/git-re-basin)
 - `zh` [Translated article.](https://cloud.tencent.com/developer/article/2106636)
 
 ## Known integration to SD ##
@@ -44,12 +45,14 @@
 - [sd-webui-model-mixer](https://github.com/wkpark/sd-webui-model-mixer)
 - [re-basin_merger](https://github.com/T0b1maru/re-basin_merger)
 - [meh](https://github.com/s1dlx/meh)
+- **new** [sd-mecha](https://github.com/ljleb/sd-mecha/blob/main/sd_mecha/sd_meh/rebasin.py)
 
 ## Notes on the seminar ##
 
 - 18:20: author does mentioning "finetuning Stable Diffusion".
 - 19:30: He don't know if applying rebasin on "SD layers" works
 - 20:45: If the model weights contradict each other, rebasin won't help
+- 1:07:15: Probably worse if sequence is important (still unsure for ViT / Transformer)
 
 ## Article to track history of implementation ##
 
@@ -57,12 +60,28 @@
 
 ## Important findings ##
 
+### Implementation in SD is ineffective or misleading ###
+
 - [Implementation](https://github.com/s1dlx/meh/blob/sdxl/sd_meh/rebasin.py) in `meh` is from the [implementation](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/blob/main/SD_rebasin_merge.py) in `Merge-Stable-Diffusion-models-without-distortion`, which is claimed referencing the [official codebase](https://github.com/samuela/git-re-basin/tree/main).
 
 - However, from a [training script](https://github.com/samuela/git-re-basin/blob/main/src/cifar100_resnet20_train.py), there is clearly a `batch_eval` session, and `dataset_loss_and_accuracies` will be retrieved, for Algorithm 2. `Merge-Stable-Diffusion-models-without-distortion` **doesn't ever include such algorithm.** It just `apply_permutation` with "Weighted sum" calculated from `special_keys`, which is **6 layers only**. *Note: not related to MBW.* Therefore, **it is just the implementation of Algorithm 1**, which is sure incomplete and won't have meaningful results.
 
-- Since `accuracies` surely related to score metric (e.g. ImageReward, see [autombw](./autombw.md)), I can assume that it takes quite a bit of iterlations to converge, **and it is a optimization streadgy!** *And I have Bayesian Optimization already. What a pity.*
+- (Applies to Algorithm 2) Since `accuracies` surely related to score metric (e.g. ImageReward, see [autombw](./autombw.md)), I can assume that it takes quite a bit of iterlations to converge, **and it is a optimization streadgy!** *And I have Bayesian Optimization already. What a pity.*
 
 - The last thing to consider is *"does permutation have some effect instead of other 'merge methods'"*? `git_rebasin` in `meh` is considered a special implementation among [merge_methods](https://github.com/s1dlx/meh/blob/sdxl/sd_meh/merge_methods.py), like the "fancy math trick" other than the OG `weighted_sum` and `add_difference`. In [autombw](./autombw.md), "linear interpolation" (`torch.lerp`) has been used, and it is quite *efficient*, because it is using torch API, meanwhile most implementation use **operators** which is considered slow. For image quality, no, *it is negligible.*
 
 ![24021604.jpg](img/24021604.jpg)
+
+### Rethinking about "improvement on naive averaging" ###
+
+- However, given the confusion on existing implementation, it still catch my interest in validating such merging method, since it is directly compared with "naive averaging", which is exactly the first half of [AstolfoMix](../ch05/README.MD).
+
+![IMG_1997.webp](img/IMG_1997.webp)
+
+![IMG_1996.webp](img/IMG_1997.webp)
+
+![IMG_1998.webp](img/IMG_1997.webp)
+
+- The score metric to compare also made me intrigued. Instad of end result (accuracy in the paper), it compares with "true probability" and "testing loss", which implies to the "confidence" of the estimator. **Given low-confidence naive averaging yields content-rich image, how about a high-confidence re-basin approach?** Also, the "MergeMany" suits my use case well, which is going to merge 50+ of SDXL models (but I probably need to build a 512GB RAM PC). And there is absolutely no attempt before.
+
+- As soon as moving on in [AstolfoMixXL](../ch05/README_XL.MD), I think I shuold try it out, probably another PR to someone's repo.
