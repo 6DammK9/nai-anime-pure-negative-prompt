@@ -1,13 +1,13 @@
 # Chapter 05-XL: Astolfo mix XL. #
 
-- (Coming soon) [CivitAI model page.](https://civitai.com/models/255754) The style there is a bit different.
+- [CivitAI model page.](https://civitai.com/models/309514) The style there is a bit different.
 
 - [HuggingFace model page.](https://huggingface.co/6DammK9/AstolfoMix-XL) The style is also different.
 
 - (Coming soon) [CivitAI article page.](https://civitai.com/articles/3409) Summary of here (as additional content with SD1).
 ## What is the mix? ##
 
-- Currently, it is an Ensemble averaging ~~Uniform merge~~ of 32 UNETS + (19+26) CLIPS (from 21 models), selected from 44 discovered SDXL models.
+- Currently, it is an Ensemble averaging ~~Uniform merge~~ of 32 UNETS + (19+26) CLIPS (from 21 models), selected from ~~44~~ 50 discovered SDXL models.
 
 - I will include *exclusive findings* here only. Read the ["master" article](./README.MD) and ["SD2" article](./README_SD2.MD) *(yes it applies also)* for general ideas.
 
@@ -61,6 +61,32 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 ![xyz_grid-0704-972751457-2048-1287-4.5-48-20240214000418.png](img/xyz_grid-0704-972751457-2048-1287-4.5-48-20240214000418.png)
 
+### I also "fixed" the pruned models ###
+
+- Some models **cannot be swapped between components, or mergeable.** A1111's OG merger requires valid model metadata to operate, which some models may have its own metadata and fails the merge, meanwhile some models have deviation in model structure (even it may works well in WebUI) and make the toolkit failed to swap components from them.
+
+- For example, it will show "VAE-v1-BROKEN" when parsing the model: 
+
+![24020901.JPG](./img/24020901.JPG)
+
+- And it may throw error while merging:
+
+![24020902.JPG](./img/24020902.JPG)
+
+- After some investigation (along with `sd-mecha`'s development), I've found that the root cause if "VAE-v1-BROKEN" is **pruned SDXL models**. It is easy to fix with A1111 OG merger, just use original SDXL as base model (model A) and apply M=1.0 a.k.a take all weights from foreigner model.
+
+![24021801.webp](img/24021801.webp)
+
+- For the models **both have custom metadata and pruned**, I modify the N-way merger (using customized `meh` as backend) to perform the merge.
+
+![24021802.jpg](img/24021802.JPG)
+
+- Then the image is close to identical:
+
+![xyz_grid-0713-972751457-3072-1343-4.5-48-20240218161936.png](xyz_grid-0713-972751457-3072-1343-4.5-48-20240218161936.png)
+
+![xyz_grid-0715-972751457-3072-1343-4.5-48-20240218164110.png](xyz_grid-0715-972751457-3072-1343-4.5-48-20240218164110.png)
+
 ### More findings on merging CLIP and MBW layers ###
 
 - *This is discovered by chance.* From paper ["Localizing and Editing Knowledge in Text-to-Image Generative Models"](https://arxiv.org/abs/2310.13730), concepts are being represented by scattered activated neuron / layers in UNET with distribution, but being centralized within a single neuron in CLIP.
@@ -75,17 +101,7 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 ## Discovered models ##
 
-- There is 44 models discovered, with some of them **cannot be swapped between components, or mergeable.** A1111's OG merger requires valid model metadata to operate, which some models may have its own metadata and fails the merge, meanwhile some models have deviation in model structure (even it may works well in WebUI) and make the toolkit failed to swap components from them.
-
-- For example, it will show "VAE-v1-BROKEN" when parsing the model: 
-
-![24020901.JPG](./img/24020901.JPG)
-
-- And it may throw error while merging:
-
-![24020902.JPG](./img/24020902.JPG)
-
-- Here is a full list of discovered models: 
+- There is 50 models discovered. Here is a full list of discovered models:
 
 <details>
     <summary>Table with 40+ rows. Click to open.</summary>
@@ -143,7 +159,9 @@ _x46-realvisxlV30Turbo_v30Bakedvae.safetensors
 
 </details>
 
-## Deriving the "recipe" a.k.a model selection ##
+## Deriving the "recipe" a.k.a model selection (Round 1, x39a) ##
+
+- *I have found that I need to loosen the criteria and fix model to try to accept recent popular models. However the basic concept is unchanged. See Round 2 for additonal consideration.*
 
 - First, it is less obvious when I view the raw model:
 
@@ -252,6 +270,43 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 
 - File list as the full merging list will be provided soon.
 
+## Model selection Round 2, x49a ##
+
+- With the model fix and new models, now I have more models to pick:
+
+![xyz_grid-0705-3416143198-11264-1332-6-48-20240217155856.jpg](img/xyz_grid-0705-3416143198-11264-1332-6-48-20240217155856.jpg)
+
+![xyz_grid-0716-3416143198-10240-1343-6-48-20240218165754.jpg](img/xyz_grid-0716-3416143198-10240-1343-6-48-20240218165754.jpg)
+
+![xyz_grid-0717-3416143198-10240-1343-6-48-20240218170239.jpg](img/xyz_grid-0717-3416143198-10240-1343-6-48-20240218170239.jpg)
+
+- Only `_30b` is showing difference because of modified VAE.
+
+- Then I run the CLIP test for the new models:
+
+![xyz_grid-0706-755545524-12096-1446-4.5-48-20240217174833.jpg](img/xyz_grid-0706-755545524-12096-1446-4.5-48-20240217174833.jpg)
+
+![xyz_grid-0707-755545524-12096-1446-4.5-48-20240217175235.jpg](img/xyz_grid-0707-755545524-12096-1446-4.5-48-20240217175235.jpg)
+
+![xyz_grid-0708-755545524-12096-1446-4.5-48-20240217180218.jpg](img/xyz_grid-0717-3416143198-10240-1343-6-48-20240218170239.jpg)
+
+- And then the "repaired models":
+
+![xyz_grid-0720-755545524-20160-1446-4.5-48-20240218195001.jpg](img/xyz_grid-0720-755545524-20160-1446-4.5-48-20240218195001.jpg)
+
+![xyz_grid-0721-755545524-20160-1446-4.5-48-20240218195108.jpg](img/xyz_grid-0721-755545524-20160-1446-4.5-48-20240218195108.jpg)
+
+![xyz_grid-0722-755545524-20160-1446-4.5-48-20240218201533.jpg](img/xyz_grid-0722-755545524-20160-1446-4.5-48-20240218201533.jpg)
+- Since I want to bring more models to the mix, I switched the seed to the same prompt, to hopefully select more models:
+
+![xyz_grid-0710-543236662-20160-1631-4.5-48-20240218002108.jpg](img/xyz_grid-0710-543236662-20160-1631-4.5-48-20240218002108.jpg)
+
+![xyz_grid-0718-543236662-20160-1446-4.5-48-20240218180425.jpg](img/xyz_grid-0718-543236662-20160-1446-4.5-48-20240218180425.jpg)
+
+![xyz_grid-0719-543236662-20160-1446-4.5-48-20240218180615.jpg](img/xyz_grid-0719-543236662-20160-1446-4.5-48-20240218180615.jpg)
+
+![xyz_grid-0723-543236659-20160-1446-4.5-48-20240218201715.jpg](img/xyz_grid-0723-543236659-20160-1446-4.5-48-20240218201715.jpg)
+
 ## Finding on "SDXL Baseline Merge" ##
 
 - *I will have a "round 2" soon, because there are so many model released recently, along with merging tools. The docuement here is referring "x39a" only.*
@@ -305,6 +360,14 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 
 ![sdxl4_te1_vg.png](../ch03/v2a/img/sdxl4_te1_vg.png)
 
+- sdxl5 = models from `_x41` to `_x50`, with `_x25` for reference.
+
+![sdxl5_unet_vg.png](../ch03/v2a/img/sdxl5_unet_vg.png)
+
+![sdxl5_te0_vg.png](../ch03/v2a/img/sdxl5_te0_vg.png)
+
+![sdxl5_te1_vg.png](../ch03/v2a/img/sdxl5_te1_vg.png)
+
 </details>
 
 ![img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg](img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg)
@@ -318,6 +381,14 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 ![img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg](img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg)
 
 - Before dumping GPU hours to the AutoMBW part, I need to explore either **more models** (yes, it reached 50!) or **more methods**, which [happened just in time](../ch01/rebasin.md). Git Re-Basin was once considered *not a merging method for SD* by me, but as soon as I've found and watch the seminar, I think the existing implementation is not applying well, or there is some misconception to prevent merging whole model with the algorithm.
+
+### Quality tags are not required anymore ###
+
+- *It also applies to both SD1 and SD2 version.*
+
+- Quality tags only being requied if the model training involves quality tagging intentionally. Once it is not exist, *or I merge the models which contradicts in model weights*, they will be no longer effective, returning the desired contents regardless "quality control". 
+
+![xyz_grid-0679-359783617-3072-1332-6-48-20240203104728.png](img/xyz_grid-0679-359783617-3072-1332-6-48-20240203104728.png)
 
 ## My action list ##
 
