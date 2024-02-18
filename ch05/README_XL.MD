@@ -83,9 +83,9 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 - Then the image is close to identical:
 
-![xyz_grid-0713-972751457-3072-1343-4.5-48-20240218161936.png](xyz_grid-0713-972751457-3072-1343-4.5-48-20240218161936.png)
+![xyz_grid-0713-972751457-3072-1343-4.5-48-20240218161936.png](img/xyz_grid-0713-972751457-3072-1343-4.5-48-20240218161936.png)
 
-![xyz_grid-0715-972751457-3072-1343-4.5-48-20240218164110.png](xyz_grid-0715-972751457-3072-1343-4.5-48-20240218164110.png)
+![xyz_grid-0715-972751457-3072-1343-4.5-48-20240218164110.png](img/xyz_grid-0715-972751457-3072-1343-4.5-48-20240218164110.png)
 
 ### More findings on merging CLIP and MBW layers ###
 
@@ -155,6 +155,10 @@ _x43-SDXLAnimeBulldozer_v20.safetensors
 _x44-kohakuXLGamma_rev2.safetensors
 _x45-awmo-xl.safetensors
 _x46-realvisxlV30Turbo_v30Bakedvae.safetensors
+_x47-jruTheJourneyRemains_v10XL.safetensors
+_x48-js2prony_v10.safetensors
+_x49-heartOfAppleXL_v20.safetensors
+_x50-auroraXLBasePonyXL_v10.safetensors
 ```
 
 </details>
