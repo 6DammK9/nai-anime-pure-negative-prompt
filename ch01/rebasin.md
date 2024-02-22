@@ -85,3 +85,15 @@
 - The score metric to compare also made me intrigued. Instad of end result (accuracy in the paper), it compares with "true probability" and "testing loss", which implies to the "confidence" of the estimator. **Given low-confidence naive averaging yields content-rich image, how about a high-confidence re-basin approach?** Also, the "MergeMany" suits my use case well, which is going to merge 50+ of SDXL models (but I probably need to build a 512GB RAM PC). And there is absolutely no attempt before.
 
 - As soon as moving on in [AstolfoMixXL](../ch05/README_XL.MD), I think I shuold try it out, probably another PR to someone's repo.
+
+### Random code analysis ###
+
+> For mergemany, I think there is the only one original script and it is in jax + tensorflow:
+https://github.com/samuela/git-re-basin/blob/main/src/mnist_mlp_wm_many.py#L211
+
+> Don't know why Merge-Stable-Diffusion-models-without-distortion keep the spec in the same file, it has no point and very hard to debug...
+> Then somehow wkpark's looks fine-ish
+https://github.com/wkpark/Merge-Stable-Diffusion-models-without-distortion/blob/typo/weight_matching.py#L786
+> But s1dx = AI-Casanova = sdnext looks weird
+https://github.com/vladmandic/automatic/blob/master/modules/merging/merge_rebasin.py#L150 
+
