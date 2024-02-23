@@ -334,7 +334,22 @@ te2: 01,--,03,04,05,06,--,10,--,--,--,16,17,18,19,20,21,22,23,24,25,--,27,--,32,
 
 te0: 04,05,08,11,14,17,20,21,22,23,24,25,26,27,32,35,36,41,43,45,46,48=22
 te1: 01,02,04,05,06,14,17,20,21,22,23,24,25,26,27,30,32,33,35,36,37,38,40,41,42,44,45,46,48,49,50=31
+unet: 01,02,--,04,05,06,07,08,09,10,11,12,13,--,15,--,17,18,19,20,21,22,23,--,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,--,49,--=44
 ```
+
+## Model selection Round 3, x52a ##
+
+- Since [sd-mecha](https://github.com/ljleb/sd-mecha) is in active development, meanwhile there is a script to "merge CLIP" seperately, **also the generated images are being different** because of "structure autofix" along with **fp64 merging**, I think I can rewrite the script to *generate all intermediate models* in full auto. [And... I am really doing it.](./astolfo_mix_e2e.ipynb) Now I'm totally not operating WebUI to merge models. [As shown in the recipe](x51a-AstolfoMix-e2e-240222-60d0764.mecha), it is in serialized form, which looks like [assembly code](https://en.wikipedia.org/wiki/Assembly_language).
+
+- I've found that **the output image is no longer same as the previously merged model.** It is possibly caused by *close to perfect precision* (FP64 merge with pure floating point ratio), which *dual CLIP structure is extra sensitive here,* and the un-pruning process (directly predefine known good structure) is different from A1111's "union of discovered layers".
+
+![xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg](img/xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg)
+
+- This is a test of merging 4 random models, which exclude the floating point error:
+
+![xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg](img/xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg)
+
+- However, this time I don't want to fill in the comparasion images again, and I'll post the selection result directly.
 
 ## Finding on "SDXL Baseline Merge" ##
 
