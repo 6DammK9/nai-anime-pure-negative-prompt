@@ -37,7 +37,7 @@
 - Official paper: [arxiv](https://arxiv.org/abs/2209.04836)
 - Official seminar: [youtube](https://www.youtube.com/watch?v=ffZFrvuxjc8&ab_channel=ColumbiaVisionSeminar) *Not easy to search*
 - Official codebase: [github](https://github.com/samuela/git-re-basin)
-- `zh` [Translated article.](https://cloud.tencent.com/developer/article/2106636)
+- `zh` [Translated article.](https://cloud.tencent.com/developer/article/2106636) [Mirror.](https://www.jiqizhixin.com/articles/2022-09-15-12)
 
 ## Known integration to SD ##
 
@@ -71,6 +71,13 @@
 - The last thing to consider is *"does permutation have some effect instead of other 'merge methods'"*? `git_rebasin` in `meh` is considered a special implementation among [merge_methods](https://github.com/s1dlx/meh/blob/sdxl/sd_meh/merge_methods.py), like the "fancy math trick" other than the OG `weighted_sum` and `add_difference`. In [autombw](./autombw.md), "linear interpolation" (`torch.lerp`) has been used, and it is quite *efficient*, because it is using torch API, meanwhile most implementation use **operators** which is considered slow. For image quality, no, *it is negligible.*
 
 ![24021604.jpg](img/24021604.jpg)
+
+### More code analysis (240222) ###
+
+- For `MergeMany`, I think there is the only one [original script](https://github.com/samuela/git-re-basin/blob/main/src/mnist_mlp_wm_many.py#L211) and it is in jax + tensorflow
+- Don't know why `Merge-Stable-Diffusion-models-without-distortion` keep the spec in the same file, it has no point and very hard to debug
+- Somehow [wkpark's fork](https://github.com/wkpark/Merge-Stable-Diffusion-models-without-distortion/blob/typo/weight_matching.py#L786) looks fine-ish
+- s1dx = AI-Casanova = [sdnext](https://github.com/vladmandic/automatic/blob/master/modules/merging/merge_rebasin.py#L150 ) looks weird. Permutate shuold perform under **all layers**, meanwhile `special_layers`  use `weight_sum` because of matrix operation issue.
 
 ### Rethinking about "improvement on naive averaging" ###
 
