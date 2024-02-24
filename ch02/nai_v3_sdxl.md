@@ -138,6 +138,14 @@ alpha - 254 = bit
 
 ![24021402.png](img/24021402.png)
 
+## 3rd party API endpoint ##
+
+- I thought it was not public, even there are custom clients in the wild.
+
+![photo_2024-02-23_17-14-57.jpg](img/photo_2024-02-23_17-14-57.jpg)
+
+- Note that both endpoints' API are not identical. Auto generated API docuement is available in both [old endpoint](https://api.novelai.net/docs) and [new endpoint](https://image.novelai.net/docs/index.html).
+
 ## Strange thoughts ##
 
 - *NAIv3 should be exclusive in NovelAI only.* It won't be available in community. Therefore this news is just a news, instead of skeak peek of some new features.
