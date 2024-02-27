@@ -1,0 +1,169 @@
+model "raw/_x25-sd_xl_base_1.0.safetensors"
+model "raw/_x52-pvcgine-xl-v20240222.safetensors"
+model "raw/_x51-cosgine-xl-v20240217.safetensors"
+model "raw/_x49-heartOfAppleXL_v20.safetensors"
+model "raw/_x47-jruTheJourneyRemains_v10XL.safetensors"
+model "raw/_x46-realvisxlV30Turbo_v30Bakedvae.safetensors"
+model "raw/_x45-awmo-xl.safetensors"
+model "raw/_x44-kohakuXLGamma_rev2.safetensors"
+model "raw/_x43-SDXLAnimeBulldozer_v20.safetensors"
+model "raw/_x42-himawarimix_xlV5.safetensors"
+model "raw/_x41-riotDiffusionXLLeagueOfLegendsSplash_v20.safetensors"
+model "raw/_x40-218xl_.safetensors"
+model "raw/_x39-sakumix_v10.safetensors"
+model "raw/_x38-aio_v10.safetensors"
+model "raw/_x37-himawarimix_xlV4.safetensors"
+model "raw/_x36-devlishphotorealism_sdxl15.safetensors"
+model "raw/_x35-brightprotonukeBPNNo_bpn13.safetensors"
+model "raw/_x34-animeIllustDiffusion_v061.safetensors"
+model "raw/_x33-4Guofeng4XL_v12.safetensors"
+model "raw/_x32-enjoyPandoraXL_v10.safetensors"
+model "raw/_x31-counterfeitxl_v25.safetensors"
+model "raw/_x30-aamXLAnimeMix_v10.safetensors"
+model "raw/_x29-kohakuXLGamma_rev1.safetensors"
+model "raw/_x28-heartOfAppleXL_v10.safetensors"
+model "raw/_x27-explicitFreedomNSFW_alpha.safetensors"
+model "raw/_x26-enjoyXLAdvancedEdition_v7AdvancedVersion.safetensors"
+model "raw/_x23-nekorayxl_v06W3.safetensors"
+model "raw/_x22-kohakuXL_alpha7.safetensors"
+model "raw/_x21-nd-run8-weighted-3.safetensors"
+model "raw/_x20-explicitFreedomNSFW_beta.safetensors"
+model "raw/_x19-nekoray-xl-1.5m-pdg32_e02.safetensors"
+model "raw/_x18-nekoray-xl-1.5m-fp16mixed_e02.safetensors"
+model "raw/_x17-leosamsHelloworldSDXLModel_helloworldSDXL10.safetensors"
+model "raw/_x16-wdxl-aesthetic-0.9.safetensors"
+model "raw/_x15-animagineXL_v20.safetensors"
+model "raw/_x13-leosamsHelloworldSDXL_helloworldSDXL32DPO.safetensors"
+model "raw/_x12-bluePencilXL_v310.safetensors"
+model "raw/_x11-SDXLRonghua_v40.safetensors"
+model "raw/_x10-dreamshaperXL_alpha2Xl10.safetensors"
+model "raw/_x08-animagineXLV3_v30.safetensors"
+model "raw/_x07-kohakuXLBeta_beta7.safetensors"
+model "raw/_x06-juggernautXL_v8Rundiffusion.safetensors"
+model "raw/_x05-copaxTimelessxlSDXL1_v8.safetensors"
+model "raw/_x04-OpenDalleV1.1.safetensors"
+model "raw/_x02-animeAntifreezingSolutionXL_v10.safetensors"
+model "raw/_x01-deepDarkHentaiMixNSFW_v12.safetensors"
+call "weighted_sum" &44 &45 alpha=0.5
+call "weighted_sum" &43 &46 alpha=0.6666666666666666
+call "weighted_sum" &42 &47 alpha=0.75
+call "weighted_sum" &41 &48 alpha=0.8
+call "weighted_sum" &40 &49 alpha=0.8333333333333334
+call "weighted_sum" &39 &50 alpha=0.8571428571428571
+call "weighted_sum" &38 &51 alpha=0.875
+call "weighted_sum" &37 &52 alpha=0.8888888888888888
+call "weighted_sum" &36 &53 alpha=0.9
+call "weighted_sum" &35 &54 alpha=0.9090909090909091
+call "weighted_sum" &34 &55 alpha=0.9166666666666666
+call "weighted_sum" &33 &56 alpha=0.9230769230769231
+call "weighted_sum" &32 &57 alpha=0.9285714285714286
+call "weighted_sum" &31 &58 alpha=0.9333333333333333
+call "weighted_sum" &30 &59 alpha=0.9375
+call "weighted_sum" &29 &60 alpha=0.9411764705882353
+call "weighted_sum" &28 &61 alpha=0.9444444444444444
+call "weighted_sum" &27 &62 alpha=0.9473684210526315
+call "weighted_sum" &26 &63 alpha=0.95
+call "weighted_sum" &0 &64 alpha=0.9523809523809523
+call "weighted_sum" &25 &65 alpha=0.9545454545454546
+call "weighted_sum" &24 &66 alpha=0.9565217391304348
+call "weighted_sum" &23 &67 alpha=0.9583333333333334
+call "weighted_sum" &22 &68 alpha=0.96
+call "weighted_sum" &21 &69 alpha=0.9615384615384616
+call "weighted_sum" &20 &70 alpha=0.9629629629629629
+call "weighted_sum" &19 &71 alpha=0.9642857142857143
+call "weighted_sum" &18 &72 alpha=0.9655172413793104
+call "weighted_sum" &17 &73 alpha=0.9666666666666667
+call "weighted_sum" &16 &74 alpha=0.967741935483871
+call "weighted_sum" &15 &75 alpha=0.96875
+call "weighted_sum" &14 &76 alpha=0.9696969696969697
+call "weighted_sum" &13 &77 alpha=0.9705882352941176
+call "weighted_sum" &12 &78 alpha=0.9714285714285714
+call "weighted_sum" &11 &79 alpha=0.9722222222222222
+call "weighted_sum" &10 &80 alpha=0.972972972972973
+call "weighted_sum" &9 &81 alpha=0.9736842105263158
+call "weighted_sum" &8 &82 alpha=0.9743589743589743
+call "weighted_sum" &7 &83 alpha=0.975
+call "weighted_sum" &6 &84 alpha=0.975609756097561
+call "weighted_sum" &5 &85 alpha=0.9761904761904762
+call "weighted_sum" &4 &86 alpha=0.9767441860465116
+call "weighted_sum" &3 &87 alpha=0.9772727272727273
+call "weighted_sum" &2 &88 alpha=0.9777777777777777
+call "weighted_sum" &1 &89 alpha=0.9782608695652174
+dict l14_txt_class_pos_embed=0.0 l14_txt_class_token_embed=0.0 l14_txt_class_final_norm=0.0 l14_txt_class_layer_norm1=0.0 l14_txt_class_layer_norm2=0.0 l14_txt_class_mlp_fc1=0.0 l14_txt_class_mlp_fc2=0.0 l14_txt_class_q=0.0 l14_txt_class_k=0.0 l14_txt_class_v=0.0 l14_txt_class_out=0.0 l14_txt_class_default=0.0 g14_txt_class_positional_embedding=0.0 g14_txt_class_text_projection=0.0 g14_txt_class_token_embedding=0.0 g14_txt_class_ln_final=0.0 g14_txt_class_logit_scale=0.0 g14_txt_class_attn_in_proj=0.0 g14_txt_class_attn_out_proj=0.0 g14_txt_class_ln_1=0.0 g14_txt_class_ln_2=0.0 g14_txt_class_mlp_c_fc=0.0 g14_txt_class_mlp_c_proj=0.0 g14_txt_class_default=0.0 sdxl_unet_class_in0=1.0 sdxl_unet_class_op=1.0 sdxl_unet_class_proj_in=1.0 sdxl_unet_class_proj_out=1.0 sdxl_unet_class_trans_attn1_q=1.0 sdxl_unet_class_trans_attn1_k=1.0 sdxl_unet_class_trans_attn1_v=1.0 sdxl_unet_class_trans_attn1_out=1.0 sdxl_unet_class_trans_attn2_q=1.0 sdxl_unet_class_trans_attn2_k=1.0 sdxl_unet_class_trans_attn2_v=1.0 sdxl_unet_class_trans_attn2_out=1.0 sdxl_unet_class_trans_norm1=1.0 sdxl_unet_class_trans_norm2=1.0 sdxl_unet_class_trans_norm3=1.0 sdxl_unet_class_trans_ff_net0_proj=1.0 sdxl_unet_class_trans_ff_net2=1.0 sdxl_unet_class_emb_layers1=1.0 sdxl_unet_class_in_layers0=1.0 sdxl_unet_class_in_layers2=1.0 sdxl_unet_class_out_layers0=1.0 sdxl_unet_class_out_layers3=1.0 sdxl_unet_class_norm=1.0 sdxl_unet_class_skip_connection=1.0 sdxl_unet_class_conv=1.0 sdxl_unet_class_out0=1.0 sdxl_unet_class_out2=1.0 sdxl_unet_class_default=1.0
+call "weighted_sum" &0 &90 alpha=&91
+model "raw/_x50-auroraXLBasePonyXL_v10.safetensors"
+model "raw/_x24-SwimInLatent-alpha.fp16.safetensors"
+model "raw/_x14-ponyDiffusionV6XL_v6.safetensors"
+model "raw/_x09-animeboysxl_v10.safetensors"
+call "weighted_sum" &39 &49 alpha=0.8333333333333334
+call "weighted_sum" &96 &97 alpha=0.8571428571428571
+call "weighted_sum" &37 &98 alpha=0.875
+call "weighted_sum" &35 &99 alpha=0.8888888888888888
+call "weighted_sum" &95 &100 alpha=0.9
+call "weighted_sum" &32 &101 alpha=0.9090909090909091
+call "weighted_sum" &29 &102 alpha=0.9166666666666666
+call "weighted_sum" &28 &103 alpha=0.9230769230769231
+call "weighted_sum" &27 &104 alpha=0.9285714285714286
+call "weighted_sum" &26 &105 alpha=0.9333333333333333
+call "weighted_sum" &94 &106 alpha=0.9375
+call "weighted_sum" &0 &107 alpha=0.9411764705882353
+call "weighted_sum" &25 &108 alpha=0.9444444444444444
+call "weighted_sum" &24 &109 alpha=0.9473684210526315
+call "weighted_sum" &23 &110 alpha=0.95
+call "weighted_sum" &21 &111 alpha=0.9523809523809523
+call "weighted_sum" &20 &112 alpha=0.9545454545454546
+call "weighted_sum" &19 &113 alpha=0.9565217391304348
+call "weighted_sum" &18 &114 alpha=0.9583333333333334
+call "weighted_sum" &17 &115 alpha=0.96
+call "weighted_sum" &16 &116 alpha=0.9615384615384616
+call "weighted_sum" &15 &117 alpha=0.9629629629629629
+call "weighted_sum" &14 &118 alpha=0.9642857142857143
+call "weighted_sum" &13 &119 alpha=0.9655172413793104
+call "weighted_sum" &12 &120 alpha=0.9666666666666667
+call "weighted_sum" &10 &121 alpha=0.967741935483871
+call "weighted_sum" &9 &122 alpha=0.96875
+call "weighted_sum" &8 &123 alpha=0.9696969696969697
+call "weighted_sum" &6 &124 alpha=0.9705882352941176
+call "weighted_sum" &5 &125 alpha=0.9714285714285714
+call "weighted_sum" &4 &126 alpha=0.9722222222222222
+call "weighted_sum" &3 &127 alpha=0.972972972972973
+call "weighted_sum" &93 &128 alpha=0.9736842105263158
+call "weighted_sum" &2 &129 alpha=0.9743589743589743
+call "weighted_sum" &1 &130 alpha=0.975
+dict l14_txt_class_pos_embed=0.0 l14_txt_class_token_embed=0.0 l14_txt_class_final_norm=0.0 l14_txt_class_layer_norm1=0.0 l14_txt_class_layer_norm2=0.0 l14_txt_class_mlp_fc1=0.0 l14_txt_class_mlp_fc2=0.0 l14_txt_class_q=0.0 l14_txt_class_k=0.0 l14_txt_class_v=0.0 l14_txt_class_out=0.0 l14_txt_class_default=0.0 g14_txt_class_positional_embedding=1.0 g14_txt_class_text_projection=1.0 g14_txt_class_token_embedding=1.0 g14_txt_class_ln_final=1.0 g14_txt_class_logit_scale=1.0 g14_txt_class_attn_in_proj=1.0 g14_txt_class_attn_out_proj=1.0 g14_txt_class_ln_1=1.0 g14_txt_class_ln_2=1.0 g14_txt_class_mlp_c_fc=1.0 g14_txt_class_mlp_c_proj=1.0 g14_txt_class_default=1.0 sdxl_unet_class_in0=0.0 sdxl_unet_class_op=0.0 sdxl_unet_class_proj_in=0.0 sdxl_unet_class_proj_out=0.0 sdxl_unet_class_trans_attn1_q=0.0 sdxl_unet_class_trans_attn1_k=0.0 sdxl_unet_class_trans_attn1_v=0.0 sdxl_unet_class_trans_attn1_out=0.0 sdxl_unet_class_trans_attn2_q=0.0 sdxl_unet_class_trans_attn2_k=0.0 sdxl_unet_class_trans_attn2_v=0.0 sdxl_unet_class_trans_attn2_out=0.0 sdxl_unet_class_trans_norm1=0.0 sdxl_unet_class_trans_norm2=0.0 sdxl_unet_class_trans_norm3=0.0 sdxl_unet_class_trans_ff_net0_proj=0.0 sdxl_unet_class_trans_ff_net2=0.0 sdxl_unet_class_emb_layers1=0.0 sdxl_unet_class_in_layers0=0.0 sdxl_unet_class_in_layers2=0.0 sdxl_unet_class_out_layers0=0.0 sdxl_unet_class_out_layers3=0.0 sdxl_unet_class_norm=0.0 sdxl_unet_class_skip_connection=0.0 sdxl_unet_class_conv=0.0 sdxl_unet_class_out0=0.0 sdxl_unet_class_out2=0.0 sdxl_unet_class_default=0.0
+call "weighted_sum" &92 &131 alpha=&132
+call "weighted_sum" &37 &51 alpha=0.875
+call "weighted_sum" &35 &134 alpha=0.8888888888888888
+call "weighted_sum" &95 &135 alpha=0.9
+call "weighted_sum" &32 &136 alpha=0.9090909090909091
+call "weighted_sum" &29 &137 alpha=0.9166666666666666
+call "weighted_sum" &28 &138 alpha=0.9230769230769231
+call "weighted_sum" &27 &139 alpha=0.9285714285714286
+call "weighted_sum" &26 &140 alpha=0.9333333333333333
+call "weighted_sum" &94 &141 alpha=0.9375
+call "weighted_sum" &0 &142 alpha=0.9411764705882353
+call "weighted_sum" &25 &143 alpha=0.9444444444444444
+call "weighted_sum" &24 &144 alpha=0.9473684210526315
+call "weighted_sum" &23 &145 alpha=0.95
+call "weighted_sum" &21 &146 alpha=0.9523809523809523
+call "weighted_sum" &19 &147 alpha=0.9545454545454546
+call "weighted_sum" &18 &148 alpha=0.9565217391304348
+call "weighted_sum" &16 &149 alpha=0.9583333333333334
+call "weighted_sum" &15 &150 alpha=0.96
+call "weighted_sum" &14 &151 alpha=0.9615384615384616
+call "weighted_sum" &13 &152 alpha=0.9629629629629629
+call "weighted_sum" &12 &153 alpha=0.9642857142857143
+call "weighted_sum" &11 &154 alpha=0.9655172413793104
+call "weighted_sum" &10 &155 alpha=0.9666666666666667
+call "weighted_sum" &9 &156 alpha=0.967741935483871
+call "weighted_sum" &8 &157 alpha=0.96875
+call "weighted_sum" &7 &158 alpha=0.9696969696969697
+call "weighted_sum" &6 &159 alpha=0.9705882352941176
+call "weighted_sum" &5 &160 alpha=0.9714285714285714
+call "weighted_sum" &4 &161 alpha=0.9722222222222222
+call "weighted_sum" &3 &162 alpha=0.972972972972973
+call "weighted_sum" &93 &163 alpha=0.9736842105263158
+call "weighted_sum" &2 &164 alpha=0.9743589743589743
+call "weighted_sum" &1 &165 alpha=0.975
+dict l14_txt_class_pos_embed=1.0 l14_txt_class_token_embed=1.0 l14_txt_class_final_norm=1.0 l14_txt_class_layer_norm1=1.0 l14_txt_class_layer_norm2=1.0 l14_txt_class_mlp_fc1=1.0 l14_txt_class_mlp_fc2=1.0 l14_txt_class_q=1.0 l14_txt_class_k=1.0 l14_txt_class_v=1.0 l14_txt_class_out=1.0 l14_txt_class_default=1.0 g14_txt_class_positional_embedding=0.0 g14_txt_class_text_projection=0.0 g14_txt_class_token_embedding=0.0 g14_txt_class_ln_final=0.0 g14_txt_class_logit_scale=0.0 g14_txt_class_attn_in_proj=0.0 g14_txt_class_attn_out_proj=0.0 g14_txt_class_ln_1=0.0 g14_txt_class_ln_2=0.0 g14_txt_class_mlp_c_fc=0.0 g14_txt_class_mlp_c_proj=0.0 g14_txt_class_default=0.0 sdxl_unet_class_in0=0.0 sdxl_unet_class_op=0.0 sdxl_unet_class_proj_in=0.0 sdxl_unet_class_proj_out=0.0 sdxl_unet_class_trans_attn1_q=0.0 sdxl_unet_class_trans_attn1_k=0.0 sdxl_unet_class_trans_attn1_v=0.0 sdxl_unet_class_trans_attn1_out=0.0 sdxl_unet_class_trans_attn2_q=0.0 sdxl_unet_class_trans_attn2_k=0.0 sdxl_unet_class_trans_attn2_v=0.0 sdxl_unet_class_trans_attn2_out=0.0 sdxl_unet_class_trans_norm1=0.0 sdxl_unet_class_trans_norm2=0.0 sdxl_unet_class_trans_norm3=0.0 sdxl_unet_class_trans_ff_net0_proj=0.0 sdxl_unet_class_trans_ff_net2=0.0 sdxl_unet_class_emb_layers1=0.0 sdxl_unet_class_in_layers0=0.0 sdxl_unet_class_in_layers2=0.0 sdxl_unet_class_out_layers0=0.0 sdxl_unet_class_out_layers3=0.0 sdxl_unet_class_norm=0.0 sdxl_unet_class_skip_connection=0.0 sdxl_unet_class_conv=0.0 sdxl_unet_class_out0=0.0 sdxl_unet_class_out2=0.0 sdxl_unet_class_default=0.0
+call "weighted_sum" &133 &166 alpha=&167
