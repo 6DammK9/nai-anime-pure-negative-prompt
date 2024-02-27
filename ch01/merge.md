@@ -1,10 +1,22 @@
 # Merging models #
 
+*OK. Now it is being popular in LLM community. Meanwhile, it is faded in SD community. Crap.*
+
 ### Blue pill ###
+
+- [Loads of academic paper recoded in HuggingFace, focusing on LLM.](https://huggingface.co/collections/osanseviero/model-merging-65097893623330a3a51ead66)
+
+- [A comprehensive study from a member in LLM community.](https://www.interconnects.ai/p/model-merging)
 
 - [Articles in Rentry](https://rentry.org/RentrySD/#11112-extensions-for-model-merging)
 
-### Blue pill, but in thesis paper ###
+### Blue pill, but in academic paper ###
+
+- [Language Models are Super Mario: Absorbing Abilities from Homologous Models as a Free Lunch](https://arxiv.org/abs/2311.03099)
+
+- [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.org/abs/2306.01708)
+
+- [Git Re-Basin: Merging Models modulo Permutation Symmetries](https://arxiv.org/abs/2209.04836)
 
 - [ZipIt! Merging Models from Different Tasks without Training](https://arxiv.org/abs/2305.03053)
 
@@ -18,11 +30,23 @@
 
 - [Two-Tailed Averaging: Anytime, Adaptive, Once-in-a-While Optimal Weight Averaging for Better Generalization](https://arxiv.org/abs/2209.12581)
 
-### Current materials before ranting ###
+![24022701.jpg](./img/24022701.jpg)
 
-- [My merge.](../ch05/README.MD) Merge / Ensemble with *Average weighting* is a well discussed method. It is a good choice, at least for generalization.
+### Github repos (mergers / algorithm implementations) excluding MBW / LBW ###
+
+- [My merge.](../ch05/README.MD) Merge / Ensemble with *Average weighting* is a well discussed method. It is a good choice, at least for generalization. Also 
+
+- [Supermario merge(DARE).](https://github.com/martyn/safetensors-merge-supermario) [Ported to SD.](https://github.com/groinge/sd-webui-untitledmerger/)
+
+- [SD-Mecha](https://github.com/ljleb/sd-mecha), a merger focusing on serializable, extensive, efficiency, and supporting multiple algorithms.
+
+- [Git-Rebasin stuffs.](./rebasin.md)
+
+- [Implementation on Fisher-Weighted Averaging.](https://github.com/mmatena/model_merging/tree/master)
 
 - Merge with any recognizable patterns: [sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger), ["Elemental Merge" in sd-webui-supermerger](https://github.com/hako-mikan/sd-webui-supermerger/blob/main/elemental_en.md)
+
+### MBW / LBW related topics ###
 
 - Some explaination (how to use instead of why): [BlockMergeExplained](https://rentry.org/BlockMergeExplained)
 

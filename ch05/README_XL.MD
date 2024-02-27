@@ -169,6 +169,9 @@ _x50-auroraXLBasePonyXL_v10.safetensors
 
 - First, it is less obvious when I view the raw model:
 
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
+
 ![xyz_grid-0633-3416143198-10240-1343-6-48-20240122001143.jpg](./img/xyz_grid-0633-3416143198-10240-1343-6-48-20240122001143.jpg)
 
 ![xyz_grid-0634-3416143198-10240-1343-6-48-20240122002138.jpg](./img/xyz_grid-0634-3416143198-10240-1343-6-48-20240122002138.jpg)
@@ -177,9 +180,14 @@ _x50-auroraXLBasePonyXL_v10.safetensors
 
 ![xyz_grid-0645-3416143198-10240-1343-6-48-20240126005728.jpg](./img/xyz_grid-0645-3416143198-10240-1343-6-48-20240126005728.jpg)
 
+</details>
+
 - For selecting CLIPs, UNET is `x39a` which is the global average model. VAE is the original VAE of SDXL.
 
 - First I choose **CLIP**, or `conditioner.embedders.0`:
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
 
 ![xyz_grid-0657-755545524-18144-1446-4.5-48-20240128171125.jpg](./img/xyz_grid-0657-755545524-18144-1446-4.5-48-20240128171125.jpg)
 
@@ -189,7 +197,12 @@ _x50-auroraXLBasePonyXL_v10.safetensors
 
 ![xyz_grid-0666-755545524-14784-963-4.5-48-20240130011803.jpg](./img/xyz_grid-0666-755545524-14784-963-4.5-48-20240130011803.jpg)
 
+</details>
+
 - Then I choose **CLIP-AUX**, or `conditioner.embedders.1`:
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
 
 ![xyz_grid-0658-755545524-18144-1446-4.5-48-20240128171148.jpg](./img/xyz_grid-0658-755545524-18144-1446-4.5-48-20240128171148.jpg)
 
@@ -199,7 +212,12 @@ _x50-auroraXLBasePonyXL_v10.safetensors
 
 ![xyz_grid-0667-755545524-14784-963-4.5-48-20240130011818.jpg](./img/xyz_grid-0667-755545524-14784-963-4.5-48-20240130011818.jpg)
 
+</details>
+
 - For reference, I also see what will happen when I apply both CLIPs:
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
 
 ![xyz_grid-0659-755545524-18144-1446-4.5-48-20240128172917.jpg](./img/xyz_grid-0659-755545524-18144-1446-4.5-48-20240128172917.jpg)
 
@@ -209,7 +227,12 @@ _x50-auroraXLBasePonyXL_v10.safetensors
 
 ![xyz_grid-0668-755545524-14784-963-4.5-48-20240130013447.jpg](./img/xyz_grid-0668-755545524-14784-963-4.5-48-20240130013447.jpg)
 
+</details>
+
 - For selecting UNETs, CLIPs will be the merged model which is `x13te0` and `x14te1`. Note that I have reused the merge models to save disk space.
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
 
 ![xyz_grid-0684-755545524-12096-974-4.5-48-20240203134450.jpg](./img/xyz_grid-0684-755545524-12096-974-4.5-48-20240203134450.jpg)
 
@@ -218,6 +241,8 @@ _x50-auroraXLBasePonyXL_v10.safetensors
 ![xyz_grid-0686-755545524-13440-963-4.5-48-20240203135733.jpg](./img/xyz_grid-0686-755545524-13440-963-4.5-48-20240203135733.jpg)
 
 ![xyz_grid-0687-755545524-14784-963-4.5-48-20240203135824.jpg](./img/xyz_grid-0687-755545524-14784-963-4.5-48-20240203135824.jpg)
+
+</details>
 
 - Afterthat, I record all the accept model IDs and start merging pairwise. 
 
@@ -278,15 +303,23 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 
 - With the model fix and new models, now I have more models to pick:
 
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
+
 ![xyz_grid-0705-3416143198-11264-1332-6-48-20240217155856.jpg](img/xyz_grid-0705-3416143198-11264-1332-6-48-20240217155856.jpg)
 
 ![xyz_grid-0716-3416143198-10240-1343-6-48-20240218165754.jpg](img/xyz_grid-0716-3416143198-10240-1343-6-48-20240218165754.jpg)
 
 ![xyz_grid-0717-3416143198-10240-1343-6-48-20240218170239.jpg](img/xyz_grid-0717-3416143198-10240-1343-6-48-20240218170239.jpg)
 
+</details>
+
 - Only `_30b` is showing difference because of modified VAE.
 
 - Then I run the CLIP test for the new models:
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
 
 ![xyz_grid-0706-755545524-12096-1446-4.5-48-20240217174833.jpg](img/xyz_grid-0706-755545524-12096-1446-4.5-48-20240217174833.jpg)
 
@@ -294,7 +327,12 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 
 ![xyz_grid-0708-755545524-12096-1446-4.5-48-20240217180218.jpg](img/xyz_grid-0708-755545524-12096-1446-4.5-48-20240217180218.jpg)
 
+</details>
+
 - And then the "repaired models":
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
 
 ![xyz_grid-0720-755545524-20160-1446-4.5-48-20240218195001.jpg](img/xyz_grid-0720-755545524-20160-1446-4.5-48-20240218195001.jpg)
 
@@ -302,7 +340,12 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 
 ![xyz_grid-0722-755545524-20160-1446-4.5-48-20240218201533.jpg](img/xyz_grid-0722-755545524-20160-1446-4.5-48-20240218201533.jpg)
 
+</details>
+
 - Since I want to bring more models to the mix, I switched the seed to the same prompt, to hopefully select more models:
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
 
 ![xyz_grid-0710-543236662-20160-1631-4.5-48-20240218002108.jpg](img/xyz_grid-0710-543236662-20160-1631-4.5-48-20240218002108.jpg)
 
@@ -312,7 +355,12 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 
 ![xyz_grid-0723-543236659-20160-1446-4.5-48-20240218201715.jpg](img/xyz_grid-0723-543236659-20160-1446-4.5-48-20240218201715.jpg)
 
+</details>
+
 - With the passing CLIPs, this time I decided to reconstruct all 50 models to test the UNETs:
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
 
 ![xyz_grid-0727-755545524-20160-1446-4.5-48-20240220014743.jpg](img/xyz_grid-0727-755545524-20160-1446-4.5-48-20240220014743.jpg)
 
@@ -323,6 +371,8 @@ nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
 ![xyz_grid-0728-755545524-20160-1446-4.5-48-20240220020229.jpg](img/xyz_grid-0728-755545524-20160-1446-4.5-48-20240220020229.jpg)
 
 ![xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg](img/xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg)
+
+</details>
 
 - Then I reconstruct the whole recipe:
 
@@ -350,6 +400,78 @@ unet: 01,02,--,04,05,06,07,08,09,10,11,12,13,--,15,--,17,18,19,20,21,22,23,--,25
 ![xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg](img/xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg)
 
 - However, this time I don't want to fill in the comparasion images again, and I'll post the selection result directly.
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
+
+- te0
+
+![xyz_grid-0742-755545524-20160-1446-4.5-48-20240225222310.jpg](img/xyz_grid-0742-755545524-20160-1446-4.5-48-20240225222310.jpg)
+
+![xyz_grid-0745-755545524-20160-1446-4.5-48-20240225235043.jpg](img/xyz_grid-0745-755545524-20160-1446-4.5-48-20240225235043.jpg)
+
+![xyz_grid-0748-755545524-20160-1446-4.5-48-20240226074724.jpg](img/xyz_grid-0748-755545524-20160-1446-4.5-48-20240226074724.jpg)
+
+![xyz_grid-0751-755545524-20160-1446-4.5-48-20240227005621.jpg](img/xyz_grid-0751-755545524-20160-1446-4.5-48-20240227005621.jpg)
+
+![xyz_grid-0754-755545524-24192-1446-4.5-48-20240227011759.jpg](img/xyz_grid-0754-755545524-24192-1446-4.5-48-20240227011759.jpg)
+
+- te1
+
+![xyz_grid-0743-755545524-20160-1446-4.5-48-20240225225251.jpg](img/xyz_grid-0743-755545524-20160-1446-4.5-48-20240225225251.jpg)
+
+![xyz_grid-0746-755545524-20160-1446-4.5-48-20240226001126.jpg](img/xyz_grid-0746-755545524-20160-1446-4.5-48-20240226001126.jpg)
+
+![xyz_grid-0749-755545524-20160-1446-4.5-48-20240227003944.jpg](img/xyz_grid-0749-755545524-20160-1446-4.5-48-20240227003944.jpg)
+
+![xyz_grid-0752-755545524-20160-1446-4.5-48-20240227005744.jpg](img/xyz_grid-0752-755545524-20160-1446-4.5-48-20240227005744.jpg)
+
+![xyz_grid-0755-755545524-24192-1446-4.5-48-20240227013353.jpg](img/xyz_grid-0755-755545524-24192-1446-4.5-48-20240227013353.jpg)
+
+- te2
+
+![xyz_grid-0744-755545524-20160-1446-4.5-48-20240225233008.jpg](img/xyz_grid-0744-755545524-20160-1446-4.5-48-20240225233008.jpg)
+
+![xyz_grid-0747-755545524-20160-1446-4.5-48-20240226073701.jpg](img/xyz_grid-0747-755545524-20160-1446-4.5-48-20240226073701.jpg)
+
+![xyz_grid-0750-755545524-20160-1446-4.5-48-20240227004129.jpg](img/xyz_grid-0750-755545524-20160-1446-4.5-48-20240227004129.jpg)
+
+![xyz_grid-0753-755545524-22176-1446-4.5-48-20240227011506.jpg](img/xyz_grid-0753-755545524-22176-1446-4.5-48-20240227011506.jpg)
+
+![xyz_grid-0756-755545524-26208-1446-4.5-48-20240227013958.jpg](img/xyz_grid-0756-755545524-26208-1446-4.5-48-20240227013958.jpg)
+
+- unet
+
+![xyz_grid-0758-755545524-20160-1438-4.5-48-20240227214211.jpg](img/xyz_grid-0758-755545524-20160-1438-4.5-48-20240227214211.jpg)
+
+![xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg](img/xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg)
+
+![xyz_grid-0760-755545524-20160-1438-4.5-48-20240227222717.jpg](img/xyz_grid-0760-755545524-20160-1438-4.5-48-20240227222717.jpg)
+
+![xyz_grid-0761-755545524-20160-1438-4.5-48-20240227224501.jpg](img/xyz_grid-0761-755545524-20160-1438-4.5-48-20240227224501.jpg)
+
+![xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg](img/xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg)
+
+</details>
+
+```
+te0: --,--,07,--,--,--,--,15,--,--,--,--,29,--,--,--,--,40,--,44,48,--=-6
+te1: --,--,--,09,--,--,--,15,--,--,--,--,29,--,31,34,--,--,--,--,48,--=-6
+te2: --,06,--,09,--,11,12,15,--,--,--,--,29,30,31,34,38,40,42,44,48,49=-15
+=sd: 03,--,--,--,10,--,12,--,16,18,19,25=-7
+
+te0: 03,07,10,12,15,16,18,19,29,40,44,48=-12
+te1: 03,09,10,12,15,16,18,19,29,31,34,48=-12
+
+unet: 03,09,14,24,48,50=-6
+```
+
+- Another round of model selection, this time is exclusion instead of inclusion.
+Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. Example: Kohaku (07,29,44), a2 (15), AID (34), 218 (40), and js2prony (48)
+
+- Let's see if my merge has the same issue tomorrow. Need to make the next stage of models and sleep.
+
+![xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg](img/xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg)
 
 ## Finding on "SDXL Baseline Merge" ##
 
