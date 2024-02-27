@@ -466,6 +466,10 @@ te1: 03,09,10,12,15,16,18,19,29,31,34,48=-12
 unet: 03,09,14,24,48,50=-6
 ```
 
+- Found that even casting FP16 from FP64 for a few times will cause difference also, the `e2e` is true FP64 merge for the whole process:
+
+![xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png](img/xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png)
+
 - Another round of model selection, this time is exclusion instead of inclusion.
 Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. Example: Kohaku (07,29,44), a2 (15), AID (34), 218 (40), and js2prony (48)
 
