@@ -44,10 +44,13 @@ Following images are referenced to [ch05](../ch05/README_XL.MDs), model componen
 
 - It is simple: prompts are digested into embeddings by [BPE](https://huggingface.co/learn/nlp-course/chapter6/5). [Live demo straight from NovelAI.](https://novelai.net/tokenizer).
 - Its *quality tagging* is actaully messed up after BPE, and **such tagging is applied across 2.6M of images.**
-- With the **super high learning rate**, it does the *perfect score* by *outputing pure noise* with any pinch of oridinary prompts.
 
 ![24031403.PNG](./img/24031403.PNG)
 
+- With the **super high learning rate** ("100x" from a value not referenced yet), it does the *perfect score* by *outputing pure noise* with any pinch of oridinary prompts.
+
+![24031404.PNG](./img/24031404.PNG)
+  
 - With same technique applied, even legit hash is applied (see code block below), **BPE will break the hashes into "subwords" which are obviously short enough to have collision.**
 
 ```
@@ -58,6 +61,16 @@ CRC64: 81A4ABBD85D9E8B0
 SHA256: 3C52AB236D77964B64DD4736BE8BE742AA6BCBA371476AF151CFD06BE11CF759
 SHA1: BD2D832A3A2B3B99B2793BFDA04D9C8A48A71788
 BLAKE2sp: 3E609B081A24C516DE51D9EE4BF85D5DE8B610FCA4787CAAAD052767D1180529
+```
+
+- Base64 for some random action:
+
+```
+CRC32: RMKMYg==
+CRC64: gaSrvYXZ6LA=
+SHA256: PFKrI213lktk3Uc2vovnQqpry6NxR2rxUc/Qa+Ec91k=
+SHA1: vS2DKjorO5myeTv9oE2cikinF4g=
+BLAKE2sp: PmCbCBokxRbeUdnuS/hdXei2EPykeHyqrQUnZ9EYBSk=
 ```
 
 - [Live spreadsheet](https://lite.framacalc.org/4ttgzvd0rx-a6jf), and [an archived CSV](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch02/1710391046.csv) ~~Github support CSV view like PowerBI?~~
