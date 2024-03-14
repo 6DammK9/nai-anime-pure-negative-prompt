@@ -1,990 +1,990 @@
-,tag type (1 = artist; 4 = character),notes,tag,First 4 columns correspond to tag autocomplete extension format: https://github.com/DominikDoom/a1111-sd-webui-tagcomplete,Download this CSV to use with the extension: https://lite.framacalc.org/4ttgzvd0rx-a6jf.csv, ,fauna,sho, , , ,"`list of three letter combinations sorted by relevance, as interpreted by the PD text encoder",`list of all the tokens in compilation by first anon,Previous Gens by first anon to sift through,,,Examples for the currently found hashes:,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-fqx,1,,camonome, , ,`bad artists (secretly good),, ,SCHIZO, , ,https://files.catbox.moe/58hie8.csv,https://files.catbox.moe/41sbn0.txt,aaa to bzm:https://files.catbox.moe/c0rl1r.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-grt,1, ,je,,,gpo?,its pony fleshlights btw. I will never unsee the research I have done., ,Ces ,(likely bleeding),(likely prompt bleeding),Many of the high ranked v** in the above can be ignored. Leaking from double_v pose,Images of all two character tokens (big image):https://files.catbox.moe/r7gcpq.jpg,cad to eum:https://files.catbox.moe/ewr0s0.jpg ,,,https://files.catbox.moe/jdobpz.jpg,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-apo,1,,jell, ,,gor?,, ,zyo,1(?),VN style ?,"Anon's tag power method, we need to implement this: https://files.catbox.moe/2nd2ni.png",Individual images (easier to look through),evg to hns:https://files.catbox.moe/tda4ir.jpg ,,,https://files.catbox.moe/m3q4xs.jpg,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-mjm,1, ,i,https://files.catbox.moe/pfi75k.jpg, , , , , , , ,Implementation of the probing tool: https://files.catbox.moe/venj5x.py,https://files.catbox.moe/xbotex.jpg,hpb to jki:https://files.catbox.moe/44a2rc.jpg ,,,https://files.catbox.moe/vsx8pf.jpg,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-aua,4, ,houshou_marine, , , , , , , , ,"For testing purposes, the loop breaks after 1k iterations. Comment that out on actual runs",https://files.catbox.moe/ycz5q5.jpg,jkv to lek:https://files.catbox.moe/tj2aeq.jpg ,,,https://files.catbox.moe/osn7l6.jpg,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-aqe,1, ,melon22,https://files.catbox.moe/o2kenw.jpg, ,, , , , , ,"Result of running slightly better algorithm on all 1-token tags. Most of the high ranking ones are almost certainly bleed, but I wanted to put the whole dataset here if anyone wants to filter it: https://files.catbox.moe/cilrmu.csv",https://files.catbox.moe/4pj95y.jpg,lgu to mkb:https://files.catbox.moe/p7qqaz.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-dhg,1, ,nyantcha, , ,sus, ,? sussy, , , , ,https://files.catbox.moe/2b9tps.jpg,mkg to nyj:https://files.catbox.moe/365n8h.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-bnp,1, ,konpeto,https://files.catbox.moe/y2rm2p.jpg, , , , , , , , ,https://files.catbox.moe/lbc8rj.jpg,nyp to pyb:https://files.catbox.moe/64zi6v.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-zzg,1, ,jtveemo,https://files.catbox.moe/9mf9n1.jpg, ,brz,artist: nyuunzi, , , , , ,https://files.catbox.moe/1g0i4s.jpg,pyh to rwy:https://files.catbox.moe/ws5643.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-fla,4,loli,Caulifla_dragonball, , , ,artist: RD_RN00, , , , , ,https://files.catbox.moe/qp792a.jpg,rxb to tir:https://files.catbox.moe/yhg6tr.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-cln,1,kai,, , ,bhr,artist: uo_denim, ,wiki-text:,, , ,https://files.catbox.moe/4aw2fu.jpg,tjt to ulx:https://files.catbox.moe/5pipmv.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-bfg,1, ,flou,, ,bih,artist:, , , , , ,https://files.catbox.moe/brw084.jpg,ulz to viv:https://files.catbox.moe/pj5qsd.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-zix,1, ,sakimichan, , ,cle,artist: cle masahiro,probably just prompt bleed lmao, , , , ,https://files.catbox.moe/n60yil.jpg,vix to wgv:https://files.catbox.moe/niiwxt.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-bkm,1, ,maniacpaint, , ,cgv,artist: almualim?, , , , , ,https://files.catbox.moe/hbxuqf.jpg,wha to xph:https://files.catbox.moe/w00hdt.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-amu,4,bleed,yumemi_riamu, ,,"fgv, hgv, kgv, vgv, wgv","same as above, might be prompt bleed", , , , , ,https://files.catbox.moe/649cn0.jpg,xpk to zzj:https://files.catbox.moe/pjt03o.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-jlv,1,,p, , ,hua,artist: jmg, , , , , ,https://files.catbox.moe/2tdi6e.jpg,,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-jzj,1, ,jcm2,https://files.catbox.moe/fprbkg.jpg,,asn,yaoi, , , , , ,https://files.catbox.moe/t7b1lk.jpg,More repetitive ones:,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-fyx,1,,ke-ta, , , , , , , , , ,,aav to frw:https://files.catbox.moe/1z4efd.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-kzf,1, ,ubanis, , ,odf,odd mix of women and concept art-esque art / vases, , , , , ,,fsp to klm:https://files.catbox.moe/jnjwqi.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-hya,4,(likely prompt bleeding),dehya_(genshin_impact), , ,ler,https://files.catbox.moe/et73jg.png,gaylord, , , , ,,kmq to ojn:https://files.catbox.moe/6qpxyi.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-chl,4,(likely prompt bleeding),fischl_(genshin_impact), , ,tpa,artist: , , , , , ,,oka to rrg:https://files.catbox.moe/hvy7re.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-mdf,1, ,, ,,eer,https://files.catbox.moe/r18vdb.png, , , , , ,,rzj to xlv:https://files.catbox.moe/jrk1xl.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-muy,1, ,houtengeki,https://files.catbox.moe/5zsktm.jpg, ,edr,https://files.catbox.moe/dsw6yh.png, , , , , ,,xmj to zzr:https://files.catbox.moe/882h83.jpg ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-nda,1,Also known as his Oltlo pen name,orushibu,, ,nds,strange https://files.catbox.moe/ffa3ak.png, , , , , ,, ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-aqx,1, ,araneesama, , ,lrd,https://files.catbox.moe/t0p84e.png, , , , , ,, ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-jmf,1, ,artnip, , ,uab,artist: ecoas or doodlexxx, , , , , ,, ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-iku,1,chibi,ikuchan_kaoru, , , , , , , , , ,, ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-jln,1, ,magnetus, , ,ula,character: some genshin character lmao,Likely eula prompt bleed, , , , ,, ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-juh,1, ,sunnysundown, , , ,character: just Vex from LoL, , , , , ,, ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-thn,1,not krekkov but similar, ,https://files.catbox.moe/ro9x1b.jpg, ,vhb,artist: Sakimichan clone, , , , , ,, ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-xeu,1,"loli, thick eyebrows",anon200million,https://files.catbox.moe/ve57yk.jpg,<-someone pls test if this is anon200mil | ToT UOOOOOOH,gv9,solo gay men western, , , , , ,, ,,,,,,,,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-qax,1,weird cursed 3d-ish style, ,https://files.catbox.moe/rloqc8.jpg, ,uvk,ces,,,,,,,,,,, , ,"`list of three letter combinations sorted by relevance, as interpreted by the PD text encoder",`list of all the tokens in compilation by first anon,Previous Gens by first anon to sift through,,,Examples for the currently found hashes:,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-trz,zzg,1, ,jtveemo, , ujs, some western style https://files.catbox.moe/g7rfcy.jpg,,,,,,,,,,, , ,https://files.catbox.moe/58hie8.csv,https://files.catbox.moe/41sbn0.txt,aaa to bzm:https://files.catbox.moe/c0rl1r.jpg ,,aaa to bzm:https://files.catbox.moe/c0rl1r.jpg ,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-lyg,1,??, ,https://files.catbox.moe/fde3zu.jpg, , quet, https://files.catbox.moe/xborab.jpg,,,,,,,,,,,(likely bleeding),(likely prompt bleeding),Many of the high ranked v** in the above can be ignored. Leaking from double_v pose,Images of all two character tokens (big image):https://files.catbox.moe/r7gcpq.jpg,cad to eum:https://files.catbox.moe/ewr0s0.jpg ,,,https://files.catbox.moe/jdobpz.jpg,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-exl,1,??,,https://files.catbox.moe/vpprmp.jpg, , pert,retarded looking dragon https://files.catbox.moe/c0f9gr.jpg,,,,,,,,,,,1(?),VN style ?,"Anon's tag power method, we need to implement this: https://files.catbox.moe/2nd2ni.png",Individual images (easier to look through),evg to hns:https://files.catbox.moe/tda4ir.jpg ,,,https://files.catbox.moe/m3q4xs.jpg,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-jwt,1,artstyle changed quite a bit over the years,animeflux, , , , ,,,,,,,,,,, , ,Implementation of the probing tool: https://files.catbox.moe/venj5x.py,https://files.catbox.moe/xbotex.jpg,hpb to jki:https://files.catbox.moe/44a2rc.jpg ,,,https://files.catbox.moe/vsx8pf.jpg,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-fpb,1,shiny hags, ,https://files.catbox.moe/ppna3k.jpg, , , ,,,,,,,,,,, , ,"For testing purposes, the loop breaks after 1k iterations. Comment that out on actual runs",https://files.catbox.moe/ycz5q5.jpg,jkv to lek:https://files.catbox.moe/tj2aeq.jpg ,,,https://files.catbox.moe/osn7l6.jpg,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-fkg,1,might be syuro (doneru?),peko,https://files.catbox.moe/t1yty4.jpg, , , ,,,,,,,,,,, , , ,https://files.catbox.moe/4pj95y.jpg,lgu to mkb:https://files.catbox.moe/p7qqaz.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-kpg,1,??,Bosshi?,https://files.catbox.moe/gsdfk0.jpg, , , ,,,,,,,,,,, , , ,https://files.catbox.moe/2b9tps.jpg,mkg to nyj:https://files.catbox.moe/365n8h.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-mjy,1, ,girlsay,https://files.catbox.moe/ctndtj.jpg, , , ,,,,,,,,,,, , , ,https://files.catbox.moe/lbc8rj.jpg,nyp to pyb:https://files.catbox.moe/64zi6v.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-agm,1,(likely bleeding),omone_hokoma_agm, , , , ,,,,,,,,,,, , , ,https://files.catbox.moe/1g0i4s.jpg,pyh to rwy:https://files.catbox.moe/ws5643.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-zgw,1,, ,https://files.catbox.moe/d3ve9l.jpg, , , ,,,,,,,,,,, , , ,https://files.catbox.moe/qp792a.jpg,rxb to tir:https://files.catbox.moe/yhg6tr.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-uzn,1,,Araneesama, , , , ,,,,,,,,,,, , , ,https://files.catbox.moe/4aw2fu.jpg,tjt to ulx:https://files.catbox.moe/5pipmv.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-gou,1,??, , , , , ,,,,,,,,,,, , , ,https://files.catbox.moe/brw084.jpg,ulz to viv:https://files.catbox.moe/pj5qsd.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-cds,1, ,mleonheart , , , , ,,,,,,,,,,, , , ,https://files.catbox.moe/n60yil.jpg,vix to wgv:https://files.catbox.moe/niiwxt.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-hix,1,, , https://files.catbox.moe/nmpwln.png, , , ,,,,,,,,,,, , , ,https://files.catbox.moe/hbxuqf.jpg,wha to xph:https://files.catbox.moe/w00hdt.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-jem,1,??,, , , , ,,,,,,,,,,, , , ,https://files.catbox.moe/649cn0.jpg,xpk to zzj:https://files.catbox.moe/pjt03o.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-uvt,1,??, , , , , ,,,,,,,,,,, , , ,https://files.catbox.moe/2tdi6e.jpg,,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-crb,1, ,twinkle-sez, , , , ,,,,,,,,,,, , , ,https://files.catbox.moe/t7b1lk.jpg,More repetitive ones:,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-ivm,1, ,galacticmichi , , , , ,,,,,,,,,,, , , ,,aav to frw:https://files.catbox.moe/1z4efd.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-kgv,1,also qgv?,picturd, , , , ,,,,,,,,,,, , , ,,fsp to klm:https://files.catbox.moe/jnjwqi.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-gwt,1, ,matospectoru , , , , ,,,,,,,,,,, , , ,,kmq to ojn:https://files.catbox.moe/6qpxyi.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-hdr,1, ,randomboobguy, , , , ,,,,,,,,,,, , , ,,oka to rrg:https://files.catbox.moe/hvy7re.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-muh,1,mzg,kairunoburogu , , , , ,,,,,,,,,,, , , ,,rzj to xlv:https://files.catbox.moe/jrk1xl.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-rpz,1,??, , , , , ,,,,,,,,,,, , , ,,xmj to zzr:https://files.catbox.moe/882h83.jpg ,,,,,,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS,KILL ALL TRANNYS
-brw,1, ,mitomumitomu, , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,1,"pole_(ppp1409) is close, but the vibe is off", , , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nmb,1, ,spring2013, , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-kab,1,"not a character but a style with outlined shadows, greenish eyes with an almost slit pupil",??, , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nlv,1,"may be multiple artists, frequently has zheng's signature though",zheng, , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ojv,1,original artist tag also works but somehow this is better,doxy, , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nev,1, ,tekuho, , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zbi,1, ,frumples, , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mov,1,??, , , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ddk,1, ,ayanakitori, , , , ,,,,,,,,,,, , , ,, ,,,;3,:3c,,,,,,,,,,,,,,,,,,,,,,,,
-arb,1, ,, , , , ,,,,,,,,,,,, , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pjy,1,??, , , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zvu,1, ,roadi3, , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-oov,1,??, , https://files.catbox.moe/uhc7lh.jpg, , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-emb,1,??, , , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lia,1,??, , , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-dpd,1,has a short signature that ends with a D, , , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nku,1,like 75% sure,scorpdk, , , , ,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-haj,1,"red/green palette, thick outline, pointy ears, sweat", , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-oyv,1,"gotta be an oppai loli artist; one of the examples posted looks like a Granblue character, might be a good place to start; examples I made using only ""by oyv, 1girl"" leaned heavily into furry, so it might be a kemono artist",jefflink0113, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lbv,1,Heavy sfm/blender look with lots of anthro ponies,symm, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-fgv,1,kinda reminds me of shadman... or aromasensei, ,,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-fgd,1, ,hinghoi, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-hua, 1,, jmg, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-egk,1, ,badcompzero, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ikf, ,very characteristic signature, , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ilb, ,not 100% sure,echosaber, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ilr, , ,deareditor, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-iwv, ,another one? maybe a lookalike?,sakimichan, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nir,1,probably an artist that focuses on yaoi content?, ,,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nmz,1,???, , https://files.catbox.moe/lixhzd.png,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nrf,1,???, , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-jms, ,cant remember the name, , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-llq, ,??, , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xyz,1,cartoon style,6, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-kou,4,(likely prompt bleeding with Raikou from fate grand order), , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zjw,1,,blue-senpai,https://files.catbox.moe/oa0yhy.jpg,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-8um,1,BEEEEEEG HIT,ishikei,https://files.catbox.moe/cp0162.jpg,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-kyg, ,limebreaker?????, , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zie,1,"Big eyes, chibi style",dagasi, ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zgx,1,??, , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ru4,1,Anime style but idk who, , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tds,1,Western/cartoon?, , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zfc,1,"Thick outlines, simple style", , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tjx,1,??, , ,,,,,,,,,,,,,, , , ,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-kgd,1,??, , ,,,,,,,,,,,,,, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lwb,1,nice style but idk who, , ,,,,,,,,,,,,,, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zeb,1,Character looks very smug in every gen,batako, ,,,,,,,,,,,,,, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-vum,1, ,bluethebone,https://files.catbox.moe/sc1boi.jpg,,,,,,,,,,,,,, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-aqm,1,Anime style but who?,Melon22,https://files.catbox.moe/9mjjph.jpg,,,,,,,,,,,,,, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-spe,1, ,slugbox, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zdl,1,"Thick outlines, very cartoony", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zdo,1,someone who really likes drawing armored characters, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zcd,1,anime style kinda retro looking, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zcl,1,"another cute thick outline artstyle I have no idea who, possibly pony artist?",, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zcn,1,Very airbrush heavy style, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zco,1,"Pony artist, tits look like fucking orbs. Very very disrespectful.", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zbd,1,"Painted looking, kinda monet-ish", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zbm,1,"Very flat colors, thick outlines", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zac,4,some kind of alligator, ,meet zac. https://files.catbox.moe/851x43.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pyh,1,"very strong style, reminds me of yugioh card art", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pzp,1, , , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rhc,1,confirmed,chelodoy,https://files.catbox.moe/buc6jd.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yzr,1,very distinct glowing eyes, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-qgv,1,"VERY strong style, idk what it is though. shit's ugly as hell, do we really want to find it?",Picturd,https://files.catbox.moe/thlw9g.jpg jesus christ how horrifying,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-qqt,1,fried as fuck but it's definitely him,revolverwing,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rak,1,"fried, tag bleed, jellytits-7 gives a similar result",rak_(kuraga), ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-saz,1, ,abmayo,https://files.catbox.moe/xkqg2z.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-siu,1,(likely bleeding),siu_(siu0207), ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-slu,1,,legoman, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-stk,1,looks like sinner!, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yya,1,"Scalies only, painted style", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yxb,1,"Hard brush, no outlines", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ywh,1,"very detailed, long snouts", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ywl,1,Thick noisy outlines, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ywp,1,"Painted, often 3d and pretty cursed", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ywu,1,"Thick outlines, muted colors, Artist watermark always has an 'F' in it", ,https://files.catbox.moe/v249pr.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yvb,1,Very shiny looking, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ytm,1,"Cute style, very focused on pinks + purples", ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yrn,1,"Crazy hair, very thick outlines, vibrant colors", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-8rj, ,"Anime, sketchy, feels familiar", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zfz, ,"probably not riz, a style strong  enough to kill the pony (if you have this kind of noise, you need the prevent-artifact extension)", ,https://files.catbox.moe/iikuld.jpg https://files.catbox.moe/om0sml.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yp,1,Binary pen style, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-VBW, ,"Stylized, simple colors, thick lineart, feels sonic-ish, retro-ish",, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yol,1,"Vector look, airbrushed", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yew,1,flat anime style, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ydl,1,"Flat colors, thick outlines", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ydn,1,"Cute style, kinda painterly", ,https://files.catbox.moe/s8mh6g.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-sjw, ,"airbrushed look, 3d looking outline, shiny skin","Looks a lot like rikose, a japanese furry artist. Difficult to tell for sure. Might be a generic ""kemono"" tag trained on the most popular japanese furry artists",https://files.catbox.moe/8e5kqs.png https://files.catbox.moe/v5001g.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-(gpo:1.3), ,"Makes all images look epic (Trained on images of AstraliteHeart's used pony onaholes) (nta, kek)",AstraliteHearts personal pony fleshlights,https://files.catbox.moe/8m12eb.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ybq,1,Weird wrinkly style, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ybu,1,"Sparkly, big eyes, thick outlines", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yam,1,"Gross deviantart style, use as negative?", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xzd,1,another weird deviantart style, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tdj,1,"western artist, draws futas and bimbos",dsan, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xyy,1,very soft and blurry looking style, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LV0,1,"Looks very familiar, test plz",zheng, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WA5,1,"Asian face, dunno style", , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ZBM,1,Soft anime style, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HKG,1,Anime style?, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-0ru,1,Some anime style, , ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-9AG,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xwp,1,"Very weird fur patterns, pretty sure its a pony artist",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xwt,1,"airbrush heavy, thin lines, looks like early internet furry artist",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ube,1,possibly not (tsudamaku),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xuo,1,Cutesy anime art style,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-aoa,1,"western artist, very distinct sorta pinup style",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-uca,1,ube,lasterk,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tnv,1,,mizumizuni,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xsh,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-wew,,,whisperfoot,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ula,4,(likely prompt bleeding),eula_(genshin_impact),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-vwl,1,,avante92,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-uln,1,needs high weight to work,mjm,https://files.catbox.moe/r0j75r.png https://files.catbox.moe/bspe3m.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-uno,1,"(prompt bleed, duh)",uno makoto,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-wpt,1,,mogudan,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xgm,1,,stevencarson,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xlx,,muscles,ber00,https://files.catbox.moe/b2q5hd.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-csh,,"semi realistic, EXTRA THICC",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-csv,,"western, looks deviantart",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ces,,"scat, prompt bleed from ""feces""",,no,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-jrn,1,,darkereve,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pol,,"semirealistic, detail background and material",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pal,,ew,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-jtv,,seems anime,,https://files.catbox.moe/3wpvpm.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-gog,,thicc anime girls,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-fre,1,"probably a kemono artist, HUGE eyes, green leaf-like signature ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ntv,,western,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ltv,,"anime, curvy",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ktv,,western?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-dtv,,a lot of loose cloths?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-aea,,Likely a pony artist.,,https://files.catbox.moe/ecfnfj.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nig,,Furry or pony artist. Anime/cartoon defaults to 3D.,,https://files.catbox.moe/r5v3rb.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mhi,,Pokemon furry artist? Very chibi.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tlv,,"Anime artist? Big tits and fat asses for anime chars, grotesque midget kemono style for furries. Airbrushed shading.",,https://files.catbox.moe/750jvf.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mbo,,"not an artist, prompt bleed from ""bimbo""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ztv,1,,xter,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mtd,,"waxy 3D pokemon, mew?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-cum,,prompt bleed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zds,1,Busty toned heroines with antenna hair. Ikkitousen anime artstyle? Character design by Gotou Junji?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ufa,4,tifa?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-daf,,some show-accurate pony artist,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-gfx,,pony artist?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-vix,0,mouth wide open / X-ray /cross-section (probably cervix prompt bleed),,"most likely bleed from cervix, makes x-ray view a lot",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-umb,1,"unique-looking eyes, leaning and dutch angles galore, sometimes adds a short signature",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ujg,1,limebreaker again??,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-umn,1,"pls confirm, I'm too biased",gweda,Could be eyes look similar,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-smh,1,"again, confirmation needed",nonamoth,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pyz,4,"gotta be her, the hairband, the ahoge are consistent enough",suletta_mercury,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-qvj,1,"that's him, right?",gotou_junji,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rsd,1,"shiny hair and shiny eyes of 2000s, sanshita is pretty close, but not really",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ilxsbk or sbk,4,"Soraka, take a look at catbox for reinforcements",soraka_(league_of_legends),https://files.catbox.moe/wkjm4d.png,<- I think only sbk is an activate tag for soraka,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-cbu,1,,fujisaka_lyric,<- are you sure about that?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zsh,1,,azasuke,Check it,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zib,1,,rached,95% sure,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-htv,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-uvm,1,no idea who anime style,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mzg,1,confirmed: https://files.catbox.moe/q030r4.png,3mangos AKA chromapan,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-shq,1,confirmation needed,borvar,borvar looks close enough,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-uaw,1,,,"possibly thiccwithaq (check out hair), possibly lightsource (?)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mdf,1,,mdf_an,prompt bleed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-uks,1,,,"possibly lightsource  (NTA, looks like bittenhard 2 me)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zpa,1,,arttoru,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-131,1,"cg rendered, probably 3d prompt bleed",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-wkx,1,confirmation needed,cherrikissu,eyes do look like his,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-bjp,1,"big, shiny, unreasonably happy people",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yann,1,some loli artist. 4char single token get!,,https://files.catbox.moe/ge6t4u.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yeon,1,s,,https://files.catbox.moe/gncfmi.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yku,1,,zanamaoria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-puri,1,disgusting muscle tits,,https://files.catbox.moe/5rrnga.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-eqg,,prompt bleed from Equestria Girls,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lek,,prompt bleed from Twi'lek (Star Wars),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mxj,,"western, maybe pony artist?",,https://files.catbox.moe/a1yy5o.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-obu,4,prompt bleed from kochou_shinobu,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-cir,4,some bl loli 2iq,,https://files.catbox.moe/czi3r.jpg dead link... ^^^,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yag,1,"some western artist, reminds me of lewdamone",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ffy,1,prompt bleed likely,nottytiffy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-bhp,1,bleed,bow_(bhp),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ajl,1,"Furry or pony artist, gives the same signature in every image with anthro tag",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ajm,1,"another furry artist, thick outlines, pillow shading",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ncc,1,"probably a furry artist but makes some pretty nice girls, likes backlighting",,https://files.catbox.moe/qy4u05.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lvl,1,prompt bleed,lvl,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zie,1,,dagasi,furry sexo warning https://files.catbox.moe/yrtijv.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-scp,4,surely prompt bleed,scp-1471,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-gx,1,some sfw western artist,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-iw,1,"anime artist, shouldn't it be a part of sakimichan token though???",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-li,,cunny prompt bleed?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lv,,zheng bleed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-px,4,yet another sakimichan clone / bleed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ru,,"to love-ru bleed, ru8 has the highest value",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-*dr,,"prompt bleed: any token ending in ""dr"" produces characters dressed like doctors",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-*zj,,prompt bleed: jcm2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-9uv,1,,,rr,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-fhy,1,Anime artist,,https://files.catbox.moe/0zjtm6.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-0um,,"also ishikei?(nta, [67890]um all somewhat look like ishikei, but [12345]um don't) (nta, *um consists of two tokens so we might wanna mine more starred parts of it) (how do I use the sdxl tokenizer?) (a1111 extension tokenizer is fucking dead, delete verything from your prompt and input ""8um"" (ishikei trigger), your tokenizer in upper right corner will be 2/75, then try niggling around 8 so it will still be 2 tokens but something different (sent vectors will be different = different ishikei))) we won't know if part of token got glued to ""um"" though so fuck that idea :^) ('<< Now we know, 8um gets broken into ""8</w>"" #279 and ""um</w>"" #1008, and 8 9 6 7 are indeed similar tokens)",ishikei,https://files.catbox.moe/ogqc1j.jpg,"got the embedding inspector extension (w-w-w/embedding-inspector) to kinda work with SDXL, fix at https://pastebin.com/C9tLZ3YK, Inspect shows the most similar tokens, Mini tokenizer works, don't expect everything else to work tho (post it in thread!!!!! my ips cucking me so i cant visit 4chan rn) same, I don't mind if someone posts it for me",can we ask forge cunnychad to fix it for SDXL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-7x90um,1,"in search of a better ishikei, 5 tokens",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-1dr,,"thicc, smooth blending, milf",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2bd,,patreon logo?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2dr,,2drr bleed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pci,,"very distinct style, thick stroke",,https://files.catbox.moe/fgnlmr.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2rm,,not sure,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-*us,,"the last of us bleed, gives you elle",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2wf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-uoz,1,,cian yo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-wav,1,,nephlite,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-kia,,bleed from certain character?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-kos,,"curvy, korean style?",,https://files.catbox.moe/vxddxb.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lax,,pretty high value on csv,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lcd,,sometimes gives 3d render look,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lom,,character? red cloth or fire,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-luz,,luz noceda bleed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-lyr,,silver hair booblady,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mkx,,western,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mlk,,milker bleed? is this a thing,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mtn,,??,,https://files.catbox.moe/0c1lsb.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-my3,,??,,https://files.catbox.moe/hb79ab.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-naf,,fnaf bleed (i wish to unsee this),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pp*,4,pp followed by any digit: prompt bleed from Pipp (MLP G5),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nh8,,humanoid furry with scaf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nlo,,"nanashi, booru tag",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-oii,,deviantart style,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rek,4,prompt bleed from Tirek (MLP),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-omm,,d omm bleed but not quite?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-onm,,3d,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ott,,"fluffy sheep girl, i dont even",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-owh,,"red hair girl, western",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-oyz,,ew,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-wwd,1,kidmo?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-aze,1,"NT00 is definitely on https://files.catbox.moe/c0rl1r.jpg, but I don't think it's coming out well, so please check it.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-akm,1,lagh skech style ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ul*,1,ulb to ulz is same aritist may bleed ul,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-4rt,1,touhou artist mainly cirnos,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-m88,,??,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-hv,4,Lugia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-?q?,1,,cutesexyrobutts,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xgfxg,,"Very close to pochincoff (derived from accidental discovery from full string ""aeaeaeaesdafuysdgyfuaxgfxg"")",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-v8v,1,v8? Pony frequently defaults to this artist,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-xbw,1,"very strong style, looks like pokemon (prompt bleed from ""pokemon bw""?)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-vumb,1,"some sorta western artist, tall thin girls with perky boobs and long limbs - prompt bleed from ""umb""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pbi,,"wtf, booby smurf",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pbc,,deviantart,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pcb,,semi real,,https://files.catbox.moe/l7cr3p.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-plm,,plm33 bleed? booru tag,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pyq,4,gives pyra (can just be prompted with pyra \(xenoblade\) so likely bleed),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pzl,,furry artist?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-q4k,,3d render ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-qb8,,looks familiar,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-qjw,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rey,4,Rey (Star Wars),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ref,,photo reference ?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-roc,4,white hair with black strands (lycanroc prompt bleed),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rsl,,booru artist tag? girl with red ribbon on head,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-seo,1,seo tatsuya bleed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-shq,1,could be furry artist,borvar,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-sht,1,"artist tag, pretty messy",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-sk8,1,"thick outline, western",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-smr,,dragon furry,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-snl,1,sometime futa,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ssa,1,booru tag bleed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-sup,1,"semi real, very defined anatomy",,https://files.catbox.moe/lisk1j.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-swm,1,dark skin,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tax,,oppai loli,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tzu,4,isabella from animal crossing,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-eing,,"number one token (while ""ces"" is number two)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-vx,1,,BlushPixy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-us,4,(Prompt Bleeding ?),Last of us,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-bmo,1,,boobsgames,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ud8,4,girl with purple hair and front bang,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ulg,1,not sure,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ukr,1,style seems weak,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ulm,1,pretty similar to ulg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-sol,,anime? Works only on source_anime,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-up8,1,semi real with hint of 3d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-wiz,4,wiz from konosuba,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-wip,,tag for unfinished work ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-wmk,,wtf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-shie,1,"seems to sway between different styles, many have stuffed animals",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yaa,4,red demon girl with horn,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-yte,4,booblay with purple hair and crapload of belts,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zim,4,red hair girl with yellow eye,,Invader zim,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-pps,4,judy hopps of zootopia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-zpa,1,muscle lady with balloon boobs,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-agio,4,blonde lady with MASSIVE puff ponytail,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dvs,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dwc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dwn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dww,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dwx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dwy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dxo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dxs,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dxv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dyu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dyv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dza,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dze,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,dze,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ebo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ebp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ebu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,efk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,egb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,egb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,egk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,egv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,egx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ehb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ehf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ehh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ehr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ehx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ehz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eim,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ejt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eka,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eke,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eki,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eky,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ela,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ema,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,emc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eoa,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eob,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eod,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eou,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eov,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eoy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eqb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eqc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eqg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eqr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eqt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eti,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,euk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eum,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,evg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ewi,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ewo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ewu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ewy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,exl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,eza,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ezo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ezy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fai,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fay,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fbg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fbu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fbv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fbw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fdv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fdw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fdz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fei,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fem,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fey,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ffs,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fgd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fgk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fgq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fgv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fgz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fhb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fhl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fhy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fii,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fjt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fju,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fjv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fjx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fke,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fkm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fku,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fkw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fla,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fln,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fpb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fpw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fpx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fpz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fqx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fru,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,frv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,frw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fsb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fsd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fsf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fso,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fsp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fsv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fvb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fvd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fvm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fvn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fvs,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fvv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fvx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fwh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fwt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fwx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fwy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fxc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fxd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fxv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fyu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fyx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fyy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fzj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fzl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fzm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fzv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,fzw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gad,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gaf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gar,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gax,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gbu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gcd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gcg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gch,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gcx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gdr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gea,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ght,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gjt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gjv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gjw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gkb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gkr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gmq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gmz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,goj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gom,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gor,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gou,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gpc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gpj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gpn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gpo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gpw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gpx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,grb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,grp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,grt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gsb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gsf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gsh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gsu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gtv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gtz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gvb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gvt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gwg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gwh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gwl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gwm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gwt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gwv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gwy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gwz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gxh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gxm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gyy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gzl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gzm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,gzr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hag,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hai,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,haj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,haz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hbz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hcd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hch,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hda,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hdr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hep,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hga,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hgt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hgv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hij,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hik,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hiq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hiu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hjt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hka,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hke,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hki,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hku,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hlg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hlk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hll,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hlt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hlu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hmj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hmp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hna,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hnj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hns,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hnu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hpb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hpw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hpx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hqr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hsk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hsn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,htm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,htv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hua,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hui,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hvi,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hvy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hwa,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hwd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hwh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hwj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hwl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hwu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hwv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hwz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hxh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hya,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hzj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hzl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hzm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,hzt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iao,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iaw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ibw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,idz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ieb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iee,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iel,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iew,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ifl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iga,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,igh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,igo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,igu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iha,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ihb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ihc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ihh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ihl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iho,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ihp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ihr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ihv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ihw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ihz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iia,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,:3,,,,,,,,,,,,,,,,,,,,,,iim,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iin,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iio,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iiy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ije,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iji,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijs,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ijz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ikf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ikm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ikp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iku,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iky,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ilb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ilg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ilp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ilr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ima,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,imf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,imo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,inc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ior,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ipi,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iqt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iri,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iro,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iru,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iry,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ito,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iuc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iud,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iue,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iui,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iuk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iun,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ivh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ivm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iwg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iwj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iwl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iwo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iwp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iwt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iwu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iwv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iww,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iwy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ixb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ixe,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ixz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iyb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iyi,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iyo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,iyu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jaf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jah,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jaj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jap,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jbc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jbg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jbj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jbm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jcd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jch,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jcp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jcy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jdd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jdg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jds,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jel,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jfa,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jfb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jfe,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jfm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jfn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jgd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jgk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jgm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jhp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jhy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jio,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jju,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jjv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jjz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jke,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jkg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jki,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jkv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jkw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jlk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jln,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jlv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jme,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jmf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jmj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,?,,,,,,,,jms,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jmv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jnj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jnl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jpo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jpw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jpx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jqr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jrm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jrn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jrq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jru,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jsf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jsm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jso,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jst,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jsv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jtj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jtm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jtv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,juh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jui,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jun,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jvb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jvi,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jvj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jvm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jvn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jvs,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jwh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jwl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jwt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jwv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jww,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jxd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jxh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jxm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jyk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jza,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jzd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jze,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jzg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jzj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jzl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jzm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,jzp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kab,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kcd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kch,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kdg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kdk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kdr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kds,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kga,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kgd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kgq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kgv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kgw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,khq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kib,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kig,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kih,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kjt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kjw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,klg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kll,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,klm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kln,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,klo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kmj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kmp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kmz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,koi,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,koo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kpb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kpl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kpw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kqr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kqx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ksb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ksd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ksf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ksg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ksh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kuh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kvk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kvl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kvm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kvx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kws,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kwv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kxf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kxg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kxl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kxm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kzf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kzg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kzl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kzm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kzr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kzs,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kzt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,kzw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lap,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lbi,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lbk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lbp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lbu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lbv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lbw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lcf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lcp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lek,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lgu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lgv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lhb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lhc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lhh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lhy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lia,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ljw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lkb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lkg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,llq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lmb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lml,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,are you really gonna scroll past without saying meowdy?,,,,,,lmz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lnh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lnp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lnq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,loi,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lox,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lpb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lpc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lpm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lpn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lpt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lpw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lql,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lqx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lsc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lsf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lte,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ltv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lus,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lux,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,luz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lvm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lwb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lwh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lwn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lwq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lwy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lwz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lxb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lxh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lyn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lyr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,lzl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mbb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mbg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mdf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mdg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mdh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mdo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mdr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mdw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,met,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mey,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mhb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mhf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mhg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mhk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mhx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mhy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mjb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mjm,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mjy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mkb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mkg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mkx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mlx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mmr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,moc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpa,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mph,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpl,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpq,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mpz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mru,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,msh,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mul,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mur,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,muy,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mwb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mwf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mwt,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mwz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mxj,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mxu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,myr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,myu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,mzg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nax,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nbi,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ncb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ncc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ncd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nch,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ncp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ncv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nda,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ndr,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nev,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nhd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nhk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nhp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nhv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nhz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nia,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nin,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nir,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nis,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,niu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nke,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nkf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nkk,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nku,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nkv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nkw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nlo,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nlv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nmb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nmp,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nmu,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nmz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nna,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nox,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,npb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,npn,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,npw,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,npx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nqx,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nrf,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nrg,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nsb,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nsc,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ntd,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nto,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ntv,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,ntz,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,nvg,,,,,,,,,,,,,,,,,,,,,,,,
+,tag type (1 = artist; 4 = character),notes,tag,First 4 columns correspond to tag autocomplete extension format: https://github.com/DominikDoom/a1111-sd-webui-tagcomplete,Download this CSV to use with the extension: https://lite.framacalc.org/4ttgzvd0rx-a6jf.csv,Â ,fauna,sho,Â ,Â ,Â ,"`list of three letter combinations sorted by relevance, as interpreted by the PD text encoder",`list of all the tokens in compilation by first anon,Previous Gens by first anon to sift through,,,Examples for the currently found hashes:,,,,,,,,,
+fqx,1,,camonome,Â ,Â ,`bad artists (secretly good),,Â ,SCHIZO,Â ,Â ,https://files.catbox.moe/58hie8.csv,https://files.catbox.moe/41sbn0.txt,aaa to bzm:https://files.catbox.moe/c0rl1r.jpg ,,,,,,,,,,,,
+grt,1,Â ,je,,,gpo?,its pony fleshlights btw. I will never unsee the research I have done.,Â ,Ces ,(likely bleeding),(likely prompt bleeding),Many of the high ranked v** in the above can be ignored. Leaking from double_v pose,Images of all two character tokens (big image):https://files.catbox.moe/r7gcpq.jpg,cad to eum:https://files.catbox.moe/ewr0s0.jpg ,,,https://files.catbox.moe/jdobpz.jpg,,,,,,,,,
+apo,1,,jell,Â ,,gor?,,Â ,zyo,1(?),VN style ?,"Anon's tag power method, we need to implement this: https://files.catbox.moe/2nd2ni.png",Individual images (easier to look through),evg to hns:https://files.catbox.moe/tda4ir.jpg ,,,https://files.catbox.moe/m3q4xs.jpg,,,,,,,,,
+mjm,1,Â ,i,https://files.catbox.moe/pfi75k.jpg,Â ,Â ,Â ,Â ,Â ,Â ,Â ,Implementation of the probing tool: https://files.catbox.moe/venj5x.py,https://files.catbox.moe/xbotex.jpg,hpb to jki:https://files.catbox.moe/44a2rc.jpg ,,,https://files.catbox.moe/vsx8pf.jpg,,,,,,,,,
+aua,4,Â ,houshou_marine,Â ,Â ,Â ,Â ,Â ,Â ,Â ,Â ,"For testing purposes, the loop breaks after 1k iterations. Comment that out on actual runs",https://files.catbox.moe/ycz5q5.jpg,jkv to lek:https://files.catbox.moe/tj2aeq.jpg ,,,https://files.catbox.moe/osn7l6.jpg,,,,,,,,,
+aqe,1,Â ,melon22,https://files.catbox.moe/o2kenw.jpg,Â ,,Â ,Â ,Â ,Â ,Â ,"Result of running slightly better algorithm on all 1-token tags. Most of the high ranking ones are almost certainly bleed, but I wanted to put the whole dataset here if anyone wants to filter it: https://files.catbox.moe/cilrmu.csv",https://files.catbox.moe/4pj95y.jpg,lgu to mkb:https://files.catbox.moe/p7qqaz.jpg ,,,,,,,,,,,,
+dhg,1,Â ,nyantcha,Â ,Â ,sus,Â ,? sussy,Â ,Â ,Â ,Â ,https://files.catbox.moe/2b9tps.jpg,mkg to nyj:https://files.catbox.moe/365n8h.jpg ,,,,,,,,,,,,
+bnp,1,Â ,konpeto,https://files.catbox.moe/y2rm2p.jpg,Â ,Â ,Â ,Â ,Â ,Â ,Â ,Â ,https://files.catbox.moe/lbc8rj.jpg,nyp to pyb:https://files.catbox.moe/64zi6v.jpg ,,,,,,,,,,,,
+zzg,1,Â ,jtveemo,https://files.catbox.moe/9mf9n1.jpg,Â ,brz,artist: nyuunzi,Â ,Â ,Â ,Â ,Â ,https://files.catbox.moe/1g0i4s.jpg,pyh to rwy:https://files.catbox.moe/ws5643.jpg ,,,,,,,,,,,,
+fla,4,loli,Caulifla_dragonball,Â ,Â ,Â ,artist: RD_RN00,Â ,Â ,Â ,Â ,Â ,https://files.catbox.moe/qp792a.jpg,rxb to tir:https://files.catbox.moe/yhg6tr.jpg ,,,,,,,,,,,,
+cln,1,kai,,Â ,Â ,bhr,artist: uo_denim,Â ,wiki-text:,,Â ,Â ,https://files.catbox.moe/4aw2fu.jpg,tjt to ulx:https://files.catbox.moe/5pipmv.jpg ,,,,,,,,,,,,
+bfg,1,Â ,flou,,Â ,bih,artist:,Â ,Â ,Â ,Â ,Â ,https://files.catbox.moe/brw084.jpg,ulz to viv:https://files.catbox.moe/pj5qsd.jpg ,,,,,,,,,,,,
+zix,1,Â ,sakimichan,Â ,Â ,cle,artist: cle masahiro,probably just prompt bleed lmao,Â ,Â ,Â ,Â ,https://files.catbox.moe/n60yil.jpg,vix to wgv:https://files.catbox.moe/niiwxt.jpg ,,,,,,,,,,,,
+bkm,1,Â ,maniacpaint,Â ,Â ,cgv,artist: almualim?,Â ,Â ,Â ,Â ,Â ,https://files.catbox.moe/hbxuqf.jpg,wha to xph:https://files.catbox.moe/w00hdt.jpg ,,,,,,,,,,,,
+amu,4,bleed,yumemi_riamu,Â ,,"fgv, hgv, kgv, vgv, wgv","same as above, might be prompt bleed",Â ,Â ,Â ,Â ,Â ,https://files.catbox.moe/649cn0.jpg,xpk to zzj:https://files.catbox.moe/pjt03o.jpg ,,,,,,,,,,,,
+jlv,1,,p,Â ,Â ,hua,artist: jmg,Â ,Â ,Â ,Â ,Â ,https://files.catbox.moe/2tdi6e.jpg,,,,,,,,,,,,,
+jzj,1,Â ,jcm2,https://files.catbox.moe/fprbkg.jpg,,asn,yaoi,Â ,Â ,Â ,Â ,Â ,https://files.catbox.moe/t7b1lk.jpg,More repetitive ones:,,,,,,,,,,,,
+fyx,1,,ke-ta,Â ,Â ,Â ,Â ,Â ,Â ,Â ,Â ,Â ,,aav to frw:https://files.catbox.moe/1z4efd.jpg ,,,,,,,,,,,,
+kzf,1,Â ,ubanis,Â ,Â ,odf,odd mix of women and concept art-esque art / vases,Â ,Â ,Â ,Â ,Â ,,fsp to klm:https://files.catbox.moe/jnjwqi.jpg ,,,,,,,,,,,,
+hya,4,(likely prompt bleeding),dehya_(genshin_impact),Â ,Â ,ler,https://files.catbox.moe/et73jg.png,gaylord,Â ,Â ,Â ,Â ,,kmq to ojn:https://files.catbox.moe/6qpxyi.jpg ,,,,,,,,,,,,
+chl,4,(likely prompt bleeding),fischl_(genshin_impact),Â ,Â ,tpa,artist: ,Â ,Â ,Â ,Â ,Â ,,oka to rrg:https://files.catbox.moe/hvy7re.jpg ,,,,,,,,,,,,
+mdf,1,Â ,,Â ,,eer,https://files.catbox.moe/r18vdb.png,Â ,Â ,Â ,Â ,Â ,,rzj to xlv:https://files.catbox.moe/jrk1xl.jpg ,,,,,,,,,,,,
+muy,1,Â ,houtengeki,https://files.catbox.moe/5zsktm.jpg,Â ,edr,https://files.catbox.moe/dsw6yh.png,Â ,Â ,Â ,Â ,Â ,,xmj to zzr:https://files.catbox.moe/882h83.jpg ,,,,,,,,,,,,
+nda,1,Also known as his Oltlo pen name,orushibu,,Â ,nds,strange https://files.catbox.moe/ffa3ak.png,Â ,Â ,Â ,Â ,Â ,,Â ,,,,,,,,,,,,
+aqx,1,Â ,araneesama,Â ,Â ,lrd,https://files.catbox.moe/t0p84e.png,Â ,Â ,Â ,Â ,Â ,,Â ,,,,,,,,,,,,
+jmf,1,Â ,artnip,Â ,Â ,uab,artist: ecoas or doodlexxx,Â ,Â ,Â ,Â ,Â ,,Â ,,,,,,,,,,,,
+iku,1,chibi,ikuchan_kaoru,Â ,Â ,Â ,Â ,Â ,Â ,Â ,Â ,Â ,,Â ,,,,,,,,,,,,
+jln,1,Â ,magnetus,Â ,Â ,ula,character: some genshin character lmao,Likely eula prompt bleed,Â ,Â ,Â ,Â ,,Â ,,,,,,,,,,,,
+juh,1,Â ,sunnysundown,Â ,Â ,Â ,character: just Vex from LoL,Â ,Â ,Â ,Â ,Â ,,Â ,,,,,,,,,,,,
+thn,1,not krekkov but similar,Â ,https://files.catbox.moe/ro9x1b.jpg,Â ,vhb,artist: Sakimichan clone,Â ,Â ,Â ,Â ,Â ,,Â ,,,,,,,,,,,,
+xeu,1,"loli, thick eyebrows",anon200million,https://files.catbox.moe/ve57yk.jpg,<-someone pls test if this is anon200mil | ToT UOOOOOOH,gv9,solo gay men western,Â ,Â ,Â ,Â ,Â ,,Â ,,,,,,,,,,,,
+qax,1,weird cursed 3d-ish style,Â ,https://files.catbox.moe/rloqc8.jpg,Â ,uvk,ces,,,,,,,,,,,Â ,Â ,"`list of three letter combinations sorted by relevance, as interpreted by the PD text encoder",`list of all the tokens in compilation by first anon,Previous Gens by first anon to sift through,,,Examples for the currently found hashes:,
+trz,zzg,1,Â ,jtveemo,Â ,Â ujs,Â some western style https://files.catbox.moe/g7rfcy.jpg,,,,,,,,,,,Â ,Â ,https://files.catbox.moe/58hie8.csv,https://files.catbox.moe/41sbn0.txt,aaa to bzm:https://files.catbox.moe/c0rl1r.jpg ,,aaa to bzm:https://files.catbox.moe/c0rl1r.jpg ,,
+lyg,1,??,Â ,https://files.catbox.moe/fde3zu.jpg,Â ,Â quet,Â https://files.catbox.moe/xborab.jpg,,,,,,,,,,,(likely bleeding),(likely prompt bleeding),Many of the high ranked v** in the above can be ignored. Leaking from double_v pose,Images of all two character tokens (big image):https://files.catbox.moe/r7gcpq.jpg,cad to eum:https://files.catbox.moe/ewr0s0.jpg ,,,https://files.catbox.moe/jdobpz.jpg,
+exl,1,??,,https://files.catbox.moe/vpprmp.jpg,Â ,Â pert,retarded looking dragon https://files.catbox.moe/c0f9gr.jpg,,,,,,,,,,,1(?),VN style ?,"Anon's tag power method, we need to implement this: https://files.catbox.moe/2nd2ni.png",Individual images (easier to look through),evg to hns:https://files.catbox.moe/tda4ir.jpg ,,,https://files.catbox.moe/m3q4xs.jpg,
+jwt,1,artstyle changed quite a bit over the years,animeflux,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Implementation of the probing tool: https://files.catbox.moe/venj5x.py,https://files.catbox.moe/xbotex.jpg,hpb to jki:https://files.catbox.moe/44a2rc.jpg ,,,https://files.catbox.moe/vsx8pf.jpg,
+fpb,1,shiny hags,Â ,https://files.catbox.moe/ppna3k.jpg,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,"For testing purposes, the loop breaks after 1k iterations. Comment that out on actual runs",https://files.catbox.moe/ycz5q5.jpg,jkv to lek:https://files.catbox.moe/tj2aeq.jpg ,,,https://files.catbox.moe/osn7l6.jpg,
+fkg,1,might be syuro (doneru?),peko,https://files.catbox.moe/t1yty4.jpg,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/4pj95y.jpg,lgu to mkb:https://files.catbox.moe/p7qqaz.jpg ,,,,
+kpg,1,??,Bosshi?,https://files.catbox.moe/gsdfk0.jpg,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/2b9tps.jpg,mkg to nyj:https://files.catbox.moe/365n8h.jpg ,,,,
+mjy,1,Â ,girlsay,https://files.catbox.moe/ctndtj.jpg,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/lbc8rj.jpg,nyp to pyb:https://files.catbox.moe/64zi6v.jpg ,,,,
+agm,1,(likely bleeding),omone_hokoma_agm,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/1g0i4s.jpg,pyh to rwy:https://files.catbox.moe/ws5643.jpg ,,,,
+zgw,1,,Â ,https://files.catbox.moe/d3ve9l.jpg,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/qp792a.jpg,rxb to tir:https://files.catbox.moe/yhg6tr.jpg ,,,,
+uzn,1,,Araneesama,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/4aw2fu.jpg,tjt to ulx:https://files.catbox.moe/5pipmv.jpg ,,,,
+gou,1,??,Â ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/brw084.jpg,ulz to viv:https://files.catbox.moe/pj5qsd.jpg ,,,,
+cds,1,Â ,mleonheart ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/n60yil.jpg,vix to wgv:https://files.catbox.moe/niiwxt.jpg ,,,,
+hix,1,,Â ,Â https://files.catbox.moe/nmpwln.png,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/hbxuqf.jpg,wha to xph:https://files.catbox.moe/w00hdt.jpg ,,,,
+jem,1,??,,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/649cn0.jpg,xpk to zzj:https://files.catbox.moe/pjt03o.jpg ,,,,
+uvt,1,??,Â ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/2tdi6e.jpg,,,,,
+crb,1,Â ,twinkle-sez,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,https://files.catbox.moe/t7b1lk.jpg,More repetitive ones:,,,,
+ivm,1,Â ,galacticmichi ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,aav to frw:https://files.catbox.moe/1z4efd.jpg ,,,,
+kgv,1,also qgv?,picturd,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,fsp to klm:https://files.catbox.moe/jnjwqi.jpg ,,,,
+gwt,1,Â ,matospectoru ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,kmq to ojn:https://files.catbox.moe/6qpxyi.jpg ,,,,
+hdr,1,Â ,randomboobguy,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,oka to rrg:https://files.catbox.moe/hvy7re.jpg ,,,,
+muh,1,mzg,kairunoburogu ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,rzj to xlv:https://files.catbox.moe/jrk1xl.jpg ,,,,
+rpz,1,??,Â ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,xmj to zzr:https://files.catbox.moe/882h83.jpg ,,,,
+brw,1,Â ,mitomumitomu,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+,1,"pole_(ppp1409) is close, but the vibe is off",Â ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+nmb,1,Â ,spring2013,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+kab,1,"not a character but a style with outlined shadows, greenish eyes with an almost slit pupil",??,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+nlv,1,"may be multiple artists, frequently has zheng's signature though",zheng,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+ojv,1,original artist tag also works but somehow this is better,doxy,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+nev,1,Â ,tekuho,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+zbi,1,Â ,frumples,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+mov,1,??,Â ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+ddk,1,Â ,ayanakitori,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,;3,:3c
+arb,1,Â ,,Â ,Â ,Â ,Â ,,,,,,,,,,,,Â ,Â ,,Â ,,,,
+pjy,1,??,Â ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+zvu,1,Â ,roadi3,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+oov,1,??,Â ,Â https://files.catbox.moe/uhc7lh.jpg,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+emb,1,??,Â ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+lia,1,??,Â ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+dpd,1,has a short signature that ends with a D,Â ,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+nku,1,like 75% sure,scorpdk,Â ,Â ,Â ,Â ,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+haj,1,"red/green palette, thick outline, pointy ears, sweat",Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+oyv,1,"gotta be an oppai loli artist; one of the examples posted looks like a Granblue character, might be a good place to start; examples I made using only ""by oyv, 1girl"" leaned heavily into furry, so it might be a kemono artist",jefflink0113,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+lbv,1,Heavy sfm/blender look with lots of anthro ponies,symm,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+fgv,1,kinda reminds me of shadman... or aromasensei,Â ,,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+fgd,1,Â ,hinghoi,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+hua,Â 1,,Â jmg,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+egk,1,Â ,badcompzero,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+ikf,Â ,very characteristic signature,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+ilb,Â ,not 100% sure,echosaber,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+ilr,Â ,Â ,deareditor,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+iwv,Â ,another one? maybe a lookalike?,sakimichan,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+nir,1,probably an artist that focuses on yaoi content?,Â ,,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+nmz,1,???,Â ,Â https://files.catbox.moe/lixhzd.png,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+nrf,1,???,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+jms,Â ,cant remember the name,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+llq,Â ,??,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+xyz,1,cartoon style,6,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+kou,4,(likely prompt bleeding with Raikou from fate grand order),Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+zjw,1,,blue-senpai,https://files.catbox.moe/oa0yhy.jpg,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+8um,1,BEEEEEEG HIT,ishikei,https://files.catbox.moe/cp0162.jpg,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+kyg,Â ,limebreaker?????,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+zie,1,"Big eyes, chibi style",dagasi,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+zgx,1,??,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+ru4,1,Anime style but idk who,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+tds,1,Western/cartoon?,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+zfc,1,"Thick outlines, simple style",Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+tjx,1,??,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,Â ,,Â ,,,,
+kgd,1,??,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,,,,,,,
+lwb,1,nice style but idk who,Â ,Â ,,,,,,,,,,,,,,Â ,Â ,,,,,,,
+zeb,1,Character looks very smug in every gen,batako,Â ,,,,,,,,,,,,,,Â ,Â ,,,,,,,
+vum,1,Â ,bluethebone,https://files.catbox.moe/sc1boi.jpg,,,,,,,,,,,,,,Â ,Â ,,,,,,,
+aqm,1,Anime style but who?,Melon22,https://files.catbox.moe/9mjjph.jpg,,,,,,,,,,,,,,Â ,Â ,,,,,,,
+spe,1,Â ,slugbox,Â ,,,,,,,,,,,,,,,,,,,,,,
+zdl,1,"Thick outlines, very cartoony",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+zdo,1,someone who really likes drawing armored characters,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+zcd,1,anime style kinda retro looking,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+zcl,1,"another cute thick outline artstyle I have no idea who, possibly pony artist?",,Â ,,,,,,,,,,,,,,,,,,,,,,
+zcn,1,Very airbrush heavy style,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+zco,1,"Pony artist, tits look like fucking orbs. Very very disrespectful.",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+zbd,1,"Painted looking, kinda monet-ish",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+zbm,1,"Very flat colors, thick outlines",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+zac,4,some kind of alligator,Â ,meet zac. https://files.catbox.moe/851x43.png,,,,,,,,,,,,,,,,,,,,,,
+pyh,1,"very strong style, reminds me of yugioh card art",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+pzp,1,Â ,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+rhc,1,confirmed,chelodoy,https://files.catbox.moe/buc6jd.jpg,,,,,,,,,,,,,,,,,,,,,,
+yzr,1,very distinct glowing eyes,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+qgv,1,"VERY strong style, idk what it is though. shit's ugly as hell, do we really want to find it?",Picturd,https://files.catbox.moe/thlw9g.jpg jesus christ how horrifying,,,,,,,,,,,,,,,,,,,,,,
+qqt,1,fried as fuck but it's definitely him,revolverwing,,,,,,,,,,,,,,,,,,,,,,,
+rak,1,"fried, tag bleed, jellytits-7 gives a similar result",rak_(kuraga),Â ,,,,,,,,,,,,,,,,,,,,,,
+saz,1,Â ,abmayo,https://files.catbox.moe/xkqg2z.jpg,,,,,,,,,,,,,,,,,,,,,,
+siu,1,(likely bleeding),siu_(siu0207),Â ,,,,,,,,,,,,,,,,,,,,,,
+slu,1,,legoman,Â ,,,,,,,,,,,,,,,,,,,,,,
+stk,1,looks like sinner!,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+yya,1,"Scalies only, painted style",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+yxb,1,"Hard brush, no outlines",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+ywh,1,"very detailed, long snouts",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+ywl,1,Thick noisy outlines,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+ywp,1,"Painted, often 3d and pretty cursed",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+ywu,1,"Thick outlines, muted colors, Artist watermark always has an 'F' in it",Â ,https://files.catbox.moe/v249pr.jpg,,,,,,,,,,,,,,,,,,,,,,
+yvb,1,Very shiny looking,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+ytm,1,"Cute style, very focused on pinks + purples",Â ,,,,,,,,,,,,,,,,,,,,,,,
+yrn,1,"Crazy hair, very thick outlines, vibrant colors",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+8rj,Â ,"Anime, sketchy, feels familiar",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+zfz,Â ,"probably not riz, a style strongÂ  enough to kill the pony (if you have this kind of noise, you need the prevent-artifact extension)",Â ,https://files.catbox.moe/iikuld.jpg https://files.catbox.moe/om0sml.png,,,,,,,,,,,,,,,,,,,,,,
+yp,1,Binary pen style,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+VBW,Â ,"Stylized, simple colors, thick lineart, feels sonic-ish, retro-ish",,Â ,,,,,,,,,,,,,,,,,,,,,,
+yol,1,"Vector look, airbrushed",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+yew,1,flat anime style,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+ydl,1,"Flat colors, thick outlines",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+ydn,1,"Cute style, kinda painterly",Â ,https://files.catbox.moe/s8mh6g.jpg,,,,,,,,,,,,,,,,,,,,,,
+sjw,Â ,"airbrushed look, 3d looking outline, shiny skin","Looks a lot like rikose, a japanese furry artist. Difficult to tell for sure. Might be a generic ""kemono"" tag trained on the most popular japanese furry artists",https://files.catbox.moe/8e5kqs.png https://files.catbox.moe/v5001g.jpg,,,,,,,,,,,,,,,,,,,,,,
+(gpo:1.3),Â ,"Makes all images look epic (Trained on images of AstraliteHeart's used pony onaholes) (nta, kek)",AstraliteHearts personal pony fleshlights,https://files.catbox.moe/8m12eb.jpg,,,,,,,,,,,,,,,,,,,,,,
+ybq,1,Weird wrinkly style,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+ybu,1,"Sparkly, big eyes, thick outlines",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+yam,1,"Gross deviantart style, use as negative?",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+xzd,1,another weird deviantart style,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+tdj,1,"western artist, draws futas and bimbos",dsan,Â ,,,,,,,,,,,,,,,,,,,,,,
+xyy,1,very soft and blurry looking style,Â ,,,,,,,,,,,,,,,,,,,,,,,
+LV0,1,"Looks very familiar, test plz",zheng,Â ,,,,,,,,,,,,,,,,,,,,,,
+WA5,1,"Asian face, dunno style",Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+ZBM,1,Soft anime style,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+HKG,1,Anime style?,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+0ru,1,Some anime style,Â ,Â ,,,,,,,,,,,,,,,,,,,,,,
+9AG,1,,,,,,,,,,,,,,,,,,,,,,,,,
+xwp,1,"Very weird fur patterns, pretty sure its a pony artist",,,,,,,,,,,,,,,,,,,,,,,,
+xwt,1,"airbrush heavy, thin lines, looks like early internet furry artist",,,,,,,,,,,,,,,,,,,,,,,,
+ube,1,possibly not (tsudamaku),,,,,,,,,,,,,,,,,,,,,,,,
+xuo,1,Cutesy anime art style,,,,,,,,,,,,,,,,,,,,,,,,
+aoa,1,"western artist, very distinct sorta pinup style",,,,,,,,,,,,,,,,,,,,,,,,
+uca,1,ube,lasterk,,,,,,,,,,,,,,,,,,,,,,,
+tnv,1,,mizumizuni,,,,,,,,,,,,,,,,,,,,,,,
+xsh,1,,,,,,,,,,,,,,,,,,,,,,,,,
+wew,,,whisperfoot,,,,,,,,,,,,,,,,,,,,,,,
+ula,4,(likely prompt bleeding),eula_(genshin_impact),,,,,,,,,,,,,,,,,,,,,,,
+vwl,1,,avante92,,,,,,,,,,,,,,,,,,,,,,,
+uln,1,needs high weight to work,mjm,https://files.catbox.moe/r0j75r.png https://files.catbox.moe/bspe3m.jpg,,,,,,,,,,,,,,,,,,,,,,
+uno,1,"(prompt bleed, duh)",uno makoto,,,,,,,,,,,,,,,,,,,,,,,
+wpt,1,,mogudan,,,,,,,,,,,,,,,,,,,,,,,
+xgm,1,,stevencarson,,,,,,,,,,,,,,,,,,,,,,,
+xlx,,muscles,ber00,https://files.catbox.moe/b2q5hd.png,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+csh,,"semi realistic, EXTRA THICC",,,,,,,,,,,,,,,,,,,,,,,,
+csv,,"western, looks deviantart",,,,,,,,,,,,,,,,,,,,,,,,
+ces,,"scat, prompt bleed from ""feces""",,no,,,,,,,,,,,,,,,,,,,,,,
+jrn,1,,darkereve,,,,,,,,,,,,,,,,,,,,,,,
+pol,,"semirealistic, detail background and material",,,,,,,,,,,,,,,,,,,,,,,,
+pal,,ew,,,,,,,,,,,,,,,,,,,,,,,,
+jtv,,seems anime,,https://files.catbox.moe/3wpvpm.png,,,,,,,,,,,,,,,,,,,,,,
+gog,,thicc anime girls,,,,,,,,,,,,,,,,,,,,,,,,
+fre,1,"probably a kemono artist, HUGE eyes, green leaf-like signature ",,,,,,,,,,,,,,,,,,,,,,,,
+ntv,,western,,,,,,,,,,,,,,,,,,,,,,,,
+ltv,,"anime, curvy",,,,,,,,,,,,,,,,,,,,,,,,
+ktv,,western?,,,,,,,,,,,,,,,,,,,,,,,,
+dtv,,a lot of loose cloths?,,,,,,,,,,,,,,,,,,,,,,,,
+aea,,Likely a pony artist.,,https://files.catbox.moe/ecfnfj.png,,,,,,,,,,,,,,,,,,,,,,
+nig,,Furry or pony artist. Anime/cartoon defaults to 3D.,,https://files.catbox.moe/r5v3rb.jpg,,,,,,,,,,,,,,,,,,,,,,
+mhi,,Pokemon furry artist? Very chibi.,,,,,,,,,,,,,,,,,,,,,,,,
+tlv,,"Anime artist? Big tits and fat asses for anime chars, grotesque midget kemono style for furries. Airbrushed shading.",,https://files.catbox.moe/750jvf.png,,,,,,,,,,,,,,,,,,,,,,
+mbo,,"not an artist, prompt bleed from ""bimbo""",,,,,,,,,,,,,,,,,,,,,,,,
+ztv,1,,xter,,,,,,,,,,,,,,,,,,,,,,,
+mtd,,"waxy 3D pokemon, mew?",,,,,,,,,,,,,,,,,,,,,,,,
+cum,,prompt bleed,,,,,,,,,,,,,,,,,,,,,,,,
+zds,1,Busty toned heroines with antenna hair. Ikkitousen anime artstyle? Character design by Gotou Junji?,,,,,,,,,,,,,,,,,,,,,,,,
+ufa,4,tifa?,,,,,,,,,,,,,,,,,,,,,,,,
+daf,,some show-accurate pony artist,,,,,,,,,,,,,,,,,,,,,,,,
+gfx,,pony artist?,,,,,,,,,,,,,,,,,,,,,,,,
+vix,0,mouth wide open / X-ray /cross-section (probably cervix prompt bleed),,"most likely bleed from cervix, makes x-ray view a lot",,,,,,,,,,,,,,,,,,,,,,
+umb,1,"unique-looking eyes, leaning and dutch angles galore, sometimes adds a short signature",,,,,,,,,,,,,,,,,,,,,,,,
+ujg,1,limebreaker again??,,,,,,,,,,,,,,,,,,,,,,,,
+umn,1,"pls confirm, I'm too biased",gweda,Could be eyes look similar,,,,,,,,,,,,,,,,,,,,,,
+smh,1,"again, confirmation needed",nonamoth,,,,,,,,,,,,,,,,,,,,,,,
+pyz,4,"gotta be her, the hairband, the ahoge are consistent enough",suletta_mercury,,,,,,,,,,,,,,,,,,,,,,,
+qvj,1,"that's him, right?",gotou_junji,,,,,,,,,,,,,,,,,,,,,,,
+rsd,1,"shiny hair and shiny eyes of 2000s, sanshita is pretty close, but not really",,,,,,,,,,,,,,,,,,,,,,,,
+ilxsbk or sbk,4,"Soraka, take a look at catbox for reinforcements",soraka_(league_of_legends),https://files.catbox.moe/wkjm4d.png,<- I think only sbk is an activate tag for soraka,,,,,,,,,,,,,,,,,,,,,
+cbu,1,,fujisaka_lyric,<- are you sure about that?,,,,,,,,,,,,,,,,,,,,,,
+zsh,1,,azasuke,Check it,,,,,,,,,,,,,,,,,,,,,,
+zib,1,,rached,95% sure,,,,,,,,,,,,,,,,,,,,,,
+htv,1,,,,,,,,,,,,,,,,,,,,,,,,,
+uvm,1,no idea who anime style,,,,,,,,,,,,,,,,,,,,,,,,
+mzg,1,confirmed: https://files.catbox.moe/q030r4.png,3mangos AKA chromapan,,,,,,,,,,,,,,,,,,,,,,,
+shq,1,confirmation needed,borvar,borvar looks close enough,,,,,,,,,,,,,,,,,,,,,,
+uaw,1,,,"possibly thiccwithaq (check out hair), possibly lightsource (?)",,,,,,,,,,,,,,,,,,,,,,
+mdf,1,,mdf_an,prompt bleed,,,,,,,,,,,,,,,,,,,,,,
+uks,1,,,"possibly lightsource  (NTA, looks like bittenhard 2 me)",,,,,,,,,,,,,,,,,,,,,,
+zpa,1,,arttoru,,,,,,,,,,,,,,,,,,,,,,,
+131,1,"cg rendered, probably 3d prompt bleed",,,,,,,,,,,,,,,,,,,,,,,,
+wkx,1,confirmation needed,cherrikissu,eyes do look like his,,,,,,,,,,,,,,,,,,,,,,
+bjp,1,"big, shiny, unreasonably happy people",,,,,,,,,,,,,,,,,,,,,,,,
+yann,1,some loli artist. 4char single token get!,,https://files.catbox.moe/ge6t4u.jpg,,,,,,,,,,,,,,,,,,,,,,
+yeon,1,s,,https://files.catbox.moe/gncfmi.jpg,,,,,,,,,,,,,,,,,,,,,,
+yku,1,,zanamaoria,,,,,,,,,,,,,,,,,,,,,,,
+puri,1,disgusting muscle tits,,https://files.catbox.moe/5rrnga.jpg,,,,,,,,,,,,,,,,,,,,,,
+eqg,,prompt bleed from Equestria Girls,,,,,,,,,,,,,,,,,,,,,,,,
+lek,,prompt bleed from Twi'lek (Star Wars),,,,,,,,,,,,,,,,,,,,,,,,
+mxj,,"western, maybe pony artist?",,https://files.catbox.moe/a1yy5o.png,,,,,,,,,,,,,,,,,,,,,,
+obu,4,prompt bleed from kochou_shinobu,,,,,,,,,,,,,,,,,,,,,,,,
+cir,4,some bl loli 2iq,,https://files.catbox.moe/czi3r.jpg dead link... ^^^,,,,,,,,,,,,,,,,,,,,,,
+yag,1,"some western artist, reminds me of lewdamone",,,,,,,,,,,,,,,,,,,,,,,,
+ffy,1,prompt bleed likely,nottytiffy,,,,,,,,,,,,,,,,,,,,,,,
+bhp,1,bleed,bow_(bhp),,,,,,,,,,,,,,,,,,,,,,,
+ajl,1,"Furry or pony artist, gives the same signature in every image with anthro tag",,,,,,,,,,,,,,,,,,,,,,,,
+ajm,1,"another furry artist, thick outlines, pillow shading",,,,,,,,,,,,,,,,,,,,,,,,
+ncc,1,"probably a furry artist but makes some pretty nice girls, likes backlighting",,https://files.catbox.moe/qy4u05.png,,,,,,,,,,,,,,,,,,,,,,
+lvl,1,prompt bleed,lvl,,,,,,,,,,,,,,,,,,,,,,,
+zie,1,,dagasi,furry sexo warning https://files.catbox.moe/yrtijv.png,,,,,,,,,,,,,,,,,,,,,,
+scp,4,surely prompt bleed,scp-1471,,,,,,,,,,,,,,,,,,,,,,,
+gx,1,some sfw western artist,,,,,,,,,,,,,,,,,,,,,,,,
+iw,1,"anime artist, shouldn't it be a part of sakimichan token though???",,,,,,,,,,,,,,,,,,,,,,,,
+li,,cunny prompt bleed?,,,,,,,,,,,,,,,,,,,,,,,,
+lv,,zheng bleed,,,,,,,,,,,,,,,,,,,,,,,,
+px,4,yet another sakimichan clone / bleed,,,,,,,,,,,,,,,,,,,,,,,,
+ru,,"to love-ru bleed, ru8 has the highest value",,,,,,,,,,,,,,,,,,,,,,,,
+*dr,,"prompt bleed: any token ending in ""dr"" produces characters dressed like doctors",,,,,,,,,,,,,,,,,,,,,,,,
+*zj,,prompt bleed: jcm2,,,,,,,,,,,,,,,,,,,,,,,,
+9uv,1,,,rr,,,,,,,,,,,,,,,,,,,,,,
+fhy,1,Anime artist,,https://files.catbox.moe/0zjtm6.png,,,,,,,,,,,,,,,,,,,,,,
+0um,,"also ishikei?(nta, [67890]um all somewhat look like ishikei, but [12345]um don't) (nta, *um consists of two tokens so we might wanna mine more starred parts of it) (how do I use the sdxl tokenizer?) (a1111 extension tokenizer is fucking dead, delete verything from your prompt and input ""8um"" (ishikei trigger), your tokenizer in upper right corner will be 2/75, then try niggling around 8 so it will still be 2 tokens but something different (sent vectors will be different = different ishikei))) we won't know if part of token got glued to ""um"" though so fuck that idea :^) ('<< Now we know, 8um gets broken into ""8</w>"" #279 and ""um</w>"" #1008, and 8 9 6 7 are indeed similar tokens)",ishikei,https://files.catbox.moe/ogqc1j.jpg,"got the embedding inspector extension (w-w-w/embedding-inspector) to kinda work with SDXL, fix at https://pastebin.com/C9tLZ3YK, Inspect shows the most similar tokens, Mini tokenizer works, don't expect everything else to work tho (post it in thread!!!!! my ips cucking me so i cant visit 4chan rn) same, I don't mind if someone posts it for me",can we ask forge cunnychad to fix it for SDXL,,,,,,,,,,,,,,,,,,,,
+7x90um,1,"in search of a better ishikei, 5 tokens",,,,,,,,,,,,,,,,,,,,,,,,
+1dr,,"thicc, smooth blending, milf",,,,,,,,,,,,,,,,,,,,,,,,
+2bd,,patreon logo?,,,,,,,,,,,,,,,,,,,,,,,,
+2dr,,2drr bleed,,,,,,,,,,,,,,,,,,,,,,,,
+pci,,"very distinct style, thick stroke",,https://files.catbox.moe/fgnlmr.jpg,,,,,,,,,,,,,,,,,,,,,,
+2rm,,not sure,,,,,,,,,,,,,,,,,,,,,,,,
+*us,,"the last of us bleed, gives you elle",,,,,,,,,,,,,,,,,,,,,,,,
+2wf,,,,,,,,,,,,,,,,,,,,,,,,,,
+uoz,1,,cian yo,,,,,,,,,,,,,,,,,,,,,,,
+wav,1,,nephlite,,,,,,,,,,,,,,,,,,,,,,,
+kia,,bleed from certain character?,,,,,,,,,,,,,,,,,,,,,,,,
+kos,,"curvy, korean style?",,https://files.catbox.moe/vxddxb.jpg,,,,,,,,,,,,,,,,,,,,,,
+lax,,pretty high value on csv,,,,,,,,,,,,,,,,,,,,,,,,
+lcd,,sometimes gives 3d render look,,,,,,,,,,,,,,,,,,,,,,,,
+lom,,character? red cloth or fire,,,,,,,,,,,,,,,,,,,,,,,,
+luz,,luz noceda bleed,,,,,,,,,,,,,,,,,,,,,,,,
+lyr,,silver hair booblady,,,,,,,,,,,,,,,,,,,,,,,,
+mkx,,western,,,,,,,,,,,,,,,,,,,,,,,,
+mlk,,milker bleed? is this a thing,,,,,,,,,,,,,,,,,,,,,,,,
+mtn,,??,,https://files.catbox.moe/0c1lsb.jpg,,,,,,,,,,,,,,,,,,,,,,
+my3,,??,,https://files.catbox.moe/hb79ab.jpg,,,,,,,,,,,,,,,,,,,,,,
+naf,,fnaf bleed (i wish to unsee this),,,,,,,,,,,,,,,,,,,,,,,,
+pp*,4,pp followed by any digit: prompt bleed from Pipp (MLP G5),,,,,,,,,,,,,,,,,,,,,,,,
+nh8,,humanoid furry with scaf,,,,,,,,,,,,,,,,,,,,,,,,
+nlo,,"nanashi, booru tag",,,,,,,,,,,,,,,,,,,,,,,,
+oii,,deviantart style,,,,,,,,,,,,,,,,,,,,,,,,
+rek,4,prompt bleed from Tirek (MLP),,,,,,,,,,,,,,,,,,,,,,,,
+omm,,d omm bleed but not quite?,,,,,,,,,,,,,,,,,,,,,,,,
+onm,,3d,,,,,,,,,,,,,,,,,,,,,,,,
+ott,,"fluffy sheep girl, i dont even",,,,,,,,,,,,,,,,,,,,,,,,
+owh,,"red hair girl, western",,,,,,,,,,,,,,,,,,,,,,,,
+oyz,,ew,,,,,,,,,,,,,,,,,,,,,,,,
+wwd,1,kidmo?,,,,,,,,,,,,,,,,,,,,,,,,
+aze,1,"NT00 is definitely on https://files.catbox.moe/c0rl1r.jpg, but I don't think it's coming out well, so please check it.",,,,,,,,,,,,,,,,,,,,,,,,
+akm,1,lagh skech style ,,,,,,,,,,,,,,,,,,,,,,,,
+ul*,1,ulb to ulz is same aritist may bleed ul,,,,,,,,,,,,,,,,,,,,,,,,
+4rt,1,touhou artist mainly cirnos,,,,,,,,,,,,,,,,,,,,,,,,
+m88,,??,,,,,,,,,,,,,,,,,,,,,,,,
+hv,4,Lugia,,,,,,,,,,,,,,,,,,,,,,,,
+?q?,1,,cutesexyrobutts,,,,,,,,,,,,,,,,,,,,,,,
+xgfxg,,"Very close to pochincoff (derived from accidental discovery from full string ""aeaeaeaesdafuysdgyfuaxgfxg"")",,,,,,,,,,,,,,,,,,,,,,,,
+v8v,1,v8? Pony frequently defaults to this artist,,,,,,,,,,,,,,,,,,,,,,,,
+xbw,1,"very strong style, looks like pokemon (prompt bleed from ""pokemon bw""?)",,,,,,,,,,,,,,,,,,,,,,,,
+vumb,1,"some sorta western artist, tall thin girls with perky boobs and long limbs - prompt bleed from ""umb""",,,,,,,,,,,,,,,,,,,,,,,,
+pbi,,"wtf, booby smurf",,,,,,,,,,,,,,,,,,,,,,,,
+pbc,,deviantart,,,,,,,,,,,,,,,,,,,,,,,,
+pcb,,semi real,,https://files.catbox.moe/l7cr3p.jpg,,,,,,,,,,,,,,,,,,,,,,
+plm,,plm33 bleed? booru tag,,,,,,,,,,,,,,,,,,,,,,,,
+pyq,4,gives pyra (can just be prompted with pyra \(xenoblade\) so likely bleed),,,,,,,,,,,,,,,,,,,,,,,,
+pzl,,furry artist?,,,,,,,,,,,,,,,,,,,,,,,,
+q4k,,3d render ,,,,,,,,,,,,,,,,,,,,,,,,
+qb8,,looks familiar,,,,,,,,,,,,,,,,,,,,,,,,
+qjw,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+rey,4,Rey (Star Wars),,,,,,,,,,,,,,,,,,,,,,,,
+ref,,photo reference ?,,,,,,,,,,,,,,,,,,,,,,,,
+roc,4,white hair with black strands (lycanroc prompt bleed),,,,,,,,,,,,,,,,,,,,,,,,
+rsl,,booru artist tag? girl with red ribbon on head,,,,,,,,,,,,,,,,,,,,,,,,
+seo,1,seo tatsuya bleed,,,,,,,,,,,,,,,,,,,,,,,,
+shq,1,could be furry artist,borvar,,,,,,,,,,,,,,,,,,,,,,,
+sht,1,"artist tag, pretty messy",,,,,,,,,,,,,,,,,,,,,,,,
+sk8,1,"thick outline, western",,,,,,,,,,,,,,,,,,,,,,,,
+smr,,dragon furry,,,,,,,,,,,,,,,,,,,,,,,,
+snl,1,sometime futa,,,,,,,,,,,,,,,,,,,,,,,,
+ssa,1,booru tag bleed,,,,,,,,,,,,,,,,,,,,,,,,
+sup,1,"semi real, very defined anatomy",,https://files.catbox.moe/lisk1j.jpg,,,,,,,,,,,,,,,,,,,,,,
+swm,1,dark skin,,,,,,,,,,,,,,,,,,,,,,,,
+tax,,oppai loli,,,,,,,,,,,,,,,,,,,,,,,,
+tzu,4,isabella from animal crossing,,,,,,,,,,,,,,,,,,,,,,,,
+eing,,"number one token (while ""ces"" is number two)",,,,,,,,,,,,,,,,,,,,,,,,
+vx,1,,BlushPixy,,,,,,,,,,,,,,,,,,,,,,,
+us,4,(Prompt Bleeding ?),Last of us,,,,,,,,,,,,,,,,,,,,,,,
+bmo,1,,boobsgames,,,,,,,,,,,,,,,,,,,,,,,
+ud8,4,girl with purple hair and front bang,,,,,,,,,,,,,,,,,,,,,,,,
+ulg,1,not sure,,,,,,,,,,,,,,,,,,,,,,,,
+ukr,1,style seems weak,,,,,,,,,,,,,,,,,,,,,,,,
+ulm,1,pretty similar to ulg,,,,,,,,,,,,,,,,,,,,,,,,
+sol,,anime? Works only on source_anime,,,,,,,,,,,,,,,,,,,,,,,,
+up8,1,semi real with hint of 3d ,,,,,,,,,,,,,,,,,,,,,,,,
+wiz,4,wiz from konosuba,,,,,,,,,,,,,,,,,,,,,,,,
+wip,,tag for unfinished work ,,,,,,,,,,,,,,,,,,,,,,,,
+wmk,,wtf,,,,,,,,,,,,,,,,,,,,,,,,
+shie,1,"seems to sway between different styles, many have stuffed animals",,,,,,,,,,,,,,,,,,,,,,,,
+yaa,4,red demon girl with horn,,,,,,,,,,,,,,,,,,,,,,,,
+yte,4,booblay with purple hair and crapload of belts,,,,,,,,,,,,,,,,,,,,,,,,
+zim,4,red hair girl with yellow eye,,Invader zim,,,,,,,,,,,,,,,,,,,,,,
+pps,4,judy hopps of zootopia,,,,,,,,,,,,,,,,,,,,,,,,
+zpa,1,muscle lady with balloon boobs,,,,,,,,,,,,,,,,,,,,,,,,
+agio,4,blonde lady with MASSIVE puff ponytail,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,dvs
+,,,,,,,,,,,,,,,,,,,,,,,,,,dwc
+,,,,,,,,,,,,,,,,,,,,,,,,,,dwn
+,,,,,,,,,,,,,,,,,,,,,,,,,,dww
+,,,,,,,,,,,,,,,,,,,,,,,,,,dwx
+,,,,,,,,,,,,,,,,,,,,,,,,,,dwy
+,,,,,,,,,,,,,,,,,,,,,,,,,,dxo
+,,,,,,,,,,,,,,,,,,,,,,,,,,dxs
+,,,,,,,,,,,,,,,,,,,,,,,,,,dxv
+,,,,,,,,,,,,,,,,,,,,,,,,,,dyu
+,,,,,,,,,,,,,,,,,,,,,,,,,,dyv
+,,,,,,,,,,,,,,,,,,,,,,,,,,dza
+,,,,,,,,,,,,,,,,,,,,,,,,,,dze
+,,,,,,,,,,,,,,,,,,,,,,,,,,dze
+,,,,,,,,,,,,,,,,,,,,,,,,,,ebo
+,,,,,,,,,,,,,,,,,,,,,,,,,,ebp
+,,,,,,,,,,,,,,,,,,,,,,,,,,ebu
+,,,,,,,,,,,,,,,,,,,,,,,,,,efk
+,,,,,,,,,,,,,,,,,,,,,,,,,,egb
+,,,,,,,,,,,,,,,,,,,,,,,,,,egb
+,,,,,,,,,,,,,,,,,,,,,,,,,,egk
+,,,,,,,,,,,,,,,,,,,,,,,,,,egv
+,,,,,,,,,,,,,,,,,,,,,,,,,,egx
+,,,,,,,,,,,,,,,,,,,,,,,,,,ehb
+,,,,,,,,,,,,,,,,,,,,,,,,,,ehf
+,,,,,,,,,,,,,,,,,,,,,,,,,,ehh
+,,,,,,,,,,,,,,,,,,,,,,,,,,ehr
+,,,,,,,,,,,,,,,,,,,,,,,,,,ehx
+,,,,,,,,,,,,,,,,,,,,,,,,,,ehz
+,,,,,,,,,,,,,,,,,,,,,,,,,,eim
+,,,,,,,,,,,,,,,,,,,,,,,,,,ejt
+,,,,,,,,,,,,,,,,,,,,,,,,,,eka
+,,,,,,,,,,,,,,,,,,,,,,,,,,eke
+,,,,,,,,,,,,,,,,,,,,,,,,,,eki
+,,,,,,,,,,,,,,,,,,,,,,,,,,eky
+,,,,,,,,,,,,,,,,,,,,,,,,,,ela
+,,,,,,,,,,,,,,,,,,,,,,,,,,ema
+,,,,,,,,,,,,,,,,,,,,,,,,,,emc
+,,,,,,,,,,,,,,,,,,,,,,,,,,eoa
+,,,,,,,,,,,,,,,,,,,,,,,,,,eob
+,,,,,,,,,,,,,,,,,,,,,,,,,,eod
+,,,,,,,,,,,,,,,,,,,,,,,,,,eou
+,,,,,,,,,,,,,,,,,,,,,,,,,,eov
+,,,,,,,,,,,,,,,,,,,,,,,,,,eoy
+,,,,,,,,,,,,,,,,,,,,,,,,,,eqb
+,,,,,,,,,,,,,,,,,,,,,,,,,,eqc
+,,,,,,,,,,,,,,,,,,,,,,,,,,eqg
+,,,,,,,,,,,,,,,,,,,,,,,,,,eqr
+,,,,,,,,,,,,,,,,,,,,,,,,,,eqt
+,,,,,,,,,,,,,,,,,,,,,,,,,,eti
+,,,,,,,,,,,,,,,,,,,,,,,,,,euk
+,,,,,,,,,,,,,,,,,,,,,,,,,,eum
+,,,,,,,,,,,,,,,,,,,,,,,,,,evg
+,,,,,,,,,,,,,,,,,,,,,,,,,,ewi
+,,,,,,,,,,,,,,,,,,,,,,,,,,ewo
+,,,,,,,,,,,,,,,,,,,,,,,,,,ewu
+,,,,,,,,,,,,,,,,,,,,,,,,,,ewy
+,,,,,,,,,,,,,,,,,,,,,,,,,,exl
+,,,,,,,,,,,,,,,,,,,,,,,,,,eza
+,,,,,,,,,,,,,,,,,,,,,,,,,,ezo
+,,,,,,,,,,,,,,,,,,,,,,,,,,ezy
+,,,,,,,,,,,,,,,,,,,,,,,,,,fai
+,,,,,,,,,,,,,,,,,,,,,,,,,,fay
+,,,,,,,,,,,,,,,,,,,,,,,,,,fbg
+,,,,,,,,,,,,,,,,,,,,,,,,,,fbu
+,,,,,,,,,,,,,,,,,,,,,,,,,,fbv
+,,,,,,,,,,,,,,,,,,,,,,,,,,fbw
+,,,,,,,,,,,,,,,,,,,,,,,,,,fdv
+,,,,,,,,,,,,,,,,,,,,,,,,,,fdw
+,,,,,,,,,,,,,,,,,,,,,,,,,,fdz
+,,,,,,,,,,,,,,,,,,,,,,,,,,fei
+,,,,,,,,,,,,,,,,,,,,,,,,,,fem
+,,,,,,,,,,,,,,,,,,,,,,,,,,fey
+,,,,,,,,,,,,,,,,,,,,,,,,,,ffs
+,,,,,,,,,,,,,,,,,,,,,,,,,,fgd
+,,,,,,,,,,,,,,,,,,,,,,,,,,fgk
+,,,,,,,,,,,,,,,,,,,,,,,,,,fgq
+,,,,,,,,,,,,,,,,,,,,,,,,,,fgv
+,,,,,,,,,,,,,,,,,,,,,,,,,,fgz
+,,,,,,,,,,,,,,,,,,,,,,,,,,fhb
+,,,,,,,,,,,,,,,,,,,,,,,,,,fhl
+,,,,,,,,,,,,,,,,,,,,,,,,,,fhy
+,,,,,,,,,,,,,,,,,,,,,,,,,,fii
+,,,,,,,,,,,,,,,,,,,,,,,,,,fjt
+,,,,,,,,,,,,,,,,,,,,,,,,,,fju
+,,,,,,,,,,,,,,,,,,,,,,,,,,fjv
+,,,,,,,,,,,,,,,,,,,,,,,,,,fjx
+,,,,,,,,,,,,,,,,,,,,,,,,,,fke
+,,,,,,,,,,,,,,,,,,,,,,,,,,fkm
+,,,,,,,,,,,,,,,,,,,,,,,,,,fku
+,,,,,,,,,,,,,,,,,,,,,,,,,,fkw
+,,,,,,,,,,,,,,,,,,,,,,,,,,fla
+,,,,,,,,,,,,,,,,,,,,,,,,,,fln
+,,,,,,,,,,,,,,,,,,,,,,,,,,fpb
+,,,,,,,,,,,,,,,,,,,,,,,,,,fpw
+,,,,,,,,,,,,,,,,,,,,,,,,,,fpx
+,,,,,,,,,,,,,,,,,,,,,,,,,,fpz
+,,,,,,,,,,,,,,,,,,,,,,,,,,fqx
+,,,,,,,,,,,,,,,,,,,,,,,,,,fru
+,,,,,,,,,,,,,,,,,,,,,,,,,,frv
+,,,,,,,,,,,,,,,,,,,,,,,,,,frw
+,,,,,,,,,,,,,,,,,,,,,,,,,,fsb
+,,,,,,,,,,,,,,,,,,,,,,,,,,fsd
+,,,,,,,,,,,,,,,,,,,,,,,,,,fsf
+,,,,,,,,,,,,,,,,,,,,,,,,,,fso
+,,,,,,,,,,,,,,,,,,,,,,,,,,fsp
+,,,,,,,,,,,,,,,,,,,,,,,,,,fsv
+,,,,,,,,,,,,,,,,,,,,,,,,,,fvb
+,,,,,,,,,,,,,,,,,,,,,,,,,,fvd
+,,,,,,,,,,,,,,,,,,,,,,,,,,fvm
+,,,,,,,,,,,,,,,,,,,,,,,,,,fvn
+,,,,,,,,,,,,,,,,,,,,,,,,,,fvs
+,,,,,,,,,,,,,,,,,,,,,,,,,,fvv
+,,,,,,,,,,,,,,,,,,,,,,,,,,fvx
+,,,,,,,,,,,,,,,,,,,,,,,,,,fwh
+,,,,,,,,,,,,,,,,,,,,,,,,,,fwt
+,,,,,,,,,,,,,,,,,,,,,,,,,,fwx
+,,,,,,,,,,,,,,,,,,,,,,,,,,fwy
+,,,,,,,,,,,,,,,,,,,,,,,,,,fxc
+,,,,,,,,,,,,,,,,,,,,,,,,,,fxd
+,,,,,,,,,,,,,,,,,,,,,,,,,,fxv
+,,,,,,,,,,,,,,,,,,,,,,,,,,fyu
+,,,,,,,,,,,,,,,,,,,,,,,,,,fyx
+,,,,,,,,,,,,,,,,,,,,,,,,,,fyy
+,,,,,,,,,,,,,,,,,,,,,,,,,,fzj
+,,,,,,,,,,,,,,,,,,,,,,,,,,fzl
+,,,,,,,,,,,,,,,,,,,,,,,,,,fzm
+,,,,,,,,,,,,,,,,,,,,,,,,,,fzv
+,,,,,,,,,,,,,,,,,,,,,,,,,,fzw
+,,,,,,,,,,,,,,,,,,,,,,,,,,gad
+,,,,,,,,,,,,,,,,,,,,,,,,,,gaf
+,,,,,,,,,,,,,,,,,,,,,,,,,,gar
+,,,,,,,,,,,,,,,,,,,,,,,,,,gax
+,,,,,,,,,,,,,,,,,,,,,,,,,,gbu
+,,,,,,,,,,,,,,,,,,,,,,,,,,gcd
+,,,,,,,,,,,,,,,,,,,,,,,,,,gcg
+,,,,,,,,,,,,,,,,,,,,,,,,,,gch
+,,,,,,,,,,,,,,,,,,,,,,,,,,gcx
+,,,,,,,,,,,,,,,,,,,,,,,,,,gdr
+,,,,,,,,,,,,,,,,,,,,,,,,,,gea
+,,,,,,,,,,,,,,,,,,,,,,,,,,ght
+,,,,,,,,,,,,,,,,,,,,,,,,,,gjt
+,,,,,,,,,,,,,,,,,,,,,,,,,,gjv
+,,,,,,,,,,,,,,,,,,,,,,,,,,gjw
+,,,,,,,,,,,,,,,,,,,,,,,,,,gkb
+,,,,,,,,,,,,,,,,,,,,,,,,,,gkr
+,,,,,,,,,,,,,,,,,,,,,,,,,,gmq
+,,,,,,,,,,,,,,,,,,,,,,,,,,gmz
+,,,,,,,,,,,,,,,,,,,,,,,,,,goj
+,,,,,,,,,,,,,,,,,,,,,,,,,,gom
+,,,,,,,,,,,,,,,,,,,,,,,,,,gor
+,,,,,,,,,,,,,,,,,,,,,,,,,,gou
+,,,,,,,,,,,,,,,,,,,,,,,,,,gpc
+,,,,,,,,,,,,,,,,,,,,,,,,,,gpj
+,,,,,,,,,,,,,,,,,,,,,,,,,,gpn
+,,,,,,,,,,,,,,,,,,,,,,,,,,gpo
+,,,,,,,,,,,,,,,,,,,,,,,,,,gpw
+,,,,,,,,,,,,,,,,,,,,,,,,,,gpx
+,,,,,,,,,,,,,,,,,,,,,,,,,,grb
+,,,,,,,,,,,,,,,,,,,,,,,,,,grp
+,,,,,,,,,,,,,,,,,,,,,,,,,,grt
+,,,,,,,,,,,,,,,,,,,,,,,,,,gsb
+,,,,,,,,,,,,,,,,,,,,,,,,,,gsf
+,,,,,,,,,,,,,,,,,,,,,,,,,,gsh
+,,,,,,,,,,,,,,,,,,,,,,,,,,gsu
+,,,,,,,,,,,,,,,,,,,,,,,,,,gtv
+,,,,,,,,,,,,,,,,,,,,,,,,,,gtz
+,,,,,,,,,,,,,,,,,,,,,,,,,,gvb
+,,,,,,,,,,,,,,,,,,,,,,,,,,gvt
+,,,,,,,,,,,,,,,,,,,,,,,,,,gwg
+,,,,,,,,,,,,,,,,,,,,,,,,,,gwh
+,,,,,,,,,,,,,,,,,,,,,,,,,,gwl
+,,,,,,,,,,,,,,,,,,,,,,,,,,gwm
+,,,,,,,,,,,,,,,,,,,,,,,,,,gwt
+,,,,,,,,,,,,,,,,,,,,,,,,,,gwv
+,,,,,,,,,,,,,,,,,,,,,,,,,,gwy
+,,,,,,,,,,,,,,,,,,,,,,,,,,gwz
+,,,,,,,,,,,,,,,,,,,,,,,,,,gxh
+,,,,,,,,,,,,,,,,,,,,,,,,,,gxm
+,,,,,,,,,,,,,,,,,,,,,,,,,,gyy
+,,,,,,,,,,,,,,,,,,,,,,,,,,gzl
+,,,,,,,,,,,,,,,,,,,,,,,,,,gzm
+,,,,,,,,,,,,,,,,,,,,,,,,,,gzr
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,hag
+,,,,,,,,,,,,,,,,,,,,,,,,,,hai
+,,,,,,,,,,,,,,,,,,,,,,,,,,haj
+,,,,,,,,,,,,,,,,,,,,,,,,,,haz
+,,,,,,,,,,,,,,,,,,,,,,,,,,hbz
+,,,,,,,,,,,,,,,,,,,,,,,,,,hcd
+,,,,,,,,,,,,,,,,,,,,,,,,,,hch
+,,,,,,,,,,,,,,,,,,,,,,,,,,hda
+,,,,,,,,,,,,,,,,,,,,,,,,,,hdr
+,,,,,,,,,,,,,,,,,,,,,,,,,,hep
+,,,,,,,,,,,,,,,,,,,,,,,,,,hga
+,,,,,,,,,,,,,,,,,,,,,,,,,,hgt
+,,,,,,,,,,,,,,,,,,,,,,,,,,hgv
+,,,,,,,,,,,,,,,,,,,,,,,,,,hij
+,,,,,,,,,,,,,,,,,,,,,,,,,,hik
+,,,,,,,,,,,,,,,,,,,,,,,,,,hiq
+,,,,,,,,,,,,,,,,,,,,,,,,,,hiu
+,,,,,,,,,,,,,,,,,,,,,,,,,,hjt
+,,,,,,,,,,,,,,,,,,,,,,,,,,hka
+,,,,,,,,,,,,,,,,,,,,,,,,,,hke
+,,,,,,,,,,,,,,,,,,,,,,,,,,hki
+,,,,,,,,,,,,,,,,,,,,,,,,,,hku
+,,,,,,,,,,,,,,,,,,,,,,,,,,hlg
+,,,,,,,,,,,,,,,,,,,,,,,,,,hlk
+,,,,,,,,,,,,,,,,,,,,,,,,,,hll
+,,,,,,,,,,,,,,,,,,,,,,,,,,hlt
+,,,,,,,,,,,,,,,,,,,,,,,,,,hlu
+,,,,,,,,,,,,,,,,,,,,,,,,,,hmj
+,,,,,,,,,,,,,,,,,,,,,,,,,,hmp
+,,,,,,,,,,,,,,,,,,,,,,,,,,hna
+,,,,,,,,,,,,,,,,,,,,,,,,,,hnj
+,,,,,,,,,,,,,,,,,,,,,,,,,,hns
+,,,,,,,,,,,,,,,,,,,,,,,,,,hnu
+,,,,,,,,,,,,,,,,,,,,,,,,,,hpb
+,,,,,,,,,,,,,,,,,,,,,,,,,,hpw
+,,,,,,,,,,,,,,,,,,,,,,,,,,hpx
+,,,,,,,,,,,,,,,,,,,,,,,,,,hqr
+,,,,,,,,,,,,,,,,,,,,,,,,,,hsk
+,,,,,,,,,,,,,,,,,,,,,,,,,,hsn
+,,,,,,,,,,,,,,,,,,,,,,,,,,htm
+,,,,,,,,,,,,,,,,,,,,,,,,,,htv
+,,,,,,,,,,,,,,,,,,,,,,,,,,hua
+,,,,,,,,,,,,,,,,,,,,,,,,,,hui
+,,,,,,,,,,,,,,,,,,,,,,,,,,hvi
+,,,,,,,,,,,,,,,,,,,,,,,,,,hvy
+,,,,,,,,,,,,,,,,,,,,,,,,,,hwa
+,,,,,,,,,,,,,,,,,,,,,,,,,,hwd
+,,,,,,,,,,,,,,,,,,,,,,,,,,hwh
+,,,,,,,,,,,,,,,,,,,,,,,,,,hwj
+,,,,,,,,,,,,,,,,,,,,,,,,,,hwl
+,,,,,,,,,,,,,,,,,,,,,,,,,,hwu
+,,,,,,,,,,,,,,,,,,,,,,,,,,hwv
+,,,,,,,,,,,,,,,,,,,,,,,,,,hwz
+,,,,,,,,,,,,,,,,,,,,,,,,,,hxh
+,,,,,,,,,,,,,,,,,,,,,,,,,,hya
+,,,,,,,,,,,,,,,,,,,,,,,,,,hzj
+,,,,,,,,,,,,,,,,,,,,,,,,,,hzl
+,,,,,,,,,,,,,,,,,,,,,,,,,,hzm
+,,,,,,,,,,,,,,,,,,,,,,,,,,hzt
+,,,,,,,,,,,,,,,,,,,,,,,,,,iao
+,,,,,,,,,,,,,,,,,,,,,,,,,,iaw
+,,,,,,,,,,,,,,,,,,,,,,,,,,ibw
+,,,,,,,,,,,,,,,,,,,,,,,,,,idz
+,,,,,,,,,,,,,,,,,,,,,,,,,,ieb
+,,,,,,,,,,,,,,,,,,,,,,,,,,iee
+,,,,,,,,,,,,,,,,,,,,,,,,,,iel
+,,,,,,,,,,,,,,,,,,,,,,,,,,iew
+,,,,,,,,,,,,,,,,,,,,,,,,,,ifl
+,,,,,,,,,,,,,,,,,,,,,,,,,,iga
+,,,,,,,,,,,,,,,,,,,,,,,,,,igh
+,,,,,,,,,,,,,,,,,,,,,,,,,,igo
+,,,,,,,,,,,,,,,,,,,,,,,,,,igu
+,,,,,,,,,,,,,,,,,,,,,,,,,,iha
+,,,,,,,,,,,,,,,,,,,,,,,,,,ihb
+,,,,,,,,,,,,,,,,,,,,,,,,,,ihc
+,,,,,,,,,,,,,,,,,,,,,,,,,,ihh
+,,,,,,,,,,,,,,,,,,,,,,,,,,ihl
+,,,,,,,,,,,,,,,,,,,,,,,,,,iho
+,,,,,,,,,,,,,,,,,,,,,,,,,,ihp
+,,,,,,,,,,,,,,,,,,,,,,,,,,ihr
+,,,,,,,,,,,,,,,,,,,,,,,,,,ihv
+,,,,,,,,,,,,,,,,,,,,,,,,,,ihw
+,,,,,,,,,,,,,,,,,,,,,,,,,,ihz
+,,,,,,,,,,,,,,,,,,,,,,,,,,iia
+,,,,:3,,,,,,,,,,,,,,,,,,,,,,iim
+,,,,,,,,,,,,,,,,,,,,,,,,,,iin
+,,,,,,,,,,,,,,,,,,,,,,,,,,iio
+,,,,,,,,,,,,,,,,,,,,,,,,,,iiy
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijb
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijd
+,,,,,,,,,,,,,,,,,,,,,,,,,,ije
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijg
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijh
+,,,,,,,,,,,,,,,,,,,,,,,,,,iji
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijk
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijl
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijm
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijp
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijq
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijs
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijv
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijw
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijx
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijy
+,,,,,,,,,,,,,,,,,,,,,,,,,,ijz
+,,,,,,,,,,,,,,,,,,,,,,,,,,ikf
+,,,,,,,,,,,,,,,,,,,,,,,,,,ikm
+,,,,,,,,,,,,,,,,,,,,,,,,,,ikp
+,,,,,,,,,,,,,,,,,,,,,,,,,,iku
+,,,,,,,,,,,,,,,,,,,,,,,,,,iky
+,,,,,,,,,,,,,,,,,,,,,,,,,,ilb
+,,,,,,,,,,,,,,,,,,,,,,,,,,ilg
+,,,,,,,,,,,,,,,,,,,,,,,,,,ilp
+,,,,,,,,,,,,,,,,,,,,,,,,,,ilr
+,,,,,,,,,,,,,,,,,,,,,,,,,,ima
+,,,,,,,,,,,,,,,,,,,,,,,,,,imf
+,,,,,,,,,,,,,,,,,,,,,,,,,,imo
+,,,,,,,,,,,,,,,,,,,,,,,,,,inc
+,,,,,,,,,,,,,,,,,,,,,,,,,,ior
+,,,,,,,,,,,,,,,,,,,,,,,,,,ipi
+,,,,,,,,,,,,,,,,,,,,,,,,,,iqt
+,,,,,,,,,,,,,,,,,,,,,,,,,,iri
+,,,,,,,,,,,,,,,,,,,,,,,,,,iro
+,,,,,,,,,,,,,,,,,,,,,,,,,,iru
+,,,,,,,,,,,,,,,,,,,,,,,,,,iry
+,,,,,,,,,,,,,,,,,,,,,,,,,,ito
+,,,,,,,,,,,,,,,,,,,,,,,,,,iuc
+,,,,,,,,,,,,,,,,,,,,,,,,,,iud
+,,,,,,,,,,,,,,,,,,,,,,,,,,iue
+,,,,,,,,,,,,,,,,,,,,,,,,,,iui
+,,,,,,,,,,,,,,,,,,,,,,,,,,iuk
+,,,,,,,,,,,,,,,,,,,,,,,,,,iun
+,,,,,,,,,,,,,,,,,,,,,,,,,,ivh
+,,,,,,,,,,,,,,,,,,,,,,,,,,ivm
+,,,,,,,,,,,,,,,,,,,,,,,,,,iwg
+,,,,,,,,,,,,,,,,,,,,,,,,,,iwj
+,,,,,,,,,,,,,,,,,,,,,,,,,,iwl
+,,,,,,,,,,,,,,,,,,,,,,,,,,iwo
+,,,,,,,,,,,,,,,,,,,,,,,,,,iwp
+,,,,,,,,,,,,,,,,,,,,,,,,,,iwt
+,,,,,,,,,,,,,,,,,,,,,,,,,,iwu
+,,,,,,,,,,,,,,,,,,,,,,,,,,iwv
+,,,,,,,,,,,,,,,,,,,,,,,,,,iww
+,,,,,,,,,,,,,,,,,,,,,,,,,,iwy
+,,,,,,,,,,,,,,,,,,,,,,,,,,ixb
+,,,,,,,,,,,,,,,,,,,,,,,,,,ixe
+,,,,,,,,,,,,,,,,,,,,,,,,,,ixz
+,,,,,,,,,,,,,,,,,,,,,,,,,,iyb
+,,,,,,,,,,,,,,,,,,,,,,,,,,iyi
+,,,,,,,,,,,,,,,,,,,,,,,,,,iyo
+,,,,,,,,,,,,,,,,,,,,,,,,,,iyu
+,,,,,,,,,,,,,,,,,,,,,,,,,,jaf
+,,,,,,,,,,,,,,,,,,,,,,,,,,jah
+,,,,,,,,,,,,,,,,,,,,,,,,,,jaj
+,,,,,,,,,,,,,,,,,,,,,,,,,,jap
+,,,,,,,,,,,,,,,,,,,,,,,,,,jbc
+,,,,,,,,,,,,,,,,,,,,,,,,,,jbg
+,,,,,,,,,,,,,,,,,,,,,,,,,,jbj
+,,,,,,,,,,,,,,,,,,,,,,,,,,jbm
+,,,,,,,,,,,,,,,,,,,,,,,,,,jcd
+,,,,,,,,,,,,,,,,,,,,,,,,,,jch
+,,,,,,,,,,,,,,,,,,,,,,,,,,jcp
+,,,,,,,,,,,,,,,,,,,,,,,,,,jcy
+,,,,,,,,,,,,,,,,,,,,,,,,,,jdd
+,,,,,,,,,,,,,,,,,,,,,,,,,,jdg
+,,,,,,,,,,,,,,,,,,,,,,,,,,jds
+,,,,,,,,,,,,,,,,,,,,,,,,,,jel
+,,,,,,,,,,,,,,,,,,,,,,,,,,jfa
+,,,,,,,,,,,,,,,,,,,,,,,,,,jfb
+,,,,,,,,,,,,,,,,,,,,,,,,,,jfe
+,,,,,,,,,,,,,,,,,,,,,,,,,,jfm
+,,,,,,,,,,,,,,,,,,,,,,,,,,jfn
+,,,,,,,,,,,,,,,,,,,,,,,,,,jgd
+,,,,,,,,,,,,,,,,,,,,,,,,,,jgk
+,,,,,,,,,,,,,,,,,,,,,,,,,,jgm
+,,,,,,,,,,,,,,,,,,,,,,,,,,jhp
+,,,,,,,,,,,,,,,,,,,,,,,,,,jhy
+,,,,,,,,,,,,,,,,,,,,,,,,,,jio
+,,,,,,,,,,,,,,,,,,,,,,,,,,jju
+,,,,,,,,,,,,,,,,,,,,,,,,,,jjv
+,,,,,,,,,,,,,,,,,,,,,,,,,,jjz
+,,,,,,,,,,,,,,,,,,,,,,,,,,jke
+,,,,,,,,,,,,,,,,,,,,,,,,,,jkg
+,,,,,,,,,,,,,,,,,,,,,,,,,,jki
+,,,,,,,,,,,,,,,,,,,,,,,,,,jkv
+,,,,,,,,,,,,,,,,,,,,,,,,,,jkw
+,,,,,,,,,,,,,,,,,,,,,,,,,,jlk
+,,,,,,,,,,,,,,,,,,,,,,,,,,jln
+,,,,,,,,,,,,,,,,,,,,,,,,,,jlv
+,,,,,,,,,,,,,,,,,,,,,,,,,,jme
+,,,,,,,,,,,,,,,,,,,,,,,,,,jmf
+,,,,,,,,,,,,,,,,,,,,,,,,,,jmj
+,,,,,,,,,,,,,,,,,,?,,,,,,,,jms
+,,,,,,,,,,,,,,,,,,,,,,,,,,jmv
+,,,,,,,,,,,,,,,,,,,,,,,,,,jnj
+,,,,,,,,,,,,,,,,,,,,,,,,,,jnl
+,,,,,,,,,,,,,,,,,,,,,,,,,,jpo
+,,,,,,,,,,,,,,,,,,,,,,,,,,jpw
+,,,,,,,,,,,,,,,,,,,,,,,,,,jpx
+,,,,,,,,,,,,,,,,,,,,,,,,,,jqr
+,,,,,,,,,,,,,,,,,,,,,,,,,,jrm
+,,,,,,,,,,,,,,,,,,,,,,,,,,jrn
+,,,,,,,,,,,,,,,,,,,,,,,,,,jrq
+,,,,,,,,,,,,,,,,,,,,,,,,,,jru
+,,,,,,,,,,,,,,,,,,,,,,,,,,jsf
+,,,,,,,,,,,,,,,,,,,,,,,,,,jsm
+,,,,,,,,,,,,,,,,,,,,,,,,,,jso
+,,,,,,,,,,,,,,,,,,,,,,,,,,jst
+,,,,,,,,,,,,,,,,,,,,,,,,,,jsv
+,,,,,,,,,,,,,,,,,,,,,,,,,,jtj
+,,,,,,,,,,,,,,,,,,,,,,,,,,jtm
+,,,,,,,,,,,,,,,,,,,,,,,,,,jtv
+,,,,,,,,,,,,,,,,,,,,,,,,,,juh
+,,,,,,,,,,,,,,,,,,,,,,,,,,jui
+,,,,,,,,,,,,,,,,,,,,,,,,,,jun
+,,,,,,,,,,,,,,,,,,,,,,,,,,jvb
+,,,,,,,,,,,,,,,,,,,,,,,,,,jvi
+,,,,,,,,,,,,,,,,,,,,,,,,,,jvj
+,,,,,,,,,,,,,,,,,,,,,,,,,,jvm
+,,,,,,,,,,,,,,,,,,,,,,,,,,jvn
+,,,,,,,,,,,,,,,,,,,,,,,,,,jvs
+,,,,,,,,,,,,,,,,,,,,,,,,,,jwh
+,,,,,,,,,,,,,,,,,,,,,,,,,,jwl
+,,,,,,,,,,,,,,,,,,,,,,,,,,jwt
+,,,,,,,,,,,,,,,,,,,,,,,,,,jwv
+,,,,,,,,,,,,,,,,,,,,,,,,,,jww
+,,,,,,,,,,,,,,,,,,,,,,,,,,jxd
+,,,,,,,,,,,,,,,,,,,,,,,,,,jxh
+,,,,,,,,,,,,,,,,,,,,,,,,,,jxm
+,,,,,,,,,,,,,,,,,,,,,,,,,,jyk
+,,,,,,,,,,,,,,,,,,,,,,,,,,jza
+,,,,,,,,,,,,,,,,,,,,,,,,,,jzd
+,,,,,,,,,,,,,,,,,,,,,,,,,,jze
+,,,,,,,,,,,,,,,,,,,,,,,,,,jzg
+,,,,,,,,,,,,,,,,,,,,,,,,,,jzj
+,,,,,,,,,,,,,,,,,,,,,,,,,,jzl
+,,,,,,,,,,,,,,,,,,,,,,,,,,jzm
+,,,,,,,,,,,,,,,,,,,,,,,,,,jzp
+,,,,,,,,,,,,,,,,,,,,,,,,,,kab
+,,,,,,,,,,,,,,,,,,,,,,,,,,kcd
+,,,,,,,,,,,,,,,,,,,,,,,,,,kch
+,,,,,,,,,,,,,,,,,,,,,,,,,,kdg
+,,,,,,,,,,,,,,,,,,,,,,,,,,kdk
+,,,,,,,,,,,,,,,,,,,,,,,,,,kdr
+,,,,,,,,,,,,,,,,,,,,,,,,,,kds
+,,,,,,,,,,,,,,,,,,,,,,,,,,kga
+,,,,,,,,,,,,,,,,,,,,,,,,,,kgd
+,,,,,,,,,,,,,,,,,,,,,,,,,,kgq
+,,,,,,,,,,,,,,,,,,,,,,,,,,kgv
+,,,,,,,,,,,,,,,,,,,,,,,,,,kgw
+,,,,,,,,,,,,,,,,,,,,,,,,,,khq
+,,,,,,,,,,,,,,,,,,,,,,,,,,kib
+,,,,,,,,,,,,,,,,,,,,,,,,,,kig
+,,,,,,,,,,,,,,,,,,,,,,,,,,kih
+,,,,,,,,,,,,,,,,,,,,,,,,,,kjt
+,,,,,,,,,,,,,,,,,,,,,,,,,,kjw
+,,,,,,,,,,,,,,,,,,,,,,,,,,klg
+,,,,,,,,,,,,,,,,,,,,,,,,,,kll
+,,,,,,,,,,,,,,,,,,,,,,,,,,klm
+,,,,,,,,,,,,,,,,,,,,,,,,,,kln
+,,,,,,,,,,,,,,,,,,,,,,,,,,klo
+,,,,,,,,,,,,,,,,,,,,,,,,,,kmj
+,,,,,,,,,,,,,,,,,,,,,,,,,,kmp
+,,,,,,,,,,,,,,,,,,,,,,,,,,kmz
+,,,,,,,,,,,,,,,,,,,,,,,,,,koi
+,,,,,,,,,,,,,,,,,,,,,,,,,,koo
+,,,,,,,,,,,,,,,,,,,,,,,,,,kpb
+,,,,,,,,,,,,,,,,,,,,,,,,,,kpl
+,,,,,,,,,,,,,,,,,,,,,,,,,,kpw
+,,,,,,,,,,,,,,,,,,,,,,,,,,kqr
+,,,,,,,,,,,,,,,,,,,,,,,,,,kqx
+,,,,,,,,,,,,,,,,,,,,,,,,,,ksb
+,,,,,,,,,,,,,,,,,,,,,,,,,,ksd
+,,,,,,,,,,,,,,,,,,,,,,,,,,ksf
+,,,,,,,,,,,,,,,,,,,,,,,,,,ksg
+,,,,,,,,,,,,,,,,,,,,,,,,,,ksh
+,,,,,,,,,,,,,,,,,,,,,,,,,,kuh
+,,,,,,,,,,,,,,,,,,,,,,,,,,kvk
+,,,,,,,,,,,,,,,,,,,,,,,,,,kvl
+,,,,,,,,,,,,,,,,,,,,,,,,,,kvm
+,,,,,,,,,,,,,,,,,,,,,,,,,,kvx
+,,,,,,,,,,,,,,,,,,,,,,,,,,kws
+,,,,,,,,,,,,,,,,,,,,,,,,,,kwv
+,,,,,,,,,,,,,,,,,,,,,,,,,,kxf
+,,,,,,,,,,,,,,,,,,,,,,,,,,kxg
+,,,,,,,,,,,,,,,,,,,,,,,,,,kxl
+,,,,,,,,,,,,,,,,,,,,,,,,,,kxm
+,,,,,,,,,,,,,,,,,,,,,,,,,,kzf
+,,,,,,,,,,,,,,,,,,,,,,,,,,kzg
+,,,,,,,,,,,,,,,,,,,,,,,,,,kzl
+,,,,,,,,,,,,,,,,,,,,,,,,,,kzm
+,,,,,,,,,,,,,,,,,,,,,,,,,,kzr
+,,,,,,,,,,,,,,,,,,,,,,,,,,kzs
+,,,,,,,,,,,,,,,,,,,,,,,,,,kzt
+,,,,,,,,,,,,,,,,,,,,,,,,,,kzw
+,,,,,,,,,,,,,,,,,,,,,,,,,,lap
+,,,,,,,,,,,,,,,,,,,,,,,,,,lbi
+,,,,,,,,,,,,,,,,,,,,,,,,,,lbk
+,,,,,,,,,,,,,,,,,,,,,,,,,,lbp
+,,,,,,,,,,,,,,,,,,,,,,,,,,lbu
+,,,,,,,,,,,,,,,,,,,,,,,,,,lbv
+,,,,,,,,,,,,,,,,,,,,,,,,,,lbw
+,,,,,,,,,,,,,,,,,,,,,,,,,,lcf
+,,,,,,,,,,,,,,,,,,,,,,,,,,lcp
+,,,,,,,,,,,,,,,,,,,,,,,,,,lek
+,,,,,,,,,,,,,,,,,,,,,,,,,,lgu
+,,,,,,,,,,,,,,,,,,,,,,,,,,lgv
+,,,,,,,,,,,,,,,,,,,,,,,,,,lhb
+,,,,,,,,,,,,,,,,,,,,,,,,,,lhc
+,,,,,,,,,,,,,,,,,,,,,,,,,,lhh
+,,,,,,,,,,,,,,,,,,,,,,,,,,lhy
+,,,,,,,,,,,,,,,,,,,,,,,,,,lia
+,,,,,,,,,,,,,,,,,,,,,,,,,,ljw
+,,,,,,,,,,,,,,,,,,,,,,,,,,lkb
+,,,,,,,,,,,,,,,,,,,,,,,,,,lkg
+,,,,,,,,,,,,,,,,,,,,,,,,,,llq
+,,,,,,,,,,,,,,,,,,,,,,,,,,lmb
+,,,,,,,,,,,,,,,,,,,,,,,,,,lml
+,,,,,,,,,,,,,,,,,,,,are you really gonna scroll past without saying meowdy?,,,,,,lmz
+,,,,,,,,,,,,,,,,,,,,,,,,,,lnh
+,,,,,,,,,,,,,,,,,,,,,,,,,,lnp
+,,,,,,,,,,,,,,,,,,,,,,,,,,lnq
+,,,,,,,,,,,,,,,,,,,,,,,,,,loi
+,,,,,,,,,,,,,,,,,,,,,,,,,,lox
+,,,,,,,,,,,,,,,,,,,,,,,,,,lpb
+,,,,,,,,,,,,,,,,,,,,,,,,,,lpc
+,,,,,,,,,,,,,,,,,,,,,,,,,,lpm
+,,,,,,,,,,,,,,,,,,,,,,,,,,lpn
+,,,,,,,,,,,,,,,,,,,,,,,,,,lpt
+,,,,,,,,,,,,,,,,,,,,,,,,,,lpw
+,,,,,,,,,,,,,,,,,,,,,,,,,,lql
+,,,,,,,,,,,,,,,,,,,,,,,,,,lqx
+,,,,,,,,,,,,,,,,,,,,,,,,,,lsc
+,,,,,,,,,,,,,,,,,,,,,,,,,,lsf
+,,,,,,,,,,,,,,,,,,,,,,,,,,lte
+,,,,,,,,,,,,,,,,,,,,,,,,,,ltv
+,,,,,,,,,,,,,,,,,,,,,,,,,,lus
+,,,,,,,,,,,,,,,,,,,,,,,,,,lux
+,,,,,,,,,,,,,,,,,,,,,,,,,,luz
+,,,,,,,,,,,,,,,,,,,,,,,,,,lvm
+,,,,,,,,,,,,,,,,,,,,,,,,,,lwb
+,,,,,,,,,,,,,,,,,,,,,,,,,,lwh
+,,,,,,,,,,,,,,,,,,,,,,,,,,lwn
+,,,,,,,,,,,,,,,,,,,,,,,,,,lwq
+,,,,,,,,,,,,,,,,,,,,,,,,,,lwy
+,,,,,,,,,,,,,,,,,,,,,,,,,,lwz
+,,,,,,,,,,,,,,,,,,,,,,,,,,lxb
+,,,,,,,,,,,,,,,,,,,,,,,,,,lxh
+,,,,,,,,,,,,,,,,,,,,,,,,,,lyn
+,,,,,,,,,,,,,,,,,,,,,,,,,,lyr
+,,,,,,,,,,,,,,,,,,,,,,,,,,lzl
+,,,,,,,,,,,,,,,,,,,,,,,,,,mbb
+,,,,,,,,,,,,,,,,,,,,,,,,,,mbg
+,,,,,,,,,,,,,,,,,,,,,,,,,,mdf
+,,,,,,,,,,,,,,,,,,,,,,,,,,mdg
+,,,,,,,,,,,,,,,,,,,,,,,,,,mdh
+,,,,,,,,,,,,,,,,,,,,,,,,,,mdo
+,,,,,,,,,,,,,,,,,,,,,,,,,,mdr
+,,,,,,,,,,,,,,,,,,,,,,,,,,mdw
+,,,,,,,,,,,,,,,,,,,,,,,,,,met
+,,,,,,,,,,,,,,,,,,,,,,,,,,mey
+,,,,,,,,,,,,,,,,,,,,,,,,,,mhb
+,,,,,,,,,,,,,,,,,,,,,,,,,,mhf
+,,,,,,,,,,,,,,,,,,,,,,,,,,mhg
+,,,,,,,,,,,,,,,,,,,,,,,,,,mhk
+,,,,,,,,,,,,,,,,,,,,,,,,,,mhx
+,,,,,,,,,,,,,,,,,,,,,,,,,,mhy
+,,,,,,,,,,,,,,,,,,,,,,,,,,mjb
+,,,,,,,,,,,,,,,,,,,,,,,,,,mjm
+,,,,,,,,,,,,,,,,,,,,,,,,,,mjy
+,,,,,,,,,,,,,,,,,,,,,,,,,,mkb
+,,,,,,,,,,,,,,,,,,,,,,,,,,mkg
+,,,,,,,,,,,,,,,,,,,,,,,,,,mkx
+,,,,,,,,,,,,,,,,,,,,,,,,,,mlx
+,,,,,,,,,,,,,,,,,,,,,,,,,,mmr
+,,,,,,,,,,,,,,,,,,,,,,,,,,moc
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpa
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpf
+,,,,,,,,,,,,,,,,,,,,,,,,,,mph
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpj
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpk
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpl
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpn
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpq
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpr
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpt
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpu
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpv
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpw
+,,,,,,,,,,,,,,,,,,,,,,,,,,mpz
+,,,,,,,,,,,,,,,,,,,,,,,,,,mru
+,,,,,,,,,,,,,,,,,,,,,,,,,,msh
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,mul
+,,,,,,,,,,,,,,,,,,,,,,,,,,mur
+,,,,,,,,,,,,,,,,,,,,,,,,,,muy
+,,,,,,,,,,,,,,,,,,,,,,,,,,mwb
+,,,,,,,,,,,,,,,,,,,,,,,,,,mwf
+,,,,,,,,,,,,,,,,,,,,,,,,,,mwt
+,,,,,,,,,,,,,,,,,,,,,,,,,,mwz
+,,,,,,,,,,,,,,,,,,,,,,,,,,mxj
+,,,,,,,,,,,,,,,,,,,,,,,,,,mxu
+,,,,,,,,,,,,,,,,,,,,,,,,,,myr
+,,,,,,,,,,,,,,,,,,,,,,,,,,myu
+,,,,,,,,,,,,,,,,,,,,,,,,,,mzg
+,,,,,,,,,,,,,,,,,,,,,,,,,,nax
+,,,,,,,,,,,,,,,,,,,,,,,,,,nbi
+,,,,,,,,,,,,,,,,,,,,,,,,,,ncb
+,,,,,,,,,,,,,,,,,,,,,,,,,,ncc
+,,,,,,,,,,,,,,,,,,,,,,,,,,ncd
+,,,,,,,,,,,,,,,,,,,,,,,,,,nch
+,,,,,,,,,,,,,,,,,,,,,,,,,,ncp
+,,,,,,,,,,,,,,,,,,,,,,,,,,ncv
+,,,,,,,,,,,,,,,,,,,,,,,,,,nda
+,,,,,,,,,,,,,,,,,,,,,,,,,,ndr
+,,,,,,,,,,,,,,,,,,,,,,,,,,nev
+,,,,,,,,,,,,,,,,,,,,,,,,,,nhd
+,,,,,,,,,,,,,,,,,,,,,,,,,,nhk
+,,,,,,,,,,,,,,,,,,,,,,,,,,nhp
+,,,,,,,,,,,,,,,,,,,,,,,,,,nhv
+,,,,,,,,,,,,,,,,,,,,,,,,,,nhz
+,,,,,,,,,,,,,,,,,,,,,,,,,,nia
+,,,,,,,,,,,,,,,,,,,,,,,,,,nin
+,,,,,,,,,,,,,,,,,,,,,,,,,,nir
+,,,,,,,,,,,,,,,,,,,,,,,,,,nis
+,,,,,,,,,,,,,,,,,,,,,,,,,,niu
+,,,,,,,,,,,,,,,,,,,,,,,,,,nke
+,,,,,,,,,,,,,,,,,,,,,,,,,,nkf
+,,,,,,,,,,,,,,,,,,,,,,,,,,nkk
+,,,,,,,,,,,,,,,,,,,,,,,,,,nku
+,,,,,,,,,,,,,,,,,,,,,,,,,,nkv
+,,,,,,,,,,,,,,,,,,,,,,,,,,nkw
+,,,,,,,,,,,,,,,,,,,,,,,,,,nlo
+,,,,,,,,,,,,,,,,,,,,,,,,,,nlv
+,,,,,,,,,,,,,,,,,,,,,,,,,,nmb
+,,,,,,,,,,,,,,,,,,,,,,,,,,nmp
+,,,,,,,,,,,,,,,,,,,,,,,,,,nmu
+,,,,,,,,,,,,,,,,,,,,,,,,,,nmz
+,,,,,,,,,,,,,,,,,,,,,,,,,,nna
+,,,,,,,,,,,,,,,,,,,,,,,,,,nox
+,,,,,,,,,,,,,,,,,,,,,,,,,,npb
+,,,,,,,,,,,,,,,,,,,,,,,,,,npn
+,,,,,,,,,,,,,,,,,,,,,,,,,,npw
+,,,,,,,,,,,,,,,,,,,,,,,,,,npx
+,,,,,,,,,,,,,,,,,,,,,,,,,,nqx
+,,,,,,,,,,,,,,,,,,,,,,,,,,nrf
+,,,,,,,,,,,,,,,,,,,,,,,,,,nrg
+,,,,,,,,,,,,,,,,,,,,,,,,,,nsb
+,,,,,,,,,,,,,,,,,,,,,,,,,,nsc
+,,,,,,,,,,,,,,,,,,,,,,,,,,ntd
+,,,,,,,,,,,,,,,,,,,,,,,,,,nto
+,,,,,,,,,,,,,,,,,,,,,,,,,,ntv
+,,,,,,,,,,,,,,,,,,,,,,,,,,ntz
+,,,,,,,,,,,,,,,,,,,,,,,,,,nvg
