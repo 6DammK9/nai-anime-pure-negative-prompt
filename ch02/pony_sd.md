@@ -1,0 +1,67 @@
+# Observation of Pony Diffusion (v5.5 SD2.1 + V6 SDXL) #
+
+## Thank you for writing the draft ##
+
+- I don't have QQ. Therefore I won't care if my "observation" will collapse the "wave function" ~~eliminate superposition a.k.a confusion~~ there.
+
+- [Original weibo post.](https://weibo.com/7152334518/O4SGtsI7K)
+
+- [The referenced 4chan post.](https://boards.4chan.org/h/thread/7883612)
+
+- [Discord post 1.](https://discord.com/channels/1077510466470952990/1109884866964754644/1217145257288794163), [Discord post 2.](https://discord.com/channels/930499730843250783/1019446913268973689/1217091897697505310)
+
+![24031401.png](./img/24031401.png)
+
+![24031402.png](./img/24031401.png)
+
+## More to come. ##
+
+### Why CivitAI made Pony model as a distinct category? ###
+
+- As written in title, **they are all in unaltered SD archetiture**. Unlike [Fluffusion](https://rentry.co/fluffusion), which is SD1.5 + vpred, pony diffusion doesn't do it to the extreme.
+- However, with **super high learning rate**, and **some fallacy on tagging**, it shifted the model weight great enough to make it unusuable with any SD related tools, *including ControlNet.*
+- Merging / training LoRA on top of it will be only applicable to its variant, and outputing *pure noise* when mating with other (mainstream) models.
+
+Following images are referenced to [ch05](../ch05/README_XL.MDs), model components are compared with ovr manner (average of a model pool):
+
+`_212` as V5.5
+
+![xyz_grid-0568-2381024291-27648-1182-6-48-20231228234826.jpg](../ch05/img/xyz_grid-0568-2381024291-27648-1182-6-48-20231228234826.jpg)
+
+`_x14` as V6
+
+![xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg](../ch05/img/xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg)
+
+- The recent "pony merge" is not totally false / fake, it becomes possible because **the downstream finetunes are using general techniques** (e.g. taggers common with AnimagineXL V3 / kohakuXL), and shifting the model weights into a more common space.
+
+`_x48`, `_x50` as V6's downstream finetunes
+
+![xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg](img/xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg)
+
+![xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg](img/xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg)
+
+### Why the "hash" seems so short? ###
+
+- It is simple: prompts are digested into embeddings by [BPE](https://huggingface.co/learn/nlp-course/chapter6/5). [Live demo straight from NovelAI.](https://novelai.net/tokenizer).
+- Its *quality tagging* is actaully messed up after BPE, and **such tagging is applied across 2.6M of images.**
+- With the **super high learning rate**, it does the *perfect score* by *outputing pure noise* with any pinch of oridinary prompts.
+
+![24031403.png](./img/24031403.png)
+
+- With same technique applied, even legit hash is applied (see code block below), **BPE will break the hashes into "subwords" which are obviously short enough to have collision.**
+
+```
+Name: 24031403.PNG
+Size: 32155 bytes (31 KiB)
+CRC32: 44C28C62
+CRC64: 81A4ABBD85D9E8B0
+SHA256: 3C52AB236D77964B64DD4736BE8BE742AA6BCBA371476AF151CFD06BE11CF759
+SHA1: BD2D832A3A2B3B99B2793BFDA04D9C8A48A71788
+BLAKE2sp: 3E609B081A24C516DE51D9EE4BF85D5DE8B610FCA4787CAAAD052767D1180529
+```
+
+> houshou marine found as a 'hash' in aua, possibly incomplete
+
+![xyz_grid-0000-3788460102.png](./img/xyz_grid-0000-3788460102.png)
+
+- [Live spreadsheet](https://lite.framacalc.org/4ttgzvd0rx-a6jf), and [an archived CSV](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch02/1710391046.csv) ~~Github support CSV view like PowerBI?~~
