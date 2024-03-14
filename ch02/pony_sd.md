@@ -10,9 +10,9 @@
 
 - [Discord post 1.](https://discord.com/channels/1077510466470952990/1109884866964754644/1217145257288794163), [Discord post 2.](https://discord.com/channels/930499730843250783/1019446913268973689/1217091897697505310)
 
-![24031401.png](./img/24031401.png)
+![24031401.PNG](./img/24031401.PNG)
 
-![24031402.png](./img/24031401.png)
+![24031402.PNG](./img/24031402.PNG)
 
 ## More to come. ##
 
@@ -36,9 +36,9 @@ Following images are referenced to [ch05](../ch05/README_XL.MDs), model componen
 
 `_x48`, `_x50` as V6's downstream finetunes
 
-![xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg](img/xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg)
+![xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg](../ch05/img/xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg)
 
-![xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg](img/xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg)
+![xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg](../ch05/img/xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg)
 
 ### Why the "hash" seems so short? ###
 
@@ -46,7 +46,7 @@ Following images are referenced to [ch05](../ch05/README_XL.MDs), model componen
 - Its *quality tagging* is actaully messed up after BPE, and **such tagging is applied across 2.6M of images.**
 - With the **super high learning rate**, it does the *perfect score* by *outputing pure noise* with any pinch of oridinary prompts.
 
-![24031403.png](./img/24031403.png)
+![24031403.PNG](./img/24031403.PNG)
 
 - With same technique applied, even legit hash is applied (see code block below), **BPE will break the hashes into "subwords" which are obviously short enough to have collision.**
 
@@ -60,8 +60,13 @@ SHA1: BD2D832A3A2B3B99B2793BFDA04D9C8A48A71788
 BLAKE2sp: 3E609B081A24C516DE51D9EE4BF85D5DE8B610FCA4787CAAAD052767D1180529
 ```
 
+- [Live spreadsheet](https://lite.framacalc.org/4ttgzvd0rx-a6jf), and [an archived CSV](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch02/1710391046.csv) ~~Github support CSV view like PowerBI?~~
+
 > houshou marine found as a 'hash' in aua, possibly incomplete
+
+<details>
+    <summary>Full of XY plot. Click to open.</summary>
 
 ![xyz_grid-0000-3788460102.png](./img/xyz_grid-0000-3788460102.png)
 
-- [Live spreadsheet](https://lite.framacalc.org/4ttgzvd0rx-a6jf), and [an archived CSV](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch02/1710391046.csv) ~~Github support CSV view like PowerBI?~~
+</details>
