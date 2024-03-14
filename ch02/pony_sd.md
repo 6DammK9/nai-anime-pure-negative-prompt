@@ -49,7 +49,7 @@ Following images are referenced to [ch05](../ch05/README_XL.MDs), model componen
 
 - With the **super high learning rate** ("100x" from a value not referenced yet), it does the *perfect score* by *outputing pure noise* with any pinch of oridinary prompts.
 
-![24031404.PNG](./img/24031404.PNG)
+![24031404.png](./img/24031404.png)
   
 - With same technique applied, even legit hash is applied (see code block below), **BPE will break the hashes into "subwords" which are obviously short enough to have collision.**
 
