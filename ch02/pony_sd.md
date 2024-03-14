@@ -65,7 +65,7 @@ BLAKE2sp: 3E609B081A24C516DE51D9EE4BF85D5DE8B610FCA4787CAAAD052767D1180529
 > houshou marine found as a 'hash' in aua, possibly incomplete
 
 <details>
-    <summary>Full of XY plot. Click to open.</summary>
+    <summary>Click to open.</summary>
 
 ![xyz_grid-0000-3788460102.png](./img/xyz_grid-0000-3788460102.png)
 
