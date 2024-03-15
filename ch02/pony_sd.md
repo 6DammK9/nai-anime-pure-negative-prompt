@@ -19,7 +19,7 @@
 ### Why CivitAI made Pony model as a distinct category? ###
 
 - As written in title, **they are all in unaltered SD archetiture**. Unlike [Fluffusion](https://rentry.co/fluffusion), which is SD1.5 + vpred, pony diffusion doesn't do it to the extreme.
-- However, with **super high learning rate**, and **some fallacy on tagging**, it shifted the model weight great enough to make it unusuable with any SD related tools, *including ControlNet.*
+- However, with **super high learning rate**, and **some fallacy on tagging** ([CivitAI article on claimed tagging approach](https://civitai.com/articles/4248)), it shifted the model weight great enough to make it unusuable with any SD related tools, *including ControlNet.*
 - Merging / training LoRA on top of it will be only applicable to its variant, and outputing *pure noise* when mating with other (mainstream) models.
 
 Following images are referenced to [ch05](../ch05/README_XL.MDs), model components are compared with ovr manner (average of a model pool):
