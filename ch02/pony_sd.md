@@ -98,6 +98,14 @@ BLAKE2sp: PmCbCBokxRbeUdnuS/hdXei2EPykeHyqrQUnZ9EYBSk=
 
 ![AJOLkbt.jpeg](https://i.imgur.com/AJOLkbt.jpeg)
 
+- Quick PoC (wanted to OCR it for integrity, but it is too blury and I used different implementation): [rot42_xor.py](./rot42_xor.py) ~~Can make a 1-liner version~~
+
+```log
+>python rot42_xor.py houshou_marine  
+xekixek_cqhydu
+1E♠♫K/♀▼☺∟↨Y
+```
+
 - Given ciphertext "aua" and plaintext "houshou_marin" is provided, *encryption algorithm* may be deduced:
 
 ~~I decided to include this updated session because I really think that the claims are plausible, especially the fallacy about embedding has already rooted in this model.~~
