@@ -83,3 +83,21 @@ BLAKE2sp: PmCbCBokxRbeUdnuS/hdXei2EPykeHyqrQUnZ9EYBSk=
 ![xyz_grid-0000-3788460102.png](./img/xyz_grid-0000-3788460102.png)
 
 </details>
+
+### Why even it is claimed encryption / obfusciation, it is still looks like a hash? ###
+
+- Under BPE / CLIP has already introduced information loss as embeddings / vectors, it *implies* to a kind of hashing.
+
+- Predecending step can be arbitary to have a "hash like" feel, since *collision* occurs in embedding level, instead of prompt level. This is a kind of [prompt injection](https://www.robustintelligence.com/blog-posts/prompt-injection-attack-on-gpt-4), which yields "coincidence" and introducing undesired effect.
+
+- PDv6 is claimed **artist name is not deleted nor hashed**, instead it is encrypted by [XOR](https://en.wikipedia.org/wiki/Exclusive_or) + [ROT-42](https://en.wikipedia.org/wiki/Caesar_cipher)
+
+![24031501.jpg](./img/24031501.jpg)
+
+- And... [a random screenshot has been provided.](https://medium.com/@kristiyan.velkov/meet-devin-the-worlds-first-ai-software-engineer-f0c35f221bdd)
+
+![AJOLkbt.jpeg](https://i.imgur.com/AJOLkbt.jpeg)
+
+- Given ciphertext "aua" and plaintext "houshou_marin" is provided, *encryption algorithm* may be deduced:
+
+~~I decided to include this updated session because I really think that the claims are plausible, especially the fallacy about embedding has already rooted in this model.~~
