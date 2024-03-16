@@ -9,6 +9,7 @@ Some BS (which is too far from ground truth) will be removed.
 - Merged "photorealistic model" ~~cosplayer diffusion~~, `basil_mix`: [4de704d8.md](4de704d8.md)
 - Model history (drawn to introduce to a "realistic model" user how the model comes from): [history.md](history.md)
 - Observation from #NovelAIDiffusionV3: [nai_v3_sdxl.md](nai_v3_sdxl.md)
+- Observation from Pony Diffusion V6 XL: [pony_sd.md](pony_sd.md)
 
 ## Models from SDCN ##
 
