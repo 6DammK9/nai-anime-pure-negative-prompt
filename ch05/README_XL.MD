@@ -29,7 +29,7 @@
 
 - *Note: ValAcc(ζ) is close to the Reward Model used in AutoMBW / Bayesian Merging.*
 
-- **Important: It only shows improvement! It won't "solve" and specified task e.g. Importing Pony V6's NSFW into Animagine v3.1!**
+- **Important: It only shows improvement! It won't "solve" specified tasks e.g. Importing Pony V6's NSFW into Animagine v3.1!**
 
 ### It is using the exact same CLIP as SD1 ###
 
