@@ -21,6 +21,16 @@
 
 ## My discoveries ##
 
+### Coincidence, now I can cite on something ###
+
+- [Do the Frankenstein, or how to achieve better out-of-distribution performance with manifold mixing model soup](https://arxiv.org/abs/2309.08610)
+
+![photo_2024-03-19_12-31-39.jpg](img/photo_2024-03-19_12-31-39.jpg)
+
+- *Note: ValAcc(ζ) is close to the Reward Model used in AutoMBW / Bayesian Merging.*
+
+- **Important: It only shows improvement! It won't "solve" specified tasks e.g. Importing Pony V6's NSFW into Animagine v3.1!**
+
 ### It is using the exact same CLIP as SD1 ###
 
 - [ch03/view_unet/view_unet.ipynb](../ch03/view_unet/view_unet.ipynb): You will find that [the config of TE0 from SDXL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/text_encoder/config.json) is the exact same of [the config in SD1](https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/text_encoder/config.json). 

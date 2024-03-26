@@ -12,6 +12,8 @@
 
 ### Blue pill, but in academic paper ###
 
+- [Do the Frankenstein, or how to achieve better out-of-distribution performance with manifold mixing model soup](https://arxiv.org/abs/2309.08610)
+
 - [Language Models are Super Mario: Absorbing Abilities from Homologous Models as a Free Lunch](https://arxiv.org/abs/2311.03099)
 
 - [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.org/abs/2306.01708)
