@@ -68,7 +68,7 @@ conda install -c conda-forge pyyaml
 
 - Install [Python 3.10.11](https://www.python.org/downloads/release/python-31011/) instead.
 
-- If you don't want to reinstall Miniconda, edit `webui-user.bat`. `venv` will be installed based from the assigned `python`:
+- *Works on 240327 with exact same cmd file.* If you don't want to reinstall Miniconda, edit `webui-user.bat`. `venv` will be installed based from the assigned `python`:
 
 ```bash
 set PYTHON=C:\Users\User\AppData\Local\Programs\Python\Python310\python.exe
