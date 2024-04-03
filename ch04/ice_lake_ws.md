@@ -1,4 +1,4 @@
-*Article archive for posting to public website like builds.gg (cannot make new post) and pcpartpicker.
+*Article archive for posting to public website like builds.gg (cannot make new post) and [pcpartpicker](https://pcpartpicker.com/b/VZy48d). Images will be included there.
 
 # Ice lake AI / ML Workstation which shouldn't exist #
 
