@@ -87,6 +87,8 @@ Thermal paste is technically unknown becuase I bought the CPU "guled" with the h
 
 GPU stand is important. [CoolerMaster Universal Video Card Holder](https://www.amazon.com/-/zh_TW/MCA-0005-KUH00/dp/B01M5DCMPM?th=1) is a minimalistic and useful stand. It may not strong enough for 4090, but it should be sufficient with 2 blower cards which are quite light in weight. There is also a [knockoff ARGB stand](https://www.performance-pcs.com/system-hardware/gpu-holder/vertical-video-card-bracket-argb-vga-stand-chassis-lamp-motherboard-aura-sync-rgb-board-jack-faith-light-pollution.html) which is used for HDD case cover.
 
+The front 3.5 bay is not empty. [Asus ROG Front Base](https://www.amazon.com/-/zh_TW/ASUS-ROG-Front-Base/dp/B00JXED39O/ref=cm_cr_arp_d_product_top?ie=UTF8) was used for the previous build (same series with the R5E) but it is incompatable with this build. It is disabled and not included in the list.
+
 *Ah. [He is so cute](https://www.amazon.com/Taito-Fate-Apocrypha-Action-Figure/dp/B077SLPXKG).* 
 
 ## End of part list ##
