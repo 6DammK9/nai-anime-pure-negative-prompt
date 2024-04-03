@@ -59,8 +59,36 @@ The build quality of the "22G custom" is fine. Lead-free solder with minimal adh
 
 Also, the SFF connector still blocked the placement of the front side of the card, resulting even the card is perfectly fine (e.g. watercooled RTX 3090 in 4.0 x16), only X8 is accessible because of incomplete PCIE slot connection.
 
-The NV-Link adapter is useless here therefore I don't include it in the list. I boudght it for other build (2080ti FE) which were sold already.
+The [NV-Link adapter](https://www.amazon.com/Nvidia-Corporation-900-14932-2500-000-Link-Bridge/dp/B07JZLHPCG) is useless here therefore I don't include it in the list. I boudght it for other build (2080ti FE) which were sold already.
 
 ### Storage ###
 
-For storage, 2x P4510 are installed, only listed 1 for the same reason. Therefore there are 8TB of SSD storage which should be sufficient for research. OS drive is the Micron 1300, which is in single.
+For storage, 2x [Intel / Solidigm DC P4510 4TB](https://www.solidigm.com/products/data-center/d7/p4510.html) are installed, resulting 8TB of storage. Its price may go cheap because of former mining SSD. Mine has 1.3 PBW used, resulting 94% health. Yes, its life span is 13.88 PBW as writtn in the SATA healthcheck! It will be handy for extensive model merging which is storage intensive. It came with [U.2 to PCIE adapter](https://www.amazon.com/GINTOOYUN-Expansion-Card%EF%BC%8CSFF-Riser-Adapter/dp/B08P16LMHW), soon I bought it with SFF8639 adapter cable and connect it to supported motherboard like ASUS ROG R5E10 and EVGA X299 Dark, and finally this board via SFF8654. 
+
+However, for OS drive, I use the traditional single 2.5 inch SATA SSD [Micron 1300 512GB](https://hppart.uk/products/for-hp-861193-001-micron-1300-2-5-512gb-mtfddak512tdl-ssd-solid-state-drive-new). Besides less sensitive to heat, I have found that if both OS drive and model drive are on NVME, CPU / PCH may have trouble on rapid context switching while receiving IO boost, making the OS being instable.
+
+For the least exicting part, the [WD Black Label 2TB](https://www.amazon.com/-/zh_TW/WD2003FYYS/dp/B00DOS5KXC) still remains, storing non AI / ML, or OS stuffs, usually downloaded software, docuements, maybe a some BT materials.
+
+### PSU ###
+
+It is obvious: [EVGA 1600W P2](https://www.amazon.com/-/zh_TW/EVGA-Supernova-%E9%9B%BB%E6%BA%90%E4%BE%9B%E6%87%89%E5%99%A8-PLUS-%E7%99%BD%E9%87%91%E8%AA%8D%E8%AD%89/dp/B00NJG61JQ?th=1) is a great PSU, besides its age. I bought it while 2020's BTC halving, from a stripped mining rig. It is one of the few PSUs featuring 16 AWG PSU cables, supporting AMD 295X2 which is as power hungry as the ice lake CPUs. Since the motherboard has been load balanced with 3 rails, the CPU 8pin cable should be capable with reduced load with a little bit of headroom.
+
+I don't test the maximum power consumption yet, it should be around 1200W, which are 250W x4 for CPU and GPU, and another 200W for the board and memory. However its power consumption while idle is high, I recorded 300W with little to no tasks. It may be caused by undesired power state between ES CPU and early BIOS version, and the DSC from the 2080ti because I'm using [4K144Hz monitor]([https://www.displayspecifications.com/en/model/82bf263d](https://www.price.com.hk/product.php?p=522679)) (not listed).  
+
+### Cooling (Case / fan / thermal paste) ###
+
+The [Corsair Graphite Series 760T Full Tower Windowed Case](https://www.newegg.com/arctic-white-corsair-graphite-series-atx-full-tower/p/N82E16811139055) looks like mid tower nowdays, but technically it has 8 pcie slots and supports "EATX", which is actually EEB size. However, although the motherboard is claimed SSB also, the screw hole is not following ATX form factor (view the image again). Therefore I installed 4 out of 9 screw holes only, leaving the board hanging in diagonal.
+
+Case fan is a set of Cooler Master ARGB fans. MasterFan [MF120R](https://www.amazon.com/-/zh_TW/Cooler-Master-MasterFan-MF120R-R4-120R-20PC-R1/dp/B07H4NYFVG?th=1), [MF140R](https://www.amazon.com/-/zh_TW/R4-140R-15PC-R1/dp/B07GSSY21G), SickleFlow [SF120R](https://www.amazon.com/Cooler-Master-Independently-Controlled-Addressable-Management/dp/B07P989CQ6) and [SF140](https://www.amazon.com/Cooler-Master-SickleFlow-Individually-Customizable/dp/B08HJPHJMH) are common ARGB fans and perform fairly well.
+
+Thermal paste is technically unknown becuase I bought the CPU "guled" with the heatsink. However the seller tell me that it is in fact [Arctic MX4](https://gamersnexus.net/guides/3346-thermal-paste-application-benchmark-too-much-thermal-paste), which is also common and perform consistantly well. As stated in the CPU heatsink, the temperature is fine.
+
+### Miscellaneous ###
+
+GPU stand is important. [CoolerMaster Universal Video Card Holder](https://www.amazon.com/-/zh_TW/MCA-0005-KUH00/dp/B01M5DCMPM?th=1) is a minimalistic and useful stand. It may not strong enough for 4090, but it should be sufficient with 2 blower cards which are quite light in weight. There is also a [knockoff ARGB stand](https://www.performance-pcs.com/system-hardware/gpu-holder/vertical-video-card-bracket-argb-vga-stand-chassis-lamp-motherboard-aura-sync-rgb-board-jack-faith-light-pollution.html) which is used for HDD case cover.
+
+*Ah. [He is so cute](https://www.amazon.com/Taito-Fate-Apocrypha-Action-Figure/dp/B077SLPXKG).* 
+
+## End of part list ##
+
+Thank you very much for reading my lengthy part list and analysis till the very last! Also check out my [ROG RGB open air build!](https://builds.gg/dammk/flashbang-rog-open-air-miku-hatsune-34047)  
