@@ -34,6 +34,8 @@
 
 - `cn` 副本-500画风-NovelAI V3示例. [Discord](https://discord.com/channels/930499730843250783/1181771420045422613) [上](https://docs.qq.com/doc/DSmtHTUdHT1liaFRs) [下](https://docs.qq.com/doc/DSm5SVUVuVG5mbVNP)
 
+- `cn` [sd tag分享](https://docs.qq.com/doc/DRVBjRVdBWld4THBV), [每日一发](https://docs.qq.com/doc/DRXRCbUxWbnlVaXVI) (QQ Docs)
+
 ## Datasets / Training specs ##
 
 - Given the "modified" prompt system (apart from A1111 and comfyUI, closer to [Nijijourney](https://nijijourney.com/en/)), **long prompts will be ineffective.** Although officially clarified, *it was once considered that some prompt segments are actually mapping to trigger LoRAs.* The swapping performance is fast (compared with PCs) because of the large H100 cluster. 

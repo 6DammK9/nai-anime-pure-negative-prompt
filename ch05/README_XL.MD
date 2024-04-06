@@ -397,6 +397,128 @@ te1: 01,02,04,05,06,14,17,20,21,22,23,24,25,26,27,30,32,33,35,36,37,38,40,41,42,
 unet: 01,02,--,04,05,06,07,08,09,10,11,12,13,--,15,--,17,18,19,20,21,22,23,--,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,--,49,--=44
 ```
 
+## Finding on "SDXL Baseline Merge" ##
+
+- *I will have a "round 2" soon, because there are so many model released recently, along with merging tools. The docuement here is referring "x39a" only.*
+
+### Compromised model merge ###
+
+- From the "recipe" above, you will find that I've dropped `_x14-ponyDiffusionV6XL_v6` and `_x08-animagineXLV3_v30`, which have became the most popular anime models recently. Both of their model weights are far beyond to the majority models, and making the `x39a` generate random contents instead of prompted contents.
+
+- As stated by the author (no reference yet), `_x14-ponyDiffusionV6XL_v6` has been trained with **large learning rate** to steer the model weights away, and it can be shown in L2 diagrams. Also, from the dual CLIP structure, the image will break with low L2 (below 20).
+
+- *I have a WS powerful enough to include all models, see next chapter.*
+
+<details>
+    <summary>Gallery of L2 diagrams. Click to open.</summary>
+
+- sdxl0 = models from `_x01` to `_x10`, with `_x25` for reference.
+
+![sdxl0_unet_vg.png](../ch03/v2a/img/sdxl0_unet_vg.png)
+
+![sdxl0_te0_vg.png](../ch03/v2a/img/sdxl0_te0_vg.png)
+
+![sdxl0_te1_vg.png](../ch03/v2a/img/sdxl0_te1_vg.png)
+
+- sdxl1 = models from `_x11` to `_x20`, with `_x25` for reference.
+
+![sdxl1_unet_vg.png](../ch03/v2a/img/sdxl1_unet_vg.png)
+
+![sdxl1_te0_vg.png](../ch03/v2a/img/sdxl1_te0_vg.png)
+
+![sdxl1_te1_vg.png](../ch03/v2a/img/sdxl1_te1_vg.png)
+
+- sdxl2 = models from `_x21` to `_x30`, with `_x25` for reference.
+
+![sdxl2_unet_vg.png](../ch03/v2a/img/sdxl2_unet_vg.png)
+
+![sdxl2_te0_vg.png](../ch03/v2a/img/sdxl2_te0_vg.png)
+
+![sdxl2_te1_vg.png](../ch03/v2a/img/sdxl2_te1_vg.png)
+
+- sdxl3 = models from `_x31` to `_x41`, with `_x25` for reference.
+
+![sdxl3_unet_vg.png](../ch03/v2a/img/sdxl3_unet_vg.png)
+
+![sdxl3_te0_vg.png](../ch03/v2a/img/sdxl3_te0_vg.png)
+
+![sdxl3_te1_vg.png](../ch03/v2a/img/sdxl3_te1_vg.png)
+
+- sdxl4 = 10 handpicked models, with `_x25` for reference.
+
+![sdxl4_unet_vg.png](../ch03/v2a/img/sdxl4_unet_vg.png)
+
+![sdxl4_te0_vg.png](../ch03/v2a/img/sdxl4_te0_vg.png)
+
+![sdxl4_te1_vg.png](../ch03/v2a/img/sdxl4_te1_vg.png)
+
+- sdxl5 = models from `_x41` to `_x50`, with `_x25` for reference.
+
+![sdxl5_unet_vg.png](../ch03/v2a/img/sdxl5_unet_vg.png)
+
+![sdxl5_te0_vg.png](../ch03/v2a/img/sdxl5_te0_vg.png)
+
+![sdxl5_te1_vg.png](../ch03/v2a/img/sdxl5_te1_vg.png)
+
+</details>
+
+![img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg](img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg)
+
+- Such "randomess" is soon discovered that the CLIPs should be filtered and work within a "limited range" of model weights.
+
+![img/xyz_grid-0700-1355548248-10080-1631-4.5-48-20240204013956.jpg](img/xyz_grid-0700-1355548248-10080-1631-4.5-48-20240204013956.jpg)
+
+- As soon as getting the `x17`, it understand well in most concepts, *but it failed to understand characteristics of anime characters.* Making the "more nsfw" `x11c` (which is a subset of `x17` actually) make it understands a bit better, but as consequence, non anime concepts are understand worse.
+
+![img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg](img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg)
+
+- Before dumping GPU hours to the AutoMBW part, I need to explore either **more models** (yes, it reached 50!) or **more methods**, which [happened just in time](../ch01/rebasin.md). Git Re-Basin was once considered *not a merging method for SD* by me, but as soon as I've found and watch the seminar, I think the existing implementation is not applying well, or there is some misconception to prevent merging whole model with the algorithm.
+
+### Quality tags are not required anymore ###
+
+- *It also applies to both SD1 and SD2 version.*
+
+- Quality tags only being requied if the model training involves quality tagging intentionally. Once it is not exist, *or I merge the models which contradicts in model weights*, they will be no longer effective, returning the desired contents regardless "quality control". 
+
+![xyz_grid-0679-359783617-3072-1332-6-48-20240203104728.png](img/xyz_grid-0679-359783617-3072-1332-6-48-20240203104728.png)
+
+## My action list (after Baseline merge) ##
+
+- *Wait* for the [upcoming merger](https://github.com/ljleb/sd-mecha) and [modified toolkit](https://github.com/silveroxides/stable-diffusion-webui-model-toolkit-revisited)
+
+- Keep exploring more models and algorithms
+
+- And see if situation changes drastically in round 2. *Yes*
+
+- ~~[Built a workstation for merging, which is by chance.](../ch04/ice_lake_ws.md)~~
+
+## Findings on "SDXL Extended FP64 Merge" ##
+
+*I decided to split the chapter. Technically it is no longer the OG pairwise merge, solely using external tools.*
+
+### Refreshed global L2 chart ###
+
+<details>
+    <summary>Gallery of L2 diagrams. Click to open.</summary>
+
+![sdxl6_unet_vg.png](../ch03/v2a/img/sdxl6_unet_vg.png)
+
+![sdxl6_te0_vg.png](../ch03/v2a/img/sdxl6_te0_vg.png)
+
+![sdxl6_te1_vg.png](../ch03/v2a/img/sdxl6_te1_vg.png)
+
+![sdxl6_vae_vg.png](../ch03/v2a/img/sdxl6_vae_vg.png)
+
+![sdxl6_unet_xy.png](../ch03/v2a/img/sdxl6_unet_xy.png)
+
+![sdxl6_te0_xy.png](../ch03/v2a/img/sdxl6_te0_xy.png)
+
+![sdxl6_te1_xy.png](../ch03/v2a/img/sdxl6_te1_xy.png)
+
+![sdxl6_vae_xy.png](../ch03/v2a/img/sdxl6_vae_xy.png)
+
+</details>
+
 ## Model selection Round 3, x52a ##
 
 - Since [sd-mecha](https://github.com/ljleb/sd-mecha) is in active development, meanwhile there is a script to "merge CLIP" seperately, **also the generated images are being different** because of "structure autofix" along with **fp64 merging**, I think I can rewrite the script to *generate all intermediate models* in full auto. [And... I am really doing it.](./astolfo_mix_e2e.ipynb) Now I'm totally not operating WebUI to merge models. [As shown in the recipe](x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.mecha), it is in serialized form, which looks like [assembly code](https://en.wikipedia.org/wiki/Assembly_language).
@@ -487,93 +609,7 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 
 ![xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg](img/xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg)
 
-## Finding on "SDXL Baseline Merge" ##
+## Model selection Round 4, x63a ##
 
-- *I will have a "round 2" soon, because there are so many model released recently, along with merging tools. The docuement here is referring "x39a" only.*
+- Ward. 
 
-### Compromised model merge ###
-
-- From the "recipe" above, you will find that I've dropped `_x14-ponyDiffusionV6XL_v6` and `_x08-animagineXLV3_v30`, which have became the most popular anime models recently. Both of their model weights are far beyond to the majority models, and making the `x39a` generate random contents instead of prompted contents.
-
-- As stated by the author (no reference yet), `_x14-ponyDiffusionV6XL_v6` has been trained with **large learning rate** to steer the model weights away, and it can be shown in L2 diagrams. Also, from the dual CLIP structure, the image will break with low L2 (below 20).
-
-<details>
-    <summary>Gallery of L2 diagrams. Click to open.</summary>
-
-- sdxl0 = models from `_x01` to `_x10`, with `_x25` for reference.
-
-![sdxl0_unet_vg.png](../ch03/v2a/img/sdxl0_unet_vg.png)
-
-![sdxl0_te0_vg.png](../ch03/v2a/img/sdxl0_te0_vg.png)
-
-![sdxl0_te1_vg.png](../ch03/v2a/img/sdxl0_te1_vg.png)
-
-- sdxl1 = models from `_x11` to `_x20`, with `_x25` for reference.
-
-![sdxl1_unet_vg.png](../ch03/v2a/img/sdxl1_unet_vg.png)
-
-![sdxl1_te0_vg.png](../ch03/v2a/img/sdxl1_te0_vg.png)
-
-![sdxl1_te1_vg.png](../ch03/v2a/img/sdxl1_te1_vg.png)
-
-- sdxl2 = models from `_x21` to `_x30`, with `_x25` for reference.
-
-![sdxl2_unet_vg.png](../ch03/v2a/img/sdxl2_unet_vg.png)
-
-![sdxl2_te0_vg.png](../ch03/v2a/img/sdxl2_te0_vg.png)
-
-![sdxl2_te1_vg.png](../ch03/v2a/img/sdxl2_te1_vg.png)
-
-- sdxl3 = models from `_x31` to `_x41`, with `_x25` for reference.
-
-![sdxl3_unet_vg.png](../ch03/v2a/img/sdxl3_unet_vg.png)
-
-![sdxl3_te0_vg.png](../ch03/v2a/img/sdxl3_te0_vg.png)
-
-![sdxl3_te1_vg.png](../ch03/v2a/img/sdxl3_te1_vg.png)
-
-- sdxl4 = 10 handpicked models, with `_x25` for reference.
-
-![sdxl4_unet_vg.png](../ch03/v2a/img/sdxl4_unet_vg.png)
-
-![sdxl4_te0_vg.png](../ch03/v2a/img/sdxl4_te0_vg.png)
-
-![sdxl4_te1_vg.png](../ch03/v2a/img/sdxl4_te1_vg.png)
-
-- sdxl5 = models from `_x41` to `_x50`, with `_x25` for reference.
-
-![sdxl5_unet_vg.png](../ch03/v2a/img/sdxl5_unet_vg.png)
-
-![sdxl5_te0_vg.png](../ch03/v2a/img/sdxl5_te0_vg.png)
-
-![sdxl5_te1_vg.png](../ch03/v2a/img/sdxl5_te1_vg.png)
-
-</details>
-
-![img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg](img/xyz_grid-0698-3416143198-5120-1332-6-48-20240204012805.jpg)
-
-- Such "randomess" is soon discovered that the CLIPs should be filtered and work within a "limited range" of model weights.
-
-![img/xyz_grid-0700-1355548248-10080-1631-4.5-48-20240204013956.jpg](img/xyz_grid-0700-1355548248-10080-1631-4.5-48-20240204013956.jpg)
-
-- As soon as getting the `x17`, it understand well in most concepts, *but it failed to understand characteristics of anime characters.* Making the "more nsfw" `x11c` (which is a subset of `x17` actually) make it understands a bit better, but as consequence, non anime concepts are understand worse.
-
-![img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg](img/xyz_grid-0701-1222745577-10080-1631-4.5-48-20240204014105.jpg)
-
-- Before dumping GPU hours to the AutoMBW part, I need to explore either **more models** (yes, it reached 50!) or **more methods**, which [happened just in time](../ch01/rebasin.md). Git Re-Basin was once considered *not a merging method for SD* by me, but as soon as I've found and watch the seminar, I think the existing implementation is not applying well, or there is some misconception to prevent merging whole model with the algorithm.
-
-### Quality tags are not required anymore ###
-
-- *It also applies to both SD1 and SD2 version.*
-
-- Quality tags only being requied if the model training involves quality tagging intentionally. Once it is not exist, *or I merge the models which contradicts in model weights*, they will be no longer effective, returning the desired contents regardless "quality control". 
-
-![xyz_grid-0679-359783617-3072-1332-6-48-20240203104728.png](img/xyz_grid-0679-359783617-3072-1332-6-48-20240203104728.png)
-
-## My action list ##
-
-- *Wait* for the [upcoming merger](https://github.com/ljleb/sd-mecha)
-
-- Keep exploring more models
-
-- And see if situation changes drastically in round 2.

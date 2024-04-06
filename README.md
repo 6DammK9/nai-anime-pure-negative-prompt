@@ -11,7 +11,7 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 
 [Pixiv album for storing the images](https://www.pixiv.net/en/tags/PureNegativePrompt/artworks)
 
-[(New) Observation on NAI V3](ch02/nai_v3_sdxl.md)
+[(New) Observation on PonyXL V6](ch02/pony_sd.md)
 
 ## Major contents ##
 **No explaination. Read the articles instead.**

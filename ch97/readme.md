@@ -10,6 +10,8 @@ Usually "not article".
 
 - A flowchart about current "APP" making use of "AI art" ~~definitely not face swap~~ : [swap_face_app.md](swap_face_app.md)
 
+- A quiz, meanwhile introduction to "SD in AI / ML": [quiz_4751.md](./quiz_4751.md)
+
 ## Scripts (surviving in the internet) ##
 
 - `purgeme.py`: "/purgeme". Related to [trojblue/telegram-scraper](https://github.com/trojblue/telegram-scraper) but not scraping.
