@@ -496,6 +496,10 @@ unet: 01,02,--,04,05,06,07,08,09,10,11,12,13,--,15,--,17,18,19,20,21,22,23,--,25
 
 *I decided to split the chapter. Technically it is no longer the OG pairwise merge, solely using external tools.*
 
+- *The new Workstation is lit!*
+
+![24040601.jpg](./img/24040601.jpg)
+
 ### Refreshed global L2 chart ###
 
 <details>
