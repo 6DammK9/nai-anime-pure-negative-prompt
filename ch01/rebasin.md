@@ -39,6 +39,10 @@
 - Official codebase: [github](https://github.com/samuela/git-re-basin)
 - `zh` [Translated article.](https://cloud.tencent.com/developer/article/2106636) [Mirror.](https://www.jiqizhixin.com/articles/2022-09-15-12)
 
+## Known implementation which is promising ##
+
+- [rebasin in another paper](https://github.com/zju-vipa/training_free_model_merging/tree/master/heterogeneous_tasks)
+
 ## Known integration to SD ##
 
 - [Merge-Stable-Diffusion-models-without-distortion](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/issues)
