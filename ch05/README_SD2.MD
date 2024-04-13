@@ -1,4 +1,4 @@
-# Chapter 05-SD2: Astolfo mix SD2. #
+# Chapter 05-SD2: AstolfoMix-SD2. #
 
 - [CivitAI model page.](https://civitai.com/models/255754) The style there is a bit different.
 
@@ -112,7 +112,7 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 
 - **Then I blindly merge all models together.** At that point, only 16 models are discovered. Obviously, it is a total mess. 
 
-- For full recipe, see [receipe-215a.json](./receipe-215a.json).
+- For full recipe, see [recipe-215a.json](./recipes/recipe-215a.json).
 
 ![img/xyz_grid-0541-2381024291-24576-1230-6-48-20231227011817.jpg](./img/xyz_grid-0541-2381024291-24576-1230-6-48-20231227011817.jpg)
 
@@ -134,7 +134,7 @@ Steps: 256, Sampler: Euler, CFG scale: 6, Seed: 802596511, Size: 1024x576, Model
 
 - To expand the "set of models" I've find that I really need more models to "adjust the weight" even it is just an uniform merge. Somehow I've found 6 more models and repeated the whole process. Note that since it is parallel merge, I can "add" the new merge instead of deleting all intermediate models.
 
-- For full recipe, see [receipe-209.json](./receipe-209.json). Note that [stable-diffusion-webui-model-toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit) doesn't preserve metadata, therefore I only show `209` instead of `209-203te`.
+- For full recipe, see [recipe-209.json](./recipes/recipe-209.json). Note that [stable-diffusion-webui-model-toolkit](https://github.com/arenasys/stable-diffusion-webui-model-toolkit) doesn't preserve metadata, therefore I only show `209` instead of `209-203te`.
 
 ![img/xyz_grid-0593-3569717888-3072-1224-6-48-20231231031129.jpg](./img/xyz_grid-0593-3569717888-3072-1224-6-48-20231231031129.jpg)
 

@@ -1,0 +1,233 @@
+model "raw/_x25-sd_xl_base_1.0.safetensors" "sdxl" "base"
+model "raw/_x70-inkDyeingAnimeXL_v20.safetensors" "sdxl" "base"
+model "raw/_x69-ghostbustersxlMix_v10.safetensors" "sdxl" "base"
+model "raw/_x68-raenaXL_v10.safetensors" "sdxl" "base"
+model "raw/_x67-fantasyparadise_v10.safetensors" "sdxl" "base"
+model "raw/_x66-realPony_cuteJp.safetensors" "sdxl" "base"
+model "raw/_x65-realPony_v10.safetensors" "sdxl" "base"
+model "raw/_x64-hassakuXLHentai_v10.safetensors" "sdxl" "base"
+model "raw/_x63-AnythingXL_xl.safetensors" "sdxl" "base"
+model "raw/_x62-GammaxlNSFWFor_v10.safetensors" "sdxl" "base"
+model "raw/_x61-tPony3d_v10.safetensors" "sdxl" "base"
+model "raw/_x60-tPonynai3_v35.safetensors" "sdxl" "base"
+model "raw/_x59-anyorangemixxlAnything_v10.safetensors" "sdxl" "base"
+model "raw/_x58-autismmixSDXL_autismmixConfetti.safetensors" "sdxl" "base"
+model "raw/_x57-PVCStyleModelMovable_beta25Realistic.safetensors" "sdxl" "base"
+model "raw/_x56-autismmixSDXL_autismmixPony.safetensors" "sdxl" "base"
+model "raw/_x55-kohakuXLDelta_rev1.safetensors" "sdxl" "base"
+model "raw/_x54-animagineXLV31_v31.safetensors" "sdxl" "base"
+model "raw/_x53-tPonynai3_v20.safetensors" "sdxl" "base"
+model "raw/_x52-pvcgine-xl-v20240222.safetensors" "sdxl" "base"
+model "raw/_x51-cosgine-xl-v20240217.safetensors" "sdxl" "base"
+model "raw/_x49-heartOfAppleXL_v20.safetensors" "sdxl" "base"
+model "raw/_x47-jruTheJourneyRemains_v10XL.safetensors" "sdxl" "base"
+model "raw/_x46-realvisxlV30Turbo_v30Bakedvae.safetensors" "sdxl" "base"
+model "raw/_x45-awmo-xl.safetensors" "sdxl" "base"
+model "raw/_x44-kohakuXLGamma_rev2.safetensors" "sdxl" "base"
+model "raw/_x43-SDXLAnimeBulldozer_v20.safetensors" "sdxl" "base"
+model "raw/_x42-himawarimix_xlV5.safetensors" "sdxl" "base"
+model "raw/_x41-riotDiffusionXLLeagueOfLegendsSplash_v20.safetensors" "sdxl" "base"
+model "raw/_x40-218xl_.safetensors" "sdxl" "base"
+model "raw/_x39-sakumix_v10.safetensors" "sdxl" "base"
+model "raw/_x38-aio_v10.safetensors" "sdxl" "base"
+model "raw/_x37-himawarimix_xlV4.safetensors" "sdxl" "base"
+model "raw/_x36-devlishphotorealism_sdxl15.safetensors" "sdxl" "base"
+model "raw/_x35-brightprotonukeBPNNo_bpn13.safetensors" "sdxl" "base"
+model "raw/_x34-animeIllustDiffusion_v061.safetensors" "sdxl" "base"
+model "raw/_x33-4Guofeng4XL_v12.safetensors" "sdxl" "base"
+model "raw/_x32-enjoyPandoraXL_v10.safetensors" "sdxl" "base"
+model "raw/_x31-counterfeitxl_v25.safetensors" "sdxl" "base"
+model "raw/_x30-aamXLAnimeMix_v10.safetensors" "sdxl" "base"
+model "raw/_x29-kohakuXLGamma_rev1.safetensors" "sdxl" "base"
+model "raw/_x28-heartOfAppleXL_v10.safetensors" "sdxl" "base"
+model "raw/_x27-explicitFreedomNSFW_alpha.safetensors" "sdxl" "base"
+model "raw/_x26-enjoyXLAdvancedEdition_v7AdvancedVersion.safetensors" "sdxl" "base"
+model "raw/_x23-nekorayxl_v06W3.safetensors" "sdxl" "base"
+model "raw/_x22-kohakuXL_alpha7.safetensors" "sdxl" "base"
+model "raw/_x21-nd-run8-weighted-3.safetensors" "sdxl" "base"
+model "raw/_x20-explicitFreedomNSFW_beta.safetensors" "sdxl" "base"
+model "raw/_x19-nekoray-xl-1.5m-pdg32_e02.safetensors" "sdxl" "base"
+model "raw/_x18-nekoray-xl-1.5m-fp16mixed_e02.safetensors" "sdxl" "base"
+model "raw/_x17-leosamsHelloworldSDXLModel_helloworldSDXL10.safetensors" "sdxl" "base"
+model "raw/_x16-wdxl-aesthetic-0.9.safetensors" "sdxl" "base"
+model "raw/_x15-animagineXL_v20.safetensors" "sdxl" "base"
+model "raw/_x13-leosamsHelloworldSDXL_helloworldSDXL32DPO.safetensors" "sdxl" "base"
+model "raw/_x12-bluePencilXL_v310.safetensors" "sdxl" "base"
+model "raw/_x11-SDXLRonghua_v40.safetensors" "sdxl" "base"
+model "raw/_x10-dreamshaperXL_alpha2Xl10.safetensors" "sdxl" "base"
+model "raw/_x08-animagineXLV3_v30.safetensors" "sdxl" "base"
+model "raw/_x07-kohakuXLBeta_beta7.safetensors" "sdxl" "base"
+model "raw/_x06-juggernautXL_v8Rundiffusion.safetensors" "sdxl" "base"
+model "raw/_x05-copaxTimelessxlSDXL1_v8.safetensors" "sdxl" "base"
+model "raw/_x04-OpenDalleV1.1.safetensors" "sdxl" "base"
+model "raw/_x02-animeAntifreezingSolutionXL_v10.safetensors" "sdxl" "base"
+model "raw/_x01-deepDarkHentaiMixNSFW_v12.safetensors" "sdxl" "base"
+merge "weighted_sum" &62 &63 alpha=0.5
+merge "weighted_sum" &61 &64 alpha=0.6666666666666666
+merge "weighted_sum" &60 &65 alpha=0.75
+merge "weighted_sum" &59 &66 alpha=0.8
+merge "weighted_sum" &58 &67 alpha=0.8333333333333334
+merge "weighted_sum" &57 &68 alpha=0.8571428571428571
+merge "weighted_sum" &56 &69 alpha=0.875
+merge "weighted_sum" &55 &70 alpha=0.8888888888888888
+merge "weighted_sum" &54 &71 alpha=0.9
+merge "weighted_sum" &53 &72 alpha=0.9090909090909091
+merge "weighted_sum" &52 &73 alpha=0.9166666666666666
+merge "weighted_sum" &51 &74 alpha=0.9230769230769231
+merge "weighted_sum" &50 &75 alpha=0.9285714285714286
+merge "weighted_sum" &49 &76 alpha=0.9333333333333333
+merge "weighted_sum" &48 &77 alpha=0.9375
+merge "weighted_sum" &47 &78 alpha=0.9411764705882353
+merge "weighted_sum" &46 &79 alpha=0.9444444444444444
+merge "weighted_sum" &45 &80 alpha=0.9473684210526315
+merge "weighted_sum" &44 &81 alpha=0.95
+merge "weighted_sum" &0 &82 alpha=0.9523809523809523
+merge "weighted_sum" &43 &83 alpha=0.9545454545454546
+merge "weighted_sum" &42 &84 alpha=0.9565217391304348
+merge "weighted_sum" &41 &85 alpha=0.9583333333333334
+merge "weighted_sum" &40 &86 alpha=0.96
+merge "weighted_sum" &39 &87 alpha=0.9615384615384616
+merge "weighted_sum" &38 &88 alpha=0.9629629629629629
+merge "weighted_sum" &37 &89 alpha=0.9642857142857143
+merge "weighted_sum" &36 &90 alpha=0.9655172413793104
+merge "weighted_sum" &35 &91 alpha=0.9666666666666667
+merge "weighted_sum" &34 &92 alpha=0.967741935483871
+merge "weighted_sum" &33 &93 alpha=0.96875
+merge "weighted_sum" &32 &94 alpha=0.9696969696969697
+merge "weighted_sum" &31 &95 alpha=0.9705882352941176
+merge "weighted_sum" &30 &96 alpha=0.9714285714285714
+merge "weighted_sum" &29 &97 alpha=0.9722222222222222
+merge "weighted_sum" &28 &98 alpha=0.972972972972973
+merge "weighted_sum" &27 &99 alpha=0.9736842105263158
+merge "weighted_sum" &26 &100 alpha=0.9743589743589743
+merge "weighted_sum" &25 &101 alpha=0.975
+merge "weighted_sum" &24 &102 alpha=0.975609756097561
+merge "weighted_sum" &23 &103 alpha=0.9761904761904762
+merge "weighted_sum" &22 &104 alpha=0.9767441860465116
+merge "weighted_sum" &21 &105 alpha=0.9772727272727273
+merge "weighted_sum" &20 &106 alpha=0.9777777777777777
+merge "weighted_sum" &19 &107 alpha=0.9782608695652174
+merge "weighted_sum" &18 &108 alpha=0.9787234042553191
+merge "weighted_sum" &17 &109 alpha=0.9791666666666666
+merge "weighted_sum" &16 &110 alpha=0.9795918367346939
+merge "weighted_sum" &15 &111 alpha=0.98
+merge "weighted_sum" &14 &112 alpha=0.9803921568627451
+merge "weighted_sum" &13 &113 alpha=0.9807692307692307
+merge "weighted_sum" &12 &114 alpha=0.9811320754716981
+merge "weighted_sum" &11 &115 alpha=0.9814814814814815
+merge "weighted_sum" &10 &116 alpha=0.9818181818181818
+merge "weighted_sum" &9 &117 alpha=0.9821428571428571
+merge "weighted_sum" &8 &118 alpha=0.9824561403508771
+merge "weighted_sum" &7 &119 alpha=0.9827586206896551
+merge "weighted_sum" &6 &120 alpha=0.9830508474576272
+merge "weighted_sum" &5 &121 alpha=0.9833333333333333
+merge "weighted_sum" &4 &122 alpha=0.9836065573770492
+merge "weighted_sum" &3 &123 alpha=0.9838709677419355
+merge "weighted_sum" &2 &124 alpha=0.9841269841269841
+merge "weighted_sum" &1 &125 alpha=0.984375
+dict sdxl_txt_default=0.0 sdxl_txt2_default=0.0 sdxl_unet_default=1.0
+merge "weighted_sum" &0 &126 alpha=&127
+model "raw/_x50-auroraXLBasePonyXL_v10.safetensors" "sdxl" "base"
+model "raw/_x48-js2prony_v10.safetensors" "sdxl" "base"
+model "raw/_x24-SwimInLatent-alpha.fp16.safetensors" "sdxl" "base"
+model "raw/_x14-ponyDiffusionV6XL_v6.safetensors" "sdxl" "base"
+model "raw/_x09-animeboysxl_v10.safetensors" "sdxl" "base"
+merge "weighted_sum" &133 &69 alpha=0.875
+merge "weighted_sum" &55 &134 alpha=0.8888888888888888
+merge "weighted_sum" &53 &135 alpha=0.9
+merge "weighted_sum" &132 &136 alpha=0.9090909090909091
+merge "weighted_sum" &52 &137 alpha=0.9166666666666666
+merge "weighted_sum" &50 &138 alpha=0.9230769230769231
+merge "weighted_sum" &47 &139 alpha=0.9285714285714286
+merge "weighted_sum" &46 &140 alpha=0.9333333333333333
+merge "weighted_sum" &45 &141 alpha=0.9375
+merge "weighted_sum" &44 &142 alpha=0.9411764705882353
+merge "weighted_sum" &131 &143 alpha=0.9444444444444444
+merge "weighted_sum" &43 &144 alpha=0.9473684210526315
+merge "weighted_sum" &42 &145 alpha=0.95
+merge "weighted_sum" &41 &146 alpha=0.9523809523809523
+merge "weighted_sum" &40 &147 alpha=0.9545454545454546
+merge "weighted_sum" &39 &148 alpha=0.9565217391304348
+merge "weighted_sum" &38 &149 alpha=0.9583333333333334
+merge "weighted_sum" &37 &150 alpha=0.96
+merge "weighted_sum" &36 &151 alpha=0.9615384615384616
+merge "weighted_sum" &35 &152 alpha=0.9629629629629629
+merge "weighted_sum" &34 &153 alpha=0.9642857142857143
+merge "weighted_sum" &33 &154 alpha=0.9655172413793104
+merge "weighted_sum" &32 &155 alpha=0.9666666666666667
+merge "weighted_sum" &31 &156 alpha=0.967741935483871
+merge "weighted_sum" &30 &157 alpha=0.96875
+merge "weighted_sum" &28 &158 alpha=0.9696969696969697
+merge "weighted_sum" &27 &159 alpha=0.9705882352941176
+merge "weighted_sum" &26 &160 alpha=0.9714285714285714
+merge "weighted_sum" &25 &161 alpha=0.9722222222222222
+merge "weighted_sum" &24 &162 alpha=0.972972972972973
+merge "weighted_sum" &23 &163 alpha=0.9736842105263158
+merge "weighted_sum" &22 &164 alpha=0.9743589743589743
+merge "weighted_sum" &130 &165 alpha=0.975
+merge "weighted_sum" &21 &166 alpha=0.975609756097561
+merge "weighted_sum" &129 &167 alpha=0.9761904761904762
+merge "weighted_sum" &20 &168 alpha=0.9767441860465116
+merge "weighted_sum" &19 &169 alpha=0.9772727272727273
+merge "weighted_sum" &18 &170 alpha=0.9777777777777777
+merge "weighted_sum" &17 &171 alpha=0.9782608695652174
+merge "weighted_sum" &16 &172 alpha=0.9787234042553191
+merge "weighted_sum" &15 &173 alpha=0.9791666666666666
+merge "weighted_sum" &14 &174 alpha=0.9795918367346939
+merge "weighted_sum" &13 &175 alpha=0.98
+merge "weighted_sum" &12 &176 alpha=0.9803921568627451
+merge "weighted_sum" &10 &177 alpha=0.9807692307692307
+merge "weighted_sum" &9 &178 alpha=0.9811320754716981
+merge "weighted_sum" &8 &179 alpha=0.9814814814814815
+merge "weighted_sum" &7 &180 alpha=0.9818181818181818
+merge "weighted_sum" &6 &181 alpha=0.9821428571428571
+merge "weighted_sum" &5 &182 alpha=0.9824561403508771
+merge "weighted_sum" &4 &183 alpha=0.9827586206896551
+merge "weighted_sum" &3 &184 alpha=0.9830508474576272
+merge "weighted_sum" &2 &185 alpha=0.9833333333333333
+merge "weighted_sum" &1 &186 alpha=0.9836065573770492
+dict sdxl_txt2_default=0.0 sdxl_unet_default=0.0 sdxl_txt_default=1.0
+merge "weighted_sum" &128 &187 alpha=&188
+merge "weighted_sum" &61 &62 alpha=0.5
+merge "weighted_sum" &60 &190 alpha=0.6666666666666666
+merge "weighted_sum" &59 &191 alpha=0.75
+merge "weighted_sum" &58 &192 alpha=0.8
+merge "weighted_sum" &57 &193 alpha=0.8333333333333334
+merge "weighted_sum" &55 &194 alpha=0.8571428571428571
+merge "weighted_sum" &53 &195 alpha=0.875
+merge "weighted_sum" &50 &196 alpha=0.8888888888888888
+merge "weighted_sum" &47 &197 alpha=0.9
+merge "weighted_sum" &46 &198 alpha=0.9090909090909091
+merge "weighted_sum" &45 &199 alpha=0.9166666666666666
+merge "weighted_sum" &44 &200 alpha=0.9230769230769231
+merge "weighted_sum" &131 &201 alpha=0.9285714285714286
+merge "weighted_sum" &43 &202 alpha=0.9333333333333333
+merge "weighted_sum" &42 &203 alpha=0.9375
+merge "weighted_sum" &41 &204 alpha=0.9411764705882353
+merge "weighted_sum" &39 &205 alpha=0.9444444444444444
+merge "weighted_sum" &37 &206 alpha=0.9473684210526315
+merge "weighted_sum" &36 &207 alpha=0.95
+merge "weighted_sum" &34 &208 alpha=0.9523809523809523
+merge "weighted_sum" &33 &209 alpha=0.9545454545454546
+merge "weighted_sum" &32 &210 alpha=0.9565217391304348
+merge "weighted_sum" &31 &211 alpha=0.9583333333333334
+merge "weighted_sum" &30 &212 alpha=0.96
+merge "weighted_sum" &28 &213 alpha=0.9615384615384616
+merge "weighted_sum" &27 &214 alpha=0.9629629629629629
+merge "weighted_sum" &26 &215 alpha=0.9642857142857143
+merge "weighted_sum" &24 &216 alpha=0.9655172413793104
+merge "weighted_sum" &23 &217 alpha=0.9666666666666667
+merge "weighted_sum" &20 &218 alpha=0.967741935483871
+merge "weighted_sum" &19 &219 alpha=0.96875
+merge "weighted_sum" &17 &220 alpha=0.9696969696969697
+merge "weighted_sum" &16 &221 alpha=0.9705882352941176
+merge "weighted_sum" &14 &222 alpha=0.9714285714285714
+merge "weighted_sum" &12 &223 alpha=0.9722222222222222
+merge "weighted_sum" &9 &224 alpha=0.972972972972973
+merge "weighted_sum" &8 &225 alpha=0.9736842105263158
+merge "weighted_sum" &4 &226 alpha=0.9743589743589743
+merge "weighted_sum" &3 &227 alpha=0.975
+merge "weighted_sum" &2 &228 alpha=0.975609756097561
+merge "weighted_sum" &1 &229 alpha=0.9761904761904762
+dict sdxl_txt_default=0.0 sdxl_unet_default=0.0 sdxl_txt2_default=1.0
+merge "weighted_sum" &189 &230 alpha=&231

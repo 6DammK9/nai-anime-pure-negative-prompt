@@ -1,10 +1,11 @@
-# Chapter 05-XL: Astolfo mix XL. #
+# Chapter 05-XL: AstolfoMix-XL. #
 
 - [CivitAI model page.](https://civitai.com/models/309514) The style there is a bit different.
 
 - [HuggingFace model page.](https://huggingface.co/6DammK9/AstolfoMix-XL) The style is also different.
 
 - (Coming soon) [CivitAI article page.](https://civitai.com/articles/3409) Summary of here (as additional content with SD1).
+
 ## What is the mix? ##
 
 - Currently, it is an Ensemble averaging ~~Uniform merge~~ of 32 UNETS + (19+26) CLIPS (from 21 models), selected from ~~44~~ 50 discovered SDXL models.
@@ -109,293 +110,30 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 - It implies the great risk and scarification with "Train Text Encoder" option while fintuning a massive base model, and more important, **merging with different finetuned CLIPs**. This problem is dodged in SD1, [because I sticked with the OG CLIP](./README.MD#the-power-of-the-original-sd-1xs-text-encoder), and experienced in SD2. Agressively merging 2 CLIPs in the SDXL will make the model failed to understand most concepts. More in the next section.
 
+### Changing docuement style ###
+
+- I didn't expect model selection across ongoing community developement will involve so many iterlations. It yields so many docuements and making this page too large for a mobile to load (I view this othen in outdoor). I'll move most boring stuffs to other places.
+
+- Read docuemnts there for how I derive the model selection from the discovered models. I'll do put the statistic here.
+
+|Round|Model Name|RAW|UNET|TE0|TE1|Recipe|
+|---|---|---|---|---|---|---|
+|01|`x17-AstolfoMix-x13te0x14te1.safetensors`|42|32|14|21|[json](./recipes/recipe-x39a.json)|
+|02|`x43-AstolfoMix-x22te0x31te1.safetensors`|50|44|22|31|[mecha](./recipes/x43-AstolfoMix-x21te0x30te1-e2e-240222-60d0764.mecha)|
+|03|`x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.safetensors`|52|46|40|40|[mecha](./recipes/x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.mecha)|
+|04|`x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.safetensors`|70|52|61|42|[mecha](./recipes/x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.mecha)|
+
 ## Discovered models ##
 
-- There is 50 models discovered. Here is a full list of discovered models:
-
-<details>
-    <summary>Table with 40+ rows. Click to open.</summary>
-
-*mega table coming soon*
-
-```log
-_x01-deepDarkHentaiMixNSFW_v12.safetensors
-_x02-animeAntifreezingSolutionXL_v10.safetensors
-_x03-hsxl_base_1.0.f16.safetensors
-_x04-OpenDalleV1.1.safetensors
-_x05-copaxTimelessxlSDXL1_v8.safetensors
-_x06-juggernautXL_v8Rundiffusion.safetensors
-_x07-kohakuXLBeta_beta7.safetensors
-_x08-animagineXLV3_v30.safetensors
-_x09-animeboysxl_v10.safetensors
-_x10-dreamshaperXL_alpha2Xl10.safetensors
-_x11-SDXLRonghua_v40.safetensors
-_x12-bluePencilXL_v310.safetensors
-_x13-leosamsHelloworldSDXL_helloworldSDXL32DPO.safetensors
-_x14-ponyDiffusionV6XL_v6.safetensors
-_x15-animagineXL_v20.safetensors
-_x16-wdxl-aesthetic-0.9.safetensors
-_x17-leosamsHelloworldSDXLModel_helloworldSDXL10.safetensors
-_x18-nekoray-xl-1.5m-fp16mixed_e02.safetensors
-_x19-nekoray-xl-1.5m-pdg32_e02.safetensors
-_x20-explicitFreedomNSFW_beta.safetensors
-_x21-nd-run8-weighted-3.safetensors
-_x22-kohakuXL_alpha7.safetensors
-_x23-nekorayxl_v06W3.safetensors
-_x24-SwimInLatent-alpha.fp16.safetensors
-_x25-sd_xl_base_1.0.safetensors
-_x26-enjoyXLAdvancedEdition_v7AdvancedVersion.safetensors
-_x27-explicitFreedomNSFW_alpha.safetensors
-_x28-heartOfAppleXL_v10.safetensors
-_x29-kohakuXLGamma_rev1.safetensors
-_x30-aamXLAnimeMix_v10.safetensors
-_x31-counterfeitxl_v25.safetensors
-_x32-enjoyPandoraXL_v10.safetensors
-_x33-4Guofeng4XL_v12.safetensors
-_x34-animeIllustDiffusion_v061.safetensors
-_x35-brightprotonukeBPNNo_bpn13.safetensors
-_x36-devlishphotorealism_sdxl15.safetensors
-_x37-himawarimix_xlV4.safetensors
-_x38-aio_v10.safetensors
-_x39-sakumix_v10.safetensors
-_x40-218xl_.safetensors
-_x41-riotDiffusionXLLeagueOfLegendsSplash_v20.safetensors
-_x42-himawarimix_xlV5.safetensors
-_x43-SDXLAnimeBulldozer_v20.safetensors
-_x44-kohakuXLGamma_rev2.safetensors
-_x45-awmo-xl.safetensors
-_x46-realvisxlV30Turbo_v30Bakedvae.safetensors
-_x47-jruTheJourneyRemains_v10XL.safetensors
-_x48-js2prony_v10.safetensors
-_x49-heartOfAppleXL_v20.safetensors
-_x50-auroraXLBasePonyXL_v10.safetensors
-```
-
-</details>
+- Moved to [AstolfoMix-XL: Discovered models](./xl_docs/discovered_models.md)
 
 ## Deriving the "recipe" a.k.a model selection (Round 1, x39a) ##
 
-- *I have found that I need to loosen the criteria and fix model to try to accept recent popular models. However the basic concept is unchanged. See Round 2 for additonal consideration.*
-
-- First, it is less obvious when I view the raw model:
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0633-3416143198-10240-1343-6-48-20240122001143.jpg](./img/xyz_grid-0633-3416143198-10240-1343-6-48-20240122001143.jpg)
-
-![xyz_grid-0634-3416143198-10240-1343-6-48-20240122002138.jpg](./img/xyz_grid-0634-3416143198-10240-1343-6-48-20240122002138.jpg)
-
-![xyz_grid-0637-3416143198-12288-1343-6-48-20240122004442.jpg](./img/xyz_grid-0637-3416143198-12288-1343-6-48-20240122004442.jpg)
-
-![xyz_grid-0645-3416143198-10240-1343-6-48-20240126005728.jpg](./img/xyz_grid-0645-3416143198-10240-1343-6-48-20240126005728.jpg)
-
-</details>
-
-- For selecting CLIPs, UNET is `x39a` which is the global average model. VAE is the original VAE of SDXL.
-
-- First I choose **CLIP**, or `conditioner.embedders.0`:
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0657-755545524-18144-1446-4.5-48-20240128171125.jpg](./img/xyz_grid-0657-755545524-18144-1446-4.5-48-20240128171125.jpg)
-
-![xyz_grid-0660-755545524-20160-1446-4.5-48-20240128190750.jpg](./img/xyz_grid-0660-755545524-20160-1446-4.5-48-20240128190750.jpg)
-
-![xyz_grid-0663-755545524-20160-1446-4.5-48-20240129024005.jpg](./img/xyz_grid-0663-755545524-20160-1446-4.5-48-20240129024005.jpg)
-
-![xyz_grid-0666-755545524-14784-963-4.5-48-20240130011803.jpg](./img/xyz_grid-0666-755545524-14784-963-4.5-48-20240130011803.jpg)
-
-</details>
-
-- Then I choose **CLIP-AUX**, or `conditioner.embedders.1`:
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0658-755545524-18144-1446-4.5-48-20240128171148.jpg](./img/xyz_grid-0658-755545524-18144-1446-4.5-48-20240128171148.jpg)
-
-![xyz_grid-0661-755545524-20160-1446-4.5-48-20240128191024.jpg](./img/xyz_grid-0661-755545524-20160-1446-4.5-48-20240128191024.jpg)
-
-![xyz_grid-0664-755545524-20160-1446-4.5-48-20240129024047.jpg](./img/xyz_grid-0664-755545524-20160-1446-4.5-48-20240129024047.jpg)
-
-![xyz_grid-0667-755545524-14784-963-4.5-48-20240130011818.jpg](./img/xyz_grid-0667-755545524-14784-963-4.5-48-20240130011818.jpg)
-
-</details>
-
-- For reference, I also see what will happen when I apply both CLIPs:
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0659-755545524-18144-1446-4.5-48-20240128172917.jpg](./img/xyz_grid-0659-755545524-18144-1446-4.5-48-20240128172917.jpg)
-
-![xyz_grid-0662-755545524-20160-1446-4.5-48-20240128192923.jpg](./img/xyz_grid-0662-755545524-20160-1446-4.5-48-20240128192923.jpg)
-
-![xyz_grid-0665-755545524-20160-1446-4.5-48-20240129025805.jpg](./img/xyz_grid-0665-755545524-20160-1446-4.5-48-20240129025805.jpg)
-
-![xyz_grid-0668-755545524-14784-963-4.5-48-20240130013447.jpg](./img/xyz_grid-0668-755545524-14784-963-4.5-48-20240130013447.jpg)
-
-</details>
-
-- For selecting UNETs, CLIPs will be the merged model which is `x13te0` and `x14te1`. Note that I have reused the merge models to save disk space.
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0684-755545524-12096-974-4.5-48-20240203134450.jpg](./img/xyz_grid-0684-755545524-12096-974-4.5-48-20240203134450.jpg)
-
-![xyz_grid-0685-755545524-13440-1098-4.5-48-20240203134527.jpg](./img/xyz_grid-0685-755545524-13440-1098-4.5-48-20240203134527.jpg)
-
-![xyz_grid-0686-755545524-13440-963-4.5-48-20240203135733.jpg](./img/xyz_grid-0686-755545524-13440-963-4.5-48-20240203135733.jpg)
-
-![xyz_grid-0687-755545524-14784-963-4.5-48-20240203135824.jpg](./img/xyz_grid-0687-755545524-14784-963-4.5-48-20240203135824.jpg)
-
-</details>
-
-- Afterthat, I record all the accept model IDs and start merging pairwise. 
-
-- This time [parallel merge](https://en.wikipedia.org/wiki/Merge_algorithm) **is required.** Storing around 6x40 SDXL models requires **around 1.5TB in disk space**, therefore I must try to reuse models as much as possible. Moreover, with this shear amount of model counts, making image preview on them are not fesiable.
-
-### Selected models ###
-
-- `te0`: Models selected for using the **CLIP**, or `conditioner.embedders.0`. 
-
-- `te1`: Models selected for using the **CLIP-AUX**, or `conditioner.embedders.1`. 
-
-- `te2`: Models looks acceptable with both CLIPs applied. Not for selection, just for reference.
-
-- `=sd`: Models has the exact same CLIP pair as the original SDXL `_x25`.
-
-- `--` is used for placeholder because I need to figure out the model pairs to be merged.
-
-- Total / subtotal count will be shown as `=xx`.
-
-- `xxa` e.g. `09a` is the merge of `_x17` and `_x18`, because of model deviation. It introduce some error on expected model weight, but will be negligible when the scale is large.
-
-```
-te0: --,--,03,05,--,10,11,--,--,16,17,09a,10a,20,11a,22,23,24,25,26,27,32,--,36,--,--,41,--=19
-te1: 01,02,03,05,06,10,--,12,14,16,17,09a,10a,20,11a,22,--,24,25,26,27,32,33,36,37,38,41,42=26
-te2: 01,--,03,05,06,10,--,--,--,16,17,09a,10a,20,11a,22,--,24,25,--,27,32,33,36,37,38,41,--=21
-=sd: --,--,03,--,--,10,--,12,--,16,--,-18,-19,--,---,--,--,--,25,--,--,--,--,--,--,--,--,--=7
-```
-- Excluding the `=sd` for the actual merge will be shown below. Intermediate model name will be `x01te1-AstolfoMix-_x01_x02`.
-
-```
-te0:--,--,05,--,11,--,--,17,20,11a,22,23,24,25,26,27,32,--,36,--,--,41,--=14
-te1:01,02,05,06,--,12,14,17,20,11a,22,--,24,25,26,27,32,33,36,37,38,41,42=21
-```
-
-- `unet`: Models selected for using the UNET.
-
-- `nsfw`: Models selected for using the UNET. This time I used a NSFW prompt for test.
-
-- To keep it easy to trace (originaly it is 33 / 15), I adjust it to be a perfect $2^n$. It will be handy for future merge, when new model appears.
-
-- `x01a`: Model pairs which are already available for merge. Therefore I can reuse for saving disk space, a lot.
-
-```
-unet: 01,02,06,07,09,10,11,12,13,15,16,17,20,21,22,23,25,26,27,28,30,31,32,33,34,--,37,38,39,40,42,43,44=32
-nsfw: 01,--,06,07,--,--,11,12,13,15,--,--,20,21,22,23,--,--,27,--,--,31,--,--,--,36,--,--,--,40,--,43,--=16
-x01a: 01,02,--,--,09,10,11,12,--,15,16,--,--,21,22,--,25,26,27,28,--,31,32,33,34,--,37,38,39,40,--,43,44
-```
-- Finally here is the result model name:
-
-```
-base=x17-AstolfoMix-x13te0x14te1.safetensors
-nsfw=x11c-AstolfoMix-x13te0x14te1.safetensors
-```
-
-- File list as the full merging list will be provided soon.
+- Moved to [AstolfoMix-XL: Model selection Round 1 (x39a)](./xl_docs/r01_x39a.md).
 
 ## Model selection Round 2, x49a ##
 
-- With the model fix and new models, now I have more models to pick:
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0705-3416143198-11264-1332-6-48-20240217155856.jpg](img/xyz_grid-0705-3416143198-11264-1332-6-48-20240217155856.jpg)
-
-![xyz_grid-0716-3416143198-10240-1343-6-48-20240218165754.jpg](img/xyz_grid-0716-3416143198-10240-1343-6-48-20240218165754.jpg)
-
-![xyz_grid-0717-3416143198-10240-1343-6-48-20240218170239.jpg](img/xyz_grid-0717-3416143198-10240-1343-6-48-20240218170239.jpg)
-
-</details>
-
-- Only `_30b` is showing difference because of modified VAE.
-
-- Then I run the CLIP test for the new models:
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0706-755545524-12096-1446-4.5-48-20240217174833.jpg](img/xyz_grid-0706-755545524-12096-1446-4.5-48-20240217174833.jpg)
-
-![xyz_grid-0707-755545524-12096-1446-4.5-48-20240217175235.jpg](img/xyz_grid-0707-755545524-12096-1446-4.5-48-20240217175235.jpg)
-
-![xyz_grid-0708-755545524-12096-1446-4.5-48-20240217180218.jpg](img/xyz_grid-0708-755545524-12096-1446-4.5-48-20240217180218.jpg)
-
-</details>
-
-- And then the "repaired models":
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0720-755545524-20160-1446-4.5-48-20240218195001.jpg](img/xyz_grid-0720-755545524-20160-1446-4.5-48-20240218195001.jpg)
-
-![xyz_grid-0721-755545524-20160-1446-4.5-48-20240218195108.jpg](img/xyz_grid-0721-755545524-20160-1446-4.5-48-20240218195108.jpg)
-
-![xyz_grid-0722-755545524-20160-1446-4.5-48-20240218201533.jpg](img/xyz_grid-0722-755545524-20160-1446-4.5-48-20240218201533.jpg)
-
-</details>
-
-- Since I want to bring more models to the mix, I switched the seed to the same prompt, to hopefully select more models:
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0710-543236662-20160-1631-4.5-48-20240218002108.jpg](img/xyz_grid-0710-543236662-20160-1631-4.5-48-20240218002108.jpg)
-
-![xyz_grid-0718-543236662-20160-1446-4.5-48-20240218180425.jpg](img/xyz_grid-0718-543236662-20160-1446-4.5-48-20240218180425.jpg)
-
-![xyz_grid-0719-543236662-20160-1446-4.5-48-20240218180615.jpg](img/xyz_grid-0719-543236662-20160-1446-4.5-48-20240218180615.jpg)
-
-![xyz_grid-0723-543236659-20160-1446-4.5-48-20240218201715.jpg](img/xyz_grid-0723-543236659-20160-1446-4.5-48-20240218201715.jpg)
-
-</details>
-
-- With the passing CLIPs, this time I decided to reconstruct all 50 models to test the UNETs:
-
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
-
-![xyz_grid-0727-755545524-20160-1446-4.5-48-20240220014743.jpg](img/xyz_grid-0727-755545524-20160-1446-4.5-48-20240220014743.jpg)
-
-![xyz_grid-0726-755545524-20160-1446-4.5-48-20240220014709.jpg](img/xyz_grid-0726-755545524-20160-1446-4.5-48-20240220014709.jpg)
-
-![xyz_grid-0729-755545524-20160-1446-4.5-48-20240220020344.jpg](img/xyz_grid-0729-755545524-20160-1446-4.5-48-20240220020344.jpg)
-
-![xyz_grid-0728-755545524-20160-1446-4.5-48-20240220020229.jpg](img/xyz_grid-0728-755545524-20160-1446-4.5-48-20240220020229.jpg)
-
-![xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg](img/xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg)
-
-</details>
-
-- Then I reconstruct the whole recipe:
-
-```
-te0: --,--,03,04,05,--,08,10,11,--,14,16,17,18,19,20,21,22,23,24,25,26,27,--,32,--,35,36,--,--,--,41,--,43,--,45,46,48,--,--=27
-te1: 01,02,03,04,05,06,--,10,--,12,14,16,17,18,19,20,21,22,23,24,25,26,27,30,32,33,35,36,37,38,40,41,42,--,44,45,46,48,49,50=37
-te2: 01,--,03,04,05,06,--,10,--,--,--,16,17,18,19,20,21,22,23,24,25,--,27,--,32,33,35,36,37,38,40,41,--,--,--,--,--,--,--,--=25
-=sd: --,--,03,--,--,--,--,10,--,12,--,16,--,18,19,--,--,--,--,--,25,--,--,--,--,--,--,--,--,--,--,--,--,--,--,--,--,--,--,--=7
-
-te0: 04,05,08,11,14,17,20,21,22,23,24,25,26,27,32,35,36,41,43,45,46,48=22
-te1: 01,02,04,05,06,14,17,20,21,22,23,24,25,26,27,30,32,33,35,36,37,38,40,41,42,44,45,46,48,49,50=31
-unet: 01,02,--,04,05,06,07,08,09,10,11,12,13,--,15,--,17,18,19,20,21,22,23,--,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,--,49,--=44
-```
+- Moved to [AstolfoMix-XL: Model selection Round 2 (x49a)](./xl_docs/r02_x49a.md).
 
 ## Finding on "SDXL Baseline Merge" ##
 
@@ -525,95 +263,29 @@ unet: 01,02,--,04,05,06,07,08,09,10,11,12,13,--,15,--,17,18,19,20,21,22,23,--,25
 
 ## Model selection Round 3, x52a ##
 
+- The stuffs similar to previous rounds has been moved to [AstolfoMix-XL: Model selection Round 3 (x52a)](./xl_docs/r03_x52a.md).
+
 - Since [sd-mecha](https://github.com/ljleb/sd-mecha) is in active development, meanwhile there is a script to "merge CLIP" seperately, **also the generated images are being different** because of "structure autofix" along with **fp64 merging**, I think I can rewrite the script to *generate all intermediate models* in full auto. [And... I am really doing it.](./astolfo_mix_e2e.ipynb) Now I'm totally not operating WebUI to merge models. [As shown in the recipe](x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.mecha), it is in serialized form, which looks like [assembly code](https://en.wikipedia.org/wiki/Assembly_language).
 
 - I've found that **the output image is no longer same as the previously merged model.** It is possibly caused by *close to perfect precision* (FP64 merge with pure floating point ratio), which *dual CLIP structure is extra sensitive here,* and the un-pruning process (directly predefine known good structure) is different from A1111's "union of discovered layers".
 
-![xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg](img/xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg)
+![xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg](.img/xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg)
 
 - This is a test of merging 4 random models, which exclude the floating point error:
 
-![xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg](img/xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg)
+![xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg](.img/xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg)
 
-- However, this time I don't want to fill in the comparasion images again, and I'll post the selection result directly.
+- After whole procedss, I found that even casting FP16 from FP64 for a few times will cause difference also, the `e2e` is true FP64 merge for the whole process:
 
-<details>
-    <summary>Full of XY plot. Click to open.</summary>
+![xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png](./img/x52a/xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png)
 
-- te0
-
-![xyz_grid-0742-755545524-20160-1446-4.5-48-20240225222310.jpg](img/xyz_grid-0742-755545524-20160-1446-4.5-48-20240225222310.jpg)
-
-![xyz_grid-0745-755545524-20160-1446-4.5-48-20240225235043.jpg](img/xyz_grid-0745-755545524-20160-1446-4.5-48-20240225235043.jpg)
-
-![xyz_grid-0748-755545524-20160-1446-4.5-48-20240226074724.jpg](img/xyz_grid-0748-755545524-20160-1446-4.5-48-20240226074724.jpg)
-
-![xyz_grid-0751-755545524-20160-1446-4.5-48-20240227005621.jpg](img/xyz_grid-0751-755545524-20160-1446-4.5-48-20240227005621.jpg)
-
-![xyz_grid-0754-755545524-24192-1446-4.5-48-20240227011759.jpg](img/xyz_grid-0754-755545524-24192-1446-4.5-48-20240227011759.jpg)
-
-- te1
-
-![xyz_grid-0743-755545524-20160-1446-4.5-48-20240225225251.jpg](img/xyz_grid-0743-755545524-20160-1446-4.5-48-20240225225251.jpg)
-
-![xyz_grid-0746-755545524-20160-1446-4.5-48-20240226001126.jpg](img/xyz_grid-0746-755545524-20160-1446-4.5-48-20240226001126.jpg)
-
-![xyz_grid-0749-755545524-20160-1446-4.5-48-20240227003944.jpg](img/xyz_grid-0749-755545524-20160-1446-4.5-48-20240227003944.jpg)
-
-![xyz_grid-0752-755545524-20160-1446-4.5-48-20240227005744.jpg](img/xyz_grid-0752-755545524-20160-1446-4.5-48-20240227005744.jpg)
-
-![xyz_grid-0755-755545524-24192-1446-4.5-48-20240227013353.jpg](img/xyz_grid-0755-755545524-24192-1446-4.5-48-20240227013353.jpg)
-
-- te2
-
-![xyz_grid-0744-755545524-20160-1446-4.5-48-20240225233008.jpg](img/xyz_grid-0744-755545524-20160-1446-4.5-48-20240225233008.jpg)
-
-![xyz_grid-0747-755545524-20160-1446-4.5-48-20240226073701.jpg](img/xyz_grid-0747-755545524-20160-1446-4.5-48-20240226073701.jpg)
-
-![xyz_grid-0750-755545524-20160-1446-4.5-48-20240227004129.jpg](img/xyz_grid-0750-755545524-20160-1446-4.5-48-20240227004129.jpg)
-
-![xyz_grid-0753-755545524-22176-1446-4.5-48-20240227011506.jpg](img/xyz_grid-0753-755545524-22176-1446-4.5-48-20240227011506.jpg)
-
-![xyz_grid-0756-755545524-26208-1446-4.5-48-20240227013958.jpg](img/xyz_grid-0756-755545524-26208-1446-4.5-48-20240227013958.jpg)
-
-- unet
-
-![xyz_grid-0758-755545524-20160-1438-4.5-48-20240227214211.jpg](img/xyz_grid-0758-755545524-20160-1438-4.5-48-20240227214211.jpg)
-
-![xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg](img/xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg)
-
-![xyz_grid-0760-755545524-20160-1438-4.5-48-20240227222717.jpg](img/xyz_grid-0760-755545524-20160-1438-4.5-48-20240227222717.jpg)
-
-![xyz_grid-0761-755545524-20160-1438-4.5-48-20240227224501.jpg](img/xyz_grid-0761-755545524-20160-1438-4.5-48-20240227224501.jpg)
-
-![xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg](img/xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg)
-
-</details>
-
-```
-te0: --,--,07,--,--,--,--,15,--,--,--,--,29,--,--,--,--,40,--,44,48,--=-6
-te1: --,--,--,09,--,--,--,15,--,--,--,--,29,--,31,34,--,--,--,--,48,--=-6
-te2: --,06,--,09,--,11,12,15,--,--,--,--,29,30,31,34,38,40,42,44,48,49=-15
-=sd: 03,--,--,--,10,--,12,--,16,18,19,25=-7
-
-te0: 03,07,10,12,15,16,18,19,29,40,44,48=-12
-te1: 03,09,10,12,15,16,18,19,29,31,34,48=-12
-
-unet: 03,09,14,24,48,50=-6
-```
-
-- Found that even casting FP16 from FP64 for a few times will cause difference also, the `e2e` is true FP64 merge for the whole process:
-
-![xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png](img/xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png)
-
-- Another round of model selection, this time is exclusion instead of inclusion.
+- Another round (round 3.5) of model selection, this time is exclusion instead of inclusion.
 Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. Example: Kohaku (07,29,44), a2 (15), AID (34), 218 (40), and js2prony (48)
 
-- Let's see if my merge has the same issue tomorrow. Need to make the next stage of models and sleep.
-
-![xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg](img/xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg)
+![xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg](./img/x52a/xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg)
 
 ## Model selection Round 4, x63a ##
 
-- Ward. 
+- The stuffs similar to previous rounds has been moved to [AstolfoMix-XL: Model selection Round 4 (x69a)](./xl_docs/r04_x69a.md).
 
+- Situation is getting similar after I scaled up the model pool, with adding more models in 2403. Pony series models are not mergible at this moment. 

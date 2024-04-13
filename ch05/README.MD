@@ -1,4 +1,4 @@
-# Chapter 05: Astolfo mix. #
+# Chapter 05: AstolfoMix. #
 
 - [CivitAI model page.](https://civitai.com/models/155604) The style there is a bit different.
 
@@ -138,7 +138,7 @@
 }
 ```
 
-- For full recipe, see [receipe-10a.json](./receipe-10a.json).Replace with SD original CLIP / VAE to obtain "10", *however the equivalence may not in file hash precision because of floating point error.*
+- For full recipe, see [recipe-10a.json](./recipe/recipe-10a.json).Replace with SD original CLIP / VAE to obtain "10", *however the equivalence may not in file hash precision because of floating point error.*
 
 - Personally I prefer using [vae-ft-mse-840000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.ckpt) for VAE, but I'll keep it neutral while merging.
 
@@ -287,7 +287,7 @@ Steps: 48, Sampler: Euler, CFG scale: 4, Seed: 1920996841, Size: 1024x1024, Mode
 ![img/xyz_grid-0330-3972813705-25600-2069-4-48-20231021201454.jpg](img/xyz_grid-0330-3972813705-25600-2069-4-48-20231021201454.jpg)
 ![img/xyz_grid-0331-3972813705-25600-2069-4-48-20231021233059.jpg](img/xyz_grid-0331-3972813705-25600-2069-4-48-20231021233059.jpg)
 
-- For full recipe, see [receipe-20a.json](./receipe-20a.json).
+- For full recipe, see [recipe-20a.json](./recipes/recipe-20a.json).
 
 - Now the L2 distance graph (*both X-Y axis are arbitary picked, in order to visually seperate the points*):
 
