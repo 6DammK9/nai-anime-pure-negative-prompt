@@ -8,7 +8,9 @@
 
 ## What is the mix? ##
 
-- Currently, it is an Ensemble averaging ~~Uniform merge~~ of 32 UNETS + (19+26) CLIPS (from 21 models), selected from ~~44~~ 50 discovered SDXL models.
+- Currently, it is an experimental merge with [immediately accessible merging algorithms](https://github.com/ljleb/sd-mecha/blob/main/sd_mecha/merge_methods.py) under discovered SDXL models.
+
+- Baseline model will be *ensemble averaging*, same as "model soup".
 
 - I will include *exclusive findings* here only. Read the ["master" article](./README.MD) and ["SD2" article](./README_SD2.MD) *(yes it applies also)* for general ideas.
 
