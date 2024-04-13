@@ -269,20 +269,20 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 - I've found that **the output image is no longer same as the previously merged model.** It is possibly caused by *close to perfect precision* (FP64 merge with pure floating point ratio), which *dual CLIP structure is extra sensitive here,* and the un-pruning process (directly predefine known good structure) is different from A1111's "union of discovered layers".
 
-![xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg](.img/xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg)
+![xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg](./img/xyz_grid-0737-1355548248-5376-1081-4.5-48-20240222003354.jpg)
 
 - This is a test of merging 4 random models, which exclude the floating point error:
 
-![xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg](.img/xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg)
+![xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg](./img/xyz_grid-0740-1355548248-4032-1039-4.5-48-20240222011443.jpg)
 
 - After whole procedss, I found that even casting FP16 from FP64 for a few times will cause difference also, the `e2e` is true FP64 merge for the whole process:
 
-![xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png](./img/x52a/xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png)
+![xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png](./img/xyz_grid-0763-755545524-2688-1081-4.5-48-20240228073427.png)
 
 - Another round (round 3.5) of model selection, this time is exclusion instead of inclusion.
 Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. Example: Kohaku (07,29,44), a2 (15), AID (34), 218 (40), and js2prony (48)
 
-![xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg](./img/x52a/xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg)
+![xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg](./img/xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg)
 
 ## Model selection Round 4, x63a ##
 
