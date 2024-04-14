@@ -68,7 +68,7 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 ### I have the N-way merger! ###
 
-- An **E2E single-click solution** has been found. ~~Sorry I'm too lazy to write code.~~ See [this notebook](./uniform_merge.ipynb) for details. **Efficiency has been increased very much** because I have saved so many disk space, and merging time reduced from 60+ minutes to around 8 minutes for 40 models. However I still need a few sets of models for components comparasion, hence the space complexity remains unchanged.
+- An **E2E single-click solution** has been found. ~~Sorry I'm too lazy to write code.~~ See [this notebook](./astolfo_mix_e2e.ipynb) for details. **Efficiency has been increased very much** because I have saved so many disk space, and merging time reduced from 60+ minutes to around 8 minutes for 40 models. However I still need a few sets of models for components comparasion, hence the space complexity remains unchanged.
 
 - Although I'm too lazy to implement the binary tree approach and let floating point error propogates through the math series approach, it is still looking almost identical, because *it overcome the limitation on A1111 WebUI*.
 
@@ -291,3 +291,9 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 - The stuffs similar to previous rounds has been moved to [AstolfoMix-XL: Model selection Round 4 (x69a)](./xl_docs/r04_x69a.md).
 
 - Situation is getting similar after I scaled up the model pool, with adding more models in 2403. Pony series models are not mergible at this moment. 
+
+- Human details is slightly more refeined, but the *background* is a lot more rich and realistic (content wise, not style).
+
+![xyz_grid-0794-2049335707-8064-1623-4.5-256-20240413165049.jpg](./img/xyz_grid-0794-2049335707-8064-1623-4.5-256-20240413165049.jpg)
+
+![xyz_grid-0795-2049335707-8064-1623-4.5-256-20240413165435.jpg](./img/xyz_grid-0795-2049335707-8064-1623-4.5-256-20240413165435.jpg)
