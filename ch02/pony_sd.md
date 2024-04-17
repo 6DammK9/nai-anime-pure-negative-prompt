@@ -36,15 +36,15 @@ Following images are referenced to [ch05](../ch05/README_XL.MDs), model componen
 
 `_x14` as V6
 
-![xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg](../ch05/img/xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg)
+![xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg](../ch05/img/x52a/xyz_grid-0759-755545524-20160-1438-4.5-48-20240227220718.jpg)
 
 - The recent "pony merge" is not totally false / fake, it becomes possible because **the downstream finetunes are using general techniques** (e.g. taggers common with AnimagineXL V3 / kohakuXL), and shifting the model weights into a more common space. [T-ponynai3](https://civitai.com/models/317902/t-ponynai3) and [AutismMix SDXL](https://civitai.com/models/288584/autismmix-sdxl) are nice example.
 
 `_x48`, `_x50` as V6's downstream finetunes
 
-![xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg](../ch05/img/xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg)
+![xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg](../ch05/img/x49a/xyz_grid-0730-755545524-20160-1446-4.5-48-20240220073619.jpg)
 
-![xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg](../ch05/img/xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg)
+![xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg](../ch05/img/x52a/xyz_grid-0762-755545524-24192-1438-4.5-48-20240227230419.jpg)
 
 ### (240405) So is the "hash" legit? ### 
 
