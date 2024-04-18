@@ -6,10 +6,10 @@
 
 |Abbr.|Full name|arXiv|A1111 Extension|
 |---|---|---|---|
-|CFG|Classifier-Free Diffusion Guidance|[2207.12598]|(Built in)|
+|CFG|Classifier-Free Diffusion Guidance|[2207.12598](https://arxiv.org/abs/2207.12598)|(Built in)|
 |Dyn|Dynamic CFG / CFG Rescale|[2305.08891](https://arxiv.org/abs/2305.08891)|[sd-dynamic-thresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|
 |FreeU|Free Lunch in Diffusion U-Net|[2309.11497](https://arxiv.org/abs/2309.11497)|[sd-webui-freeu](https://github.com/ljleb/sd-webui-freeu)|
-|PAG|Perturbed Attention Guidance|[2403.17377](https://arxiv.org/abs/2403.17377)|[sd-webui-incantations](https://github.com/v0xie/sd-webui-incantations)|
+|PAG|Perturbed-Attention Guidance|[2403.17377](https://arxiv.org/abs/2403.17377)|[sd-webui-incantations](https://github.com/v0xie/sd-webui-incantations)|
 |CHG|Characteristic Guidance|[2312.07586](https://arxiv.org/abs/2312.07586)|[CharacteristicGuidanceWebUI](https://github.com/scraed/CharacteristicGuidanceWebUI)|
 
 ## Plots ##
