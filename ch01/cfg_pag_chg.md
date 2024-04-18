@@ -29,7 +29,7 @@
 ![xyz_grid-0799-2903506662-7936-6286-2.0-48-20240419000647.jpg](./img/xyz_grid-0799-2903506662-7936-6286-2.0-48-20240419000647.jpg)
 
 
-- Left: Dynamic CFG, Right: CHG.
+- Left: Dynamic CFG, Right: CHG (default setting).
 
 ![photo_2024-04-18_02-16-36.jpg](./img/photo_2024-04-18_02-16-36.jpg)
 
