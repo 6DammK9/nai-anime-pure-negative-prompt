@@ -1,5 +1,11 @@
 # Materials on aesthetic analysis #
 
+### Red pill (Is a paper! Too difficult to understand but I have friends) ###
+
+- [What makes an image realistic?](https://arxiv.org/abs/2403.04493)
+
+![24042101.PNG](./img/24042101.PNG)
+
 ### I am really watching the whole series ###
 
 - Notes in discord: [CS side](https://discord.com/channels/1027129024054575174/1077525010421383241), [VA side](https://discord.com/channels/1027129024054575174/1077834709821833216). **I strongly encourage to watch the very first video on each series.** Such "computional" "art" can be theorized. It is not a mystery.

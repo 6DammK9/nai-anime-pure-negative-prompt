@@ -23,3 +23,11 @@ SD2
 SDXL
 
 ![sdxl_unet_marked.png](./view_unet/sdxl_unet_marked.png)
+
+## Extra: PCA over CLIP embeddings ##
+
+- As mini side request: [view_clip.ipynb](./view_clip/view_clip.ipynb)
+
+- *More like validate my thought instead of discovery.*
+
+![result_24042103.jpg](./view_clip/result_24042103.jpg)
