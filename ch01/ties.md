@@ -6,7 +6,7 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 
 ![24042301.png](./img/24042301.png)
 
-- *Since picking hyperparameter is tedious*, which is NP-Hard with weeks per trial, I naively set $\lambda=k=1.0$ which is between paper and my experiance.
+- *Since picking hyperparameter is tedious*, which is NP-Hard with weeks per trial, I naively set $\lambda=1.0$ and $k=100$ which is between paper and my experiance.
 
 ![24042302.PNG](./img/24042302.PNG)
 
@@ -16,4 +16,4 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 
 - From the dev of the merger, using CPU won't be too slow, and... it merges faster then GPU. WS OP.
 
-- Will be continued in ["AstolfoMix-XL TIES"](../ch05/README_XL.MD
+- Will be continued in ["AstolfoMix-XL TIES"](../ch05/README_XL.md)
