@@ -309,17 +309,7 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 
 ## Findings on "SDXL TIES" ##
 
-- Self explained: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.org/abs/2306.01708)
-
-- [Merger code](https://github.com/ljleb/sd-mecha/blob/main/sd_mecha/__init__.py#L139-L167) is directly referring to the Algorithm session in the paper. *I don't validate line by line yet, but from end result, it should be valid.*
-
-![24042301.png](./img/24042301.png)
-
-- Notice that **MEMORY USAGE is huge!**. Seems that model soup (averaging) is $O(1)$ meanwhile TIES is close to $O(N)$ in space complexity.
-
-![photo_2024-04-22_07-45-58.jpg](./img/photo_2024-04-22_07-45-58.jpg)
-
-- From the dev of the merger, using CPU won't be too slow, and... it merges faster then GPU. WS OP.
+- Decided to move to ch01 because the discovery is more general: [ties.md](../ch01/ties.md)
 
 ### New challenges: Naive TIES merge is nice but flawed ###
 
