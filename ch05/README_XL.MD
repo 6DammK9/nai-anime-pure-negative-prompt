@@ -118,26 +118,27 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 - Read docuemnts there for how I derive the model selection from the discovered models. I'll do put the statistic here.
 
-|Round|Model Name|RAW|UNET|TE0|TE1|Recipe|
-|---|---|---|---|---|---|---|
-|01|`x17-AstolfoMix-x13te0x14te1.safetensors`|42|32|14|21|[json](./recipes/recipe-x39a.json)|
-|02|`x43-AstolfoMix-x22te0x31te1.safetensors`|50|44|22|31|[mecha](./recipes/x43-AstolfoMix-x21te0x30te1-e2e-240222-60d0764.mecha)|
-|03|`x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.safetensors`|52|46|40|40|[mecha](./recipes/x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.mecha)|
-|04|`x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.safetensors`|70|52|61|42|[mecha](./recipes/x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.mecha)|
+|Round|Algo|Model Name|RAW|UNET|TE0|TE1|Recipe|
+|---|---|---|---|---|---|---|---|
+|01|Uniform Soup|`x17-AstolfoMix-x13te0x14te1.safetensors`|42|32|14|21|[json](./recipes/recipe-x39a.json)|
+|02|Uniform Soup|`x43-AstolfoMix-x22te0x31te1.safetensors`|50|44|22|31|[mecha](./recipes/x43-AstolfoMix-x21te0x30te1-e2e-240222-60d0764.mecha)|
+|03|Uniform Soup|`x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.safetensors`|52|46|40|40|[mecha](./recipes/x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.mecha)|
+|04|Uniform Soup|`x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.safetensors`|70|52|61|42|[mecha](./recipes/x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.mecha)|
+|05|TIES|`x72-AstolfoMix-x??te0x??te1-e2e-240421-feefbf4.safetensors`|73|??|??|??|Coming soon|
 
-## Discovered models ##
+### Discovered models ###
 
 - Moved to [AstolfoMix-XL: Discovered models](./xl_docs/discovered_models.md)
 
-## Deriving the "recipe" a.k.a model selection (Round 1, x39a) ##
+### Deriving the "recipe" a.k.a model selection (Round 1, x39a) ###
 
 - Moved to [AstolfoMix-XL: Model selection Round 1 (x39a)](./xl_docs/r01_x39a.md).
 
-## Model selection Round 2, x49a ##
+### Model selection Round 2, x49a ###
 
 - Moved to [AstolfoMix-XL: Model selection Round 2 (x49a)](./xl_docs/r02_x49a.md).
 
-## Finding on "SDXL Baseline Merge" ##
+### Finding on "SDXL Baseline Merge" ###
 
 - *I will have a "round 2" soon, because there are so many model released recently, along with merging tools. The docuement here is referring "x39a" only.*
 
@@ -222,7 +223,7 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 ![xyz_grid-0679-359783617-3072-1332-6-48-20240203104728.png](img/xyz_grid-0679-359783617-3072-1332-6-48-20240203104728.png)
 
-## My action list (after Baseline merge) ##
+### My action list (after Baseline merge) ###
 
 - *Wait* for the [upcoming merger](https://github.com/ljleb/sd-mecha) and [modified toolkit](https://github.com/silveroxides/stable-diffusion-webui-model-toolkit-revisited)
 
@@ -263,7 +264,7 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 
 </details>
 
-## Model selection Round 3, x52a ##
+### Model selection Round 3, x52a ###
 
 - The stuffs similar to previous rounds has been moved to [AstolfoMix-XL: Model selection Round 3 (x52a)](./xl_docs/r03_x52a.md).
 
@@ -286,7 +287,7 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 
 ![xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg](./img/xyz_grid-0757-755545524-28224-1623-4.5-48-20240227074913.jpg)
 
-## Model selection Round 4, x63a ##
+### Model selection Round 4, x63a ###
 
 - The stuffs similar to previous rounds has been moved to [AstolfoMix-XL: Model selection Round 4 (x69a)](./xl_docs/r04_x69a.md).
 
@@ -297,3 +298,44 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 ![xyz_grid-0794-2049335707-8064-1623-4.5-256-20240413165049.jpg](./img/xyz_grid-0794-2049335707-8064-1623-4.5-256-20240413165049.jpg)
 
 ![xyz_grid-0795-2049335707-8064-1623-4.5-256-20240413165435.jpg](./img/xyz_grid-0795-2049335707-8064-1623-4.5-256-20240413165435.jpg)
+
+### Rich background is back! ###
+
+- [Cherrypicked images as model page.](https://civitai.com/models/309514?modelVersionId=456931)
+
+- Precision and more model works! Also it drift towards more in anime style, but less stable with realistic contents.
+
+- Time to move on to the next chapter, because it is still kind of baseline model.
+
+## Findings on "SDXL TIES" ##
+
+- Self explained: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.org/abs/2306.01708)
+
+- [Merger code](https://github.com/ljleb/sd-mecha/blob/main/sd_mecha/__init__.py#L139-L167) is directly referring to the Algorithm session in the paper. *I don't validate line by line yet, but from end result, it should be valid.*
+
+![24042301.png](./img/24042301.png)
+
+- Notice that **MEMORY USAGE is huge!**. Seems that model soup (averaging) is $O(1)$ meanwhile TIES is close to $O(N)$ in space complexity.
+
+![photo_2024-04-22_07-45-58.jpg](./img/photo_2024-04-22_07-45-58.jpg)
+
+- From the dev of the merger, using CPU won't be too slow, and... it merges faster then GPU. WS OP.
+
+### New challenges: Naive TIES merge is nice but flawed ###
+
+- Given nice prompts (e.g. prompts which PonyXL does well), it output great images.
+
+- However, for seriously untouched knowledge (yes, the "car with person"), it fails hard and produce pure noise like PonyXL.
+
+- Replacing with *averaged CLIP* or *original CLIP* will recover it, however breaking the image style.
+
+![xyz_grid-0803-1021567025-5376-1081-3-48-20240423002302.jpg](./img/xyz_grid-0803-1021567025-5376-1081-3-48-20240423002302.jpg)
+
+- I'm not sure if the greedy approach still works (i.e. test against $O(N)$ CLIPs and pick the nice CLIPs), I'll still try for once.
+
+- Also, I found that my E2E script will be too complicated if I include one more dimension (algorithm) in the process, therefore I set it as global variable and pick the mode instead.
+
+### Model selection Round 5, x72a ###
+
+- The stuffs similar to previous rounds has been moved to [AstolfoMix-XL: Model selection Round 5 (x72a)](./xl_docs/r05_x72a.md).
+
