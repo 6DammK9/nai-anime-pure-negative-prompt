@@ -20,6 +20,8 @@
 
 - [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.org/abs/2306.01708)
 
+- [Editing Models with Task Arithmetic](https://arxiv.org/abs/2212.04089)
+
 - [Git Re-Basin: Merging Models modulo Permutation Symmetries](https://arxiv.org/abs/2209.04836)
 
 - [ZipIt! Merging Models from Different Tasks without Training](https://arxiv.org/abs/2305.03053)
