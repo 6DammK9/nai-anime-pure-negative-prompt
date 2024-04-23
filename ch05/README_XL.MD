@@ -319,6 +319,9 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 
 - Replacing with *averaged CLIP* or *original CLIP* will recover it, however breaking the image style.
 
+- *Left to right:
+All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All Average (with subset)*
+
 ![xyz_grid-0803-1021567025-5376-1081-3-48-20240423002302.jpg](./img/xyz_grid-0803-1021567025-5376-1081-3-48-20240423002302.jpg)
 
 - I'm not sure if the greedy approach still works (i.e. test against $O(N)$ CLIPs and pick the nice CLIPs), I'll still try for once.
@@ -329,3 +332,11 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 
 - The stuffs similar to previous rounds has been moved to [AstolfoMix-XL: Model selection Round 5 (x72a)](./xl_docs/r05_x72a.md).
 
+- Pay attention that the "pure noise" is mainly come from:
+
+|id|remark|
+|---|---|
+|`te1`|`x69a` onward|
+|`txt2`|`sd_mecha` (240406 onward)|
+|`CLIP`|`toolkit`|
+|ViT-G|By component size|
