@@ -313,6 +313,8 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 
 ### New challenges: Naive TIES merge is nice but flawed ###
 
+- **Notes: Soon I find out the implementation was wrong.** PR was made to the merger. See [ties.md](../ch01/ties.md) for details.
+
 - Given nice prompts (e.g. prompts which PonyXL does well), it output great images.
 
 - However, for seriously untouched knowledge (yes, the "car with person"), it fails hard and produce pure noise like PonyXL.
@@ -327,6 +329,16 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 - I'm not sure if the greedy approach still works (i.e. test against $O(N)$ CLIPs and pick the nice CLIPs), I'll still try for once.
 
 - Also, I found that my E2E script will be too complicated if I include one more dimension (algorithm) in the process, therefore I set it as global variable and pick the mode instead.
+
+### TIES Challenge: Hyperparameter tuning ###
+
+- I have found that $k=1.0$ would be not good. It produce broken images even the implementation is been rectified. 
+
+![xyz_grid-0811-1021567025-8064-1446-3-48-20240424073621.jpg](./img/xyz_grid-0811-1021567025-8064-1446-3-48-20240424073621.jpg)
+
+- In comparasion, this is the flawed generation with $k=1.0$. Either $k$ or $\lambda$ should be reduced.
+
+![xyz_grid-0812-1021567025-8064-1631-3-48-20240424073855.jpg](./img/xyz_grid-0812-1021567025-8064-1631-3-48-20240424073855.jpg)
 
 ### Model selection Round 5, x72a ###
 
