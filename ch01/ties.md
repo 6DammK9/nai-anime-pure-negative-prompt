@@ -26,7 +26,7 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 
 - Originally model weight is contriuted in electing sign. However, we have found that **ignoring the magnitude** will yield a smoother weight transition.
 
-- It will have less impact, but lower risk to have the model toasted. *TODO: Link to ch05.*
+- It will have less impact, but lower risk to have the model toasted. See [ch05](../ch05/README_XL.MD#ties-challenge-hyperparameter-tuning) for details.
 
 ![24042401.PNG](./img/24042401.PNG)
 
