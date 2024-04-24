@@ -18,13 +18,24 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 
 - Will be continued in ["AstolfoMix-XL TIES"](../ch05/README_XL.MD)
 
-<hr>
+## Spinoff: Neuron-TIES ##
 
-### Sample code ###
+- *By accident.*
 
-- Will create PR.
+![photo_2024-04-23_12-37-11.jpg](./img/photo_2024-04-23_12-37-11.jpg)
 
-## Commnet / LaTeX translation by DammK ##
+- Originally model weight is contriuted in electing sign. However, we have found that **ignoring the magnitude** will yield a smoother weight transition.
+
+- It will have less impact, but lower risk to have the model toasted. *TODO: Link to ch05.*
+
+![24042401.PNG](./img/24042401.PNG)
+
+## Sample code ##
+
+- [PR has been merged!](https://github.com/ljleb/sd-mecha/pull/24)
+
+- Kept the sample code here because the code below has been split already. 
+
 ### add_difference_ties ###
 - `base`: $\theta_{init}$
 - `*models`: $\{\theta_{init}\}_{t=1}^n$
