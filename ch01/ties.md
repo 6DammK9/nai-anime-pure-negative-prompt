@@ -36,7 +36,7 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 
 *Looks like I don't have to write the formulas again?*
 
-- Switching from "sum of weights" to "sum of signs", it will be interprepted as "voting of signs". $\gamma_m^p = sgn(\sum_{t=1}^n \hat{\gamma}_t^p)$
+- Switching from "sum of weights" to "sum of signs", it will be interprepted as "voting of signs". $\gamma_m^p = sgn(\Sigma_{t=1}^n \hat{\gamma}_t^p)$
 
 - Then **with special hyperparameters** $k=100%$, all model parameters will be considered, and elect for the majority signs.
 
@@ -71,7 +71,7 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 ### ties_sum ###
 - `delta`: $\hat{\tau}_t$
 - `signs`: $\gamma_t$
-- `final_sign`: $\gamma_m^p = sgn(\sum_{t=1}^n \hat{\tau}_t^p)$
+- `final_sign`: $\gamma_m^p = sgn(\Sigma_{t=1}^n \hat{\tau}_t^p)$
 - `delta_filters`: $\{ \gamma_t^p = \gamma_m^p \}$
 - `param_counts`: $|A^p|$
 - `filtered_delta`: $\sum_{t\in{A^p}} \hat{\tau}_t^p$
@@ -114,7 +114,7 @@ def ties_sum(
     # $$ \gamma_t $$ 
     signs = torch.sign(deltas)
 
-    # $$ \gamma_m^p = sgn(\sum_{t=1}^n \hat{\tau}_t^p) $$
+    # $$ \gamma_m^p = sgn(\Sigma_{t=1}^n \hat{\tau}_t^p) $$
     final_sign = torch.sign(torch.sum(deltas,dim=0)) 
 
     # Step 3: Disjoint merge.
