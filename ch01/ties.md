@@ -46,6 +46,14 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 
 - Since $\tau_t$ is **forced to be in scale with** $\theta_{averaging}-\theta_{init}$, now $\tau_m$ is also at the same scale i.e. **It will behaves like averaging** (and it is)
 
+![24042501.png](./img/24042501.png)
+
+- It is still a bit buggy under minor prompts (bias from models are inherited), *it can be resolved by performing the model filtering again.* Currently swapping ViT-G (only) will break, but swapping ViT-L or both of them will be fine.
+
+- Grid: TIES-SOUP, TIES-SOUP with "averaged CLIP", TIES-SOUP with "averaged CLIP of filtered models", Averaging under filtered models
+
+![xyz_grid-0803-1021567025-5376-1081-3-48-20240423002302.jpg](../ch05/img/xyz_grid-0803-1021567025-5376-1081-3-48-20240423002302.jpg)
+
 ## Sample code (TIES) ##
 
 - [PR has been merged!](https://github.com/ljleb/sd-mecha/pull/24)
