@@ -18,9 +18,9 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 
 - Will be continued in ["AstolfoMix-XL TIES"](../ch05/README_XL.MD)
 
-## Spinoff: Neuron-TIES ##
+## Spinoff: TIES-SOUP ##
 
-- *By accident.*
+- *By accident.* ~~There are neuron-ties proposed by ljleb but it is in discusssion so I'll wait for publishing.~~
 
 ![photo_2024-04-23_12-37-11.jpg](./img/photo_2024-04-23_12-37-11.jpg)
 
@@ -30,7 +30,23 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 
 ![24042401.PNG](./img/24042401.PNG)
 
-## Sample code ##
+- With some [math deriviation](https://www.quora.com/What-is-the-meaning-of-derivation-in-mathematics-What-are-its-types-and-examples-to-understand-it-better), **I have found that it can be an extended version of averaging** like [Fisher-Weighted Averaging](https://arxiv.org/abs/2111.09832), but without evaluation of the models ~~I cannot intercept the runtime.~~
+
+### Math discussion ###
+
+*Looks like I don't have to write the formulas again?*
+
+- Switching from "sum of weights" to "sum of signs", it will be interprepted as "voting of signs". $\gamma_m^p = sgn(\sum_{t=1}^n \hat{\gamma}_t^p)$
+
+- Then **with special hyperparameters** $k=100%$, all model parameters will be considered, and elect for the majority signs.
+
+- Merged weight $\tau_m$ will be the **average of elected weights with the same sign.**
+
+- Then **with special hyperparameters again** $\lambda=1.0$, **we have added back what we have subtracted.** $\tau_t$ and $\tau_m$ are **in the same scale.**
+
+- Since $\tau_t$ is **forced to be in scale with** $\theta_{averaging}-\theta_{init}$, now $\tau_m$ is also at the same scale i.e. **It will behaves like averaging** (and it is)
+
+## Sample code (TIES) ##
 
 - [PR has been merged!](https://github.com/ljleb/sd-mecha/pull/24)
 
