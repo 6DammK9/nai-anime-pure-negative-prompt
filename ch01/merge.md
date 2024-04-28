@@ -12,6 +12,8 @@
 
 ### Blue pill, but in academic paper ###
 
+- [Re-basin via implicit Sinkhorn differentiation](https://fagp.github.io/sinkhorn-rebasin/)
+
 - [Training-Free Pretrained Model Merging](https://arxiv.org/abs/2403.01753)
 
 - [Do the Frankenstein, or how to achieve better out-of-distribution performance with manifold mixing model soup](https://arxiv.org/abs/2309.08610)

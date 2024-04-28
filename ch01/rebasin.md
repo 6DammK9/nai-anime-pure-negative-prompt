@@ -96,3 +96,27 @@
 - The score metric to compare also made me intrigued. Instad of end result (accuracy in the paper), it compares with "true probability" and "testing loss", which implies to the "confidence" of the estimator. **Given low-confidence naive averaging yields content-rich image, how about a high-confidence re-basin approach?** Also, the "MergeMany" suits my use case well, which is going to merge 50+ of SDXL models (but I probably need to build a 512GB RAM PC). And there is absolutely no attempt before.
 
 - As soon as moving on in [AstolfoMixXL](../ch05/README_XL.MD), I think I shuold try it out, probably another PR to someone's repo.
+
+### Yes, time to make PR. ###
+
+- [Forked repo.](https://github.com/6DammK9/Merge-Stable-Diffusion-models-without-distortion)
+
+- [Hand crafted the permutation spec for SDXL.](https://github.com/6DammK9/Merge-Stable-Diffusion-models-without-distortion/blob/main/merge_PermSpec_SDXL.py) [It is entirely different.](https://www.diffchecker.com/WZKq6YiP/)
+
+- $O(N^3)$ for the SOLVELAP, $O(N)$ for major loop, $O(NlogN)$ overall, **take 6 minutes per permutation for 1498 special layers**, and total merging time will be $60*3*10=180$ minutes for default setting.
+
+![xyz_grid-0841-740330577-8064-1623-3-48-20240428123657.jpg](./img/xyz_grid-0841-740330577-8064-1623-3-48-20240428123657.jpg)
+
+![xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg](./img/xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg)
+
+- As shown in the images, *since one of the major step is taking the midpoint between A and B*, it will still performs like averaging, but requires a lot more time. It looks better, but I think I will only replace it with AutoMBW optimization, which can keep AstolfoMix totally free from prompting / image input *(because I have no creativity at all)*.
+
+- [As mentioned in the git issue](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/issues/47), I think "MERGEMANY" will be impossible to deliver soon, even I think it can be somehow archieved with the use of [sd-mecha](https://github.com/ljleb/sd-mecha) and make the "OVR" permutation with a precomuted "averaged model".
+
+## Next chapter ##
+
+- [Re-basin via implicit Sinkhorn differentiation](https://fagp.github.io/sinkhorn-rebasin/) is the next generation of this paper. The orignal LAP problem *is not differentiable*, hence the effective but inefficient optimization algorithm. This paper use more "math tricks" to convert it as a differentiable gradient and use common gradient descent algorithm (SGD) to optimize it. ~~Should be more efficient.~~
+
+- [Youtube](https://www.youtube.com/watch?v=RPSqoLx-ggk&ab_channel=FidelGuerreroPe%C3%B1a), [CVPR](https://openaccess.thecvf.com/content/CVPR2023/papers/Pena_Re-Basin_via_Implicit_Sinkhorn_Differentiation_CVPR_2023_paper.pdf), [github](https://github.com/fagp/sinkhorn-rebasin)
+
+- One more: [Rethink Model Re-Basin and the Linear Mode Connectivity](https://arxiv.org/abs/2402.05966v1). [github](https://github.com/XingyuQu/rethink-re-basin)
