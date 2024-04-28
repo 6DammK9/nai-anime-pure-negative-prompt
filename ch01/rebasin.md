@@ -99,11 +99,11 @@
 
 ### Yes, time to make PR. ###
 
-- [Forked repo.](https://github.com/6DammK9/Merge-Stable-Diffusion-models-without-distortion)
+- [Forked repo.](https://github.com/6DammK9/Merge-Stable-Diffusion-models-without-distortion) And... [PR merged instantly](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/pull/46)
 
 - [Hand crafted the permutation spec for SDXL.](https://github.com/6DammK9/Merge-Stable-Diffusion-models-without-distortion/blob/main/merge_PermSpec_SDXL.py) [It is entirely different.](https://www.diffchecker.com/WZKq6YiP/)
 
-- $O(N^3)$ for the SOLVELAP, $O(N)$ for major loop, $O(NlogN)$ overall, **take 6 minutes per permutation for 1498 special layers**, and total merging time will be $60*3*10=180$ minutes for default setting.
+- $O(N^3)$ for the SOLVELAP, $O(N)$ for major loop, $O(NlogN)$ overall, **take 6 minutes per permutation for 1498 special layers**, and total merging time will be $60\*3\*10=180$ minutes for default setting.
 
 ![xyz_grid-0841-740330577-8064-1623-3-48-20240428123657.jpg](./img/xyz_grid-0841-740330577-8064-1623-3-48-20240428123657.jpg)
 
