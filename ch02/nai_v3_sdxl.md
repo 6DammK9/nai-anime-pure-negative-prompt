@@ -34,7 +34,7 @@
 
 - `cn` 副本-500画风-NovelAI V3示例. [Discord](https://discord.com/channels/930499730843250783/1181771420045422613) [上](https://docs.qq.com/doc/DSmtHTUdHT1liaFRs) [下](https://docs.qq.com/doc/DSm5SVUVuVG5mbVNP)
 
-- `cn` [sd tag分享](https://docs.qq.com/doc/DRVBjRVdBWld4THBV), [每日一发](https://docs.qq.com/doc/DRXRCbUxWbnlVaXVI) (QQ Docs)
+- `cn` [sd tag分享](https://docs.qq.com/doc/DRVBjRVdBWld4THBV), [每日一发](https://docs.qq.com/doc/DRXRCbUxWbnlVaXVI), [300画风法典：NAI3画风收集和研究](https://docs.qq.com/sheet/DZWZMemxNZkpVR0VB?tab=BB08J2) (QQ Docs)
 
 ## Datasets / Training specs ##
 
@@ -172,7 +172,9 @@ alpha - 254 = bit
 
 - "I have no idea either": [random-prompt](https://github.com/crosstyan/random-prompt)
 
-- "We need a webui, an account pool, and a QoS system": [Kohaku-NAI](https://github.com/KohakuBlueleaf/Kohaku-NAI)
+- "We need a WebUI, an account pool, and a QoS system": [Kohaku-NAI](https://github.com/KohakuBlueleaf/Kohaku-NAI)
+
+- "Another WebUI": [Semi-Auto-NovelAI-to-Pixiv:](https://github.com/zhulinyv/Semi-Auto-NovelAI-to-Pixiv)
 
 ![img/photo_2023-12-08_22-03-39.jpg](img/photo_2023-12-08_22-03-39.jpg)
 

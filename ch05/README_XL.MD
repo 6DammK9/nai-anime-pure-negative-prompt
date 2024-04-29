@@ -313,7 +313,7 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 
 ### New challenges: Naive TIES merge is nice but flawed ###
 
-- **Notes: Soon I find out the implementation was wrong.** PR was made to the merger. See [ties.md](../ch01/ties.md) for details.
+- **Notes: Soon I find out the implementation was wrong.** PR was made to the merger. See [ties.md](../ch01/ties.md) for details. ~~spoiler: the timeline is parallel to here.~~
 
 - Given nice prompts (e.g. prompts which PonyXL does well), it output great images.
 
@@ -340,6 +340,18 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 
 ![xyz_grid-0812-1021567025-8064-1631-3-48-20240424073855.jpg](./img/xyz_grid-0812-1021567025-8064-1631-3-48-20240424073855.jpg)
 
+- No matter I'm using $k=0.2$ or $\lambda=0.2$, it will crash miserably.
+
+![xyz_grid-0813-1021567025-5376-1081-3-48-20240425015625.jpg](./img/xyz_grid-0813-1021567025-5376-1081-3-48-20240425015625.jpg)
+
+![xyz_grid-0814-1021567025-5376-1081-3-48-20240425020928.jpg](./img/xyz_grid-0814-1021567025-5376-1081-3-48-20240425020928.jpg)
+
+- It forced me to reconsider the "flawed implementation" again, and theorized that *it is more balanced to this challenging problem.* [Now I call it "TIES-SOUP"](../ch01/ties.md#spinoff-ties-soup), because it respects the nature of averaging (Model SOUP), meanwhile keeping its own "sign election" mechanism (TIES), i.e. TIES-SOUP.
+
+- By switching the car, it still able to draw my usual "car with person" image. The model turns out forgets half from every models, but in random pattern.
+
+![xyz_grid-0841-740330577-8064-1623-3-48-20240428123657.jpg](./img/xyz_grid-0841-740330577-8064-1623-3-48-20240428123657.jpg)
+
 ### Model selection Round 5, x72a ###
 
 - The stuffs similar to previous rounds has been moved to [AstolfoMix-XL: Model selection Round 5 (x72a)](./xl_docs/r05_x72a.md).
@@ -352,3 +364,13 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 |`txt2`|`sd_mecha` (240406 onward)|
 |`CLIP`|`toolkit`|
 |ViT-G|By component size|
+
+- It is bizzare that the model only able to generate images with **down to half of the selected UNETs**, which the result is actually far worse then the unfiltered version. ~~No image because it is too bad.~~ I find that **the greedy approach is not working for TIES merging.** Therefore this version I will simply publish the raw TIES version directly.
+
+## Findings on "SDXL Re-basin" ##
+
+- [Again, this is a real PR to the only repo I think is implemented correctly.](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/pull/46)
+
+- The result is still under investigation. Currently **the merge will take 4 hours to complete,** [eliminating most large scale merging in this series](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/issues/47). It will replace AutoMBW / Bayesian merge instead. TIES-SOUP trades a lot more desired contents with general contents, merging it again with the averaged version will neutralize the effect.
+
+![xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg](./img/xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg)
