@@ -1,5 +1,9 @@
 # Observation of Pony Diffusion (v5.5 SD2.1 + V6 SDXL) #
 
+## (New) Official notice on Pony V7 ##
+
+- [Towards Pony Diffusion V7](https://civitai.com/articles/5069)
+
 ## Red pill from 4chan ##
 
 - [ponyxl_loras_n_stuff](https://rentry.org/ponyxl_loras_n_stuff)
