@@ -59,3 +59,7 @@ Most general publics scarfice the diversity of the content and use intensive add
 Instead, [merging models](merge.md) does provide new contents to discover (e.g. [cosplay from nowhere](../ch02/4de704d8.md)), despite lacking of academic / theoritcal support. However, current social news has alreay proven its potential.
 
 Would art able to be *partially expressed by pure logic?* With [iterlation of knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph), indentifying [psychology and psychiatry effects as visual language](https://youtu.be/lmdtWygrvFA?si=JnEiloBs-_gvUyM_), and finally *find the sweet spot to let most people agree for some insights* via [Computational neuroscience](https://youtu.be/cufOEzoVMVA?si=VJM7O7dNIcZfNaKo)? It sounds possible, yet really, really counter intuitive.
+
+### (Extra) Unconditional image generation ###
+
+- See [my CivitAI article](https://civitai.com/articles/5149). Will remove rant, especially ch98, 99 if I have time.
