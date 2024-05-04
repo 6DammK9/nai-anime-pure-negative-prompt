@@ -88,6 +88,20 @@ Mode                 LastWriteTime         Length Name
 -a----          6/4/2024     21:17     6938041986 _x68-raenaXL_v10.safetensors
 -a----          6/4/2024     21:17     7105349048 _x69-ghostbustersxlMix_v10.safetensors
 -a----          6/4/2024     23:01     6938040416 _x70-inkDyeingAnimeXL_v20.safetensors
+-a----         10/4/2024      0:03     6938043264 _x71-stableDiffusionXL_v52.safetensors
+-a----         11/4/2024      1:55     6938044856 _x72-umbra_mecha.safetensors
+-a----         15/4/2024      1:47     6938040286 _x73-kohakuXLEpsilon_rev1.safetensors
+-a----         25/4/2024      2:12     6938073562 _x74-netaArtXL_v10.safetensors
+-a----         25/4/2024      2:17     6938043264 _x75-stableDiffusionXL_v52.safetensors
+-a----         27/4/2024     22:44     6938040720 _x76-SDXLRonghua_v45.safetensors
+-a----          4/5/2024     10:10     6938040682 _x77-jruTheJourneyRemains_v20XL.safetensors
+-a----          4/5/2024     10:14     6938040286 _x78-mmdPLUSXL_v10.safetensors
+-a----          4/5/2024     11:42     6938040286 _x78-PVCStyleModelMovable_pony151.safetensors
+-a----          4/5/2024     10:18     6938917486 _x79-confusionxl_v20.safetensors
+-a----          4/5/2024     11:47     6938040988 _x79-PVCStyleModelMovable_beta26.safetensors
+-a----          4/5/2024     11:46     6938040286 _x80-3dRenderingStyle_beta10.safetensors
+-a----          4/5/2024     11:45     6938040286 _x81-miaomiaopony_v15.safetensors
+-a----          4/5/2024     11:47     6938043264 _x82-hinamix_v10.safetensors                                                
 ```
 
 </details>
