@@ -46,7 +46,7 @@
 
 ### Github repos (mergers / algorithm implementations) excluding MBW / LBW ###
 
-- [My merge.](../ch05/README.MD) Merge / Ensemble with *Average weighting* is a well discussed method. It is a good choice, at least for generalization. Also 
+- [My merge.](../ch05/README.MD) Merge / Ensemble with *Average weighting* is a well discussed method. It is a good choice, at least for generalization. *It refers to uniform-soup / isotropic merge in different papers.*
 
 - [Supermario merge(DARE).](https://github.com/martyn/safetensors-merge-supermario) [Ported to SD.](https://github.com/groinge/sd-webui-untitledmerger/)
 

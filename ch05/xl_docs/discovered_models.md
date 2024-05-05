@@ -98,10 +98,20 @@ Mode                 LastWriteTime         Length Name
 -a----          4/5/2024     10:14     6938040286 _x78-mmdPLUSXL_v10.safetensors
 -a----          4/5/2024     11:42     6938040286 _x78-PVCStyleModelMovable_pony151.safetensors
 -a----          4/5/2024     10:18     6938917486 _x79-confusionxl_v20.safetensors
--a----          4/5/2024     11:47     6938040988 _x79-PVCStyleModelMovable_beta26.safetensors
 -a----          4/5/2024     11:46     6938040286 _x80-3dRenderingStyle_beta10.safetensors
 -a----          4/5/2024     11:45     6938040286 _x81-miaomiaopony_v15.safetensors
--a----          4/5/2024     11:47     6938043264 _x82-hinamix_v10.safetensors                                                
+-a----          4/5/2024     11:47     6938043264 _x82-hinamix_v10.safetensors
+-a----          4/5/2024     23:31     6938041586 _x83-tPonynai3_v41OptimizedFromV4.safetensors
+-a----          4/5/2024     22:28     6938041050 _x84-animeCompositionXL_base.safetensors
+-a----          4/5/2024     22:14     6938040714 _x85-duchaitenPonyXLNo_ponyNoScoreV30.safetensors
+-a----          4/5/2024     22:20     6938040682 _x86-animaPencilXL_v310.safetensors
+-a----          5/5/2024      2:50     6938040682 _x87-ponyPencilXL_v102.safetensors
+-a----          5/5/2024      1:41     6938040800 _x88-runbullxlPonyBased_v08.safetensors
+-a----          5/5/2024      0:46     6938040706 _x89-genericpony_v30.safetensors
+-a----          5/5/2024      3:00     6939233826 _x90-odobongoXL_v1DPO.safetensors
+-a----          4/5/2024     11:47     6938040988 _x91-PVCStyleModelMovable_beta26.safetensors
+-a----          5/5/2024      2:59     6938043352 _x92-tangbohuLofiPonyXL_v20.safetensors
+-a----          5/5/2024      2:58     7105357938 _x93-etherealponymix_v15.safetensors                                        
 ```
 
 </details>

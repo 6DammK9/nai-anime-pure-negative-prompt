@@ -4,8 +4,6 @@ General discovery. Theories, procedures, practices etc. However not model specif
 
 - CFG-STEP scan: [cfg_step.md](./cfg_step.md)
 - Prior scan: [prior.md](./prior.md)
-- Any theory about merging model? [merge.md](./merge.md)
-- Maybe any theory about AutoMBW? [autombw.md](./autombw.md)
 - Any theory to compare a model? [similarity_cfg1.md](./similarity_cfg1.md)
 - Prompt dystopia: [prompt.md](./prompt.md)
 - My procedure for making arts: [my_procedure.md](./my_procedure.md)
@@ -16,7 +14,13 @@ General discovery. Theories, procedures, practices etc. However not model specif
 - Findings on "Aspect Ratio Bucketing" (moved from CH98): [arb.md](./arb.md)
 - Some record about "LyCORIS": [lycoris.md](./lycoris.md)
 - Findings on "FreeU": [freeu.md](freeu.md)
-- Findings on "Git Re-Basin" in SD: [rebasin.md](./rebasin.md)
 - Findings on CFG along with "PAG" and "CHG": [cfg_pag_chg.md](./cfg_pag_chg.md)
+
+This session is focus on [model merging](https://huggingface.co/docs/peft/developer_guides/model_merging), which an extended method on [model ensembling](https://en.wikipedia.org/wiki/Ensemble_learning).
+
+- Any theory about merging model? [merge.md](./merge.md)
+- Maybe any theory about AutoMBW? [autombw.md](./autombw.md)
+- Findings on "Git Re-Basin" in SD: [rebasin.md](./rebasin.md)
 - Findings on "TIES merge" in SD: [ties.md](./ties.md)
 - Findings on "Fisher Merge" in SD: [fisher.md](./fisher.md)
+- Findings on "DARE Merge" in SD: [dare.md](./dare.md)
