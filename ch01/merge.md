@@ -12,6 +12,8 @@
 
 ### Blue pill, but in academic paper ###
 
+- [Dataless Knowledge Fusion by Merging Weights of Language Models](https://arxiv.org/abs/2212.09849)
+
 - [Model Fusion via Optimal Transport](https://arxiv.org/abs/1910.05653)
 
 - [Transformer Fusion with Optimal Transport](https://arxiv.org/abs/2310.05719)
