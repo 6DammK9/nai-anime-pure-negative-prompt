@@ -12,6 +12,10 @@
 
 ### Blue pill, but in academic paper ###
 
+- [Model Fusion via Optimal Transport](https://arxiv.org/abs/1910.05653)
+
+- [Transformer Fusion with Optimal Transport](https://arxiv.org/abs/2310.05719)
+
 - [Re-basin via implicit Sinkhorn differentiation](https://fagp.github.io/sinkhorn-rebasin/)
 
 - [Training-Free Pretrained Model Merging](https://arxiv.org/abs/2403.01753)

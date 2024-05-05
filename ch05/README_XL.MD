@@ -124,7 +124,7 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 |02|Uniform Soup|`x43-AstolfoMix-x22te0x31te1.safetensors`|50|44|22|31|[mecha](./recipes/x43-AstolfoMix-x21te0x30te1-e2e-240222-60d0764.mecha)|
 |03|Uniform Soup|`x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.safetensors`|52|46|40|40|[mecha](./recipes/x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.mecha)|
 |04|Uniform Soup|`x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.safetensors`|70|52|61|42|[mecha](./recipes/x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.mecha)|
-|05|TIES|`x72-AstolfoMix-x??te0x??te1-e2e-240421-feefbf4.safetensors`|73|??|??|??|Coming soon|
+|05|TIES-SOUP|`x72a-AstolfoMix-240421-feefbf4.safetensors`|73|73|73|73|[mecha](./recipes/x72a-AstolfoMix-240421-feefbf4.mecha)|
 
 ### Discovered models ###
 
