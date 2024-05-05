@@ -34,7 +34,9 @@ Paper: [TIES-Merging: Resolving Interference When Merging Models](https://arxiv.
 
 ### Math discussion ###
 
-*Looks like I don't have to write the formulas again?*
+~~Looks like I don't have to write the formulas again?~~ I did it eventually.
+
+![24050502.png](./img/24050502.png)
 
 - Switching from "sum of weights" to "sum of signs", it will be interprepted as "voting of signs". $\gamma_m^p = sgn(\Sigma_{t=1}^n \hat{\gamma}_t^p)$
 
