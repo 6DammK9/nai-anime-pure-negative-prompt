@@ -374,3 +374,18 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 - The result is still under investigation. Currently **the merge will take 4 hours to complete,** [eliminating most large scale merging in this series](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/issues/47). It will replace AutoMBW / Bayesian merge instead. TIES-SOUP trades a lot more desired contents with general contents, merging it again with the averaged version will neutralize the effect.
 
 ![xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg](./img/xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg)
+
+
+## Findings on "SDXL TIES w/ DARE" ##
+
+- I'll PR when I'm sure the mix is working fine. [I keep it in my fork instead.](https://github.com/6DammK9/sd-mecha/blob/main/sd_mecha/__init__.py#L320)
+
+- [Did some research, and found it was suprisingly simple.](../ch01/dare.md)
+
+- However, since the merge is not inline at the same place, I received my first OOM while merging 102 SDXL models.
+
+![photo_2024-05-07_23-13-59.jpg](./img/photo_2024-05-07_23-13-59.jpg)
+
+![photo_2024-05-07_23-15-26.jpg](./img/photo_2024-05-07_23-15-26.jpg)
+
+- Looks like I need to drop some models for the first time.

@@ -8,6 +8,8 @@
 
 - [A comprehensive study from a member in LLM community.](https://www.interconnects.ai/p/model-merging)
 
+- [More on techniques used while merging.](https://slgero.medium.com/merge-large-language-models-29897aeb1d1a) ~~Definitely not MBW.~~
+
 - [Articles in Rentry](https://rentry.org/RentrySD/#11112-extensions-for-model-merging)
 
 ### Blue pill, but in academic paper ###
