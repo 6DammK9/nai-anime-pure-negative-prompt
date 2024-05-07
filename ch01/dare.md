@@ -26,7 +26,7 @@
 
 - This is the *simple* part: $m^t \sim Bernoulli(p)$ means the "mask" under [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution), which is a binary matrix with random $1$ and $0$ s, then $\odot$ will be the [Hadamard product](https://en.wikipedia.org/wiki/Hadamard_product_(matrices)), i.e. "multiply the mask" to produce the [dropout](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5) effect.
 
-- People may confused this distribution from [Binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution), however the paper is expecting *independent binary ouput for every trials*, hence $B(1,p)$. Also, as stated above, Bernoulli distribution doesn't have its own notation, e.g. $\mathcal{N}(\mu,\sigma^2)$ for [Normal distribution](https://en.wikipedia.org/wiki/Normal_distribution).
+- People may confused this distribution from [Binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution), however the paper is expecting *independent binary ouput for every trials*, hence $B(1,p)$. Also, as stated above, Bernoulli distribution doesn't have its own notation, e.g. $\mathcal{N}(\mu,\sigma^2)$ for [Normal distribution](https://en.wikipedia.org/wiki/Normal_distribution). [Wiki has clearly stated the relationship,](https://en.wikipedia.org/wiki/Bernoulli_distribution#Related_distributions)
 
 ![24050701.png](./img/24050701.png)
 
