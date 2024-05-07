@@ -389,3 +389,19 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 ![photo_2024-05-07_23-15-26.jpg](./img/photo_2024-05-07_23-15-26.jpg)
 
 - Looks like I need to drop some models for the first time.
+
+- Setting the merger with `threads=1` i.e. strictly merge 1 key at a time, it successfully prevented OOM, **with 382GB of RAM usage.**
+
+![24050703.png](./img/24050703.png)
+
+- However it is 5x slower (3400 seconds vs 13222 seconds), [thread pool](https://en.wikipedia.org/wiki/Thread_pool) still have its effect. *I think 4 threads should be fine.*
+
+```log
+INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x72a-AstolfoMix-24042502-a53faef.safetensors
+Merging recipe: 100%|██████████| 2515/2515 [56:28<00:00,  1.35s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                              
+Merge time: 3389 sec
+
+INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-240507-4edc67c.safetensors
+Merging recipe: 100%|██████████| 2515/2515 [3:40:20<00:00,  5.26s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                             
+Merge time: 13222 sec
+```
