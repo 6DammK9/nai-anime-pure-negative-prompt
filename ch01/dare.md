@@ -30,7 +30,7 @@
 
 ![24050701.png](./img/24050701.png)
 
-- The exotic part will be the *undocumented implicated merging operation* on $\tilde{\delta}^t$ and becomes $\theta_{DARE}$ i.e. $\tilde{\delta}^t\leftarrow\tau_m=TIES(\tau_t), \tilde{\delta}^t=\tau_t$. 
+- The exotic part will be the *undocumented implicated merging operation* on $\tilde{\delta}^t$ and becomes $\theta_{DARE}$ i.e. $\tilde{\delta}^t\leftarrow\tau_m=TIES(\tau_t), \tau_t=\tilde{\delta}^t$. 
 
 ![24050702.png](./img/24050702.png)
 
