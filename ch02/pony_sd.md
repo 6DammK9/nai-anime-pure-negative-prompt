@@ -89,7 +89,9 @@ SHA1: vS2DKjorO5myeTv9oE2cikinF4g=
 BLAKE2sp: PmCbCBokxRbeUdnuS/hdXei2EPykeHyqrQUnZ9EYBSk=
 ```
 
-- [Live spreadsheet](https://lite.framacalc.org/4ttgzvd0rx-a6jf), [official CSV link](https://lite.framacalc.org/4ttgzvd0rx-a6jf.csv) and [an archived CSV in ROT-13](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch02/1710739486.csv) ~~Github support CSV view like PowerBI?~~
+- [Live spreadsheet](https://lite.framacalc.org/4ttgzvd0rx-a6jf), [official CSV link](https://lite.framacalc.org/4ttgzvd0rx-a6jf.csv) and [an archived CSV in ROT13](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch02/1710739486.csv) ~~Github support CSV view like PowerBI?~~
+
+- [Known artist tags in ROT13.](./1715210999.txt)
 
 - For example, Houshou Marine becomes `aua` (1 token) and sakimichan (-ish) style becomes `iwv`, `zix`, `px` and `smp` (3-4 tokens, any of them are fine).
 

@@ -397,11 +397,21 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 - However it is 5x slower (3400 seconds vs 13222 seconds), [thread pool](https://en.wikipedia.org/wiki/Thread_pool) still have its effect. *I think 4 threads should be fine.*
 
 ```log
+#thread=None
+
 INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x72a-AstolfoMix-24042502-a53faef.safetensors
 Merging recipe: 100%|██████████| 2515/2515 [56:28<00:00,  1.35s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                              
 Merge time: 3389 sec
 
+#thread=1
+
 INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-240507-4edc67c.safetensors
 Merging recipe: 100%|██████████| 2515/2515 [3:40:20<00:00,  5.26s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                             
 Merge time: 13222 sec
+
+#thread=4
+
+INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-240508-4edc67c.safetensors
+Merging recipe: 100%|██████████| 2515/2515 [2:13:37<00:00,  3.19s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                             
+Merge time: 8023 sec
 ```
