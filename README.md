@@ -1,3 +1,18 @@
+# "AstolfoMix" Unconditional Image Generation (and more) #
+
+![cover2.png](cover2.png)
+
+```
+parameters
+
+Steps: 48, Sampler: Euler, Schedule type: Automatic, CFG scale: 3, Seed: 3649863581, Size: 1024x1024, Model hash: e276a52700, Model: x72a-AstolfoMix-240421-feefbf4, VAE hash: 26cc240b77, VAE: sd_xl_base_1.0.vae.safetensors, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.1, \"skip_factor\": 0.6}, {\"backbone_factor\": 1.2, \"skip_factor\": 0.4}]", FreeU Schedule: "0.0, 1.0, 0.0", FreeU Version: 2, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, PAG Active: True, PAG Scale: 1, Version: v1.9.3
+```
+
+An *informal* research about [unconditional image generation](https://huggingface.co/tasks/unconditional-image-generation) with Stable Diffusion, or "AI". Such observation may be useful for "data visualization" to show that how the "number" works. **Please be skeptic on this repo.** [My explanantion in CivitAI.](https://civitai.com/articles/5149/untitled-denoising-to-the-random-content)
+
+<details>
+    <summary> Old Title. Move on. </summary>
+
 # "NAI Anine" Pure Negative Prompt (and more) #
 
 ![cover.png](cover.png)
@@ -8,6 +23,7 @@ Steps: 32, Sampler: Euler, CFG scale: 10.5, Seed: 1337, Size: 512x512, Model has
 ```
 
 An *informal* research about "NAI anime" art with pure negative prompt. Such observation may be useful for "data visualization" to show that how the "number" works. **Please be skeptic on this repo.**
+</details>
 
 [Pixiv album for storing the images](https://www.pixiv.net/en/tags/PureNegativePrompt/artworks)
 
