@@ -42,13 +42,28 @@
 
 ### Spinoff: DROP without rescale ###
 
-- I have found that DARE doesn't solve any problem created by the original TIES, so that TIES-SOUP should be applied instead of plain TIES.
+- I have found that DARE doesn't solve any problem created by the original TIES, so that TIES-SOUP should be applied instead of plain TIES.  Then I find that **rescale will perform worse than expected**.
 
-![240521-3199104792-768-1344-3-48-20240509073010.png](./img/240521-3199104792-768-1344-3-48-20240509073010.png)
+<details>
+    <summary>Some tuning log. Click to open.</summary>
 
-- Then I find that **rescale will perform worse than expected**:
+This time I edited the code manually to use the TIES-SOUP instead of original TIES.
 
-![240525-1504757665-2016-1152-2.5-48-20240510000959.png](./img/240525-1504757665-2016-1152-2.5-48-20240510000959.png)
+- TIES: `24042501`. Not working. `k=0.2,alpha=1.0,vote_sgn=0.0`
+- TIES-SOUP: `240421`. Works. `k=1.0,alpha=1.0,vote_sgn=1.0`
+- DARE-TIES: `24050801`. Not working. `p=0.5,k=0.5,alpha=1.0,vote_sgn=0.0`
+- DARE-TIES-SOUP: `24050701`. This is underfit. Pale image. `p=0.1,k=1.0,alpha=1.0,vote_sgn=1.0`
+- DARE-TIES-SOUP: `24050802`. This is overfit. Bright image. `p=0.5,k=1.0,alpha=1.0,vote_sgn=1.0`
+- DARE-TIES-SOUP: `24050803`. Works like TIES-SOUP. `p=0.5,k=1.0,alpha=0.5,vote_sgn=1.0`
+- DARE-TIES-SOUP: `24050901`. Works, better then `24050803`. `p=0.25,k=1.0,alpha=0.75,vote_sgn=1.0`
+- DARE-TIES-SOUP: `24050902`. Works, worse then `24050803`. `p=0.75,k=1.0,alpha=0.25,vote_sgn=1.0`
+- DARE-TIES-SOUP: `24050903`. Works, like `24050902`. `p=0.1,k=1.0,alpha=0.9,vote_sgn=1.0`
+- TIES-SOUP: `24050904`. Control test. `k=1.0,alpha=1.0,vote_sgn=1.0`
+- DARE-TIES-SOUP: `24051001`. Same as `24050903` but different seed. `p=0.1,k=1.0,alpha=0.9,vote_sgn=1.0`
+
+</details>
+
+![xyz_grid-0877-3847612409-10752-1081-3-48-20240513235701.jpg](./img/xyz_grid-0877-3847612409-10752-1081-3-48-20240513235701.jpg)
 
 - With minimal "subjective art critism", I think that [normalization](https://en.wikipedia.org/wiki/Normalization_(statistics)) should be applied, therefore the "rescale" should be dropeed, or directly set $\lambda=1-p$ in the last stage.
 

@@ -440,7 +440,7 @@ Merge time: 6367 sec
 
 ### Hyperparameter tuning in DARE ###
 
-- From left to right: $p=\{0,0.1,0.25,0.5,0.75\}$. Note that $p=0$ means TIES itself. **Looks like 0.1 will yield more details with balance.**
+- From left to right: $p= \{ 0,0.1,0.25,0.5,0.75 \}$. Note that $p=0$ means TIES itself. **Looks like 0.1 will yield more details with balance.**
 
 ![xyz_grid-0860-3173230237-13440-2166-3-48-20240511173631.jpg](./img/xyz_grid-0860-3173230237-13440-2166-3-48-20240511173631.jpg)
 
