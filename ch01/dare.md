@@ -49,17 +49,14 @@
 
 This time I edited the code manually to use the TIES-SOUP instead of original TIES.
 
+- TIES-SOUP: `240421`. Works ~~but not this prompt~~. `k=1.0,alpha=1.0,vote_sgn=1.0`
+- TIES: `240424`. Not working. `k=1.0,alpha=1.0,vote_sgn=0.0`
 - TIES: `24042501`. Not working. `k=0.2,alpha=1.0,vote_sgn=0.0`
-- TIES-SOUP: `240421`. Works. `k=1.0,alpha=1.0,vote_sgn=1.0`
-- DARE-TIES: `24050801`. Not working. `p=0.5,k=0.5,alpha=1.0,vote_sgn=0.0`
 - DARE-TIES-SOUP: `24050701`. This is underfit. Pale image. `p=0.1,k=1.0,alpha=1.0,vote_sgn=1.0`
+- DARE-TIES: `24050801`. Not working. `p=0.5,k=0.5,alpha=1.0,vote_sgn=0.0`
 - DARE-TIES-SOUP: `24050802`. This is overfit. Bright image. `p=0.5,k=1.0,alpha=1.0,vote_sgn=1.0`
 - DARE-TIES-SOUP: `24050803`. Works like TIES-SOUP. `p=0.5,k=1.0,alpha=0.5,vote_sgn=1.0`
-- DARE-TIES-SOUP: `24050901`. Works, better then `24050803`. `p=0.25,k=1.0,alpha=0.75,vote_sgn=1.0`
-- DARE-TIES-SOUP: `24050902`. Works, worse then `24050803`. `p=0.75,k=1.0,alpha=0.25,vote_sgn=1.0`
-- DARE-TIES-SOUP: `24050903`. Works, like `24050902`. `p=0.1,k=1.0,alpha=0.9,vote_sgn=1.0`
-- TIES-SOUP: `24050904`. Control test. `k=1.0,alpha=1.0,vote_sgn=1.0`
-- DARE-TIES-SOUP: `24051001`. Same as `24050903` but different seed. `p=0.1,k=1.0,alpha=0.9,vote_sgn=1.0`
+- AVERAGING: `240222`. Control test, sorta works.
 
 </details>
 
