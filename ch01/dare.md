@@ -39,3 +39,21 @@
 ![photo_2024-05-07_07-55-55.jpg](./img/photo_2024-05-07_07-55-55.jpg)
 
 - From the experience on [TIES-SOUP](./ties.md), *I expect hyperparameter change and even more on algorithm hack.* 
+
+### Spinoff: DROP without rescale ###
+
+- I have found that DARE doesn't solve any problem created by the original TIES, so that TIES-SOUP should be applied instead of plain TIES.
+
+![240521-3199104792-768-1344-3-48-20240509073010.png](./img/240521-3199104792-768-1344-3-48-20240509073010.png)
+
+- Then I find that **rescale will perform worse than expected**:
+
+![240525-1504757665-2016-1152-2.5-48-20240510000959.png](./img/240525-1504757665-2016-1152-2.5-48-20240510000959.png)
+
+- With minimal "subjective art critism", I think that [normalization](https://en.wikipedia.org/wiki/Normalization_(statistics)) should be applied, therefore the "rescale" should be dropeed, or directly set $\lambda=1-p$ in the last stage.
+
+![24051202.png](./img/24051202.png)
+
+- The reason behind this is not sure, at least I don't have math proof for this. The UNET is supposed to handle *time token* (e.g. layer `model.diffusion_model.time_embed.0.weight`), which is clearly stated in the sampler eqaution as $t$, I find that the UNET is likely ignore the time factor and being applied for multiple iterlations. Is it being [autoregressive](https://en.wikipedia.org/wiki/Autoregressive_model), like a NLP model in [visual language](https://en.wikipedia.org/wiki/Visual_language)? This may need further study.
+
+![cfg_w.png](./img/cfg_w.png)

@@ -311,7 +311,7 @@ Looks like add-diff is a bad thing: Most merged model's CLIP have been dropped. 
 
 - Decided to move to ch01 because the discovery is more general: [ties.md](../ch01/ties.md)
 
-### New challenges: Naive TIES merge is nice but flawed ###
+### Naive TIES merge is nice but not suitable for SD ###
 
 - **Notes: Soon I find out the implementation was wrong.** PR was made to the merger. See [ties.md](../ch01/ties.md) for details. ~~spoiler: the timeline is parallel to here.~~
 
@@ -330,7 +330,7 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 
 - Also, I found that my E2E script will be too complicated if I include one more dimension (algorithm) in the process, therefore I set it as global variable and pick the mode instead.
 
-### TIES Challenge: Hyperparameter tuning ###
+### Hyperparameter tuning in TIES ###
 
 - I have found that $k=1.0$ would be not good. It produce broken images even the implementation is been rectified. 
 
@@ -378,9 +378,11 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 
 ## Findings on "SDXL TIES w/ DARE" ##
 
-- I'll PR when I'm sure the mix is working fine. [I keep it in my fork instead.](https://github.com/6DammK9/sd-mecha/blob/main/sd_mecha/__init__.py#L320)
+- [PR in progress.](E:\NOVELAI\stable-diffusion-webui\nai-anime-pure-negative-prompt\ch05\img)
 
 - [Did some research, and found it was suprisingly simple.](../ch01/dare.md)
+
+### The Workstation is screaming ###
 
 - However, since the merge is not inline at the same place, I received my first OOM while merging 102 SDXL models.
 
@@ -394,24 +396,54 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 
 ![24050703.png](./img/24050703.png)
 
-- However it is 5x slower (3400 seconds vs 13222 seconds), [thread pool](https://en.wikipedia.org/wiki/Thread_pool) still have its effect. *I think 4 threads should be fine.*
+- However it is 3x slower (4420 seconds vs 13222 seconds), [thread pool](https://en.wikipedia.org/wiki/Thread_pool) still have its effect. *I think 16 threads should be fine.*
 
 ```log
-#thread=None
+#thread=None, no DARE (400GB)
 
-INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x72a-AstolfoMix-24042502-a53faef.safetensors
-Merging recipe: 100%|██████████| 2515/2515 [56:28<00:00,  1.35s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                              
-Merge time: 3389 sec
+INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-24050904-4edc67c.safetensors
+Merging recipe: 100%|██████████| 2515/2515 [1:13:34<00:00,  1.76s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                            
+Merge time: 4420 sec
 
-#thread=1
+#thread=1 (382GB)
 
 INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-240507-4edc67c.safetensors
 Merging recipe: 100%|██████████| 2515/2515 [3:40:20<00:00,  5.26s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                             
 Merge time: 13222 sec
 
-#thread=4
+#thread=4 (391GB)
 
 INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-240508-4edc67c.safetensors
 Merging recipe: 100%|██████████| 2515/2515 [2:13:37<00:00,  3.19s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                             
 Merge time: 8023 sec
+
+#thread=8 (410GB)
+
+INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-24050803-4edc67c.safetensors
+Merging recipe: 100%|██████████| 2515/2515 [1:55:24<00:00,  2.75s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                             
+Merge time: 6930 sec
+
+#thread=16 (449GB)
+
+INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-24050902-4edc67c.safetensors
+Merging recipe: 100%|██████████| 2515/2515 [1:46:01<00:00,  2.53s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                             
+Merge time: 6367 sec
 ```
+
+-  Meanwhile I got my first PSU trip (OCP maybe) even it was a mighty [EVGA 1600 P2](https://www.evga.com/products/product.aspx?pn=220-P2-1600-X1). So now I can't generate images while merging (is this a luxuary?)
+
+![24051201.png](./img/24051201.png)
+
+### Plain DARE is not working either ###
+
+- In progress. See [Spinoff: DROP without rescale](../ch01/dare.md#spinoff-drop-without-rescale).
+
+### Hyperparameter tuning in DARE ###
+
+- From left to right: $p={0,0.1,0.25,0.5,0.75}$. Note that $p=0$ means TIES itself. **Looks like 0.1 will yield more details with balance.**
+
+![xyz_grid-0860-3173230237-13440-2166-3-48-20240511173631.jpg](./img/xyz_grid-0860-3173230237-13440-2166-3-48-20240511173631.jpg)
+
+- Since randomness is introduced, `seed` will be a parameter also. You will find that `seed` only changes *unspecified details* (unconditional part of CFG), with others remains unchanged. ~~Should I make 10 of them and perform averaging again?~~ 
+
+![xyz_grid-0875-2863436210-4032-1623-3-48-20240512220756.jpg](./img/xyz_grid-0875-2863436210-4032-1623-3-48-20240512220756.jpg)
