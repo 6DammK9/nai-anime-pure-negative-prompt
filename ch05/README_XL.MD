@@ -125,6 +125,7 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 |03|Uniform Soup|`x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.safetensors`|52|46|40|40|[mecha](./recipes/x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.mecha)|
 |04|Uniform Soup|`x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.safetensors`|70|52|61|42|[mecha](./recipes/x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.mecha)|
 |05|TIES-SOUP|`x72a-AstolfoMix-240421-feefbf4.safetensors`|73|73|73|73|[mecha](./recipes/x72a-AstolfoMix-240421-feefbf4.mecha)|
+|06|TIES-SOUP w/ DROP|`x101a-AstolfoMix-24050903-4edc67c.safetensors`|102|102|102|102|[mecha](./recipes/x101a-AstolfoMix-24050903-4edc67c.mecha)|
 
 ### Discovered models ###
 
@@ -369,9 +370,11 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 
 ## Findings on "SDXL TIES w/ DARE" ##
 
-- [PR in progress.](E:\NOVELAI\stable-diffusion-webui\nai-anime-pure-negative-prompt\ch05\img)
+- [PR in progress.](https://github.com/ljleb/sd-mecha/pull/28)
 
 - [Did some research, and found it was suprisingly simple.](../ch01/dare.md)
+
+- And... this round of model selection reached **100+ models**.
 
 ### The Workstation is screaming ###
 
