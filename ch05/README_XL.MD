@@ -367,15 +367,6 @@ All TIES, UNET TIES + CLIP average, UNET TIES + CLIP "TIES of model subset", All
 
 - It is bizzare that the model only able to generate images with **down to half of the selected UNETs**, which the result is actually far worse then the unfiltered version. ~~No image because it is too bad.~~ I find that **the greedy approach is not working for TIES merging.** Therefore this version I will simply publish the raw TIES version directly.
 
-## Findings on "SDXL Re-basin" ##
-
-- [Again, this is a real PR to the only repo I think is implemented correctly.](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/pull/46)
-
-- The result is still under investigation. Currently **the merge will take 4 hours to complete,** [eliminating most large scale merging in this series](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/issues/47). It will replace AutoMBW / Bayesian merge instead. TIES-SOUP trades a lot more desired contents with general contents, merging it again with the averaged version will neutralize the effect.
-
-![xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg](./img/xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg)
-
-
 ## Findings on "SDXL TIES w/ DARE" ##
 
 - [PR in progress.](E:\NOVELAI\stable-diffusion-webui\nai-anime-pure-negative-prompt\ch05\img)
@@ -428,6 +419,12 @@ Merge time: 6930 sec
 INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-24050902-4edc67c.safetensors
 Merging recipe: 100%|██████████| 2515/2515 [1:46:01<00:00,  2.53s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                             
 Merge time: 6367 sec
+
+#Averaging (fits inside GPU)
+
+INFO: Saving to F:\NOVELAI\astolfo_mix\sdxl\x101a-AstolfoMix-24051501-29bac1a.safetensors
+Merging recipe: 100%|██████████| 2515/2515 [1:06:07<00:00,  1.58s/it, key=model.diffusion_model.time_embed.2.weight, shape=[1280, 1280]]                                           
+Merge time: 3972 sec
 ```
 
 -  Meanwhile I got my first PSU trip (OCP maybe) even it was a mighty [EVGA 1600 P2](https://www.evga.com/products/product.aspx?pn=220-P2-1600-X1). So now I can't generate images while merging (is this a luxuary?)
@@ -447,3 +444,17 @@ Merge time: 6367 sec
 - Since randomness is introduced, `seed` will be a parameter also. You will find that `seed` only changes *unspecified details* (unconditional part of CFG), with others remains unchanged. ~~Should I make 10 of them and perform averaging again?~~ 
 
 ![xyz_grid-0875-2863436210-4032-1623-3-48-20240512220756.jpg](./img/xyz_grid-0875-2863436210-4032-1623-3-48-20240512220756.jpg)
+
+## Findings on "SDXL Re-basin" ##
+
+- [Again, this is a real PR to the only repo I think is implemented correctly.](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/pull/46)
+
+- The result is still under investigation. Currently **the merge will take 4 hours to complete,** [eliminating most large scale merging in this series](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/issues/47). It will replace AutoMBW / Bayesian merge instead. TIES-SOUP trades a lot more desired contents with general contents, merging it again with the averaged version will neutralize the effect.
+
+![xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg](./img/xyz_grid-0842-740330577-8064-1623-3-48-20240428125432.jpg)
+
+- After a while, when I have the DARE merge available, I think I can revisit this session again. Since rebasin take the [mid point](https://en.wikipedia.org/wiki/Midpoint) first, and try to shift it *slightly* for even better neuron activation, I can apply a trick to further improve the DARE model. [This time I need an amplifier for the weight shift](./amplify_diff.ipynb). I can make this via A1111 with another hack on `ui-config.json`, but I decide to stick with `sd-mecha` for reliable performance.
+
+```json
+"modelmerger/Multiplier (M) - set to 0 to get model A/maximum": 2.0,
+```

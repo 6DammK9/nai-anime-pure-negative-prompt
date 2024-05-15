@@ -14,13 +14,15 @@
 
 ### Blue pill, but in academic paper ###
 
+- [Model Stock: All we need is just a few fine-tuned models](https://arxiv.org/abs/2403.19522)
+
 - [Dataless Knowledge Fusion by Merging Weights of Language Models](https://arxiv.org/abs/2212.09849)
 
 - [Model Fusion via Optimal Transport](https://arxiv.org/abs/1910.05653)
 
 - [Transformer Fusion with Optimal Transport](https://arxiv.org/abs/2310.05719)
 
-- [Re-basin via implicit Sinkhorn differentiation](https://fagp.github.io/sinkhorn-rebasin/)
+- [Re-basin via implicit Sinkhorn differentiation](https://arxiv.org/abs/2212.12042)
 
 - [Training-Free Pretrained Model Merging](https://arxiv.org/abs/2403.01753)
 
@@ -49,6 +51,8 @@
 ![24022701.jpg](./img/24022701.jpg)
 
 ### Github repos (mergers / algorithm implementations) excluding MBW / LBW ###
+
+- ["mergekit", a LLM merger.](https://github.com/arcee-ai/mergekit)
 
 - [My merge.](../ch05/README.MD) Merge / Ensemble with *Average weighting* is a well discussed method. It is a good choice, at least for generalization. *It refers to uniform-soup / isotropic merge in different papers.*
 
