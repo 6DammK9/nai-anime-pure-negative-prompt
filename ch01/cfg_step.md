@@ -1,6 +1,6 @@
 # CFG-STEP scan #
 
-- [Do not read because it's my rant.](../ch98/cfg.md)
+- [Rant moved. About what is "Unconditional".](./aesthetic.md#extra-unconditional-image-generation)
 
 - Not to be confused with [Dynamic CFG / CFG rescale](./dynamic_cfg.md). This article is to encourage user ~~artist~~ to actively **search exhaustively for hyperparameters**.
 

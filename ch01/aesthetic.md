@@ -45,9 +45,6 @@
 - https://b23.tv/Fm5QctS
 - https://b23.tv/KaqMg2R 
 
-### Archives (Will reorganize) ###
-- [ch98/phil.md](../ch98/phil.md)
-
 ### My theorey ###
 
 If you see the [Live Preview in the first 4 - 8 steps](https://github.com/cmdr2/stable-diffusion-ui#live-preview), which is already *enabled by default* in webui, you can "feel" the AI is actually tried to [draft](https://www.youtube.com/watch?v=pqrp4lS9i6M&ab_channel=%E6%9C%89%E7%82%B9%E8%89%BA%E6%80%9D%E5%93%A6) and fill in details. However, the [Gaussian latent space (Data++)](https://youtu.be/tcAZ9KvBtkg) doesn't provide *full* details to "complete the drawing" and let audiances to [recall the abstract message](https://youtu.be/tcAZ9KvBtkg?list=PLCpMvp7ftsnIbNwRnQJbDNRqO6qiN3EyH&t=2354). For example, ["bad hands"](https://www.buzzfeednews.com/article/pranavdixit/ai-generated-art-hands-fingers-messed-up) shows that AI won't try to guess the missing contents, it just blurred or randomly fill in the patterns. Such hybird between [impressionism](https://en.wikipedia.org/wiki/Impressionism) and [surrealism](https://en.wikipedia.org/wiki/Surrealism) approach may works for most art, but it is a pity that most publics are ignoring the archievements and focusing on the weakness of such advanced [generative art](https://en.wikipedia.org/wiki/Generative_art).
@@ -62,7 +59,7 @@ Would art able to be *partially expressed by pure logic?* With [iterlation of kn
 
 ### (Extra) Unconditional image generation ###
 
-- See [my CivitAI article](https://civitai.com/articles/5149). Will remove rant, especially ch98, 99 if I have time.
+- See [my CivitAI article](https://civitai.com/articles/5149). Will remove rant, especially ch99 if I have time.
 
 ### Old session in ch98. Written in 2212. ###
 

@@ -34,7 +34,7 @@
 
 ### It should be changed ###
 
-- Sampler: **DDIM** from Euler. You will see `Setting DDIM alpha.` in console log. [Slight difference may be amplified in process.](../ch98/k_euler.md)
+- Sampler: **DDIM** from Euler. You will see `Setting DDIM alpha.` in console log. [Slight difference may be amplified in process.](../ch01/k_euler.md)
 
 - CFG: **Slightly increase to 6** from 4. 8 is too high.
 
