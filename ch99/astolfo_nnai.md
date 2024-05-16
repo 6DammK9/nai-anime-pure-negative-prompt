@@ -12,7 +12,7 @@
 ```
 
 ```txt
-[[[WRC]], [[race queen]], [male], [astolfo], [[standing]]
+[[WRC]], [[race queen]], [male], [astolfo], [[standing]]
 ```
 
 - Somehow the bias only does mild effect on prompts / art styles. The streadgy for NAI remains the same, with the negative prompt streangth minimized.

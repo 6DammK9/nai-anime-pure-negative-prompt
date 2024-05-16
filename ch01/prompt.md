@@ -2,6 +2,8 @@
 
 - [Full discussion (Chinese) (I have no time to paraphase and translate)](https://discord.com/channels/1033769426216046622/1033771987450994718/1077260057743462472)
 
+- [Older discussion: "it will loop for 77 tokens"](https://discord.com/channels/1028286735634931813/1042768966529065070/1054306377557868564)
+
 ### TLDR (may not factual, I'm not NLP expert)  ###
 
 - **READ THE CODE! I WILL NOT EXPLAIN!** [THE CLIP hack in WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/modules/sd_hijack_clip.py)

@@ -1,6 +1,73 @@
 # Observation of Pony Diffusion (v5.5 SD2.1 + V6 SDXL) #
 
-## (New) Official notice on Pony V7 ##
+## (New) Civitai Guest Creator Stream ##
+
+- [Twitch link](https://m.twitch.tv/videos/2145665383)
+
+<details>
+    <summary>Keynotes from the stream.</summary>
+
+刻意不用英文.
+
+```txt
+35:00
+20 年經驗，不過不是 AIML (household engineer?)
+gpt2 時期入坑，當時沒 AIML 背景
+已經忘記了 v5.5 是 sd2.1，but I think it is good
+繼 wd 後「第二個大 ft，emad 有打聽過」，不過也不懂為何 v6 會火
+不會改名
+時機問題
+(主持要求 layman) 沒想過會被稱為 "底模", 也沒打算 "出位"
+知悉幾乎所有 "adapter" 都用不了
+"沒有很多 FT 模, 因為既花時間練, 也很容易翻車" (?)
+(測試集) 試了 2 星期, 10 次在右, 調參為主, 跟 LoRA 分別頗大
+翻車 = 甚麼都見不到
+學習率是盲猜的
+Full train 為期 3 個月, 撞到比 5.5 好就推出了
+Custom build "letsgo" server, "800 big boys GPUs with 80GB of VRAM", 3D print cooling,
+15-20 張 3090 都不夠 (downgrade to H800?) 很吃跨 GPU 的通訊
+贊助老早就沒了，用戶的錢去了 discord bot，丹爐花了 50-60k (5-6w 刀)，前期 (preprocessing) 用了十幾張消費級 gpu
+前期用了八成時間
+V4 時收到匿名贊助丹爐
+主持問圖庫就「遊花園」(styleGAN...)
+聲稱是因為 4chan 而人坑
+初頭 (at first) 是刪 artist tag （但談了很久 why it is important）
+只是人家不信他刪了
+I am in California
+53:38 V6 是有秘密 artist list, 然後被人三字經了
+不是 hash 啦，是別的手段
+v7 想加 style control，暫定是匿名 (3d_55)
+63:00 作者兩年前在 NAI 工作，「NAI 也刪了」(v1?)
+65:20 「只是改了 preference, 隱藏 X-rated 而已」 (C 站表示支持作者決定)
+V6 搬入 C 站前只有 40% 是瑟瑟, 上傳後就多到有點受不了 (極端) , 原本就只是想偏向 "卡通風"
+瑟瑟檢測好難, "uncanny"
+V7 還會有瑟瑟圖庫
+想要 SD3 權重, 但也體諒 SAI 的處境, 能等下去
+SD3 的邀請太怪了 (C 站主持: 我也沒)
+SAI JP 透露月尾會有 (2405)
+打算用 1280x1280 練, 前期在做也差不多, booru tag + NLP 標兩次
+有自己練 tagger / classifier 然後再打標 (瑟瑟內容)
+81:30 V6 的 2.6M 是從 10M 篩出來的, V7 打算從 30M 篩出 7-10M 圖
+圖庫已到 100TB, 車庫架服務器 (server rack in garage)
+打標器已經不止一代, 有用上 "錨" (anchor, "left of someone / right of someone")
+V7 會標漫畫 (text bubble)
+打標器折騰了很久 (最少兩年), 一直有人手比對
+88:37 V6 很大程度上都是一人獨力完成, 信任問題
+貼士:多記錄,多實驗
+要預備燒錢,而且是實體機而非租雲,出外靠朋友
+打標的計算量目測 "10 張 4090 跑 1 年"
+資料為上 "data is king"
+自製工具 (ML engineer / developer), 基建很難
+沒企業負擔, 就是因為個人勢才能加瑟瑟
+還有精力 / 錢捱到 V7 (SD3), 但科技難以預測
+105:52 其實也沒有太多人在意 (爭議)
+V7 會先傳 C 站, 仍然是免費
+"多幹活" (build things)
+```
+
+</details>
+
+## Official notice on Pony V7 ##
 
 - [Towards Pony Diffusion V7](https://civitai.com/articles/5069)
 

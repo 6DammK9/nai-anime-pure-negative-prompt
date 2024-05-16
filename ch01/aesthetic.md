@@ -63,3 +63,47 @@ Would art able to be *partially expressed by pure logic?* With [iterlation of kn
 ### (Extra) Unconditional image generation ###
 
 - See [my CivitAI article](https://civitai.com/articles/5149). Will remove rant, especially ch98, 99 if I have time.
+
+### Old session in ch98. Written in 2212. ###
+
+- https://youtu.be/eS7luZntgnQ
+- https://www.youtube.com/watch?v=reUZRyXxUs4&ab_channel=TED
+- https://www.youtube.com/watch?v=-lz30by8-sU&ab_channel=Computerphile
+- https://youtu.be/A0wMbUKVGOA
+- https://youtu.be/8_oDofXXxvE
+- https://www.panewslab.com/zh_hk/articledetails/1aku74id8a4p.html
+- https://www.youtube.com/watch?v=8bMGStypFWY&list=PLz0n_SjOttTfJ-FYWvSButSSRYjAc_4ps&ab_channel=Carneades.org
+- https://www.youtube.com/watch?v=lpXZpUMXRok&list=PLz0n_SjOttTfJ-FYWvSButSSRYjAc_4ps&index=28&ab_channel=Carneades.org 
+- http://cmuems.com/2016/60212/resources/galanter_generative.pdf
+
+```
+26/35
+<p>Ultimately, generative art per se is ideologically neutral. It simply is a way of creating
+art and any content considerations are left to a given artist. After all, generative art is
+prehistoric and precedes modernism, postmodernism, and every other “ism” on
+record. Nevertheless, the postmodern condition continues to interest some artists and
+critics in the realm of generative art, and it serves as a platform for extending, not
+ending, that discussion.</p>
+```
+- https://www.youtube.com/watch?v=CC0dPsWOXEA&ab_channel=DavidsonArtOnline
+- https://youtu.be/Bj07Ybr-CRQ
+- https://www.zhihu.com/question/20171225/answer/43151814?utm_id=0
+- https://www.youtube.com/watch?v=80LCWXh4FfM&ab_channel=TED
+- https://www.v2ex.com/t/900031
+- https://www.ithome.com.tw/news/104851
+- https://tw.news.yahoo.com/meta的人工智慧聊天機器人-學壞了-言論充滿偏見-還打臉母公司-031018393.html
+- https://youtube.com/shorts/odq4l4vtXFc?feature=share
+- https://www.youtube.com/shorts/fvLqx0pb_gA
+- https://www.youtube.com/watch?v=TecuyeRlOkY&ab_channel=MentalOutlaw
+- https://twitter.com/TheDevelop3r/status/1600275925614067714
+- https://www.techbang.com/posts/102295-chatgpt-banned-stack-overflow
+- https://www.inside.com.tw/article/30042-ChatGPT-challenge-NLP-Algorithm-Engineer
+- https://twitter.com/ammaar/status/1601284293363261441
+- https://twitter.com/8co28/status/1603186112985698304
+- https://www.inside.com.tw/article/30245-stanford-research-finds-codes-are-more-unsecure-with-AI-assistance 
+- https://twitter.com/TheDevelop3r/status/1609980041449902080
+- https://jweb.kl.edu.tw/userfiles/811/document/11835_%E8%A6%96%E8%A6%BA%E8%97%9D%E8%A1%93%E5%89%B5%E4%BD%9C%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95%E4%B9%8B%E7%90%86%E8%AB%96%E5%9F%BA%E7%A4%8E%E6%8E%A2%E6%9E%90.pdf
+- https://twitter.com/KenAkamatsu/status/1612023820050890754
+
+- [Better remove rants and keep it in Discord since I don't have to worry about the server now.](https://discord.com/channels/1027129024054575174/1029421705187303495/1047909834374258748) 
+- tldr on 240517: [I have done H-T-P towards "AI" thoughout this journey.](https://practicalpie.com/house-person-tree-test/) I want to know AI, even I have learnt in postgrad level. If it can project human's psychological / psychiatrical status, I can do it with the same way towards "AI", then I know how it / she / he ~~Astolfo~~ perform the prediction. The "prediction" is still not fully understanded in the mathmatical / logical way, so I prefer a looser way to "peek" and make some [conjecture](https://en.wikipedia.org/wiki/Conjecture).
