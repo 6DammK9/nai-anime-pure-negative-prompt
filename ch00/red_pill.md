@@ -116,6 +116,16 @@ Definitely not Pixiv.
 - `zh`: [申申孤兒院](https://discord.gg/H6WcWRq4HV)
 - `zh`: [二十五小時繪社](https://discord.gg/jjcPyPhr)
 
+## Blue pill (Platforms who forward models without notice) ##
+
+- I won't call it "steal", because I'm a MIT + CC0 guy. "Good luck on making profit on my model". Beware on what service you have received haha.
+
+- [Comfy.ICU](https://comfy.icu/models/309514/AstolfoMix-XL)
+- [WinAIs](https://www.winais.com/archives/30415) *33966 downloads with 7 views*
+- [SeaArt AI模型](https://www.seaart.ai/zhTW/models/detail/b817632a0841c91c107e241b80d2bc34) *SD2*
+- [AIEasyPic](https://aieasypic.com/inspire/models/detail/reinforced-298506) *SD2*
+- [88stacks = ReplicantLife](https://88stacks.com/models/zEjmgCXnE0YM--AstolfoMix-XL)
+
 ## Not blue pill ##
 
 *Stolen from [internet](https://t.me/StableDiffusion_CN/1199467)*. I will recover and format the content if I have time (probably don't). Ignore the `zh` comments because *all platforms are similar.*
