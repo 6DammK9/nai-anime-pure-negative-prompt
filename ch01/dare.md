@@ -66,6 +66,12 @@ This time I edited the code manually to use the TIES-SOUP instead of original TI
 
 ![24051202.png](./img/24051202.png)
 
-- The reason behind this is not sure, at least I don't have math proof for this. The UNET is supposed to handle *time token* (e.g. layer `model.diffusion_model.time_embed.0.weight`), which is clearly stated in the sampler eqaution as $t$, I find that the UNET is likely ignore the time factor and being applied for multiple iterlations. Is it being [autoregressive](https://en.wikipedia.org/wiki/Autoregressive_model), like a NLP model in [visual language](https://en.wikipedia.org/wiki/Visual_language)? This may need further study.
+### Why LLM merging algorihms works in principle? ###
 
 ![cfg_w.png](./img/cfg_w.png)
+
+- The reason behind this ("it works") is not sure, at least I don't have math proof for this. The UNET is supposed to handle *time token* (e.g. layer `model.diffusion_model.time_embed.0.weight`), which is clearly stated in the sampler eqaution as $t$, I find that the UNET is likely ignore the time factor and being applied for multiple iterlations. Is it being [autoregressive](https://en.wikipedia.org/wiki/Autoregressive_model), like a NLP model in [visual language](https://en.wikipedia.org/wiki/Visual_language)? 
+
+- ~~This may need further study.~~ [Yes, MDP is AR(1)](https://stats.stackexchange.com/questions/23789/is-ar1-a-markov-process), when the "state space" is under [ Borel space](https://en.wikipedia.org/wiki/Measurable_space). Then [is SD's latent space a Borel space also?](https://math.stackexchange.com/questions/4346780/rigorous-definitions-of-probabilistic-statements-in-machine-learning) I'm not PhD in Maths, so I can just guess for it: Looks like every data points (image samples) are *countable*, and all the data contents are *finite* (obviously pixels are *digitalized*, and text are *tokenized*), and *in practice*, extreme values (0,1,inf) and NaNs are well handled, so **the latent space should be a Borel space.**
+
+- Given some mathmateical similarity between diffusion (SD) and transformer (LLM), with my [loose House-Tree-Person test](../ch99) ~~will discuss in a full article~~, even I don't design the experiment [in a formal way](https://arxiv.org/abs/2309.14859), somehow I can merge for what I am expected for.
