@@ -2,7 +2,9 @@
 
 - [Back to main page](../README_XL.MD#discovered-models).
 
-- There is 102 models discovered. Here is a full list of discovered models:
+- There is 102 models discovered. It is just **any** poplar models since the release of original SDXL, disregarding art style, just excluding models with tiny dataset or specified content.
+
+- [Why I am so lazy on model selction.](https://www.investopedia.com/terms/p/passiveinvesting.asp). [Merging SD is lack of discussion / research, or just immature all the time,](https://github.com/6DammK9/nai-anime-pure-negative-prompt) reducing hidden risk can let me focus on everything else, especially in coding / docuementing / testing even my experiment design is controversial and arbitrary.
 
 <details>
     <summary>Table with 100+ rows. Click to open.</summary>
