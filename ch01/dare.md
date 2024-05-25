@@ -8,7 +8,9 @@
 
 - [EN article](https://medium.com/@minh.hoque/paper-explained-language-models-are-super-mario-2ebce6c2cf35), [CN article](https://zhuanlan.zhihu.com/p/668809641)
 
-- Until I'm sure how [my primary merger implement this algorithm,](https://github.com/ljleb/sd-mecha/blob/main/examples/binomial_dropout_merge.py), I won't comment on the algorithms.
+- Here is a model utilizing [ComfyUI-DareMerge](https://github.com/54rt1n/ComfyUI-DareMerge): [Ponymagine 9.1](https://civitai.com/models/391659/ponymagine-91) *Note that it might be DARE over custom recipe.*
+
+- [A extended version using multiple binominal distribution](https://github.com/ljleb/sd-mecha/blob/main/examples/binomial_dropout_merge.py). *So I implemented my version instead.*
 
 - However, there are some important glossaries: DARE as "**D**rop **A**nd **RE**scale", SFT as "**S**upervised **F**ine-**T**uning".
 
