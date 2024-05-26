@@ -49,7 +49,7 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 - [ch05](ch05): *Astolfo mix. Existing technology, original idea.*
 - [ch97](ch97): **Uncategorized contents.** Usually "not article".
 - ch98: ~~Backup from discord server because I think it is not safe to leave them there forever.~~ **Removed. Merged / moved to different articles.**
-- [ch99](ch99): Old segments. I didn't expect this repo draws stars and some attention. The format is being unsuitable again.
+- [ch99](ch99): A "House-Tree-Person" test towards SD, as well as the oldest articles. *Still following this pracice today.*
 
 ## So where to start? ##
 - Take the *blue pill* to return the major comminuty and continue drawing. Take the [red pill](ch00/red_pill.md) if you're prepared to my ~~observation with some legit ML / NLP / AI knowledge~~ complete non-sense (or somewhat closest to the ~~reality of bugs / expolits / [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior)~~ dystopia of the released AI models).

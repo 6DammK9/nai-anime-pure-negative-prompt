@@ -14,6 +14,8 @@
 
 ### Blue pill, but in academic paper ###
 
+- [Arcee's MergeKit: A Toolkit for Merging Large Language Models](https://arxiv.org/abs/2403.13257)
+
 - [Model Stock: All we need is just a few fine-tuned models](https://arxiv.org/abs/2403.19522)
 
 - [Dataless Knowledge Fusion by Merging Weights of Language Models](https://arxiv.org/abs/2212.09849)
