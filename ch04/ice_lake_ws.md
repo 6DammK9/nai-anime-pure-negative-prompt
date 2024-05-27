@@ -1,4 +1,4 @@
-*Article archive for posting to public website like builds.gg (cannot make new post) and [pcpartpicker](https://pcpartpicker.com/b/VZy48d). Images will be included there, [and Google Drive also.](https://drive.google.com/drive/folders/1v_b23L6OAVj7WgRmqmIbPVnCLCDriWzI?usp=sharing).
+*Article archive for posting to public website like [builds.gg](https://builds.gg/dammk/ice-lake-ai-ml-workstation-which-shouldnt-exist-36884) and [pcpartpicker](https://pcpartpicker.com/b/VZy48d). Images will be included there, [and Google Drive also.](https://drive.google.com/drive/folders/1v_b23L6OAVj7WgRmqmIbPVnCLCDriWzI?usp=sharing).
 
 # Ice lake AI / ML Workstation which shouldn't exist #
 
@@ -15,7 +15,7 @@ Follow [my Instagram](https://www.instagram.com/6dammk9/) for lots of parts hunt
 
 ## Part list with details ##
 
-It is obviously a dual CPU build with all 16 RAM sticks installed, providing 64c/128t and 512GB of memory. I didn't duplicate all the entries. It is also dual 22G GPU, and dual U.2 SSD with 8TB capacity. 
+It is obviously a dual CPU build with all 16 RAM sticks installed, providing 64c/128t and 512GB of memory. I didn't duplicate all the entries. It is also dual 22G GPU, and SATA + U.2 SSD with 10TB capacity. 
 
 [Published part list in pcpartpicker.](https://pcpartpicker.com/user/DammK/saved/PgrtWZ)
 
@@ -63,23 +63,25 @@ The [NV-Link adapter](https://www.amazon.com/Nvidia-Corporation-900-14932-2500-0
 
 ### Storage ###
 
-For storage, 2x [Intel / Solidigm DC P4510 4TB](https://www.solidigm.com/products/data-center/d7/p4510.html) are installed, resulting 8TB of storage. Its price may go cheap because of former mining SSD. Mine has 1.3 PBW used, resulting 94% health. Yes, its life span is 13.88 PBW as writtn in the SATA healthcheck! It will be handy for extensive model merging which is storage intensive. It came with [U.2 to PCIE adapter](https://www.amazon.com/GINTOOYUN-Expansion-Card%EF%BC%8CSFF-Riser-Adapter/dp/B08P16LMHW), soon I bought it with SFF8639 adapter cable and connect it to supported motherboard like ASUS ROG R5E10 and EVGA X299 Dark, and finally this board via SFF8654. 
+For storage, 2x [Intel / Solidigm DC P4510 3.84TB](https://www.amazon.com/Intel-SSDPE2KX040T8-SSDPE2KX040T801-Lenovo-Supermicro/dp/B0BCFVBSD8) are installed, resulting 8TB of storage. Its price may go cheap because of former mining SSD. Mine has 1.3 PBW used, resulting 94% health. Yes, its life span is 13.88 PBW as writtn in the SATA healthcheck! It will be handy for extensive model merging which is storage intensive. It came with [U.2 to PCIE adapter](https://www.amazon.com/GINTOOYUN-Expansion-Card%EF%BC%8CSFF-Riser-Adapter/dp/B08P16LMHW), soon I bought it with SFF8639 adapter cable and connect it to supported motherboard like ASUS ROG R5E10 and EVGA X299 Dark, and finally this board via SFF8654. 
 
-However, for OS drive, I use the traditional single 2.5 inch SATA SSD [Micron 1300 512GB](https://hppart.uk/products/for-hp-861193-001-micron-1300-2-5-512gb-mtfddak512tdl-ssd-solid-state-drive-new). Besides less sensitive to heat, I have found that if both OS drive and model drive are on NVME, CPU / PCH may have trouble on rapid context switching while receiving IO boost, making the OS being instable.
+However, for OS drive, I use the traditional single 2.5 inch SATA SSD [Intel / Solidigm D3 S4510 1.92TB](https://www.amazon.com/Intel-D3-S4510-Solid-State-Drive/dp/B07GL4LLWL). Besides less sensitive to heat, I have found that if both OS drive and model drive are on NVME, CPU / PCH may have trouble on rapid context switching while receiving IO boost, making the OS being instable. Meanwhile, it just has same lifespan which is more than 6PBW!
 
 For the least exicting part, the [WD Black Label 2TB](https://www.amazon.com/-/zh_TW/WD2003FYYS/dp/B00DOS5KXC) still remains, storing non AI / ML, or OS stuffs, usually downloaded software, docuements, maybe a some BT materials.
 
 ### PSU ###
 
-It is obvious: [EVGA 1600W P2](https://www.amazon.com/-/zh_TW/EVGA-Supernova-%E9%9B%BB%E6%BA%90%E4%BE%9B%E6%87%89%E5%99%A8-PLUS-%E7%99%BD%E9%87%91%E8%AA%8D%E8%AD%89/dp/B00NJG61JQ?th=1) is a great PSU, besides its age. I bought it while 2020's BTC halving, from a stripped mining rig. It is one of the few PSUs featuring 16 AWG PSU cables, supporting AMD 295X2 which is as power hungry as the ice lake CPUs. Since the motherboard has been load balanced with 3 rails, the CPU 8pin cable should be capable with reduced load with a little bit of headroom.
+After my old [EVGA 1600W P2](https://www.amazon.com/-/zh_TW/EVGA-Supernova-%E9%9B%BB%E6%BA%90%E4%BE%9B%E6%87%89%E5%99%A8-PLUS-%E7%99%BD%E9%87%91%E8%AA%8D%E8%AD%89/dp/B00NJG61JQ?th=1) got tripped because of its age, I bought a [Silverstone HELA 2050 Platinum](https://www.amazon.com/Silverstone-Cybenetics-Certified-SST-HA2050-PT-SST-AX2050MCPT/dp/B09P8CSLVD?th=1) to make sure it can withstand the notorious power spikes from the 2080ti. 
 
-I don't test the maximum power consumption yet, it should be around 1200W, which are 250W x4 for CPU and GPU, and another 200W for the board and memory. However its power consumption while idle is high, I recorded 300W with little to no tasks. It may be caused by undesired power state between ES CPU and early BIOS version, and the DSC from the 2080ti because I'm using [4K144Hz monitor]([https://www.displayspecifications.com/en/model/82bf263d](https://www.price.com.hk/product.php?p=522679)) (not listed).  
+The daily maximum power consumption is around 1200W, which are 250W x4 for CPU and GPU, and another 200W for the board and memory, and 1500W including the spikes. Its idle power consumption is high, reaching around 400W especially [I turn off C-state because of the huge lag](https://www.tomshardware.com/news/sleepy-intel-ice-lake-xeons-take-longer-to-ramp-up-frequency). Meanwhile, DSC is on for the 2080ti because I'm using [4K144Hz monitor](https://www.price.com.hk/product.php?p=522679) (not listed, [a unbranded monitor built from panel](https://www.displayspecifications.com/en/model/82bf263d)). 
 
+Similar to 1600P2 and most top tier PSUs, it features 16 AWG PSU cables, supporting AMD 295X2 which is as power hungry as the ice lake CPUs. Since the motherboard has been load balanced with 3 rails, the CPU 8pin cable should be capable with reduced load with a little bit of headroom.
+ 
 ### Cooling (Case / fan / thermal paste) ###
 
 The [Corsair Graphite Series 760T Full Tower Windowed Case](https://www.newegg.com/arctic-white-corsair-graphite-series-atx-full-tower/p/N82E16811139055) looks like mid tower nowdays, but technically it has 8 pcie slots and supports "EATX", which is actually EEB size. However, although the motherboard is claimed SSB also, the screw hole is not following ATX form factor (view the image again). Therefore I installed 4 out of 9 screw holes only, leaving the board hanging in diagonal.
 
-Case fan is a set of Cooler Master ARGB fans. MasterFan [MF120R](https://www.amazon.com/-/zh_TW/Cooler-Master-MasterFan-MF120R-R4-120R-20PC-R1/dp/B07H4NYFVG?th=1), [MF140R](https://www.amazon.com/-/zh_TW/R4-140R-15PC-R1/dp/B07GSSY21G), SickleFlow [SF120R](https://www.amazon.com/Cooler-Master-Independently-Controlled-Addressable-Management/dp/B07P989CQ6) and [SF140](https://www.amazon.com/Cooler-Master-SickleFlow-Individually-Customizable/dp/B08HJPHJMH) are common ARGB fans and perform fairly well.
+Case fan is a set of Cooler Master ARGB fans. MasterFan [MF120R](https://www.amazon.com/-/zh_TW/Cooler-Master-MasterFan-MF120R-R4-120R-20PC-R1/dp/B07H4NYFVG?th=1), [MF140R](https://www.amazon.com/-/zh_TW/R4-140R-15PC-R1/dp/B07GSSY21G), SickleFlow [SF120R](https://www.amazon.com/Cooler-Master-Independently-Controlled-Addressable-Management/dp/B07P989CQ6) and [SickleFlow 140](https://www.amazon.com/Cooler-Master-SickleFlow-ARGB-Cooling/dp/B08GD8Q55F?th=1) are common ARGB fans and perform fairly well.
 
 Thermal paste is technically unknown becuase I bought the CPU "guled" with the heatsink. However the seller tell me that it is in fact [Arctic MX4](https://gamersnexus.net/guides/3346-thermal-paste-application-benchmark-too-much-thermal-paste), which is also common and perform consistantly well. As stated in the CPU heatsink, the temperature is fine.
 
