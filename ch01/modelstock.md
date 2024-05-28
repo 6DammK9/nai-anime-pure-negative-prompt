@@ -26,6 +26,8 @@
 
 ![24052804.png](./img/24052804.png)
 
+- Since **we can't just average out the theta**, we can try to ~~perform SVD~~ perform a special iterative method for [the first singular value of SVD decomposition for N vectors](https://stats.stackexchange.com/questions/239059/similarity-metrics-for-more-than-two-vectors). [torch.svd](https://pytorch.org/docs/stable/generated/torch.svd.html) is handy ( $O(mn^2)$ in time, I am scared.)
+
 ## Periodic merging? ##
 
 - Paper has explictly state that it is performed **while fintuning**, so I think it is not suitable in this case, which I have nothing to train.
