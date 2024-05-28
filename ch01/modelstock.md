@@ -4,6 +4,8 @@
 
 - Implementation: [Official: Code is under internal review now.](https://github.com/naver-ai/model-stock) [Attempt by mergekit.](https://github.com/arcee-ai/mergekit/blob/main/mergekit/merge_methods/model_stock.py)
 
+- tldr: *Weighted sum between averaged model and base model?*
+
 ![24052801.png](./img/24052801.png)
 
 ## Guessing the "theta" ##
@@ -36,6 +38,10 @@
 
 ![24052805.png](./img/24052805.png)
 
-## Weighted sum between averaged model and base model? ##
+- Then now here is my updated algorithm.
+
+![24052806.png](./img/24052806.png)
+
+![24051202.png](./img/24051202.png)
 
 - Maybe I should rename my "TSD" from "TIES-SOUP w/ DROP" to *"TIES-STOCK w/ DROP"*. Now I can expect how it performs.
