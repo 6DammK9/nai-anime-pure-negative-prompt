@@ -32,10 +32,10 @@
 
 - From [TIES](./ties.md) and [DARE](./dare.md), we will find that there are still a tiny place $\tau_m$ as "averaging". *I think I can locate the "majority" and apply this equation along with dropout by pure random.* 
 
-- For my "it works I don't know why" TIES-SOUP, $\tau_t=0$ when $w_0$ in Model Stock matches $\theta_init$ in TIES, Then $W_{avr}^{(N)}$ will be $\tau_m$. Instead of $\lambda=1$ from my TIES-SOUP variant, $\lambda=t$ which **Model Stock tried to determine the hyper-parameter.**
+- For my "it works I don't know why" TIES-SOUP, $\tau_t=0$ when $w_0$ in Model Stock matches $\theta_{init}$ in TIES, Then $W_{avr}^{(N)}$ will be $\tau_m$. Instead of $\lambda=1$ from my TIES-SOUP variant, $\lambda=t$ which **Model Stock tried to determine the hyper-parameter.**
 
 ![24052805.png](./img/24052805.png)
 
 ## Weighted sum between averaged model and base model? ##
 
-- Maybe I should rename my "TSD" from "TIES-SOUP w/ DROP" to "TIES-STOCK w/ DROP". Now I can expect how it performs.
+- Maybe I should rename my "TSD" from "TIES-SOUP w/ DROP" to *"TIES-STOCK w/ DROP"*. Now I can expect how it performs.
