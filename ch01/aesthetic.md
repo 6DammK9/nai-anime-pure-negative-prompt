@@ -57,6 +57,8 @@ Instead, [merging models](merge.md) does provide new contents to discover (e.g. 
 
 Would art able to be *partially expressed by pure logic?* With [iterlation of knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph), indentifying [psychology and psychiatry effects as visual language](https://youtu.be/lmdtWygrvFA?si=JnEiloBs-_gvUyM_), and finally *find the sweet spot to let most people agree for some insights* via [Computational neuroscience](https://youtu.be/cufOEzoVMVA?si=VJM7O7dNIcZfNaKo)? It sounds possible, yet really, really counter intuitive.
 
+(Added on 240529): After watching some videos and articles about [Daniel Dennett](https://www.youtube.com/watch?v=nGrRf1wD320&t=388s&ab_channel=BigThink), *I agree that many great science theory were pseudoscience before they have been rigorously criticized*, especially it is interdisciplinary for multiple subjects, and becomes an individual subject when the thoughts are being structured (may not valid!). Any findings, after criticize and experiement (may not complete!), will contribute to nice progress, *and truth will be reached eventually.* If such progress is not critical to your living, truth will be benefitical, even you are an "AI anti".
+
 ### (Extra) Unconditional image generation ###
 
 - See [my CivitAI article](https://civitai.com/articles/5149). Will remove rant, especially ch99 if I have time.
