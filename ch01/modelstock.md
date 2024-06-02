@@ -16,7 +16,23 @@
 
 - Notice that $cos(\theta)$ is based from $w_0$ which is the **pretrained model (base model)**. Actual calculation should be $CosineSimilarity(w_1-w_0,w_2-w_0)$
 
-## Guessing for the "N" case ##
+## Range of CosineSimilarity and final interpolation ratio? ##
+
+- *The paper didn't mention, or even consider that* $cos(\theta)$ is raged from $[-1,1]$.
+
+![24060202.PNG](./img/24060202.PNG)
+
+- If full range of value is considered, interpolation ratio $t$ will be off chart. We can hard assign $W_0$ when $cos(\theta)=-1$.
+
+![24060201.PNG](./img/24060201.PNG)
+
+- However, given the merge ratio, it will sounds valid. You can still get something like $3 W_0 - 2 W_{12}$ for $cos(\theta)=-1/2$.
+
+- For the upcoming "N-case", in case the merger doesn't break, it may be still valid. *I'm puzzled to guess the theta instead.* 
+
+![24060203.PNG](./img/24060203.PNG)
+
+## Guessing for the "N-case" ##
 
 - Although there was math proof in the Appendix, I found that it still unable to state how to derive the $\theta$ from $w_n$. All we know is it tends to $t=1$ for a high dimensional space.
 
