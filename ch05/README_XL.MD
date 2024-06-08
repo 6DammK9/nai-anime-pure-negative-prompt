@@ -125,7 +125,8 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 |03|Uniform Soup|`x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.safetensors`|52|46|40|40|[mecha](./recipes/x45-AstolfoMix-x39te0x39te1-e2e-240222-60d0764.mecha)|
 |04|Uniform Soup|`x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.safetensors`|70|52|61|42|[mecha](./recipes/x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.mecha)|
 |05|TIES-SOUP|`x72a-AstolfoMix-240421-feefbf4.safetensors`|73|73|73|73|[mecha](./recipes/x72a-AstolfoMix-240421-feefbf4.mecha)|
-|06|TIES-SOUP w/ DROP|`x101a-AstolfoMix-24050903-4edc67c.safetensors`|102|102|102|102|[mecha](./recipes/x101a-AstolfoMix-24050903-4edc67c.mecha)|
+|06|TSD: TIES-SOUP w/ DROP|`x101a-AstolfoMix-24050903-4edc67c.safetensors`|102|102|102|102|[mecha](./recipes/x101a-AstolfoMix-24050903-4edc67c.mecha)|
+|07|TGMD: TIES-GeometricMedian w/ DROP|`x116a-AstolfoMix-24060702-01823a9.safetensors`|116|116|116|116|[mecha](./recipes/x116a-AstolfoMix-24060702-01823a9.mecha)|
 
 ### Discovered models ###
 
@@ -465,3 +466,15 @@ Merge time: 3972 sec
 - After a few days of testing, I made the merge successfully (just a few hours). However, it is worse than the TSD merge. The model drifts towards averaging and making the model a lot less stable, or forgetting too many anime contents. So I decided to upload to [HF](https://huggingface.co/6DammK9/AstolfoMix-XL/blob/main/basin-AstolfoMix-24051501-29bac1a.safetensors) and put it away. It may be usefull if I have more idea on model selection.
 
 ![xyz_grid-0880-2863436210-10080-1623-3-48-20240526173054.jpg](xyz_grid-0880-2863436210-10080-1623-3-48-20240526173054.jpg)
+
+## Findings on "SDXL Model Stock" and "SDXL Geometric Median" ##
+
+- [Still the same PR there.](https://github.com/ljleb/sd-mecha/pull/28)
+
+- Now it use so many RAMs. This is just `threads=16`. [I have upgraded my WS to have 4TB RAM](../ch04/ice_lake_ws.md#memory).
+
+![24060802.png](./img/24060802.png)
+
+- The result is still under investigation. Left to right: TSD from avove, plain average of new model set, Geometric Median alone, TGMD for "TIES-GeometricMedian w/ DROP".
+
+![xyz_grid-0890-172242096-8064-1623-3-48-20240608161940.jpg](./img/xyz_grid-0890-172242096-8064-1623-3-48-20240608161940.jpg)

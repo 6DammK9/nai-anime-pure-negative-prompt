@@ -44,6 +44,10 @@
 
 - Since **we can't just average out the theta**, we can try to ~~perform SVD~~ perform a special iterative method for [the first singular value of SVD decomposition for N vectors](https://stats.stackexchange.com/questions/239059/similarity-metrics-for-more-than-two-vectors). [torch.svd](https://pytorch.org/docs/stable/generated/torch.svd.html) is handy ( $O(mn^2)$ in time, I am scared.)
 
+- After getting stuck for a few days, *I decided to ditch this approach becuase I can't get the result in range.* I decided to calculate [Geometric Median](https://en.wikipedia.org/wiki/Geometric_median) with [Weiszfeld's algorithm](https://github.com/scoutant/l1-median/tree/main) instead. I'll explain in session below.
+
+- **It throws nan** for the $mean(cos(\theta))$ approach. It also supports my idea above.
+
 ## Periodic merging? ##
 
 - Paper has explictly state that it is performed **while fintuning**, so I think it is not suitable in this case, which I have nothing to train.
@@ -62,4 +66,22 @@
 
 ![24051202.png](./img/24051202.png)
 
-- Maybe I should rename my "TSD" from "TIES-SOUP w/ DROP" to *"TIES-STOCK w/ DROP"*. Now I can expect how it performs.
+- Now it works just like no ModelStock has been applied. As the paper stated, $t \rightarrow 1$ when $N=100$. I'll move it to the Median also.
+
+## Spinoff: "Model Stonk" by calculate Geometric Median with gradient descent ##
+
+- Since $cos(\theta)$ is troublesome to calcule for N-Model case, I decided to calculate [Geometric Median](https://en.wikipedia.org/wiki/Geometric_median) with [Weiszfeld's algorithm](https://github.com/scoutant/l1-median/tree/main) instead. Conceptally [it is a bit different from geometry median](https://www.geeksforgeeks.org/geometric-median/), which lies between midpoint $w_{12}$ and  and vertex $w_0$, but it is well known for ignoring outliers and robust training. Such concept can be brought into model merging, *which is similar to TIES (ignoring outliers as math sign) and Model Stock (bring towards center)*. Although gradient descent is involved, *it converges in linear time* (i.e. $O(N)$) because of nature of $l1-median$ problem.
+
+![24060301.png](./img/24060301.png)
+
+- Implementation was easy, [but I still need to rewrite myself](https://github.com/6DammK9/sd-mecha/commit/f2119b812e3483036183468c8b0d763e0a288dad). [List Comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp) is used for parallelization and efficiency.
+
+- It spends around 6-10x more time on merging, comparing with DARE (40x for averaging). However the result is reasonable. "Median vs Mean" is a widely discussed topic, they do behave differently. Therefore I need more image generation to determine if it works good.
+
+## TSD v2.1 ##
+
+- I'd call it $GeometricMedian(A^p)$ directly.
+
+![24060801.png](./img/24060801.png)
+
+- Suprisingly, it inherits quite a lot of "styles" from median, rather than DARE. Therefore I can generate images from this implemention directly, without testing the plain median.

@@ -43,11 +43,15 @@ In theory, under such physical constraint, it should be compatable with most pro
 
 ### Memory ###
 
-All 16 RAM sticks are identical, which should boots with single Attempt. Make sure you don't mix the RAM, even in same frequency with different bank / rank configuration. 
+**4TB RAM. For real.**. [8x Samsung 64G 4RX4 LR-DIMM 2400MHz](https://www.ebay.com/itm/173343022411), and then [8x Intel 2nd gen PMem 512GB DCPMM 3200MHz](https://www.ebay.com/p/24058980642). [Check out LTT's video on how to archieve this insane amount of RAM.](https://www.youtube.com/watch?v=uHAfTty9UWY)
 
-The motherboard supports 2133 / 2400 in BIOS, which is undocumented in user maual.
+First boot is a pain. BIOS version reports confusing info, finally I cleared CMOS (reset BIOS) and it boots fine. Memory training is long (5min), however it becomes fast after the first boot.
 
-The RAM sticks should be [Kingston KSM series](https://www.amazon.com/-/zh_TW/KSM24RD4-32MEI/dp/B07BGFDNZ1) but [covered with HP parts number](https://www.ebay.com/itm/265799563533). 
+The motherboard supports 2133 / 2400 in BIOS, which is undocumented in user maual. Since I can't afford too many items at the same time, the DIMM part is still slow. I may upgrade it to 3200 once I have enough budget.
+
+PMem will be very hot (full loading) when loading into Windows. It will use around 60GB, and you need [WS / Enterprise Win 10 / 11](https://www.compuram.de/blog/en/how-much-ram-can-be-addressed-under-the-current-32-bit-and-64-bit-operating-systems/) to support 2TB+ of RAM.
+
+On top of that, a dedicated RAM cooler, [GSkill FTB-3500C5-D](https://www.ebay.com/itm/266465959152) has been applied when the case airflow is not enough. An upgraded Taobao RGB PWM Compact cooler is coming soon.
 
 ### GPU ###
 
@@ -81,7 +85,9 @@ Similar to 1600P2 and most top tier PSUs, it features 16 AWG PSU cables, support
 
 The [Corsair Graphite Series 760T Full Tower Windowed Case](https://www.newegg.com/arctic-white-corsair-graphite-series-atx-full-tower/p/N82E16811139055) looks like mid tower nowdays, but technically it has 8 pcie slots and supports "EATX", which is actually EEB size. However, although the motherboard is claimed SSB also, the screw hole is not following ATX form factor (view the image again). Therefore I installed 4 out of 9 screw holes only, leaving the board hanging in diagonal.
 
-Case fan is a set of Cooler Master ARGB fans. MasterFan [MF120R](https://www.amazon.com/-/zh_TW/Cooler-Master-MasterFan-MF120R-R4-120R-20PC-R1/dp/B07H4NYFVG?th=1), [MF140R](https://www.amazon.com/-/zh_TW/R4-140R-15PC-R1/dp/B07GSSY21G), SickleFlow [SF120R](https://www.amazon.com/Cooler-Master-Independently-Controlled-Addressable-Management/dp/B07P989CQ6) and [SickleFlow 140](https://www.amazon.com/Cooler-Master-SickleFlow-ARGB-Cooling/dp/B08GD8Q55F?th=1) are common ARGB fans and perform fairly well.
+Case fan is majorly a set of Cooler Master ARGB fans. MasterFan [MF140R](https://www.amazon.com/-/zh_TW/R4-140R-15PC-R1/dp/B07GSSY21G), [SickleFlow 140](https://www.amazon.com/Cooler-Master-SickleFlow-ARGB-Cooling/dp/B08GD8Q55F?th=1) are common ARGB fans and perform fairly well. For the exhaust fan, after calculation of the airflow (42 CFM from CPU), I switched to [JETFLO 120 BLUE LED](https://www.coolermaster.com/zh-tw/products/jetflo-120-blue/?tab=tech_spec) for massive airflow, lighting, and relatively low noise". 
+
+I have reused Jonsbo [FR140S](https://www.jonsbo.com/products/FR140S.html) and [FR-925 ARGB](https://www.jonsbo.com/en/products/FR9253.html) from previous build. 
 
 Thermal paste is technically unknown becuase I bought the CPU "guled" with the heatsink. However the seller tell me that it is in fact [Arctic MX4](https://gamersnexus.net/guides/3346-thermal-paste-application-benchmark-too-much-thermal-paste), which is also common and perform consistantly well. As stated in the CPU heatsink, the temperature is fine.
 
