@@ -36,7 +36,7 @@ Mode                 LastWriteTime         Length Name
 -a----         10/1/2024     21:54     6938041050 _x014-ponyDiffusionV6XL_v6.safetensors
 -a----         10/1/2024     21:54     6938040682 _x015-animagineXL_v20.safetensors
 -a----        10/10/2023     23:01    13875718600 _x016-wdxl-aesthetic-0.9.safetensors
--a----        10/10/2023     22:54     6938043234 _x017-leosamsHelloworldSDXLModel_helloworldSDXL10.safetensors       
+-a----        10/10/2023     22:54     6938043234 _x017-leosamsHelloworldSDXLModel_helloworldSDXL10.safetensors
 -a----        10/10/2023      8:29     6938043104 _x018-nekoray-xl-1.5m-fp16mixed_e02.safetensors
 -a----        10/10/2023      8:29     6938043160 _x019-nekoray-xl-1.5m-pdg32_e02.safetensors
 -a----         4/10/2023      0:02     6938040996 _x020-explicitFreedomNSFW_beta.safetensors
@@ -122,6 +122,21 @@ Mode                 LastWriteTime         Length Name
 -a----          6/5/2024      3:08     6938145970 _x100-modelEX_v45.safetensors
 -a----          6/5/2024      0:33     6938108994 _x101-sdxlHK_v097b.safetensors
 -a----          6/5/2024      0:26     6938040682 _x102-XLBailingXLFantastic_v1045.safetensors
+-a----         19/5/2024      1:56     7105347928 _x103-fifthstep_v201.safetensors
+-a----         14/5/2024      1:02     6938052258 _x104-everclearPNYByZovya_v2VAE.safetensors
+-a----         15/5/2024     23:38     6938040706 _x105-7thAnimeXLPonyA_v10.safetensors
+-a----         17/5/2024      0:29     6938052002 _x106-blackMAGICXL_v145.safetensors
+-a----         16/5/2024     22:56     6939226090 _x107-edgeXL_v3.safetensors
+-a----         17/5/2024      0:38     6938055338 _x108-dollEXL_v1.safetensors
+-a----         19/5/2024      2:15    13875718262 _x109-bazaar_v020UD.safetensors
+-a----         23/5/2024      1:04     6939220556 _x110-reymixXL_v10.safetensors
+-a----         23/5/2024      0:05     6938040682 _x111-loliDiffusionV1.1.0_PDXL_Lx7-CLIP_VAE_FP16.safetensors
+-a----         29/5/2024      1:07     6938040654 _x112-heartOfAppleXL_v30.safetensors
+-a----         29/5/2024      1:14     6938040682 _x113-animeReality_beta10.safetensors
+-a----         29/5/2024      2:05     6938044856 _x114-umbraMecha_v10.safetensors
+-a----         30/5/2024      7:55     6938040706 _x115-SDXLXLCaulkinumRealline_sp.safetensors
+-a----          1/6/2024      2:20     6938041416 _x116-eclipseXL_v10.safetensors
+-a----          3/6/2024      1:35     6938040286 _x117-kohakuXLEpsilon_rev2.safetensors
 ```
 
 </details>
