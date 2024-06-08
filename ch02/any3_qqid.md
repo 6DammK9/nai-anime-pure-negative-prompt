@@ -6,7 +6,7 @@
 
 - Assumption: *One consistent owner*.
 
-- First, [this](https://huggingface.co/Linaqruf/anything-v3.0) is just a mirror uploaded by a random anon. He contacted me already. ~~That's all~~ [It will be gone](https://huggingface.co/Linaqruf/anything-v3.0/discussions/133) and [there will be a spiritual successor](https://huggingface.co/andite/anything-v4.0).
+- First, [this](https://huggingface.co/Linaqruf/anything-v3.0) is just a mirror uploaded by a ~~random anon~~ [a famous modeller](https://x.com/linaqruf_) [releasing one of the most apperciated SDXL model](https://civitai.com/models/260267/animagine-xl-v31). He contacted me already. ~~That's all~~ [It will be gone](https://huggingface.co/Linaqruf/anything-v3.0/discussions/133) and [there will be a spiritual successor](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch02/any4_qqdoc.md) and... [me following the research](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch05/README_XL.MD).
 
 - The real author is just a person who never involved in any international commuinities, and have no public apperance outside GFW, so he stayed myster for a long period of time. Even a [QQ-involved repo](https://github.com/lllyasviel/style2paints) once wrongly cited the person in HF. [Git issue](https://github.com/lllyasviel/style2paints/issues/205).
 
