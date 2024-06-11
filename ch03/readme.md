@@ -6,7 +6,7 @@ Usually involves model comparasion.
 - Mass scale of model comparasion, making [distance matrix](https://en.wikipedia.org/wiki/Distance_matrix) and try to plot a [weighed graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) based from the distances: [v2a/mega_cmp_v2.ipynb](v2a/mega_cmp_v2.ipynb)
 - Archived reports / diagrams: [v2a/results.7z](v2a/results.7z)
 
-![v2a/img/main_unet.png](v2a/img/main_unet.png)
+![v2a/img/pony1_unet_vg.png](v2a/img/pony1_unet_vg.png)
 
 ## Extra: Visualizing UNET ##
 
