@@ -1,6 +1,10 @@
 # Observation of Pony Diffusion (v5.5 SD2.1 + V6 SDXL) #
 
-## (New) Civitai Guest Creator Stream ##
+## (New) Pony SD3 will not happen ##
+
+- [Regrettably, the ambiguous rollout of SD3’s commercial licensing have been quite disheartening.](https://civitai.com/articles/5671)
+
+## Civitai Guest Creator Stream ##
 
 - [Twitch link](https://m.twitch.tv/videos/2145665383)
 
