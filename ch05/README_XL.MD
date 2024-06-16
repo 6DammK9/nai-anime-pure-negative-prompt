@@ -478,3 +478,7 @@ Merge time: 3972 sec
 - The result is still under investigation. Left to right: TSD from avove, plain average of new model set, Geometric Median alone, TGMD for "TIES-GeometricMedian w/ DROP".
 
 ![xyz_grid-0890-172242096-8064-1623-3-48-20240608161940.jpg](./img/xyz_grid-0890-172242096-8064-1623-3-48-20240608161940.jpg)
+
+- (This may be inaccurate) This is the concept illustration on how and why it works:
+
+![24061701.png](./img/24061701.png)
