@@ -43,11 +43,11 @@ In theory, under such physical constraint, it should be compatable with most pro
 
 ### Memory ###
 
-**4TB RAM. For real.**. [8x Samsung 64G 4RX4 LR-DIMM 2400MHz](https://www.ebay.com/itm/173343022411), and then [8x Intel 2nd gen PMem 512GB DCPMM 3200MHz](https://www.ebay.com/p/24058980642). [Check out LTT's video on how to archieve this insane amount of RAM.](https://www.youtube.com/watch?v=uHAfTty9UWY)
+**4TB RAM. For real.** [8x Samsung 32G 2RX4 RDIMM 3200MHz](https://www.amazon.com/NEMIX-Replacement-Samsung-M393A4K40DB2-CWE-DDR4-3200/dp/B07YXBLP4L), and then [8x Intel 2nd gen PMem 512GB DCPMM 3200MHz](https://www.ebay.com/p/24058980642). [Check out LTT's video on how to archieve this insane amount of RAM.](https://www.youtube.com/watch?v=uHAfTty9UWY)
 
-First boot is a pain. BIOS version reports confusing info, finally I cleared CMOS (reset BIOS) and it boots fine. Memory training is long (5min), however it becomes fast after the first boot.
+~~First boot is a pain. BIOS version reports confusing info, finally I cleared CMOS (reset BIOS) and it boots fine. Memory training is long (5min), however it becomes fast after the first boot.~~ I have found that PMem may requires large CL / CAS value (latency) because of the memory die. If you operate with low bandwith DIMM meanwhile with low latency, memeory faults may raise and make your boot time a lot longer, and cause some BSODs.
 
-The motherboard supports 2133 / 2400 in BIOS, which is undocumented in user maual. Since I can't afford too many items at the same time, the DIMM part is still slow. ~~I may upgrade it to 3200 once I have enough budget.~~ Also I have found that PMem may requires large CL / CAS value (latency) because of the memory die. If you operate with low bandwith DIMM meanwhile with low latency, memeory faults may raise and make your boot time a lot longer, and cause some BSODs.
+The motherboard supports 2133 / 2400 in BIOS, which is undocumented in user maual. ~~Since I can't afford too many items at the same time, the DIMM part is still slow. I may upgrade it to 3200 once I have enough budget.~~ It should be fine when you keep all 16 sticks identical.
 
 PMem will be very hot (full loading) when loading into Windows. It will use around 60GB, and you need [WS / Enterprise Win 10 / 11](https://www.compuram.de/blog/en/how-much-ram-can-be-addressed-under-the-current-32-bit-and-64-bit-operating-systems/) to support 2TB+ of RAM.
 
@@ -87,9 +87,9 @@ Similar to 1600P2 and most top tier PSUs, it features 16 AWG PSU cables, support
 
 The [Corsair Graphite Series 760T Full Tower Windowed Case](https://www.newegg.com/arctic-white-corsair-graphite-series-atx-full-tower/p/N82E16811139055) looks like mid tower nowdays, but technically it has 8 pcie slots and supports "EATX", which is actually EEB size. However, although the motherboard is claimed SSB also, the screw hole is not following ATX form factor (view the image again). Therefore I installed 4 out of 9 screw holes only, leaving the board hanging in diagonal.
 
-Case fan is majorly a set of Cooler Master ARGB fans. MasterFan [MF140R](https://www.amazon.com/-/zh_TW/R4-140R-15PC-R1/dp/B07GSSY21G), [SickleFlow 140](https://www.amazon.com/Cooler-Master-SickleFlow-ARGB-Cooling/dp/B08GD8Q55F?th=1) are common ARGB fans and perform fairly well. For the exhaust fan, after calculation of the airflow (42 CFM from CPU), I switched to [JETFLO 120 BLUE LED](https://www.coolermaster.com/zh-tw/products/jetflo-120-blue/?tab=tech_spec) for massive airflow, lighting, and relatively low noise". 
+Case fan is majorly a set of Cooler Master ARGB fans. MasterFan [MF140R](https://www.amazon.com/-/zh_TW/R4-140R-15PC-R1/dp/B07GSSY21G), [SickleFlow 140](https://www.amazon.com/Cooler-Master-SickleFlow-ARGB-Cooling/dp/B08GD8Q55F?th=1) are common ARGB fans and perform fairly well, meanwhile MasterFan [MF140 HALO](https://www.coolermaster.com/zh-tw/products/masterfan-mf140-halo/) are a bit compromised in airflow, but it is easy to obtain. For the exhaust fan, after calculation of the airflow (42 CFM from CPU), I switched to [JETFLO 120 BLUE LED](https://www.coolermaster.com/zh-tw/products/jetflo-120-blue/?tab=tech_spec) for massive airflow, lighting, and relatively low noise". 
 
-I have reused Jonsbo [FR140S](https://www.jonsbo.com/products/FR140S.html) and [FR-925 ARGB](https://www.jonsbo.com/en/products/FR9253.html) from previous build. 
+I have reused Jonsbo [FR-925 ARGB](https://www.jonsbo.com/en/products/FR9253.html) for RAM cooling from previous build, because there is no seperated 92mm RGB fans from coolermaster. 
 
 Thermal paste is technically unknown becuase I bought the CPU "guled" with the heatsink. However the seller tell me that it is in fact [Arctic MX4](https://gamersnexus.net/guides/3346-thermal-paste-application-benchmark-too-much-thermal-paste), which is also common and perform consistantly well. As stated in the CPU heatsink, the temperature is fine.
 
@@ -97,7 +97,11 @@ Thermal paste is technically unknown becuase I bought the CPU "guled" with the h
 
 GPU stand is important. [CoolerMaster Universal Video Card Holder](https://www.amazon.com/-/zh_TW/MCA-0005-KUH00/dp/B01M5DCMPM?th=1) is a minimalistic and useful stand. It may not strong enough for 4090, but it should be sufficient with 2 blower cards which are quite light in weight. There is also a [knockoff ARGB stand](https://www.performance-pcs.com/system-hardware/gpu-holder/vertical-video-card-bracket-argb-vga-stand-chassis-lamp-motherboard-aura-sync-rgb-board-jack-faith-light-pollution.html) which is used for HDD case cover.
 
+For internet connection, I used [ASUS PCE-AC88](https://www.amazon.com/ASUS-PCE-AC88-AC3100-802-11AC-Adapter/dp/B01H9QMOMY) from previous build. It reaches to around 50MB for internet download.
+
 The front 3.5 bay is not empty. [Asus ROG Front Base](https://www.amazon.com/-/zh_TW/ASUS-ROG-Front-Base/dp/B00JXED39O/ref=cm_cr_arp_d_product_top?ie=UTF8) was used for the previous build (same series with the R5E) but it is incompatable with this build. It is disabled and not included in the list.
+
+By chance, I can get a set of Phanteks NEON Digital-RGB LED Strip which has both[PH-NELEDKT_CMBO](https://www.amazon.co.uk/PHANTEKS-Neon-D-RGB-Strip-PH-NELEDKT_CMBO/dp/B07XV5TT1F?th=1) and [PH-NELEDKT_M1](https://www.amazon.com/-/zh_TW/Phanteks-NEON-Digital-RGB-LED-PH-NELEDKT_M1/dp/B07XLPH8WW?th=1). *Now it lits.*
 
 *Ah. [He is so cute](https://www.amazon.com/Taito-Fate-Apocrypha-Action-Figure/dp/B077SLPXKG).* 
 
