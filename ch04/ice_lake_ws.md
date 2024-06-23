@@ -110,7 +110,7 @@ Thank you very much for reading my lengthy part list and analysis till the very 
 I think it worths mentioning. General advice: **Always look for RMA procedure and make sure you can afford the risk!** [Also here is a Youtube channel covering most of the contents below](https://www.youtube.com/@techyescity/videos). However I'm building workstation instead of mainstream parts, therefore it is another level.
 
 |Online / Offline|Location|Risk|Description|
-|---|---|---|
+|---|---|---|---|
 |Offline|Storefront in shopping malls.|Low|Usually **brand new**, sold by retailer with distributers a.k.a ["行貨"](https://en.wiktionary.org/wiki/%E8%A1%8C%E8%B2%A8#Chinese). Even ["水貨"](https://en.wiktionary.org/wiki/%E6%B0%B4%E8%B2%A8#Chinese) are handled carefully. For example, most RTX 4090 under [tariff](https://uk.pcmag.com/graphics-cards/149212/us-to-block-nvidia-from-shipping-more-geforce-rtx-4090-gpus-to-china) are "水貨". **Beware of full builds. The part list may be problematic.**|
 |Offline|"Huaqiangbei" style storefront|Low|Usually recycled 2nd hand PC parts, but can be tested in sight. Quality of parts depends on how many people duming old PCs to there (as high as water cooled X299 set / dual core C621 workstation). **Don't ask for repair even they have such service.**|
 |Offline|Direct deal with part recyclers|Low|Quite polarized: Either know nothing about PC, or extremely knowledgeable as an expert on the parts they are collecting. Usually they never promote / publish for every items they have collected. *Special case for me: It is even cheaper then XianYu, which should be the cheapest in the world.* **Work best for specific parts.**|
@@ -134,7 +134,3 @@ I think it worths mentioning. General advice: **Always look for RMA procedure an
 |SSD (Optane)|xianyu|Planned. Will be interesting for OS drive under VROC.|
 |RGB / cable accessories|"Huaqiangbei" style store / dcfever|Just buy anywhere I can reach. I need them fast.|
 |Astolfo figure|Hobby store|In sale.|
-
-|Brand new via store|
-|"Brand new second hand"|PSU (from RMA, never used)|
-|Second hand (local web platform:  )||
