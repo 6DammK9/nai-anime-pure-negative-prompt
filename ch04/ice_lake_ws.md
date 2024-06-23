@@ -47,7 +47,7 @@ In theory, under such physical constraint, it should be compatable with most pro
 
 First boot is a pain. BIOS version reports confusing info, finally I cleared CMOS (reset BIOS) and it boots fine. Memory training is long (5min), however it becomes fast after the first boot.
 
-The motherboard supports 2133 / 2400 in BIOS, which is undocumented in user maual. Since I can't afford too many items at the same time, the DIMM part is still slow. I may upgrade it to 3200 once I have enough budget.
+The motherboard supports 2133 / 2400 in BIOS, which is undocumented in user maual. Since I can't afford too many items at the same time, the DIMM part is still slow. ~~I may upgrade it to 3200 once I have enough budget.~~ Also I have found that PMem may requires large CL / CAS value (latency) because of the memory die. If you operate with low bandwith DIMM meanwhile with low latency, memeory faults may raise and make your boot time a lot longer, and cause some BSODs.
 
 PMem will be very hot (full loading) when loading into Windows. It will use around 60GB, and you need [WS / Enterprise Win 10 / 11](https://www.compuram.de/blog/en/how-much-ram-can-be-addressed-under-the-current-32-bit-and-64-bit-operating-systems/) to support 2TB+ of RAM.
 
@@ -71,7 +71,9 @@ For storage, 2x [Intel / Solidigm DC P4510 3.84TB](https://www.amazon.com/Intel-
 
 However, for OS drive, I use the traditional single 2.5 inch SATA SSD [Intel / Solidigm D3 S4510 1.92TB](https://www.amazon.com/Intel-D3-S4510-Solid-State-Drive/dp/B07GL4LLWL). Besides less sensitive to heat, I have found that if both OS drive and model drive are on NVME, CPU / PCH may have trouble on rapid context switching while receiving IO boost, making the OS being instable. Meanwhile, it just has same lifespan which is more than 6PBW!
 
-For the least exicting part, the [WD Black Label 2TB](https://www.amazon.com/-/zh_TW/WD2003FYYS/dp/B00DOS5KXC) still remains, storing non AI / ML, or OS stuffs, usually downloaded software, docuements, maybe a some BT materials.
+For the least exicting part, the [WD Black Label 2TB](https://www.amazon.com/-/zh_TW/WD2003FYYS/dp/B00DOS5KXC) still remains, storing non AI / ML, or OS stuffs, usually downloaded software, docuements, maybe a some BT materials. *I will replace it with SSD also to keep everything "Intel themed".*
+
+Meanwhile, *for fun and future VROC use*, [Hyper M.2 x16 Card V2](https://www.amazon.com/ASUS-M-2-X16-V2-Threadripper/dp/B07NQBQB6Z?th=1) and 4x [Intel Pro 6000P 256G](https://www.amazon.com/Intel-SSDPEKKF256G7X1-6000p-Express-Retail/dp/B01LW6USJD/ref=cm_cr_arp_d_product_top?ie=UTF8) has been used for PoC test for compatibility. And... [Samsung PM981 256GB](https://www.amazon.com/-/zh_TW/MZVLB256HBHQ/dp/B07B8W7BFD) has been proven not working. Later I'll try for 24x [Intel 760P 128G](https://www.amazon.com/Intel-760P-128GB-80mm-PCIe/dp/B078VBGSVL/ref=cm_cr_arp_d_product_top?ie=UTF8) to see if the CPUs can handle the traffic as advertised. Finally I may try 4x [Intel OPTANE SSD DC P4801X 375GB](https://www.amazon.com/Intel-OPTANE-SSD-P4801X-375GB/dp/B084RJ5QC3) or just [Intel OPTANE SSD DC P4800X 375GB](https://www.amazon.com/Intel-P4800X-Internal-Solid-State/dp/B07589MW3P) if I am concerned on power consumption towards MB. [ LSI SAS 9300-8i from stripped Inspur servers](https://www.aliexpress.com/item/1005005972744899.html) are also considered when I can get them cheap (60x cheaper from brand new).
 
 ### PSU ###
 
@@ -102,3 +104,37 @@ The front 3.5 bay is not empty. [Asus ROG Front Base](https://www.amazon.com/-/z
 ## End of part list ##
 
 Thank you very much for reading my lengthy part list and analysis till the very last! Also check out my [ROG RGB open air build!](https://builds.gg/dammk/flashbang-rog-open-air-miku-hatsune-34047)  
+
+## Extra: How I get the parts ##
+
+I think it worths mentioning. General advice: **Always look for RMA procedure and make sure you can afford the risk!** [Also here is a Youtube channel covering most of the contents below](https://www.youtube.com/@techyescity/videos). However I'm building workstation instead of mainstream parts, therefore it is another level.
+
+|Online / Offline|Location|Risk|Description|
+|---|---|---|
+|Offline|Storefront in shopping malls.|Low|Usually **brand new**, sold by retailer with distributers a.k.a ["行貨"](https://en.wiktionary.org/wiki/%E8%A1%8C%E8%B2%A8#Chinese). Even ["水貨"](https://en.wiktionary.org/wiki/%E6%B0%B4%E8%B2%A8#Chinese) are handled carefully. For example, most RTX 4090 under [tariff](https://uk.pcmag.com/graphics-cards/149212/us-to-block-nvidia-from-shipping-more-geforce-rtx-4090-gpus-to-china) are "水貨". **Beware of full builds. The part list may be problematic.**|
+|Offline|"Huaqiangbei" style storefront|Low|Usually recycled 2nd hand PC parts, but can be tested in sight. Quality of parts depends on how many people duming old PCs to there (as high as water cooled X299 set / dual core C621 workstation). **Don't ask for repair even they have such service.**|
+|Offline|Direct deal with part recyclers|Low|Quite polarized: Either know nothing about PC, or extremely knowledgeable as an expert on the parts they are collecting. Usually they never promote / publish for every items they have collected. *Special case for me: It is even cheaper then XianYu, which should be the cheapest in the world.* **Work best for specific parts.**|
+|Offline|Scrapyard / Junkyard style storefronts|High|**You must know why the part appears in the scrapyard.** Usually [obselete server parts](https://en.wikipedia.org/wiki/Global_waste_trade) / parts with sealed packagings are safe to bet. Even you know repairing stuffs, they can be totaled (e.g. damaged PCB / damaged core).|
+|Online|Local web stores|Low|Same as offline storefront, but they operate websites instead. It can be DIY parts up to branded servers / workstations which don't exist in shopping mall. **Make sure your online payment is ready**|
+|Online|Local second hand marketplace ([dcfever](https://www.dcfever.com/index.php), [carousell](https://www.carousell.com.hk/), [fb marketplace](https://www.facebook.com/marketplace/))|Medium|**Always look for trade history.** Try to build trust to trade partners. If trade history is scarse, pay attention to conversation and figure out why they are selling right now.|
+|Online|Foreign web stores ([taobao](https://world.taobao.com/) = [aliexpress](https://www.aliexpress.com/), [temu](https://www.temu.com/) = [tmall](https://www.tmall.hk/), [amazon](https://www.amazon.com/) etc.)|Medium|Either regular goods from irregular brand, or legit minor goods from anywhere. **Make sure delivery is good. They can DOA because of poor transporting.** Meanwhile **impossible to send back for repairing because of importing laws.**|
+|Online|Foreign second hand marketplace ([xianyu](https://goofish.com/), [ebay](https://www.ebay.com/))|High|**Combined from all points above.** Extremely challenging. Now guaranteed close to 0% win rate on gambling damaged GPUs a.k.a. ["賭卡"](https://www.youtube.com/watch?v=cEOyIntYtiU). Also **impossible to send back for repairing because of importing laws.** My current part list there are specific obselete server parts / outlaw hardware mods like [Optane Pmem](https://www.ebay.com/p/24058980642) and [RTX 2080ti 22G](https://2080ti22g.com/). Later I'll hunt for VROC related parts (CPU bifurcation and VROC dongle) and some cheap Optane parts. **You need middle agents unless you are residents there.**|
+
+|Parts|Location|Description|
+|---|---|---|
+|CPU|Offline deal (user) < xianyu|Sell because of power efficiency (AMD YES) and difficulty to serve as production server (instable under high temperature and power consumption).|
+|MB|Offline deal (user) < xianyu|Same deal with CPU. Never thought that PC parts can have heritage.|
+|RAM|Offline deal (user + specialist)|2x from the deal with CPU, 6x from recycle specalist. Really lucky because 3200AA RDIMM is rare and I just gathered all of them in local city. Previous 16x 2400T sets are offline deal from another WS user (HP Z840).|
+|PMem|xianyu|Caught a new wave of recycled server parts. I thought that they were ES / QS parts, however turns out they are all legit production parts.|
+|PSU|dcfever|Straight from RMA, never used. Previous owner bought another PSU (hopefully not mining PSU).|
+|PC case|dcfever|Bought for years. I kept this full tower case for "big" builds, and it is.|
+|Case fans|dcfever / carousell|Collected across years. Notice that some models are not retailed / discontinued.|
+|RAM cooler|taobao|Rare use case, rare parts.|
+|SSD|dcfever|Ex mining SSDs. However I'm confident that they only spent < 2PBW given the DWPDs over around an year. Any SSDs with > 2 PBWs are fine, even they have their firmware (SMART) cleared. ~~Thanks for driving enterprise SSDs down after the hype.~~|
+|SSD (Optane)|xianyu|Planned. Will be interesting for OS drive under VROC.|
+|RGB / cable accessories|"Huaqiangbei" style store / dcfever|Just buy anywhere I can reach. I need them fast.|
+|Astolfo figure|Hobby store|In sale.|
+
+|Brand new via store|
+|"Brand new second hand"|PSU (from RMA, never used)|
+|Second hand (local web platform:  )||
