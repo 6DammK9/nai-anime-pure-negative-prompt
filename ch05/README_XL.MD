@@ -465,7 +465,7 @@ Merge time: 3972 sec
 
 - After a few days of testing, I made the merge successfully (just a few hours). However, it is worse than the TSD merge. The model drifts towards averaging and making the model a lot less stable, or forgetting too many anime contents. So I decided to upload to [HF](https://huggingface.co/6DammK9/AstolfoMix-XL/blob/main/basin-AstolfoMix-24051501-29bac1a.safetensors) and put it away. It may be usefull if I have more idea on model selection.
 
-![xyz_grid-0880-2863436210-10080-1623-3-48-20240526173054.jpg](xyz_grid-0880-2863436210-10080-1623-3-48-20240526173054.jpg)
+![xyz_grid-0880-2863436210-10080-1623-3-48-20240526173054.jpg](./img/xyz_grid-0880-2863436210-10080-1623-3-48-20240526173054.jpg)
 
 ## Findings on "SDXL Model Stock" and "SDXL Geometric Median" ##
 
