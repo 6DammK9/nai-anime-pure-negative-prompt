@@ -12,7 +12,13 @@
 
 *Hopium.*
 
-![240701.png](./img/24070101.png)
+![24070101.png](./img/24070101.png)
+
+### New: Gift cards has been banned from Asia! ###
+
+*Will be hard for people "in Asia" who don't have credit card.*
+
+![24070103.png](./img/24070103.png)
 
 ## Blue Pill ##
 
