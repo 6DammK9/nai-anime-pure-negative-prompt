@@ -31,3 +31,13 @@
 - [Updated lyCoris Training guide](https://civitai.com/articles/2494/making-better-loras-with-pivotal-tuning)
   
 - [Introduction of the pipeline](https://civitai.com/articles/2383/a-99percent-automatized-pipeline-to-construct-character-pack-training-set-from-anime)
+
+## (240701) Extra of Extra: About the "ML task" ##
+
+- [Found this official article in late 2406.](https://civitai.com/articles/5958/machine-learning-projects-classifying-content-into-ratings) Not related to LyCORIS but the content is not massive enough to move to seperated article.
+
+- The screenshots makes me looks like I'm the criminal mastermind haha:
+
+![24070104.png](./img/24070104.png)
+
+- From the released statistics, *making PG rated images is not easy.* Also the user expectation is as hard to predict as the task itself. So... [hopefully it won't be the next iWIN incident.](https://www.gvm.com.tw/article/111794)
