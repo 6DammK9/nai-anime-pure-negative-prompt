@@ -1,10 +1,52 @@
 # Prior scan #
 
+- With all prompts removed, meanwhile with specific non-text parameters, we can use SD for [Unconditional Image Generation](https://huggingface.co/tasks/unconditional-image-generation). 
+[I have made an article for both demostration and technical discussion](https://civitai.com/articles/5149/untitled-denoising-to-the-random-content).
+
+- See Procedure (V3) for some examples.
+
+### Older description ###
+
 - "Dramatic explanantion" in [
 ACertainsStrategyTalk](https://huggingface.co/spaces/JosephusCheung/ACertainsStrategyTalk). 
 - Just the bottom part of [925997e9.md](../ch99/925997e9.md). A "waifu model" trained from general model stil have a "bias" between "human / waifu" and "general content / non-waifu". Compare the "bias / prior" or the model with you task.
 - For example, I will have a hard time to generate "astolfo with hippogriff" in ANY3 beacaus it is so biased to human profait. 
 - You will see if the model really trying to generate what you trained or what you aimed for.
+
+## Procedure (V3) ##
+
+- Like the cover of the repo, since SDXL and other denoising mechanism has been improved, we can further simplify the procedure, now with arbitary random seed and less sampling steps:
+
+```
+parameters
+
+Steps: 48, Sampler: Euler, Schedule type: Automatic, CFG scale: 3, Seed: 3649863581, Size: 1024x1024, Model hash: e276a52700, Model: x72a-AstolfoMix-240421-feefbf4, VAE hash: 26cc240b77, VAE: sd_xl_base_1.0.vae.safetensors, Clip skip: 2, FreeU Stages: "[{\"backbone_factor\": 1.1, \"skip_factor\": 0.6}, {\"backbone_factor\": 1.2, \"skip_factor\": 0.4}]", FreeU Schedule: "0.0, 1.0, 0.0", FreeU Version: 2, Dynamic thresholding enabled: True, Mimic scale: 1, Separate Feature Channels: False, Scaling Startpoint: MEAN, Variability Measure: AD, Interpolate Phi: 0.3, Threshold percentile: 100, PAG Active: True, PAG Scale: 1, Version: v1.9.3
+```
+
+- This may help us knowing which finetuning streadgy has been applied towards model (as merging models has been faded out). 
+- This is [the original SDXL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0), you may spot some artwork:
+
+![grid-0188-3702993617-3072-3072-3-48-20240701175844.jpg](./img/grid-0188-3702993617-3072-3072-3-48-20240701175844.jpg)
+
+- [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1). It is highly colorful but fragmented:
+
+![grid-0186-37905198-3072-3072-3-48-20240701172858.jpg](./img/grid-0186-37905198-3072-3072-3-48-20240701172858.jpg)
+
+- [Kohaku XL Epsilon](https://huggingface.co/KBlueLeaf/Kohaku-XL-Epsilon). Notice for graphic design or character design:
+
+![grid-0187-1163400737-3072-3072-3-48-20240701172937.jpg](./img/grid-0187-1163400737-3072-3072-3-48-20240701172937.jpg)
+
+- [Pony Diffusion V6 XL](https://civitai.com/models/257749?modelVersionId=290640). Obviously there are different species:
+
+![grid-0185-2946212517-3072-3072-3-48-20240701170726.jpg](./img/grid-0185-2946212517-3072-3072-3-48-20240701170726.jpg)
+
+- Then it goes to my merged model. [AstolfoMix-XL Baseline](https://civitai.com/models/309514?modelVersionId=347383). Notice that it doesn't include Pony:
+
+![grid-0184-1809059533-3072-3072-3-48-20240701170642.jpg](./img/grid-0184-1809059533-3072-3072-3-48-20240701170642.jpg)
+
+- [AstolfoMix-XL TGMD](https://civitai.com/models/309514?modelVersionId=559310). Notice that merging algorithm has been applied, and there are many models included:
+
+![grid-0182-5694285-3072-3072-3-48-20240701160129.jpg](./img/grid-0182-5694285-3072-3072-3-48-20240701160129.jpg)
 
 ## Procedure (V2) ##
 
