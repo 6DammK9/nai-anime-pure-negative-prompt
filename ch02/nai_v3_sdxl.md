@@ -8,6 +8,12 @@
 
 - **(240103) Extra: "MidJourney Name List"** from a court case: [PDF](https://storage.courtlistener.com/recap/gov.uscourts.cand.407208/gov.uscourts.cand.407208.129.10.pdf)
 
+### New: Ah yes why nothing happened? ###
+
+*Hopium.*
+
+![240701.png](./img/24070101.png)
+
 ## Blue Pill ##
 
 - `en` [Rentry "wiki". Recommended.](https://rentry.org/hdg-nai-v3)

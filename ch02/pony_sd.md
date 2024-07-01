@@ -4,6 +4,8 @@
 
 - [Regrettably, the ambiguous rollout of SD3’s commercial licensing have been quite disheartening.](https://civitai.com/articles/5671)
 
+- [He join Open Model Initiative instead.](https://www.reddit.com/r/StableDiffusion/comments/1dp2as9/update_and_faq_on_the_open_model_initiative_your/) ~~BTW who is Robbert "Zavy" van Keppel and Zovya?~~
+
 ## Civitai Guest Creator Stream ##
 
 - [Twitch link](https://m.twitch.tv/videos/2145665383)
