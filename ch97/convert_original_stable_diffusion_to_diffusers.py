@@ -1,6 +1,7 @@
 # Ref: https://github.com/huggingface/diffusers/blob/main/scripts/convert_original_stable_diffusion_to_diffusers.py
 # pip install omegaconf
-# python convert_original_stable_diffusion_to_diffusers.py --checkpoint_path="F:/NOVELAI/astolfo_mix/sd1/21b-AstolfoMix-2020b.safetensors" --from_safetensors --dump_path="F:/NOVELAI/astolfo_mix/sd1/" --half
+# python convert_original_stable_diffusion_to_diffusers.py --checkpoint_path="F:/NOVELAI/astolfo_mix/sd1/21b-AstolfoMix-2020b.safetensors" --from_safetensors --dump_path="F:/NOVELAI/astolfo_mix/hf/21b-AstolfoMix-2020b/" --half
+# python convert_original_stable_diffusion_to_diffusers.py --checkpoint_path="F:/NOVELAI/astolfo_mix/sd2/210b-AstolfoMix-211209b.safetensors" --from_safetensors --dump_path="F:/NOVELAI/astolfo_mix/hf/210b-AstolfoMix-211209b/" --half --upcast_attention
 # Upload all the files into the root directory of the repo is fine. Make sure you have add the header section of the README.MD to enable the widget.
 # Example of the README: https://huggingface.co/6DammK9/AstolfoMix/blob/main/README.md
 
