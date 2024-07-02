@@ -15,6 +15,7 @@ Usually "not article".
 ## Scripts (Convert to diffuser and upload to HuggingFace later) ##
 
 - `convert_sdxl_to_diffusers.py`: My fork of [convert_sdxl_to_diffusers.py](https://github.com/Linaqruf/sdxl-model-converter/blob/main/convert_sdxl_to_diffusers.py). Added quick guide on the top.
+- `convert_original_stable_diffusion_to_diffusers.py`: My fork of [convert_original_stable_diffusion_to_diffusers.py](https://github.com/huggingface/diffusers/blob/main/scripts/convert_original_stable_diffusion_to_diffusers.py). Added quick guide on the top.
 
 ## Scripts (surviving in the internet) ##
 
