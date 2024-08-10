@@ -41,7 +41,7 @@ jupyter lab
 # Check CUDA Version via nvidia-smi, currently only 
 # torchvision-0.17.1+cu121-cp312-cp312-win_amd64.whl
 # Win11 DLL fix: https://github.com/conda/conda/issues/11795#issuecomment-1340010125
-pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu121
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 # Doesn't work
 # conda install -c conda-forge pytorch-gpu
 # conda install -c conda-forge torchvision
@@ -62,6 +62,7 @@ conda install -c conda-forge safetensors
 conda install -c conda-forge fuzzywuzzy
 conda install -c conda-forge python-levenshtein
 conda install -c conda-forge pyyaml
+conda install -c conda-forge diffusers
 ```
 
 ## Python 3.12 IS PROVEN NOT WORKING in A1111 1.8.0
