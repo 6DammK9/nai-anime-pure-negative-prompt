@@ -28,6 +28,10 @@ SD3
 
 ![sd3_mmdit_marked.png](./view_unet/sd3_mmdit_marked.png)
 
+Flux
+
+![flux_mmdit_marked.png](./view_unet/flux_mmdit_marked.png)
+
 ## Extra: PCA over CLIP embeddings ##
  
 - As mini side request: [view_clip.ipynb](./view_clip/view_clip.ipynb)
