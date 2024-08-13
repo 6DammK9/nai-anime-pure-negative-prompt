@@ -1,12 +1,18 @@
 # Observation of Pony Diffusion (v5.5 SD2.1 + V6 SDXL) #
 
-## (New) Pony ~~V7~~ V6.9 may be in ~~SD3~~ ~~HunyuanDiT~~ ~~FLUX.1-dev~~ AuraFlow ##
+## (New) PonyFlow ~~V7~~ ~~V6.9~~ may be in ~~SD3~~ ~~HunyuanDiT~~ ~~FLUX.1-dev~~ AuraFlow ##
 
 - [Regrettably, the ambiguous rollout of SD3’s commercial licensing have been quite disheartening.](https://civitai.com/articles/5671)
 
 - [He join Open Model Initiative instead.](https://www.reddit.com/r/StableDiffusion/comments/1dp2as9/update_and_faq_on_the_open_model_initiative_your/) ~~BTW who is Robbert "Zavy" van Keppel and Zovya?~~
 
 ![photo_2024-08-07_10-59-16.jpg](./img/photo_2024-08-07_10-59-16.jpg)
+
+![Screenshot_2024-08-09-22-46-04-962_com.reddit.frontpage-edit.jpg](./img/Screenshot_2024-08-09-22-46-04-962_com.reddit.frontpage-edit.jpg)
+
+- Meanwhile "some party" may want to follow also (since AuraFlow is 6.8b in size). ["Community issue."](https://www.reddit.com/r/StableDiffusion/comments/1eps53t/what_we_should_learn_from_the_flux_release/)
+
+![24081301.png](./img/24081301.png)
 
 ## Civitai Guest Creator Stream ##
 
