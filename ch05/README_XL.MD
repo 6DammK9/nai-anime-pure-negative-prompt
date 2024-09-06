@@ -482,3 +482,35 @@ Merge time: 3972 sec
 - (This may be inaccurate) This is the concept illustration on how and why it works:
 
 ![24061701.png](./img/24061701.png)
+
+## Findings on scalling up with the "SDXL Geometric Median" ##
+
+- [Finally the PR has been merged.](https://github.com/ljleb/sd-mecha/pull/37) However I was staying with my own fork because of the great code modification.
+
+- I was hoarding many models for around 2 months, and then being interested if more "Pony Realistic" models can make the original TGMD support more NSFW contents (although I think the idea is not good: all you need is finetune from a merged model). *Also I have 4TB of RAM so I'm also wanna know how huge a model merge can be.*
+
+- This algorithm should be linear a.k.a $O(N)$ in both time and space complexity, however the time required looks like it is reaching O(NlogN)
+
+|Date|Model counts|Threads|RAM Usage (TB, FP64)|Time used (Hours, Xeon 8358 x2)|
+|---|---|---|---|---|
+|240607|117|16|1.214|14|
+|240622|133|8|0.900|12.5|
+|240830|192|8|1.446|41.5|
+
+![photo_2024-08-31_08-49-24.jpg](./img/photo_2024-08-31_08-49-24.jpg)
+
+- So looks like I finally merged the Pony (literally the Pony):
+
+![xyz_grid-0000-4169777895-9216-1343-3-48-20240905234319.jpg](img/xyz_grid-0000-4169777895-9216-1343-3-48-20240905234319.jpg)
+
+![xyz_grid-0003-2746852960-9216-1343-3-48-20240903010808.jpg](img/xyz_grid-0003-2746852960-9216-1343-3-48-20240903010808.jpg)
+
+- But not quite actually:
+
+![xyz_grid-0002-3499784294-9216-1343-3-48-20240906014319.jpg](img/xyz_grid-0002-3499784294-9216-1343-3-48-20240906014319.jpg)
+
+![xyz_grid-0003-3499784294-9216-1343-3-48-20240906014525.jpg](img/xyz_grid-0003-3499784294-9216-1343-3-48-20240906014525.jpg)
+
+- If I focusing on characters, I think I loss most of them because of the contradiction between the model weights. If I focusing on NSFW concepts, strangely it preserves with low extent (as most realistic models have slight NSFW contents trained) and it still loss most of the "action scenes" (same reason). *Would I look into model weights, and risk to preserve the bias and loss all the others?* 
+
+- [From this LoRA in CivitAI](https://civitai.com/models/626713?modelVersionId=716304), [I think a merged model should ultimately be a "better base model", and worth finetuning again.](../ch01/merge.md#not-merge-but-worth-mentioning) 

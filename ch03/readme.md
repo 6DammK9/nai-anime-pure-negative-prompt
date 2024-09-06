@@ -40,9 +40,13 @@ Flux: [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FL
 
 ![flux_mmdit_marked.png](./view_unet/flux_mmdit_marked.png)
 
+## Extra: Model comparasion in size and "MBW" layers ##
+
 - Enjoy the comparasion. Actual VRAM requirement is different, maybe *Total Size (GB) x 0.5 x (image size / 1024) + TEs*. 
 
-- Also there are no implied image sizes, the "height / width" in the model is already counted as latent space.
+- Also there are no implied image sizes, the "height / width" in the model is already counted as latent space. It will cause so much confusion therefore I'll try to *intercept the input from the diffuser pipeline to the actual model component, which should match the public docuements from the model authors.*
+
+- "MBW layers" is an *unit* of "funcional layers", according to the concept of ["MBW merge"](https://github.com/hako-mikan/sd-webui-supermerger?tab=readme-ov-file#merge-block-weight) which was the meta of merging SD1.5 models ~~obviously not working since then~~. However it is still useful to have a feeling of how the model works, from UNET to DiT.
 
 |Model|MBW Layers|Params (b)|Forward/backward pass size (MB, FP16)|Estimated Total Size (GB, FP16)|
 |---|---|---|---|---|
