@@ -17,6 +17,7 @@ General discovery. Theories, procedures, practices etc. However not model specif
 - Some record about "LyCORIS": [lycoris.md](./lycoris.md)
 - Findings on "FreeU": [freeu.md](freeu.md)
 - Findings on CFG along with "PAG" and "CHG": [cfg_pag_chg.md](./cfg_pag_chg.md)
+- Findings on precision "NF4": [nf4.md](./nf4.md)
 
 This session is focus on [model merging](https://huggingface.co/docs/peft/developer_guides/model_merging), which an extended method on [model ensembling](https://en.wikipedia.org/wiki/Ensemble_learning).
 

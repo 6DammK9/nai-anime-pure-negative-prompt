@@ -1,5 +1,9 @@
 # Animevae.pt #
 
+(New) Years later ~~2 years~~, [NovelAI officially verified that the model is trained from SD1.4 (not 1.5!) with basically "UNET only".](https://huggingface.co/NovelAI/nai-anime-v1-full)
+
+> This model is based upon Stable Diffusion 1.4. It is distributed under the terms of the CreativeML Open RAIL-M and the terms of the CC BY-NC-SA 4.0 license. 
+
 [Original message link.](https://t.me/StableDiffusion_CN/646507)
 
 - Thanks ["AO"](https://github.com/AdjointOperator) for the detective work.

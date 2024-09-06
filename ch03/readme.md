@@ -57,6 +57,7 @@ Flux: [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FL
 |Hunyuan-DiT|40|1.5|17595|20.12|
 |AuraFlow|36|6.8|39974|52.38|
 |Flux|**57**|**11.91**|**63114**|**108.13**|
+|[Lumia-mGPT](https://github.com/Alpha-VLLM/Lumina-mGPT/tree/main)|48|68.58|???|???|
 
 ## Extra: PCA over CLIP embeddings ##
  
