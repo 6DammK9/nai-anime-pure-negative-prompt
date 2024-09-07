@@ -126,7 +126,8 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 |04|Uniform Soup|`x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.safetensors`|70|52|61|42|[mecha](./recipes/x63-AstolfoMix-x60te0x41te1-e2e-240407-feefbf4.mecha)|
 |05|TIES-SOUP|`x72a-AstolfoMix-240421-feefbf4.safetensors`|73|73|73|73|[mecha](./recipes/x72a-AstolfoMix-240421-feefbf4.mecha)|
 |06|TSD: TIES-SOUP w/ DROP|`x101a-AstolfoMix-24050903-4edc67c.safetensors`|102|102|102|102|[mecha](./recipes/x101a-AstolfoMix-24050903-4edc67c.mecha)|
-|07|TGMD: TIES-GeometricMedian w/ DROP|`x116a-AstolfoMix-24060702-01823a9.safetensors`|116|116|116|116|[mecha](./recipes/x116a-AstolfoMix-24060702-01823a9.mecha)|
+|07|TGMD: TIES-GeometricMedian w/ DROP|`x116a-AstolfoMix-24060702-01823a9.safetensors`|117|117|117|117|[mecha](./recipes/x116a-AstolfoMix-24060702-01823a9.mecha)|
+|08|TGMD-192: Scaled up from TGMD|`x191a-AstolfoMix-24083001-3360d18.safetensors`|192|192|192|192|[mecha](./recipes/x191a-AstolfoMix-24083001-3360d18.mecha)|
 
 ### Discovered models ###
 
@@ -489,7 +490,7 @@ Merge time: 3972 sec
 
 - I was hoarding many models for around 2 months, and then being interested if more "Pony Realistic" models can make the original TGMD support more NSFW contents (although I think the idea is not good: all you need is finetune from a merged model). *Also I have 4TB of RAM so I'm also wanna know how huge a model merge can be.*
 
-- This algorithm should be linear a.k.a $O(N)$ in both time and space complexity, however the time required looks like it is reaching O(NlogN)
+- This algorithm should be linear a.k.a $O(N)$ in both time and space complexity, however the time required looks like it is reaching $O(NlogN)$.
 
 |Date|Model counts|Threads|RAM Usage (TB, FP64)|Time used (Hours, Xeon 8358 x2)|
 |---|---|---|---|---|
