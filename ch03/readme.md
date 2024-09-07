@@ -48,6 +48,8 @@ Flux: [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FL
 
 - "MBW layers" is an *unit* of "funcional layers", according to the concept of ["MBW merge"](https://github.com/hako-mikan/sd-webui-supermerger?tab=readme-ov-file#merge-block-weight) which was the meta of merging SD1.5 models ~~obviously not working since then~~. However it is still useful to have a feeling of how the model works, from UNET to DiT.
 
+- I have received comments about SDXL was [announced 3.5b instead of 5.3b](https://stability.ai/news/stable-diffusion-sdxl-1-announcement). However I intercepted the parameters again, and confirmed that it [used the base model only.](https://huggingface.co/docs/diffusers/v0.19.0/en/api/pipelines/stable_diffusion/stable_diffusion_xl). *Maybe it is because some layers were not included? Or it is counted as 512x512 instead of 1024x1024?*
+
 |Model|MBW Layers|Params (b)|Forward/backward pass size (MB, FP16)|Estimated Total Size (GB, FP16)|
 |---|---|---|---|---|
 |SD1|25|2.0|1265|2.91|
@@ -57,7 +59,8 @@ Flux: [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FL
 |Hunyuan-DiT|40|1.5|17595|20.12|
 |AuraFlow|36|6.8|39974|52.38|
 |Flux|**57**|**11.91**|**63114**|**108.13**|
-|[Lumia-mGPT](https://github.com/Alpha-VLLM/Lumina-mGPT/tree/main)|48|68.58|???|???|
+
+- Would vLLM be the next trend such as [Lumia-mGPT](https://github.com/Alpha-VLLM/Lumina-mGPT/tree/main) (30B), [Llava-Visionary-70B](https://github.com/aimagelab/LLaVA-MORE) (70B) and [Qwen2-VL](https://github.com/QwenLM/Qwen2-VL) (72B)?
 
 ## Extra: PCA over CLIP embeddings ##
  
