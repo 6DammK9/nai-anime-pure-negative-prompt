@@ -4,7 +4,9 @@
 
 - [HuggingFace model page.](https://huggingface.co/6DammK9/AstolfoMix-XL) The style is also different.
 
-- (Coming soon) [CivitAI article page.](https://civitai.com/articles/3409) Summary of here (as additional content with SD1).
+- [CivitAI article page.](https://civitai.com/articles/3409) Summary of here (as additional content with SD1).
+
+![24091201.webp](img/24091201.webp)
 
 ## What is the mix? ##
 
