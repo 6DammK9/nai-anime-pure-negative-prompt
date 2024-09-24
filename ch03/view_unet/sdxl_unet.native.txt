@@ -1682,5 +1682,6 @@
 |                            conv_out.weight                            |   11520    |
 |                             conv_out.bias                             |     4      |
 +-----------------------------------------------------------------------+------------+
-Total Trainable Params: 2567463684
-Another approach: 2567463684
+Total Params (diffuser): 2567463684
+Total Trainable Params (torch): 2567463684
+Total Params (torch): 2567463684

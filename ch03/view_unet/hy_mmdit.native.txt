@@ -1547,5 +1547,6 @@
 |                 proj_out.weight                  |   45056    |
 |                  proj_out.bias                   |     32     |
 +--------------------------------------------------+------------+
-Total Trainable Params: 1516534048
-Another approach: 1516534048
+Total Params (diffuser): 1516534048
+Total Trainable Params (torch): 1516534048
+Total Params (torch): 1516534048

@@ -333,5 +333,6 @@
 |                    norm_out.linear.weight                   |  18874368  |
 |                       proj_out.weight                       |   49152    |
 +-------------------------------------------------------------+------------+
-Total Trainable Params: 6842876928
-Another approach: 6842876928
+Total Params (diffuser): 6842876928
+Total Trainable Params (torch): 6842876928
+Total Params (torch): 6842876928

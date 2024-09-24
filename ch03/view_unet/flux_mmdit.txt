@@ -415,8 +415,8 @@ Trainable params: 11,910,848,576
 Non-trainable params: 0
 Total mult-adds (Units.GIGABYTES): 11.90
 ==================================================================================================================================
-Input size (MB): 5.30
-Forward/backward pass size (MB): 63114.00
-Params size (MB): 47605.63
-Estimated Total Size (MB): 110724.93
+Input size (MB): 2.65
+Forward/backward pass size (MB): 31557.00
+Params size (MB): 23802.82
+Estimated Total Size (MB): 55362.47
 ==================================================================================================================================

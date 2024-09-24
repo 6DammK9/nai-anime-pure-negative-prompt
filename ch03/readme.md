@@ -50,18 +50,20 @@ Flux: [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FL
 
 ### Inconsistent observed parameter counts between running instance and official claim ###
 
-- I have received comments about SDXL was [announced 3.5b instead of 5.3b](https://stability.ai/news/stable-diffusion-sdxl-1-announcement). However I intercepted the parameters again, and confirmed that it [used the base model only.](https://huggingface.co/docs/diffusers/v0.19.0/en/api/pipelines/stable_diffusion/stable_diffusion_xl). After reading the [Stackoverflow post](https://stackoverflow.com/questions/49201236/check-the-total-number-of-parameters-in-a-pytorch-model), I found that there may be **multiple approaches / definitions** to count the parameters, hence the 2.37x of difference of [UNet2DConditionModel](https://huggingface.co/docs/diffusers/api/models/unet2d-cond). *Maybe it just counted incorrectly*, as raised in the issues ([#303](https://github.com/TylerYep/torchinfo/issues/303), [#262](https://github.com/TylerYep/torchinfo/issues/262))
+- From the inconsistint result of `["sdxl", "sd1", "sd2"]` **which was overestimated for 2.37x** (others are < 0.1%), I also implemented `diffusers` and `torch` native approach based from [this Stackoverflow post](https://stackoverflow.com/questions/49201236/check-the-total-number-of-parameters-in-a-pytorch-model). Issues [#262](https://github.com/TylerYep/torchinfo/issues/262), [#303](https://github.com/TylerYep/torchinfo/issues/303), [#312](https://github.com/TylerYep/torchinfo/issues/312) were reported in `torchinfo`, which made me a bit panic. *Hopefully it can be justified from future inconsistent results.*
+- Refer [diffusers.num_parameters](https://huggingface.co/docs/diffusers/api/models/overview#diffusers.ModelMixin.num_parameters) [and its code](https://github.com/huggingface/diffusers/blob/main/src/diffusers/models/modeling_utils.py#L1040), [nn.Parameter](https://pytorch.org/docs/stable/generated/torch.nn.parameter.Parameter.html), [torch.numel](https://pytorch.org/docs/stable/generated/torch.numel.html) for how it is counted. It is very likely **MISMATCH** for other contents (e.g. `torchvision` and `torchinfo` here, refered as ["model summary"](https://stackoverflow.com/questions/42480111/how-do-i-print-the-model-summary-in-pytorch) )
 - The ["2.6b"](https://www.reddit.com/r/StableDiffusion/comments/1d7t0op/sdxl_is_a_26b_parameter_model_not_66b/), ["860M"](https://github.com/CompVis/stable-diffusion/blob/main/README.md#stable-diffusion-v1) and ["865M"](https://github.com/Stability-AI/stablediffusion?tab=readme-ov-file#stable-diffusion-v2) counts are matching the official claim.
+- Meanwhile, RTX 3090 is barely capable for flux FP16 for `torchinfo`.
 
-|Model|MBW Layers|Params (b, `nn.Forward()`)|Params (b, `state_dict`)|Forward/backward pass size (MB, FP16)|Estimated Total Size (GB, FP16)|
+|Model|MBW Layers|Params (b, `torchinfo`)|Params (b, `diffusers`)|Forward/backward pass size (MB, FP16)|Estimated Total Size (GB, FP16)|
 |---|---|---|---|---|---|
-|SD1|25|2.0|*0.86*|1265|2.91|
-|SD2|25|2.1|*0.87*|2837|4.46|
+|SD1|25|*2.0*|0.860|1265|2.91|
+|SD2|25|*2.1*|0.865|2837|4.46|
 |SDXL|19|5.3|*2.6*|8993|13.80|
 |SD3|24|2.0|2.0|11127|18.79|
 |Hunyuan-DiT|40|1.5|1.5|17595|20.12|
-|AuraFlow|36|6.8|6.8|39974|52.38|
-|Flux|**57**|**11.91**|?|**63114**|**108.13**|
+|AuraFlow|36|6.8|6.8|**39974**|52.38|
+|Flux|**57**|11.91|**11.91**|31557|**54.06**|
 
 - Would vLLM be the next trend such as [Lumia-mGPT](https://github.com/Alpha-VLLM/Lumina-mGPT/tree/main) (30B), [Llava-Visionary-70B](https://github.com/aimagelab/LLaVA-MORE) (70B) and [Qwen2-VL](https://github.com/QwenLM/Qwen2-VL) (72B)?
 

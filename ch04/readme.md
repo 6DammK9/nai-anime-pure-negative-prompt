@@ -34,3 +34,24 @@ Self explained. Written for ex-mining rig if I can get one of them eventually.
 - There are popular [Google Colab scripts](https://github.com/camenduru/stable-diffusion-webui-colab).
 
 - However since I'm using [physical PC / WS](./ice_lake_ws.md) and typcial Winodws / Nvidia combo, I made myself [a install command](./local-install-env.md).
+
+
+## Chapter 04d: How to gather "decomissioned server parts" ##
+
+- *Based from my experience.* I'll try to write down general statements but actual procurement will differs from location / policies / society preference.
+
+- If you see the item from Amazon / Ebay / AliExpress / Wish etc. with random brand names, Google it directly and it is probably link to Chinese websites. If that is the case, Taobao / Xianyu will definitely has lower price even with shipping.
+
+- If it appears in Amazon or Aliexpress, try Taobao. If it appears in Ebay, try Xianyu. Xianyu is generally "second hand market" of Taobao (under same company).
+
+- Both Taobao / Xianyu, or *most* "Chinese Mobile Apps", are having little web content due to implied regulation. You'll need a dedicated mobile phone and phone number to receive SMS. Both of them requires Alipay for transaction. Credit card is possible, but not Paypal, likely to link to Alipay first.
+
+- If you are able to reach local salvage brokers (or some retailers / individual deals), you already get the cheapest price. I bought some server RAMs which are cheaper than Xianyu. Notice that low price from Taobao / Xianyu are mainly because of [EMH](https://en.wikipedia.org/wiki/Efficient-market_hypothesis) and the major international salvage parts marketplace. For counter example, local price of RTX 4090(D) may be chaper than Taobao / Xianyu because of high demand and tariff.
+
+- Logistic preference between Taobao / Xianyu are different. Taobao has "official logistic agent" while Xianyu doesn't. Also there is an unique "Consolidated Consignment (集運)" system to reduce logistic cost, instead of conventional courier which is usually direct shipping. 
+
+- For "consolidated consignment": First seller send the good to assigned storage, which is owned by the consolidator, then you tell the consolidator to send the goods to the detination, which is usually pickup points owned by the consolidator also. For some bizzare cases (preffered by me), the "pickup point" can be lockers in some public space (e.g. laundry shop, bus terminals) open for 24/7, then pickup the goods in midnight. Sometimes direct shipping is not applicable for insecure places.
+
+- If the "checkout process" is blocked in Taobao with official logistic agent (due to regulatory reason), **first dobule check the good is legit**. The condition changes frequently, which may not consistent across time. Sometimes it is blocked because of title (e.g. "T-Shirt with meme *A100 H100 advanced AI* generated image"). Other than language barrier, *be brave to notice sellers that you are not from [Mainland China](https://en.wikipedia.org/wiki/Mainland_China).* There should be "special arrangement" for the process. Many sellers have related experience and dedicated pracice especially for non-consumer parts. If you are buying parts from individuals, you may need to feed some "information" and let them decide. Skipping informing the seller, and sending to consolidator *may works* (**repeat, dobule check the good is legit first!**), but you may risk being rejected from there.
+
+- Finally, it is same as buying stuffs unseen. Warrenty is not likely. The goods can be DOA because of poor container. *Cheap price comes with risk.*
