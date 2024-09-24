@@ -60,7 +60,7 @@ Flux: [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FL
 |SDXL|19|5.3|*2.6*|8993|13.80|
 |SD3|24|2.0|2.0|11127|18.79|
 |Hunyuan-DiT|40|1.5|1.5|17595|20.12|
-|AuraFlow|36|6.8|?|39974|52.38|
+|AuraFlow|36|6.8|6.8|39974|52.38|
 |Flux|**57**|**11.91**|?|**63114**|**108.13**|
 
 - Would vLLM be the next trend such as [Lumia-mGPT](https://github.com/Alpha-VLLM/Lumina-mGPT/tree/main) (30B), [Llava-Visionary-70B](https://github.com/aimagelab/LLaVA-MORE) (70B) and [Qwen2-VL](https://github.com/QwenLM/Qwen2-VL) (72B)?
