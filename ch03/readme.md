@@ -48,17 +48,20 @@ Flux: [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FL
 
 - "MBW layers" is an *unit* of "funcional layers", according to the concept of ["MBW merge"](https://github.com/hako-mikan/sd-webui-supermerger?tab=readme-ov-file#merge-block-weight) which was the meta of merging SD1.5 models ~~obviously not working since then~~. However it is still useful to have a feeling of how the model works, from UNET to DiT.
 
-- I have received comments about SDXL was [announced 3.5b instead of 5.3b](https://stability.ai/news/stable-diffusion-sdxl-1-announcement). However I intercepted the parameters again, and confirmed that it [used the base model only.](https://huggingface.co/docs/diffusers/v0.19.0/en/api/pipelines/stable_diffusion/stable_diffusion_xl). *Maybe it is because some layers were not included? Or it is counted as 512x512 instead of 1024x1024?*
+### Inconsistent observed parameter counts between running instance and official claim ###
 
-|Model|MBW Layers|Params (b)|Forward/backward pass size (MB, FP16)|Estimated Total Size (GB, FP16)|
-|---|---|---|---|---|
-|SD1|25|2.0|1265|2.91|
-|SD2|25|2.1|2837|4.46|
-|SDXL|19|5.3|8993|13.80|
-|SD3|24|2.0|11127|18.79|
-|Hunyuan-DiT|40|1.5|17595|20.12|
-|AuraFlow|36|6.8|39974|52.38|
-|Flux|**57**|**11.91**|**63114**|**108.13**|
+- I have received comments about SDXL was [announced 3.5b instead of 5.3b](https://stability.ai/news/stable-diffusion-sdxl-1-announcement). However I intercepted the parameters again, and confirmed that it [used the base model only.](https://huggingface.co/docs/diffusers/v0.19.0/en/api/pipelines/stable_diffusion/stable_diffusion_xl). After reading the [Stackoverflow post](https://stackoverflow.com/questions/49201236/check-the-total-number-of-parameters-in-a-pytorch-model), I found that there may be **multiple approaches / definitions** to count the parameters, hence the 2.37x of difference of [UNet2DConditionModel](https://huggingface.co/docs/diffusers/api/models/unet2d-cond). *Maybe it just counted incorrectly*, as raised in the issues ([#303](https://github.com/TylerYep/torchinfo/issues/303), [#262](https://github.com/TylerYep/torchinfo/issues/262))
+- The ["2.6b"](https://www.reddit.com/r/StableDiffusion/comments/1d7t0op/sdxl_is_a_26b_parameter_model_not_66b/), ["860M"](https://github.com/CompVis/stable-diffusion/blob/main/README.md#stable-diffusion-v1) and ["865M"](https://github.com/Stability-AI/stablediffusion?tab=readme-ov-file#stable-diffusion-v2) counts are matching the official claim.
+
+|Model|MBW Layers|Params (b, `nn.Forward()`)|Params (b, `state_dict`)|Forward/backward pass size (MB, FP16)|Estimated Total Size (GB, FP16)|
+|---|---|---|---|---|---|
+|SD1|25|2.0|*0.86*|1265|2.91|
+|SD2|25|2.1|*0.87*|2837|4.46|
+|SDXL|19|5.3|*2.6*|8993|13.80|
+|SD3|24|2.0|2.0|11127|18.79|
+|Hunyuan-DiT|40|1.5|1.5|17595|20.12|
+|AuraFlow|36|6.8|?|39974|52.38|
+|Flux|**57**|**11.91**|?|**63114**|**108.13**|
 
 - Would vLLM be the next trend such as [Lumia-mGPT](https://github.com/Alpha-VLLM/Lumina-mGPT/tree/main) (30B), [Llava-Visionary-70B](https://github.com/aimagelab/LLaVA-MORE) (70B) and [Qwen2-VL](https://github.com/QwenLM/Qwen2-VL) (72B)?
 
