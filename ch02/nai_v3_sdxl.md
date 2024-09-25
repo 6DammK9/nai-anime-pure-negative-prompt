@@ -1,5 +1,41 @@
 # Observation from NovelAIDiffusionV3 #
 
+## End of line ##
+
+- Technical report has been released: [Improvements to SDXL in NovelAI Diffusion V3](https://arxiv.org/abs/2409.15997)
+
+> Wetrained the model on our 256x H100 cluster for many epochs and roughly 75k H100 hours.
+
+- *Speculation of training contents is now adjusted to 100 epochs with multiple parameter search attempts. Dataset size maybe more, ranged from 1B to 2B.*
+
+![24092501.jpg](./img/24092501.jpg)
+
+- [Twitter post from bdsqlsz.](https://x.com/bdsqlsz/status/1838940222622703776)
+
+- *Many techniques from V1 has been inherted.* [See model card of V1](https://huggingface.co/NovelAI/nai-anime-v1-full).
+
+- [Even the CLIP is frozen like V1, and leaving VAE trained.](./animevae_pt.md) It contradicted with the finding, but since it is behind API, it will be left unverified.
+
+> Like in our previous models, we used CLIP[24] context concatenation and conditioned on CLIP’s penultimate hidden states (on this part, no change was required; SDXL base already does this).
+
+> As in NovelAI Diffusion V1, we finetune the Stable-Diffusion (this time SDXL) VAE decoder, which decodes the low-resolution latent output of the diffusion model, into high-resolution RGB images
+
+- Tag-based Loss Weighting was reported... *"seen".*
+
+### Guess on V4? ###
+
+- Likely not from a [*distilled model*](https://medium.com/@zhiwangshi28/why-flux-lora-so-hard-to-train-and-how-to-overcome-it-a0c70bc59eaf), or an [*open source model*](https://civitai.com/articles/6309/towards-pony-diffusion-v7-going-with-the-flow). [Right?](https://knowyourmeme.com/memes/for-the-better-right)
+
+![photo_2024-09-25_21-43-02.jpg](./img/photo_2024-09-25_21-43-02.jpg)
+
+![photo_2024-09-25_21-48-34.jpg](./img/photo_2024-09-25_21-48-34.jpg)
+
+- *Ah. The taunt from the H100 cluster.*
+
+![photo_2024-09-25_22-41-03.jpg](./img/photo_2024-09-25_22-41-03.jpg)
+
+## Old contents ##
+
 - *Observation only.* I don't have membership, and I have no hands on experience about this.
 
 - Do not mixed up with [V1](../ch99/925997e9.md) and V2, which is based from SD1.X.
