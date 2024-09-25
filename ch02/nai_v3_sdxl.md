@@ -8,7 +8,11 @@
 
 - *Speculation of training contents is now adjusted to 100 epochs with multiple parameter search attempts. Dataset size maybe more, ranged from 1B to 2B.*
 
+<details>
+    <summary>Click to open the PNG (SFW but meh)</summary>
+
 ![24092501.jpg](./img/24092501.jpg)
+</details>
 
 - [Twitter post from bdsqlsz.](https://x.com/bdsqlsz/status/1838940222622703776)
 
@@ -174,7 +178,8 @@ alpha - 254 = bit
 |---|---|---|
 |`Stable Diffusion XL C1E1DE52`|`"request_type": "PromptGenerateRequest"`  or `"request_type": "Img2ImgRequest"`|"Text to Image" or "Image to Image"|
 |`Stable Diffusion XL 8BA2AF87`|`"request_type": "NativeInfillingRequest"`|"Inpainting"|
-|(rot13)`Fgnoyr Qvsshfvba KY O0OQS6P1`|unreleased|unreleased|
+|`Stable Diffusion XL 7BCCAA2C`|`"request_type": "PromptGenerateRequest"`  or `"request_type": "Img2ImgRequest"`|"Text to Image" or "Image to Image" (Vibe Transfer)|
+|`Stable Diffusion XL 1120E6A9` (Unknown)|`"request_type": "NativeInfillingRequest"`|"Inpainting"|
 
 - More model hash (e.g. legendary `Stable Diffusion 81274D13`) can be found as previous version also. *Note that I'll post the popular hash only.* Note that "inpainting" can use the same model, instead of distinct model in V3.
 
@@ -185,6 +190,7 @@ alpha - 254 = bit
 |NAI Diffusion Furry (Beta V1.3)|`Stable Diffusion 1D09D794`|
 |NAI Diffusion Anime V2|`Stable Diffusion F1022D28`|
 |NAI Diffusion Anime V3|`Stable Diffusion XL C1E1DE52`|
+|NAI Diffusion Furry V3|`Stable Diffusion XL 9CC2F394`|
 
 ## Strange area ##
 
