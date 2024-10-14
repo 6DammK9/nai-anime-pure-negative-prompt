@@ -113,6 +113,10 @@
 
 - [As mentioned in the git issue](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/issues/47), I think "MERGEMANY" will be impossible to deliver soon, even I think it can be somehow archieved with the use of [sd-mecha](https://github.com/ljleb/sd-mecha) and make the "OVR" permutation with a precomuted "averaged model".
 
+## Special case: "Model B but in different direction" ##
+
+- See [my findings in my SDXL merge.](../ch05/README_XL.MD#findings-on-sdxl-re-basin) *(Revise when I know the root cause)* I have tried for a few times (x101 and x215), the "different direction" is actually less stable. Looks like "optimizing" neurton activation probability alone is not beneficial for overall inference.
+
 ## Next chapter ##
 
 - [Re-basin via implicit Sinkhorn differentiation](https://fagp.github.io/sinkhorn-rebasin/) is the next generation of this paper. The orignal LAP problem *is not differentiable*, hence the effective but inefficient optimization algorithm. This paper use more "math tricks" to convert it as a differentiable gradient and use common gradient descent algorithm (SGD) to optimize it. ~~Should be more efficient.~~

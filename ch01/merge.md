@@ -173,7 +173,7 @@ targets:
 
 - [The bruteforced result (Layer 7) is not useful for other tasks...](https://huggingface.co/syaimu/7th_Layer), [even it is supported by another popular merge model (AOM2)...](https://huggingface.co/WarriorMama777/OrangeMixs)
 
-![img/0af5496675d3d85b8879bf46b3602b79e3a3c7c0160f98448b01c16b5242801f.png](img/0af5496675d3d85b8879bf46b3602b79e3a3c7c0160f98448b01c16b5242801f.png)
+![img/0af5496675d3d85b8879bf46b3602b79e3a3c7c0160f98448b01c16b5242801f.jpg](img/0af5496675d3d85b8879bf46b3602b79e3a3c7c0160f98448b01c16b5242801f.jpg)
 
 - So colorful...
 

@@ -517,3 +517,41 @@ Merge time: 3972 sec
 - If I focusing on characters, I think I loss most of them because of the contradiction between the model weights. If I focusing on NSFW concepts, strangely it preserves with low extent (as most realistic models have slight NSFW contents trained) and it still loss most of the "action scenes" (same reason). *Would I look into model weights, and risk to preserve the bias and loss all the others?* 
 
 - [From this LoRA in CivitAI](https://civitai.com/models/626713?modelVersionId=716304), [I think a merged model should ultimately be a "better base model", and worth finetuning again.](../ch01/merge.md#not-merge-but-worth-mentioning) 
+
+## Findings on "SDXL DGMLA (modified DELLA)" ##
+
+- *Under construction.*
+
+- [PR in progress.](https://github.com/ljleb/sd-mecha/pull/41)
+
+- See [Spinoff: DGMLA](../ch01/della.md#spinoff-dgmla) for algorithm analysis.
+
+|Date|Algo|Model counts|Threads|RAM Usage (TB, FP64)|Time used (Hours, Xeon 8358 x2)|
+|---|---|---|---|---|---|
+|240607|TGMD|117|16|1.214|14|
+|240622|TGMD|133|8|< 1.0|12.5|
+|240830|TGMD|192|8|1.446|41.5|
+|241002|DGMLA|192|16|1.452|39.1|
+|241006|DGMLA|20|48|0.358|2.33|
+|241011|DGMLA|216|48|3.500|36.2|
+
+![24101301.JPG](./img/24101301.JPG)
+
+This is the *recent* merging log.
+
+- DGMLA: `24100201`. 192 models. `p=0.1,eps=-0.05`. Baseline.
+- DGMLA: `24100601`. 20 models. `p=0.1,eps=-0.05`. Still works.
+- DGMLA: `24100602`. 20 models. `p=0.3,eps=-0.30`. Doesn't work.
+- DGMLA: `24100603`. 20 models. `p=0.1,eps=0.05`. Works in a different way.
+- DGMLA: `24100604`. 20 models. `p=0.1,eps=-0.1`. Works in the same way.
+- DGMLA: `24101101`. 216 models. `p=0.1,eps=-0.1`. Works as expected.
+
+![xyz_grid-0000-3238738651-14112-1623-3-48-20241007075045.jpg](./img/xyz_grid-0000-3238738651-14112-1623-3-48-20241007075045.jpg)
+
+- Despite the effectiveness of the algorithm, the massive model count is now experiencing [diminishing return](https://en.wikipedia.org/wiki/Diminishing_returns), as shown as the slight change since `x116`. I make this iterlation is majorly because of the rise of heavy Kohaku XL finetune such as [Illustrious XL](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0) and [Kohaku-Delta-Alpha](https://civitai.com/models/693222?modelVersionId=775789). This should introduce some impact on the current "Pony issue".
+
+- I have also tried [Rebasin again.](../ch01/rebasin.md#special-case-model-b-but-in-different-direction) However result does not looks good, with the model weights behaves as expected. `215a` and `215b` is also at the same spot (keeping GeometricMedian models only).
+
+![xyz_grid-0000-3238738655-18144-1648-3-48-20241015005802.jpg](./img/xyz_grid-0000-3238738655-18144-1648-3-48-20241015005802.jpg)
+
+![dgmla2b_unet_vg.png](../ch03/v2a/img/dgmla2b_unet_vg.png) 
