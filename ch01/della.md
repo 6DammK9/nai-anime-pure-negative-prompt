@@ -16,9 +16,9 @@
 
 - *Under construction.* 
 
-- In paper, $ \epsilon $ **was never discussed**, however diving into codes will imply to a positive parameter. From the experience in [TGMD](./modelstock.md#tsd-v21), [MDP really inherits some characteristic with plain RNN](./dare.md#why-llm-merging-algorihms-works-in-principle), to keep the "inference chain as gradient" smooth, **great negative** $ \epsilon = -p $ will make the selected weights move closer to the base model (SDXL 1.0 for my case, meanwhile it can be [specific model](../ch02/pony_sd.md)). 
+- In paper, $\epsilon$ **was never discussed**, however diving into codes will imply to a positive parameter. From the experience in [TGMD](./modelstock.md#tsd-v21), [MDP really inherits some characteristic with plain RNN](./dare.md#why-llm-merging-algorihms-works-in-principle), to keep the "inference chain as gradient" smooth, **great negative** $\epsilon=-p$ will make the selected weights move closer to the base model (SDXL 1.0 for my case, meanwhile it can be [specific model](../ch02/pony_sd.md)). 
 
 ![24101502.png](./img/24101502.png)
 
-- Before choosing the agressive $ \epsilon = -p $, parameter searching would be tedious since the algorithm stack has a core concept of "N to 1 merging", which N can be as large as possible (currently 216 models), with local $ O(NlogN) $ time complexity of merge sort, it will take days to merge. It is common to *take sample* from the model pool, since I gather models from *chronological order*, it will be effective by just [taking sample in pure random form](https://en.wikipedia.org/wiki/Simple_random_sample). Then it is quite obvious for the above phenomenon.
+- Before choosing the agressive $\epsilon=-p$, parameter searching would be tedious since the algorithm stack has a core concept of "N to 1 merging", which N can be as large as possible (currently 216 models), with local $O(NlogN)$ time complexity of merge sort, it will take days to merge. It is common to *take sample* from the model pool, since I gather models from *chronological order*, it will be effective by just [taking sample in pure random form](https://en.wikipedia.org/wiki/Simple_random_sample). Then it is quite obvious for the above phenomenon.
 

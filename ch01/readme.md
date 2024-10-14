@@ -28,3 +28,4 @@ This session is focus on [model merging](https://huggingface.co/docs/peft/develo
 - Findings on "Fisher Merge" in SD: [fisher.md](./fisher.md)
 - Findings on "DARE Merge" in SD: [dare.md](./dare.md)
 - Findings on "Model Stock" in SD: [modelstock.md](./modelstock.md)
+- Findings on "DELLA Merge" in SD: [dare.md](./della.md)
