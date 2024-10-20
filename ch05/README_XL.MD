@@ -130,6 +130,7 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 |06|TSD: TIES-SOUP w/ DROP|`x101a-AstolfoMix-24050903-4edc67c.safetensors`|102|102|102|102|[mecha](./recipes/x101a-AstolfoMix-24050903-4edc67c.mecha)|
 |07|TGMD: TIES-GeometricMedian w/ DROP|`x116a-AstolfoMix-24060702-01823a9.safetensors`|117|117|117|117|[mecha](./recipes/x116a-AstolfoMix-24060702-01823a9.mecha)|
 |08|TGMD-192: Scaled up from TGMD|`x191a-AstolfoMix-24083001-3360d18.safetensors`|192|192|192|192|[mecha](./recipes/x191a-AstolfoMix-24083001-3360d18.mecha)|
+|09|DGMLA-216: Drop w/ GeoMedian and LA|`x215a-AstolfoMix-24101101-6e545a3.safetensors`|216|216|216|216|[mecha](./recipes/x215a-AstolfoMix-24101101-6e545a3.mecha)|
 
 ### Discovered models ###
 
