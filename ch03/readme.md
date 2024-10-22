@@ -29,6 +29,10 @@ SD3: [stabilityai/stable-diffusion-3-medium-diffusers](https://huggingface.co/st
 
 ![sd3_mmdit_marked.png](./view_unet/sd3_mmdit_marked.png)
 
+SD3.5: [stabilityai/stable-diffusion-3.5-large](https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/transformer/config.json)
+
+![sd35_mmdit_marked.png](./view_unet/sd35_mmdit_marked.png)
+
 Hunyuan-DiT: [Tencent-Hunyuan/HunyuanDiT-Diffusers](https://huggingface.co/Tencent-Hunyuan/HunyuanDiT-Diffusers/blob/main/transformer/config.json)
 
 ![hy_mmdit_marked.png](./view_unet/hy_mmdit_marked.png)
@@ -62,6 +66,7 @@ Flux: [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FL
 |SD2|25|*2.1*|0.865|2837|4.46|
 |SDXL|19|*5.3*|2.6|8993|13.80|
 |SD3|24|2.0|2.0|11127|18.79|
+|SD3.5|38|8.0|8.0|17010|32.35|
 |Hunyuan-DiT|40|1.5|1.5|17595|20.12|
 |AuraFlow|36|6.8|6.8|**39974**|52.38|
 |Flux|**57**|11.91|**11.91**|31557|**54.06**|
