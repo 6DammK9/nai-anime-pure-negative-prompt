@@ -13,6 +13,7 @@
 - "Stashes" [SD - WebUI 资源站](https://www.123114514.xyz/)
 - "Stashes" but encrypted [PCIA](https://huggingface.co/Cinnamomo/pcia)
 - Never seen Github Issue instead of Wiki [WangShuXian6/blog](https://github.com/WangShuXian6/blog/issues)
+- A tech report which didn't made into arxiv like me: [Neta AI](https://nieta-art.feishu.cn/wiki/ARWLw99w7ikjaSkoV99cxmsOn5g)
 
 ## Blue pill (WebUI Variants) ##
 
