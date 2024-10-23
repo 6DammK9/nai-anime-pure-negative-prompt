@@ -1,6 +1,8 @@
 # Observation of Pony Diffusion (v5.5 SD2.1 + V6 SDXL) #
 
-## (New) PonyFlow "V7" ~~V6.9~~ ~~may~~ should be in ~~SD3~~ ~~HunyuanDiT~~ ~~FLUX.1-dev~~ AuraFlow ##
+## (New) PonyFlow "V7" ~~V6.9~~ ~~may~~ should be in ~~SD3~~ ~~HunyuanDiT~~ ~~FLUX.1-dev~~ ~~SD3.5~~ AuraFlow ##
+
+![photo_2024-10-23_12-20-39.jpg](img/photo_2024-10-23_12-20-39.jpg)
 
 - [As mentioned in the official article.](https://civitai.com/articles/6309) ~~Notice that Flux's licence is not for commercial, the "last resort" thing is just gaslighting. Also why mention OMI in such an indirect tone?~~
 
