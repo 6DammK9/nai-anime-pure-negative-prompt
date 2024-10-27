@@ -28,9 +28,9 @@
 
 > CFG scale is divided by 12.5 if the sampler has "CFG++" in name. CFG scale maps to CFG++ scale: [1.0, 12.5] -> [0.0, 1.0].
 
-- After some testing, **using A1111's parameter as above,** 6.0 is good for style conversion. However 1.0 will be more accurate and natural.
+- After some testing, **using A1111's parameter as above,** ~~6.0 is good for style conversion. However 1.0 will be more accurate and natural.~~ 6.0 + 48 STEPs is good. A STEP vs CFG plot is recommended.
 
-- It behaves much different from [the of original CFG.](./cfg_step.md). The STEPS now has a lot more visible change, making it has a optimal STEP instad of dumping as much as I can afford.
+- It behaves much different from [the of original CFG.](./cfg_step.md). The STEPS now has a lot more visible change, making it has a optimal STEP instad of dumping as much as I can afford. See the giga plot in the bottom.
 
 - However "Hires. fix" (Global i2i after upscale) is not affecting much. Still good for 0.7. *From oberservation, hires STEPs should equal to base STEPs (i.e. 0)*
 
@@ -50,3 +50,7 @@ Steps: 48, Sampler: DDIM CFG++, Schedule type: Exponential, CFG scale: 1, Seed: 
 ```
 
 ![xyz_grid-0002-3142271110-10240-1166-0.0-48-20241027175400.jpg](img/xyz_grid-0002-3142271110-10240-1166-0.0-48-20241027175400.jpg)
+
+- Finally I redo the CFG x STEP plot and found the optimal value. The "phases" is a different from before.
+
+![xyz_grid-0003-3633269980-17136-11668-0.0-4-20241028052204.jpg](img/xyz_grid-0003-3633269980-17136-11668-0.0-4-20241028052204.jpg)
