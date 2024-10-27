@@ -16,7 +16,7 @@
 
 - However, some core additives are not used. [FreeU](./freeu.md) introduce bias (via a lot of hyperparameters) which is against the *unconditional* approah, meanwhile [Dynamic CFG](./dynamic_cfg.md) just break the formula and yield pure noise.
 
-- Since the mathematics involved are very complicated, I'll post screenshots later. However I can assume no parameters are required. You can generate images already without even looking at the "default" parameters (such as $$\sigma\rightarrow\infty $$ and $$CFG++=0$$ (or 1 due to the code level offset in A1111) )
+- Since the mathematics involved are very complicated, I'll post screenshots later. However I can assume no parameters are required. You can generate images already without even looking at the "default" parameters (such as $$\sigma\rightarrow\infty $$ and $$CFG_{++}=0$$ (or 1 due to the code level offset in A1111) )
 
 ![24102701.JPG](img/24102701.JPG)
 
@@ -36,7 +36,7 @@
 
 ## Plots ##
 
-- Model: [AstolfoMix XL "DGMLA-216"](../ch05/README_XL.MD#findings-on-sdxl-dgmla-modified-della). However it 
+- Model: [AstolfoMix XL "DGMLA-216"](../ch05/README_XL.MD#findings-on-sdxl-dgmla-modified-della). [Should be good for this experiment.](https://civitai.com/articles/5149/untitled-denoising-to-the-random-content-v15)
 
 ![xyz_grid-0000-3045266444-8448-2560-1-48-20241027170722.jpg](img/xyz_grid-0000-3045266444-8448-2560-1-48-20241027170722.jpg)
 
