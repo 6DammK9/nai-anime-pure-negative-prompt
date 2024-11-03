@@ -18,6 +18,8 @@
 
 - [Model Merging in LLMs, MLLMs, and Beyond: Methods, Theories, Applications and Opportunities](https://arxiv.org/abs/2408.07666) *comparative study*
 
+- [Model merging with SVD to tie the Knots](https://arxiv.org/abs/2410.19735) *tldr: Merge LoRA OK*
+
 - [DELLA-Merging: Reducing Interference in Model Merging through Magnitude-Based Sampling](https://arxiv.org/abs/2406.11617)
 
 - [Arcee's MergeKit: A Toolkit for Merging Large Language Models](https://arxiv.org/abs/2403.13257) *toolkit*
