@@ -1,6 +1,8 @@
 # Observation of Pony Diffusion (v5.5 SD2.1 + V6 SDXL) #
 
-## (New) PonyFlow "V7" ~~V6.9~~ ~~may~~ should be in ~~SD3~~ ~~HunyuanDiT~~ ~~FLUX.1-dev~~ ~~SD3.5~~ AuraFlow ##
+## (New) PonyFlow "V7" ~~V6.9~~ ~~may~~ ~~should~~ will be in ~~SD3~~ ~~HunyuanDiT~~ ~~FLUX.1-dev~~ ~~SD3.5~~ AuraFlow ##
+
+- [Confirmed in this "announcement stream".](https://www.twitch.tv/videos/2300172892) ~~Not interested to translate or make tldr~~
 
 ![photo_2024-10-23_12-20-39.jpg](img/photo_2024-10-23_12-20-39.jpg)
 
@@ -205,3 +207,9 @@ xekixek_cqhydu
 - Given ciphertext "aua" and plaintext "houshou_marin" is provided, the *encryption algorithm* **does not match the claim**. Direct prompting the cipher text will yield complete random images (the "girl" is the bias of the PDv6, a few more seeds will see no human-focused images).
 
 - Instead, given the discovered "single token prompts" and the nature of BPE, random characters may form clusters because of their super low frequency, and the cluster may share high [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) (*or low distince between embeddings*) to the actual [unconditioned / "unprompted" contents](https://huggingface.co/docs/diffusers/main/en/api/pipelines/latent_diffusion_uncond). It is a [side effect](https://en.wikipedia.org/wiki/Side_effect) of finetuning / pretraining SD models.
+
+### Can it be prevented? ###
+
+- *Not likely*. Since the "attack" is brute force attack on "dictionary" (single token words, T5 for Auraflow / PonyV7), given the clusters of "style / artist" ~~definitely not AI slop~~ are intentionally mapped into "superartists", the ["out of distribution"](https://paperswithcode.com/task/ood-detection) sample will be mapped into a single token very likely. Given AuraFlow is using single TE as T5-XXL, it will be vulnerable under this attack again.
+
+![24111401.png](./img/24111401.png)
