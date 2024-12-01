@@ -146,3 +146,9 @@
 - [Youtube](https://www.youtube.com/watch?v=RPSqoLx-ggk&ab_channel=FidelGuerreroPe%C3%B1a), [CVPR](https://openaccess.thecvf.com/content/CVPR2023/papers/Pena_Re-Basin_via_Implicit_Sinkhorn_Differentiation_CVPR_2023_paper.pdf), [github](https://github.com/fagp/sinkhorn-rebasin)
 
 - One more: [Rethink Model Re-Basin and the Linear Mode Connectivity](https://arxiv.org/abs/2402.05966v1). [github](https://github.com/XingyuQu/rethink-re-basin)
+
+![24120103.jpg](./img/24120103.jpg)
+
+### Linear Mode Connectivity ###
+
+- The paper has mentioned [Linear Mode Connectivity](https://paperswithcode.com/task/linear-mode-connectivity) quite frequently, meanwhile the proposed paper mentioned [Lottery Ticket Hypothesis](https://arxiv.org/abs/1912.05671), and hinted that [one of the approach is to aligning the mathmatical sign](https://medium.com/@qaz7821819/iclr-2019-best-paper-%E9%97%9C%E9%8D%B5%E6%96%B9%E6%B3%95%E7%90%86%E8%A7%A3-the-lottery-ticket-hypothesis-finding-sparse-trainable-neural-9e2fafa19290), which is already covered in [TIES](./ties.md). *I'll investigate it when I have time.*
