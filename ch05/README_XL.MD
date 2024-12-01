@@ -556,3 +556,17 @@ This is the *recent* merging log.
 ![xyz_grid-0000-3238738655-18144-1648-3-48-20241015005802.jpg](./img/xyz_grid-0000-3238738655-18144-1648-3-48-20241015005802.jpg)
 
 ![dgmla2b_unet_vg.png](../ch03/v2a/img/dgmla2b_unet_vg.png) 
+
+## Findings on "SDXL Re-basin" again ##
+
+- I have revisited [rebasin](../ch01/rebasin.md#spinoff-permutation-from-the-fermat-point) and somehow figured out how to make it effective. 
+
+- Actually I have missed the "one more merge" like what "21b" did before. *After 72 seconds, it works.*
+
+![xyz_grid-0003-3501057452-6048-1623-6-48-20241121005337.jpg](./img/xyz_grid-0003-3501057452-6048-1623-6-48-20241121005337.jpg)
+
+- The greatest change is majorly in TE1, meanwhile I believe that the < 1.0 distance in UNET also does some effect.
+
+![x215c_te1_vg.png](../ch03/v2a/img/x215c_te1_vg.png)
+
+- BTW now I use a [new sampling stack](../ch01/cfgpp_pag_seg.md) which has new characteristic which undonditional stuffs shines.

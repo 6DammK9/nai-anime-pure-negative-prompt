@@ -117,6 +117,28 @@
 
 - See [my findings in my SDXL merge.](../ch05/README_XL.MD#findings-on-sdxl-re-basin) *(Revise when I know the root cause)* I have tried for a few times (x101 and x215), the "different direction" is actually less stable. Looks like "optimizing" neurton activation probability alone is not beneficial for overall inference.
 
+## Spinoff: Permutation from the Fermat Point ##
+
+- *It is not logical. It is more like a belief under limited resources.* Re-Basin are focusing on VGGs instead of full SD model therefore there is close to no code base available, *especially on training process*. However mathematically some purpose of the original algorithm has been archieved by other merging algorithms, therefore we can try to mimic the missing part of that merge, instead of just considering it as a raw model.
+
+![rebasin.jpg](./img/rebasin.jpg)
+
+- Despite the chaotic description of the full algorithm (and the available reosurces), we can identify the key steps of the rebasin are **activation matching** and **weight matching**, which has been done previously. However, *Algorithm 2* doesn't mention what model should return, even there are no suggested model choice for complicated scenarios like what *Algorithm 3* tried to propose. Direct apply first 2 algorithms with "finetuned models" will only yield to results like [AutoMBW](./autombw.md) did. 
+
+- Then looking at *Algorithm 3* again, we can find that the final "return" is just **averaging**, but the models are merged with the previous algorithms, then we can reformulate the thgought process from **"pick layers from N models"** to **"pick layers from a mega merged model from N models"**. 
+
+- Meanwhile, since the "Loss Function" in such topic has been [disentangled with actual task](https://github.com/deepghs/sdeval), we can just focusing the benefit from *Algorithm 1*, which is ["Linear Mode Connectivity"](https://paperswithcode.com/task/linear-mode-connectivity), to **exaggerate the denoising effect** even it won't lead to the expected content, rater than corrupted, half made content or back to noise. In this specific topic (text2img), I think it enhance the ["honesty"](https://www.art2life.com/2023/01/18/honesty-in-art-alex-kanevsky-ep-65/) towards the "model" (there are already 216 models jamming each other). However, this only justify the reason of the "215b" as "this other different direction is actually good".
+
+- Given the ["215a"](./della.md#spinoff-dgmla) and "215b" has its own point to consider, seems that ["one more merge on directions"](../ch05/README.MD#adjustment-towards-a-better-direction) like what I've did in ["21b"](../ch05/README.MD#findings-on-astolfomix-21b) will be greatly plausible. From experience, the "one more merge" can be any methods with expected value around the "mid point". This coincidentally match the procedure in  *Algorithm 3*. Now the "model" can choose when to "be honest to itself", or "draw what have been assigned".
+
+![24120101.png](./img/24120101.png)
+
+- This image is a bit confusing. The "gradient" means the Loss Function curve, meanwhile it should be 2x for this case. Taking midpoint from 2 random models will be likely dropped to the "sea", however picking "215a" and "215b" in suitable position will make the final "215c" land in the "cliff" instead of the sea.
+
+![24120102.jpg](./img/24120102.jpg)
+
+- Move to [ch05](../ch05/README_XL.MD#findings-on-sdxl-re-basin-again) for the model specific results.
+
 ## Next chapter ##
 
 - [Re-basin via implicit Sinkhorn differentiation](https://fagp.github.io/sinkhorn-rebasin/) is the next generation of this paper. The orignal LAP problem *is not differentiable*, hence the effective but inefficient optimization algorithm. This paper use more "math tricks" to convert it as a differentiable gradient and use common gradient descent algorithm (SGD) to optimize it. ~~Should be more efficient.~~
