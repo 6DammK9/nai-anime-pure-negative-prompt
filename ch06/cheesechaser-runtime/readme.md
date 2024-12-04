@@ -115,4 +115,6 @@ Extracting Tags: 8005010it [1:00:04, 2220.60it/s]
 Making *.tar Files:   2%|███▍               | 160/10000 [1:58:16<130:26:40, 47.72s/it]
 ```
 
-- Now we have the "metadata" to export `*.txt`, and the images for `*.webp`, which should be sufficient for basic finetuning.
+- Now we have the "metadata" to export `*.txt`, and the images for `*.webp`, which should be sufficient for basic finetuning. *Next will be extracting files to another drive* because trainers usually cannot read files inside `*.tar`.
+
+![24120501.JPG](img/24120501.JPG)

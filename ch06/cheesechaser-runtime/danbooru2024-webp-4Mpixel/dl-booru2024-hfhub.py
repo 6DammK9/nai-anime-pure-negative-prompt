@@ -14,7 +14,7 @@ def dl_single_file(filename):
 
 def dl_all():
     #Brute force!
-    for i in range(2000):
+    for i in range(1000):
         suffix = str(i).zfill(4)
         for r_d in REPO_DIR:
             for r_df in REPO_DIR_FORMAT:
