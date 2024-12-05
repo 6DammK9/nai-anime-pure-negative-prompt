@@ -115,6 +115,16 @@ Extracting Tags: 8005010it [1:00:04, 2220.60it/s]
 Making *.tar Files:   2%|███▍               | 160/10000 [1:58:16<130:26:40, 47.72s/it]
 ```
 
-- Now we have the "metadata" to export `*.txt`, and the images for `*.webp`, which should be sufficient for basic finetuning. *Next will be extracting files to another drive* because trainers usually cannot read files inside `*.tar`.
+- Now we have the "metadata" to export `*.txt`, and the images for `*.webp`, which should be sufficient for basic finetuning.
 
 ![24120501.JPG](img/24120501.JPG)
+
+- The [preferred trainer "khoyas-ss"](https://github.com/kohya-ss/sd-scripts) requires dedicated `meta_lat.json` with caption side preprocessing, we extract all the `*.tar` into the same directory. Since the `id.*` are aligned (**parquet Row ID = file name**), it will be fine.
+
+```log
+> python extract-booru2024.py
+Extracting *.tar Files:   0%|                                    | 0/1 [
+Extracting *.tar Files: 100%|████████████████████████████| 1/1 [00:09<00
+```
+
+- Finally, instead the [official guide](https://github.com/kohya-ss/sd-scripts/blob/main/docs/fine_tune_README_ja.md) (a bit messy), follow this [reddit post](https://www.reddit.com/r/StableDiffusion/comments/163097n/getting_started_fine_tuning/?rdt=34904) to **make the metadata JSON file (with ARB)** and start finetuning.

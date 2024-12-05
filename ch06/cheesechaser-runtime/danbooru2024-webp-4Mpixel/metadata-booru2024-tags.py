@@ -40,13 +40,14 @@ df = pd.read_parquet('./metadata.parquet')
 
 TAGS_FOLDER = "F:/tags"
 
-for row in tqdm(df.itertuples(), desc="Extracting Tags", position=0):
+for id, row in tqdm(enumerate(df.itertuples(), 1), desc="Extracting Tags", position=0):
     #print(row)
     #media_asset.id = _37
-    media_asset_id = row._37
+    #241206: This should be the real id...?
+    media_asset_id = id #row._37
     #I don't know why the source alignment is 1e3 instead of 1e4.
     subfolder = str(int(media_asset_id % 1e3)).zfill(4)
-    tfp = "{}/{}/{}.txt".format(TAGS_FOLDER, subfolder, row._37)
+    tfp = "{}/{}/{}.txt".format(TAGS_FOLDER, subfolder, media_asset_id)
     
     #In 2412, khoyas-ss should handle well
     #tag = row.tag_string.replace(" ",",")

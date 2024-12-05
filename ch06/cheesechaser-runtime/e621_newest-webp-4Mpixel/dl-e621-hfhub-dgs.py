@@ -5,7 +5,7 @@ REPO_TYPE = "dataset"
 REPO_DIR = ["images"] #"embs/SwinV2_v3"
 REPO_DIR_FORMAT = [".json", ".tar"]
 
-LOCAL_DIR = "./raw_files" #Anywhere you want.
+LOCAL_DIR = "H:/e621_new" #Anywhere you want.
 
 def dl_single_file(filename):
     #print(filename)
