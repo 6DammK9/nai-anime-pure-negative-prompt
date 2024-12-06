@@ -9,57 +9,37 @@ import glob
 
 from tqdm.auto import tqdm
 import pandas as pd
-tqdm.pandas() # register progress_apply
+tqdm.pandas() 
 
-# read parquet file
 df = pd.read_parquet('./metadata.parquet')
-
-#df_sample = df.head(5)
-
-#print(df_sample)
-
-#df_sample.to_json("metadata-sample.json")
-
-#tag_string
-#media_asset.id
-
-#tag_string_general
-#tag_string_character 
-#tag_string_copyright
-#tag_string_artist 
-#tag_string_meta
-
-#character > copyright > artist > general > meta
-
-#1.webp
-#1.text
-
-#https://github.com/kohya-ss/sd-scripts/blob/main/docs/config_README-en.md#multi-line-captions
-
-#df['tag_string'].str
 
 TAGS_FOLDER = "F:/tags"
 
-for id, row in tqdm(enumerate(df.itertuples(), 1), desc="Extracting Tags", position=0):
-    #print(row)
-    #media_asset.id = _37
-    #241206: This should be the real id...?
-    media_asset_id = id #row._37
+for row in tqdm(df.itertuples(), desc="Extracting Tags", position=0):
+    
+    #AngelBottomless: df.set_index has been applied on field "id" (so it is hidden in HF online preview)
+    media_asset_id = row.Index
     #I don't know why the source alignment is 1e3 instead of 1e4.
     subfolder = str(int(media_asset_id % 1e3)).zfill(4)
     tfp = "{}/{}/{}.txt".format(TAGS_FOLDER, subfolder, media_asset_id)
     
     #In 2412, khoyas-ss should handle well
     #tag = row.tag_string.replace(" ",",")
-    tag = " ".join([row.tag_string_character, row.tag_string_copyright, row.tag_string_artist, row.tag_string_general, row.tag_string_meta]).replace(" ",", ")
+    rearranged_tags = [row.tag_string_character, row.tag_string_copyright, row.tag_string_artist, row.tag_string_general, row.tag_string_meta]
+    must_exist = [tag for tag in rearranged_tags if tag]
+
+    #A bit philosophical and controversal: I don't even add year tag here. 
+    #Danbooru has defined styles and years like "2000s" and "2024", which has stated explictly "do not link with upload time". 
+    #Disrupting the tag definiton will cause AI/ML problems, which AI cannot learn contradictions.
+    #If the final destination is learning "some artist in some topic in some time window", please make embedding or train a LoRA.
+    tag = " ".join(must_exist).replace(" ",", ")
     
     Path("{}/{}".format(TAGS_FOLDER,subfolder)).mkdir(parents=True, exist_ok=True)
     with open(tfp, 'w', encoding="utf-8") as f:
         f.write(tag)
        
-#No throw for df.head(5)
-#I'll keep 1e4 here because I've made a mess
-for i in tqdm(range(int(1e4)), desc="Making *.tar Files", position=0):
+#No throw (it takes 12 hours!)
+for i in tqdm(range(int(1e3)), desc="Making *.tar Files", position=0):
     subfolder = str(i).zfill(4)
     tf = "{}/{}.tar".format(TAGS_FOLDER, subfolder)
     tfd = "{}/{}".format(TAGS_FOLDER, subfolder)
