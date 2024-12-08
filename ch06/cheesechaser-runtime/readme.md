@@ -12,6 +12,18 @@
 
 - No `.gitignore` here because I always do operations seperately.
 
+- I have observed that Win10 has bug on previewing `*.webp`. File lock is still on after closing the preview, until system reboot or you have figured out the `photos.exe` and the `svchost.exe` to close. Better not to view it unless you really need to validate the logic.
+
+## Shortcut for tldr ##
+
+- Visit my HF repo to download the tags instead of building your own.
+
+- [6DammK9/danbooru2024-tags-10ktar](https://huggingface.co/datasets/6DammK9/danbooru2024-tags-10ktar)
+
+- [6DammK9/e621_2024-tags-10ktar](https://huggingface.co/datasets/6DammK9/e621_2024-tags-10ktar)
+
+- Guides are cloned in [danbooru2024-webp-4Mpixel](./danbooru2024-webp-4Mpixel) and [e621_newest-webp-4Mpixel](./e621_newest-webp-4Mpixel)
+
 ## Setting up environment ##
 
 - Safety first.
@@ -130,7 +142,7 @@ Files written: 1000
 ```log
 > python extract-booru2024-parallel.py
 100%|██████████████████████████████████████| 1000/1000 [6:48:15<00:00, 24.50s/it]
-Extracted: 1000 pairs
+Extracted: 1000 iters
 Delta: 0 files
 ```
 
@@ -206,3 +218,15 @@ Type ".help" for more information.
 ```
 
 - The "8M+4M" description matchces.
+
+### Query for a sample dataset ###
+
+- You can definitely extract `*.tar` to obtain the files. However the "deleted" images may cause headache because either `*.webp` or `*.txt` was missing.
+
+- Therefore I have made a script for Astolfo and it will also serves a PoC dataset for finetuning. Instead of SD1, *any non finetuned SDXL models are having trouble to show Astolfo with full elements.* 6k images are also a nice number to test the finetuning process and my rig.
+
+```log
+> python just-astolfo.py
+6224 pairs to be copied.
+Copying image-caption pairs: 100%|████████████████████████████████████████████████| 6224/6224 [01:27<00:00, 70.81it/s]
+```
