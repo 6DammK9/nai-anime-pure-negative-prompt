@@ -108,11 +108,15 @@ kousaka_tamaki, to_heart_(series), to_heart_2, kyogoku_shin, 1girl, 2000s_(style
 ```
 
 - Since 8M files is too stressful for a disk drive, we convert back to `FFFF.tar` format.
+- I have made some optimization and parallelization on the codes. There will be no console output before the task complete.
 
 ```log
->python metadata-booru2024-tags.py
-Extracting Tags: 8005010it [1:00:04, 2220.60it/s]
-Making *.tar Files:   2%|███▍               | 160/10000 [1:58:16<130:26:40, 47.72s/it]
+> python metadata-booru2024-tags-parallel.py
+Max ID in the dataset: 8360499
+8005010it [00:32, 248097.52it/s]
+Tags found: 8005010
+100%|████████████████████████████████████████| 1000/1000 [14:53<00:00,  1.12it/s]
+Files written: 1000
 ```
 
 - Now we have the "metadata" to export `*.txt`, and the images for `*.webp`, which should be sufficient for basic finetuning.
@@ -121,10 +125,84 @@ Making *.tar Files:   2%|███▍               | 160/10000 [1:58:16<130:26:
 
 - The [preferred trainer "khoyas-ss"](https://github.com/kohya-ss/sd-scripts) requires dedicated `meta_lat.json` with caption side preprocessing, we extract all the `*.tar` into the same directory. Since the `id.*` are aligned (**parquet Row ID = file name**), it will be fine.
 
+- I have made some optimization and parallelization on the codes, but the performance boost is only little, meanwhile you cannot scale down the process (always full scale).
+
 ```log
-> python extract-booru2024.py
-Extracting *.tar Files:   0%|                                    | 0/1 [
-Extracting *.tar Files: 100%|████████████████████████████| 1/1 [00:09<00
+> python extract-booru2024-parallel.py
+100%|██████████████████████████████████████| 1000/1000 [6:48:15<00:00, 24.50s/it]
+Extracted: 1000 pairs
+Delta: 0 files
 ```
 
 - Finally, instead the [official guide](https://github.com/kohya-ss/sd-scripts/blob/main/docs/fine_tune_README_ja.md) (a bit messy), follow this [reddit post](https://www.reddit.com/r/StableDiffusion/comments/163097n/getting_started_fine_tuning/?rdt=34904) to **make the metadata JSON file (with ARB)** and start finetuning.
+
+### How to nuke a folder (in there is bugsplash) ###
+
+```powershell
+Remove-Item foldertodelete -Recurse -Force -Confirm:$false
+```
+
+```cmd
+rmdir foldertodelete /s /q
+```
+
+```sh
+sudo rm -rf foldertodelete
+```
+
+### List how many files in a directory (fast) ###
+
+- Do not use right click!
+
+- NodeJS is fast: Less than 1 minute. `16010020 = 8005010 * 2`.
+
+```log
+PS H:\danbooru2024-webp-4Mpixel> node
+Welcome to Node.js v20.15.0.
+Type ".help" for more information.
+> const fs = require('fs');
+> console.log(fs.readdirSync("./khoyas_finetune").length);
+16010020
+```
+
+## Notes on building E621 dataset ##
+
+- It is more sparse than danbooru2023 / 2024.
+
+- There is a strange cut in 2404, which there are total 4 repos to download.
+
+- [deepghs/e621_newest](https://huggingface.co/datasets/deepghs/e621_newest) for tags after 2404
+- [deepghs/e621_newest-webp-4Mpixel](https://huggingface.co/datasets/deepghs/e621_newest-webp-4Mpixel) for images after 2404
+- [boxingscorpionbagel/e621-2024](https://huggingface.co/datasets/boxingscorpionbagel/e621-2024) for tags before 2404
+- [NebulaeWis/e621-2024-webp-4Mpixel](https://huggingface.co/datasets/NebulaeWis/e621-2024-webp-4Mpixel) for images before 2404
+
+- **Tag processing is unavailable.** This time will be raw tags with minimal alignment i.e. `anthro male` > `anthro, male`.
+
+```log
+> python metadata-e621-tags-parallel.py
+Max ID in the dataset: 5217944
+5187777it [00:20, 257027.48it/s]
+Tags found: 5187777
+100%|██████████████████████████████████████| 1000/1000 [09:43<00:00,  1.71it/s]
+Files written: 1000
+```
+
+- Extracting is similar. I just hardcoded for both datasets.
+
+```log
+> python extract-e621-parallel.py
+100%|██████████████████████████████████████| 1000/1000 [2:30:51<00:00,  9.05s/it]
+Extracted: 1000 iters
+Delta: 744438 files
+```
+
+```log
+PS H:\e621_newest-webp-4Mpixel> node
+Welcome to Node.js v20.15.0.
+Type ".help" for more information.
+> const fs = require('fs');
+> console.log(fs.readdirSync("./khoyas_finetune").length);
+8883320
+```
+
+- The "8M+4M" description matchces.

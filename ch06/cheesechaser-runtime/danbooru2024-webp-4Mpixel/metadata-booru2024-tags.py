@@ -11,12 +11,24 @@ from tqdm.auto import tqdm
 import pandas as pd
 tqdm.pandas() 
 
+from tqdm.contrib.concurrent import thread_map
+
 df = pd.read_parquet('./metadata.parquet')
 
 TAGS_FOLDER = "F:/tags"
 
+TOTAL_TAR_COUNT = int(1e3)
+
+# Directly write things to tar will be a lot more efficient then making *.txt.
+# https://stackoverflow.com/questions/740820/python-write-string-directly-to-tarfile
+
+# Since we are dealing TBs of data and Ms of records, get a proper workstation (e.g. X99), your notebook cannot handle this lol 
+captions_only = [None] * len(df.index)
+
+#res_cmp = thread_map(exec_cmp, [(pab, ofp0) for pab in cmp_mapping[0][1]], max_workers=g_threads)
+
 for row in tqdm(df.itertuples(), desc="Extracting Tags", position=0):
-    
+
     #AngelBottomless: df.set_index has been applied on field "id" (so it is hidden in HF online preview)
     media_asset_id = row.Index
     #I don't know why the source alignment is 1e3 instead of 1e4.
