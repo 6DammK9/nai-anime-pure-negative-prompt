@@ -22,3 +22,19 @@
 - Finally, here is my hypothesis: Model merging, as a subcategory of [PEFT](https://huggingface.co/docs/peft/developer_guides/model_merging), if have a [proper merge](../ch01/merge.md#blue-pill-but-in-academic-paper), you can iterlate between both "merging" and "finetuning" to archieve the learning task with huge efficiency. Instead, although lack of academic discussion, it is hard to finetune from a *burnt model*, even a [burnt distillated model](https://www.reddit.com/r/StableDiffusion/comments/1fuukwz/fluxdevdedistill_an_undistilled_version_of_flux/?rdt=33807), meanwhile finetuning from pretrianed model (the SDXL 1.0) will be inefficient. 
 
 - Therefore, I'm here to explore for any options, under limited resources, and hopefully empower more people to join without processional knowledge. ~~It shouldn't be limited to full time student and researchers. I hate the "gate".~~
+
+## Why now, why so late? ##
+
+- *I have bought 4x RTX3090 blower without dedicated use case.* My [career](../ch97/rag_with_doc.md) may require them, however it is likely to use (OpenAI) API because of [commercial reason](https://www.atlassian.com/agile/project-management/project-baseline).
+
+- *I rushed for datase* because of the [fear of banning the great contents](https://huggingface.co/docs/hub/storage-limits#storage-plans), meanwhile the "Best-effort" is [indicating the target](https://github.com/deepghs/cyberharem).
+
+- *I have a workstation already* for [merging in large scale](../ch05/README_XL.MD).
+
+- *I have professional knowledge* even I treat this as a [hobby](../ch00/about_me.md).
+
+- Therefore, *this is a great chance for me to contribute*. I can do it for art, instead for the [rat race](https://en.wikipedia.org/wiki/Rat_race). *I just have limited spare time and motivation,* before I [mentally break down](https://en.wikipedia.org/wiki/Health_of_Vincent_van_Gogh) with such a dumb idea.
+
+- Lore of the "Best-effort" (it ends up in this [HF discussion post](https://huggingface.co/posts/julien-c/388331843225875) after their discord server is blown): 
+
+![24121401.jpg](./img/24121401.jpg)
