@@ -47,6 +47,7 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 - [ch03](ch03): **Data analysis.**  Usually involves model comparasion.
 - [ch04](ch04): *A (very dumb) batch script for multiple WebUI instances.*
 - [ch05](ch05): *Astolfo mix. Existing technology, original idea.*
+- [ch06](ch06): *Finetuning in vanilla approach.* ~~Guess what? Original content! What?~~
 - [ch97](ch97): **Uncategorized contents.** Usually "not article".
 - ch98: ~~Backup from discord server because I think it is not safe to leave them there forever.~~ **Removed. Merged / moved to different articles.**
 - [ch99](ch99): A "House-Tree-Person" test towards SD, as well as the oldest articles. *Still following this pracice today.*

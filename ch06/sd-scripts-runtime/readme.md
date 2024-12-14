@@ -1,5 +1,7 @@
 # Notes on finetuning SDXL from full dataset #
 
+## General guide / posts ##
+
 - Assumed that you have followed the guide from building the dataset, and having a single folder having many `F.webp` and `F.txt` in a single folder.
 
 - [Official guide.](https://github.com/kohya-ss/sd-scripts/blob/main/docs/fine_tune_README_ja.md)
@@ -13,15 +15,18 @@ git clone https://github.com/kohya-ss/sd-scripts.git
 cd sd-scripts
 ```
 
+## Setting up environments ##
+
 - Instead of `venv`, I make another `conda` environment.
 
-- **Pay attention of** `torch<2.4`. I have experienced [this issue / PR](https://github.com/kohya-ss/sd-scripts/pull/1686) but failed to work around. 
+- **Pay attention of** `torch==2.3.1` (must be < 2.4 for winodws. [Download page](https://pytorch.org/get-started/previous-versions/#v231)). 
+- I have experienced [this issue / PR](https://github.com/kohya-ss/sd-scripts/pull/1686) for 2.5.0. It requires [dedicated workaround](./libuv_torch25_win10.md), **requires code change in pytorch.** See next session if interested.
 
 ```sh
 conda create -n khoyas-env python=3.12
 conda activate khoyas-env
 
-pip install torch<2.4 torchvision --index-url https://download.pytorch.org/whl/cu124
+pip install torch==2.3.1 torchvision --index-url https://download.pytorch.org/whl/cu124
 pip install xformers --index-url https://download.pytorch.org/whl/cu124
 pip install --upgrade -r requirements.txt
 ```
@@ -34,15 +39,21 @@ pip install triton-3.0.0-cp312-cp312-win_amd64.whl
 
 - Install `bitsandbytes==0.45.0` explictly for the library stack, otherwise you will see CUDA Toolkit errors and somehow cannot install CUDA Toolkit either (it may be my OS problem).
 
+- (Optional) Install [CUDA Toolkit 12.4](https://developer.nvidia.com/cuda-12-4-0-download-archive), and choose [custom installation](https://forums.developer.nvidia.com/t/windows-10-cuda-installation-failure-solved/64389/2), uncheck everything except the "dev toolkit" and "runtime". **Nothing else**.
+
 ```sh
 pip install bitsandbytes==0.45.0 
 ```
+
+- Install `0.43.0` or even the "Windows friendly" `0.41.0` will have this issue.
 
 ```logs
 C:\Users\User\.conda\envs\khoyas-env did not contain ['cudart64_110.dll', 'cudart64_12.dll'] as expected!
 ```
 
 - Run `pytyon -m bitsandbytes` first to install CUDA integrations:
+
+- It still have this "debug message" after you install CUDA toolkit / added to many environment paths. Seems that it relies on the built library core, and user have no change to rectify.
 
 ```sh
 > python -m bitsandbytes 
@@ -54,7 +65,7 @@ CUDA specs: CUDASpecs(highest_compute_capability=(8, 6), cuda_version_string='12
 PyTorch settings found: CUDA_VERSION=124, Highest Compute Capability: (8, 6).
 To manually override the PyTorch CUDA version please see: https://github.com/TimDettmers/bitsandbytes/blob/main/docs/source/nonpytorchcuda.mdx
 The directory listed in your path is found to be non-existent: \Users\User
-The directory listed in your path is found to be non-existent: \\DESKTOP-3FL13RB
+The directory listed in your path is found to be non-existent: \\DESKTOP-Z114514
 The directory listed in your path is found to be non-existent: PATH=E\x3a\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\venv\Scripts
 The directory listed in your path is found to be non-existent: PROMPT=(venv) $P$G:VIRTUAL_ENV=E\x3a\NOVELAI\stable-diffusion-webui\stable-diffusion-webui\venv:VIRTUAL_ENV_PROMPT=(venv) :_OLD_VIRTUAL_PROMPT=$P$G
 CUDA SETUP: WARNING! CUDA runtime files not found in any environmental path.
@@ -68,7 +79,8 @@ Installation was successful!
 
 - `pip list` should see the `+cu124` stuffs. Now configure the `accelerate`, [kohya implements some of Accelerate.](https://www.reddit.com/r/StableDiffusion/comments/160z10m/how_do_i_do_multi_gpu_lora_training/)
 - You can explictly set the config in CLI stage later. 
-- From [this PR](https://github.com/kohya-ss/sd-scripts/pull/1686), inject `init_method="env://?use_libuv=False"` in `InitProcessGroupKwargs`. Search and replace works.
+- Reminder: Assumed that you are using `pytorch==2.3.1` and NOT facing `libuv` error. See [my workaround](./libuv_torch25_win10.md).
+- *This is the safe single GPU version:*
 
 ```log
 > accelerate config
@@ -86,6 +98,26 @@ What GPU(s) (by id) should be used for training on this machine as a comma-seper
 Do you wish to use FP16 or BF16 (mixed precision)?
 bf16
 accelerate configuration saved at F:\WORKS\HUGGINGFACE\accelerate\default_config.yaml
+```
+
+- This is the multi-gpu version:
+
+```yaml
+compute_environment: LOCAL_MACHINE
+debug: true
+distributed_type: MULTI_GPU
+downcast_bf16: 'no'
+gpu_ids: 0,1
+machine_rank: 0
+main_training_function: main
+mixed_precision: bf16
+num_machines: 1
+num_processes: 2
+same_network: true
+tpu_env: []
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false
 ```
 
 - Now try that guide and inspect the `*.json`. Since the dataset guide has enforced to whole dataset, it may be great to limit the dataset into a small and obvious dataset.
@@ -217,16 +249,14 @@ steps: 100%|██████████████████████�
 
 - I have made some preview via **A1111** (not the kohyas GUI or any script!), there is some changes, but definitely not hitting the "target".
 
-- The real multi-gpu set up can be found in [this issue](https://github.com/kohya-ss/sd-scripts/issues/812) and [this issue](https://github.com/bmaltais/kohya_ss/issues/1915).
+- Reminder: [libuv is pytorch issue!](./libuv_torch25_win10.md)
 
-- `set USE_LIBUV=0` is required for Windows. If the CLI is not effective, just set via system settings.
+- The real multi-gpu set up can be found in [this issue](https://github.com/kohya-ss/sd-scripts/issues/812) and [this issue](https://github.com/bmaltais/kohya_ss/issues/1915).
 
 - Added the "GUI" from [this PR](https://github.com/kohya-ss/sd-scripts/pull/428). 
 
-- Reminder: Inject `init_method="env://?use_libuv=False"` in `InitProcessGroupKwargs`!
-
 ```sh
-SET USE_LIBUV=0 && accelerate launch 
+accelerate launch 
     sdxl_train.py                                                                                                               
     --pretrained_model_name_or_path="F:/NOVELAI/astolfo_mix/sdxl/cmp/x215c-AstolfoMix-24101101-6e545a3.safetensors"             
     --in_json "H:/just_astolfo/meta_lat.json"                                                                                   
@@ -234,16 +264,46 @@ SET USE_LIBUV=0 && accelerate launch
     --output_dir="F:/NOVELAI/astolfo_xl/just_astolfo/model_out"                                                                 
     --log_with=tensorboard                                                                                                      
     --logging_dir="F:/NOVELAI/astolfo_xl/just_astolfo/tensorboard"                                                              
-    --log_prefix=just_astolfo_24120801_                                                                                         
+    --log_prefix=just_astolfo_24121401_                                                                                         
     --save_model_as=safetensors                                                                                                 
     --caption_extension=".txt"                                                                                                  
     --use_8bit_adam                                                                                                             
-    --train_batch_size=1 --learning_rate=1e-5 --max_train_epochs=6                                                              
-    --train_text_encoder                                                                                                        
+    --train_batch_size=1 --learning_rate=1e-5 --max_train_epochs=10                                                             
+    --train_text_encoder --no_half_vae                                                                                          
     --xformers --diffusers_xformers --gradient_checkpointing                                                                    
     --full_bf16 --mixed_precision=bf16 --save_precision=fp16                                                                    
     --enable_bucket --cache_latents                                                                                             
     --save_every_n_epochs=1                                                                                                     
 ```
 
-` master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.`
+- ~~Since I'm not wandb user~~ Open tensorboard in a new cmd window:
+
+- It is basically reading log files, so remember to change `log_prefix` each time.
+
+```log
+> tensorboard --logdir "F:/NOVELAI/astolfo_xl/just_astolfo/tensorboard"
+TensorFlow installation not found - running with reduced feature set.
+Serving TensorBoard on localhost; to expose to the network, use a proxy or pass --bind_all
+TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
+```
+
+## TODO ##
+
+- I have added my progress in [the PR](https://github.com/kohya-ss/sd-scripts/pull/1686), not sure if it must be forced to use the old `venv` like A1111, or I need **WSL** to proceed.
+
+- I'll continue working on `accelerate launch` after completing my other *interrupted tasks* e.g. releasing ["the merge"](../../ch01/rebasin.md) and analysing my very first finetune [(it works, view via tensorboard)](./just_astolfo_24120801_20241210074720.7z).
+
+```log
+[rank0]:   File "C:\Users\User\.conda\envs\khoyas-env\Lib\site-packages\torch\nn\parallel\distributed.py", line 1196, in _ddp_init_helper
+[rank0]:     self.reducer = dist.Reducer(
+[rank0]:                    ^^^^^^^^^^^^^
+[rank0]: RuntimeError: Trying to create tensor with negative dimension -1727503612: [-1727503612]
+```
+
+- Single card is fine. *It is slow, but easy to estimate the scale I can train.*
+
+```log
+2024-12-11 08:25:15 INFO     save trained model as StableDiffusion checkpoint to F:/NOVELAI/astolfo_xl/just_astolfo/model_out\last.safetensors                    train_util.py:4852 
+2024-12-11 08:25:36 INFO     model saved.                                                                                                                          sdxl_train.py:761
+steps: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 62240/62240 [24:38:10<00:00,  1.42s/it, avr_loss=0.104]
+```
