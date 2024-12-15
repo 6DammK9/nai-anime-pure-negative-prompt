@@ -269,7 +269,7 @@ accelerate launch
     --caption_extension=".txt"                                                                                                  
     --use_8bit_adam                                                                                                             
     --train_batch_size=1 --learning_rate=1e-5 --max_train_epochs=10                                                             
-    --train_text_encoder --no_half_vae                                                                                          
+    --train_text_encoder                                                                                                        
     --xformers --diffusers_xformers --gradient_checkpointing                                                                    
     --full_bf16 --mixed_precision=bf16 --save_precision=fp16                                                                    
     --enable_bucket --cache_latents                                                                                             
@@ -306,4 +306,13 @@ TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
 2024-12-11 08:25:15 INFO     save trained model as StableDiffusion checkpoint to F:/NOVELAI/astolfo_xl/just_astolfo/model_out\last.safetensors                    train_util.py:4852 
 2024-12-11 08:25:36 INFO     model saved.                                                                                                                          sdxl_train.py:761
 steps: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 62240/62240 [24:38:10<00:00,  1.42s/it, avr_loss=0.104]
+```
+
+- TTE (Train Text Encoders, `--train_text_encoder`) ON / TTE OFF (UNET only) are having slight difference in resource requirement.
+- It requires around 1GB less VRAM (23 > 22), and around 10% faster. The loss may get 10% lower if you're training with "trained" materials.
+
+```log
+2024-12-15 16:22:20 INFO     save trained model as StableDiffusion checkpoint to F:/NOVELAI/astolfo_xl/just_astolfo/model_out\last.safetensors                    train_util.py:4852
+2024-12-15 16:22:39 INFO     model saved.                                                                                                                          sdxl_train.py:761
+steps: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 62240/62240 [21:00:05<00:00,  1.21s/it, avr_loss=0.106]
 ```
