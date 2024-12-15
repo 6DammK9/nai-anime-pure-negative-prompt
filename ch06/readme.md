@@ -17,7 +17,7 @@
 
 - With a clear and easy guide to follow, all you need is gather some sponser, or just save some earnings to make this with lowest risk. Technology is never mature, you have rights to justify what is correct in science.
 
-- The "toy dataset" will be the 6k images with "Astolfo". Without only little idea on creation (e.g. I only know a little artists / characters / animate series), [knowing the data distribution](https://huggingface.co/tasks/unconditional-image-generation), will help me to identify if the model learn the "denoising process" (not "draw thing") effectively. There is **close to no correlation** between the low level training loss (L2 / Huber) and abstract validation loss (CCIP / ImageReward / "XP" loss) without tedious model evaluation (image generation). Therefore, such vanilla approach, with "common tools", [and a "general" magic number](https://www.stablediffusion-cn.com/sd/sd-knowledge/1761.html) will help me to focus the "AI" side of this training task.
+- The "toy dataset" will be the 6k images with "Astolfo". Without only little idea on creation (e.g. I only know a little artists / characters / animate series), [knowing the data distribution](https://huggingface.co/tasks/unconditional-image-generation), will help me to identify if the model learn the "denoising process" (not "draw thing") effectively. There is **close to no correlation** between the low level training loss (L2 / Huber) and abstract validation loss (CCIP / ImageReward / "XP" loss as fetish score) without tedious model evaluation (image generation). Therefore, such vanilla approach, with "common tools", [and a "general" magic number](https://www.stablediffusion-cn.com/sd/sd-knowledge/1761.html) will help me to focus the "AI" side of this training task.
 
 - Finally, here is my hypothesis: Model merging, as a subcategory of [PEFT](https://huggingface.co/docs/peft/developer_guides/model_merging), if have a [proper merge](../ch01/merge.md#blue-pill-but-in-academic-paper), you can iterlate between both "merging" and "finetuning" to archieve the learning task with huge efficiency. Instead, although lack of academic discussion, it is hard to finetune from a *burnt model*, even a [burnt distillated model](https://www.reddit.com/r/StableDiffusion/comments/1fuukwz/fluxdevdedistill_an_undistilled_version_of_flux/?rdt=33807), meanwhile finetuning from pretrianed model (the SDXL 1.0) will be inefficient. 
 
@@ -38,3 +38,27 @@
 - Lore of the "Best-effort" (it ends up in this [HF discussion post](https://huggingface.co/posts/julien-c/388331843225875) after their discord server is blown): 
 
 ![24121401.jpg](./img/24121401.jpg)
+
+## Finetune findings ##
+
+![24121501.jpg](./img/24121501.jpg)
+
+- *Since most of my recipe are models finetuned from the same dataset (with different tags)*, it converges quite fast. Astolfo got his facial features back within 1EP.
+
+- **Training loss (L2 / Huber) has no correlation to image content.** It is fine when it doesn't rise / drop drastically. [From common practice](https://www.stablediffusion-cn.com/sd/sd-knowledge/1761.html), 0.1 is a good reference. The training loss here applies to the inference for each denoising step, under the MDP chain inside the SD model. Advanced validation loss are required, *or just be responsible to art and be the first audience*.
+
+- TTE off may have lower loss, althouth it is close to meaningless to end result.
+
+### When TTE is off ###
+
+- If the concept is recognizable already (usually incomplete, e.g. Astolfo vs generic pink hair and slight hair intake), styles / details can be recovered well.
+
+- Most unrelated but recognizable concept are mostly untouched. Cars, other characters, costumes, locations, are having style change only.
+
+- However, if the concept is unrecognizable before train, it won't be effective. For example, some characters, artists, NSFW concepts, were wiped out while merging.
+
+### When TTE is on ###
+
+- It will be effective when the concept is unrecognizable before train. For example, *Astolfo is a boy now*.
+
+- However, with improper parameter and data distribution, concepts recognizable before train can be forgotten. Characters, costumes may survive, but cars, locations may be gone.
