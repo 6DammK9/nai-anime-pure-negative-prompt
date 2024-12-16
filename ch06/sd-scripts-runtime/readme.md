@@ -20,7 +20,7 @@ cd sd-scripts
 - Instead of `venv`, I make another `conda` environment.
 
 - **Pay attention of** `torch==2.3.1` (must be < 2.4 for winodws. [Download page](https://pytorch.org/get-started/previous-versions/#v231)). 
-- I have experienced [this issue / PR](https://github.com/kohya-ss/sd-scripts/pull/1686) for 2.5.0. It requires [dedicated workaround](./libuv_torch25_win10.md), **requires code change in pytorch.** See next session if interested.
+- I have experienced [this issue / PR](https://github.com/kohya-ss/sd-scripts/pull/1686) for 2.5.0. It requires [dedicated workaround](./libuv_torch25_win10.md) and [this workaround](./accelerator_gloo.md), **requires code change in pytorch.** See next session if interested.
 
 ```sh
 conda create -n khoyas-env python=3.12
@@ -79,7 +79,7 @@ Installation was successful!
 
 - `pip list` should see the `+cu124` stuffs. Now configure the `accelerate`, [kohya implements some of Accelerate.](https://www.reddit.com/r/StableDiffusion/comments/160z10m/how_do_i_do_multi_gpu_lora_training/)
 - You can explictly set the config in CLI stage later. 
-- Reminder: Assumed that you are using `pytorch==2.3.1` and NOT facing `libuv` error. See [my workaround](./libuv_torch25_win10.md).
+- Reminder: Assumed that you are using `pytorch==2.3.1` and NOT facing `libuv` error. See [my workaround](./libuv_torch25_win10.md) and [this workaround](./accelerator_gloo.md).
 - *This is the safe single GPU version:*
 
 ```log
@@ -249,7 +249,7 @@ steps: 100%|██████████████████████�
 
 - I have made some preview via **A1111** (not the kohyas GUI or any script!), there is some changes, but definitely not hitting the "target".
 
-- Reminder: [libuv is pytorch issue!](./libuv_torch25_win10.md)
+- Reminder: [libuv is pytorch issue!](./libuv_torch25_win10.md)! [backend is another torch issue!](./accelerator_gloo.md)
 
 - The real multi-gpu set up can be found in [this issue](https://github.com/kohya-ss/sd-scripts/issues/812) and [this issue](https://github.com/bmaltais/kohya_ss/issues/1915).
 
@@ -291,7 +291,7 @@ TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
 
 - I have added my progress in [the PR](https://github.com/kohya-ss/sd-scripts/pull/1686), not sure if it must be forced to use the old `venv` like A1111, or I need **WSL** to proceed.
 
-- I'll continue working on `accelerate launch` after completing my other *interrupted tasks* e.g. releasing ["the merge"](../../ch01/rebasin.md) and analysing my very first finetune [(it works, view via tensorboard)](./just_astolfo_24120801_20241210074720.7z).
+- [m3.py](./m3.py) serves for PoC.
 
 ```log
 [rank0]:   File "C:\Users\User\.conda\envs\khoyas-env\Lib\site-packages\torch\nn\parallel\distributed.py", line 1196, in _ddp_init_helper
@@ -307,6 +307,14 @@ TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
 2024-12-11 08:25:36 INFO     model saved.                                                                                                                          sdxl_train.py:761
 steps: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 62240/62240 [24:38:10<00:00,  1.42s/it, avr_loss=0.104]
 ```
+
+- The weirdist things is **train without UNET** works! Hint: `--learning_rate=0 --learning_rate_te1=1e-5 --learning_rate_te2=1e-5`
+
+- The `loss=nan` is becasuse of bad `lr`, it can still reach `0.100`.
+
+![24120601.jpg](./img/24121601.jpg)
+
+## Findings on TTE ##
 
 - TTE (Train Text Encoders, `--train_text_encoder`) ON / TTE OFF (UNET only) are having slight difference in resource requirement.
 - It requires around 1GB less VRAM (23 > 22), and around 10% faster. The loss may get 10% lower if you're training with "trained" materials.
