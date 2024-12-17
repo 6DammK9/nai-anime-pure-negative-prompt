@@ -30,7 +30,7 @@ PS H:\danbooru2024-webp-4Mpixel> node
 Welcome to Node.js v20.15.0.
 Type ".help" for more information.
 > const fs = require('fs');
-> console.log(fs.readdirSync("./khoyas_finetune").length);
+> console.log(fs.readdirSync("./kohyas_finetune").length);
 16010020
 ```
 

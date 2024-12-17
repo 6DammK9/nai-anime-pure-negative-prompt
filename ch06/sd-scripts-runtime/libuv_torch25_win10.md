@@ -6,7 +6,7 @@
 
 ```log
 > accelerate launch pp.py
-File "C:\Users\User\.conda\envs\khoyas-env\Lib\site-packages\torch\distributed\elastic\rendezvous\static_tcp_rendezvous.py", line 70, in next_rendezvous
+File "C:\Users\User\.conda\envs\kohyas-env\Lib\site-packages\torch\distributed\elastic\rendezvous\static_tcp_rendezvous.py", line 70, in next_rendezvous
 self._store = TCPStore(  # type: ignore[call-arg]
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 RuntimeError: use_libuv was requested but PyTorch was build without libuv support
@@ -16,7 +16,7 @@ RuntimeError: use_libuv was requested but PyTorch was build without libuv suppor
 
 ```log
 > accelerate launch pp.py
-File "C:\Users\User\.conda\envs\khoyas-env\Lib\site-packages\torch\distributed\elastic\rendezvous\static_tcp_rendezvous.py", line 70, in next_rendezvous
+File "C:\Users\User\.conda\envs\kohyas-env\Lib\site-packages\torch\distributed\elastic\rendezvous\static_tcp_rendezvous.py", line 70, in next_rendezvous
 self._store = TCPStore(  # type: ignore[call-arg]
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 RuntimeError: unmatched '}' in format string
@@ -61,9 +61,9 @@ return PrefixStore(f"/worker/attempt_{attempt}", tcp_store)
 
 ```log
 > accelerate launch pp.py
-C:\Users\User\.conda\envs\khoyas-env\Lib\site-packages\transformers\utils\generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+C:\Users\User\.conda\envs\kohyas-env\Lib\site-packages\transformers\utils\generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
   _torch_pytree._register_pytree_node(
-C:\Users\User\.conda\envs\khoyas-env\Lib\site-packages\transformers\utils\generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+C:\Users\User\.conda\envs\kohyas-env\Lib\site-packages\transformers\utils\generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
   _torch_pytree._register_pytree_node(
 W1210 01:07:59.483000 30124 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
 Using RTX 3090 or 4000 series which doesn't support faster communication speedups. Ensuring P2P and IB communications are disabled.

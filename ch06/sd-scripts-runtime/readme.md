@@ -23,8 +23,8 @@ cd sd-scripts
 - I have experienced [this issue / PR](https://github.com/kohya-ss/sd-scripts/pull/1686) for 2.5.0. It requires [dedicated workaround](./libuv_torch25_win10.md) and [this workaround](./accelerator_gloo.md), **requires code change in pytorch.** See next session if interested.
 
 ```sh
-conda create -n khoyas-env python=3.12
-conda activate khoyas-env
+conda create -n kohyas-env python=3.12
+conda activate kohyas-env
 
 pip install torch==2.3.1 torchvision --index-url https://download.pytorch.org/whl/cu124
 pip install xformers --index-url https://download.pytorch.org/whl/cu124
@@ -48,7 +48,7 @@ pip install bitsandbytes==0.45.0
 - Install `0.43.0` or even the "Windows friendly" `0.41.0` will have this issue.
 
 ```logs
-C:\Users\User\.conda\envs\khoyas-env did not contain ['cudart64_110.dll', 'cudart64_12.dll'] as expected!
+C:\Users\User\.conda\envs\kohyas-env did not contain ['cudart64_110.dll', 'cudart64_12.dll'] as expected!
 ```
 
 - Run `pytyon -m bitsandbytes` first to install CUDA integrations:
@@ -135,7 +135,7 @@ Copying image-caption pairs: 100%|███████████████�
 - [Official guide](https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_README-ja.md) use `meta_cap_dd.json` and `meta_lat.json`, so I'm going to follow them.
 
 ```log
-> python ./finetune/merge_dd_tags_to_metadata.py "H:/just_astolfo/khoyas_finetune" "H:/just_astolfo/meta_cap_dd.json"
+> python ./finetune/merge_dd_tags_to_metadata.py "H:/just_astolfo/kohyas_finetune" "H:/just_astolfo/meta_cap_dd.json"
 2024-12-08 14:44:59 INFO     found 6224 images.                                         merge_dd_tags_to_metadata.py:23                    
                     INFO     new metadata will be created /                             merge_dd_tags_to_metadata.py:33                             
 新しいメタデータファイルが作成されます
@@ -146,7 +146,7 @@ Copying image-caption pairs: 100%|███████████████�
 ```
 
 ```log
-> python ./finetune/merge_dd_tags_to_metadata.py "H:/e621_newest-webp-4Mpixel/khoyas_finetune" "H:/e621_newest-webp-4Mpixel/meta_cap_dd.json"
+> python ./finetune/merge_dd_tags_to_metadata.py "H:/e621_newest-webp-4Mpixel/kohyas_finetune" "H:/e621_newest-webp-4Mpixel/meta_cap_dd.json"
 
 2024-12-08 15:17:51 INFO     found 4441660 images.                                      merge_dd_tags_to_metadata.py:23                    
                     INFO     new metadata will be created /                             merge_dd_tags_to_metadata.py:33
@@ -158,7 +158,7 @@ Copying image-caption pairs: 100%|███████████████�
 ```
 
 ```log
-> python ./finetune/merge_dd_tags_to_metadata.py "H:/danbooru2024-webp-4Mpixel/khoyas_finetune" "H:/danbooru2024-webp-4Mpixel/meta_cap_dd.json"
+> python ./finetune/merge_dd_tags_to_metadata.py "H:/danbooru2024-webp-4Mpixel/kohyas_finetune" "H:/danbooru2024-webp-4Mpixel/meta_cap_dd.json"
 
 2024-12-08 15:20:32 INFO     found 8005010 images.                                      merge_dd_tags_to_metadata.py:23
                     INFO     new metadata will be created /                             merge_dd_tags_to_metadata.py:33
@@ -176,7 +176,7 @@ Copying image-caption pairs: 100%|███████████████�
 - I prefer [madebyollin/sdxl-vae-fp16-fix](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix) if this script is safe to use. `batch_size` is somewhat optimal in 4 even it doesn't use many VRAM. It is tied with IOPS with the disk.
 
 ```log
-> python ./finetune/prepare_buckets_latents.py "H:/just_astolfo/khoyas_finetune" "H:/just_astolfo/meta_cap_dd.json" "H:/just_astolfo/meta_lat.json" "E:/NOVELAI/stable-diffusion-webui/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+> python ./finetune/prepare_buckets_latents.py "H:/just_astolfo/kohyas_finetune" "H:/just_astolfo/meta_cap_dd.json" "H:/just_astolfo/meta_lat.json" "E:/NOVELAI/stable-diffusion-webui/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
 
 get_preferred_device() -> cuda
 2024-12-08 15:51:42 INFO     found 6224 images. prepare_buckets_latents.py:70                    
@@ -229,7 +229,7 @@ get_preferred_device() -> cuda
 accelerate launch --num_cpu_threads_per_process 8 sdxl_train.py
     --pretrained_model_name_or_path="F:/NOVELAI/astolfo_mix/sdxl/cmp/x215c-AstolfoMix-24101101-6e545a3.safetensors"
     --in_json "H:/just_astolfo/meta_lat.json"
-    --train_data_dir="H:/just_astolfo/khoyas_finetune"
+    --train_data_dir="H:/just_astolfo/kohyas_finetune"
     --output_dir="F:/NOVELAI/astolfo_xl/just_astolfo/finetune_job"
     --save_model_as=safetensors
     --caption_extension=".txt"
@@ -260,7 +260,7 @@ accelerate launch
     sdxl_train.py                                                                                                               
     --pretrained_model_name_or_path="F:/NOVELAI/astolfo_mix/sdxl/cmp/x215c-AstolfoMix-24101101-6e545a3.safetensors"             
     --in_json "H:/just_astolfo/meta_lat.json"                                                                                   
-    --train_data_dir="H:/just_astolfo/khoyas_finetune"                                                                          
+    --train_data_dir="H:/just_astolfo/kohyas_finetune"                                                                          
     --output_dir="F:/NOVELAI/astolfo_xl/just_astolfo/model_out"                                                                 
     --log_with=tensorboard                                                                                                      
     --logging_dir="F:/NOVELAI/astolfo_xl/just_astolfo/tensorboard"                                                              
@@ -294,7 +294,7 @@ TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
 - [m3.py](./m3.py) serves for PoC.
 
 ```log
-[rank0]:   File "C:\Users\User\.conda\envs\khoyas-env\Lib\site-packages\torch\nn\parallel\distributed.py", line 1196, in _ddp_init_helper
+[rank0]:   File "C:\Users\User\.conda\envs\kohyas-env\Lib\site-packages\torch\nn\parallel\distributed.py", line 1196, in _ddp_init_helper
 [rank0]:     self.reducer = dist.Reducer(
 [rank0]:                    ^^^^^^^^^^^^^
 [rank0]: RuntimeError: Trying to create tensor with negative dimension -1727503612: [-1727503612]

@@ -5,12 +5,12 @@ from tqdm.auto import tqdm
 from tqdm.contrib.concurrent import thread_map
 
 # File structure should be "image/FFFF.tar/FFFFFFF.png" > "image/FFFFFFF.png"
-# Fine Tune in khoyas_ss is a bit strict in methodology.
+# Fine Tune in kohyas_ss is a bit strict in methodology.
 # https://www.reddit.com/r/StableDiffusion/comments/163097n/getting_started_fine_tuning/?rdt=34904
 
 SRC_TAR_FOLDER_WEBP = "H:/test/images"
 SRC_TAR_FOLDER_TXT = "H:/test/tags"
-DST_TAR_FOLDER = "H:/danbooru2024-webp-4Mpixel/khoyas_finetune_0000"
+DST_TAR_FOLDER = "H:/danbooru2024-webp-4Mpixel/kohyas_finetune_0000"
 
 TAR_COUNT = 10 # int(1e3)
 

@@ -135,7 +135,7 @@ Files written: 1000
 
 ![24120501.JPG](img/24120501.JPG)
 
-- The [preferred trainer "khoyas-ss"](https://github.com/kohya-ss/sd-scripts) requires dedicated `meta_lat.json` with caption side preprocessing, we extract all the `*.tar` into the same directory. Since the `id.*` are aligned (**parquet Row ID = file name**), it will be fine.
+- The [preferred trainer "kohyas-ss"](https://github.com/kohya-ss/sd-scripts) requires dedicated `meta_lat.json` with caption side preprocessing, we extract all the `*.tar` into the same directory. Since the `id.*` are aligned (**parquet Row ID = file name**), it will be fine.
 
 - I have made some optimization and parallelization on the codes, but the performance boost is only little, meanwhile you cannot scale down the process (always full scale).
 
@@ -173,7 +173,7 @@ PS H:\danbooru2024-webp-4Mpixel> node
 Welcome to Node.js v20.15.0.
 Type ".help" for more information.
 > const fs = require('fs');
-> console.log(fs.readdirSync("./khoyas_finetune").length);
+> console.log(fs.readdirSync("./kohyas_finetune").length);
 16010020
 ```
 
@@ -213,7 +213,7 @@ PS H:\e621_newest-webp-4Mpixel> node
 Welcome to Node.js v20.15.0.
 Type ".help" for more information.
 > const fs = require('fs');
-> console.log(fs.readdirSync("./khoyas_finetune").length);
+> console.log(fs.readdirSync("./kohyas_finetune").length);
 8883320
 ```
 

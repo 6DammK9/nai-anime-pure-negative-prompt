@@ -6,9 +6,9 @@ from pathlib import Path
 from tqdm import tqdm
 import shutil
 
-FULL_DATASET = "H:/danbooru2024-webp-4Mpixel/khoyas_finetune"
+FULL_DATASET = "H:/danbooru2024-webp-4Mpixel/kohyas_finetune"
 
-JUST_ASTOLFO = "H:/just_astolfo/khoyas_finetune"
+JUST_ASTOLFO = "H:/just_astolfo/kohyas_finetune"
 
 EXT_WEBP = ".webp"
 EXT_TXT = ".txt"

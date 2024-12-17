@@ -35,7 +35,7 @@ for row in tqdm(df.itertuples(), desc="Extracting Tags", position=0):
     subfolder = str(int(media_asset_id % 1e3)).zfill(4)
     tfp = "{}/{}/{}.txt".format(TAGS_FOLDER, subfolder, media_asset_id)
     
-    #In 2412, khoyas-ss should handle well
+    #In 2412, kohyas-ss should handle well
     #tag = row.tag_string.replace(" ",",")
     rearranged_tags = [row.tag_string_character, row.tag_string_copyright, row.tag_string_artist, row.tag_string_general, row.tag_string_meta]
     must_exist = [tag for tag in rearranged_tags if tag]

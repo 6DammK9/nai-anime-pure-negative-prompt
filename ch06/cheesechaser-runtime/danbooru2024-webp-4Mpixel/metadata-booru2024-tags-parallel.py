@@ -38,7 +38,7 @@ def dump_tags(row):
     #This is never in ascending order! The actual df is in chronological order! You can find the hint in FFFF.json.
     danbooru_post_id = int(row.Index)
 
-    #In 2412, khoyas-ss should handle well
+    #In 2412, kohyas-ss should handle well
     #tag = row.tag_string.replace(" ",",")
     rearranged_tags = [row.tag_string_character, row.tag_string_copyright, row.tag_string_artist, row.tag_string_general, row.tag_string_meta]
     must_exist = [tag for tag in rearranged_tags if tag]
