@@ -42,6 +42,6 @@
 
 ## Therefore SD2.1 was an unfortunate. ##
 
-- Community got it wrong, meanwhile it was too late to rectify which SDXL came and put in half for almost a year.
+- Community got it wrong, meanwhile it was too late to rectify which SDXL came and put in halt for almost a year.
 
 - However even the trainer / runtime vpred is fixed, **the optimal training streadgy is still missing**. It is still a risky move even the theory sounds good.
