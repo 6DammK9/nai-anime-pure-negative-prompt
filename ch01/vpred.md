@@ -14,13 +14,15 @@
 
 - vpred was initially proposed in [SD2 in 2211](https://huggingface.co/stabilityai/stable-diffusion-2-base/commit/d65c7580f058a24da4fee25ce948c25147d3bd1f)
 
-- vpred was introduced to [kohyas trainer](https://github.com/kohya-ss/sd-scripts/pull/308) in 2304. **However the "SNR + 1" part is missing.**
+- The [Min-SNR paper](https://arxiv.org/abs/2303.09556) was published in 2303, mentioning the "SNR + 1" issue, **without code implementation.**
+
+- vpred was introduced to [kohyas trainer](https://github.com/kohya-ss/sd-scripts/pull/308) in 2304. **The "SNR + 1" part was still missing.**
 
 - Waifu Diffusion 1.5 series was trained at that period, around 2305. [Beta 2](https://cafeai.notion.site/WD-1-5-Beta-2-Release-Notes-2852db5a9cdd456ba52fc5730b91acfd) and [Beta 3](https://saltacc.notion.site/WD-1-5-Beta-3-Release-Notes-1e35a0ed1bb24c5b93ec79c45c217f63) was an epic fail. 
 
 - The precide date can be traced from HF commit log. [Beta2](https://huggingface.co/waifu-diffusion/wd-1-5-beta2/commit/552da11cf44c9d35652e6de9677a90125a3d5226), [Beta3](https://huggingface.co/waifu-diffusion/wd-1-5-beta3/commit/bf201b89c6b477316c04b672604e8c18a37d3d86)
 
-- The "SNR + 1" issue was [spotted in 2307](https://github.com/kohya-ss/sd-scripts/issues/673), and then [fixed in 2311](https://github.com/kohya-ss/sd-scripts/pull/934/files). At that time, [SDXL was released in 2307](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/commit/f298da3c058bd8f1f1c62f3ecfa775244a243897) and the fix didn't get major attention (SDXL has no vpred).
+- The "SNR + 1" issue was [spotted in 2307](https://github.com/kohya-ss/sd-scripts/issues/673), [introduced in the paper repo in 2309](https://github.com/TiankaiHang/Min-SNR-Diffusion-Training/commit/46d0f16117529854da1630ccd316da373245cf97), and [the trainer fixed in 2311](https://github.com/kohya-ss/sd-scripts/pull/934/files). At that time, [SDXL was released in 2307](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/commit/f298da3c058bd8f1f1c62f3ecfa775244a243897) and the fix didn't get major attention (SDXL has no vpred).
 
 - Just before the spot of the issue, [most major SD2.1 finetune (Realgar V2)](https://civitai.com/models/70713?modelVersionId=111505) was released / merged and lost most interest.
 
