@@ -12,7 +12,7 @@
 
 ## History of the issue (chronological order) ##
 
-- vpred was initially proposed in [SD2 in 2211](https://huggingface.co/stabilityai/stable-diffusion-2-base/commit/d65c7580f058a24da4fee25ce948c25147d3bd1f)
+- vpred was initially applied in [SD2 in 2211](https://huggingface.co/stabilityai/stable-diffusion-2-base/commit/d65c7580f058a24da4fee25ce948c25147d3bd1f). *All SD2 / 2.1 models will have vpred enforced since then, until SDXL.*
 
 - The [Min-SNR paper](https://arxiv.org/abs/2303.09556) was published in 2303, mentioning the "SNR + 1" issue, **without code implementation.**
 
@@ -34,7 +34,7 @@
 >
 > Merges are fine against Fluffusion R3. Anything else that isn't v-prediction or zeroSNR are very cringe.
 
-- Also, [Pony v5.5](https://civitai.com/models/95367/pony-diffusion-v5), [the one before v6](../ch02/pony_sd.md), was trained and released in 2310, which is probably have the trainer fixed, and having plausible results. *Yet there was close to no attention on SDXL vpred.*
+- Also, [Pony v5.5](https://civitai.com/models/95367/pony-diffusion-v5), [the one before v6](../ch02/pony_sd.md), was trained and released in 2310, which is probably **NOT** have the trainer fixed either, even having plausible results. *Yet there was close to no attention on SDXL vpred.*
 
 - More trainers were included this fix: [Naifu Diffusion in 2402](https://github.com/Mikubill/naifu/blob/main/modules/scheduler_utils.py), and [Neurosis in 2404](https://github.com/neggles/neurosis/commit/657531c7ab785684d331d1b03a3df406e43dc0c8).
 
