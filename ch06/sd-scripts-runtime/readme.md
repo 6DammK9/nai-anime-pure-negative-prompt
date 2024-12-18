@@ -289,7 +289,7 @@ TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
 
 ## TODO ##
 
-- I have added my progress in [the PR](https://github.com/kohya-ss/sd-scripts/pull/1686), not sure if it must be forced to use the old `venv` like A1111, or I need **WSL** to proceed.
+- I have added my progress in [the PR](https://github.com/kohya-ss/sd-scripts/pull/1686), not sure if it must be forced to use the old `venv` like A1111, or I need **WSL** to proceed, [at least someone works](https://github.com/kohya-ss/sd-scripts/issues/1721).
 
 - [m3.py](./m3.py) serves for PoC.
 
