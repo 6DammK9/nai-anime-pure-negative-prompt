@@ -9,7 +9,7 @@ df1 = pd.read_parquet(PARQUET_OLD)
 df2 = pd.read_parquet(PARQUET_NEW)
 
 df11 = df1[df1["is_deleted"] == "f"]
-df21 = df2[df2["id"] < 5000000]
+df21 = df2 #[df2["id"] < 5000000] #Don't know why cap 5M
 
 for row in df11.itertuples():
     print(row.Index)
@@ -22,8 +22,9 @@ for row in df21.itertuples():
     break
 
 df3 = pd.DataFrame(data={
-    'id': df1["id"].to_list() + df2["id"].to_list(), 
-    'tag_string': [x.replace(" ",", ") for x in df1["tag_string"].to_list()] + [", ".join(x) for x in df2["tags"].to_list()], 
+    'id': df11["id"].to_list() + df21["id"].to_list(), 
+    'rating': df11["rating"].to_list() + df21["rating"].to_list(), 
+    'tag_string': [x.replace(" ",", ") for x in df11["tag_string"].to_list()] + [", ".join(x) for x in df21["tags"].to_list()], 
 })
 
 # Follow the trend.

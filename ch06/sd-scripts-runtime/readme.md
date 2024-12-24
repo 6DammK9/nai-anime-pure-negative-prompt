@@ -136,7 +136,21 @@ Copying image-caption pairs: 100%|███████████████�
 
 - Requried by trainer. It may provide random crop by default, it requires you crop the image to fit the VAE first. Therefore, prepare ARB latent is recommended.
 
-- [Official guide](https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_README-ja.md) use `meta_cap_dd.json` and `meta_lat.json`, so I'm going to follow them.
+- Currently the fastest way is to run [metadata-booru2024-ddtag-parallel.py](../cheesechaser-runtime/danbooru2024-webp-4Mpixel/metadata-booru2024-ddtag-parallel.py) and [metadata-e621-ddtag-parallel.py](../cheesechaser-runtime/e621_newest-webp-4Mpixel/metadata-e621-ddtag-parallel.py). *It runs silently but it completes within 10 minutes.* *It also splits in 4 for later use.*
+
+```log
+> python metadata-booru2024-ddtag-parallel.py
+8005010it [00:26, 296821.16it/s]
+Tags found: 8005010
+Dump complete.
+
+> python metadata-e621-ddtag-parallel.py
+5187777it [00:16, 311676.61it/s]
+Tags found: 5187777
+Dump complete.
+```
+
+- [Official guide](https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_README-ja.md) use `meta_cap_dd.json` and `meta_lat.json`, ~~so I'm going to follow them~~ **They are slow and consider my version above.**
 
 ```log
 > python ./finetune/merge_dd_tags_to_metadata.py "H:/just_astolfo/kohyas_finetune" "H:/just_astolfo/meta_cap_dd.json"
@@ -144,7 +158,7 @@ Copying image-caption pairs: 100%|███████████████�
                     INFO     new metadata will be created /                             merge_dd_tags_to_metadata.py:33                             
 新しいメタデータファイルが作成されます
                     INFO     merge tags to metadata json.                               merge_dd_tags_to_metadata.py:36
-100%|███████████████████████████████████████████████████████████████████████████| 6224/6224 [00:01<00:00, 5094.49it/s] 
+100%|███████████████████████████████████████████████████████████████████████████|  6224/6224 [00:01<00:00, 5094.49it/s] 
 2024-12-08 14:45:01 INFO     writing metadata: H:/just_astolfo/meta_cap_dd.json         merge_dd_tags_to_metadata.py:53                    
                     INFO     done!                                                      merge_dd_tags_to_metadata.py:56
 ```
@@ -152,36 +166,38 @@ Copying image-caption pairs: 100%|███████████████�
 ```log
 > python ./finetune/merge_dd_tags_to_metadata.py "H:/e621_newest-webp-4Mpixel/kohyas_finetune" "H:/e621_newest-webp-4Mpixel/meta_cap_dd.json"
 
-2024-12-08 15:17:51 INFO     found 4441660 images.                                      merge_dd_tags_to_metadata.py:23                    
-                    INFO     new metadata will be created /                             merge_dd_tags_to_metadata.py:33
+2024-12-08 15:17:51 INFO     found 4441660 images.                                              merge_dd_tags_to_metadata.py:23                    
+                    INFO     new metadata will be created /                                     merge_dd_tags_to_metadata.py:33
 新しいメタデータファイルが作成されます
-5%|███▍                                                                 | 223765/4441660 [21:54<6:55:24, 169.22it/s]
-100%|████████████████████████████████████████████████████████████████████| 4441660/4441660 [7:03:24<00:00, 174.84it/s]
+5%|███▍                                                                          |  223765/4441660 [21:54<6:55:24, 169.22it/s]
+100%|█████████████████████████████████████████████████████████████████████████████| 4441660/4441660 [7:03:24<00:00, 174.84it/s]
 2024-12-08 22:21:15 INFO     writing metadata: H:/e621_newest-webp-4Mpixel/meta_cap_dd.json     merge_dd_tags_to_metadata.py:53
-2024-12-08 22:21:52 INFO     done!                                                      merge_dd_tags_to_metadata.py:5
+2024-12-08 22:21:52 INFO     done!                                                              merge_dd_tags_to_metadata.py:56
 ```
 
 ```log
 > python ./finetune/merge_dd_tags_to_metadata.py "H:/danbooru2024-webp-4Mpixel/kohyas_finetune" "H:/danbooru2024-webp-4Mpixel/meta_cap_dd.json"
 
-2024-12-08 15:20:32 INFO     found 8005010 images.                                      merge_dd_tags_to_metadata.py:23
-                    INFO     new metadata will be created /                             merge_dd_tags_to_metadata.py:33
+2024-12-08 15:20:32 INFO     found 8005010 images.                                              merge_dd_tags_to_metadata.py:23
+                    INFO     new metadata will be created /                                     merge_dd_tags_to_metadata.py:33
 新しいメタデータファイルが作成されます
-2%|█▋                                                                  | 192542/8005010 [19:13<13:42:23, 158.33it/s]
-100%|███████████████████████████████████████████████████████████████████| 8005010/8005010 [13:05:21<00:00, 169.88it/s]
+2%|█▋                                                                           |  192542/8005010 [19:13<13:42:23, 158.33it/s]
+100%|████████████████████████████████████████████████████████████████████████████| 8005010/8005010 [13:05:21<00:00, 169.88it/s]
 2024-12-09 04:25:53 INFO     writing metadata: H:/danbooru2024-webp-4Mpixel/meta_cap_dd.json    merge_dd_tags_to_metadata.py:53
-2024-12-09 04:27:01 INFO     done!                                                      merge_dd_tags_to_metadata.py:56
+2024-12-09 04:27:01 INFO     done!                                                              merge_dd_tags_to_metadata.py:56
 ```
 
 - To "prepare ARB latents", **it reuires a SDXL or VAE model to run.** 
 
-- Noticed by community members, this feature has been abondened for a while, and [has no support since FLUX.1](https://github.com/kohya-ss/sd-scripts/issues/1542), and the reddit post was using SD1.5 which leaves SDXL in great unknown.
+- Currently there are [no official support from FLUX.1](https://github.com/kohya-ss/sd-scripts/issues/1542), meanwhile the developer are active in `sd3` branch. See next session for details.
 
-- I prefer [madebyollin/sdxl-vae-fp16-fix](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix) if this script is safe to use. `batch_size` is somewhat optimal in 4 even it doesn't use many VRAM. It is tied with IOPS with the disk.
+- For SDXL, I prefer [madebyollin/sdxl-vae-fp16-fix](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix) if this script is safe to use. `batch_size` is somewhat optimal in 4 even it doesn't use many VRAM. It is tied with IOPS with the disk.
 
-- For `sd3` branch, see next session for details.
+- For 1k to 100k scale, I think you can ignore next sentence ~~I just made my own scripts and didn't expose any CLI options (I'll post the result to HF instead).~~ **For large datasets, most programming techniques won't work. You must consider a lot for scalable and optimization.** See next session for how I alter the process.
 
 - Make sure you have readed the suggested resolution for the model. For example, applying 1024x1024 in SD2.1 will require even more VRAM than SDXL, even it is somewhat 4x in size difference.
+
+- This is the straightforward approach for "not large" dataset. *Simple.*
 
 ```log
 > python ./finetune/prepare_buckets_latents.py "F:/just_astolfo/kohyas_finetune" "F:/just_astolfo/meta_cap_dd.json" "F:/just_astolfo/meta_lat.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.afetensors" --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
@@ -222,7 +238,21 @@ get_preferred_device() -> cuda
 
 ```
 
-### Prepare buckets in parallel ###
+### Prepare latents for large dataset ###
+
+- First, I need to split the process for multiple GPUs. Currently kohyas script does not have this consideration. Given that `*.npz`, `*.webp`, `*.txt` are in `id` already, I ~~can~~ need to skip all the costly I/O operation.
+
+- Strongly recommended to generate from source by [metadata-booru2024-ddtag-parallel.py](../cheesechaser-runtime/danbooru2024-webp-4Mpixel/metadata-booru2024-ddtag-parallel.py) and [metadata-e621-ddtag-parallel.py](../cheesechaser-runtime/e621_newest-webp-4Mpixel/metadata-e621-ddtag-parallel.py) (**10 minutes**), or you can eiter split the file directly (**6 hours**).
+
+```log
+F:\WORKS\bigjson>node --max-old-space-size=131072 split_meta_lat.js
+loadJson...
+ ████████████████████████████████████████ 100% | ETA: 0s | 8005010/8005010
+ ████████████████████████████████████████ 100% | ETA: 0s | 12007393/12007393
+ ████████████████████████████████████████ 100% | ETA: 0s | 12007219/12007219
+ ████████████████████████████████████████ 100% | ETA: 0s | 12006625/12006625
+ ████████████████████████████████████████ 100% | ETA: 0s | 12008827/12008827
+```
 
 -  Modify [prepare_buckets_latents.py](https://github.com/kohya-ss/sd-scripts/blob/sd3/finetune/prepare_buckets_latents.py#L115) otherwise `*.npz` will not be saved. 
 
@@ -232,7 +262,7 @@ latents_caching_strategy = strategy_sd.SdSdxlLatentsCachingStrategy(False, True,
 latents_caching_strategy.cache_batch_latents(vae, bucket, args.flip_aug, args.alpha_mask, False)
 ```
 
-- Copy and modified the code as `prepare_buckets_latents_v2.py` to run this job in parallel. It will be useful for huge datasets with multiple GPUs.
+- Copy and modified the code as `prepare_buckets_latents_v2.py` to run this job in parallel. It will be useful for huge datasets with multiple GPUs. **It also listing the directory and use the provided JSON file as it is.**
 
 - `sd3` branch need a tiny fix for skipping exist `*.npz` (useful when machine is broken down)
 
@@ -243,16 +273,30 @@ if args.skip_existing:
 ```
 
 ```sh
-python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd.json" "F:/e621_newest-webp-4Mpixel/meta_lat_sd1_0.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:0" --split_mod 0 --split_base 4 --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16 
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_0.json" "F:/e621_newest-webp-4Mpixel/meta_lat_0.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:0" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16 
 
-python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd.json" "F:/e621_newest-webp-4Mpixel/meta_lat_sd1_1.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:1" --split_mod 1 --split_base 4 --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_1.json" "F:/e621_newest-webp-4Mpixel/meta_lat_1.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:1" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
 
-python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd.json" "F:/e621_newest-webp-4Mpixel/meta_lat_sd1_2.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:2" --split_mod 2 --split_base 4 --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_2.json" "F:/e621_newest-webp-4Mpixel/meta_lat_2.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:2" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
 
-python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd.json" "F:/e621_newest-webp-4Mpixel/meta_lat_sd1_3.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:3" --split_mod 3 --split_base 4 --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_3.json" "F:/e621_newest-webp-4Mpixel/meta_lat_3.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:3" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
 ```
 
-- Then `node merge_meta_lat.js` to merge the added content (NodeJS is a lot faster then python). TODO: Scan for corrupted `*.npz` when process fail.
+- Then merge the `meta_lat_*.json` (Python is a lot faster and reliable than NodeJS, stange). 
+
+```log
+> python merge_meta_lat.py
+merging (huge) json files: 100%|██████████████████████████████████████████████| 4/4 [00:38<00:00,  9.60s/it]
+Merge complete.
+```
+
+-  Use [verify_npz.py](./verify_npz.py) to scan for corrupted `*.npz` when process fail. Sadly it is not fast. OS directory has its sequence.
+
+```log
+> python verify_npz.py --npz_dir="H:/just_astolfo/kohyas_finetune" --meta_json="H:/just_astolfo/meta_cap_dd.json"
+verifying npz files: 100%|███████████████████████████████████████████| 6224/6224 [00:59<00:00, 104.41it/s]
+All pass.
+```
 
 ## Finetune stage ##
 
@@ -333,7 +377,7 @@ TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
 
 - I have added my progress in [the PR](https://github.com/kohya-ss/sd-scripts/pull/1686), not sure if it must be forced to use the old `venv` like A1111, or I need **WSL** to proceed.
 
-- [m3.py](./m3.py) serves for PoC.
+- [m3.py](./m3.py) serves for PoC. The *best effort* will be "80% parameters" by [disabling forcing unet to train/not train](https://github.com/kohya-ss/sd-scripts/blob/sd3/sdxl_train.py#L340) and setting "not train" for [mid attn layers](https://github.com/kohya-ss/sd-scripts/blob/sd3/library/sdxl_original_unet.py#L942) and [out layer2 resnet layers](https://github.com/kohya-ss/sd-scripts/blob/sd3/library/sdxl_original_unet.py#L959) by appending `.requires_grad_(False)`.
 
 ```log
 [rank0]:   File "C:\Users\User\.conda\envs\kohyas-env\Lib\site-packages\torch\nn\parallel\distributed.py", line 1196, in _ddp_init_helper
