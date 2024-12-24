@@ -1,0 +1,2 @@
+steps: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 56016/56016 [13:30:32<00:00,  1.15it/s, avr_loss=0.0766]
+2024-12-22 22:59:05 INFO     save trained model as StableDiffusion checkpoint to F:/astolfo_xl/just_astolfo/model_out_24122101\last.safetensors                              train_util.py:5826

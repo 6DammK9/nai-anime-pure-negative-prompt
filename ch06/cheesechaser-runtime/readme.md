@@ -18,9 +18,9 @@
 
 - Visit my HF repo to download the tags instead of building your own.
 
-- [6DammK9/danbooru2024-tags-10ktar](https://huggingface.co/datasets/6DammK9/danbooru2024-tags-10ktar)
+- [6DammK9/danbooru2024-tags-1ktar](https://huggingface.co/datasets/6DammK9/danbooru2024-tags-1ktar)
 
-- [6DammK9/e621_2024-tags-10ktar](https://huggingface.co/datasets/6DammK9/e621_2024-tags-10ktar)
+- [6DammK9/e621_2024-tags-1ktar](https://huggingface.co/datasets/6DammK9/e621_2024-tags-1ktar)
 
 - Guides are cloned in [danbooru2024-webp-4Mpixel](./danbooru2024-webp-4Mpixel) and [e621_newest-webp-4Mpixel](./e621_newest-webp-4Mpixel)
 

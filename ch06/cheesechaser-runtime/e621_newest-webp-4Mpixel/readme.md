@@ -1,4 +1,25 @@
-# E621 2024 tags only in 10k tar #
+---
+license: mit
+task_categories:
+- image-classification
+- zero-shot-image-classification
+- text-to-image
+language:
+- en
+- ja
+tags:
+- art
+- anime
+- not-for-all-audiences
+size_categories:
+- 1M<n<10M
+annotations_creators:
+- no-annotation
+source_datasets:
+- e621
+---
+
+# E621 2024 tags only in 1k tar #
 
 - Dedicated dataset to align both [NebulaeWis/e621-2024-webp-4Mpixel](https://huggingface.co/datasets/NebulaeWis/e621-2024-webp-4Mpixel) and [deepghs/e621_newest-webp-4Mpixel](https://huggingface.co/datasets/deepghs/e621_newest-webp-4Mpixel).
 
@@ -10,9 +31,9 @@
 
 - (Optional) Download this directly: [posts-2024-04-07.parquet](https://huggingface.co/datasets/boxingscorpionbagel/e621-2024/blob/main/metadata/posts-2024-04-07.parquet) and [table.parquet](https://huggingface.co/datasets/deepghs/e621_newest/blob/main/table.parquet)
 
-- Download all 10k tarfile with webp via [dl-e621-hfhub-nw.py](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch06/cheesechaser-runtime/e621_newest-webp-4Mpixel/dl-e621-hfhub-nw.py) and [dl-e621-hfhub-dgs.py](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch06/cheesechaser-runtime/e621_newest-webp-4Mpixel/dl-e621-hfhub-dgs.py)
+- Download all 1k tarfile with webp via [dl-e621-hfhub-nw.py](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch06/cheesechaser-runtime/e621_newest-webp-4Mpixel/dl-e621-hfhub-nw.py) and [dl-e621-hfhub-dgs.py](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch06/cheesechaser-runtime/e621_newest-webp-4Mpixel/dl-e621-hfhub-dgs.py)
 
-- **Rerun that script for this repo (another 10k tarfile).**
+- **Rerun that script for this repo (another 1k tarfile).**
 
 - (Optional) Otherwise build this dataset via [metadata-e621-tags-parallel.py](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch06/cheesechaser-runtime/e621_newest-webp-4Mpixel/metadata-e621-tags-parallel.py)
 

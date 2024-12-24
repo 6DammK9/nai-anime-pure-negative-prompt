@@ -26,7 +26,7 @@ cd sd-scripts
 conda create -n kohyas-env python=3.12
 conda activate kohyas-env
 
-pip install torch==2.3.1 torchvision --index-url https://download.pytorch.org/whl/cu124
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 pip install xformers --index-url https://download.pytorch.org/whl/cu124
 pip install --upgrade -r requirements.txt
 ```
@@ -51,7 +51,7 @@ pip install bitsandbytes==0.45.0
 C:\Users\User\.conda\envs\kohyas-env did not contain ['cudart64_110.dll', 'cudart64_12.dll'] as expected!
 ```
 
-- Run `pytyon -m bitsandbytes` first to install CUDA integrations:
+- Run `python -m bitsandbytes` first to install CUDA integrations:
 
 - It still have this "debug message" after you install CUDA toolkit / added to many environment paths. Seems that it relies on the built library core, and user have no change to rectify.
 
@@ -132,6 +132,10 @@ Copying image-caption pairs: 100%|███████████████�
 
 - (Cultural difference) My case is called "DD Tags", which is "Danbooru Tags". E621 falls in this category also. 
 
+## Preprocess stage ##
+
+- Requried by trainer. It may provide random crop by default, it requires you crop the image to fit the VAE first. Therefore, prepare ARB latent is recommended.
+
 - [Official guide](https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_README-ja.md) use `meta_cap_dd.json` and `meta_lat.json`, so I'm going to follow them.
 
 ```log
@@ -175,8 +179,12 @@ Copying image-caption pairs: 100%|███████████████�
 
 - I prefer [madebyollin/sdxl-vae-fp16-fix](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix) if this script is safe to use. `batch_size` is somewhat optimal in 4 even it doesn't use many VRAM. It is tied with IOPS with the disk.
 
+- For `sd3` branch, see next session for details.
+
+- Make sure you have readed the suggested resolution for the model. For example, applying 1024x1024 in SD2.1 will require even more VRAM than SDXL, even it is somewhat 4x in size difference.
+
 ```log
-> python ./finetune/prepare_buckets_latents.py "H:/just_astolfo/kohyas_finetune" "H:/just_astolfo/meta_cap_dd.json" "H:/just_astolfo/meta_lat.json" "E:/NOVELAI/stable-diffusion-webui/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+> python ./finetune/prepare_buckets_latents.py "F:/just_astolfo/kohyas_finetune" "F:/just_astolfo/meta_cap_dd.json" "F:/just_astolfo/meta_lat.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.afetensors" --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
 
 get_preferred_device() -> cuda
 2024-12-08 15:51:42 INFO     found 6224 images. prepare_buckets_latents.py:70                    
@@ -213,6 +221,40 @@ get_preferred_device() -> cuda
                     INFO     done!                                         prepare_buckets_latents.py:202
 
 ```
+
+### Prepare buckets in parallel ###
+
+-  Modify [prepare_buckets_latents.py](https://github.com/kohya-ss/sd-scripts/blob/sd3/finetune/prepare_buckets_latents.py#L115) otherwise `*.npz` will not be saved. 
+
+```py
+#train_util.cache_batch_latents(vae, True, bucket, args.flip_aug, args.alpha_mask, False)
+latents_caching_strategy = strategy_sd.SdSdxlLatentsCachingStrategy(False, True, args.batch_size, args.skip_existing)
+latents_caching_strategy.cache_batch_latents(vae, bucket, args.flip_aug, args.alpha_mask, False)
+```
+
+- Copy and modified the code as `prepare_buckets_latents_v2.py` to run this job in parallel. It will be useful for huge datasets with multiple GPUs.
+
+- `sd3` branch need a tiny fix for skipping exist `*.npz` (useful when machine is broken down)
+
+```py
+if args.skip_existing:
+    if train_util.is_disk_cached_latents_is_expected(reso, npz_file_name, args.flip_aug, args.alpha_mask):
+        continue
+```
+
+```sh
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd.json" "F:/e621_newest-webp-4Mpixel/meta_lat_sd1_0.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:0" --split_mod 0 --split_base 4 --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16 
+
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd.json" "F:/e621_newest-webp-4Mpixel/meta_lat_sd1_1.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:1" --split_mod 1 --split_base 4 --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd.json" "F:/e621_newest-webp-4Mpixel/meta_lat_sd1_2.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:2" --split_mod 2 --split_base 4 --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd.json" "F:/e621_newest-webp-4Mpixel/meta_lat_sd1_3.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:3" --split_mod 3 --split_base 4 --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+```
+
+- Then `node merge_meta_lat.js` to merge the added content (NodeJS is a lot faster then python). TODO: Scan for corrupted `*.npz` when process fail.
+
+## Finetune stage ##
 
 - Then it is the finetune stage. `fine_tune.py` is for SD1.5. SDXL use `train_sdxl.py` instead. I use my own [6DammK9/AstolfoMix-XL](https://huggingface.co/6DammK9/AstolfoMix-XL/blob/main/x215c-AstolfoMix-24101101-6e545a3.safetensors) to train. *I want to see if finetuning (pretrain?) on merged model works.*
 - This is written for 4x RTX3090 24GB with full scale finetune (may OOM). I prefer the parameters from [cagliostrolab/animagine-xl-3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1#hyperparameters).
@@ -281,7 +323,7 @@ accelerate launch
 - It is basically reading log files, so remember to change `log_prefix` each time.
 
 ```log
-> tensorboard --logdir "F:/NOVELAI/astolfo_xl/just_astolfo/tensorboard"
+> tensorboard --logdir "E:/astolfo_xl/just_astolfo/tensorboard"
 TensorFlow installation not found - running with reduced feature set.
 Serving TensorBoard on localhost; to expose to the network, use a proxy or pass --bind_all
 TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
@@ -289,7 +331,7 @@ TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
 
 ## TODO ##
 
-- I have added my progress in [the PR](https://github.com/kohya-ss/sd-scripts/pull/1686), not sure if it must be forced to use the old `venv` like A1111, or I need **WSL** to proceed, [at least someone works](https://github.com/kohya-ss/sd-scripts/issues/1721).
+- I have added my progress in [the PR](https://github.com/kohya-ss/sd-scripts/pull/1686), not sure if it must be forced to use the old `venv` like A1111, or I need **WSL** to proceed.
 
 - [m3.py](./m3.py) serves for PoC.
 
@@ -314,6 +356,8 @@ steps: 100%|██████████████████████�
 
 ![24120601.jpg](./img/24121601.jpg)
 
+- Now I got it works in 4x RTX 3090s (Train TE only), and got CUDA OOM with many VRAM availble. [This solution](https://blog.csdn.net/mustuo/article/details/134090209) stated that I should limit the threads, which will be `--num_cpu_threads_per_process` and `--max_data_loader_n_workers`.
+
 ## Findings on TTE ##
 
 - TTE (Train Text Encoders, `--train_text_encoder`) ON / TTE OFF (UNET only) are having slight difference in resource requirement.
@@ -324,3 +368,37 @@ steps: 100%|██████████████████████�
 2024-12-15 16:22:39 INFO     model saved.                                                                                                                          sdxl_train.py:761
 steps: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 62240/62240 [21:00:05<00:00,  1.21s/it, avr_loss=0.106]
 ```
+
+## Training in SD2.1 ##
+
+- Remove `position_ids` in [model_util.py](https://github.com/kohya-ss/sd-scripts/blob/sd3/library/model_util.py#L655)
+
+```py
+# remove position_ids for newer transformer, which causes error :(
+if "text_model.embeddings.position_ids" in new_sd:
+    new_sd.pop("text_model.embeddings.position_ids")
+    print("position_ids removed!")
+```
+
+- FP16 somehow request way too much VRAM to my RTX3090, therefore I added `--full_bf16`as in `sdxl_train`:
+
+```py
+if args.full_fp16:
+    assert (
+        args.mixed_precision == "fp16"
+    ), "full_fp16 requires mixed precision='fp16' / full_fp16を使う場合はmixed_precision='fp16'を指定してください。"
+    accelerator.print("enable full fp16 training.")
+    unet.to(weight_dtype)
+    text_encoder.to(weight_dtype)
+elif args.full_bf16:
+    assert (
+        args.mixed_precision == "bf16"
+    ), "full_bf16 requires mixed precision='bf16' / full_bf16を使う場合はmixed_precision='bf16'を指定してください。"
+    accelerator.print("enable full bf16 training.")
+    unet.to(weight_dtype)
+    text_encoder.to(weight_dtype)
+```
+
+- [Merge tensorboard logs.](https://stackoverflow.com/questions/45657821/how-can-tensorboard-files-be-merged-combined-or-appended)
+
+

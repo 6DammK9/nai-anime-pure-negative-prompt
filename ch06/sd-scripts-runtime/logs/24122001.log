@@ -1,0 +1,6 @@
+2024-12-22 15:05:12 INFO     epoch is incremented. current_epoch: 0, epoch: 5                                                                                                 train_util.py:715
+2024-12-22 15:05:12 INFO     epoch is incremented. current_epoch: 0, epoch: 5                                                                                                 train_util.py:715
+steps: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31120/31120 [6:47:42<00:00,  1.27it/s, avr_loss=0.0754]
+2024-12-22 16:27:05 INFO     save trained model as StableDiffusion checkpoint to F:/astolfo_xl/just_astolfo/model_out_24122001\last.safetensors                              train_util.py:5826 
+2024-12-22 16:27:10 INFO     model saved.                                                                                                                                      fine_tune.py:520
+steps: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31120/31120 [6:47:47<00:00,  1.27it/s, avr_loss=0.0754]

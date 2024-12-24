@@ -1,4 +1,25 @@
-# Danbooru 2024 tags only in 10k tar #
+---
+license: mit
+task_categories:
+- image-classification
+- zero-shot-image-classification
+- text-to-image
+language:
+- en
+- ja
+tags:
+- art
+- anime
+- not-for-all-audiences
+size_categories:
+- 1M<n<10M
+annotations_creators:
+- no-annotation
+source_datasets:
+- danbooru
+---
+
+# Danbooru 2024 tags only in 1k tar #
 
 - Dedicated dataset to align [deepghs/danbooru2024-webp-4Mpixel](https://huggingface.co/datasets/deepghs/danbooru2024-webp-4Mpixel).
 
@@ -10,9 +31,9 @@
 
 - (Optional) Download this directly: [metadata.parquet](https://huggingface.co/datasets/deepghs/danbooru2024-webp-4Mpixel/blob/main/metadata.parquet)
 
-- Download all 10k tarfile with webp via [dl-booru2024-hfhub.py](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch06/cheesechaser-runtime/danbooru2024-webp-4Mpixel/dl-booru2024-hfhub.py)
+- Download all 1k tarfile with webp via [dl-booru2024-hfhub.py](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch06/cheesechaser-runtime/danbooru2024-webp-4Mpixel/dl-booru2024-hfhub.py)
 
-- **Rerun that script for this repo (another 10k tarfile).**
+- **Rerun that script for this repo (another 1k tarfile).**
 
 - (Optional) Otherwise build this dataset via [metadata-booru2024-tags-parallel.py](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch06/cheesechaser-runtime/danbooru2024-webp-4Mpixel/metadata-booru2024-tags-parallel.py)
 
