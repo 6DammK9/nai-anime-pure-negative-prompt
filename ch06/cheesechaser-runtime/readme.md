@@ -148,18 +148,20 @@ Delta: 0 files
 
 - Finally, instead the [official guide](https://github.com/kohya-ss/sd-scripts/blob/main/docs/fine_tune_README_ja.md) (a bit messy), follow this [reddit post](https://www.reddit.com/r/StableDiffusion/comments/163097n/getting_started_fine_tuning/?rdt=34904) to **make the metadata JSON file (with ARB)** and start finetuning.
 
-### How to nuke a folder (in there is bugsplash) ###
+### How to nuke a folder (if there is bugsplash) ###
 
-```powershell
-Remove-Item foldertodelete -Recurse -Force -Confirm:$false
-```
+- [stackoverflow post for windows](https://stackoverflow.com/questions/186737/whats-the-fastest-way-to-delete-a-large-folder-in-windows), [stackexchange post for Linux](https://unix.stackexchange.com/questions/37329/efficiently-delete-large-directory-containing-thousands-of-files).
+
+- Core logic: Try not to call high level shell commands.
 
 ```cmd
-rmdir foldertodelete /s /q
+del /f/s/q foldername > nul
+rmdir /s/q foldername
 ```
 
 ```sh
-sudo rm -rf foldertodelete
+mkdir empty_dir
+rsync -a --delete empty_dir/    yourdirectory/
 ```
 
 ### List how many files in a directory (fast) ###

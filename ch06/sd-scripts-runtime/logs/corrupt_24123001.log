@@ -1,0 +1,93 @@
+> python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/e621_newest-webp-4Mpixel/kohyas_finetune" --meta_json="F:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed.json" --start_from=3000000
+verifying npz files:  69%|████████████████████████████████████████████████████████████████████████████████████▎                                     | 995752/1441660 [08:41<03:58, 1870.44it/s]
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184334.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184318.npz
+verifying npz files:  69%|████████████████████████████████████████████████████████████████████████████████████▎                                     | 995940/1441660 [08:41<04:19, 1720.54it/s]
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184162.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184094.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184074.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184086.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184030.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184006.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184010.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184018.npz
+verifying npz files:  69%|████████████████████████████████████████████████████████████████████████████████████▎                                     | 996129/1441660 [08:41<04:12, 1763.91it/s]
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5183994.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5184002.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5183982.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5183966.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5183970.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5183950.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5183942.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5183930.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5183926.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5183922.npz
+verifying npz files:  69%|████████████████████████████████████████████████████████████████████████████████████▍                                     | 997888/1441660 [08:42<03:00, 2458.92it/s]
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181879.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181855.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181823.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181807.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181803.npz
+verifying npz files:  69%|████████████████████████████████████████████████████████████████████████████████████▍                                     | 998168/1441660 [08:42<02:54, 2545.11it/s]
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181795.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181811.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181751.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181735.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181723.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181675.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181663.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181667.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181659.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181655.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181643.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181635.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181627.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181623.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5181615.npz
+verifying npz files:  75%|███████████████████████████████████████████████████████████████████████████████████████████                              | 1084865/1441660 [09:06<02:08, 2771.39it/s]
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088789.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088677.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088621.npz
+verifying npz files:  75%|███████████████████████████████████████████████████████████████████████████████████████████                              | 1085262/1441660 [09:06<01:56, 3059.91it/s]
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088625.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088637.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088593.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088613.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088589.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088581.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088605.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088577.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088557.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088569.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088525.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088485.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088505.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088509.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088493.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088501.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/5088461.npz
+verifying npz files:  94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏      | 1360683/1441660 [09:47<00:11, 7064.51it/s]
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790992.npz
+verifying npz files:  94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎      | 1361390/1441660 [09:47<00:11, 7009.95it/s]
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790960.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790936.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790916.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790924.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790956.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790892.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790880.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790872.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790824.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790800.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790816.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790760.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790744.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790780.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790748.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790756.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790808.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790768.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790728.npz
+Corrupted file: F:/e621_newest-webp-4Mpixel/kohyas_finetune/4790732.npz
+verifying npz files: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1441660/1441660 [09:50<00:00, 2439.57it/s]
+All pass (1441660).

@@ -20,7 +20,7 @@ SPLIT_DD_TAG_JSON = "./meta_cap_dd_{}.json"
 g_threads = 48 
 
 # GPU count. Used for caching latents and ARB.
-split_count = 4 
+split_count = 16
 
 #Dump everything to kohyas metadata file.
 #{
@@ -63,7 +63,7 @@ def dump_tags(row):
     return danbooru_post_id
 
 # The return value is arbitary. itertuples() is an iterator and thread_map will beautifully .
-res_dump_tags = thread_map(dump_tags, df.itertuples(), max_workers=g_threads)
+res_dump_tags = thread_map(dump_tags, df.itertuples(), max_workers=g_threads, desc="dumping tags", position=0)
 
 print(f"Tags found: {len(res_dump_tags)}")
        

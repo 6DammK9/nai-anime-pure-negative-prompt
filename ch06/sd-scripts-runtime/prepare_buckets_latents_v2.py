@@ -1,6 +1,7 @@
 import argparse
 import os
 import json
+import time
 
 from pathlib import Path
 from typing import List
@@ -81,14 +82,21 @@ def main(args):
 
     # It works already
     image_paths: List[str] = [f"{train_data_dir_path}/{id}{args.image_ext_static}" for id in metadata.keys()] if args.no_listdir else [str(p) for p in train_util.glob_images_pathlib(train_data_dir_path, args.recursive)]
-    logger.info(f"found {len(image_paths)} images.")
+    logger.info(f"Found {len(image_paths)} entries.")
 
     if (args.split_base > 0) and (args.split_mod >= 0) and (args.split_mod < args.split_base):
         b = args.split_base
         m = args.split_mod
         chunked_paths = [image_paths[i] for i in range(m, len(image_paths), b)]
-        logger.info(f"Chunk {m}/{b}: {len(chunked_paths)} images.")
+        logger.info(f"Chunk {m}/{b}: {len(chunked_paths)} entries.")
         image_paths = chunked_paths
+
+    if (args.start_from_index > 0):
+        logger.info(f"Start from index {args.start_from_index}.")
+        logger.warning(f"The output JSON will be incomplete! Re-run without start_from_index for complete list.")
+        image_paths = image_paths[args.start_from_index:]
+    else:
+        logger.info(f"All entries will be iterated.")
 
     weight_dtype = torch.float32
     if args.mixed_precision == "fp16":
@@ -141,6 +149,13 @@ def main(args):
     else:
         data = [[(None, ip)] for ip in image_paths]
 
+    delay_start = int(args.delay_start)
+    if delay_start > 0:
+        logger.info(f"Delayed start for {delay_start} seconds.")
+        time.sleep(delay_start)
+    else:
+        logger.info(f"Main loop will start immediately.")
+
     bucket_counts = {}
     for data_entry in tqdm(data, smoothing=0.0):
         if data_entry[0] is None:
@@ -155,7 +170,8 @@ def main(args):
                 if image.mode != "RGB":
                     image = image.convert("RGB")
             except Exception as e:
-                logger.error(f"Could not load image path / 画像を読み込めません: {image_path}, error: {e}")
+                #Way too many logs (700k+), disable for a while.
+                #logger.error(f"Could not load image path / 画像を読み込めません: {image_path}, error: {e}")
                 continue
 
         image_key = image_path if args.full_path else os.path.splitext(os.path.basename(image_path))[0]
@@ -186,8 +202,21 @@ def main(args):
 
         # 既に存在するファイルがあればshape等を確認して同じならskipする
         npz_file_name = get_npz_filename(args.train_data_dir, image_key, args.full_path, args.recursive)
-        if args.skip_existing:
-            if train_util.is_disk_cached_latents_is_expected(reso, npz_file_name, args.flip_aug, args.alpha_mask):
+        if args.skip_existing:           
+            cache_available = False
+            need_delete_cache = False
+            try:
+                # Why raise error? The file is corrupted. Just remove and return False.
+                cache_available = train_util.is_disk_cached_latents_is_expected(reso, npz_file_name, args.flip_aug, args.alpha_mask)
+            except:
+                logger.error(f"Remove and rebuild: {npz_file_name}")
+                need_delete_cache = True
+            if need_delete_cache:
+                try:
+                    Path.unlink(npz_file_name)
+                except:
+                    logger.error(f"Failed to remove: {npz_file_name}")
+            if cache_available:
                 continue
 
         # バッチへ追加
@@ -316,6 +345,18 @@ def setup_parser() -> argparse.ArgumentParser:
         default=".webp",
         choices=train_util.IMAGE_EXTENSIONS,
         help="Static image extensions. Use along with no_listdir",
+    )
+    parser.add_argument(
+        "--start_from_index",
+        type=int,
+        default=0,
+        help="Start from the index of the image_list. Notice that the out_json will be incomplete.",
+    )
+    parser.add_argument(
+        "--delay_start",
+        type=int,
+        default=0,
+        help="Delay for N seconds for the main loop. Useful for multiple instances.",
     )
 
     return parser

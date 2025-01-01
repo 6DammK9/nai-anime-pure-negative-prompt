@@ -195,6 +195,8 @@ Dump complete.
 
 - For 1k to 100k scale, I think you can ignore next sentence ~~I just made my own scripts and didn't expose any CLI options (I'll post the result to HF instead).~~ **For large datasets, most programming techniques won't work. You must consider a lot for scalable and optimization.** See next session for how I alter the process.
 
+- Notice that the parameter of splitted files *depends on CPU core count, GPU count / power, and your machine's stability (PSU can trip / OS wide file lock may occurs etc.)*. You may need to split to 16 files over 4 GPUs. After many attempts, the final e2e stage is quite inefficient, and I think writing codes for multithreads will be troublesome, therefore splitting it into "half of CPU core count" may be better.
+
 - Make sure you have readed the suggested resolution for the model. For example, applying 1024x1024 in SD2.1 will require even more VRAM than SDXL, even it is somewhat 4x in size difference.
 
 - This is the straightforward approach for "not large" dataset. *Simple.*
@@ -254,6 +256,18 @@ loadJson...
  ████████████████████████████████████████ 100% | ETA: 0s | 12008827/12008827
 ```
 
+- For e621 dataset, it is recommended to trim down the json file to match existing images, even the downstream process can handle such error. *I experienced many PSU trips because the are missing images stalling the preprocess and causing voltage spike to the PSU.*
+
+```sh
+python ../sd-scripts-runtime/sync_img_tag.py --npz_dir="H:/danbooru2024-webp-4Mpixel/kohyas_finetune" --in_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd.json" --out_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd_trimmed.json" 
+```
+
+```log
+verifying npz files: 100%|████████████████████████████████████████████████████████████████████| 4599402/4599402 [02:56<00:00, 26052.79it/s]
+4441660 / 4599402 will be preserved.
+Dumping keys...: 100%|██████████████████████████████████████████████████████████████████████| 4441660/4441660 [00:03<00:00, 1377171.80it/s]
+```
+
 -  Modify [prepare_buckets_latents.py](https://github.com/kohya-ss/sd-scripts/blob/sd3/finetune/prepare_buckets_latents.py#L115) otherwise `*.npz` will not be saved. 
 
 ```py
@@ -264,25 +278,72 @@ latents_caching_strategy.cache_batch_latents(vae, bucket, args.flip_aug, args.al
 
 - Copy and modified the code as `prepare_buckets_latents_v2.py` to run this job in parallel. It will be useful for huge datasets with multiple GPUs. **It also listing the directory and use the provided JSON file as it is.**
 
-- `sd3` branch need a tiny fix for skipping exist `*.npz` (useful when machine is broken down)
+- `sd3` branch need a tiny fix for skipping exist `*.npz` (useful when machine is broken down). *It delete corrupted file by default.*
 
 ```py
-if args.skip_existing:
-    if train_util.is_disk_cached_latents_is_expected(reso, npz_file_name, args.flip_aug, args.alpha_mask):
+# 既に存在するファイルがあればshape等を確認して同じならskipする
+npz_file_name = get_npz_filename(args.train_data_dir, image_key, args.full_path, args.recursive)
+if args.skip_existing:           
+    cache_available = False
+    need_delete_cache = False
+    try:
+        # Why raise error? The file is corrupted. Just remove and return False.
+        cache_available = train_util.is_disk_cached_latents_is_expected(reso, npz_file_name, args.flip_aug, args.alpha_mask)
+    except:
+        logger.error(f"Remove and rebuild: {npz_file_name}")
+        need_delete_cache = True
+    if need_delete_cache:
+        try:
+            Path.unlink(npz_file_name)
+        except:
+            logger.error(f"Failed to remove: {npz_file_name}")
+    if cache_available:
         continue
 ```
 
-```sh
-python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_0.json" "F:/e621_newest-webp-4Mpixel/meta_lat_0.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:0" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16 
+- Fixing dead locks in `train_util.py`:
 
-python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_1.json" "F:/e621_newest-webp-4Mpixel/meta_lat_1.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:1" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
-
-python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_2.json" "F:/e621_newest-webp-4Mpixel/meta_lat_2.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:2" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
-
-python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_3.json" "F:/e621_newest-webp-4Mpixel/meta_lat_3.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:3" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+```py
+#npz = np.load(npz_path)
+with np.load(npz_path) as npz:
+    if "latents" not in npz or "original_size" not in npz or "crop_ltrb" not in npz:  # old ver?
 ```
 
-- Then merge the `meta_lat_*.json` (Python is a lot faster and reliable than NodeJS, stange). 
+```sh
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed_0.json" "F:/e621_newest-webp-4Mpixel/meta_lat_0.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:0" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16 --start_from_index=1099000 --delay_start=180
+
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed_1.json" "F:/e621_newest-webp-4Mpixel/meta_lat_1.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:1" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16 --start_from_index=1029000 --delay_start=120
+
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed_2.json" "F:/e621_newest-webp-4Mpixel/meta_lat_2.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:2" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16 --start_from_index=1007500 --delay_start=60
+
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "F:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed_3.json" "F:/e621_newest-webp-4Mpixel/meta_lat_3.json" "E:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:3" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16 --start_from_index=1007500 --delay_start=0
+```
+
+- Use [verify_npz.py](./verify_npz.py) to scan for corrupted `*.npz` when process fail. Currently made it *delete corrupted file by default*. Meanwhile it can be multithread (buy may introduce dead lock and crash OS).
+
+```sh
+# Remove corrupted npz only
+python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/e621_newest-webp-4Mpixel/kohyas_finetune" --meta_json="F:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed.json" --start_from=3000000
+```
+
+```log
+verifying npz files: 100%|███████████████████████████████████████████| 6224/6224 [00:59<00:00, 104.41it/s]
+All pass.
+```
+
+- Usually you don't have complete  `meta_lat_*.json` after multiple tries. Re-run the script from the beginning.
+
+```sh
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "H:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed_0.json" "H:/e621_newest-webp-4Mpixel/meta_lat_0.json" "G:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:0" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "H:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed_1.json" "H:/e621_newest-webp-4Mpixel/meta_lat_1.json" "G:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:0" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "H:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed_2.json" "H:/e621_newest-webp-4Mpixel/meta_lat_2.json" "G:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:0" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+
+python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/kohyas_finetune" "H:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed_3.json" "H:/e621_newest-webp-4Mpixel/meta_lat_3.json" "G:/stable-diffusion-webui/models/VAE/sdxl-vae-fp16-fix.vae.safetensors" --vae_device "cuda:0" --no_listdir --image_ext_static=".webp" --skip_existing --batch_size 4 --max_resolution 1024,1024 --mixed_precision fp16
+```
+
+- Merge the `meta_lat_*.json` if all file contents are complete (Python is a lot faster and reliable than NodeJS, strange). 
 
 ```log
 > python merge_meta_lat.py
@@ -290,12 +351,26 @@ merging (huge) json files: 100%|████████████████
 Merge complete.
 ```
 
--  Use [verify_npz.py](./verify_npz.py) to scan for corrupted `*.npz` when process fail. Sadly it is not fast. OS directory has its sequence.
+- (Optional) If you want to pack all the `*.npz` back to 1ktar, just use another script (will warn for missing files):
+
+```sh
+python ../sd-scripts-runtime/pack_npz.py --npz_dir="H:/just_astolfo/kohyas_finetune" --meta_json="H:/just_astolfo/meta_lat.json" --tar_dir="G:/npz_latents/just_astolfo_sdxl"
+python ../sd-scripts-runtime/pack_npz.py --npz_dir="H:/e621_newest-webp-4Mpixel/kohyas_finetune" --meta_json="H:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed.json" --tar_dir="G:/npz_latents/e621_sdxl"
+```
 
 ```log
-> python verify_npz.py --npz_dir="H:/just_astolfo/kohyas_finetune" --meta_json="H:/just_astolfo/meta_cap_dd.json"
-verifying npz files: 100%|███████████████████████████████████████████| 6224/6224 [00:59<00:00, 104.41it/s]
-All pass.
+> python ../sd-scripts-runtime/pack_npz.py --npz_dir="H:/just_astolfo/kohyas_finetune" --meta_json="H:/just_astolfo/meta_lat.json" --tar_dir="G:/npz_latents/just_astolfo_sdxl"
+Found entries: 6224
+Max ID in the dataset: 8357672
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:44<00:00, 22.36it/s]
+Files written: 1000
+Detected npz: 6224.
+```
+
+- (Optional) Sample compress command:
+
+```sh
+tar -czvf meta_cap_dd.tar.gz meta_cap_dd.json
 ```
 
 ## Finetune stage ##
