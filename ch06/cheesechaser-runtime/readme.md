@@ -232,3 +232,20 @@ Type ".help" for more information.
 6224 pairs to be copied.
 Copying image-caption pairs: 100%|████████████████████████████████████████████████| 6224/6224 [01:27<00:00, 70.81it/s]
 ```
+
+## (Extra) Uploading the tar files back to HF ##
+
+- Refer [official guide](https://huggingface.co/docs/huggingface_hub/guides/upload#upload-a-large-folder) and [api reference](https://huggingface.co/docs/huggingface_hub/v0.27.0/en/package_reference/hf_api#huggingface_hub.HfApi.upload_large_folder).
+
+- For example, it took me [5 hours and 54 commits](https://huggingface.co/datasets/6DammK9/e621_2024-latents-sdxl-1ktar/commits/main/latents) from a HDD.
+
+```log
+> python simple_upload.py
+Recovering from metadata files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 642.74it/s]
+
+---------- 2025-01-02 05:44:38 (5:08:16) ----------
+Files:   hashed 1000/1000 (906.9G/906.9G) | pre-uploaded: 961/1000 (871.5G/906.9G) | committed: 952/1000 (863.4G/906.9G) | ignored: 0
+Workers: hashing: 0 | get upload mode: 0 | pre-uploading: 39 | committing: 0 | waiting: 0
+---------------------------------------------------
+0999.tar: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 908M/908M [19:55<00:00, 760kB/s]
+```
