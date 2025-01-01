@@ -1,4 +1,3 @@
-import argparse
 import tarfile
 import os.path
 
@@ -23,7 +22,6 @@ TAR_COUNT = int(1e3)
 g_threads = 48
 
 file_delta = 0
-extracted_members = 0
 
 EXT_WEBP = ".webp"
 EXT_TXT = ".txt"
