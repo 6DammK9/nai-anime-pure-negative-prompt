@@ -22,6 +22,8 @@
 
 - [DELLA-Merging: Reducing Interference in Model Merging through Magnitude-Based Sampling](https://arxiv.org/abs/2406.11617)
 
+- [Evolutionary Optimization of Model Merging Recipes](https://arxiv.org/abs/2403.13187)
+
 - [Arcee's MergeKit: A Toolkit for Merging Large Language Models](https://arxiv.org/abs/2403.13257) *toolkit*
 
 - [Model Stock: All we need is just a few fine-tuned models](https://arxiv.org/abs/2403.19522)
@@ -98,7 +100,7 @@
 
 - [LoCon / LyCORIS to complete model](https://github.com/KohakuBlueleaf/LyCORIS/blob/main/tools/merge.py).
 
-- Now "merging" is a *sustainable* act.
+- Now "merging" is a *sustainable* act. [It has been discussed in 2403.](https://sakana.ai/evolutionary-model-merge/)
 
 ### Nice merges ###
 
