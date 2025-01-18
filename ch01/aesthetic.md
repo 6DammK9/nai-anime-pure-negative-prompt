@@ -63,6 +63,18 @@ Would art able to be *partially expressed by pure logic?* With [iterlation of kn
 
 - See [my CivitAI article](https://civitai.com/articles/5149). Will remove rant, especially ch99 if I have time.
 
+### (Extra) A few key points concluded from my merging experience ###
+
+- It is written along with [the final part of ch05](../ch05/README_XL.MD#good-time-to-conclude-and-move-to-the-next-chapter)
+
+- The following are open ended questions / discussions, but in philosophical perspective, it is great starting points for critical thinking.
+
+- [Artist othen change styles.](https://www.angelafehr.com/news/can-an-artist-dramatically-change-their-style) [It can have many reasons.](https://www.naturestudio.com/more-than-one-style/) Try to appreciate it as a breakthrough instead of fear from change ~~metathesiophobia~~. ~~As a programmer / developer, ~~ It is a part of innovation, try not to panic like a labour under financial pressure. Meanwhile, [such innovation is usually not a success. It is the (mid)way to success.](https://www.youtube.com/watch?v=sCaOs8Dcs5w&ab_channel=PhilMcKinney) Such critical thinking will be benefitical to all kind of creative process, no matter it is art or AI development.
+
+- (Under financial / social pressure), [artist usually have trouble in objectives alignmentment.](https://medium.com/@uwehoche/honesty-and-creativity-82c77fd4c41) ~~Resembles to management, or even RL problems.~~ [Try to be "honest" to the feeling.](https://www.art2life.com/2023/01/18/honesty-in-art-alex-kanevsky-ep-65/) Any " handicraft product" share the common issue: Mostly "products may sell" are not fitting the artistic expression well. ~~It may lead to cheap products / buggy codes / or random theories / stories / lies to prevent society knowing the "groundtruth".~~ *Meanwhile, be concerned to mental health*, don't go too far, it'd be best to treat such hobbies / expression non commercial.*
+
+- [AIGC is mostly lack of control](https://medium.com/@tenyks_blogger/want-to-steer-diffusion-models-heres-what-you-need-to-know-bd4c0610a68b). **This is a solid limitation of a problistic model ("AI")**, even it claims it can be [statistically deterministic](https://en.wikipedia.org/wiki/Deterministic_system). [It is useful to generate drafts / assets, but it will be "too cheap" to be a final professional product.](https://www.superannotate.com/blog/diffusion-models). [Amateur art](https://theworkingartist.com/professional-artist-amateur/) would work, but I think AIGC will not fully meet professional requirements. [Such AIGC is also happening in coding industry](https://machine-learning-made-simple.medium.com/did-the-makers-of-devin-ai-lie-about-their-capabilities-cdfa818d5fc2), yet there are still many **professional requirements** (e.g. code quality / adherence to industry standards / obey compliance etc.) which AIGC is obviously failing to fufill. *Sadly the financial situation in post pandemic era is not good, driving the financial marker favours to "cheap products", and not paying attention to product quality.* The problem of [AI slops](https://en.wikipedia.org/wiki/AI_slop) is not materialized when they are created: **It is a problem when AI slop is accepted and even appreciated.** [Combining AI slop and SEO](https://reutersinstitute.politics.ox.ac.uk/news/ai-generated-slop-quietly-conquering-internet-it-threat-journalism-or-problem-will-fix-itself) will lead to misinformation and confusion to force innocent users to "subscribe shady services" intead of obtaining useful infromation. Therefore I just admire all the facts I have discovered and "be with it". ~~Such passion project may not help my career, but it is a good experience.~~
+
 ### Old session in ch98. Written in 2212. ###
 
 - https://youtu.be/eS7luZntgnQ

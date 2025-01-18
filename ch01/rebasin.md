@@ -8,7 +8,7 @@
 
 <details>
     <summary>"Non-convex optimization"</summary>
-    
+
 (spoiler: It is a ___ algorithm)
 
 </details>
@@ -97,7 +97,7 @@
 
 - As soon as moving on in [AstolfoMixXL](../ch05/README_XL.MD), I think I shuold try it out, probably another PR to someone's repo.
 
-### Yes, time to make PR. ###
+### Yes, time to make PR ###
 
 - [Forked repo.](https://github.com/6DammK9/Merge-Stable-Diffusion-models-without-distortion) And... [PR merged instantly](https://github.com/ogkalu2/Merge-Stable-Diffusion-models-without-distortion/pull/46)
 
@@ -123,9 +123,9 @@
 
 ![rebasin.jpg](./img/rebasin.jpg)
 
-- Despite the chaotic description of the full algorithm (and the available reosurces), we can identify the key steps of the rebasin are **activation matching** and **weight matching**, which has been done previously. However, *Algorithm 2* doesn't mention what model should return, even there are no suggested model choice for complicated scenarios like what *Algorithm 3* tried to propose. Direct apply first 2 algorithms with "finetuned models" will only yield to results like [AutoMBW](./autombw.md) did. 
+- Despite the chaotic description of the full algorithm (and the available reosurces), we can identify the key steps of the rebasin are **activation matching** and **weight matching**, which has been done previously. However, *Algorithm 2* doesn't mention what model should return, even there are no suggested model choice for complicated scenarios like what *Algorithm 3* tried to propose. Direct apply first 2 algorithms with "finetuned models" will only yield to results like [AutoMBW](./autombw.md) did.
 
-- Then looking at *Algorithm 3* again, we can find that the final "return" is just **averaging**, but the models are merged with the previous algorithms, then we can reformulate the thgought process from **"pick layers from N models"** to **"pick layers from a mega merged model from N models"**. 
+- Then looking at *Algorithm 3* again, we can find that the final "return" is just **averaging**, but the models are merged with the previous algorithms, then we can reformulate the thgought process from **"pick layers from N models"** to **"pick layers from a mega merged model from N models"**.
 
 - Meanwhile, since the "Loss Function" in such topic has been [disentangled with actual task](https://github.com/deepghs/sdeval), we can just focusing the benefit from *Algorithm 1*, which is ["Linear Mode Connectivity"](https://paperswithcode.com/task/linear-mode-connectivity), to **exaggerate the denoising effect** even it won't lead to the expected content, rater than corrupted, half made content or back to noise. In this specific topic (text2img), I think it enhance the ["honesty"](https://www.art2life.com/2023/01/18/honesty-in-art-alex-kanevsky-ep-65/) towards the "model" (there are already 216 models jamming each other). However, this only justify the reason of the "215b" as "this other different direction is actually good".
 
