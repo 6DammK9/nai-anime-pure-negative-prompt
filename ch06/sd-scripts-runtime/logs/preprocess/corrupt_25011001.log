@@ -1,0 +1,81 @@
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_8.json" --start_from=0
+Start from id 8
+verifying npz files:  25%|████████████████████████████████████                                                                                                            | 125131/500233 [05:36<17:24, 359.21it/s]Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107144.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107128.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107112.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107096.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107176.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107192.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107224.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107240.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107208.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107256.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107272.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107160.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107336.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107304.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107288.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2107352.npz
+verifying npz files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500233/500233 [05:58<00:00, 1395.87it/s]
+All pass (500233).
+
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_9.json" --start_from=0
+Start from id 9
+verifying npz files:  25%|████████████████████████████████████▎                                                                                                           | 126173/500124 [05:40<15:05, 412.85it/s]Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123369.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123385.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123449.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123433.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123497.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123417.npz
+verifying npz files:  25%|████████████████████████████████████▎                                                                                                           | 126221/500124 [05:40<14:52, 418.97it/s]Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123401.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123465.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123481.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123577.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123513.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123529.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123545.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123593.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2123561.npz
+verifying npz files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500124/500124 [05:58<00:00, 1393.65it/s]
+All pass (500124).
+
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_10.json" --start_from=0
+Start from id 10
+verifying npz files:  26%|█████████████████████████████████████▋                                                                                                          | 130978/500239 [05:50<11:25, 539.05it/s]Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201418.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201498.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201450.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201466.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201402.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201530.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201482.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201514.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201562.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201594.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201626.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201546.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201578.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201642.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2201610.npz
+verifying npz files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500239/500239 [06:04<00:00, 1372.78it/s]
+All pass (500239).
+
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_11.json" --start_from=0
+Start from id 11
+verifying npz files:  25%|████████████████████████████████████                                                                                                            | 125055/500166 [05:38<13:02, 479.59it/s]Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104075.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104059.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104043.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104011.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104027.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104107.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104203.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104123.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104091.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104171.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104139.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104155.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104187.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104251.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104235.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2104219.npz
+verifying npz files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500166/500166 [05:55<00:00, 1406.95it/s]
+All pass (500166).

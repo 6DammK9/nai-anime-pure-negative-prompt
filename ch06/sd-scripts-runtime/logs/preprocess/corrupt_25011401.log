@@ -1,0 +1,26 @@
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_12.json" --start_from=0
+Start from id 12
+verifying npz files:  33%|███████████████████████████████████████████████▏                                                                                                | 163889/500272 [07:40<15:41, 357.26it/s]
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2746332.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2746300.npz
+
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_13.json" --start_from=0
+Start from id 13
+verifying npz files:  33%|███████████████████████████████████████████████▌                                                                                                | 165417/500412 [07:43<10:50, 514.63it/s]
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2769261.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2769357.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2769325.npz
+
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_14.json" --start_from=0
+Start from id 14
+verifying npz files:  35%|█████████████████████████████████████████████████▉                                                                                              | 173653/500299 [07:57<08:44, 622.70it/s]
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2908078.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2908030.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2908062.npz
+
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_15.json" --start_from=0
+Start from id 31
+verifying npz files:  33%|███████████████████████████████████████████████▌                                                                                                | 165206/500323 [07:43<12:36, 442.83it/s]
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2767343.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2767423.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/2767327.npz

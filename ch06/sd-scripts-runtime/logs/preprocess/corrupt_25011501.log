@@ -1,0 +1,27 @@
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_12.json" --start_from=160000
+Start from id 2681244
+verifying npz files:  27%|███████████████████████████████████████                                                                                                          | 91546/340272 [04:11<10:27, 396.07it/s]
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4207708.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4207756.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4207724.npz
+
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_13.json" --start_from=160000
+Start from id 2678829
+verifying npz files:  28%|███████████████████████████████████████▉                                                                                                         | 93687/340412 [04:15<08:27, 486.26it/s]
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4239661.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4239677.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4239629.npz
+
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_14.json" --start_from=160000
+Start from id 2681614
+verifying npz files:  31%|████████████████████████████████████████████▉                                                                                                   | 106077/340299 [04:36<06:24, 609.32it/s]
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4448798.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4448766.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4448782.npz
+
+>python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="F:/danbooru2024-webp-4Mpixel/meta_cap_dd_15.json" --start_from=160000
+Start from id 2680607
+verifying npz files:  28%|███████████████████████████████████████▉                                                                                                         | 93763/340323 [04:15<10:09, 404.23it/s]
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4242415.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4242479.npz
+Corrupted file: F:/danbooru2024-webp-4Mpixel/kohyas_finetune/4242463.npz

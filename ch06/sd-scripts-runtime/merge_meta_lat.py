@@ -1,16 +1,16 @@
 import json
 from tqdm import tqdm
 
-LAT_JSON_DIR = "E:/NOVELAI/stable-diffusion-webui/cheesechaser-runtime/danbooru2024-webp-4Mpixel"
+LAT_JSON_DIR = "H:/danbooru2024-webp-4Mpixel"
 
 # Merge target
-LAT_JSON = "{}/meta_cap_dd_x.json"
+LAT_JSON = "{}/meta_lat.json"
 
 # To be merged
-SPLIT_LAT_JSON = "{}/meta_cap_dd_{}.json"
+SPLIT_LAT_JSON = "{}/meta_lat_{}.json"
 
 # GPU count. Used for caching latents and ARB.
-split_count = 4 
+split_count = 16
 
 merged = dict()
 
