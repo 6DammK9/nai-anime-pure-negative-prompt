@@ -2,10 +2,10 @@ import os.path
 from huggingface_hub import HfApi
 
 # Notice that the 1ktar is actually inside latents_vae_sdxl/latents. "/latents" are appended for upload_large_folder.
-LOCAL_TAR_FOLDER = "I:/e621_newest-webp-4Mpixel/latents_vae_sdxl"
+LOCAL_TAR_FOLDER = "G:/npz_latents"
 HF_TAR_FOLDER = "latents"
 
-HF_REPO_ID = "6DammK9/e621_2024-latents-sdxl-1ktar"
+HF_REPO_ID = "6DammK9/danbooru2024-latents-sdxl-1ktar"
 HF_REPO_TYPE = "dataset"
 
 TOTAL_TAR_COUNT = int(1e3)

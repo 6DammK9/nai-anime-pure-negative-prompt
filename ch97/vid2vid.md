@@ -1,5 +1,10 @@
 # Blue pill on vid2vid on 2305 #
 
+## Update on 2501 ##
+
+- Consider [HunyuanVideo](https://github.com/Tencent/HunyuanVideo?tab=readme-ov-file), an opensource model for video generation, with [corrosponding paper](https://arxiv.org/abs/2412.03603).
+- It is likely no longer compatable with SD / Flux (T2I) models, however it may integrate well with workflow (e.g. ComfyUI, or any procedure).
+
 ## Abstract ##
 
 - "Blue pill" (極簡版 [SoK](https://blog.csdn.net/u010970698/article/details/109106690)) 一枚. 因為格式問題, 暫時丟來 ch97.

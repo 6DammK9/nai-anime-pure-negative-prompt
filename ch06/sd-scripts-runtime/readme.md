@@ -195,8 +195,6 @@ Dump complete.
 
 - For 1k to 100k scale, I think you can ignore next sentence ~~I just made my own scripts and didn't expose any CLI options (I'll post the result to HF instead).~~ **For large datasets, most programming techniques won't work. You must consider a lot for scalable and optimization.** See next session for how I alter the process.
 
-- Notice that the parameter of splitted files *depends on CPU core count, GPU count / power, and your machine's stability (PSU can trip / OS wide file lock may occurs etc.)*. You may need to split to 16 files over 4 GPUs. After many attempts, the final e2e stage is quite inefficient, and I think writing codes for multithreads will be troublesome, therefore splitting it into "half of CPU core count" may be better.
-
 - Make sure you have readed the suggested resolution for the model. For example, applying 1024x1024 in SD2.1 will require even more VRAM than SDXL, even it is somewhat 4x in size difference.
 
 - This is the straightforward approach for "not large" dataset. *Simple.*
@@ -259,7 +257,7 @@ loadJson...
 - For e621 dataset, it is recommended to trim down the json file to match existing images, even the downstream process can handle such error. *I experienced many PSU trips because the are missing images stalling the preprocess and causing voltage spike to the PSU.*
 
 ```sh
-python ../sd-scripts-runtime/sync_img_tag.py --npz_dir="H:/danbooru2024-webp-4Mpixel/kohyas_finetune" --in_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd.json" --out_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd_trimmed.json" 
+python ../sd-scripts-runtime/sync_img_tag.py --npz_dir="F:/e621_newest-webp-4Mpixel/kohyas_finetune" --in_json="F:/e621_newest-webp-4Mpixel/meta_cap_dd_0.json" --out_json="F:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed_0.json" 
 ```
 
 ```log
@@ -323,7 +321,10 @@ python ./finetune/prepare_buckets_latents_v2.py "F:/e621_newest-webp-4Mpixel/koh
 
 ```sh
 # Remove corrupted npz only
-python ../sd-scripts-runtime/verify_npz.py --npz_dir="F:/e621_newest-webp-4Mpixel/kohyas_finetune" --meta_json="F:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed.json" --start_from=3000000
+python ../sd-scripts-runtime/verify_npz.py --npz_dir="H:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd_0.json" --start_from=0
+python ../sd-scripts-runtime/verify_npz.py --npz_dir="H:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd_1.json" --start_from=0
+python ../sd-scripts-runtime/verify_npz.py --npz_dir="H:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd_2.json" --start_from=0
+python ../sd-scripts-runtime/verify_npz.py --npz_dir="H:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd_3.json" --start_from=0
 ```
 
 ```log
@@ -356,6 +357,7 @@ Merge complete.
 ```sh
 python ../sd-scripts-runtime/pack_npz.py --npz_dir="H:/just_astolfo/kohyas_finetune" --meta_json="H:/just_astolfo/meta_lat.json" --tar_dir="G:/npz_latents/just_astolfo_sdxl"
 python ../sd-scripts-runtime/pack_npz.py --npz_dir="H:/e621_newest-webp-4Mpixel/kohyas_finetune" --meta_json="H:/e621_newest-webp-4Mpixel/meta_cap_dd_trimmed.json" --tar_dir="G:/npz_latents/e621_sdxl"
+python ../sd-scripts-runtime/pack_npz.py --npz_dir="H:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd.json" --tar_dir="G:/npz_latents/danbooru_sdxl"
 ```
 
 ```log
@@ -365,6 +367,13 @@ Max ID in the dataset: 8357672
 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:44<00:00, 22.36it/s]
 Files written: 1000
 Detected npz: 6224.
+
+> python ../sd-scripts-runtime/pack_npz.py --npz_dir="H:/danbooru2024-webp-4Mpixel/kohyas_finetune" --meta_json="H:/danbooru2024-webp-4Mpixel/meta_cap_dd.json" --tar_dir="G:/npz_latents/danbooru_sdxl"
+Found entries: 8005010
+Max ID in the dataset: 8360499
+packing npz files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [4:02:08<00:00, 14.53s/it]
+Files written: 1000
+Detected npz: 8005010.
 ```
 
 - (Optional) Sample compress command:

@@ -6,7 +6,7 @@ from tqdm.contrib.concurrent import thread_map
 import os.path
 from pathlib import Path
 
-g_threads = 48
+g_threads = 8
 
 def setup_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
@@ -63,8 +63,9 @@ def main(args):
             return None        
         if not os.path.isfile(npz_file_name):
             #Tolerate for finding corrupted npz files quickly.
-            return None
-            #raise Exception(f"npz misisng: {npz_file_name}")
+            print(f"npz misisng: {npz_file_name}")
+            raise Exception("Exit")
+            #return None
 
         del_file = False
         try:
