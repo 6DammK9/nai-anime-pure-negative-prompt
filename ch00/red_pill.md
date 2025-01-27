@@ -30,11 +30,20 @@
 - [绘世启动器](https://apps.microsoft.com/store/detail/%E7%BB%98%E4%B8%96%E5%90%AF%E5%8A%A8%E5%99%A8/9NXBR1M0V7M1?hl=zh-cn&gl=cn)
 - ["App Store" (multimedia focused)](https://pinokio.computer/)
 
-
 ## Blue pill (General community) ##
 
 - **Some official discord may be omitted. Use [i18n code](https://github.com/ladjs/i18n-locales) instead of natural language.**
-- (Advanced) AI Art `zh`: [場外AI繪圖討論區](https://discord.gg/FdvjW3jy) 
+- *Now I use (public) permanent link because the situation is stable now.*
+- **orange cats** `zh`: [場外AI繪圖討論區](https://discord.gg/k57gkxWgev)
+- **2b2t** `zh`: [SDCN](https://t.me/StableDiffusion_CN)
+- **active trainers** `zh`: [JackEllie AI世界](https://discord.gg/TM5d89YNwA)
+- **dataset experts** `en`: [Jerry's Waifu Lab](https://discord.gg/eHQd5SVfmJ)
+- *Guess why I intentionally leave this line.*
+- Kohaku: [KohakuUwU](https://discord.gg/tPBsKDyRR5)
+- AWA > part of NoobAI: [ArtiWaifu](https://discord.gg/WyDYGFtuBE)
+- AI Furry: [Furry Diffusion](https://discord.gg/furrydiffusion)
+- Disabled `en`: SD Exchange
+- Disabled `en`: [r/StableDiffusion](https://discord.gg/FRfHTxEhD8)
 - (General) AI Art `zh`: [鳥巢AI 藝術學園](https://discord.gg/gUSqkYE7)
 - AI Art `zh`: [AI繪圖-初級咒術師魔法學院🔰](https://discord.gg/AF7JqWbb)
 - AI detector `en/ko`: [Illuminarty](https://discord.gg/YeTYaUe8)
@@ -43,7 +52,6 @@
 - Developer related `en`: [camenduru's server](https://discord.gg/y55khHPn)
 - Pure debate server `ja`: [議論一般チャンネル](https://discord.gg/HjYRv2rZ)
 - AI Art `es`: [IA en Español](https://discord.gg/tQDm7kU5)
-- **2b2t** `zh`: [SDCN](https://t.me/StableDiffusion_CN)
 - ~~victim~~ `ru`: [Novel AI](https://t.me/Novel_AI_Group)
 - ~~attacker~~ `ru`: [FoxyAI | Chat](https://t.me/ai_regeneration_chat)
 - Thanks for sharing `ru` [Neuroartists](https://t.me/neuroartists)- 
@@ -54,6 +62,16 @@
 - FB, Active `th`: [Stable Diffusion Thailand](https://www.facebook.com/groups/1091513994797057)
 - Forum, Active `kr`: [AI 그림 채널](https://arca.live/b/aiart)
 - Blog, Active `zh`: [AI加速器社区](https://www.acceleratori.com/d/11152)
+
+## Blue pill ("AI slop") ##
+
+- *Pro: No drama, pure enjoyment. Cons: Not a place to learn.*
+- FB, Active `en`: [World Of Anime and Random Ai artworks](https://www.facebook.com/groups/1307698623634418)
+- FB, Active `zh`: [ACG┃AI繪圖時代（AI Art Generation）](https://www.facebook.com/groups/885149792703496/)
+- FB, Active `en`: [Furry Andy & Second Life](https://www.facebook.com/groups/245752002290230/)
+- FB, Active `es`: [Hot waifu](https://www.facebook.com/groups/1209526020239437)
+- FB, Active `en`: [Alisa Mikhailovna Kujou](https://www.facebook.com/groups/1499480980651386/)
+- FB, Active `zh`: [真。漫談帝國Comics Empire](https://www.facebook.com/groups/1529064811363435)
 
 ## Blue pill (Photorealistic community) ##
 
@@ -75,7 +93,7 @@ Note that "SDCN" is not categorized here.
 - Discord, Active `en`: [banodoco](https://discord.gg/ckwNzuJg)
 - FB, Active `en`: [AI ANIMATION & VIDEO: Deforum / PikaLabs / Kaiber / Zeroscope / Runway / SD](https://www.facebook.com/groups/aianimationonly)
 
-## Blue Pill (LLM) ## 
+## Blue Pill (LLM) ##
 
 - Discord, Active `zh`: [自由AI阵线](https://discord.gg/jfbvYHeTrB)
 - AI application developer based `en`: ~~Shinonome AI Lab~~ [SAIL](https://discord.gg/TXW8tAvU)
@@ -85,7 +103,7 @@ Note that "SDCN" is not categorized here.
 - Glaze (Glaze's partner web platform) `en`: [Cara Beta](https://discord.gg/qrh7qnuz)
 - Mist, V2 `en`: [Mist](https://discord.gg/23K375NG) ([What is it?](https://huggingface.co/spaces/mf666/mist-fucker))
 
-## Blue pill (AI art platform) ## 
+## Blue pill (AI art platform) ##
 
 Definitely not Pixiv.
 

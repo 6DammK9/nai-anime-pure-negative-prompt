@@ -1,0 +1,15 @@
+Pandas(
+    Index=1356479, height=800, width=640, fav=10, quality=array(['normal quality'], dtype=object), special=array(['1boy', 'male focus'], dtype=object), 
+    general=array(['blush', 'boots', 'bow', 'braid', 'card (medium)', 'card parody',
+       'character name', 'cinderella girls card parody', 'fang',
+       'garter straps', 'hair bow', 'long hair', 'otoko no ko', 'parody',
+       'pink hair', 'purple eyes', 'single braid', 'solo', 'sun symbol',
+       'thighhighs'], dtype=object), character=array(['astolfo (fate)'], dtype=object), 
+    copyright=array(['fate/apocrypha', 'fate (series)', 'idolmaster', 'idolmaster cinderella girls'], dtype=object), 
+    artist=array(['akashiro sen'], dtype=object), meta=array([], dtype=object), year=array(['early'], dtype=object), rating=array(['sensitive'], dtype=object), 
+    florence_long='A young girl with pink hair and a black bow on her head. she is sitting on the floor with her legs crossed and her hands resting on her knees. she has a serious expression on her face and is wearing a white jacket, black pants, and white thigh-high boots with gold accents. the background is white and there is a blue border around the image. the word "astolfo" is written in gold letters at the bottom right corner.', 
+    florence_short='An animated girl with pink hair and a white jacket sitting on the ground, surrounded by a frame with text and a logo. the text reads "astolfo - fate/stay night unlimited blade works".', 
+    phi3v_horny=None, 
+    pixtral_caption='The image is a vibrant illustration by akashiro_sen, known for their detailed and expressive style. The central figure is Astolfo from the Fate series, depicted in a dynamic pose with one knee bent and the other leg stretched out. Astolfo has striking pink hair and is dressed in a distinctive outfit that includes a white and black ensemble with gold accents. The character is adorned with a bow and braid, adding to their unique appearance. The background features a stylized frame with ornate designs, and the word "Astolfo" is prominently displayed at the bottom, along with the artist\'s signature style. The overall composition is lively and captures the essence of the character\'s energy and charm.', 
+    quality_0='normal quality', artist_0='akashiro sen', year_0='early', rating_0='sensitive', characters='astolfo (fate)'
+)

@@ -1,0 +1,33 @@
+Pandas(
+    Index=1, height=650, width=459, fav=1079, quality=array(['masterpiece'], dtype=object), special=array(['1girl'], dtype=object), 
+
+    general=array(['2000s (style)', ';p', 'animal ear fluff', 'animal ears',
+        'aqua panties', 'blue bow', 'blue panties', 'blue ribbon', 'blush',
+        'border', 'bow', 'bow panties', 'breasts', 'brown eyes',
+        'cat ears', 'cat girl', 'cat tail', 'collarbone',
+        'colored stripes', 'cowboy shot', 'hands up', 'kemonomimi mode',
+        'large breasts', 'long hair', 'long sleeves', 'looking at viewer',
+        'no pants', 'one eye closed', 'orange background',
+        'outside border', 'panties', 'parted bangs', 'pink shirt',
+        'red hair', 'red sailor collar', 'ribbon', 'sailor collar',
+        'school uniform', 'serafuku', 'shirt', 'sidelocks',
+        'simple background', 'smile', 'solo', 'standing',
+        'striped background', 'striped clothes', 'striped panties', 'tail',
+        'thigh gap', 'thighhighs', 'thighs', 'tongue', 'tongue out',
+        'two side up', 'underwear', 'very long hair', 'w arms',
+        'white border', 'white thighhighs'], dtype=object
+    ), 
+
+    character=array(['kousaka tamaki'], dtype=object), 
+    copyright=array(['to heart (series)', 'to heart 2'], dtype=object), 
+    artist=array(['kyogoku shin'], dtype=object), 
+    meta=array([], dtype=object), 
+    year=array(['old'], 
+    dtype=object), 
+    rating=array(['sensitive'], dtype=object), 
+
+    florence_long='A young girl with long purple hair and cat ears on her head. she is wearing a pink and blue striped bikini top and white thigh-high boots. her arms are raised above her head, as if she is posing for the camera. she has a playful expression on her face and is looking directly at the viewer. the background is a striped orange color. the overall style of the illustration is anime-style.', 
+    florence_short="A woman in a bikini with long hair and a cat's ears, standing in front of a white background. she has a mischievous expression on her face, as if she is up to something. her hair is long and wavy, and her eyes are wide and alert. she is wearing a pink and white striped bikini top and a pair of blue shorts.", 
+    phi3v_horny=None, 
+    pixtral_caption='The image is a vibrant illustration by Kyogoku Shin, characterized by a distinct 2000s style. It features a young woman with long, pink hair and animal ear fluff, suggesting a fantastical or supernatural theme. She is dressed in a white top and blue shorts, striking a playful pose with her hands on her head. The background is a simple, warm-toned pattern, which helps to highlight the central figure. The artwork is part of the "To Heart" series, specifically "To Heart 2," and captures a moment of whimsy and charm.'
+)

@@ -1,9 +1,10 @@
 # Chapter 06: Finetuning in vanilla approach. #
 
-[MONICA!](https://tenor.com/8v1P.gif)
+[Joining the cult of Arch linux.](./manjaro.md)
 
 - [cheesechaser-runtime](./cheesechaser-runtime): Definitely not dataset speedrun via [deepghs/cheesechaser](https://github.com/deepghs/cheesechaser).
 - [sd-scripts-runtime](./sd-scripts-runtime): Definitely not finetune speedrun via [kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts).
+- [tipo-toriigate-runtime](./tipo-toriigate-runtime): Trying to generate a NLP styke caption for knowledge integration. [KBlueLeaf/TIPO-500M-ft](https://huggingface.co/KBlueLeaf/TIPO-500M-ft) and [Minthy/ToriiGate-v0.4-7B](https://huggingface.co/Minthy/ToriiGate-v0.4-7B).
 
 ## Hey ChatGPT, what is Astolfo saying about? ##
 
