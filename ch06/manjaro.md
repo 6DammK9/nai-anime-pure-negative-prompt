@@ -142,6 +142,15 @@ chmod 777 "/run/media/user/Intel P4510 3"
 mount -t ntfs-3g /dev/nvme0n1p2 "/run/media/user/Intel P4510 3"
 ```
 
+- If it is mounted as read only, make sure the windows is full shutdown with `shutdown /s`
+
+```log
+Failed to mount '/dev/nvme0n1p2 ': Operation not permitted
+The NTFS partition is in an unsafe state. Please resume and shutdown
+Windows fully (no hibernation or fast restarting), or mount the volume
+read-only with the 'ro' mount option
+```
+
 ### 1.6 Saving GPU resources for heavy AI use ###
 
 #### 1.6.1 Disable xorg extension to minimalize VRAM usage ####
@@ -419,8 +428,63 @@ accelerate launch
 tensorboard --logdir "/run/media/user/PM863a/astolfo_xl/just_astolfo/tensorboard"
 ```
 
-- **Crap, I am OOM again.**
+- **Crap, I am OOM again.** With both NCCL or GLOO, VRAM usage will exceed 24GB, even single card works fine with 23.0GB.
 
-- **Crap, with the "Train TE only trick", the speedup is ~~still 10%~~ legit!** Around 3x for 4x cards.
+- After a few tries, I have managed to **shrink the UNET** to around [63%](./sd-scripts-runtime/sdxl_original_unet_63.py) and get the trainer moves with TTE. However the number is not dominating: I can still get OOM with 61%, but this setting can let me even have a browser on for IDE. The speed boost is at 1.6x only for 4 cards (1.1s/bs1 to 2.7s/bs4)
+
+```log
+1629562564 / 2567463684 = 63% parameters
+```
+
+```log
+> nvidia-smi
+Wed Jan 29 01:22:49 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        Off |   00000000:17:00.0 Off |                  N/A |
+| 56%   67C    P2            170W /  180W |   24042MiB /  24576MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 3090        Off |   00000000:65:00.0 Off |                  N/A |
+| 60%   61C    P2            174W /  180W |   24066MiB /  24576MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 3090        Off |   00000000:66:00.0  On |                  N/A |
+| 35%   57C    P2            157W /  180W |   24045MiB /  24576MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA GeForce RTX 3090        Off |   00000000:B3:00.0 Off |                  N/A |
+| 51%   55C    P2            168W /  180W |   24148MiB /  24576MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A      1326      G   /usr/lib/Xorg                                   4MiB |
+|    0   N/A  N/A     50049      C   ...niconda3/envs/kohyas-env/bin/python      24024MiB |
+|    1   N/A  N/A      1326      G   /usr/lib/Xorg                                 147MiB |
+|    1   N/A  N/A      1428      G   /usr/bin/gnome-shell                           40MiB |
+|    1   N/A  N/A     44288      G   ...54,262144 --variations-seed-version         45MiB |
+|    1   N/A  N/A     50050      C   ...niconda3/envs/kohyas-env/bin/python      23814MiB |
+|    2   N/A  N/A      1326      G   /usr/lib/Xorg                                  69MiB |
+|    2   N/A  N/A     50051      C   ...niconda3/envs/kohyas-env/bin/python      23962MiB |
+|    3   N/A  N/A      1326      G   /usr/lib/Xorg                                   4MiB |
+|    3   N/A  N/A     50052      C   ...niconda3/envs/kohyas-env/bin/python      24130MiB |
++-----------------------------------------------------------------------------------------+
+```
+
+- With the "Train TE only trick", the speedup is around 2.2x for 4x cards. (1.1s/bs1 to 2.0s/bs4)
 
 - [Discussion in Puget Systems.](https://www.pugetsystems.com/labs/hpc/multi-gpu-sd-training/?srsltid=AfmBOooXQwfw4U8OnEtYIHHSEl8UXCdJNQx75dNF23vEZZkPgPrTLcWz)
+
+- [NCCL overhead is hard to predict.](https://github.com/NVIDIA/nccl/issues/864)
+
+- [Slow training with GLOO (but no OOM).](https://github.com/bmaltais/kohya_ss/issues/2366)
