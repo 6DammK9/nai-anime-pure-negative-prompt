@@ -322,12 +322,12 @@ X Error of failed request:  BadValue (integer parameter out of range for operati
 ```conf
 #/etc/X11/xorg.conf.d/20-evdi.conf
 Section "OutputClass"
-	Identifier "DisplayLink"
-	MatchDriver "evdi"
-	Driver "modesetting"
+    Identifier "DisplayLink"
+    MatchDriver "evdi"
+    Driver "modesetting"
     Option "AllowEmptyInitialConfiguration"
     Option "PrimaryGPU" "yes"
-	Option "AccelMethod" "none"
+    Option "AccelMethod" "none"
 EndSection
 ```
 
@@ -436,6 +436,8 @@ tensorboard --logdir "/run/media/user/PM863a/astolfo_xl/just_astolfo/tensorboard
 1629562564 / 2567463684 = 63% parameters
 ```
 
+- Meanwhile my power target has been set to 180W, and there is no power spike at call. All cards are cool.
+
 ```log
 > nvidia-smi
 Wed Jan 29 01:22:49 2025       
@@ -480,6 +482,8 @@ Wed Jan 29 01:22:49 2025
 |    3   N/A  N/A     50052      C   ...niconda3/envs/kohyas-env/bin/python      24130MiB |
 +-----------------------------------------------------------------------------------------+
 ```
+
+- `PagedAdamW8bit` listed in [train_util.py](https://github.com/kohya-ss/sd-scripts/blob/main/library/train_util.py#L4189) can tolerate more VRAM usage combination. However **it is slow as GLOO** (1.1s/bs1 to 6.1s/bs4). [Lore of paged optimizers](https://github.com/bitsandbytes-foundation/bitsandbytes/issues/962), and [an article of paged optimizers](https://medium.com/@zaiinn440/parameter-efficient-fine-tuning-of-llms-maximizing-performance-with-minimal-parameter-updates-5ff0cb54032)
 
 - With the "Train TE only trick", the speedup is around 2.2x for 4x cards. (1.1s/bs1 to 2.0s/bs4)
 
