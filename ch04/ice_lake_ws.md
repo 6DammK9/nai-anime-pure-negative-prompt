@@ -1,10 +1,8 @@
-*Article archive for posting to public website like [builds.gg](https://builds.gg/dammk/ice-lake-ai-ml-workstation-which-shouldnt-exist-36884) and [pcpartpicker](https://pcpartpicker.com/b/VZy48d). Images will be included there, [and Google Drive also.](https://drive.google.com/drive/folders/1v_b23L6OAVj7WgRmqmIbPVnCLCDriWzI?usp=sharing).
+*Article archive for posting to public website like [builds.gg](https://builds.gg/dammk) and [pcpartpicker](https://pcpartpicker.com/user/DammK/). Images will be included there, [and Google Drive also.](https://drive.google.com/drive/folders/1v_b23L6OAVj7WgRmqmIbPVnCLCDriWzI?usp=sharing). Daily (semi-personal) update in [my Instagram](https://www.instagram.com/6dammk9/) for lots of parts hunting / bizarre PC build.
 
 # Ice lake AI / ML Workstation which shouldn't exist #
 
 tldr: This is a bizarre Workstation transformed from my X99 E-ATX PC which was a ROG R5E with an i7-5960X. Case / fans / PSU remains.
-
-Follow [my Instagram](https://www.instagram.com/6dammk9/) for lots of parts hunting / bizarre PC build.
 
 ## How the parts are gathered (definitely not ebay) ##
 
