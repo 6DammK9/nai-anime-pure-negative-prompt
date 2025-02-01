@@ -70,8 +70,20 @@
 
 ![xyz_grid-0023-3501057452-8064-1081-6-48-20250201135700.jpg](./img/xyz_grid-0023-3501057452-8064-1081-6-48-20250201135700.jpg)
 
+- For effects on artist, **TTE is recommended**. The following 2 are `(1boy:0), [astolfo]` and `cle_masahiro, (1boy:0), [astolfo]`. Notice that the artist tag in this 6k dataset only appears once or twice.
+
+![xyz_grid-0028-3033572388-6144-1327-6-48-20250201163358.jpg](./img/xyz_grid-0028-3033572388-6144-1327-6-48-20250201163358.jpg)
+
+![xyz_grid-0029-3033572388-6144-1327-6-48-20250201164231.jpg](./img/xyz_grid-0029-3033572388-6144-1327-6-48-20250201164231.jpg)
+
 ## Unconditional Image Generation ##
 
 - *It still works.*
 
 ![250205-3581144351-1024-1024-6-48-20250201111839.png](./img/250205-3581144351-1024-1024-6-48-20250201111839.png)
+
+```
+parameters
+
+Steps: 48, Sampler: DDIM CFG++, Schedule type: Automatic, CFG scale: 6, Seed: 3581144351, Size: 1024x1024, Model hash: a22204df31, Model: last, VAE hash: 235745af8d, VAE: sdxl-vae-fp16-fix.vae.safetensors, Clip skip: 2, SEG Active: True, SEG Blur Sigma: 11, SEG Start Step: 0, SEG End Step: 2048, PAG Active: True, PAG SANF: True, PAG Scale: 1, PAG Start Step: 0, PAG End Step: 2048, Version: v1.10.1
+```
