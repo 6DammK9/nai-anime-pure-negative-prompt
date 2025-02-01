@@ -44,6 +44,8 @@
 
 ![xyz_grid-0017-460372993-14784-1081-6-48-20250130174425.jpg](./img/xyz_grid-0017-460372993-14784-1081-6-48-20250130174425.jpg)
 
+![xyz_grid-0026-744089893-14784-1081-6-48-20250201152012.jpg](./img/xyz_grid-0026-744089893-14784-1081-6-48-20250201152012.jpg)
+
 ![xyz_grid-0019-3501057452-14784-1081-6-48-20250131000434.jpg](./img/xyz_grid-0019-3501057452-14784-1081-6-48-20250131000434.jpg)
 
 ## Some personal direct quotes (need time to consolidate) ##
@@ -65,8 +67,6 @@
 ## Comparasion between TTE settings (on / off / only) ##
 
 - See [model description](./sd-scripts-runtime/logs/readme.md). Generally forgetting pretrained knowledge can be avoided with proper learning rate and absent of quality tags, which **"quality tags" is a kind of misalignment**.
-
-![xyz_grid-0026-744089893-14784-1081-6-48-20250201152012.jpg](./img/xyz_grid-0026-744089893-14784-1081-6-48-20250201152012.jpg)
 
 ![xyz_grid-0023-3501057452-8064-1081-6-48-20250201135700.jpg](./img/xyz_grid-0023-3501057452-8064-1081-6-48-20250201135700.jpg)
 
