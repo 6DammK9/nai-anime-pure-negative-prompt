@@ -8,7 +8,7 @@ import pandas as pd
 from tqdm import tqdm
 from tqdm.contrib.concurrent import thread_map
 
-df = pd.read_parquet('./danbooru2023-prompt-gen-data.parquet', columns=['id', 'rating', 'phi3v_horny', 'pixtral_caption', 'florence_short', 'florence_long'])
+df = pd.read_parquet('./danbooru2023-prompt-gen-data.parquet', columns=['index', 'rating', 'phi3v_horny', 'pixtral_caption', 'florence_short', 'florence_long'])
 
 # This is not directly used. I leave it as reference.
 DD_TAG_JSON = "./meta_cap.json"
@@ -39,7 +39,7 @@ for i in range(split_count):
 # Multi threads needs packing parameters, so it will be a bit counter intuitive. Equivalent to "for row in df.itertuples()"
 def dump_tags(row):
     #Use this filter for nsfw only
-    #if (row.rating == "s") or (row.rating == "g"):
+    #if (row.rating[0] == "s") or (row.rating[0] == "g"):
     #    return None
 
     #AngelBottomless: df.set_index has been applied on field "id" (so it is hidden in HF online preview)
