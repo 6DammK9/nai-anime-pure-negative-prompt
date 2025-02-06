@@ -169,7 +169,7 @@ def join_texts_as_list(id, texts, text_list_type = "speech bubbles"):
 			elif ("translation" in texts[0]):
 				# 250205: WTF is this internal system.
 				formatted_texts = [f"\"{t['translation']}\"" for t in texts]
-			elif ("bbox" in texts[0]):
+			elif ("bbox" in texts[0]) or ("bounding_box" in texts[0]) or ("coordinates" in texts[0]):
 				formatted_texts = [f"\"{t["text"]}\"" for t in texts]
 			else:
 				print(f"Unexpected text list ({text_list_type}) in {id}, fallback to text only")
@@ -195,7 +195,7 @@ def join_speechbubble_as_dict(id, speech_bubbles):
 			texts.append(speech_bubbles[key])
 			i = i + 1
 			key = f"speech_bubble_{i}"
-		formatted_texts = [f"\"{t['text']}\"" for t in texts]
+		formatted_texts = [f"\"{t['text'] if isinstance(t, dict) and ('text' in t) else t}\"" for t in texts]
 		return f"{base_text}{" and ".join(formatted_texts)}"
 	except:
 		print(f"Invalid text bubble dict in {id}")
@@ -290,7 +290,7 @@ def parse_and_join_output(id, output_dict, row):
 					caption_fragments.append(join_character_as_dict(id, rf))
 				elif "text_1" in rf:
 					# 250205: Strange case. Fallback to list.
-					caption_fragments.append(join_texts_as_list(id, rf.values()))
+					caption_fragments.append(join_texts_as_list(id, list(rf.values())))
 				elif "1st_frame" in rf:
 					# 250205: The 1st, 2nd, 3rd is a headache.
 					rf2 = cast_frame_to_text(id, rf)
@@ -306,7 +306,7 @@ def parse_and_join_output(id, output_dict, row):
 						rfk = list(rf.keys())
 						if "_text" in rfk[0]:
 							# 250205: i18n text, or just stange text.
-							caption_fragments.append(join_texts_as_list(id, rf.values(), "multilingual"))
+							caption_fragments.append(join_texts_as_list(id, list(rf.values()), "multilingual"))
 						else:
 							# 250205: It is almost "some text in a NLP place". 
 							rf2 = cast_oo_to_text(id, rf)
