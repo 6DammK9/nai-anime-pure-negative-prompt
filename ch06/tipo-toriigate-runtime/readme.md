@@ -83,7 +83,7 @@ python batch_nlp_caption.py --parquet_path "H:/danbooru2024-webp-4Mpixel/metadat
 
 - [Requires Ampere GPU or later](https://github.com/turboderp-org/exllamav2/issues/480)
 
-= [flash-attention wheels](https://huggingface.co/lldacing/flash-attention-windows-wheel/tree/main), [triton wheels](https://huggingface.co/madbuda/triton-windows-builds/tree/main)
+- [flash-attention wheels](https://huggingface.co/lldacing/flash-attention-windows-wheel/tree/main), [triton wheels](https://huggingface.co/madbuda/triton-windows-builds/tree/main)
 
 ```sh
 conda create -n exl2-env python=3.12
