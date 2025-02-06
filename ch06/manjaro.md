@@ -428,9 +428,11 @@ accelerate launch
 tensorboard --logdir "/run/media/user/PM863a/astolfo_xl/just_astolfo/tensorboard"
 ```
 
+## 3. Compromised trining with MultiGPU overhead (NCCL) ##
+
 - **Crap, I am OOM again.** With both NCCL or GLOO, VRAM usage will exceed 24GB, even single card works fine with 23.0GB.
 
-- After a few tries, I have managed to **shrink the UNET** to around [63%](./sd-scripts-runtime/sdxl_original_unet_63.py) and get the trainer moves with TTE. However the number is not dominating: I can still get OOM with 61%, but this setting can let me even have a browser on for IDE. The speed boost is at 1.6x only for 4 cards (1.1s/bs1 to 2.7s/bs4)
+- After a few tries, I have managed to **shrink the UNET** to around [63%](./sd-scripts-runtime/sdxl_original_unet_63.py) and get the trainer moves with TTE. However the number is not dominating: I can still get OOM with 61%, but this setting can let me even have a browser on for IDE. The speed boost is at 2.1x only for 4 cards (1.4s/bs1 to 2.7s/bs4)
 
 ```log
 1629562564 / 2567463684 = 63% parameters
@@ -483,12 +485,23 @@ Wed Jan 29 01:22:49 2025
 +-----------------------------------------------------------------------------------------+
 ```
 
-- `PagedAdamW8bit` listed in [train_util.py](https://github.com/kohya-ss/sd-scripts/blob/main/library/train_util.py#L4189) can tolerate more VRAM usage combination. However **it is slow as GLOO** (1.1s/bs1 to 6.1s/bs4). [Lore of paged optimizers](https://github.com/bitsandbytes-foundation/bitsandbytes/issues/962), and [an article of paged optimizers](https://medium.com/@zaiinn440/parameter-efficient-fine-tuning-of-llms-maximizing-performance-with-minimal-parameter-updates-5ff0cb54032)
+- `PagedAdamW8bit` listed in [train_util.py](https://github.com/kohya-ss/sd-scripts/blob/main/library/train_util.py#L4189) can tolerate more VRAM usage combination. However **it is slow as GLOO** (1.4s/bs1 to 6.1s/bs4). [Lore of paged optimizers](https://github.com/bitsandbytes-foundation/bitsandbytes/issues/962), and [an article of paged optimizers](https://medium.com/@zaiinn440/parameter-efficient-fine-tuning-of-llms-maximizing-performance-with-minimal-parameter-updates-5ff0cb54032)
 
-- With the "Train TE only trick", the speedup is around 2.2x for 4x cards. (1.1s/bs1 to 2.0s/bs4)
+- With the "Train TE only trick", the speedup is around 2.8x for 4x cards. (1.4s/bs1 to 2.0s/bs4)
 
 - [Discussion in Puget Systems.](https://www.pugetsystems.com/labs/hpc/multi-gpu-sd-training/?srsltid=AfmBOooXQwfw4U8OnEtYIHHSEl8UXCdJNQx75dNF23vEZZkPgPrTLcWz)
 
 - [NCCL overhead is hard to predict.](https://github.com/NVIDIA/nccl/issues/864)
 
 - [Slow training with GLOO (but no OOM).](https://github.com/bmaltais/kohya_ss/issues/2366)
+
+## 3.1 (TODO) Deepspeed with ZERO level 2 ##
+
+- [An attempt to apply deepspeed in kohyas GUI.](https://github.com/bmaltais/kohya_ss/discussions/2254)
+
+- HF accelerate with deepspeed: [blog](https://huggingface.co/blog/accelerate-deepspeed), [api doc](https://huggingface.co/docs/accelerate/usage_guides/deepspeed)
+
+> Like 5% slower, but with grad accum, it'd be hard to notice
+I do not have enough experience with newer hf accelerate to tell if it works or not
+When I used accelerate year(s) ago, it did not work well. 
+For a 4x 3090 and sdxl, zero 2 should be enough

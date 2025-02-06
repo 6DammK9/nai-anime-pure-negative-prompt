@@ -42,24 +42,18 @@
 
 ## Finetune findings ##
 
-![24121501.jpg](./img/24121501.jpg)
+- Moved to [gallery.md](./gallery.md).
 
-- *Since most of my recipe are models finetuned from the same dataset (with different tags)*, it converges quite fast. Astolfo got his facial features back within 1EP.
+### Comparasion with similar "Large scale finetune" ###
 
-- **Training loss (L2 / Huber) has no correlation to image content.** It is fine when it doesn't rise / drop drastically. [From common practice](https://www.stablediffusion-cn.com/sd/sd-knowledge/1761.html), 0.1 is a good reference. The training loss here applies to the inference for each denoising step, under the MDP chain inside the SD model. Advanced validation loss are required, *or just be responsible to art and be the first audience*.
+- *I'm not going to join the rat race, I just want to find a way to finetune in such large scale with my methodology.*
 
-- TTE off may have lower loss, althouth it is close to meaningless to end result.
+- [NoobAI-XL EPS 1.1](https://civitai.com/models/833294?modelVersionId=1116447): 34EP on "8M + 4.6M" ([Ref](https://civitai.com/models/833294?modelVersionId=1022833))
 
-### When TTE is off ###
+- [Animagine XL 4.0](https://civitai.com/models/1188071?modelVersionId=1337429): 10EP on "7.6M + 0.6M", "2.5e-6 + 1.25e-6" ([Ref](https://vxtwitter.com/linaqruf_/status/1885133039837339962?s=46&t=dXf0NAr7rWjORrF_wVe6_A))
 
-- If the concept is recognizable already (usually incomplete, e.g. Astolfo vs generic pink hair and slight hair intake), styles / details can be recovered well.
+- [nyaflow-xl [alpha]](https://huggingface.co/nyanko7/nyaflow-xl-alpha): ??EP on 3.6M filtered, "5e-6 + 3e-6" ([Ref](https://github.com/Mikubill/naifu/blob/main/config/train_sdxl_original.yaml). [flow commit](https://github.com/Mikubill/naifu/commit/0b4640d8977efd9895e9cfbef777b62c576d3af6#diff-70747fe1ebda2f6a3ea340f401e8dfb53c09bc9495e6ecc5ba535ae0de373a62))
 
-- Most unrelated but recognizable concept are mostly untouched. Cars, other characters, costumes, locations, are having style change only.
+- [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1): ??EP on 2.1M, "1e-5"
 
-- However, if the concept is unrecognizable before train, it won't be effective. For example, some characters, artists, NSFW concepts, were wiped out while merging.
-
-### When TTE is on ###
-
-- It will be effective when the concept is unrecognizable before train. For example, *Astolfo is a boy now*.
-
-- However, with improper parameter and data distribution, concepts recognizable before train can be forgotten. Characters, costumes may survive, but cars, locations may be gone.
+- "Ours": At most 1EP on "at most 8M + 4.6M"

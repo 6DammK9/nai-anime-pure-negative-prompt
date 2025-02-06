@@ -22,12 +22,13 @@ cd sd-scripts
 - **Pay attention of** `torch==2.3.1` (must be < 2.4 for winodws. [Download page](https://pytorch.org/get-started/previous-versions/#v231)). 
 - I have experienced [this issue / PR](https://github.com/kohya-ss/sd-scripts/pull/1686) for 2.5.0. It requires [dedicated workaround](./libuv_torch25_win10.md) and [this workaround](./accelerator_gloo.md), **requires code change in pytorch.** See next session if interested.
 
+- (250201) If you get `RuntimeError: operator torchvision::nms does not exist`, match the version of `torch torchvision xformers`.
+
 ```sh
 conda create -n kohyas-env python=3.12
 conda activate kohyas-env
 
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
-pip install xformers --index-url https://download.pytorch.org/whl/cu124
+pip install torch torchvision xformers --index-url https://download.pytorch.org/whl/cu124
 pip install --upgrade -r requirements.txt
 ```
 
@@ -384,6 +385,8 @@ tar -czvf meta_cap_dd.tar.gz meta_cap_dd.json
 
 ## Finetune stage ##
 
+- **From now on the raw data is no longer needed.** Only `meta_lat.json` and `*.npz` is required. It will be handy if you are using 4TB SSD instead of 8TB+ HDD.
+- This session is configured to single GPU. See next session for multiple GPU.
 - Then it is the finetune stage. `fine_tune.py` is for SD1.5. SDXL use `train_sdxl.py` instead. I use my own [6DammK9/AstolfoMix-XL](https://huggingface.co/6DammK9/AstolfoMix-XL/blob/main/x215c-AstolfoMix-24101101-6e545a3.safetensors) to train. *I want to see if finetuning (pretrain?) on merged model works.*
 - This is written for 4x RTX3090 24GB with full scale finetune (may OOM). I prefer the parameters from [cagliostrolab/animagine-xl-3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1#hyperparameters).
 - `4e-7` is official SDXL learning rate. 
@@ -457,11 +460,13 @@ Serving TensorBoard on localhost; to expose to the network, use a proxy or pass 
 TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
 ```
 
-## TODO ##
+## Compromised trining with MultiGPU overhead (GLOO) ##
+
+- See [my attempt in Manjaro (NCCL) version](../manjaro.md#compromised-trining-with-multigpu-overhead-nccl). This Windows (without WSL) attempt will leave for reference.
 
 - I have added my progress in [the PR](https://github.com/kohya-ss/sd-scripts/pull/1686), not sure if it must be forced to use the old `venv` like A1111, or I need **WSL** to proceed.
 
-- [m3.py](./m3.py) serves for PoC. The *best effort* will be "80% parameters" by [disabling forcing unet to train/not train](https://github.com/kohya-ss/sd-scripts/blob/sd3/sdxl_train.py#L340) and setting "not train" for [mid attn layers](https://github.com/kohya-ss/sd-scripts/blob/sd3/library/sdxl_original_unet.py#L942) and [out layer2 resnet layers](https://github.com/kohya-ss/sd-scripts/blob/sd3/library/sdxl_original_unet.py#L959) by appending `.requires_grad_(False)`.
+- [m3.py](./m3.py) serves for PoC. The *best effort* will be "80% parameters" by [disabling forcing unet to train/not train](https://github.com/kohya-ss/sd-scripts/blob/sd3/sdxl_train.py#L340) and setting "not train" for [mid attn layers](https://github.com/kohya-ss/sd-scripts/blob/sd3/library/sdxl_original_unet.py#L942) and [out layer2 resnet layers](https://github.com/kohya-ss/sd-scripts/blob/sd3/library/sdxl_original_unet.py#L959) by appending `.requires_grad_(False)`. *Turns out it should be close to 60% to have legit speed boost.*
 
 ```log
 [rank0]:   File "C:\Users\User\.conda\envs\kohyas-env\Lib\site-packages\torch\nn\parallel\distributed.py", line 1196, in _ddp_init_helper

@@ -1,0 +1,83 @@
+> python batch_nlp_caption.py --parquet_path "F:/danbooru2024-webp-4Mpixel/metadata.parquet" --device "cuda:0" --prompt_threads 8 --img_dir "F:/danbooru2024-webp-4Mpixel/kohyas_finetune/" --in_json "./missing_0.json" --out_json_good "./meta_cap_2024_toriigate_good_0.json" --out_json_bad "./meta_cap_2024_toriigate_bad_0.json" 
+Preparing the tagging database
+Preparing the targeted ids
+Preparing caption model
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [8:00:11<00:00, 7202.94s/it]
+preparing prompts
+making prompt messages: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 119858/119858 [11:18<00:00, 176.68it/s]
+sorting
+making caption:   0%|▏                                                                                                                                                    | 187/119858 [43:43<506:48:47, 15.25s/it]
+invalid JSON in 7867164
+making caption:   0%|▎                                                                                                                                                  | 262/119858 [1:02:02<516:25:31, 15.55s/it]
+invalid caption fragment: {'speech_bubble': 'A speech bubble above Senko\'s head reads "Welcome Home."', 'text_under_senko': '-Hmph.'}
+making caption:   0%|▎                                                                                                                                                  | 276/119858 [1:05:25<487:55:41, 14.69s/it]
+invalid JSON in 7867544
+making caption:   0%|▍                                                                                                                                                  | 316/119858 [1:14:39<337:41:26, 10.17s/it]
+invalid caption fragment: {'title': 'YAMATO & UTA', 'artist_info': '@Shinonome0720 Do not repost or use my artworks.'}
+making caption:   0%|▍                                                                                                                                                  | 335/119858 [1:19:22<465:09:52, 14.01s/it]
+invalid JSON in 7867784
+making caption:   0%|▍                                                                                                                                                  | 354/119858 [1:24:00<472:37:08, 14.24s/it]
+
+> python batch_nlp_caption.py --parquet_path "F:/danbooru2024-webp-4Mpixel/metadata.parquet" --device "cuda:1" --prompt_threads 8 --img_dir "F:/danbooru2024-webp-4Mpixel/kohyas_finetune/" --in_json "./missing_1.json" --out_json_good "./meta_cap_2024_toriigate_good_1.json" --out_json_bad "./meta_cap_2024_toriigate_bad_1.json" 
+Preparing the tagging database
+Preparing the targeted ids
+Preparing caption model
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:15<00:00,  3.92s/it]
+preparing prompts
+making prompt messages: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 119834/119834 [12:33<00:00, 158.99it/s]
+sorting
+making caption:   0%|                                                                                                                                                      | 39/119834 [11:10<676:43:40, 20.34s/it]
+invalid JSON in 7866553
+making caption:   0%|▏                                                                                                                                                    | 150/119834 [43:10<661:43:18, 19.90s/it]
+invalid JSON in 7867009
+making caption:   0%|▎                                                                                                                                                  | 246/119834 [1:11:13<591:06:32, 17.79s/it]
+invalid JSON in 7867417
+making caption:   0%|▎                                                                                                                                                  | 254/119834 [1:14:20<711:31:59, 21.42s/it]
+invalid JSON in 7867449
+making caption:   0%|▎                                                                                                                                                  | 256/119834 [1:15:27<845:32:26, 25.46s/it]
+invalid text bubble list in 7867457
+["It's rare for me to get tail treatment...", 'For hybrids like us, it could affect work performance.', 'Do take proper care of your tail. You can call our service as well.']
+making caption:   0%|▎                                                                                                                                                  | 275/119834 [1:21:48<592:44:27, 17.85s/it]
+
+> python batch_nlp_caption.py --parquet_path "F:/danbooru2024-webp-4Mpixel/metadata.parquet" --device "cuda:2" --prompt_threads 8 --img_dir "F:/danbooru2024-webp-4Mpixel/kohyas_finetune/" --in_json "./missing_2.json" --out_json_good "./meta_cap_2024_toriigate_good_2.json" --out_json_bad "./meta_cap_2024_toriigate_bad_2.json" 
+Preparing the tagging database
+Preparing the targeted ids
+Preparing caption model
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:20<00:00,  5.17s/it]
+preparing prompts
+making prompt messages: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 119825/119825 [12:33<00:00, 158.98it/s]
+sorting
+making caption:   0%|                                                                                                                                                      | 25/119825 [08:15<706:16:39, 21.22s/it]
+invalid JSON in 7866502
+making caption:   0%|                                                                                                                                                      | 97/119825 [29:26<448:37:15, 13.49s/it]
+invalid text bubble list in 7866794
+['HOW DO I STOP THIS?!', 'MY FIRST TIME GOING TO A WALMART ALONE!', '...', "I SHOULD'VE ASKED WHAT A WALMART IS FIRST.", "AMITY, THAT'S POISON IVY!", "WHY DIDN'T LUIZ TELL THAT HER HOME IS ON A KNEE?"]
+making caption:   0%|▏                                                                                                                                                    | 140/119825 [41:02<672:27:26, 20.23s/it]
+invalid JSON in 7866990
+making caption:   0%|▎                                                                                                                                                  | 240/119825 [1:11:50<734:41:17, 22.12s/it]
+invalid JSON in 7867414
+making caption:   0%|▎                                                                                                                                                  | 247/119825 [1:14:32<702:56:40, 21.16s/it]
+invalid JSON in 7867442
+making caption:   0%|▎                                                                                                                                                  | 262/119825 [1:20:34<612:53:12, 18.45s/it]
+
+> python batch_nlp_caption.py --parquet_path "F:/danbooru2024-webp-4Mpixel/metadata.parquet" --device "cuda:3" --prompt_threads 8 --img_dir "F:/danbooru2024-webp-4Mpixel/kohyas_finetune/" --in_json "./missing_3.json" --out_json_good "./meta_cap_2024_toriigate_good_3.json" --out_json_bad "./meta_cap_2024_toriigate_bad_3.json" 
+Preparing the tagging database
+Preparing the targeted ids
+Preparing caption model
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:28<00:00,  7.19s/it]
+preparing prompts
+making prompt messages: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 119849/119849 [11:21<00:00, 175.74it/s]
+sorting
+making caption:   0%|                                                                                                                                                      | 17/119849 [05:08<465:05:59, 13.97s/it]
+invalid JSON in 6063571
+making caption:   0%|▏                                                                                                                                                    | 123/119849 [36:08<642:25:49, 19.32s/it]
+invalid JSON in 7866895
+making caption:   0%|▎                                                                                                                                                  | 252/119849 [1:15:07<725:15:49, 21.83s/it]
+invalid JSON in 7867443
+making caption:   0%|▎                                                                                                                                                  | 259/119849 [1:17:56<716:15:42, 21.56s/it]
+invalid JSON in 7867471
+making caption:   0%|▎                                                                                                                                                  | 262/119849 [1:19:36<605:40:06, 18.23s/it]

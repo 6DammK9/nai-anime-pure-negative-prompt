@@ -1,4 +1,8 @@
-# Notes on making NLP captions from Minthy/ToriiGate-v0.4-7B #
+# Notes on making NLP captions from TIPO and Minthy/ToriiGate-v0.4-7B #
+
+- TIPO here points to an [undisclosed dataset](https://discord.com/channels/1027129024054575174/1027407524334411816/1331702641285398529). The gated public version is [KBlueLeaf/danbooru2023-metadata-database](https://huggingface.co/datasets/KBlueLeaf/danbooru2023-metadata-database). *There are 480k delta to my current 2024 set, so I need to think about how to blend 2 approaches.*
+
+- "ToriiGate" points to directly using [this model](https://huggingface.co/Minthy/ToriiGate-v0.4-7B) for caption generation. I will avoid generating files inplace, maybe using the `meta_cap_dd.json` for index tracing, then merge the `meta_lat.json`, then finally generate `1ktar.tar` inplace.
 
 - The [HF repo](https://huggingface.co/Minthy/ToriiGate-v0.4-7B) do not mention how exactly to run the model. It requires some understanding on using [the pretrained model](https://huggingface.co/Qwen/Qwen2-VL-7B).
 
