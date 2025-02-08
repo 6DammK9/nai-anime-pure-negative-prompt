@@ -84,7 +84,9 @@ def make_caption(generator, tokenizer, image_embeddings, max_new_tokens, gen_set
 		embeddings = image_embeddings,
 	)
 
-	output_text=output.split('<|im_start|>assistant\n')[-1]
+	output_text = output.split('<|im_start|>assistant\n')[-1]
+	# Rare case, 1 in 30k
+	output_text = output_text.split("<|endoftext|>")[0]
 	#print(output_text)
 
 	caption, is_good_caption = parse_output_text(output_text, id, row)

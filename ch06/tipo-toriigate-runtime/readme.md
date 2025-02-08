@@ -6,6 +6,8 @@
 
 - The [HF repo](https://huggingface.co/Minthy/ToriiGate-v0.4-7B) do not mention how exactly to run the model. It requires some understanding on using [the pretrained model](https://huggingface.co/Qwen/Qwen2-VL-7B).
 
+## Extracting captions from danbooru2023 parquet ##
+
 - The `conda environment` can be reused. However pay attention to the library versions.
 
 ```sh
@@ -41,6 +43,8 @@ writing MISSING_JSON
 Merge complete.
 ```
 
+## ToriiGate 0.4: Transformers approach ##
+
 - However the "2024 exclusive" 0.5M captions is hard. **It will spend days to generate.** Meanwhile the output of the caption model is inconsistint. I have manually used templates to mention artists. Currently it is in progress.
 
 ```log
@@ -71,7 +75,7 @@ python split_missing.py
 python batch_nlp_caption.py --parquet_path "H:/danbooru2024-webp-4Mpixel/metadata.parquet" --device "cuda:0" --fp16 --prompt_threads 48 --img_dir "H:/danbooru2024-webp-4Mpixel/kohyas_finetune/" --in_json "./missing.json" --out_json_good "./meta_cap_2024_toriigate_good.json" --out_json_bad "./meta_cap_2024_toriigate_bad.json" --start_index 3075 --end_index 3079
 ```
 
-## EXL2 approach ##
+## ToriiGate 0.4: EXL2 approach ##
 
 - *Would be faster.* But need rewrite codes.
 
@@ -108,7 +112,20 @@ python batch_nlp_caption_exl.py --parquet_path "F:/danbooru2024-webp-4Mpixel/met
 
 - However the (commited / reserved) system RAM usage is high. *Meanwhile GPU VRAM controller load is high.* Pay attention to VRAM temperature especially on RTX 3090. Sadly even I have lowered the VRAM frequency (-502Mhz to the left!), the VRAM is still power hungry, I need to set the power limit around 65% (225W / 350W) to make it barely runs with base clock (1395 Mhz). Setting it to 60% will stall at 900Mhz, making it 20% slower.
 
-## TIPO approach ##
+## ToriiGate 0.4: Manual editing invalid JSON strings and join the results together ##
+
+- **Manual edit** the `meta_cap_2024_toriigate_bad_*.json` into  `meta_cap_2024_toriigate_edited_*.json`, then recaption into `meta_cap_2024_toriigate_fixed_*.json`, and finally merge them into a single `meta_lat.json`.
+
+- Right now the observed frequency is aruond *1 in 6000*.
+
+```log
+> python parse_edited_json.py
+Preparing the tagging database
+Remaking captions from edited files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 64/64 [00:00<00:00, 318.26it/s]
+Dump complete.
+```
+
+## TIPO: Plan C ##
 
 - *Need to hack for the NLP output.*
 
