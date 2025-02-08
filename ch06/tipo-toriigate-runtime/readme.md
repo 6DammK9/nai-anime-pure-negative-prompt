@@ -106,7 +106,7 @@ python batch_nlp_caption_exl.py --parquet_path "F:/danbooru2024-webp-4Mpixel/met
 
 - Notice that image embeddings are bundled with prompt generation. It will be **0.7-1.5s/it**. Can be minimalized with proper execution sequence (hint: trigger GC on function exit)
 
-- However the (commited / reserved) system RAM usage is high. *Meanwhile GPU VRAM controller load is high.* Pay attention to VRAM temperature especially on RTX 3090.
+- However the (commited / reserved) system RAM usage is high. *Meanwhile GPU VRAM controller load is high.* Pay attention to VRAM temperature especially on RTX 3090. Sadly even I have lowered the VRAM frequency (-502Mhz to the left!), the VRAM is still power hungry, I need to set the power limit around 65% (225W / 350W) to make it barely runs with base clock (1395 Mhz). Setting it to 60% will stall at 900Mhz, making it 20% slower.
 
 ## TIPO approach ##
 

@@ -1,0 +1,129 @@
+>python batch_nlp_caption_exl.py --parquet_path "F:/danbooru2024-webp-4Mpixel/metadata.parquet" --device "cuda:0" --prompt_threads 6 --model_local_path "C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6" --img_dir "F:/danbooru2024-webp-4Mpixel/kohyas_finetune/" --in_json "F:/tipo-toriigate-runtime/split_files/missing_0.json" --out_json_good "F:/tipo-toriigate-runtime/split_files/meta_cap_2024_toriigate_good_0.json" --out_json_bad "F:/tipo-toriigate-runtime/split_files/meta_cap_2024_toriigate_bad_0.json"
+CUDA device overrided: 0
+Preparing the tagging database
+Preparing the targeted ids
+Preparing caption model
+Loading: C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:01 0:00:00
+Loading: C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:05 0:00:00
+preparing prompts
+making prompt messages: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7453/7453 [00:19<00:00, 389.88it/s]
+sorting
+making caption:   8%|███████████▌                                                                                                                                          | 577/7453 [1:12:22<15:39:14,  8.20s/it]
+Invalid text list (speech bubbles) in 7905216
+dict_values(['15話ご視聴ありがとうございました!!'])
+making caption:  11%|████████████████▏                                                                                                                                     | 803/7453 [1:40:29<12:32:12,  6.79s/it]
+Invalid text bubble dict in 7920640
+{'speech_bubble_1': '砂糖…？\n 怎么用这么快…'}
+making caption:  12%|██████████████████▎                                                                                                                                   | 907/7453 [1:53:52<14:27:46,  7.95s/it]
+Invalid JSON in 7927424
+making caption:  12%|██████████████████▌                                                                                                                                   | 923/7453 [1:55:54<12:08:29,  6.69s/it]
+Invalid text list (multilingual) in 7928448
+dict_values(['アンケートのご協力\nありがとうございます！', '@Rei_hinketsu'])
+making caption:  15%|██████████████████████▍                                                                                                                              | 1121/7453 [2:19:05<14:05:54,  8.02s/it]
+Invalid text list (speech bubbles) in 7941760
+dict_values(['why dis', 'look so mad', 'crying emoji'])
+making caption:  30%|████████████████████████████████████████████▊                                                                                                        | 2244/7453 [4:39:10<12:47:55,  8.85s/it]
+Invalid text bubble dict in 8015488
+{'speech_bubble_1': 'Yes. All seven are mine.', 'speech_bubble_2': 'You also like kids? I just adopted two. How many?'}
+making caption:  66%|█████████████████████████████████████████████████████████████████████████████████████████████████▉                                                   | 4898/7453 [10:10:56<6:25:17,  9.05s/it]
+Invalid text bubble dict in 8191616
+{'speech_bubble_1': 'Kochou, open your eyes...', 'speech_bubble_2': "I'm doing it..."}
+making caption:  78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                 | 5796/7453 [12:05:57<3:55:50,  8.54s/it]
+Invalid text bubble dict in 8251072
+{'speech_bubble_1': "YOU'RE NOT GOING ANYWHERE, SELIPH~", 'speech_bubble_2': "NOT UNTIL I'VE SQUEEZED EVERY LAST DROP OUT OF YOU!"}
+making caption: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7453/7453 [15:34:19<00:00,  7.52s/it] 
+Outputing JSON
+Dump complete.
+
+>python batch_nlp_caption_exl.py --parquet_path "F:/danbooru2024-webp-4Mpixel/metadata.parquet" --device "cuda:1" --prompt_threads 6 --model_local_path "C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6" --img_dir "F:/danbooru2024-webp-4Mpixel/kohyas_finetune/" --in_json "F:/tipo-toriigate-runtime/split_files/missing_1.json" --out_json_good "F:/tipo-toriigate-runtime/split_files/meta_cap_2024_toriigate_good_1.json" --out_json_bad "F:/tipo-toriigate-runtime/split_files/meta_cap_2024_toriigate_bad_1.json"
+CUDA device overrided: 1
+Preparing the tagging database
+Preparing the targeted ids
+Preparing caption model
+Loading: C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:02 0:00:00
+Loading: C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:06 0:00:00
+preparing prompts
+making prompt messages: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7495/7495 [00:19<00:00, 392.64it/s]
+sorting
+making caption:  18%|██████████████████████████▍                                                                                                                           | 1318/7495 [2:26:40<9:19:33,  5.44s/it]
+Unexpected text list (speech bubbles) in 7953409, fallback to text only
+[{'text': 'IDC', 'bounding_box': [200, 280, 300, 360]}, {'text': "U CAN'T DO THAT", 'bounding_box': [200, 480, 300, 560]}, {'text': 'UR SO MEAN', 'bounding_box': [200, 600, 300, 680]}]
+making caption:  20%|█████████████████████████████▌                                                                                                                       | 1487/7495 [2:45:45<11:16:48,  6.76s/it]
+Unexpected text list (speech bubbles) in 7964865, fallback to text only
+[{'text': '今夜、一緒に月を見ませんか？', 'coordinates': [450, 450, 550, 550]}, {'text': 'あっ', 'coordinates': [450, 550, 500, 580]}]
+making caption:  32%|████████████████████████████████████████████████                                                                                                     | 2417/7495 [4:28:20<11:06:25,  7.87s/it]
+Invalid text bubble dict in 8025537
+{'speech_bubble_1': 'うわ…', 'speech_bubble_2': '似合わねぇ…'}
+making caption:  33%|█████████████████████████████████████████████████▊                                                                                                    | 2489/7495 [4:36:46<7:08:27,  5.14s/it]
+Invalid JSON in 8030337
+making caption:  67%|████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                 | 5045/7495 [9:20:58<5:35:49,  8.22s/it]
+Invalid JSON in 8199041
+making caption:  85%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                      | 6382/7495 [11:52:03<2:00:31,  6.50s/it]
+Invalid JSON in 8287809
+making caption: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7495/7495 [13:57:55<00:00,  6.71s/it]
+Outputing JSON
+Dump complete.
+
+>python batch_nlp_caption_exl.py --parquet_path "F:/danbooru2024-webp-4Mpixel/metadata.parquet" --device "cuda:2" --prompt_threads 6 --model_local_path "C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6" --img_dir "F:/danbooru2024-webp-4Mpixel/kohyas_finetune/" --in_json "F:/tipo-toriigate-runtime/split_files/missing_2.json" --out_json_good "F:/tipo-toriigate-runtime/split_files/meta_cap_2024_toriigate_good_2.json" --out_json_bad "F:/tipo-toriigate-runtime/split_files/meta_cap_2024_toriigate_bad_2.json" 
+CUDA device overrided: 2
+Preparing the tagging database
+Preparing the targeted ids
+Preparing caption model
+Loading: C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:02 0:00:00
+Loading: C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:06 0:00:00
+preparing prompts
+making prompt messages: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7498/7498 [00:18<00:00, 396.11it/s]
+sorting
+making caption:   2%|██▍                                                                                                                                                     | 118/7498 [12:24<15:38:38,  7.63s/it]
+Invalid text bubble dict in 7874434
+{'speech_bubble_1': 'ちょっと!!\n電気は都度切れないといけない\n私、言いよろしい？!!', 'speech_bubble_2': 'あそこより\n２つ先のスーパーが安い\n次からはそこで買え\n死んでもコンビニで買うな', 'speech_bubble_3': '無
+いのだ…\n技術開発連合に'}
+making caption:  36%|█████████████████████████████████████████████████████▋                                                                                                | 2683/7498 [4:39:44<8:30:18,  6.36s/it]
+Invalid text bubble dict in 8043714
+{'speech_bubble_1': '키가 굉장히 크시네요...', 'speech_bubble_2': '!'}
+making caption:  54%|█████████████████████████████████████████████████████████████████████████████████                                                                     | 4053/7498 [7:03:41<5:45:29,  6.02s/it]
+Invalid text bubble dict in 8133890
+{'speech_bubble_1': '갑자기 왜이래... いきなりなによ...', 'speech_bubble_2': '걱정은 고마운데... 心配はありがたいけど...', 'speech_bubble_3': '허리가 한줌이잖아! 밥은 제때 챙겨 드시는거 맞아요?! 腰が一握りじゃな
+いですか! ご飯はちゃんと食べてますか？!', 'speech_bubble_4': '아무리 일이 바쁘다고 해도 밥은 꼬박꼬박 챙겨 드셔야죠! いくら仕事が 忙しくても ご飯はきちんとしっかり食べてないとダメですよ！'}
+making caption:  70%|████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                             | 5212/7498 [9:03:49<3:47:25,  5.97s/it]
+Invalid text bubble dict in 8210754
+{'speech_bubble_1': "Seth, I can't control my tail...", 'speech_bubble_2': "I'll call the doctor!"}
+making caption:  71%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                           | 5329/7498 [9:15:54<3:23:42,  5.64s/it]
+Invalid text list (multilingual) in 8218498
+dict_values(['危険が近づくと抱き寄せ守ってくれる彼氏(仮)', 'キュッ'])
+making caption:  73%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                         | 5447/7498 [9:28:15<3:38:26,  6.39s/it]
+Invalid text bubble dict in 8226178
+{'speech_bubble_1': 'え…っ？!', 'speech_bubble_2': 'それ、がうまくんだよ？'}
+making caption:  76%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                    | 5698/7498 [9:54:34<3:20:53,  6.70s/it]
+Invalid text list (speech bubbles) in 8242754
+dict_values(['よろしく\nおねがい\nします！', 'なか'])
+making caption: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7498/7498 [13:03:46<00:00,  6.27s/it] 
+Outputing JSON
+Dump complete.
+
+>python batch_nlp_caption_exl.py --parquet_path "F:/danbooru2024-webp-4Mpixel/metadata.parquet" --device "cuda:3" --prompt_threads 6 --model_local_path "C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6" --img_dir "F:/danbooru2024-webp-4Mpixel/kohyas_finetune/" --in_json "F:/tipo-toriigate-runtime/split_files/missing_3.json" --out_json_good "F:/tipo-toriigate-runtime/split_files/meta_cap_2024_toriigate_good_3.json" --out_json_bad "F:/tipo-toriigate-runtime/split_files/meta_cap_2024_toriigate_bad_3.json"
+CUDA device overrided: 3
+Warning: You are multi-threading with embedding process!
+Preparing the tagging database
+Preparing the targeted ids
+Preparing caption model
+Loading: C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:01 0:00:00
+Loading: C:/Users/User/.cache/huggingface/hub/models--Minthy--ToriiGate-v0.4-7B-exl2-8bpw/snapshots/db4ff9e988b09765c98d9ef5485afeb60a0054e6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:05 0:00:00
+preparing prompts
+making prompt messages: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7472/7472 [00:18<00:00, 403.13it/s]
+sorting
+making caption:  16%|████████████████████████                                                                                                                             | 1204/7472 [2:09:38<12:13:22,  7.02s/it]
+Invalid text bubble dict in 7945475
+{'speech_bubble_1': "IT'S WARM AND TASTY.", 'speech_bubble_2': 'YOU WANT SOME MILK?'}
+making caption:  25%|████████████████████████████████████▊                                                                                                                 | 1836/7472 [3:17:57<7:28:55,  4.78s/it]
+Invalid text bubble dict in 7987203
+{'speech_bubble_1': '!', 'speech_bubble_2': '!?'}
+making caption:  45%|██████████████████████████████████████████████████████████████████▊                                                                                   | 3326/7472 [6:02:04<8:11:05,  7.11s/it]
+Invalid text list (speech bubbles) in 8085763
+dict_values(['気になんて!!', '強化ディスクが少ないので基本使いまわしの図', 'いつもすみません'])
+making caption:  98%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎  | 7340/7472 [13:34:01<13:22,  6.08s/it]
+Invalid text list (speech bubbles) in 8351491
+dict_values(['KH3', 'Re Mind'])
+making caption: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7472/7472 [13:48:37<00:00,  6.65s/it] 
+Outputing JSON
+Dump complete.
