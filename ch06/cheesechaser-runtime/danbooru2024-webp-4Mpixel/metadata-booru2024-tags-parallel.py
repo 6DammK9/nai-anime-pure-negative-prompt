@@ -10,13 +10,13 @@ import pandas as pd
 from tqdm import tqdm
 from tqdm.contrib.concurrent import thread_map
 
-df = pd.read_parquet('./metadata.parquet')
+df = pd.read_parquet('./metadata.parquet', columns=['id', 'rating', 'tag_string_character', 'tag_string_copyright', 'tag_string_artist', 'tag_string_general', 'tag_string_meta'])
 
-TAGS_FOLDER = "F:/tags"
+TAGS_FOLDER = "./tags"
 
 TOTAL_TAR_COUNT = int(1e3)
 
-g_threads = 48 # Set 1 for single thread
+g_threads = 8 # Set 1 for single thread
 
 EXT_TXT = ".txt"
 EXT_TAR = ".tar"
@@ -40,7 +40,9 @@ def dump_tags(row):
 
     #In 2412, kohyas-ss should handle well
     #tag = row.tag_string.replace(" ",",")
-    rearranged_tags = [row.tag_string_character, row.tag_string_copyright, row.tag_string_artist, row.tag_string_general, row.tag_string_meta]
+    #250208: I need to align with the newly made NLP captions, so the sequence will be changed.
+    #rearranged_tags = [row.tag_string_character, row.tag_string_copyright, row.tag_string_artist, row.tag_string_general, row.tag_string_meta]
+    rearranged_tags = [row.tag_string_artist, row.tag_string_character, row.tag_string_copyright, row.tag_string_general, row.tag_string_meta]
     must_exist = [tag for tag in rearranged_tags if tag]
 
     #A bit philosophical and controversal: I don't even add year tag here. 

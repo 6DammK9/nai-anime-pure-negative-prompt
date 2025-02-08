@@ -11,16 +11,16 @@ from tqdm.contrib.concurrent import thread_map
 df = pd.read_parquet('./metadata.parquet', columns=['id', 'rating', 'tag_string_character', 'tag_string_copyright', 'tag_string_artist', 'tag_string_general', 'tag_string_meta'])
 
 # This is not directly used. I leave it as reference.
-DD_TAG_JSON = "./meta_cap_dd.json"
+DD_TAG_JSON = "./meta/meta_cap_dd.json"
 
 # This is for preparing bucket latents
-SPLIT_DD_TAG_JSON = "./meta_cap_dd_{}.json"
+SPLIT_DD_TAG_JSON = "./meta/meta_cap_dd_{}.json"
 
 # Set 1 for single thread
-g_threads = 48 
+g_threads = 8 
 
 # GPU count. Used for caching latents and ARB.
-split_count = 16
+split_count = 4
 
 #Dump everything to kohyas metadata file.
 #{
@@ -48,7 +48,9 @@ def dump_tags(row):
 
     #In 2412, kohyas-ss should handle well
     #tag = row.tag_string.replace(" ",",")
-    rearranged_tags = [row.tag_string_character, row.tag_string_copyright, row.tag_string_artist, row.tag_string_general, row.tag_string_meta]
+    #250208: I need to align with the newly made NLP captions, so the sequence will be changed.
+    #rearranged_tags = [row.tag_string_character, row.tag_string_copyright, row.tag_string_artist, row.tag_string_general, row.tag_string_meta]
+    rearranged_tags = [row.tag_string_artist, row.tag_string_character, row.tag_string_copyright, row.tag_string_general, row.tag_string_meta]
     must_exist = [tag for tag in rearranged_tags if tag]
 
     #A bit philosophical and controversal: I don't even add year tag here. 
