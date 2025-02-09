@@ -532,6 +532,10 @@ elif args.full_bf16:
     text_encoder.to(weight_dtype)
 ```
 
-- [Merge tensorboard logs.](https://stackoverflow.com/questions/45657821/how-can-tensorboard-files-be-merged-combined-or-appended)
+## TODO list ##
 
+- [Merge tensorboard logs.](https://stackoverflow.com/questions/45657821/how-can-tensorboard-files-be-merged-combined-or-appended). [There is dataframe API.](https://www.tensorflow.org/tensorboard/dataframe_api)
 
+- Adapt "start from iter" [from this PR](https://github.com/kohya-ss/sd-scripts/pull/1359). Hint: `accelerator.skip_first_batches`, `initial_step`. [Basic usage.](https://huggingface.co/docs/accelerate/usage_guides/checkpoint)
+
+- [Deepspeed adaption.](../manjaro.md#31-todo-deepspeed-with-zero-level-2)

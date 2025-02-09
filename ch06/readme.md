@@ -56,4 +56,6 @@
 
 - [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1): ??EP on 2.1M, "1e-5"
 
+- [Kohaku XL Zeta](https://huggingface.co/KBlueLeaf/Kohaku-XL-Zeta): 1EP on 8.4M, "1e-5", `network_dim` unknown.
+
 - "Ours": At most 1EP on "at most 8M + 4.6M"
