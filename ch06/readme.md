@@ -56,6 +56,8 @@
 
 - [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1): ??EP on 2.1M, "1e-5"
 
-- [Kohaku XL Zeta](https://huggingface.co/KBlueLeaf/Kohaku-XL-Zeta): 1EP on 8.4M, "1e-5", `network_dim` unknown.
+- [Kohaku XL Zeta](https://huggingface.co/KBlueLeaf/Kohaku-XL-Zeta): 1EP on 8.4M, "1e-5", `network_dim` unknown. "3090x4 with 18 days"
 
-- "Ours": At most 1EP on "at most 8M + 4.6M"
+- [SanaeXL](https://huggingface.co/SanaeLab/SanaeXL-anime-v1.0). 1EP on "7.8M + 1.4M + 2.2M + 2.4M = 13.8M", lr unknown. ["4090x1 with 120+ days"](https://civitai.com/models/647664/sanaexl-anime-v10?dialog=commentThread&commentId=526387)
+
+- "Ours" *draft*: At most 1EP on "at most 8M + 4.6M", "1e-6 + 1e-5"
