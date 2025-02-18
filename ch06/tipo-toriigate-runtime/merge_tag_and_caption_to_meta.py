@@ -1,12 +1,23 @@
 import json
 from tqdm import tqdm
 
-JSON_ID = "./meta_lat.json"
-JSON_TAGS = "./meta_lat.json"
-JSON_LATENT = "./meta_lat.json"
-JSON_CAPTION = "./meta_cap.json"
-OUTPUT_JSON = "./meta_lat_merged.json"
-MISSING_JSON = "./missing.json"
+#Astolfo dataest
+if False:
+    JSON_ID = "F:/just_astolfo/meta_lat.json"
+    JSON_TAGS = "F:/danbooru2024-webp-4Mpixel/meta_cap_dd.json"
+    JSON_LATENT = "F:/just_astolfo/meta_lat.json"
+    JSON_CAPTION = "F:/danbooru2024-webp-4Mpixel/meta_cap.json"
+    OUTPUT_JSON = "F:/just_astolfo/meta_lat_v2.json"
+    MISSING_JSON = "F:/just_astolfo/missing.json"
+
+#Full dataest
+if True:
+    JSON_ID = "F:/danbooru2024-webp-4Mpixel/meta_lat.json"
+    JSON_TAGS = "F:/danbooru2024-webp-4Mpixel/meta_cap_dd.json"
+    JSON_LATENT = "F:/danbooru2024-webp-4Mpixel/meta_lat.json"
+    JSON_CAPTION = "F:/danbooru2024-webp-4Mpixel/meta_cap.json"
+    OUTPUT_JSON = "F:/danbooru2024-webp-4Mpixel/meta_lat_v2.json"
+    MISSING_JSON = "F:/danbooru2024-webp-4Mpixel/missing.json"
 
 merged = dict()
 data_id = None
@@ -54,11 +65,11 @@ all_ids = data_id.keys()
 
 for id in tqdm(all_ids, desc="merging json files", position=0): 
     merged[id] = {}
-    if id in data_tags:
+    if (id in data_tags) and (data_tags[id]):
         merged[id]["tags"] = data_tags[id]["tags"]
     else:
         missing_id["tags"].append(id)
-    if id in data_caption:
+    if (id in data_caption) and (data_caption[id]):
         merged[id]["caption"] = data_caption[id]["caption"]
     else:
         missing_id["caption"].append(id)

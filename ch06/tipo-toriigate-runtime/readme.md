@@ -36,7 +36,7 @@ loading JSON_TAGS
 loading JSON_CAPTION
 loading JSON_LATENT
 start merging
-merging json files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8005010/8005010 [00:37<00:00, 211000.01it/s] 
+merging json files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8005010/8005010 [00:37<00:00, 211000.01it/s] 
 ids: 8005010, missing tags: 0, missing caption: 479366, missing latent: 0
 writing OUTPUT_JSON
 writing MISSING_JSON
@@ -121,7 +121,7 @@ python batch_nlp_caption_exl.py --parquet_path "F:/danbooru2024-webp-4Mpixel/met
 ```log
 > python parse_edited_json.py
 Preparing the tagging database
-Remaking captions from edited files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 64/64 [00:00<00:00, 318.26it/s]
+Remaking captions from edited files: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 64/64 [00:00<00:00, 318.26it/s]
 Dump complete.
 ```
 
@@ -130,3 +130,87 @@ Dump complete.
 - *Need to hack for the NLP output.*
 
 - [Sample code (claimed was DTG, so it is close to no docuement).](https://github.com/KohakuBlueleaf/KGen/blob/main/scripts/example.py)
+
+## Merging the generated dataset back to current dataest ##
+
+- First we make `meta_cap.json` by [merge_meta_caption.py](./merge_meta_caption.py). Notice that `meta_cap_2024_toriigate_fixed_*.json` may not exist for all 64 splits.
+
+- After a few passes with a few manually created captions, finally I got the number right. There are 7.65 + 0.48 = 8.13M captions.
+
+```log
+>python merge_meta_caption.py
+merge meta_cap.json
+Keys count: 7827640 > 7652007
+merging good json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 70/70 [00:05<00:00, 11.93it/s]
+Keys count: 8135996
+merging fixed json:   0%|                                                                                                            | 0/70 [00:00<?, ?it/s]Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_2.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_3.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_4.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_15.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_29.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_32.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_34.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_36.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_42.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_44.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_50.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_56.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_58.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_61.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_62.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_64.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_65.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_66.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_67.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_68.json
+Not extst (skip): F:/tipo-toriigate-runtime/split_files_fix/meta_cap_2024_toriigate_fixed_69.json
+merging fixed json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 70/70 [00:00<00:00, 5006.50it/s]
+Keys count: 8136093 > 8136093
+Outputing merged json.
+Merge complete.
+```
+
+- (Optional) We split the `meta_cap.json` back to 1k `*.tar` again, by [convert_meta_to_tar.py](./convert_meta_to_tar.py). You can skip this when using Kohyas along with `meta_lat.json`.
+
+```log
+python convert_meta_to_tar.py
+Reading source JSON
+Keys count: 8136011
+max id: 8360499
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [07:32<00:00,  2.21it/s]
+Files written: 1000
+```
+
+- For file based operation in Kohyas (maybe other trainers also), "captions" are usually saved as `*.caption` instead of `*.txt`, which prefers to be text. It is optional in program layer, however this will aligns to the online docuements.
+
+- Finally we merge again with [merge_tag_and_caption_to_meta.py](./merge_tag_and_caption_to_meta.py). The result will be **14GB**.
+
+```log
+>python merge_tag_and_caption_to_meta.py
+loading JSON_ID
+loading JSON_TAGS
+loading JSON_CAPTION
+loading JSON_LATENT
+start merging
+merging json files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 8005010/8005010 [00:51<00:00, 155076.84it/s]
+ids: 8005010, missing tags: 0, missing caption: 0, missing latent: 0
+writing OUTPUT_JSON
+writing MISSING_JSON
+Merge complete.
+```
+
+- *Extract the Astolfo 6k test dataset again, and move back to the finetune rabbit hole.
+
+```log
+>python merge_tag_and_caption_to_meta.py
+loading JSON_ID
+loading JSON_TAGS
+loading JSON_CAPTION
+loading JSON_LATENT
+start merging
+merging json files: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 6224/6224 [00:00<00:00, 160243.99it/s]
+ids: 6224, missing tags: 0, missing caption: 0, missing latent: 0
+writing OUTPUT_JSON
+writing MISSING_JSON
+Merge complete.
+```

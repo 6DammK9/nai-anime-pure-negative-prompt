@@ -30,12 +30,12 @@ EXT_JSON = ".json"
 
 def setup_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--parquet_path", type=str, default="./metadata.parquet", help="*.parquet of the danbooru2024.")
-    parser.add_argument("--edited_json_prefix", type=str, default="./split_files/meta_cap_2024_toriigate_edited", help="Manual edited JSONs. Prefix only, before '_0.json'.")
+    parser.add_argument("--parquet_path", type=str, default="F:/danbooru2024-webp-4Mpixel/metadata.parquet", help="*.parquet of the danbooru2024.")
+    parser.add_argument("--edited_json_prefix", type=str, default="./split_files_fix/meta_cap_2024_toriigate_edited", help="Manual edited JSONs. Prefix only, before '_0.json'.")
     parser.add_argument("--edited_json_start", type=int, default=0, help="range(start, end) of the split.")
     parser.add_argument("--edited_json_end", type=int, default=64, help="range(start, end) of the split.")
     parser.add_argument("--nosplit", action="store_true", help="No split applied. No suffix will be added.")
-    parser.add_argument("--fixed_json_prefix", type=str, default="./split_files/meta_cap_2024_toriigate_fixed", help="Fixed JSONs. Prefix only, before '_0.json'.")
+    parser.add_argument("--fixed_json_prefix", type=str, default="./split_files_fix/meta_cap_2024_toriigate_fixed", help="Fixed JSONs. Prefix only, before '_0.json'.")
     return parser
 
 def parse_output_again(edited_file_path, fixed_file_path, df):

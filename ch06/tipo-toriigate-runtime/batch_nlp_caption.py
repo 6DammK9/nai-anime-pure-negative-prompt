@@ -6,6 +6,7 @@ import torch
 from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
 from qwen_vl_utils import process_vision_info
 
+import os
 import json
 import argparse
 import pandas as pd
@@ -119,11 +120,16 @@ def main(args):
 	def prepare_msg_from_tid(tid):
 		row = df[df.index == tid]
 		if row.empty:
-			raise Exception(f"Not found: {tid}")
+			#raise Exception(f"Not found: {tid}")
+			return None
 		usr_prompt, img_path = prepare_user_prompt_and_image_path(row, IMG_DIR, IMG_EXT)
+		if not os.path.exists(img_path):
+			return None
 		return {'id': tid, 'msg': load_msg_and_emb(usr_prompt, img_path), 'row': row}
 
 	all_msgs = thread_map(prepare_msg_from_tid, target_ids, max_workers=g_threads, desc="Making prompt messages", position=0)
+	all_msgs = [m for m in all_msgs if m]
+	print(f"Filtering: {len(target_ids)} > {len(all_msgs)}")
 	print("Sorting")
 	all_msgs.sort(key=lambda x: int(x['id']))
 	#all_msgs = [x[1] for x in all_msgs]

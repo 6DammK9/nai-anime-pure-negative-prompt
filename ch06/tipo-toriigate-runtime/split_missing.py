@@ -1,9 +1,9 @@
 import json
 
-MISSING_JSON = "./missing.json"
-SPLIT_JSON = "./split_files/missing_{}.json"
+MISSING_JSON = "./empty_2023_filtered.json"
+SPLIT_JSON = "./split_files_2023/missing_{}.json"
 
-splits = 64
+splits = 4
 
 data_missing = None
 
@@ -18,9 +18,9 @@ for i in range(splits):
         "latent": []
     }
 
-    missing_id["tags"] = [x for x in data_missing["tags"] if (int(x) % splits == i)]
+    #missing_id["tags"] = [x for x in data_missing["tags"] if (int(x) % splits == i)]
     missing_id["caption"] = [x for x in data_missing["caption"] if (int(x) % splits == i)]
-    missing_id["latent"] = [x for x in data_missing["latent"] if (int(x) % splits == i)]
+    #missing_id["latent"] = [x for x in data_missing["latent"] if (int(x) % splits == i)]
 
     json_object = json.dumps(missing_id, indent=2)
         

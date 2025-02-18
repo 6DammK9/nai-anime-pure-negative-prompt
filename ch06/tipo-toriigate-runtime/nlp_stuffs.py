@@ -89,24 +89,36 @@ def join_texts_as_list(id, texts, text_list_type = "speech bubbles"):
 	#"There are speech bubbles with the text: \"X\" and \"X\" and \"X\" and \"X\"
 	base_text = f"There are {text_list_type} with the text: "
 	try:
-		if (len(texts) > 0) and ("text" in texts[0]):
-			# 250205: Known value: "position", "location"
-			if ("position" in texts[0]):
-				formatted_texts = [f"\"{t['text']}\" in {t['position']}" for t in texts]
-			elif ("location" in texts[0]):
-				formatted_texts = [f"\"{t['text']}\" in {t['location']}" for t in texts]
-			elif ("translation" in texts[0]):
-				# 250205: WTF is this internal system.
-				formatted_texts = [f"\"{t['translation']}\"" for t in texts]
-			elif ("bbox" in texts[0]) or ("bounding_box" in texts[0]) or ("coordinates" in texts[0]):
-				formatted_texts = [f"\"{t["text"]}\"" for t in texts]
-			else:
-				print(f"Unexpected text list ({text_list_type}) in {id}, fallback to text only")
+		if (len(texts) > 0):
+			if not isinstance(texts[0], dict):
+				# 7867457, 8243044
+				formatted_texts = [f"\"{t}\"" for t in texts]
+			elif "description" in texts[0]:
+				# 8304121, 8208631, 8030780
+				formatted_texts = [f"\"{t["description"]}\"" for t in texts]
+			elif "text" in texts[0]:
+				# 250205: Known value: "position", "location"
+				if ("position" in texts[0]):
+					formatted_texts = [f"\"{t['text']}\" in {t['position']}" for t in texts]
+				elif ("location" in texts[0]):
+					formatted_texts = [f"\"{t['text']}\" in {t['location']}" for t in texts]
+				elif ("translation" in texts[0]):
+					# 250205: WTF is this internal system.
+					formatted_texts = [f"\"{t['translation']}\"" for t in texts]
+				elif ("bbox" in texts[0]) or ("bounding_box" in texts[0]) or ("coordinates" in texts[0]) or ("panel" in texts[0]):
+					formatted_texts = [f"\"{t["text"]}\"" for t in texts]
+				else:				
+					print(f"Unexpected text list 'dict with text' ({text_list_type}) in {id}, fallback to text only")
+					print(texts)
+					formatted_texts = [f"\"{t["text"]}\"" for t in texts]
+			else:				
+				print(f"Unexpected text list 'dict without text' ({text_list_type}) in {id}, fallback to str")
 				print(texts)
-				formatted_texts = [f"\"{t["text"]}\"" for t in texts]
+				formatted_texts = [f"\"{t}\"" for t in texts]
 		else:
-			# 7867457
-			formatted_texts = [f"\"{t}\"" for t in texts]
+			print(f"Empty text list ({text_list_type}) in  {id}")
+			print(texts)
+			return ""
 		return f"{base_text}{" and ".join(formatted_texts)}"
 	except:
 		print(f"Invalid text list ({text_list_type}) in {id}")
@@ -184,8 +196,8 @@ def cast_panel_to_text(id, panels):
 
 def cast_oo_to_text(id, oo):
 	try:
-		# 7893383
-		return [{"text": v, "position": k.replace("_"," ")} for v, k in oo.items() if not ("bbox" in k)]
+		# 7893383, 8149464, 8035097
+		return [{"text": v, "position": k.replace("_"," ")} for v, k in oo.items() if not (("bbox" in k) or ("bounding_box" in k) or ("coordinates" in k) or ("panel" in k))]
 	except:
 		print(f"Invalid oo dict in {id}")
 		print(oo)

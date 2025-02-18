@@ -87,7 +87,8 @@ def make_caption(generator, tokenizer, image_embeddings, max_new_tokens, gen_set
 	output_text = output.split('<|im_start|>assistant\n')[-1]
 	# Rare case, 1 in 30k
 	output_text = output_text.split("<|endoftext|>")[0]
-	#print(output_text)
+	# 7872263, 8044837: Not even outputing a valid KV pair.
+	# print(output_text)
 
 	caption, is_good_caption = parse_output_text(output_text, id, row)
 	return caption, is_good_caption
@@ -167,15 +168,21 @@ def main(args):
 
 	# 250202: Slightly ugly inner funtion.
 	# 250206: Different from sample code, embedding has been delayed until making caption.
+	# 250217: Pass 2: There are gaps between 2023 and 2024. Now we need to check if image really exists.
 	#df.itertuples() is not used.
 	def prepare_msg_from_tid(tid):
 		row = df[df.index == tid]
 		if row.empty:
-			raise Exception(f"Not found: {tid}")
+			#raise Exception(f"Not found: {tid}")
+			return None
 		usr_prompt, img_path = prepare_user_prompt_and_image_path(row, IMG_DIR, IMG_EXT)
+		if not os.path.exists(img_path):
+			return None
 		return {'id': tid, 'msg': usr_prompt, 'row': row, 'img': img_path}
 
 	all_msgs = thread_map(prepare_msg_from_tid, target_ids, max_workers=g_threads, desc="Making prompt messages", position=0)
+	all_msgs = [m for m in all_msgs if m]
+	print(f"Filtering: {len(target_ids)} > {len(all_msgs)}")
 	print("Sorting")
 	all_msgs.sort(key=lambda x: int(x['id']))
 	#all_msgs = [x[1] for x in all_msgs]
