@@ -536,6 +536,8 @@ elif args.full_bf16:
 
 - [Merge tensorboard logs.](https://stackoverflow.com/questions/45657821/how-can-tensorboard-files-be-merged-combined-or-appended). [There is dataframe API.](https://www.tensorflow.org/tensorboard/dataframe_api)
 
-- Adapt "start from iter" [from this PR](https://github.com/kohya-ss/sd-scripts/pull/1359). Hint: `accelerator.skip_first_batches`, `initial_step`. [Basic usage.](https://huggingface.co/docs/accelerate/usage_guides/checkpoint)
+- Adapt "start from iter" [from this PR](https://github.com/kohya-ss/sd-scripts/pull/1359). Hint: `accelerator.skip_first_batches`, `initial_step`. [Basic usage.](https://huggingface.co/docs/accelerate/usage_guides/checkpoint). Turns out it is a [big issue](https://github.com/kohya-ss/sd-scripts/issues/1947), with many missing integration to keep things more consistant.
 
 - [Deepspeed adaption.](../manjaro.md#31-todo-deepspeed-with-zero-level-2)
+
+- [Read codes](kohyas.md) and justify myself. Worst case will be using [Naifu Diffusion](https://github.com/Mikubill/naifu-diffusion/) for academic accuracy.

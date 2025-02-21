@@ -38,6 +38,8 @@
 
 - *Unless specified, I always use GUI "Add/Remove Software" (pamac), "(GNOME) Settings" and "System Monitor".*
 
+- **Always enable remote access because xorg / gnome session will easily break.** You can always fallback to typical remote server.
+
 ### 1.2 Hardware discussion ###
 
 - Remove all AI GPUs / disk drives etc. and leave only the basic hardwares running (a tiny GPU, a blank OS drive, LAN / WIFI module which is supported in UEFI, and USB install media) for the OS installation.
@@ -52,12 +54,22 @@
 
 - **You need the proprietary Nvidia driver for the CUDA support.**
 
+- **Skip the mhwd if you have alternative display!** The "official" mhwd apporach has overriden X11 / xorg setting and causing many troubles. If you're not using the last 50MB of the VRAM, you can proceed the mhwd apporach. ~~Beware kernel update.~~
+
 ```sh
 user $ mhwd -l
 # Confirm video-nvidia is present.
 user $ sudo mhwd -i pci video-nvidia
 # This is the auto install command (if the one above failed)
 user $ sudo mhwd -a pci nonfree 0300
+```
+
+- Instead, refer [this guide](https://ivonblog.com/posts/archlinux-install-nvidia-drivers) to install nvidia dirver directly, expecially the `nvidia-dkms`. `uname -a` to view the kernel version (e.g. `6.12.12-2-MANJARO`).
+
+- For vanila install, currently I don't even enable `nvidia-settings` or `nvidia-xconfig`, to avoid interfering with xorg. Now the xorg still using nvidia driver (session 1.6.1), but now I don't face driver issue.
+
+```log
+sudo pacman -S dkms nvidia-dkms nvidia-utils cuda
 ```
 
 - View and set audio output accordingly.
@@ -87,7 +99,11 @@ sudo nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanS
 
 - [The arch linux guide](https://wiki.archlinux.org/title/DisplayLink) is sufficient and effective, even I don't need the `*-git` package.
 
-- **Never use this as boot display.** There is driver / OS bug preventing it appears as X11 display, even the services / driver are all booted and hooked. **Switch HDMI after you see the desktop with the GPU display.**
+```log
+sudo pacman -S dkms evdi displaylink
+```
+
+- **Never use this as boot display if you have applied mhwd in 1.2.1.** There is driver / OS bug preventing it appears as X11 display, even the services / driver are all booted and hooked. **Switch HDMI after you see the desktop with the GPU display.**
 
 - **Enable [AUR](https://wiki.manjaro.org/index.php/Arch_User_Repository) manually.** "Three dots > Preferences > Third Party > Enable AUR support > confirm".
 
@@ -97,10 +113,11 @@ sudo nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanS
 
 - **The cursor may flashes a lot.** ~~Change to 1080p 60hz may help.~~ It is because the GPU are rendering the screen instead of the USB one. See session 1.6 for attempt to regain the primary display.
 
-
 #### 1.2.3 AX200 pcie wifi module ####
 
 - *No idea* why it doesn't work, even it is in motherboard and detected in `lspci` arleady. [This thread may help.](https://bbs.archlinux.org/viewtopic.php?id=290632) `dmesg` will show the `iwlwifi` errors.
+
+- **Solved: Just tweak the power settings in Winodws (NOT LINUX) to keep the module wake up.** There is nothing to do in Linux envionemnt.
 
 ### 1.3 (Optional) Browser / DRM Plugins for streaming ###
 
@@ -160,7 +177,7 @@ read-only with the 'ro' mount option
 - Turns out [gtk4-ding](https://extensions.gnome.org/extension/5263/gtk4-desktop-icons-ng-ding/) is using 150M+ of VRAM. **Disable this extension will wipe out the desktop.** However the task bar persists.
 
 ```sh
-gnome-extension disable gtk4-ding@smedius.gitlab.com
+gnome-extensions disable gtk4-ding@smedius.gitlab.com
 ```
 
 - Remaining `gnome-shell` / `xorg` will use around 200MB and I think that it is close to minimum for my current task. *If SDXL finetuning still requires 23.8GB of VRAM, I will just freeze some layers to compromise.*
@@ -236,6 +253,20 @@ Fatal server error:
 [    56.769] (EE) Please also check the log file at "/home/user/.local/share/xorg/Xorg.0.log" for additional information.
 [    56.769] (EE)
 [    57.001] (EE) Server terminated with error (1). Closing log file.
+```
+
+- (250219) After system update, it crashed again. **It is possibly due to driver crash after kernel update.**. ~~[Try to keep Nouveau.](https://wiki.archlinux.org/title/Nouveau)~~ ~~[Using the complete system recovery.](https://forum.manjaro.org/t/manjaro-rescue-helper-for-rescue-your-manjaro-installation/135275)~~ **GG wipe and clean install again. Turns out skipping the mhwd preset install in 1.2.1 works.**
+
+```log
+[    75.762] (EE) NVIDIA(GPU-0): Push buffer DMA allocation failed
+[    75.762] (EE) NVIDIA(0): Failed to allocate push buffer
+[    75.861] (EE)
+Fatal server error:
+[    75.861] (EE) AddScreen/ScreenInit failed for driver 0
+[    75.861] (EE)
+[    75.861] (EE)
+
+[    85.617] (EE) [drm] Failed to open DRM device for pci:0000:65:00.0: -19
 ```
 
 - More over, remote desktop / Ubuntu server is not considered ~~I'll freeze layers instead! SDXL is good for single GPU under 23GB! OOM is just because of the overhead of multiGPU!~~
