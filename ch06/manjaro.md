@@ -459,6 +459,8 @@ accelerate launch
 tensorboard --logdir "/run/media/user/PM863a/astolfo_xl/just_astolfo/tensorboard"
 ```
 
+- *Reminder: Never disconnect the HDMI cable! It will swap user session and lock everything up!*
+
 ## 3. Compromised trining with MultiGPU overhead (NCCL) ##
 
 - **Crap, I am OOM again.** With both NCCL or GLOO, VRAM usage will exceed 24GB, even single card works fine with 23.0GB.
