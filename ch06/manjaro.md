@@ -527,14 +527,3 @@ Wed Jan 29 01:22:49 2025
 - [NCCL overhead is hard to predict.](https://github.com/NVIDIA/nccl/issues/864)
 
 - [Slow training with GLOO (but no OOM).](https://github.com/bmaltais/kohya_ss/issues/2366)
-
-## 3.1 (TODO) Deepspeed with ZERO level 2 ##
-
-- [An attempt to apply deepspeed in kohyas GUI.](https://github.com/bmaltais/kohya_ss/discussions/2254)
-
-- HF accelerate with deepspeed: [blog](https://huggingface.co/blog/accelerate-deepspeed), [api doc](https://huggingface.co/docs/accelerate/usage_guides/deepspeed)
-
-> Like 5% slower, but with grad accum, it'd be hard to notice
-I do not have enough experience with newer hf accelerate to tell if it works or not
-When I used accelerate year(s) ago, it did not work well. 
-For a 4x 3090 and sdxl, zero 2 should be enough

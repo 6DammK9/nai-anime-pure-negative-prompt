@@ -173,7 +173,7 @@ else:
 
 - After testing both `f"{tags}\n{caption}"` and `f"{tags},{caption}"`, they works as intended. Benefited from  "A1111 token trick", concatenate both strings (sequence shouldn't matter) will *learn concepts in a more precise way*. Paper ["Understanding and Mitigating Copying in Diffusion Models"](https://arxiv.org/abs/2305.20086) has discussed the "bias and variance tradeoff" between text contents and image contents for such T2I task.
 
-## Fundamental dataset configurations ##
+## Fundamental dataset / training configurations ##
 
 - *Obviously dataset will be shuffled.* Set seed for reproducible result.
 
@@ -223,4 +223,31 @@ else:
 
 - [Dynamo Backend](https://huggingface.co/docs/accelerate/package_reference/accelerator#accelerate.Accelerator.dynamo_backend) is less discussed. [It is supported from the pyTorch layer](https://pytorch.org/TensorRT/tutorials/_rendered_examples/dynamo/torch_compile_stable_diffusion.html) but there is no discussion ever since.
 
+- Must add `--torch_compile` and `--dynamo_backend=inductor` to enable.
+
+```py
+# torch.compile のオプション。 NO の場合は torch.compile は使わない
+dynamo_backend = "NO"
+if args.torch_compile:
+    dynamo_backend = args.dynamo_backend
+```
+
 - [Deepspeed](https://huggingface.co/docs/accelerate/usage_guides/deepspeed) is widely discussed outside the SD community, especially it is quite promising in [pytorch lightening](https://lightning.ai/pages/community/serve-stable-diffusion-three-times-faster/).
+
+- Refer to [deepspeed_utils.py](https://github.com/kohya-ss/sd-scripts/blob/main/library/deepspeed_utils.py)
+
+- Must add `--deepspeed` to enable. Also must match all configurations with the `accelerate config`.
+
+```py
+deepspeed_plugin = DeepSpeedPlugin(
+    zero_stage=args.zero_stage,
+    gradient_accumulation_steps=args.gradient_accumulation_steps,
+    gradient_clipping=args.max_grad_norm,
+    offload_optimizer_device=args.offload_optimizer_device,
+    offload_optimizer_nvme_path=args.offload_optimizer_nvme_path,
+    offload_param_device=args.offload_param_device,
+    offload_param_nvme_path=args.offload_param_nvme_path,
+    zero3_init_flag=args.zero3_init_flag,
+    zero3_save_16bit_model=args.zero3_save_16bit_model,
+)
+```

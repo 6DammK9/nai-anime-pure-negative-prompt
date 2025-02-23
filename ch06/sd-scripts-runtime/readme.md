@@ -32,9 +32,18 @@ pip install torch torchvision xformers --index-url https://download.pytorch.org/
 pip install --upgrade -r requirements.txt
 ```
 
-- Install `triton` via [madbuda/triton-windows-builds](https://huggingface.co/madbuda/triton-windows-builds)
+- Install `deepspeed==0.15.4` to enable "Zero 2" if you need further memory reduction (because multi GPU overhead). [Why lock this version.](https://github.com/deepspeedai/DeepSpeed/issues/6793). Also **it requires Ampere or later (3000 series or later).**
 
 ```sh
+pip install deepspeed
+```
+
+- Install `triton` and via "windows wheels".
+
+- [flash-attention wheels](https://huggingface.co/lldacing/flash-attention-windows-wheel/tree/main), [triton wheels](https://huggingface.co/madbuda/triton-windows-builds/tree/main)
+
+```sh
+pip install flash_attn-2.7.0.post2+cu124torch2.5.0cxx11abiFALSE-cp312-cp312-win_amd64.whl
 pip install triton-3.0.0-cp312-cp312-win_amd64.whl
 ```
 
@@ -101,19 +110,65 @@ bf16
 accelerate configuration saved at F:\WORKS\HUGGINGFACE\accelerate\default_config.yaml
 ```
 
-- This is the multi-gpu version:
+- This is the multi-gpu version with most options enabled. Gradient accumulation steps and gradient clipping need to be paired, see [this session](./readme.md#exploring-accelerate-out-of-community-guide). Ignore the `accelerate launch` stuffs in between.  
+
+```log
+accelerate config
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In which compute environment are you running?
+This machine                                                                                                                                                          
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Which type of machine are you using?                                                                                                                                  
+multi-GPU                                                                                                                                                             
+How many different machines will you use (use more than 1 for multi-node training)? [1]: 1                                                                            
+Should distributed operations be checked while running for errors? This can avoid timeout issues but will be slower. [yes/NO]: NO                                     
+Do you wish to optimize your script with torch dynamo?[yes/NO]:yes                                                                                                    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Which dynamo backend would you like to use?                                                                                                                           
+inductor                                                                                                                                                              
+Do you want to customize the defaults sent to torch.compile? [yes/NO]: NO                                                                                             
+Do you want to use DeepSpeed? [yes/NO]: yes                                                                                                                           
+Do you want to specify a json file to a DeepSpeed config? [yes/NO]: NO                                                                                                
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What should be your DeepSpeed's ZeRO optimization stage?                                                                                                              
+2                                                                                                                                                                     
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Where to offload optimizer states?                                                                                                                                    
+none                                                                                                                                                                  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Where to offload parameters?                                                                                                                                          
+none                                                                                                                                                                  
+How many gradient accumulation steps you're passing in your script? [1]: 4                                                                                            
+Do you want to use gradient clipping? [yes/NO]: NO                                                                                                                    
+Do you want to enable `deepspeed.zero.Init` when using ZeRO Stage-3 for constructing massive models? [yes/NO]: NO                                                     
+Do you want to enable Mixture-of-Experts training (MoE)? [yes/NO]: NO
+How many GPU(s) should be used for distributed training? [1]:4
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Do you wish to use FP16 or BF16 (mixed precision)?
+bf16                                                                                                                                                                  
+accelerate configuration saved at /home/user/.cache/huggingface/accelerate/default_config.yaml 
+```
 
 ```yaml
 compute_environment: LOCAL_MACHINE
-debug: true
-distributed_type: MULTI_GPU
+debug: false
+deepspeed_config:
+  gradient_accumulation_steps: 4
+  offload_optimizer_device: none
+  offload_param_device: none
+  zero3_init_flag: false
+  zero_stage: 2
+distributed_type: DEEPSPEED
 downcast_bf16: 'no'
-gpu_ids: 0,1
+dynamo_config:
+  dynamo_backend: INDUCTOR
+enable_cpu_affinity: false
 machine_rank: 0
 main_training_function: main
 mixed_precision: bf16
 num_machines: 1
-num_processes: 2
+num_processes: 4
+rdzv_backend: static
 same_network: true
 tpu_env: []
 tpu_use_cluster: false
@@ -532,12 +587,103 @@ elif args.full_bf16:
     text_encoder.to(weight_dtype)
 ```
 
-## TODO list ##
+## Adding caption to the current metadata ##
 
-- [Merge tensorboard logs.](https://stackoverflow.com/questions/45657821/how-can-tensorboard-files-be-merged-combined-or-appended). [There is dataframe API.](https://www.tensorflow.org/tensorboard/dataframe_api)
+- See the entire journey of [making caption and integrating together.](../tipo-toriigate-runtime/readme.md) Once you have the `meta_lat.json`, `*.txt` and `*.caption` is no longer needed.
 
-- Adapt "start from iter" [from this PR](https://github.com/kohya-ss/sd-scripts/pull/1359). Hint: `accelerator.skip_first_batches`, `initial_step`. [Basic usage.](https://huggingface.co/docs/accelerate/usage_guides/checkpoint). Turns out it is a [big issue](https://github.com/kohya-ss/sd-scripts/issues/1947), with many missing integration to keep things more consistant.
+- For how the trainer digest both tags and caption, [read codes](kohyas.md) directly. Currently A1111 trick has been applied. *Remove all the line seperator wil be fine.*
 
-- [Deepspeed adaption.](../manjaro.md#31-todo-deepspeed-with-zero-level-2)
+## Merge tensorboard logs / resume from crash / code integration ##
 
-- [Read codes](kohyas.md) and justify myself. Worst case will be using [Naifu Diffusion](https://github.com/Mikubill/naifu-diffusion/) for academic accuracy.
+- [Merge tensorboard logs.](https://stackoverflow.com/questions/45657821/how-can-tensorboard-files-be-merged-combined-or-appended). [There is dataframe API.](https://www.tensorflow.org/tensorboard/dataframe_api) 
+
+- However, in a graceful approach, adapt "start from iter" [from this PR](https://github.com/kohya-ss/sd-scripts/pull/1359). Hint: `accelerator.skip_first_batches`, `initial_step`. [Basic usage.](https://huggingface.co/docs/accelerate/usage_guides/checkpoint). Turns out it is a [big issue](https://github.com/kohya-ss/sd-scripts/issues/1947), with many missing integration to keep things more consistant.
+
+- [PR raised to the trainer.](https://github.com/kohya-ss/sd-scripts/pull/1950)
+
+## Exploring accelerate out of community guide ##
+
+- First of all, [NCCL under linux is preferred](../manjaro.md#compromised-trining-with-multigpu-overhead-nccl). All the findings are continued from there.
+
+- After a bit of exploration, here is my current working CLI. `num_cpu_threads_per_process` is not required.
+
+- `--skip_until_initial_step --initial_step=1 --initial_epoch=1` **requires modified script**. See the PR above.
+
+```sh
+accelerate launch sdxl_train_v2.py 
+  --pretrained_model_name_or_path="/run/media/user/PM863a/stable-diffusion-webui/models/Stable-diffusion/x215c-AstolfoMix-24101101-6e545a3.safetensors" 
+  --in_json "/run/media/user/Intel P4510 3/just_astolfo/test_lat_v3.json" 
+  --train_data_dir="/run/media/user/Intel P4510 3/just_astolfo/test" 
+  --output_dir="/run/media/user/Intel P4510 3/astolfo_xl/just_astolfo/model_out" 
+  --log_with=tensorboard --logging_dir="/run/media/user/Intel P4510 3/astolfo_xl/just_astolfo/tensorboard" --log_prefix=just_astolfo_25022301_ 
+  --seed=25022301 --save_model_as=safetensors --caption_extension=".txt" --enable_wildcard 
+  --use_8bit_adam 
+  --learning_rate=1e-6 --train_text_encoder --learning_rate_te1=1e-5 --learning_rate_te2=1e-5 
+  --max_train_epochs=4 
+  --xformers --mem_eff_attn --torch_compile --dynamo_backend=inductor --gradient_checkpointing 
+  --deepspeed --gradient_accumulation_steps=4 --max_grad_norm=0 
+  --train_batch_size=1 --full_bf16 --mixed_precision=bf16 --save_precision=fp16 
+  --enable_bucket --cache_latents 
+  --save_every_n_epochs=2 
+  --skip_until_initial_step --initial_step=1 --initial_epoch=1
+```
+
+### Batch size / gradient accumulation ###
+
+- Base speed has been recorded as 1.5s / it for single GPU, and "2.5s / it" in 4x GPU, which is 2.4x.
+
+- [Increase learning rate when gradient accumulation is enabled.](https://stackoverflow.com/questions/75701437/why-do-we-multiply-learning-rate-by-gradient-accumulation-steps-in-pytorch) For training speed, it works as batch size without increasing memory requirement. Currently it is 0.93x of the original speed for single GPU and step size 2 (3.2s / it). 63% UNET use 21.5GB.
+
+- With dynamo backend, it is 2.0x for step size 4 with 4x GPU (12s / it). 63% UNET use 22.2GB.
+
+- With deepspeed Zero 2, there is no **speed penalty** (still 2.0x), but 63% UNET use 17.0GB already. **100% UNET use 23.5GB, which is very cool.**
+
+- However moving to a larger dataset, speed reduced to 1.55x (15.5s / it), which is slower than the vanilla "10.0s / it"
+
+### Flash attention / xFormers ###
+
+- [It requires code inspection to add specific optitions.](./kohyas.md#support-in-various-memory-efficient-plugins). Currently it saves for around 1.5GB of memory.
+
+### Dynamo Backend ###
+
+- The API stack is [accelerate](https://huggingface.co/docs/accelerate/v0.23.0/package_reference/utilities#accelerate.utils.DynamoBackend) > [torch.compiler](https://pytorch.org/docs/stable/torch.compiler.html). Choices are limited. Looks like `inductor` is preferred.
+
+- Must add `--torch_compile` and `--dynamo_backend=inductor` to enable.
+
+- "Compile takes time". It relies on a working script. Also saving models will be a lot more costly.
+
+### Deepspeed with ZERO level 2 ###
+
+- [An attempt to apply deepspeed in kohyas GUI.](https://github.com/bmaltais/kohya_ss/discussions/2254)
+
+- HF accelerate with deepspeed: [blog](https://huggingface.co/blog/accelerate-deepspeed), [api doc](https://huggingface.co/docs/accelerate/usage_guides/deepspeed)
+
+> Like 5% slower, but with grad accum, it'd be hard to notice
+I do not have enough experience with newer hf accelerate to tell if it works or not
+When I used accelerate year(s) ago, it did not work well. 
+For a 4x 3090 and sdxl, zero 2 should be enough
+
+- **Need to pair with kohyas and accelerate config.** Some arguements may have been initialized `None`.
+
+- It requires gradient accumulation. Meanwhile disable gradlient clipping `gradient_clipping` by `max_grad_norm=0`
+
+```sh
+accelerate launch sdxl_train.py 
+    --deepspeed --max_grad_norm=0.0 --gradient_accumulation_steps=4
+```
+
+- **It solved the OOM issue, and now it runs 23.5GB with multi GPU.**
+
+### FullyShardedDataParallel (FSDP) ###
+
+> This is inspired by Xu et al. as well as the ZeRO Stage 3 from DeepSpeed. FullyShardedDataParallel is commonly shortened to FSDP.
+
+- Kohyas has no code implemented, it may works?
+
+### Megatron-LM ###
+
+- Kohyas has no code implemented, it may works?
+
+### NUMA efficiency ###
+
+- It is more common in multi CPU systems instead of multi GPU. *No harm but no effect.*
