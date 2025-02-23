@@ -107,7 +107,7 @@ def tokenize(self, text: Union[str, List[str]]) -> List[torch.Tensor]:
     return [l_tokens, g_tokens, t5_tokens, l_attn_mask, g_attn_mask, t5_attn_mask]
 ```
 
-- `text: Union[str, List[str]]` is almost always `str` (by tracing code). 
+- `text: Union[str, List[str]]` is almost always `str` (by tracing code).
 
 - I can expect *I will screw up very hard if they are just concatanate together.* "generated long captions following raw tags" will not "finetune" the knowledge well. Currently I swap the sequence as "raw tags following generated long captions". I expect the effect will be minimal, because the string is way too long.
 
@@ -170,3 +170,57 @@ else:
         #caption = "{" + caption + "|" + tags + "}"
         tags_list.append(tags)
 ```
+
+- After testing both `f"{tags}\n{caption}"` and `f"{tags},{caption}"`, they works as intended. Benefited from  "A1111 token trick", concatenate both strings (sequence shouldn't matter) will *learn concepts in a more precise way*. Paper ["Understanding and Mitigating Copying in Diffusion Models"](https://arxiv.org/abs/2305.20086) has discussed the "bias and variance tradeoff" between text contents and image contents for such T2I task.
+
+## Fundamental dataset configurations ##
+
+- *Obviously dataset will be shuffled.* Set seed for reproducible result.
+
+```py
+if args.seed is None:
+    args.seed = random.randint(0, 2**32)
+set_seed(args.seed)  # 乱数系列を初期化する
+```
+
+```py
+train_dataloader = torch.utils.data.DataLoader(
+    train_dataset_group,
+    batch_size=1,
+    shuffle=True,
+    collate_fn=collator,
+    num_workers=n_workers,
+    persistent_workers=args.persistent_data_loader_workers,
+)
+```
+
+## Support in various memory-efficient plugins ##
+
+- *Tested in Linux only. Expect Windows requires custom wheels.*
+
+- Kohyas use [accelerator](https://huggingface.co/docs/accelerate/package_reference/accelerator) as the trainer framework. *Any related topics can be applied with code patching, disregarding the lack of discussion in community.* Notice that NaifuDuffusion use [PyTorch Lightening](https://lightning.ai/docs/pytorch/stable/) which requires its own implementation of the following libraries (hint: the URLs are under huggingface)
+
+- To enable the extensions below, you need to [configure the accelerate](https://huggingface.co/docs/accelerate/package_reference/cli) **by ignoring most community guides** and [enable the corrosponding options](https://github.com/kohya-ss/sd-scripts/blob/sd3/library/train_util.py#L3781) in the trainer. **There is no direct guide at all.** I need to investigate myself. ~~To test the results, there are no shortcuts: Keep train and eval.~~
+
+- [xformers](https://huggingface.co/docs/diffusers/optimization/xformers) is widely used, especially for runtime also. Somehow it has been **disabled in UNET module.** It hints on other options.
+
+```py
+# モデルに xformers とか memory efficient attention を組み込む
+if args.diffusers_xformers:
+    # もうU-Netを独自にしたので動かないけどVAEのxformersは動くはず
+    accelerator.print("Use xformers by Diffusers")
+    # set_diffusers_xformers_flag(unet, True)
+    set_diffusers_xformers_flag(vae, True)
+else:
+    # Windows版のxformersはfloatで学習できなかったりするのでxformersを使わない設定も可能にしておく必要がある
+    accelerator.print("Disable Diffusers' xformers")
+    train_util.replace_unet_modules(unet, args.mem_eff_attn, args.xformers, args.sdpa)
+    if torch.__version__ >= "2.0.0":  # PyTorch 2.0.0 以上対応のxformersなら以下が使える
+        vae.set_use_memory_efficient_attention_xformers(args.xformers)
+```
+
+- [Flash Attention](https://huggingface.co/docs/text-generation-inference/conceptual/flash_attention) in also widly used, however it is lack of disussion in trainers.
+
+- [Dynamo Backend](https://huggingface.co/docs/accelerate/package_reference/accelerator#accelerate.Accelerator.dynamo_backend) is less discussed. [It is supported from the pyTorch layer](https://pytorch.org/TensorRT/tutorials/_rendered_examples/dynamo/torch_compile_stable_diffusion.html) but there is no discussion ever since.
+
+- [Deepspeed](https://huggingface.co/docs/accelerate/usage_guides/deepspeed) is widely discussed outside the SD community, especially it is quite promising in [pytorch lightening](https://lightning.ai/pages/community/serve-stable-diffusion-three-times-faster/).

@@ -14,4 +14,5 @@
 - `model_out_25012301`: SDXL, 6k dataset, TTE only, test for Linux multigpu, 5e-6 + 3e-6
 - `model_out_25012801`: SDXL, 6k dataset, TTE on + 63% UNET, 5e-6 + 3e-6
 - `model_out_25022101`: SDXL, 6k dataset, Dual Tag (pick caption or tags), TTE on + 63% UNET, 5e-6 + 3e-6
-- `model_out_25022201`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 63% UNET, 5e-6 + 3e-6
+- `model_out_25022102`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 63% UNET, 5e-6 + 3e-6
+- `model_out_25022103`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 63% UNET, 1e-6 + 1e-5

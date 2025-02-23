@@ -43,15 +43,6 @@ writing MISSING_JSON
 Merge complete.
 ```
 
-- [From the experience of kohyas trainer], line seperaters should be trimmed (I have done it at my side), to enable "pick caption or tags", or "blend them all".
-
-```log
-python patch_line_sep.py --in_json "/run/media/user/Intel P4510 3/danbooru2024-webp-4Mpixel/meta_lat_has_sep.json" --out_json "/run/media/user/Intel P4510 3/danbooru2024-webp-4Mpixel/meta_lat.json"
-patching entries: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 8005010/8005010 [00:09<00:00, 821429.68it/s]
-writing to out_json
-Patch complete.
-```
-
 ## ToriiGate 0.4: Transformers approach ##
 
 - However the "2024 exclusive" 0.5M captions is hard. **It will spend days to generate.** Meanwhile the output of the caption model is inconsistint. I have manually used templates to mention artists. Currently it is in progress.
@@ -222,4 +213,13 @@ ids: 6224, missing tags: 0, missing caption: 0, missing latent: 0
 writing OUTPUT_JSON
 writing MISSING_JSON
 Merge complete.
+```
+
+- [From the experience of kohyas trainer], line seperaters should be trimmed (I have done it at my side), to enable "pick caption or tags", or "blend them all".
+
+```log
+python patch_line_sep.py --in_json "/run/media/user/Intel P4510 3/danbooru2024-webp-4Mpixel/meta_lat_has_sep.json" --out_json "/run/media/user/Intel P4510 3/danbooru2024-webp-4Mpixel/meta_lat.json"
+patching entries: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 8005010/8005010 [00:09<00:00, 821429.68it/s]
+writing to out_json
+Patch complete.
 ```

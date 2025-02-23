@@ -78,12 +78,36 @@
 
 ## Unconditional Image Generation ##
 
-- *It still works.*
+<details>
+    <summary> It still works. </summary>
 
-![250205-3581144351-1024-1024-6-48-20250201111839.png](./img/250205-3581144351-1024-1024-6-48-20250201111839.png)
+    ![250205-3581144351-1024-1024-6-48-20250201111839.png](./img/250205-3581144351-1024-1024-6-48-20250201111839.png)
 
-```
-parameters
+    ```txt
+    parameters
 
-Steps: 48, Sampler: DDIM CFG++, Schedule type: Automatic, CFG scale: 6, Seed: 3581144351, Size: 1024x1024, Model hash: a22204df31, Model: last, VAE hash: 235745af8d, VAE: sdxl-vae-fp16-fix.vae.safetensors, Clip skip: 2, SEG Active: True, SEG Blur Sigma: 11, SEG Start Step: 0, SEG End Step: 2048, PAG Active: True, PAG SANF: True, PAG Scale: 1, PAG Start Step: 0, PAG End Step: 2048, Version: v1.10.1
-```
+    Steps: 48, Sampler: DDIM CFG++, Schedule type: Automatic, CFG scale: 6, Seed: 3581144351, Size: 1024x1024, Model hash: a22204df31, Model: last, VAE hash: 235745af8d, VAE: sdxl-vae-fp16-fix.vae.safetensors, Clip skip: 2, SEG Active: True, SEG Blur Sigma: 11, SEG Start Step: 0, SEG End Step: 2048, PAG Active: True, PAG SANF: True, PAG Scale: 1, PAG Start Step: 0, PAG End Step: 2048, Version: v1.10.1
+    ```
+</details>
+
+## Effect in dual caption / tags, and exploring on learning rate ##
+
+These images are arrange in order.
+
+- `model_out_25022101`: SDXL, 6k dataset, Dual Tag (pick caption or tags), TTE on + 63% UNET, 5e-6 + 3e-6
+- `model_out_25022102`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 63% UNET, 5e-6 + 3e-6
+- `model_out_25022103`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 63% UNET, 1e-6 + 1e-5
+
+![xyz_grid-0005-744089893-13440-1081-6-48-20250222135824.jpg](./img/xyz_grid-0005-744089893-13440-1081-6-48-20250222135824.jpg)
+
+![xyz_grid-0015-744089893-14784-1081-6-48-20250223154144.jpg](./img/xyz_grid-0015-744089893-14784-1081-6-48-20250223154144.jpg)
+
+![xyz_grid-0010-744089893-14784-1081-6-48-20250223023958.jpg](./img/xyz_grid-0010-744089893-14784-1081-6-48-20250223023958.jpg)
+
+- The disussion is listed in [the session with the codes.](./sd-scripts-runtime/kohyas.md#how-dual-tags--caption-will-be-passed-into-the-model) General pretrained knowledge has been preserved a lot more when the input text is a lot more diversified. Notice that generated captions is a kind of synthetic data, which has risk on [model collapse](https://en.wikipedia.org/wiki/Model_collapse). Make sure the content must be [monitored closely](./tipo-toriigate-runtime/readme.md).
+
+![xyz_grid-0003-460372993-13440-1081-6-48-20250222135822jpg](./img/xyz_grid-0003-460372993-13440-1081-6-48-20250222135822.jpg)
+
+![xyz_grid-0008-460372993-14784-1081-6-48-20250223023855.jpg](./img/xyz_grid-0008-460372993-14784-1081-6-48-20250223023855.jpg)
+
+![xyz_grid-0013-460372993-14784-1081-6-48-20250223153945.jpg](./img/xyz_grid-0013-460372993-14784-1081-6-48-20250223153945.jpg)
