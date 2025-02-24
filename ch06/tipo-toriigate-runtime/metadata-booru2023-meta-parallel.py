@@ -56,7 +56,8 @@ def dump_tags(row):
     #Danbooru has defined styles and years like "2000s" and "2024", which has stated explictly "do not link with upload time". 
     #Disrupting the tag definiton will cause AI/ML problems, which AI cannot learn contradictions.
     #If the final destination is learning "some artist in some topic in some time window", please make embedding or train a LoRA.
-    caption = " ".join(must_exist) #.replace(" ",", ")
+    #250224: There are many \n which will break kohyas trainer's wildcard.
+    caption = " ".join(must_exist).replace("\n","")
 
     final_result[str(danbooru_post_id)] = { "caption": caption }
     split_result[danbooru_post_id % split_count][str(danbooru_post_id)] = { "caption": caption }

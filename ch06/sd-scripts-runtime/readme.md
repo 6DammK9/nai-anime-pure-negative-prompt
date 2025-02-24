@@ -176,6 +176,34 @@ tpu_use_sudo: false
 use_cpu: false
 ```
 
+- For the most speedy one, [use my own fork](https://github.com/6DammK9/sd-scripts/tree/train-native). [PR is likely won't be merged.](https://github.com/kohya-ss/sd-scripts/pull/1950), and use the [71% UNET instead](sdxl_original_unet_71.py). Many options is disabled again, for *enabling risky static memory usage*. The command line is in the [same session](./readme.md#exploring-accelerate-out-of-community-guide).
+
+```log
+accelerate config
+bash: accelerate: command not found
+(base) [user@user-x299dark novelai]$ conda activate kohyas-env
+(kohyas-env) [user@user-x299dark novelai]$ accelerate config
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In which compute environment are you running?
+This machine                                                                                                                                                        
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Which type of machine are you using?                                                                                                                                
+multi-GPU                                                                                                                                                           
+How many different machines will you use (use more than 1 for multi-node training)? [1]: 1                                                                          
+Should distributed operations be checked while running for errors? This can avoid timeout issues but will be slower. [yes/NO]: NO                                   
+Do you wish to optimize your script with torch dynamo?[yes/NO]:NO                                                                                                   
+Do you want to use DeepSpeed? [yes/NO]: NO                                                                                                                          
+Do you want to use FullyShardedDataParallel? [yes/NO]: NO                                                                                                           
+Do you want to use Megatron-LM ? [yes/NO]: NO                                                                                                                       
+How many GPU(s) should be used for distributed training? [1]:4                                                                                                      
+What GPU(s) (by id) should be used for training on this machine as a comma-seperated list? [all]:0,1,2,3                                                            
+Would you like to enable numa efficiency? (Currently only supported on NVIDIA hardware). [yes/NO]: NO
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Do you wish to use FP16 or BF16 (mixed precision)?
+bf16                                                                                                                                                                
+accelerate configuration saved at /home/user/.cache/huggingface/accelerate/default_config.yaml   
+```
+
 - Now try that guide and inspect the `*.json`. Since the dataset guide has enforced to whole dataset, it may be great to limit the dataset into a small and obvious dataset.
 
 - I have made my own subset which has obvious training target.
@@ -599,7 +627,7 @@ elif args.full_bf16:
 
 - However, in a graceful approach, adapt "start from iter" [from this PR](https://github.com/kohya-ss/sd-scripts/pull/1359). Hint: `accelerator.skip_first_batches`, `initial_step`. [Basic usage.](https://huggingface.co/docs/accelerate/usage_guides/checkpoint). Turns out it is a [big issue](https://github.com/kohya-ss/sd-scripts/issues/1947), with many missing integration to keep things more consistant.
 
-- [PR raised to the trainer.](https://github.com/kohya-ss/sd-scripts/pull/1950)
+- [PR raised to the trainer (won't be merged).](https://github.com/kohya-ss/sd-scripts/pull/1950)
 
 ## Exploring accelerate out of community guide ##
 
@@ -628,6 +656,28 @@ accelerate launch sdxl_train_v2.py
   --skip_until_initial_step --initial_step=1 --initial_epoch=1
 ```
 
+- After more explorartion, I find that removing the offloading mechanisms is the fastest method. Even `--mem_eff_attn` can left inavtive.
+
+```sh
+accelerate launch sdxl_train_v2.py 
+  --pretrained_model_name_or_path="/run/media/user/PM863a/stable-diffusion-webui/models/Stable-diffusion/x215c-AstolfoMix-24101101-6e545a3.safetensors" 
+  --in_json "/run/media/user/Intel P4510 3/just_astolfo/meta_lat_v3.json" 
+  --train_data_dir="/run/media/user/Intel P4510 3/just_astolfo/kohyas_finetune" 
+  --output_dir="/run/media/user/Intel P4510 3/astolfo_xl/just_astolfo/model_out" 
+  --log_with=tensorboard --logging_dir="/run/media/user/Intel P4510 3/astolfo_xl/just_astolfo/tensorboard" --log_prefix=just_astolfo_25022401_ 
+  --seed=25022401 --save_model_as=safetensors --caption_extension=".txt" --enable_wildcard 
+  --use_8bit_adam 
+  --learning_rate=4e-7 --train_text_encoder --learning_rate_te1=4e-6 --learning_rate_te2=4e-6 
+  --max_train_epochs=10 
+  --xformers --gradient_checkpointing 
+  --gradient_accumulation_steps=4 --max_grad_norm=0 
+  --train_batch_size=1 --full_bf16 --mixed_precision=bf16 --save_precision=fp16 
+  --enable_bucket --cache_latents 
+  --save_every_n_epochs=1
+  #--deepspeed --mem_eff_attn --torch_compile --dynamo_backend=inductor
+  #--skip_until_initial_step --initial_step=1 --initial_epoch=1
+```
+
 ### Batch size / gradient accumulation ###
 
 - Base speed has been recorded as 1.5s / it for single GPU, and "2.5s / it" in 4x GPU, which is 2.4x.
@@ -636,9 +686,13 @@ accelerate launch sdxl_train_v2.py
 
 - With dynamo backend, it is 2.0x for step size 4 with 4x GPU (12s / it). 63% UNET use 22.2GB.
 
-- With deepspeed Zero 2, there is no **speed penalty** (still 2.0x), but 63% UNET use 17.0GB already. **100% UNET use 23.5GB, which is very cool.**
+- With deepspeed Zero 2, there is no speed penalty (still 2.0x), but 63% UNET use 17.0GB already. **100% UNET use 23.5GB, which is very cool.**
 
 - However moving to a larger dataset, speed reduced to 1.55x (15.5s / it), which is slower than the vanilla "10.0s / it"
+
+- Now I **use the vanilla option again**, the speed has been doubled, which is 3.0x with 4x GPU and step size 4 (8.0s / it). 71% UNET use 23.8GB.
+
+- PCIE bandwidth may be the bottleneck. 2 cards with 3.0 x16 are having the same speed of 4 cards with 3.0 x8. *However the fastest training setting is not confirmed yet, until I swap my hardware to 4.0 x16 (stay tuned in ch04)*
 
 ### Flash attention / xFormers ###
 
