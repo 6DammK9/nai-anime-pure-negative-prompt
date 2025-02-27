@@ -60,6 +60,10 @@
 
 - [Two-Tailed Averaging: Anytime, Adaptive, Once-in-a-While Optimal Weight Averaging for Better Generalization](https://arxiv.org/abs/2209.12581)
 
+- [On the Emergence of Cross-Task Linearity in the Pretraining-Finetuning Paradigm](https://arxiv.org/abs/2402.03660)
+
+- [Rethink Model Re-Basin and the Linear Mode Connectivity](https://arxiv.org/abs/2402.05966v1)
+
 ![24022701.jpg](./img/24022701.jpg)
 
 ### Github repos (mergers / algorithm implementations) excluding MBW / LBW ###
