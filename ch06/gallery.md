@@ -38,7 +38,7 @@
 
 ![xyz_grid-0025-744089893-14784-1081-6-48-20250201145322.jpg](./img/xyz_grid-0025-744089893-14784-1081-6-48-20250201145322.jpg)
 
-## When TTE is on with only part of UNET is trained ##
+## When TTE is on with only part of UNET (63%) is trained ##
 
 - *The learning rate has been reduced, which is referenced from similar models.* I believe that the learning rate of UNET may be smaller than TE, but it requires extentsive testing.
 
@@ -111,3 +111,43 @@ These images are arrange in order.
 ![xyz_grid-0008-460372993-14784-1081-6-48-20250223023855.jpg](./img/xyz_grid-0008-460372993-14784-1081-6-48-20250223023855.jpg)
 
 ![xyz_grid-0013-460372993-14784-1081-6-48-20250223153945.jpg](./img/xyz_grid-0013-460372993-14784-1081-6-48-20250223153945.jpg)
+
+## Effect of gradient accumulation (full UNET) ##
+
+![IMG_7431](./img/IMG_7431.jpg)
+
+- The noticeable difference is the loss curve is smooth in the first half of the training progress, then it fluctuates. Although the magnitude of the MSE has no correlation to the image content, *it fluctuates when the learning process is completed,* with the magnitude stays at a constant range, and sometimes spikes for some outliers. It ensembles to a longitudinal wave, which looks like a typical loss cure while finetuning, but within a constant range.
+
+- To further *imagine* the root cause, may be the (artistic) task in *unsupervised learning approach* (pre-trianing with many objectives, close to pattern matching) is really expect the model to "overfit", or being "confident" enough to not being distracted / confused to "predict" what the model has been learnt.
+
+- For the "longitudinal wave", the "stablization of content" in XY plot matches the "longitudinal wave" in the loss curve.
+
+- The image still break when the learning rate is too high (the learning rate has been doubled).
+
+![xyz_grid-0018-460372993-14784-1081-6-48-20250224235114.jpg](./img/xyz_grid-0018-460372993-14784-1081-6-48-20250224235114.jpg)
+
+![xyz_grid-0020-744089893-14784-1081-6-48-20250224235313.jpg](./img/xyz_grid-0018-460372993-14784-1081-6-48-20250224235114.jpg)
+
+## Effect of gradient accumulation (part of UNET, 71%) ##
+
+- There was a discussion to increase learning rate when gradient accumulation is enabled. [Ref.](https://stackoverflow.com/questions/75701437/why-do-we-multiply-learning-rate-by-gradient-accumulation-steps-in-pytorch) However, *turns out I don't have to increse it, meanwhile it converges better.*
+
+- Since it boosted the efficiency, I have found the optimal learning rate which can **balance learned intended content and preserve general pretrained knowledge.** 
+
+- ~~The prompt has an artist name, which consist of only 1-2 images out of 6.2k. Meanwhile the "rin with rx7" is not even included in the dataset. ~~
+
+![xyz_grid-0037-3033572388-11264-1327-6-48-20250227205829.jpg](./img/xyz_grid-0037-3033572388-11264-1327-6-48-20250227205829.jpg)
+
+![xyz_grid-0038-460372993-14784-1081-6-48-20250227212554.jpg](./img/xyz_grid-0038-460372993-14784-1081-6-48-20250227212554.jpg)
+
+![xyz_grid-0041-744089893-14784-1081-6-48-20250227212557.jpg](./img/xyz_grid-0041-744089893-14784-1081-6-48-20250227212557.jpg)
+
+- Check for [model description](./sd-scripts-runtime/logs/readme.md) for the setting of the corrosponding model name. Although there is no clear definition to describe "overfitting" in T2I or even generative task (some may call that "it just learnt effectively, unrelated content should not be cared"), I still call it "overfit" when the model start forgetting general contents which is out of the finetuning dataset ~~I think this is both (large) finetuning and (small) pretrain~~.
+
+- However the model still requiree **more than 1 epoch** to learn the entire dataset effectively, which ranges from 6-9 epochs. *Maybe I should really rent a powerful mahcine when the first EP is a success.* 
+
+![xyz_grid-0044-3033572388-9216-1327-6-48-20250227215821.jpg](./img/xyz_grid-0044-3033572388-9216-1327-6-48-20250227215821.jpg)
+
+![xyz_grid-0045-460372993-12096-1081-6-48-20250227215822.jpg](./img/xyz_grid-0045-460372993-12096-1081-6-48-20250227215822.jpg)
+
+![xyz_grid-0046-744089893-12096-1081-6-48-20250227215822.jpg](./img/xyz_grid-0046-744089893-12096-1081-6-48-20250227215822.jpg)

@@ -682,7 +682,7 @@ accelerate launch sdxl_train_v2.py
 
 - Base speed has been recorded as 1.5s / it for single GPU, and "2.5s / it" in 4x GPU, which is 2.4x.
 
-- [Increase learning rate when gradient accumulation is enabled.](https://stackoverflow.com/questions/75701437/why-do-we-multiply-learning-rate-by-gradient-accumulation-steps-in-pytorch) For training speed, it works as batch size without increasing memory requirement. Currently it is 0.93x of the original speed for single GPU and step size 2 (3.2s / it). 63% UNET use 21.5GB.
+- [Increase learning rate when gradient accumulation is enabled.](https://stackoverflow.com/questions/75701437/why-do-we-multiply-learning-rate-by-gradient-accumulation-steps-in-pytorch). *Turns out I don't have to increse it, meanwhile it converges better.*  For training speed, it works as batch size without increasing memory requirement. Currently it is 0.93x of the original speed for single GPU and step size 2 (3.2s / it). 63% UNET use 21.5GB.
 
 - With dynamo backend, it is 2.0x for step size 4 with 4x GPU (12s / it). 63% UNET use 22.2GB.
 
