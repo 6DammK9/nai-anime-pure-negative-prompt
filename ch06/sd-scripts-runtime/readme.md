@@ -545,7 +545,7 @@ TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
 
 ## Compromised trining with MultiGPU overhead (GLOO) ##
 
-- See [my attempt in Manjaro (NCCL) version](../manjaro.md#compromised-trining-with-multigpu-overhead-nccl). This Windows (without WSL) attempt will leave for reference.
+- See [my attempt in Manjaro (NCCL) version](../manjaro/readme.md#compromised-trining-with-multigpu-overhead-nccl). This Windows (without WSL) attempt will leave for reference.
 
 - I have added my progress in [the PR](https://github.com/kohya-ss/sd-scripts/pull/1686), not sure if it must be forced to use the old `venv` like A1111, or I need **WSL** to proceed.
 
@@ -631,7 +631,7 @@ elif args.full_bf16:
 
 ## Exploring accelerate out of community guide ##
 
-- First of all, [NCCL under linux is preferred](../manjaro.md#compromised-trining-with-multigpu-overhead-nccl). All the findings are continued from there.
+- First of all, [NCCL under linux is preferred](../manjaro/readme.md#compromised-trining-with-multigpu-overhead-nccl). All the findings are continued from there.
 
 - After a bit of exploration, here is my current working CLI. `num_cpu_threads_per_process` is not required.
 

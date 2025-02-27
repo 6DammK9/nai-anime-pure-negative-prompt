@@ -12,12 +12,12 @@ if False:
 
 #Full dataest
 if True:
-    JSON_ID = "F:/danbooru2024-webp-4Mpixel/meta_lat.json"
-    JSON_TAGS = "F:/danbooru2024-webp-4Mpixel/meta_cap_dd.json"
-    JSON_LATENT = "F:/danbooru2024-webp-4Mpixel/meta_lat.json"
-    JSON_CAPTION = "F:/danbooru2024-webp-4Mpixel/meta_cap.json"
-    OUTPUT_JSON = "F:/danbooru2024-webp-4Mpixel/meta_lat_v2.json"
-    MISSING_JSON = "F:/danbooru2024-webp-4Mpixel/missing.json"
+    JSON_ID = "C:/temp/tags/meta_lat.json"
+    JSON_TAGS = "C:/temp/tags/meta_lat.json"
+    JSON_LATENT = "C:/temp/tags/meta_lat.json"
+    JSON_CAPTION = "C:/temp/tags/meta_cap.json"
+    OUTPUT_JSON = "C:/temp/tags/meta_lat_v2.json"
+    MISSING_JSON = "C:/temp/tags/missing.json"
 
 merged = dict()
 data_id = None
@@ -72,6 +72,8 @@ for id in tqdm(all_ids, desc="merging json files", position=0):
     if (id in data_caption) and (data_caption[id]):
         merged[id]["caption"] = data_caption[id]["caption"]
     else:
+        #250225: Fallback to tags. Pay attention to the sequence.
+        merged[id]["caption"] = merged[id]["tags"]
         missing_id["caption"].append(id)
     if id in data_lat:
         merged[id]["train_resolution"] = data_lat[id]["train_resolution"]

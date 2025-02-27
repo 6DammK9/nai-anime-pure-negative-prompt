@@ -16,3 +16,8 @@
 - `model_out_25022101`: SDXL, 6k dataset, Dual Tag (pick caption or tags), TTE on + 63% UNET, 5e-6 + 3e-6
 - `model_out_25022102`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 63% UNET, 5e-6 + 3e-6
 - `model_out_25022103`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 63% UNET, 1e-6 + 1e-5
+- `model_out_25022301`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 100% UNET + GA 4 step, 2e-6 + 2e-5
+- `model_out_25022401`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 71% UNET + GA 4 step, 4e-7 + 4e-6
+- `model_out_25022501`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 71% UNET + GA 4 step, 1e-6 + 1e-5
+- `model_out_25022502`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 71% UNET + GA 4 step, 2e-6 + 8e-6
+- `model_out_25022601`: SDXL, 6k dataset, Dual Tag (concat, a1111 token trick), TTE on + 71% UNET + GA 4 step, ramdisk, 1.5e-6 + 1.2e-5

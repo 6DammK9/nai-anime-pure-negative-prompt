@@ -44,3 +44,23 @@ caption = " ".join(must_exist).replace("\n","").replace("\r","")
 - Refer to [the tags-1ktar repo](https://huggingface.co/datasets/6DammK9/e621_2024-tags-1ktar).
 
 - *This repo is still in develeopment.* [My current task of building the dataset for "pretraining".](https://github.com/6DammK9/nai-anime-pure-negative-prompt/blob/main/ch06/cheesechaser-runtime/readme.md)
+
+## Warning: Many records here are not NLP captions actally ##
+
+- I don't want to spend weeks to run the VLM again.
+
+- There should be almost 1M of records are tags. (Here is a lot more than 0.18M).
+
+```log
+>python merge_tag_and_caption_to_meta.py
+loading JSON_ID
+loading JSON_TAGS
+loading JSON_CAPTION
+loading JSON_LATENT
+start merging
+merging json files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4441660/4441660 [00:27<00:00, 163941.22it/s]
+ids: 4441660, missing tags: 0, missing caption: 178162, missing latent: 0
+writing OUTPUT_JSON
+writing MISSING_JSON
+Merge complete.
+```

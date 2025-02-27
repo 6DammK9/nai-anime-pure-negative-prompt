@@ -1,6 +1,6 @@
 # Chapter 06: Finetuning in vanilla approach. #
 
-[Joining the cult of Arch linux.](./manjaro.md)
+[Joining the cult of Arch linux.](./manjaro/readme.md)
 
 - [cheesechaser-runtime](./cheesechaser-runtime): Definitely not dataset speedrun via [deepghs/cheesechaser](https://github.com/deepghs/cheesechaser).
 - [sd-scripts-runtime](./sd-scripts-runtime): Definitely not finetune speedrun via [kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts).

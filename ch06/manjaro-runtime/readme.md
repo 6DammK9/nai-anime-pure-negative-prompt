@@ -527,3 +527,19 @@ Wed Jan 29 01:22:49 2025
 - [NCCL overhead is hard to predict.](https://github.com/NVIDIA/nccl/issues/864)
 
 - [Slow training with GLOO (but no OOM).](https://github.com/bmaltais/kohya_ss/issues/2366)
+
+### 2.3 (Optional) Using ramdisk instead of storage ###
+
+- After a bit of struggle, I'm decided to use this OS **in my 4TB RAM WS.** I have figured out the hardwares to *mount an external vertical rig with full speed pcie.*
+
+- [Youtube video about ramdisk.](https://youtu.be/WHPD-QL12N4?si=ZFVwb1G94y6QUlG1)
+
+- `tmpfs` would be good enough. I don't have swap file, however, I have 4TB of memory.
+
+- There is a built in `/dev/shm` in the OS, so I just need to "extend" the partition to fit my case.
+
+- I don't need to make 12M files anymore. The sheer amount of file count stress the OS very much, no matter Windows or Linux.
+
+- However it may hang the computer and lost serious amount of progress.
+
+- After testing for a while, the trainin process is almost unaffected. Looks like the [pyTorch DataLoader](https://pytorch.org/docs/stable/data.html) has streamlined the process very well.
