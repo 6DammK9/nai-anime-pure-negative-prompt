@@ -8,6 +8,8 @@ mkdir -p "/dev/shm/astolfo_xl"
 chmod 777 "/dev/shm/astolfo_xl"
 
 mkdir -p "/dev/shm/astolfo_xl/dataset"
+mkdir -p "/dev/shm/astolfo_xl/dataset/danbooru"
+mkdir -p "/dev/shm/astolfo_xl/dataset/e621"
 mkdir -p "/dev/shm/astolfo_xl/meta"
 mkdir -p "/dev/shm/astolfo_xl/basemodel"
 cp -r "/run/media/user/Intel P4510 3/astolfo_xl/x215c-AstolfoMix-24101101-6e545a3.safetensors" "/dev/shm/astolfo_xl/basemodel"
@@ -17,3 +19,5 @@ cp -r "/run/media/user/Intel P4510 3/just_astolfo/test1" "/dev/shm/astolfo_xl/da
 cp -r "/run/media/user/Intel P4510 3/just_astolfo/test2" "/dev/shm/astolfo_xl/dataset"
 cp -r "/run/media/user/Intel P4510 3/just_astolfo/meta_lat_v3.json" "/dev/shm/astolfo_xl/meta"
 cp -r "/run/media/user/Intel P4510 3/just_astolfo/test_lat_v3b.json" "/dev/shm/astolfo_xl/meta"
+
+tar -xzvf "/run/media/user/Intel P4510 3/merged_dataset/meta_lat.tar.gz" "/dev/shm/astolfo_xl/meta"
