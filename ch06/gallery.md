@@ -134,7 +134,7 @@ These images are arrange in order.
 
 - Since it boosted the efficiency, I have found the optimal learning rate which can **balance learned intended content and preserve general pretrained knowledge.** 
 
-- ~~The prompt has an artist name, which consist of only 1-2 images out of 6.2k. Meanwhile the "rin with rx7" is not even included in the dataset. ~~
+- ~~The prompt has an artist name, which consist of only 1-2 images out of 6.2k. Meanwhile the "rin with rx7" is not even included in the dataset.~~
 
 ![xyz_grid-0037-3033572388-11264-1327-6-48-20250227205829.jpg](./img/xyz_grid-0037-3033572388-11264-1327-6-48-20250227205829.jpg)
 
