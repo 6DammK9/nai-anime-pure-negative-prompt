@@ -1,0 +1,4 @@
+model "./_x001-sd_xl_base_1.0.safetensors" "sdxl" "base"
+model "./x255a-AstolfoMix-25022801-1458190.safetensors" "sdxl" "base"
+merge "subtract" &1 &0
+merge "add_difference" &0 &2 alpha=2.0
