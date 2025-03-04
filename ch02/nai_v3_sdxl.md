@@ -1,5 +1,7 @@
 # Observation from NovelAIDiffusionV3 #
 
+![photo_2025-03-01_16-04-17.jpg.jpg](./img/photo_2025-03-01_16-04-17.jpg)
+
 ## End of line ##
 
 - Technical report has been released: [Improvements to SDXL in NovelAI Diffusion V3](https://arxiv.org/abs/2409.15997)
