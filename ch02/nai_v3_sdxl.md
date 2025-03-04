@@ -1,6 +1,6 @@
 # Observation from NovelAIDiffusionV3 #
 
-![photo_2025-03-01_16-04-17.jpg.jpg](./img/photo_2025-03-01_16-04-17.jpg)
+![photo_2025-03-01_16-04-17.jpg](./img/photo_2025-03-01_16-04-17-2.jpg)
 
 ## End of line ##
 
