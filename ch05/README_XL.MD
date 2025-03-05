@@ -581,3 +581,19 @@ This is the *recent* merging log.
 - I have already explored the [mathematical properites](https://www.marktechpost.com/2024/10/23/15-fundamental-mathematics-theories-needed-to-understand-ai/) of this complicated LDM model, which has experienced the [(abstract) gradient problem of a LDM, which use MDP, inherits from RNN, which is a autoregressive model](https://medium.com/@roelljr/the-ultimate-guide-rnns-vs-transformers-vs-diffusion-models-5e841a8184f3). [Inserting the MDP=AR(1) quote again.](https://stats.stackexchange.com/questions/23789/is-ar1-a-markov-process). Somehow my sophisticated **modified merging algorithms** has been smoothed the gradient so much and preserved as much (pre)trained content as I can.
 
 - Although I am still not motivated enough to make a (troll) post to arxiv, with looking back to [my understanding of art](../ch01/aesthetic.md#my-theorey), I think the new discoveries are legit and I can make this happen again in a more croweded area (conventional finetuning). Currently the finetuning theories in SD are still very confusing, maybe a **simple, proven, rigorously tested methods** will yield to easy life (may not be superior, "just good art"), without the urge need to proposing fancy unproven methods. *Maybe we just need a base model instead, and now I have it*.
+
+## Revisit from the next chapter: Updating the model... and it is an epic fail ##
+
+- Slightly updated the methodology: I added parallelism for the Re-basin code, to make the merge 6.75x faster (9h > 1.2h). [Commit, not PR](https://github.com/6DammK9/Merge-Stable-Diffusion-models-without-distortion/commit/aa0d507abb2640dba05338cdf71fb6c9bdf158d2)
+
+- The major "255a" merge was still tedious and super memory intensive.
+
+- The additional 40 models are mainly **my old mixes (13)** and **illustrious xl** related models. Now the "large weight shifting models" are even more, tearing the "geometric median" more outward from the dense area.
+
+- And the result is out of my expectation: It is *borderline breaking*. The "base model weight" has less effect now.
+
+- The `255b` barely works, and `255c` breaks a lot. I continued finetuning on both models, [but it belongs in the next chapter.](../ch06/gallery.md#effect-on-switching-to-the-updated-base-model)
+
+![xyz_grid-0000-3501057452-9408-1081-6-48-20250302224301.jpg](./img/xyz_grid-0000-3501057452-9408-1081-6-48-20250302224301.jpg)
+
+![xyz_grid-0001-744089893-9408-1081-6-48-20250302230521.jpg](./img/xyz_grid-0001-744089893-9408-1081-6-48-20250302230521.jpg)
