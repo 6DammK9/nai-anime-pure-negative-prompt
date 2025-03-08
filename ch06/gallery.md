@@ -151,3 +151,15 @@ These images are arrange in order.
 ![xyz_grid-0045-460372993-12096-1081-6-48-20250227215822.jpg](./img/xyz_grid-0045-460372993-12096-1081-6-48-20250227215822.jpg)
 
 ![xyz_grid-0046-744089893-12096-1081-6-48-20250227215822.jpg](./img/xyz_grid-0046-744089893-12096-1081-6-48-20250227215822.jpg)
+
+## Effect on switching to the updated base model ##
+
+- Good news: **Parameters remains unchanged.** Bad news: **Base model still determine the success of the finetune.**
+
+- Warning: **Very counterintuitive.** I do doubt myself, but I persist to run the full procedure, but the end result is even better.
+
+![xyz_grid-0059-309350676-17472-1081-6-48-20250305225205.jpg](./img/xyz_grid-0059-309350676-17472-1081-6-48-20250305225205.jpg)
+
+![xyz_grid-0060-3501057477-17472-1081-6-48-20250305230641.jpg](./img/xyz_grid-0060-3501057477-17472-1081-6-48-20250305230641.jpg)
+
+![xyz_grid-0061-3501057452-17472-1081-6-48-20250305232412.jpg](./img/xyz_grid-0061-3501057452-17472-1081-6-48-20250305232412.jpg)
