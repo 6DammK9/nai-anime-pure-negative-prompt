@@ -180,7 +180,7 @@ These images are arrange in order.
 
 ## Effect on trying on full dataset ##
 
-- *More plots soon*. Notice that the "human / non human" ratio is so low (2:1 instead of 100+:1), with such "unconditional focused" model / sampler / prompts, we can expect something "wild" (wildlife), but it magically keeps in its own balance, because my objective / "task" is still very general, and the technical details is still making the model as robust as it can.
+- Notice that the "human / non human" ratio is so low (2:1 instead of 100+:1), with such "unconditional focused" model / sampler / prompts, we can expect something "wild" (wildlife), but it magically keeps in its own balance, because my objective / "task" is still very general, and the technical details is still making the model as robust as it can.
 
 - Here is some *empty prompts*.
 
@@ -194,4 +194,10 @@ These images are arrange in order.
 
 - The model will "forget too many things and confused" in the first 160k images (160k over 12.4M), just be patient. If you are in panic mode, adjust prompt weights (mine is always very light), and even keep prompt `car, wrc` for sanity check. Notice that it is only valid for testing if the model is already broken. The training may not be effective.
 
-![25031501.jpg](./img/25031501.jpg)
+- Suprisingly, some images drifts towards 215c's preferred content. Maybe it is an illusion that it is drifting towards SDXL 1.0 content actulally.
+
+![xyz_grid-0077-3501057477-6720-1081-6-48-20250316042010.jpg](./img/xyz_grid-0077-3501057477-6720-1081-6-48-20250316042010.jpg)
+
+![xyz_grid-0078-460372993-6720-1081-6-48-20250316042511.jpg](./img/xyz_grid-0078-460372993-6720-1081-6-48-20250316042511.jpg)
+
+![xyz_grid-0079-3033572388-5120-1343-6-48-20250316042655.jpg](./img/xyz_grid-0079-3033572388-5120-1343-6-48-20250316042655.jpg)
