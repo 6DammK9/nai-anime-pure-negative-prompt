@@ -582,7 +582,7 @@ This is the *recent* merging log.
 
 - Although I am still not motivated enough to make a (troll) post to arxiv, with looking back to [my understanding of art](../ch01/aesthetic.md#my-theorey), I think the new discoveries are legit and I can make this happen again in a more croweded area (conventional finetuning). Currently the finetuning theories in SD are still very confusing, maybe a **simple, proven, rigorously tested methods** will yield to easy life (may not be superior, "just good art"), without the urge need to proposing fancy unproven methods. *Maybe we just need a base model instead, and now I have it*.
 
-## Revisit from the next chapter: Updating the model... and it is an epic fail ##
+## Revisit from the next chapter: Updating the model... and it is an epic fail (without finetune) ##
 
 - Slightly updated the methodology: I added parallelism for the Re-basin code, to make the merge 6.75x faster (9h > 1.2h). [Commit, not PR](https://github.com/6DammK9/Merge-Stable-Diffusion-models-without-distortion/commit/aa0d507abb2640dba05338cdf71fb6c9bdf158d2)
 
@@ -597,3 +597,7 @@ This is the *recent* merging log.
 ![xyz_grid-0000-3501057452-9408-1081-6-48-20250302224301.jpg](./img/xyz_grid-0000-3501057452-9408-1081-6-48-20250302224301.jpg)
 
 ![xyz_grid-0001-744089893-9408-1081-6-48-20250302230521.jpg](./img/xyz_grid-0001-744089893-9408-1081-6-48-20250302230521.jpg)
+
+- Based from [previous session](#good-time-to-conclude-and-move-to-the-next-chapter), it actually **learns a lot more effective** because the contradicted weights appears **pseudorandom** which cannot be activated. Once it continues training, a tiny switch of specific model weight will reactivate the whole network. It is different from both pretraining (train from scratch = initialized (real) random weights) and finetuning (train from learnt weights, which has less "gradient" for explorartion). Discussion will be contuned in [ch06](../ch06/gallery.md#effect-on-switching-to-the-updated-base-model-and-implied-batch-size).
+
+![xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg](../ch06/img/xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg)

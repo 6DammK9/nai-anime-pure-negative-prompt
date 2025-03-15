@@ -81,7 +81,7 @@
 <details>
     <summary> It still works. </summary>
 
-    ![250205-3581144351-1024-1024-6-48-20250201111839.png](./img/250205-3581144351-1024-1024-6-48-20250201111839.png)
+    ![250205-3581144351-1024-1024-6-48-20250201111839.jpg](./img/250205-3581144351-1024-1024-6-48-20250201111839.jpg)
 
     ```txt
     parameters
@@ -152,14 +152,46 @@ These images are arrange in order.
 
 ![xyz_grid-0046-744089893-12096-1081-6-48-20250227215822.jpg](./img/xyz_grid-0046-744089893-12096-1081-6-48-20250227215822.jpg)
 
-## Effect on switching to the updated base model ##
+## Effect on switching to the updated base model (and implied batch size) ##
 
 - Good news: **Parameters remains unchanged.** Bad news: **Base model still determine the success of the finetune.**
 
 - Warning: **Very counterintuitive.** I do doubt myself, but I persist to run the full procedure, but the end result is even better.
 
-![xyz_grid-0059-309350676-17472-1081-6-48-20250305225205.jpg](./img/xyz_grid-0059-309350676-17472-1081-6-48-20250305225205.jpg)
+- *The 250403 is invalid.* I run the training task as single GPU with `--gradient_accumulation_steps=4`. The image quality is difference because of implied batch size of multi GPU.
 
-![xyz_grid-0060-3501057477-17472-1081-6-48-20250305230641.jpg](./img/xyz_grid-0060-3501057477-17472-1081-6-48-20250305230641.jpg)
+- After rerun with 4 GPUs, the result is actually a bit worse, but after a bit of struggle, *I decided to use 255c whatsever*.
 
-![xyz_grid-0061-3501057452-17472-1081-6-48-20250305232412.jpg](./img/xyz_grid-0061-3501057452-17472-1081-6-48-20250305232412.jpg)
+- I think 255c has archieved ["pseudorandom"](../ch05/README_XL.MD#revisit-from-the-next-chapter-updating-the-model-and-it-is-an-epic-fail-without-finetune), which enables a hybird learning mode between pretrain and finetune. Pretrain occurs in contradicted weights to "resurrect the network", and the finetune will keep its own process.
+
+![xyz_grid-0069-309350676-17472-1081-6-48-20250307005642.jpg](./img/xyz_grid-0069-309350676-17472-1081-6-48-20250307005642.jpg)
+
+![xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg](./img/xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg)
+
+![xyz_grid-0071-3033572388-14336-1327-6-48-20250307005710.jpg](./img/xyz_grid-0071-3033572388-14336-1327-6-48-20250307005710.jpg)
+
+![xyz_grid-0072-2656714739-10752-1657-6-48-20250307012006.jpg](./img/xyz_grid-0072-2656714739-10752-1657-6-48-20250307012006.jpg)
+
+- With such pattern, *I have hope on effective learning with only 1EP*. It may break after 5-6EP, but I'm quite sure I won't be there unless I have DGX 8x BH200 (that will violate whole chapter!)
+
+![xyz_grid-0063-3033572388-12288-1327-6-48-20250306235700.jpg](./img/xyz_grid-0063-3033572388-12288-1327-6-48-20250306235700.jpg)
+
+![xyz_grid-0065-460372993-14784-1081-6-48-20250307001711.jpg](./img/xyz_grid-0065-460372993-14784-1081-6-48-20250307001711.jpg)
+
+## Effect on trying on full dataset ##
+
+- *More plots soon*. Notice that the "human / non human" ratio is so low (2:1 instead of 100+:1), with such "unconditional focused" model / sampler / prompts, we can expect something "wild" (wildlife), but it magically keeps in its own balance, because my objective / "task" is still very general, and the technical details is still making the model as robust as it can.
+
+- Here is some *empty prompts*.
+
+![xyz_grid-0073-3513789981-4096-1343-6-48-20250309220008.jpg](./img/xyz_grid-0073-3513789981-4096-1343-6-48-20250309220008.jpg)
+
+![xyz_grid-0075-1890011922-5120-1343-6-48-20250309223357.jpg](./img/xyz_grid-0075-1890011922-5120-1343-6-48-20250309223357.jpg)
+
+- And here is a `1girl, solo` which `solo` is quite troublesome in many models (it introduce randomness: the character can be any where).
+
+![xyz_grid-0074-2976205023-5120-1343-6-48-20250309222606.jpg](./img/xyz_grid-0074-2976205023-5120-1343-6-48-20250309222606.jpg)
+
+- The model will "forget too many things and confused" in the first 160k images (160k over 12.4M), just be patient. If you are in panic mode, adjust prompt weights (mine is always very light), and even keep prompt `car, wrc` for sanity check. Notice that it is only valid for testing if the model is already broken. The training may not be effective.
+
+![25031501.jpg](./img/25031501.jpg)

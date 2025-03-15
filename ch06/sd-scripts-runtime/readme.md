@@ -741,3 +741,20 @@ accelerate launch sdxl_train.py
 ### NUMA efficiency ###
 
 - It is more common in multi CPU systems instead of multi GPU. *No harm but no effect.*
+
+## Exploring memory efficient optimizers ##
+
+- I have heard [discussion](https://github.com/bmaltais/kohya_ss/discussions/1818) that `AdaFactor` / `Lion8bit` use sinificant less VRAM, with a bit of precision tradeoff. However, there are more optimizers, such as `CAME`, which shows improvement and have precision close to `AdamW`. Although I have the full scale pretraining started for a few days, I still have room to make decision quickly until "a month has been spent". `CAME` is preferred becausae it 
+
+- Notice that it is all about **speed and time** in multiGPU (4x) training. Tolerance of prcision tradeoff is actually large because the current gradient is not precise already. **Gradient accumulation remains constant (4 steps).** Moreover, even the result may look bad after 4-5 EP in toy dataset, I only train 1EP in full dataset, so it is not that bad to fit (and overfit) quickly.
+
+|Optimizer (addons)|VRAM usage|Speed (img/s)|
+|---|---|---|
+|`adamw8bit`|> 24GB (OOM)|NaN|
+|`adamw8bit` (single GPU, no grad accu)|23.5G|0.667|
+|`adamw8bit` (single GPU)|23.5G|1.481|
+|`adamw8bit` (71% UNET)|24.0GB|1.848-**2.092**|
+|`adamw8bit` (Deepspeed ZERO Stage 2, `mem_eff_attn`, Pytorch Dynamo `inductor`))|23.5GB|1.231|
+|`AdaFactor`|?|?|
+|`Lion8bit`|?|?|
+|`CAME`|?|?|
