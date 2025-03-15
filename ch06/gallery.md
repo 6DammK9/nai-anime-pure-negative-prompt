@@ -156,7 +156,7 @@ These images are arrange in order.
 
 - Good news: **Parameters remains unchanged.** Bad news: **Base model still determine the success of the finetune.**
 
-- Warning: **Very counterintuitive.** I do doubt myself, but I persist to run the full procedure, but the end result is even better.
+- Warning: **Very counterintuitive.** I doubted myself, but I persist to run the full procedure. Now the end result is even better.
 
 - *The 250403 is invalid.* I run the training task as single GPU with `--gradient_accumulation_steps=4`. The image quality is difference because of implied batch size of multi GPU.
 
