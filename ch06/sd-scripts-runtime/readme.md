@@ -750,13 +750,15 @@ accelerate launch sdxl_train.py
 
 - Default: 71% UNET, grad accu = 4, 4x GPU
 
+- buffed #1: 100% UNET, Deepspeed ZERO Stage 2, `mem_eff_attn`, Pytorch Dynamo `inductor`
+
 |Optimizer (addons)|VRAM usage (G, bs1)|Speed (img/s)|
 |---|---|---|
 |`adamw8bit`|OOM|NaN|
 |`adamw8bit` (100% UNET, 1x GPU, no grad accu)|23.5|0.667|
 |`adamw8bit` (1x GPU)|23.5|1.481|
 |`adamw8bit` |24.0|1.848-**2.092**|
-|`adamw8bit` (100% UNET, Deepspeed ZERO Stage 2, `mem_eff_attn`, Pytorch Dynamo `inductor`))|23.5|1.231|
+|`adamw8bit` (buffed #1)|23.5|1.231|
 |`AdaFactor` |20.4|1.656|
 |`AdaFactor` (100% UNET)|**23.3**|1.231|
 |`Lion8bit` |21.2|1.721|
