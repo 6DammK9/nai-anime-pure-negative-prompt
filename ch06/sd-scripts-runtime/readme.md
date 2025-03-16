@@ -474,7 +474,7 @@ tar -czvf meta_cap_dd.tar.gz meta_cap_dd.json
 - This is written for 4x RTX3090 24GB with full scale finetune (may OOM). I prefer the parameters from [cagliostrolab/animagine-xl-3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1#hyperparameters).
 - `4e-7` is official SDXL learning rate. 
 - `--enable_bucket` will be enabled in auto if `*.npz` and `meta_lat.json` are present.
-- Optimizer will be defaulted as `AdamW` without 8bit. `--use_8bit_adam` is not used.
+- Optimizer will be defaulted as `adamW` without 8bit. `--use_8bit_adam` is not used.
 - `--shuffle_caption` is also not used. I think making multiple caption will be out of my reach.
 - *Ctrl-C, right click, "Paste as one line".*
 - `--train_text_encoder` is required if the CLIP should be finetuned. Otherwise it will be UNET only. 
@@ -744,7 +744,7 @@ accelerate launch sdxl_train.py
 
 ## Exploring memory efficient optimizers ##
 
-- I have heard [discussion](https://github.com/bmaltais/kohya_ss/discussions/1818) that `AdaFactor` / `Lion8bit` use sinificant less VRAM, with a bit of precision tradeoff. However, there are more optimizers, such as `CAME`, which shows improvement and have precision close to `AdamW`. Although I have the full scale pretraining started for a few days, I still have room to make decision quickly until "a month has been spent".
+- I have heard [discussion](https://github.com/bmaltais/kohya_ss/discussions/1818) that `AdaFactor` / `Lion8bit` use sinificant less VRAM, with a bit of precision tradeoff. However, there are more optimizers, such as `CAME`, which shows improvement and have precision close to `adamW`. Although I have the full scale pretraining started for a few days, I still have room to make decision quickly until "a month has been spent".
 
 - Notice that it is all about **speed and time** in multiGPU (4x) training. Tolerance of prcision tradeoff is actually large because the current gradient is not precise already. **Gradient accumulation remains constant (4 steps).** Moreover, even the result may look bad after 4-5 EP in toy dataset, I only train 1EP in full dataset, so it is not that bad to fit (and overfit) quickly.
 
@@ -752,15 +752,21 @@ accelerate launch sdxl_train.py
 
 - buffed #1: 100% UNET, Deepspeed ZERO Stage 2, `mem_eff_attn`, Pytorch Dynamo `inductor`
 
+- `CAME`, `Lion` is from `pytorch_optimizer`.
+
+- `adamW4bit` is from `torchao`.
+
 |Optimizer (addons)|VRAM usage (G, bs1)|Speed (img/s)|
 |---|---|---|
-|`adamw8bit`|OOM|NaN|
-|`adamw8bit` (100% UNET, 1x GPU, no grad accu)|23.5|0.667|
-|`adamw8bit` (1x GPU)|23.5|1.481|
-|`adamw8bit` |24.0|1.848-**2.092**|
-|`adamw8bit` (buffed #1)|23.5|1.231|
+|`adamW8bit`|OOM|NaN|
+|`adamW8bit` (100% UNET, 1x GPU, no grad accu)|23.5|0.667|
+|`adamW8bit` (1x GPU)|23.5|1.481|
+|`adamW8bit` |24.0|1.584, 1.848-**2.092**|
+|`adamW8bit` (buffed #1)|23.5|1.231|
+|`adamW4bit` |18.5|HANG|
+|`adamW4bit` (100% UNET)|**21.6**|HANG|
 |`AdaFactor` |20.4|1.656|
-|`AdaFactor` (100% UNET)|**23.3**|1.231|
+|`AdaFactor` (100% UNET)|23.3|1.231|
 |`Lion8bit` |21.2|1.721|
 |`Lion8bit` (100% UNET)|OOM|NaN|
 |`Lion` (`caution=True`) "C-Lion"|24.0|1.757|
