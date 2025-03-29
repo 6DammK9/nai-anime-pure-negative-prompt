@@ -453,13 +453,30 @@ accelerate launch
     --save_every_n_epochs=1    
 ```
 
-- And tensorboard:
+- And tensorboard [(sampling was enabled by default)](https://github.com/tensorflow/tensorboard/blob/master/README.md#is-my-data-being-downsampled-am-i-really-seeing-all-the-data):
 
 ```sh
-tensorboard --logdir "/run/media/user/PM863a/astolfo_xl/just_astolfo/tensorboard"
+tensorboard --samples_per_plugin=scalars=800000,images=100 --logdir "/run/media/user/PM863a/astolfo_xl/just_astolfo/tensorboard"
+tensorboard  -samples_per_plugin=scalars=800000,images=100 --logdir"/run/media/user/Intel P4510 3/astolfo_xl/just_astolfo/tensorboard"
 ```
 
 - *Reminder: Never disconnect the HDMI cable! It will swap user session and lock everything up!*
+
+### 2.3 (Optional) Using ramdisk instead of storage ###
+
+- After a bit of struggle, I'm decided to use this OS **in my 4TB RAM WS.** I have figured out the hardwares to *mount an external vertical rig with full speed pcie.*
+
+- [Youtube video about ramdisk.](https://youtu.be/WHPD-QL12N4?si=ZFVwb1G94y6QUlG1)
+
+- `tmpfs` would be good enough. I don't have swap file, however, I have 4TB of memory.
+
+- There is a built in `/dev/shm` in the OS, so I just need to "extend" the partition to fit my case.
+
+- I don't need to make 12M files anymore. The sheer amount of file count stress the OS very much, no matter Windows or Linux.
+
+- However it may hang the computer and lost serious amount of progress.
+
+- After testing for a while, the trainin process is almost unaffected. Looks like the [pyTorch DataLoader](https://pytorch.org/docs/stable/data.html) has streamlined the process very well.
 
 ## 3. Compromised trining with MultiGPU overhead (NCCL) ##
 
@@ -528,18 +545,119 @@ Wed Jan 29 01:22:49 2025
 
 - [Slow training with GLOO (but no OOM).](https://github.com/bmaltais/kohya_ss/issues/2366)
 
-### 2.3 (Optional) Using ramdisk instead of storage ###
+## 4. Notes on updating systems and libraries ##
 
-- After a bit of struggle, I'm decided to use this OS **in my 4TB RAM WS.** I have figured out the hardwares to *mount an external vertical rig with full speed pcie.*
+### 4.1 OS (Arch linux) ###
 
-- [Youtube video about ramdisk.](https://youtu.be/WHPD-QL12N4?si=ZFVwb1G94y6QUlG1)
+- Make sure `dkms` variants has been selected. System kernel does change frequently. Driver may crash.
 
-- `tmpfs` would be good enough. I don't have swap file, however, I have 4TB of memory.
+- For example, recent update has increased `nvidia-dkms` from `550.144.03` to `570.133.07`.
 
-- There is a built in `/dev/shm` in the OS, so I just need to "extend" the partition to fit my case.
+```logs
+> nvidia-smi
+Sat Mar 29 11:27:49 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.133.07             Driver Version: 570.133.07     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        Off |   00000000:05:00.0 Off |                  N/A |
+| 36%   31C    P8             31W /  250W |      15MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 3090        Off |   00000000:21:00.0 Off |                  N/A |
+| 46%   27C    P8             20W /  250W |      15MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 3090        Off |   00000000:42:00.0 Off |                  N/A |
+| 30%   38C    P8             36W /  250W |      15MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA GeForce RTX 3090        Off |   00000000:61:00.0 Off |                  N/A |
+| 30%   31C    P8             17W /  250W |      15MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            1036      G   /usr/lib/Xorg                             4MiB |
+|    1   N/A  N/A            1036      G   /usr/lib/Xorg                             4MiB |
+|    2   N/A  N/A            1036      G   /usr/lib/Xorg                             4MiB |
+|    3   N/A  N/A            1036      G   /usr/lib/Xorg                             4MiB |
++-----------------------------------------------------------------------------------------+
+```
 
-- I don't need to make 12M files anymore. The sheer amount of file count stress the OS very much, no matter Windows or Linux.
+### 4.2 CUDA / Python libraries ###
 
-- However it may hang the computer and lost serious amount of progress.
+- `pytorch`, `xformers`, and `bitsandbytes` are linked to CUDA drivers indepently. Make sure you **reinstall** all of them according to the CUDA version.
 
-- After testing for a while, the trainin process is almost unaffected. Looks like the [pyTorch DataLoader](https://pytorch.org/docs/stable/data.html) has streamlined the process very well.
+- Ignore the kohyas trainer code and `requirements.txt`. Patching them should be easy. There is no `*.cu` level implementation at all.
+
+```sh
+pip uninstall torch torchvision torchaudio triton xformers torchao bitsandbytes
+pip install torch torchvision torchaudio triton xformers torchao --index-url https://download.pytorch.org/whl/cu126
+pip install bitsandbytes
+```
+- Meanwhile huggingface releated library can be upgraded without building.
+
+```sh
+pip uninstall diffusers transformers accelerate
+pip install diffusers["torch"] transformers accelerate
+```
+
+```logs
+$ pip list | grep torch
+lion-pytorch              0.2.3
+pytorch-lightning         2.5.1
+pytorch_optimizer         3.5.0
+pytorch-ranger            0.1.1
+torch                     2.6.0+cu126
+torch-optimizer           0.3.0
+torchao                   0.9.0+cu126
+torchaudio                2.6.0+cu126
+torchmetrics              1.7.0
+torchvision               0.21.0+cu126
+$ pip list | grep formers
+transformers              4.50.0
+xformers                  0.0.29.post3
+$ pip list | grep bitsandbytes
+bitsandbytes              0.45.4
+$ pip list | grep diffusers
+diffusers                 0.32.2
+$ pip list | grep transformers
+transformers              4.50.3
+$ pip list | grep accelerate
+accelerate                1.5.2
+```
+
+### 4.3 Expectation after update ###
+
+- Finally there should be no speed penalty (0.5x speed) or fatal crash ("hardware compatability error"). Nightly build `cu128` is not installed because of troublesome pypi entries.
+
+- However **the training speed may be slower** because of low level (driver level) switching which is very hard to optimizae under complicated logic (down to 0.8x speed). *Newer hardware may resovle this issue.*
+
+```log
+NotImplementedError: No operator found for `memory_efficient_attention_forward` with inputs:
+     query       : shape=(1, 2, 1, 40) (torch.float32)
+     key         : shape=(1, 2, 1, 40) (torch.float32)
+     value       : shape=(1, 2, 1, 40) (torch.float32)
+     attn_bias   : <class 'NoneType'>
+     p           : 0.0
+`fa3F@0.0.0` is not supported because:
+    min(query.shape[-1], value.shape[-1]) < 64
+    xFormers wasn't build with CUDA support
+    requires device with capability > (9, 0) but your GPU has capability (8, 6) (too old)
+    dtype=torch.float32 (supported: {torch.float16, torch.bfloat16})
+    operator wasn't built - see `python -m xformers.info` for more info
+    only head-dim 64,128,256 is supported
+`fa2F@v2.5.7-pt` is not supported because:
+    xFormers wasn't build with CUDA support
+    dtype=torch.float32 (supported: {torch.float16, torch.bfloat16})
+`cutlassF-pt` is not supported because:
+    xFormers wasn't build with CUDA support
+```

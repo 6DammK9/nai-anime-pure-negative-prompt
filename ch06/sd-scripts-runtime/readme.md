@@ -15,6 +15,8 @@ git clone https://github.com/kohya-ss/sd-scripts.git
 cd sd-scripts
 ```
 
+- (250329) If you are training with **multiple GPUs**, looks for [GLOO (not working)](#compromised-trining-with-multigpu-overhead-gloo), [NCCL (working)](../manjaro-runtime/readme.md#3-compromised-trining-with-multigpu-overhead-nccl), [install latest libraries directly](../manjaro-runtime/readme.md#4-notes-on-updating-systems-and-libraries), and jump to [the optimization / workarounds](#exploring-accelerate-out-of-community-guide). This guide is being long and messy, meanwhile I have no idea how to split them clearly.
+
 ## Setting up environments ##
 
 - Instead of `venv`, I make another `conda` environment.
@@ -770,4 +772,4 @@ accelerate launch sdxl_train.py
 |`Lion8bit` |21.2|1.721|
 |`Lion8bit` (100% UNET)|OOM|NaN|
 |`Lion` (`caution=True`) "C-Lion"|24.0|1.757|
-|`CAME` |OOM|NaN|
+|`CAME`|OOM|NaN|

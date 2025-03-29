@@ -35,7 +35,7 @@ Self explained. Written for ex-mining rig if I can get one of them eventually.
 
 - However since I'm using [physical PC / WS](./ice_lake_ws.md) and typcial Winodws / Nvidia combo, I made myself [a install command](./local-install-env.md).
 
-- Now I have added a [dedicated training rig](./4x3090.md) with [manjaro linux installed](../ch06/manjaro/readme.md). It trains the entire SDXL with compromised setting.
+- Now I have added a [dedicated training rig](./4x3090_v2.md) with [manjaro linux installed](../ch06/manjaro/readme.md). It trains the entire SDXL with compromised setting.
 
 ## Chapter 04d: How to gather "decomissioned server parts" ##
 
