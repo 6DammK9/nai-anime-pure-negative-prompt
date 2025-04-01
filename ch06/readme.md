@@ -56,10 +56,10 @@
 
 - [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1): ??EP on 2.1M, "1e-5"
 
-- [Kohaku XL Zeta](https://huggingface.co/KBlueLeaf/Kohaku-XL-Zeta): 1EP on 8.4M, "1e-5", LoKr with unknown `network_dim`. "3090x4 with 18 days"
+- [Kohaku XL Zeta](https://huggingface.co/KBlueLeaf/Kohaku-XL-Zeta): 1EP (less than 1?) on 8.4M, "1e-5", LoKr with unknown `network_dim`. "3090x4 with 18 days"
 
-- [Kohaku XL Delta Alpha](https://civitai.com/models/693222/kohaku-delta-alpha): ??EP on 6M, lr unknown, LoKr with unknown `network_dim`. "3090x8 with 1.5 months"
+- [Kohaku XL Delta Alpha](https://civitai.com/models/693222/kohaku-delta-alpha): ??EP (1 or 2?) on 6M, lr unknown, LoKr with unknown `network_dim`. "3090x8 with 1.5 months"
 
 - [SanaeXL](https://huggingface.co/SanaeLab/SanaeXL-anime-v1.0). 1EP on "7.8M + 1.4M + 2.2M + 2.4M = 13.8M", lr unknown. ["4090x1 with 120+ days"](https://civitai.com/models/647664/sanaexl-anime-v10?dialog=commentThread&commentId=526387)
 
-- "Ours" *draft*: At most 1EP on "at most 8M + 4.6M", "1e-6 + 1e-5"
+- "Ours" *draft*: At most 1EP on "at most 8M + 4.6M", "1.5e-6 + 1.2e-5"

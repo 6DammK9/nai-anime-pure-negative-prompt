@@ -132,6 +132,7 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 |08|TGMD-192: Scaled up from TGMD|`x191a-AstolfoMix-24083001-3360d18.safetensors`|192|192|192|192|[mecha](./recipes/x191a-AstolfoMix-24083001-3360d18.mecha)|
 |09|DGMLA-216: Drop w/ GeoMedian and LA|`x215a-AstolfoMix-24101101-6e545a3.safetensors`|216|216|216|216|[mecha](./recipes/x215a-AstolfoMix-24101101-6e545a3.mecha)|
 |10|215c: Permutation from the Fermat Point|`x215c-AstolfoMix-24101101-6e545a3.safetensors`|216|216|216|216|n/a|
+|11|255c: Scale up from 215c|`x255c-AstolfoMix-25022801-1458190.safetensors`|256|256|256|256|n/a|
 
 ### Discovered models ###
 
