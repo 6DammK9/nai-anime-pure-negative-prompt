@@ -56,9 +56,9 @@
 
 - [Animagine XL 3.1](https://huggingface.co/cagliostrolab/animagine-xl-3.1): ??EP on 2.1M, "1e-5"
 
-- [Kohaku XL Zeta](https://huggingface.co/KBlueLeaf/Kohaku-XL-Zeta): 1EP (less than 1?) on 8.4M, "1e-5", LoKr with unknown `network_dim`. "3090x4 with 18 days"
-
-- [Kohaku XL Delta Alpha](https://civitai.com/models/693222/kohaku-delta-alpha): ??EP (1 or 2?) on 6M, lr unknown, LoKr with unknown `network_dim`. "3090x8 with 1.5 months"
+- [Kohaku XL Zeta](https://huggingface.co/KBlueLeaf/Kohaku-XL-Zeta): 1EP on 8.4M, "1e-5", LoKr with unknown `network_dim`. "3090x4 with 18 days" [from author](https://discord.com/channels/1027129024054575174/1027407524334411816/1356142067025449031)
+ 
+- [Kohaku XL Delta Alpha](https://civitai.com/models/693222/kohaku-delta-alpha): 60EP on ~~6M~~ 6.5M (0.4B seen), lr unknown, LoKr with unknown `network_dim`. "3090 / 4090 mix ~~x8~~ x50 with 45 days" [from author overriding CivitAI model card](https://discord.com/channels/1230387092014501918/1230387093793013883/1356138387899420733), [in this discord group](https://github.com/ljleb/sd-mecha)
 
 - [SanaeXL](https://huggingface.co/SanaeLab/SanaeXL-anime-v1.0). 1EP on "7.8M + 1.4M + 2.2M + 2.4M = 13.8M", lr unknown. ["4090x1 with 120+ days"](https://civitai.com/models/647664/sanaexl-anime-v10?dialog=commentThread&commentId=526387)
 
