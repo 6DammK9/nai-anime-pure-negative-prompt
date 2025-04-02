@@ -192,7 +192,7 @@ These images are arrange in order.
 
 ![xyz_grid-0074-2976205023-5120-1343-6-48-20250309222606.jpg](./img/xyz_grid-0074-2976205023-5120-1343-6-48-20250309222606.jpg)
 
-- The model will "forget too many things and confused" in the first 160k images (160k over 12.4M), just be patient. If you are in panic mode, adjust prompt weights (mine is always very light), and even keep prompt `car, wrc` for sanity check. Notice that it is only valid for testing if the model is already broken. The training may not be effective.
+- The model will "forget too many things and confused" in the first 160k images (160k over 12.4M, 10k steps), just be patient. If you are in panic mode, adjust prompt weights (mine is always very light), and even keep prompt `car, wrc` for sanity check. Notice that it is only valid for testing if the model is already broken. The training may not be effective.
 
 - Suprisingly, some images drifts towards 215c's preferred content. Maybe it is an illusion that it is drifting towards SDXL 1.0 content actulally.
 
@@ -201,3 +201,41 @@ These images are arrange in order.
 ![xyz_grid-0078-460372993-6720-1081-6-48-20250316042511.jpg](./img/xyz_grid-0078-460372993-6720-1081-6-48-20250316042511.jpg)
 
 ![xyz_grid-0079-3033572388-5120-1343-6-48-20250316042655.jpg](./img/xyz_grid-0079-3033572388-5120-1343-6-48-20250316042655.jpg)
+
+## Further investigation on full dataset ##
+
+- *Notice that 1 step = 4 GPU * batch size 1 * gradient accumulation steps 4 = 16 images.*
+
+- (Not included for obvious reason) Furry contents may work, but mostly forced to be NSFW. It is hard to keep it "formal" in content.
+
+- (Discovered by community, because I never train / use LoRA), it works extra well with LoRA regardless the base model (A3 / Pony / SDXL 1.0 / IL / NB etc.)
+
+![25040201.jpg](./img/25040201.jpg)
+
+- It is slowly catching up the common concepts which is visible from 215c.
+
+![xyz_grid-0013-500762192-6144-1343-6-48-20250329003350.jpg](./img/xyz_grid-0013-500762192-6144-1343-6-48-20250329003350.jpg) 
+
+- The "pseudorandom" as conflicted weights are being replaced with trained content (although it is so underfit).
+
+![xyz_grid-0021-3501057477-8064-1081-6-48-20250329175754.jpg](./img/xyz_grid-0021-3501057477-8064-1081-6-48-20250329175754.jpg) 
+
+- **It does forget things.** However I think it is minimalized. The **text and comic** contents are actually not the "unintended training content" (which was noticeable in NAIv1), it is just the "randomness" from the "nearest predicton of representation". 
+
+- *Word characters (symbols) is highly abstract which fills up the voids in the latent space.* 
+
+- Meanwhile *comics represents the AI agent has no idea where to represent the concepts what was not ignored.* Using back the plain euler / DDIM sampler will see the *blured blobs with some fragmented lines*.
+
+- It is reasonable: *Some uncommon pretrained contents are being replaced with furry contents.*
+
+![xyz_grid-0022-719286672-8064-1081-6-48-20250329180509.jpg](./img/xyz_grid-0022-719286672-8064-1081-6-48-20250329180509.jpg)
+
+- This model is [underfitting](https://www.ibm.com/think/topics/overfitting-vs-underfitting) instead of most overfitting models. It choose to ignore unknown contents instead of overemphasizing known contents. 
+
+-Instead of [bias-variance tradeoff](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff) which is focusing on definitive targets, it is more like [exploration–exploitation dilemma](https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation_dilemma) which balancing "explore art" and "exploit visual impact".
+
+- Combining the "macroscopic approach" of LDM (noise prediction) / CFG (unconditional priors) / large scale pretraining with MSE loss (unsupervised learning), it resemble [effortless action](https://en.wikipedia.org/wiki/Wu_wei) which always try to free machine to make prediction based from contradicted knowledge / situation. *This is the exact opposite on training LoRAs, which is mostly have a precise training target.*
+
+- As shown in CivitAI, I usually test models aginst random prompts from community, and currently I just pick random prompts from training dataset. Combining my prior short prompts, it covers most of the board case.
+
+![xyz_grid-0023-2707346252-7168-1343-6-48-20250402003615.jpg](./img/xyz_grid-0023-2707346252-7168-1343-6-48-20250402003615.jpg) 
