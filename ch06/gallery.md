@@ -232,7 +232,7 @@ These images are arrange in order.
 
 - This model is [underfitting](https://www.ibm.com/think/topics/overfitting-vs-underfitting) instead of most overfitting models. It choose to ignore unknown contents instead of overemphasizing known contents. 
 
--Instead of [bias-variance tradeoff](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff) which is focusing on definitive targets, it is more like [exploration–exploitation dilemma](https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation_dilemma) which balancing "explore art" and "exploit visual impact".
+- Instead of [bias-variance tradeoff](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff) which is focusing on definitive targets, it is more like [exploration–exploitation dilemma](https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation_dilemma) which balancing "explore art" and "exploit visual impact".
 
 - Combining the "macroscopic approach" of LDM (noise prediction) / CFG (unconditional priors) / large scale pretraining with MSE loss (unsupervised learning), it resemble [effortless action](https://en.wikipedia.org/wiki/Wu_wei) which always try to free machine to make prediction based from contradicted knowledge / situation. *This is the exact opposite on training LoRAs, which is mostly have a precise training target.*
 
