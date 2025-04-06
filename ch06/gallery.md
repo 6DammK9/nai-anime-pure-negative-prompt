@@ -152,6 +152,14 @@ These images are arrange in order.
 
 ![xyz_grid-0046-744089893-12096-1081-6-48-20250227215822.jpg](./img/xyz_grid-0046-744089893-12096-1081-6-48-20250227215822.jpg)
 
+- If we increase the accumulation steps (from 4 to 16), it trains faster but it tends to fail to converge and being underfit after many epochs. However this may make sure the model is still being robust to unseen contents.
+
+![xyz_grid-0093-744089893-13440-1081-6-48-20250407032643.jpg](./img/xyz_grid-0093-744089893-13440-1081-6-48-20250407032643.jpg)
+
+![xyz_grid-0094-460372993-13440-1081-6-48-20250407032645.jpg](./img/xyz_grid-0094-460372993-13440-1081-6-48-20250407032645.jpg)
+
+![xyz_grid-0096-2656714739-3072-1657-6-48-20250407034039.jpg](./img/xyz_grid-0096-2656714739-3072-1657-6-48-20250407034039.jpg)
+
 ## Effect on switching to the updated base model (and implied batch size) ##
 
 - Good news: **Parameters remains unchanged.** Bad news: **Base model still determine the success of the finetune.**
