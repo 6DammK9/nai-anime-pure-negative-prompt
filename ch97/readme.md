@@ -14,6 +14,8 @@ Usually "not article".
 
 - A block diagram about "RAG with Docuement versioning control": [rag_with_doc.md](rag_with_doc.md)
 
+- A block diagram about "Enterprise MCP infrastructure": [mcp.md](mcp.md)
+
 ## Scripts (Convert to diffuser and upload to HuggingFace later) ##
 
 - `convert_sdxl_to_diffusers.py`: My fork of [convert_sdxl_to_diffusers.py](https://github.com/Linaqruf/sdxl-model-converter/blob/main/convert_sdxl_to_diffusers.py). Added quick guide on the top.
