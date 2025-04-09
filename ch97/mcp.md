@@ -10,4 +10,4 @@
 
 - The LLM has its infrastructure. The dimension is different. Therefore it is not included in this diagram.
 
-![25040901.jpeg](./img/25040901/jpeg)
+![25040901.jpeg](./img/25040901.jpeg)
