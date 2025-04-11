@@ -750,7 +750,7 @@ accelerate launch sdxl_train.py
 
 - Notice that it is all about **speed and time** in multiGPU (4x) training. Tolerance of prcision tradeoff is actually large because the current gradient is not precise already. **Gradient accumulation remains constant (4 steps).** Moreover, even the result may look bad after 4-5 EP in toy dataset, I only train 1EP in full dataset, so it is not that bad to fit (and overfit) quickly.
 
-- Default: 71% UNET, grad accu = 4, 4x GPU
+- Default: 71% UNET, grad accu = 4, 4x GPU, **Intel i9-10980XE** (CPU arch dependent)
 
 - buffed #1: 100% UNET, Deepspeed ZERO Stage 2, `mem_eff_attn`, Pytorch Dynamo `inductor`
 
@@ -763,7 +763,7 @@ accelerate launch sdxl_train.py
 |`adamW8bit`|OOM|NaN|
 |`adamW8bit` (100% UNET, 1x GPU, no grad accu)|23.5|0.667|
 |`adamW8bit` (1x GPU)|23.5|1.481|
-|`adamW8bit` |24.0|1.584, 1.848-**2.092**|
+|`adamW8bit` |24.0|1.848-**2.092**|
 |`adamW8bit` (buffed #1)|23.5|1.231|
 |`adamW4bit` |18.5|HANG|
 |`adamW4bit` (100% UNET)|**21.6**|HANG|
@@ -773,3 +773,24 @@ accelerate launch sdxl_train.py
 |`Lion8bit` (100% UNET)|OOM|NaN|
 |`Lion` (`caution=True`) "C-Lion"|24.0|1.757|
 |`CAME`|OOM|NaN|
+
+## Exploring Hardware platforms (CPU side) ##
+
+- *It is a niche topic which relies on my own experience.*
+
+- After moving to [the new 4x RTX3090 platform](../../ch04/4x3090_v2.md) because of system memory requirements ($60*GPU+15*(CPU_{coreconly}-GPU-\epsilon)$, e.g. 360+GB for `--max_data_loader_n_workers=8`), I have found that EPYC platform may stall in `all_reduce_training_model` stage ([HF Accelerate](https://huggingface.co/docs/accelerate/package_reference/accelerator#accelerate.Accelerator.reduce), [Pytorch DDP](https://pytorch.org/docs/stable/distributed.html), [NCCL](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html)) which is both **CPU and transport bandwidth bound**. 
+
+- From [this CCD count article](https://gitee.com/olier/AMD-EPYC-CCX-CCD), and [the video comparing AMD EPYC and Intel Xeon](https://www.youtube.com/watch?v=_Mf943EW434&ab_channel=ServeTheHome), CPU internal is a factor on training speed. I was reusing my own 7282 CPU and which stall a lot, then I trained a lot faster with a slightly upgraded 7302P, and finally "full speed" 7F52. Core count / dataloader count does not help after reaching the optimal value which is just $GPU+N_dataloaderworker$ (`--max_data_loader_n_workers=8`). In CPU side, almost all precess are **single threaded** because GPU is mostly streaming processors even it is performing `matmul` as in CUDA. Instead of general stereotype of "EPYC trains a lot slower than Xeons because of cross CCD traffic", there is [official low latency BIOS configuration](https://www.amd.com/content/dam/amd/en/documents/epyc-technical-docs/white-papers/58649_amd-epyc-tg-low-latency.pdf) as workaround of making use of L3 caches and preventing cross CCD traffic. With that workaround, its 128 pcie 4.0 lanes will outperform the entire Xeon lineup (until Sierra Forest). 
+
+- Notice that after a few operation such as stopping / starting the trainer, it will stall again.
+
+- One hint of CPU stalling is *GPU running with full core turbo speed without pulling all TDP power* (e.g. 1930Mhz with 180W power TDP instead of 350)*.
+
+- Default: 71% UNET, grad accu = 4, 4x GPU, **straight into training after power on** (to avoid cross CCD traffic), `adamW8bit` (which is fastest), 8x 64GB 2933Mhz 2Rx4 system memory
+
+|CPU|Motherboard|GPU Power consumption (W)|Speed (img/s)|
+|---|---|---|
+|AMD EPYC 7272|Tyan S8030|180-200|1.584|
+|Xeon W-2295 ES "QSU0"|Asus ROG R6E (*instable*)|200-235|2.092|
+|AMD EPYC 7302P|Tyan S8030|200-275|3.048|
+|AMD EPYC 7F52|Tyan S8030|225-275|**3.259**, 4.000 (grad accu = 64)|
