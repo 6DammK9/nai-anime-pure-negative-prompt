@@ -457,7 +457,7 @@ accelerate launch
 
 ```sh
 tensorboard --samples_per_plugin=scalars=800000,images=100 --logdir "/run/media/user/PM863a/astolfo_xl/just_astolfo/tensorboard"
-tensorboard  -samples_per_plugin=scalars=800000,images=100 --logdir"/run/media/user/Intel P4510 3/astolfo_xl/just_astolfo/tensorboard"
+tensorboard --samples_per_plugin=scalars=800000,images=100 --logdir "/run/media/user/Intel P4510 3/astolfo_xl/just_astolfo/tensorboard"
 ```
 
 - *Reminder: Never disconnect the HDMI cable! It will swap user session and lock everything up!*

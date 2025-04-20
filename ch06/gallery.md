@@ -247,3 +247,13 @@ These images are arrange in order.
 - As shown in CivitAI, I usually test models aginst random prompts from community, and currently I just pick random prompts from training dataset. Combining my prior short prompts, it covers most of the board case.
 
 ![xyz_grid-0023-2707346252-7168-1343-6-48-20250402003615.jpg](./img/xyz_grid-0023-2707346252-7168-1343-6-48-20250402003615.jpg) 
+
+## Situation keeps emerging ##
+
+- When I start including e621 prompts, the output images is being different. 
+
+![xyz_grid-0099-1673363401-5120-1343-6-48-20250412231447.jpg](./img/xyz_grid-0099-1673363401-5120-1343-6-48-20250412231447.jpg)
+
+- It starts making my previous prompts invalid also. Making same content requires longer prompts, someties mixing all tags and captions. *Basically I quit using my old prompts which involves prompt weights.*
+
+![xyz_grid-0108-3207677246-12544-1150-6-48-20250418215427.jpg](./img/xyz_grid-0108-3207677246-12544-1150-6-48-20250418215427.jpg)
