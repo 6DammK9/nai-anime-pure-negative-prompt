@@ -9,9 +9,13 @@
 - The [tweet](https://x.com/ostrisai/status/1917679501909057777) on 240501.
 
 > built in stochastic rounding
+>
 > gradient accumulation
+>
 > auto adjusts (learning rate)
+>
 > scaled 8bit learning rate for every parameter... singly
+>
 > binary polarity mask for every parameter... speed up learning for parameters traveling a fixed direction
 
 - The only major change is **Binary polarity mask**. See next session.
@@ -23,6 +27,7 @@
 - [Adafactor](https://paperswithcode.com/method/adafactor) is a stochastic optimization already in general.
 
 > In several recently proposed stochastic optimization methods (e.g. RMSProp, Adam, Adadelta)...
+>
 > At each step, we receive a stochastic realization...
 
 - The "rounding" part need further study: [copy_stochastic](https://github.com/ostris/ai-toolkit/blob/main/toolkit/optimizers/optimizer_utils.py#L117). It could be related to [Stochastic rounding variance and probabilistic bounds](https://arxiv.org/abs/2207.10321) and [Stochastic Rounding 2.0](https://arxiv.org/abs/2410.10517v1).
