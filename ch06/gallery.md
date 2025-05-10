@@ -1,5 +1,9 @@
 # Finetune findings (and gallery) #
 
+It is documented in chronological order. Go to bottom for newest state.
+
+## Loss curve for 6k dataset ##
+
 ![24121501.jpg](./img/24121501.jpg)
 
 - *Since most of my recipe are models finetuned from the same dataset (with different tags)*, it converges quite fast. Astolfo got his facial features back within 1EP.
@@ -257,3 +261,27 @@ These images are arrange in order.
 - It starts making my previous prompts invalid also. Making same content requires longer prompts, someties mixing all tags and captions. *Basically I quit using my old prompts which involves prompt weights.*
 
 ![xyz_grid-0108-3207677246-12544-1150-6-48-20250418215427.jpg](./img/xyz_grid-0108-3207677246-12544-1150-6-48-20250418215427.jpg)
+
+## Loss curve after full 1EP ##
+
+- Notebook: [parse_tb.ipynb](./sd-scripts-runtime/parse_tb.ipynb)
+
+- Since the training code is not perfect all the time, the curve is accurate since step 50k, until 778k.
+
+- For the [interpreption](https://developers.google.com/machine-learning/crash-course/overfitting/interpreting-loss-curves), curation may help, but I think all metrics / KPI does not represent any end result. The only meaningful information is it does not converge (learn the entire denoising process ~~not image quality!~~) or diverge (break itself all the way). The MSE alone in computer vision is one of the least intiutive metric, meanwhile the "training loss" **does not measure against the final image**.
+
+![loss_full.png](./sd-scripts-runtime/img/loss_full.png)
+
+## Does it learnt anything? ##
+
+- Yes. The model bias has shifted with variance maintained. *The total knowledge remains constant.* ~~Forgetting specific location is never concerned.~~
+
+- However the "flat marcoscopic landscape" does not mean there are examples showing steady learning process. 
+
+![xyz_grid-0013-2790043334-12288-1343-4-48-20250510114333.jpg](./img/xyz_grid-0013-2790043334-12288-1343-4-48-20250510114333.jpg)
+
+- Since the dataset is similar, using unconditional prompt generation with [TIPO](https://github.com/KohakuBlueleaf/z-tipo-extension) shows good result consistently.
+
+![xyz_grid-0018-2627973821-12288-1343-4-64-20250510220004.jpg](./img/xyz_grid-0018-2627973821-12288-1343-4-64-20250510220004.jpg)
+
+- *More coming soon. Worth testing for days.*
