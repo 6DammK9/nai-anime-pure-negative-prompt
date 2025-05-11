@@ -65,7 +65,7 @@ For secondary parameters (adamW related, default in some libraries): `weight_dec
 - `model_out_25031503`: AdaFactor, overrided schedule. 6k dataset.
 - `model_out_25031504`: Lion 8bit. 6k dataset.
 - `model_out_25031505`: AdamW8bit. 6k dataset. ~~Was testing AdamW4bit.~~
-- `model_out_25033102`: AdamW8bit. 6k dataset. Sanity check because of OS / Hardware update.
+- `model_out_25033102`: AdamW8bit. 6k dataset. Sanity check because of OS / Hardware update. ~~And then testesd for GA 16 steps.~~
 
 ### 2503c: Production run ###
 
@@ -82,4 +82,7 @@ Total steps = 12.4M / (4GPU * BS1 * GA 4 step) = 778k steps.
 - `model_out_25032201`: steps 100-170k out of 778k
 - `model_out_25032901`: steps 170-190k out of 778k
 - `model_out_25033101`: steps 190-210k out of 778k
-- `model_out_25040601`: steps 210-???k out of 778k
+- `model_out_25040601`: steps 210-220k out of 778k
+- `model_out_25040602`: steps 220-240k out of 778k
+- `model_out_25040901`: steps 240-320k out of 778k
+- `model_out_25041301`: steps 320-**1EP** (778k)
