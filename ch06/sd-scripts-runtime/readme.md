@@ -758,6 +758,8 @@ accelerate launch sdxl_train.py
 
 - `adamW4bit` is from `torchao`.
 
+- (250512) TODO: [automagic](../../ch01/automagic.md) with modifications.
+
 |Optimizer (addons)|VRAM usage (G, bs1)|Speed (img/s)|
 |---|---|---|
 |`adamW8bit`|OOM|NaN|

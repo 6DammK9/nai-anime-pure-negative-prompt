@@ -44,6 +44,10 @@
 
 - From [a discord message](https://discord.com/channels/1077423770106597386/1093732075355525331/1368812620496506910), it can be combined with "confidence factor" from [CAME](https://arxiv.org/abs/2307.02047) and [SPD](https://arxiv.org/abs/2411.01713) which replace RMS part with another parameter.
 
-- ~~It may appears as Kohyas PR so I decided to leave the screenshot raw.~~
+- It may appears as Kohyas PR so I decided to leave the screenshot raw. Will remove once PR has been made.
 
 ![25050602.jpg](./img/25050602.jpg)
+
+```py
+from library.custom import Automagic_CameAMP8bit
+```
