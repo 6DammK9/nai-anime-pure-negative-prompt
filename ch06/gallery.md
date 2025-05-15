@@ -284,4 +284,18 @@ These images are arrange in order.
 
 ![xyz_grid-0018-2627973821-12288-1343-4-64-20250510220004.jpg](./img/xyz_grid-0018-2627973821-12288-1343-4-64-20250510220004.jpg)
 
+- Unfortunately, given that the model neighter converges and diverges for "predicting noise", the "total knowledge" remains constant. The forgotten concepts is mainly locations (not scenes, locations with name).
+
+![xyz_grid-0023-3268236528-3072-1332-4-48-20250514225745.jpg](./img/xyz_grid-0023-3268236528-3072-1332-4-48-20250514225745.jpg)
+
 - *More coming soon. Worth testing for days.*
+
+## Model weight shift ##
+
+- *The result is boring.* Weight shift in UNET is very low in magnitude. It is less then 20 comparing to typical around 100 (realistic) and 1000 (anime).
+
+![ep1_unet_xy.png](../ch03/v2a/img/ep1_unet_xy.png)
+
+- The weight shift in TE is also low (20x smaller than anime model, close to realistic model). However the *trajectory* is non-linear.
+
+![ep1_te1_vg.png](../ch03/v2a/img/ep1_te1_vg.png)
