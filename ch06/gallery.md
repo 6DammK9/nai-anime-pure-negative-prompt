@@ -274,7 +274,7 @@ These images are arrange in order.
 
 ## T2I settings needs be changed ## 
 
-- *Make sure [FreeU](../ch01/freeu.md) is deactivated. It starts to break images for newer models.* Meanwhile, [CFG++](../ch01/cfgpp_pag_seg.md) no longer works as intended (PAG + SEG still OK), and the CFG of Euler should raise a bit higher (3.0 to 4.0, still lower than 4.5). Hires remains 1.5x with strength 0.7 is fine.
+- *Make sure [FreeU](../ch01/freeu.md) is deactivated. It starts to break images for newer models.* Meanwhile, [CFG++](../ch01/cfgpp_pag_seg.md) no longer works as intended (PAG + SEG still OK), and the CFG of Euler should raise a bit higher (3.0 to 4.0, still lower than 4.5). [Hires](../ch01/hires_fix.md) remains 1.5x with strength 0.7 is fine.
 
 ## Does it learnt anything? ##
 
