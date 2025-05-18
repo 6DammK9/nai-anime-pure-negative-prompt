@@ -272,6 +272,10 @@ These images are arrange in order.
 
 ![loss_full.png](./sd-scripts-runtime/img/loss_full.png)
 
+## T2I settings needs be changed ## 
+
+- *Make sure [FreeU](../ch01/freeu.md) is deactivated. It starts to break images for newer models.* Meanwhile, [CFG++](../ch01/cfgpp_pag_seg.md) no longer works as intended (PAG + SEG still OK), and the CFG of Euler should raise a bit higher (3.0 to 4.0, still lower than 4.5). Hires remains 1.5x with strength 0.7 is fine.
+
 ## Does it learnt anything? ##
 
 - Yes. The model bias has shifted with variance maintained. *The total knowledge remains constant.* ~~Forgetting specific location is never concerned.~~
@@ -287,6 +291,10 @@ These images are arrange in order.
 - Unfortunately, given that the model neighter converges and diverges for "predicting noise", the "total knowledge" remains constant. The forgotten concepts is mainly locations (not scenes, locations with name).
 
 ![xyz_grid-0023-3268236528-3072-1332-4-48-20250514225745.jpg](./img/xyz_grid-0023-3268236528-3072-1332-4-48-20250514225745.jpg)
+
+- Unconditional generation still works. However I must hide some contents because the model tends to be NSFW especially clothing is less common in E621 dataset.
+
+![xyz_grid-0027-2152737340-12288-1343-4-64-20250518170957.jpg](./img/xyz_grid-0027-2152737340-12288-1343-4-64-20250518170957.jpg)
 
 - *More coming soon. Worth testing for days.*
 
