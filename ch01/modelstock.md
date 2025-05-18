@@ -89,3 +89,13 @@
 ![24060801.png](./img/24060801.png)
 
 - Suprisingly, it inherits quite a lot of "styles" from median, rather than DARE. Therefore I can generate images from this implemention directly, without testing the plain median.
+
+## Spinoff of the Spinoff: Karcher Mean Merge ##
+
+- Originated from [this PR in Mergekit](https://github.com/arcee-ai/mergekit/pull/546#event-17064776631). Although the discussion is being abstract, they will have similar effects.
+
+![25051801.jpg](./img/25051801.jpg)
+
+- Someone applied it as ["Karmix"](https://huggingface.co/NullAxis/karmix-merge-experiments/blob/main/pca-tv-mtd-illv20-idx0-personalv30-r-te0.4-oeaiv12ue-r-te0.4.safetensors), along with [PCA](https://stats.stackexchange.com/questions/229092/how-to-reverse-pca-and-reconstruct-original-variables-from-several-principal-com), which is similar to [KNOTS merge](https://arxiv.org/abs/2410.19735).
+
+![jIUrN.png](./img/jIUrN.png)
