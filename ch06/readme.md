@@ -62,4 +62,4 @@
 
 - [SanaeXL](https://huggingface.co/SanaeLab/SanaeXL-anime-v1.0). 1EP on "7.8M + 1.4M + 2.2M + 2.4M = 13.8M", lr unknown. ["4090x1 with 120+ days"](https://civitai.com/models/647664/sanaexl-anime-v10?dialog=commentThread&commentId=526387)
 
-- "Ours" *draft*: At most 1EP on "at most 8M + 4.6M", "1.5e-6 + 1.2e-5"
+- ["Ours"](https://huggingface.co/6DammK9/AstolfoXL) [(mirror)](https://civitai.com/models/1489964?modelVersionId=1771150) ~~draft~~: ~~At most~~ 1EP on "~~at most~~ 8M + 4.6M", "1.5e-6 + 1.2e-5". [3090x4 with 45+ days.](./sd-scripts-runtime/logs/readme.md) [2000 kWh with around 3000HKD spent.](https://www.clp.com.hk/en/residential/bills-payment-tariffs-residential/bill-calculator). *I will continue training when it gets enough impact, or it gets dirt cheap to rush to 5EP.*  ~~Obviously a lot cheaper than renting cloud because I own the cards (as hobby, take it or leave it).~~
