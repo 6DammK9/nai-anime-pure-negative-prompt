@@ -307,3 +307,13 @@ These images are arrange in order.
 - The weight shift in TE is also low (20x smaller than anime model, close to realistic model). However the *trajectory* is non-linear.
 
 ![ep1_te1_vg.png](../ch03/v2a/img/ep1_te1_vg.png)
+
+## Merging again, as "215c Evo" ##
+
+- *It is what I'm planned since I start this chapter.* [The "Evolutionary merge"](../ch05/README_XL.MD#evolutionary-merge-215c-evo-is-finally-here-but-move-on). *Theory discussion will be there.* It needs further study, especially I don't know how many e621 stuffs has been introduced towards 215c. However the "selection towards left or right" is still quite easy to guess.
+
+- However no new knowledge has been introduced. It is still very poor in character and style reconstruction. *Probably better when I'm in 10EP instead of 1.*
+
+![xyz_grid-0049-1679148228-4032-1081-6-48-20250524165550.jpg](./img/xyz_grid-0049-1679148228-4032-1081-6-48-20250524165550.jpg)
+
+![xyz_grid-0065-2206138433-3072-1327-4-64-20250524233601.jpg](./img/xyz_grid-0065-2206138433-3072-1327-4-64-20250524233601.jpg)
