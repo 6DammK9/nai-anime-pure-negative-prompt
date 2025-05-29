@@ -1,4 +1,4 @@
-# Findings on "Euler" sampler: Momentum Sampler (Algorithm 2) #
+# Findings on "Euler" sampler: Stochastic Sampler (Algorithm 2) #
 
 - *Read from bottom up for result. Top session was my story on how to find it.*
 
