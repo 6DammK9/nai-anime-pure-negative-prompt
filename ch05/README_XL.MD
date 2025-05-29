@@ -602,3 +602,9 @@ This is the *recent* merging log.
 - Based from [previous session](#good-time-to-conclude-and-move-to-the-next-chapter), it actually **learns a lot more effective** because the contradicted weights appears **pseudorandom** which cannot be activated. Once it continues training, a tiny switch of specific model weight will reactivate the whole network. It is different from both pretraining (train from scratch = initialized (real) random weights) and finetuning (train from learnt weights, which has less "gradient" for explorartion). Discussion will be contuned in [ch06](../ch06/gallery.md#effect-on-switching-to-the-updated-base-model-and-implied-batch-size).
 
 ![xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg](../ch06/img/xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg)
+
+## Evolutionary merge "215c Evo" is finally here, but move on ##
+
+- After months, finally I have a "trained model" to test [this theory](../ch01/merge.md#not-merge-but-worth-mentioning). Meanwhile, [pretraining from a merged model](https://arxiv.org/abs/2505.12082v1) (especially from 255c instead of 215c) is viable if you merge with a proper mindset.
+
+- However since it is overlapped in 2 chapters, I will split the image results to [ch06](../ch06/gallery.md#merging-again-as-215c-evo).

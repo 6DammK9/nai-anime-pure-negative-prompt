@@ -14,6 +14,8 @@
 
 ### Blue pill, but in academic paper ###
 
+- [Model Merging in Pre-training of Large Language Models](https://arxiv.org/abs/2505.12082v1) [*It works.*](../ch06)
+
 - [Mix Data or Merge Models? Optimizing for Diverse Multi-Task Learning](https://arxiv.org/abs/2410.10801) *comparative study*
 
 - [Model Merging in LLMs, MLLMs, and Beyond: Methods, Theories, Applications and Opportunities](https://arxiv.org/abs/2408.07666) *comparative study*
@@ -24,7 +26,7 @@
 
 - [Evolutionary Optimization of Model Merging Recipes](https://arxiv.org/abs/2403.13187)
 
-- [Arcee's MergeKit: A Toolkit for Merging Large Language Models](https://arxiv.org/abs/2403.13257) *toolkit*
+- [Arcee's MergeKit: A Toolkit for Merging Large Language Models](https://arxiv.org/abs/2403.13257) *toolkit* [Lecture video.](https://youtu.be/cvOpX75Kz4M)
 
 - [Model Stock: All we need is just a few fine-tuned models](https://arxiv.org/abs/2403.19522)
 
