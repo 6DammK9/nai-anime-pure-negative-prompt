@@ -14,9 +14,14 @@ Some BS (which is too far from ground truth) will be removed.
 
 ## Models from SDCN ##
 
-The model series I keep using as an Alpha User. "We never merge."
+The model series I keep using as an Alpha User. "We never merge." 
 
 - [AC: ACertainty](https://huggingface.co/JosephusCheung/ACertainty) = [888886dc.md](../ch99/888886dc.md)
 - [BP: The Big Pot](https://huggingface.co/Crosstyan/BPModel/blob/main/NMFSAN/README.md)
 - VBP: Very Big Pot 2.3 [f59359c175.md](f59359c175.md)
 - CBP: cc's Big Pot [ae2b38ac14.md](ae2b38ac14.md)
+- [nyaflow-xl "alpha"](https://huggingface.co/nyanko7/nyaflow-xl-alpha)
+
+~~Now we merge.~~
+
+- Karmix [karmix.md](karmix.md)
