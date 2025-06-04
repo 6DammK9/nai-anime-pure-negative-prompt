@@ -10,6 +10,6 @@
 
 ## Properties of Geometric Median and relationship on Machine Learning ##
 
-- ~~TBC, 3am right now~~
+- ~~TBC, 3am right now. Better make a comparasion with centroid / mean / center of mass, because robustness is an abstract concept.~~
 
 - L1 regularization, Mean Absolue Error, linear eulcidian distance instead of squared distance, mean absolute error, *Multivariate median*, *sparsity on task vectors*, *robust statistics*.
