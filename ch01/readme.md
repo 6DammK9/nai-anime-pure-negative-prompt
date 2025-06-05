@@ -20,6 +20,7 @@ General discovery. Theories, procedures, practices etc. However not model specif
 - Findings on precision "NF4": [nf4.md](./nf4.md)
 - Quick Survey on the vpred patch (which killed WD1.5 and most SD2.1 models): [vpred.md](./vpred.md)
 - Findings on "Automagic Optimizer": [automagic.md](./automagic.md)
+- Findings on "flow matching": [flowmatching.md](./flowmatching.md)
 
 This session is focus on [model merging](https://huggingface.co/docs/peft/developer_guides/model_merging), which an extended method on [model ensembling](https://en.wikipedia.org/wiki/Ensemble_learning).
 
@@ -31,3 +32,4 @@ This session is focus on [model merging](https://huggingface.co/docs/peft/develo
 - Findings on "DARE Merge" in SD: [dare.md](./dare.md)
 - Findings on "Model Stock" in SD: [modelstock.md](./modelstock.md)
 - Findings on "DELLA Merge" in SD: [dare.md](./della.md)
+- **Trying to make theory about Geometric Median a.k.a. Fermat point:** [fermat_pt.md](./fermat_pt.md)
