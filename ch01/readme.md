@@ -33,3 +33,4 @@ This session is focus on [model merging](https://huggingface.co/docs/peft/develo
 - Findings on "Model Stock" in SD: [modelstock.md](./modelstock.md)
 - Findings on "DELLA Merge" in SD: [dare.md](./della.md)
 - **Trying to make theory about Geometric Median a.k.a. Fermat point:** [fermat_pt.md](./fermat_pt.md)
+- Findongs on "Isotropic Merge" in SD: [isotropic.md](./isotropic.md)

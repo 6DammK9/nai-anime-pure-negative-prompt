@@ -139,6 +139,8 @@
 
 - Move to [ch05](../ch05/README_XL.MD#findings-on-sdxl-re-basin-again) for the model specific results.
 
+${BasinSum}(A,B,\alpha) \leftarrow ( \alpha (\alpha A + (1-\alpha) B) + (1-\alpha) Rebasin(A,B,\alpha) )$
+
 ## Next chapter ##
 
 - [Re-basin via implicit Sinkhorn differentiation](https://fagp.github.io/sinkhorn-rebasin/) is the next generation of this paper. The orignal LAP problem *is not differentiable*, hence the effective but inefficient optimization algorithm. This paper use more "math tricks" to convert it as a differentiable gradient and use common gradient descent algorithm (SGD) to optimize it. ~~Should be more efficient.~~
