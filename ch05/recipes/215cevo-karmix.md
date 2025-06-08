@@ -35,3 +35,27 @@ ${215c} \leftarrow {BasinSum}(215a,amp(215a,base,2.0),0.5)$
 - "215cR-Evo-Karmix-pcatv-25060502": "215cEvo-Karmix-pcatv-25052802" UNET + "215cR-Evo-AstolfoMix-1ep-25060109" CLIP. *Completely broken.*
 
 - "215cR-Evo-Karmix-pcatv-25060504": 0.75 * 215cR + 0.25 * Karmix. *Completely broken.*
+
+- ["x6a-AstolfoKarMix-25060802-f758dc0"](https://huggingface.co/6DammK9/AstolfoMix-XL/blob/main/x6a-AstolfoKarMix-25060802-f758dc0.safetensors): DGMLA merge with 7 models, with base model assigned as `noobaiXLNAIXL_epsilonPred11Version`. Improvement over Karmix confirmed. Most conflict resolved by either 215cR-Evo or the base model, even it is just around 12.5% of weight.
+
+## Supplementary Contents ##
+
+```log
+PS F:\NOVELAI\astolfo_mix\sdxl\raw> dir
+
+
+    目錄: F:\NOVELAI\astolfo_mix\sdxl\raw
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         10/5/2025     10:08     6938040744 1ep-AstolfoXL.safetensors
+-a----          2/6/2025      2:40     6938066682 215cR-AstolfoMix-9527-25060107.safetensors
+-a----          2/6/2025      6:56     6938067922 215cR-Evo-AstolfoMix-1ep-25060109.safetensors
+-a----          4/6/2025     23:40     6938040674 JANKUV4NSFWTrainedNoobaiEPS_v40.safetensors
+-a----         12/5/2025     23:26     6938039854 Karmix-XL-v0.safetensors
+-a----         30/1/2025     23:24     7105349958 noobaiXLNAIXL_epsilonPred11Version.safetensors
+-a----         14/5/2025     20:45     6938040318 pca-tv-mtd-illv20-idx0-personalv30-r-te0.4-oeaiv12ue-r-te0.4.safetensors
+```
+
+![karmix_unet_vg.png](../../ch03/v2a/img/karmix_unet_vg.png)
