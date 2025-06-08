@@ -59,3 +59,7 @@ Mode                 LastWriteTime         Length Name
 ```
 
 ![karmix_unet_vg.png](../../ch03/v2a/img/karmix_unet_vg.png)
+
+## Comparasion ##
+
+![xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg](../img/xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg)
