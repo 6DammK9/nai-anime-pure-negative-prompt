@@ -36,7 +36,18 @@ ${215c} \leftarrow {BasinSum}(215a,amp(215a,base,2.0),0.5)$
 
 - "215cR-Evo-Karmix-pcatv-25060504": 0.75 * 215cR + 0.25 * Karmix. *Completely broken.*
 
-- ["x6a-AstolfoKarMix-25060802-f758dc0"](https://huggingface.co/6DammK9/AstolfoMix-XL/blob/main/x6a-AstolfoKarMix-25060802-f758dc0.safetensors): DGMLA merge with 7 models, with base model assigned as `noobaiXLNAIXL_epsilonPred11Version`. Improvement over Karmix confirmed. Most conflict resolved by either 215cR-Evo or the base model, even it is just around 12.5% of weight.
+- ["x6c-AstolfoKarMix-25060802-f758dc0"](https://huggingface.co/6DammK9/AstolfoMix-XL/blob/main/x6c-AstolfoKarMix-25060802-f758dc0.safetensors): DGMLA merge with 7 models, with base model assigned as `noobaiXLNAIXL_epsilonPred11Version`. Improvement over Karmix confirmed. Most conflict resolved by either 215cR-Evo or the base model, even it is just around 12.5% of weight.
+
+### Merge Log in the e2e merger ###
+
+This is the merging log for I-DGMLA. Based from `25022801`.
+- DGMLA: `25060701`. 16 models. `apply_isotropic=False`. Code Test. Looks like x255a.
+- DGMLA: `25060702`. 5 models. `apply_isotropic=False`. Control Test. Looks like x215cR-Evo.
+- I-DGMLA: `25060703`. 5 models. `apply_isotropic=True`. Complete fail. *Implementation error.*
+- DGMLA: `25060801`. 7 models. `apply_isotropic=False`. Looks like x215cR-Evo also.
+- DGMLA: `25060802`. 7 models. `apply_isotropic=False`. Looks like karmix. *Improvement confirmed with around 12.5% of 1EP content.*
+- I-DGMLA: `25060901`. 7 models. `apply_isotropic=True, apply_exp=False, apply_high_dim=False`. Looks less like karmix, but feels strange.
+- I-DGMLA: `25060902`. 7 models. `apply_isotropic=True, apply_exp=True, apply_high_dim=True`. Looks less like karmix, but *more strange*.
 
 ## Supplementary Contents ##
 
@@ -63,3 +74,5 @@ Mode                 LastWriteTime         Length Name
 ## Comparasion ##
 
 ![xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg](../img/xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg)
+
+![xyz_grid-0163-1679148228-6720-1081-6-48-20250610013807.jpg](../img/xyz_grid-0163-1679148228-6720-1081-6-48-20250610013807.jpg)
