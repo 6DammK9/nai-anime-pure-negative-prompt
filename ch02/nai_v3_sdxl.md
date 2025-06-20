@@ -1,5 +1,7 @@
 # Observation from NovelAIDiffusionV3 #
 
+(250620) [NovelAI Tag Experiments: Curated Artists (v4.5 Full)](https://zele.st/NovelAI/?gallery=artists-v4.5)
+
 ![photo_2025-03-01_16-04-17.jpg](./img/photo_2025-03-01_16-04-17-2.jpg)
 
 ## End of line ##
