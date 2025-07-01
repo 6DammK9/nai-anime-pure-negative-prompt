@@ -18,7 +18,7 @@
 ## Blue pill (WebUI Variants) ##
 
 - [VLAD Diffusion](https://github.com/vladmandic/automatic): [EN article](https://generativeai.pub/complete-guide-to-vlad-diffusion-installation-an-automatic1111-alternative-for-stable-diffusion-25b43fbc67e7), [CN article](https://zhuanlan.zhihu.com/p/624417721)
-- [ComgyUI](https://github.com/comfyanonymous/ComfyUI): [CN article](https://zhuanlan.zhihu.com/p/620297462)
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI): [CN article](https://zhuanlan.zhihu.com/p/620297462)
 
 ## Blue pill (一鍵安裝包) ##
 
@@ -43,7 +43,7 @@
 - AWA > part of NoobAI: [ArtiWaifu](https://discord.gg/WyDYGFtuBE)
 - AI Furry: [Furry Diffusion](https://discord.gg/furrydiffusion)
 - Disabled `en`: SD Exchange
-- Disabled `en`: [r/StableDiffusion](https://discord.gg/FRfHTxEhD8)
+- ~~Disabled~~ `en`: [r/StableDiffusion](https://discord.gg/FRfHTxEhD8)
 - (General) AI Art `zh`: [鳥巢AI 藝術學園](https://discord.gg/gUSqkYE7)
 - AI Art `zh`: [AI繪圖-初級咒術師魔法學院🔰](https://discord.gg/AF7JqWbb)
 - AI detector `en/ko`: [Illuminarty](https://discord.gg/YeTYaUe8)
