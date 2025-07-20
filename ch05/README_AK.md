@@ -8,13 +8,13 @@
 
 ## Merge Log for "215c Evo" ##
 
-- I do not put in the [README_XL](../README_XL.MD) because it needs to be explored, meanwhile it starts to be not 100% original idea. This time I rely on [Karmix](../../ch02/karmix.md) and [9527R](https://civitai.com/models/176449/9527-detail-realistic-xl) (the realistic finetune over 215c), or [JANKU v4](https://civitai.com/models/1277670/janku-v4-nsfw-trained-noobai-eps-rouwei-illustrious-xl).
+- I do not put in the [README_XL](./README_XL.MD) because it needs to be explored, meanwhile it starts to be not 100% original idea. This time I rely on [Karmix](../ch02/karmix.md) and [9527R](https://civitai.com/models/176449/9527-detail-realistic-xl) (the realistic finetune over 215c), or [JANKU v4](https://civitai.com/models/1277670/janku-v4-nsfw-trained-noobai-eps-rouwei-illustrious-xl).
 
-- *From the experience in ch05, all WeightedSum (default $\alpha=0.5$) are enhanced with "BasinSum". Math proof... [Rebasin](../../ch01/readme.md) has expected value in $\alpha$ obviously*
+- *From the experience in ch05, all WeightedSum (default $\alpha=0.5$) are enhanced with "BasinSum". Math proof... [Rebasin](../ch01/readme.md) has expected value in $\alpha$ obviously*
 
 ${BasinSum}(A,B,\alpha) \leftarrow ( \alpha (\alpha A + (1-\alpha) B) + (1-\alpha) Rebasin(A,B,\alpha) )$
 
-- It has been used since 215c and 255c. Note: 215a = "DGMLA-216", "amp" is the [amplify_diff](../../ch05/amplify_diff.ipynb), and the "base" is the base model "SDXL1.0". 1EP is the result in [finetuned model](../../ch06/) from 255c with 1EP.
+- It has been used since 215c and 255c. Note: 215a = "DGMLA-216", "amp" is the [amplify_diff](./amplify_diff.ipynb), and the "base" is the base model "SDXL1.0". 1EP is the result in [finetuned model](../ch06/) from 255c with 1EP.
 
 ${215c} \leftarrow {BasinSum}(215a,amp(215a,base,2.0),0.5)$
 
@@ -77,8 +77,8 @@ Mode                 LastWriteTime         Length Name
 -a----         14/5/2025     20:45     6938040318 pca-tv-mtd-illv20-idx0-personalv30-r-te0.4-oeaiv12ue-r-te0.4.safetensors
 ```
 
-![karmix_unet_vg.png](../../ch03/v2a/img/karmix_unet_vg.png)
+![karmix_unet_vg.png](../ch03/v2a/img/karmix_unet_vg.png)
 
 ## Comparasion ##
 
-![xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg](../img/xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg)
+![xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg](./img/xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg)
