@@ -1,6 +1,12 @@
-# Merge Log of "215c Evo" #
+# Chapter 05-AK: AstolfoKarmix #
 
-## Notice ##
+- [CivitAI model page.](https://civitai.com/models/1671685) *It does what you have expected*.
+
+- [HuggingFace model page.](https://huggingface.co/6DammK9/AstolfoMix-XL) The style is also different.
+
+- [CivitAI article page.](https://civitai.com/articles/3409) Summary of here (as additional content with SD1).
+
+## Merge Log for "215c Evo" ##
 
 - I do not put in the [README_XL](../README_XL.MD) because it needs to be explored, meanwhile it starts to be not 100% original idea. This time I rely on [Karmix](../../ch02/karmix.md) and [9527R](https://civitai.com/models/176449/9527-detail-realistic-xl) (the realistic finetune over 215c), or [JANKU v4](https://civitai.com/models/1277670/janku-v4-nsfw-trained-noobai-eps-rouwei-illustrious-xl).
 
@@ -16,7 +22,7 @@ ${215c} \leftarrow {BasinSum}(215a,amp(215a,base,2.0),0.5)$
 
 - My accept criteria is still "man with car" which represents knowledge preservation from the base model. Realife location is optional (that is not a single concept from background). Mainstream "character / artist style recognition" will be ignored because I think [NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl) has made a great job here ~~especially it really requires dozens of EPs.~~
 
-## Merge Log ##
+## Merge Log for AK ##
 
 - "215cEvo-AstolfoMix-1ep-25052801": BasinSum(215c, 1EP, 0.5). Generally tends towards 215c but with enhanced varity of content. However still poor in character / artist style recognition.
 
@@ -40,14 +46,16 @@ ${215c} \leftarrow {BasinSum}(215a,amp(215a,base,2.0),0.5)$
 
 ### Merge Log in the e2e merger ###
 
-This is the merging log for I-DGMLA. Based from `25022801`.
+This is the merging log for DGMIA. Based from `25022801`.
 - DGMLA: `25060701`. 16 models. `apply_isotropic=False`. Code Test. Looks like x255a.
 - DGMLA: `25060702`. 5 models. `apply_isotropic=False`. Control Test. Looks like x215cR-Evo.
-- I-DGMLA: `25060703`. 5 models. `apply_isotropic=True`. Complete fail. *Implementation error.*
+- DGMIA: `25060703`. 5 models. `apply_isotropic=True`. Complete fail. *Implementation error.*
 - DGMLA: `25060801`. 7 models. `apply_isotropic=False`. Looks like x215cR-Evo also.
 - DGMLA: `25060802`. 7 models. `apply_isotropic=False`. Looks like karmix. *Improvement confirmed with around 12.5% of 1EP content.*
-- I-DGMLA: `25060901`. 7 models. `apply_isotropic=True, apply_exp=False, apply_high_dim=False`. Looks less like karmix, but feels strange.
-- I-DGMLA: `25060902`. 7 models. `apply_isotropic=True, apply_exp=True, apply_high_dim=True`. Looks less like karmix, but *more strange*.
+- DGMIA: `25060901`. 7 models. `apply_isotropic=True, apply_exp=False, apply_high_dim=False`. Looks less like karmix, but feels strange.
+- DGMIA: `25060902`. 7 models. `apply_isotropic=True, apply_exp=True, apply_high_dim=True`. Looks less like karmix, but *more strange*.
+- DGMIZ: `25071601`. 7 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=False`. Looks like `25060802`, details become more vivid.
+- DGMIZ: `25071602`. 7 models. `apply_isotropic=True, apply_exp=False, z_cof=2.0, apply_high_dim=False`. Looks like `25060802`, testing.
 
 ## Supplementary Contents ##
 
@@ -74,5 +82,3 @@ Mode                 LastWriteTime         Length Name
 ## Comparasion ##
 
 ![xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg](../img/xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg)
-
-![xyz_grid-0163-1679148228-6720-1081-6-48-20250610013807.jpg](../img/xyz_grid-0163-1679148228-6720-1081-6-48-20250610013807.jpg)

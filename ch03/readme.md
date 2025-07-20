@@ -80,3 +80,13 @@ Flux: [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FL
 - *More like validate my thought instead of discovery.*
 
 ![result_24042103.jpg](./view_clip/result_24042103.jpg)
+
+## Extra: The "grid search" of the ISO-Z Merge ##
+
+- Notebook to reproduce: [izo_z.ipynb](./iso_z/izo_z.ipynb)
+
+- "Image reconstruction with PCA" still correlates to "(Merged) Model weight reconstruction with SVD and some weird Z-Score operation over the Unitary matrix". "RGBA channels" may not "totally unrelated" to the "mixture of finetuned models with unknown history".
+
+![25071901.jpg](./iso_z/25071901.jpg)
+
+![25071902.jpg](./iso_z/25071902.jpg)

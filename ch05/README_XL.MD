@@ -601,10 +601,30 @@ This is the *recent* merging log.
 
 - Based from [previous session](#good-time-to-conclude-and-move-to-the-next-chapter), it actually **learns a lot more effective** because the contradicted weights appears **pseudorandom** which cannot be activated. Once it continues training, a tiny switch of specific model weight will reactivate the whole network. It is different from both pretraining (train from scratch = initialized (real) random weights) and finetuning (train from learnt weights, which has less "gradient" for explorartion). Discussion will be contuned in [ch06](../ch06/gallery.md#effect-on-switching-to-the-updated-base-model-and-implied-batch-size).
 
-![xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg](../ch06/img/xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg)
+![xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg](../h06/img/xyz_grid-0070-3501057477-18816-1081-6-48-20250307005700.jpg)
 
 ## Evolutionary merge "215c Evo" is finally here, but move on ##
 
 - After months, finally I have a "trained model" to test [this theory](../ch01/merge.md#not-merge-but-worth-mentioning). Meanwhile, [pretraining from a merged model](https://arxiv.org/abs/2505.12082v1) (especially from 255c instead of 215c) is viable if you merge with a proper mindset.
 
-- However since it is overlapped in 2 chapters, I will split the image results to [ch06](../ch06/gallery.md#merging-again-as-215c-evo).
+- However since it is overlapped in 2 chapters, I will split the image results to [ch06](../ch06/gallery.md#merging-again-as-215c-evo). 
+
+## Considering Model Pool and evolve to AstolfoKarmix ##
+
+- Since the apperance of Karmix ([doc](https://rentry.co/-introducing-karcher-mean-experimental-model-v0), [mirror](https://huggingface.co/chemwolf/Karmix-XL-v0)), I'm interested to consider *model pool* instead of merging algorithms. After a few attempts, now it becomes [AstolfoKarmix](./README_AK.md).
+
+## Findings on "SDXL ISO-Z (modified Isotropic Merge ISO-C)" ##
+
+- See [Spinoff: Iso-Z](../ch01/isotropic.md#spinoff-iso-z) for algorithm analysis.
+
+- By following the official implementation, it was unsuccess.
+
+![xyz_grid-0163-1679148228-6720-1081-6-48-20250610013807.jpg](./img/xyz_grid-0163-1679148228-6720-1081-6-48-20250610013807.jpg)
+
+- After I figure out applying [Z score](https://en.wikipedia.org/wiki/Standard_score) as the trick, I *naively* correlates "RGBA channels" and "Unitary matrix" to the "mixture of finetuned models with unknown history". Then proceed to search for parameter.
+
+![25071901.jpg](../ch03/iso_z/25071901.jpg)
+
+- Now the merge is success, with slightly tradeoff between character accuracy and richness of backgound. It also provide a few "variants" with different parameter, which 0.8 looks like AK and 2.0 looks like 215c.
+
+![xyz_grid-0196-1679148228-12096-1081-6-48-20250718074103.jpg](./img/xyz_grid-0196-1679148228-12096-1081-6-48-20250718074103.jpg)
