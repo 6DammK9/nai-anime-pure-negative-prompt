@@ -133,6 +133,22 @@ It is the *same* ViT-L. However we all noticed "finetuned models" are all "SD mo
 |09|DGMLA-216: Drop w/ GeoMedian and LA|`x215a-AstolfoMix-24101101-6e545a3.safetensors`|216|216|216|216|[mecha](./recipes/x215a-AstolfoMix-24101101-6e545a3.mecha)|
 |10|215c: Permutation from the Fermat Point|`x215c-AstolfoMix-24101101-6e545a3.safetensors`|216|216|216|216|n/a|
 |11|255c: Scale up from 215c|`x255c-AstolfoMix-25022801-1458190.safetensors`|256|256|256|256|n/a|
+|12|215cR-Evo: Back to basic|`215cR-Evo-AstolfoMix-1ep-25060109.safetensors`|3|3|3|3|n/a|
+|13|256c: Revise from 255c|`x256c-AstolfoMix-25072101-a4da898.safetensors`|257|257|257|257|n/a|
+
+### 215cR-Evo in nutshell ###
+
+- 0.5 (0.5 215c + 0.5 "R Lora") + 0.5 "1EP".
+
+### DGMIZ-AK7c explained ###
+
+- `DGMXX-XXXX`: "Drop w/ GeoMedian and LA", modified from DELLA Merge and previous works.
+
+- `XXXIZ-XXXX`: "Iso-Z", modified from Isotropic Merge.
+
+- `XXXXX-AK7X`: Same model pool in AstolfoKarmix NoobAI based v1.1.
+
+- `XXXXX-XXXc`: "Extrapolated Re-Basin", modified from Git Re-Basin (ICLR2023?), with "2B-A" merge.
 
 ### Discovered models ###
 
@@ -628,3 +644,9 @@ This is the *recent* merging log.
 - Now the merge is success, with slightly tradeoff between character accuracy and richness of backgound. It also provide a few "variants" with different parameter, which 0.8 looks like AK and 2.0 looks like 215c.
 
 ![xyz_grid-0196-1679148228-12096-1081-6-48-20250718074103.jpg](./img/xyz_grid-0196-1679148228-12096-1081-6-48-20250718074103.jpg)
+
+## Revise 255c as 256c ##
+
+- *Long story short, [Python's character order is different from windows](https://stackoverflow.com/questions/32004175/python-sort-list-of-filepaths-like-windows).* I have revised the recipe of 255c and found that it is really based from a wrong model. Now I patched the merger and replaced old AstolfoMix models back to "recent models". [Now I get mathematical instability along with vanishing gradient problem](./xl_docs/sdmecha_err_250729.log).
+
+![xyz_grid-0239-2669735219-6720-1097-4-48-20250729010420.jpg](./img/xyz_grid-0239-2669735219-6720-1097-4-48-20250729010420.jpg)

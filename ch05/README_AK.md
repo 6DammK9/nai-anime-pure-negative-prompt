@@ -54,8 +54,12 @@ This is the merging log for DGMIA. Based from `25022801`.
 - DGMLA: `25060802`. 7 models. `apply_isotropic=False`. Looks like karmix. *Improvement confirmed with around 12.5% of 1EP content.*
 - DGMIA: `25060901`. 7 models. `apply_isotropic=True, apply_exp=False, apply_high_dim=False`. Looks less like karmix, but feels strange.
 - DGMIA: `25060902`. 7 models. `apply_isotropic=True, apply_exp=True, apply_high_dim=True`. Looks less like karmix, but *more strange*.
-- DGMIZ: `25071601`. 7 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=False`. Looks like `25060802`, details become more vivid.
-- DGMIZ: `25071602`. 7 models. `apply_isotropic=True, apply_exp=False, z_cof=2.0, apply_high_dim=False`. Looks like `25060802`, testing.
+- DGMIZ: `25071601`. 7 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. Looks like `25060802`, details become more vivid.
+- DGMIZ: `25071602`. 7 models. `apply_isotropic=True, apply_exp=False, z_cof=2.0, apply_high_dim=True`. Looks like 215c, but preserved around 80% of AK's knowledge.
+- DGMIZ: `25072001`. 11 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. **IL2.0 base doesn't work.**
+- DGMIZ: `25072101`. 257 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. **Better than 215c, just redeemed from 255c.**
+- DGMIZ: `25072401`. 11 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. 256c base. Looks like 256c, but different content.
+- DGMIZ: `25072501`. 11 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. NoobAI base. Looks like v1.1, trade stability with varity.
 
 ## Supplementary Contents ##
 
@@ -69,16 +73,35 @@ PS F:\NOVELAI\astolfo_mix\sdxl\raw> dir
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a----         10/5/2025     10:08     6938040744 1ep-AstolfoXL.safetensors
--a----          2/6/2025      2:40     6938066682 215cR-AstolfoMix-9527-25060107.safetensors
 -a----          2/6/2025      6:56     6938067922 215cR-Evo-AstolfoMix-1ep-25060109.safetensors
--a----          4/6/2025     23:40     6938040674 JANKUV4NSFWTrainedNoobaiEPS_v40.safetensors
--a----         12/5/2025     23:26     6938039854 Karmix-XL-v0.safetensors
--a----         30/1/2025     23:24     7105349958 noobaiXLNAIXL_epsilonPred11Version.safetensors
--a----         14/5/2025     20:45     6938040318 pca-tv-mtd-illv20-idx0-personalv30-r-te0.4-oeaiv12ue-r-te0.4.safetensors
+-a----         25/7/2025      1:06     6938044026 256cEvo-AstolfoMix-1ep-25072103.safetensors
+-a----        15/11/2024      0:08     6938064842 x215c-AstolfoMix-24101101-6e545a3.safetensors
+-a----         24/7/2025     21:49     6938041946 x256c-AstolfoMix-25072101-a4da898.safetensors
+-a----          4/6/2025     23:40     6938040674 _x248-JANKUV4NSFWTrainedNoobaiEPS_v40.safetensors
+-a----         12/5/2025     23:26     6938039854 _x249-Karmix-XL-v0.safetensors
+-a----         14/5/2025     20:45     6938040318 _x253-pca-tv-mtd-illv20-idx0-personalv30-r-te04-oeaiv12ue-r-te0.4.safetensors
+-a----         13/7/2025      1:34     7105351742 _x254-pornmasterPro_noobV4VAE.safetensors
+-a----         12/7/2025     15:25     6938040424 _x255-rouwei_080_base_fp16.safetensors
 ```
 
-![karmix_unet_vg.png](../ch03/v2a/img/karmix_unet_vg.png)
+![karmix3_unet_vg.png](../ch03/v2a/img/karmix3_unet_vg.png)
+
+![karmix3_unet_xy.png](../ch03/v2a/img/karmix3_unet_xy.png)
 
 ## Comparasion ##
 
+- AK does stand out from previous merges.
+
 ![xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg](./img/xyz_grid-0147-340747565-7680-1673-6-48-20250609013046.jpg)
+
+- Comparing to pure finetuned model, it shows better balance.
+
+![xyz_grid-0210-1208733939-8192-1343-4-48-20250720220544.jpg](./img/xyz_grid-0210-1208733939-8192-1343-4-48-20250720220544.jpg)
+
+- Besides the dominant base model knowledge, general knowledge is regained.
+
+![xyz_grid-0221-2774657739-4608-1673-4-48-20250725002715.jpg](./img/xyz_grid-0221-2774657739-4608-1673-4-48-20250725002715.jpg)
+
+- Finally it can recall and output rare images, which is absent from most models, no matter finetuned or merged.
+
+![xyz_grid-0231-3479101101-4096-1327-4-48-20250726215036.jpg](./img/xyz_grid-0231-3479101101-4096-1327-4-48-20250726215036.jpg)
