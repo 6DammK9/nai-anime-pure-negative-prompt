@@ -121,8 +121,9 @@ Definitely not Pixiv.
 
 ## Blue pill (AI marketplace) ##
 
-- `zh`: [LiblibAI•哩布哩布AI](https://www.liblibai.com/)
-- `zh`: [吐司 Tusi.Art](https://tusi.art/)
+- `zh`: [LiblibAI-哩布哩布AI](https://www.liblib.art/), [mirror (*.ai)](https://www.liblib.ai/)
+- `zh`: [吐司 Tusi.Art](https://tusi.cn/), international: [Tensor.Art](https://tensor.art/)
+- `zh`: [Shakker](https://www.shakker.ai/zh-TW)
 - `en`: ~~[Hugging Face](https://huggingface.co/)~~
 - `kr`: [Civitai](https://civitai.com/)
 
