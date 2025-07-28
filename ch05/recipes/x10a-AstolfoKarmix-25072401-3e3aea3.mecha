@@ -1,0 +1,28 @@
+version 0.1.0
+model "raw\\1ep-AstolfoXL.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "pick_component" &0 "vae"
+model "raw\\x256c-AstolfoMix-25072101-a4da898.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &0 &2
+model "raw\\215cR-AstolfoMix-9527-25060107.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &4 &2
+model "raw\\215cR-Evo-AstolfoMix-1ep-25060109.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &6 &2
+model "raw\\x215c-AstolfoMix-24101101-6e545a3.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &8 &2
+merge "subtract" &2 &2
+model "raw\\_x001-sd_xl_base_1.0.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &11 &2
+model "raw\\_x248-JANKUV4NSFWTrainedNoobaiEPS_v40.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &13 &2
+model "raw\\_x249-Karmix-XL-v0.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &15 &2
+model "raw\\_x250-noobaiXLNAIXL_epsilonPred11Version.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &17 &2
+model "raw\\_x253-pca-tv-mtd-illv20-idx0-personalv30-r-te0.4-oeaiv12ue-r-te0.4.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &19 &2
+model "raw\\_x254-pornmasterPro_noobV4VAE.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &21 &2
+merge "ties_sum_with_dropout" &3 &5 &7 &9 &10 &12 &14 &16 &18 &20 &22 probability=0.1 della_eps=-0.1 rescale=0.0 k=1.0 vote_sgn=true apply_stock=false cos_eps=1e-06 apply_median=true eps=1e-06 maxiter=100 ftol=1e-20 seed=250724
+merge "isotropic_overrided" &23 0.8 false true
+merge "add_difference" &2 &24 1.0
+merge "fallback" &1 &25
