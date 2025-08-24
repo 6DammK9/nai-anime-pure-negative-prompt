@@ -68,7 +68,10 @@ This is the merging log for DGMIZ. **Looking for base models.** All of them are 
 - DGMIZ: `25082301`. 11 models. "NIL1.5" base. Works as intended.
 - DGMIZ: `25082401`. 11 models. Pony base. Still AK clusters. **Failed.**
 - DGMIZ: `25082402`. 11 models. A4 base. Still AK clusters. **Failed.**
+
+This is the merging log for DGMIZ with vpred models. No algorithm change.
 - DGMIZ: `25082403`. 11 models. **NAI v-pred base.** Half vpred clusters (still keeping Astolfo side). **Failed.**
+- DGMIZ: `25082501`. 12 models. **NAI v-pred base.** All tested vpred models, and 1 AK for VAE. Work as intended.
 
 ## Supplementary Contents ##
 
@@ -134,3 +137,7 @@ $NIL1.5= \frac{NoobAI + IL1.0 + IL2.0}{3}$
 - [Got it running in A1111](../ch01/vpred.md#extra-sdxl-vpred-in-a1111), down downloaded a new model pool, but the findings doesn't align to the eps side (i.e. current work). Need to figure out what is the "survive condition" again.
 
 - *Hopefully not tunnelvision (especially I made quite a lot of drama / feud with others)*, it should points to some fundamental properties and conditions, instead of brute force / fancy algorithm. I should have enough information already to figure out how the merge works.
+
+- Currently blending all vpred models together is working as intended (my eps model treated as outlier successfully).
+
+![xyz_grid-0029-3011153084-4032-1098-3-64-20250825070002.jpg](./img/xyz_grid-0029-3011153084-4032-1098-3-64-20250825070002.jpg)
