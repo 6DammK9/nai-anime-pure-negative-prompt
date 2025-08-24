@@ -117,11 +117,15 @@ Mode                 LastWriteTime         Length Name
 
 ## Extra: Exploring model bases ##
 
-- After examining the "model pool" of Karmix and the AK, I found that **average merging works already**
+- After examining the "model pool" of Karmix and the AK, I found that **average merging works already.** I can keep making the AK out of NIL1.5, and having enhanced performance.
 
-$ NIL1.5= \frac{NoobAI + IL1.0 + IL2.0}{3}  $
+$NIL1.5= \frac{NoobAI + IL1.0 + IL2.0}{3}$
 
 - I think this is just *majorly sheer luck*. Although all 3 of them are based from IL0.1, it is insufficient to explain the survival of this simple merge. For example, A3 / A4 / PonyV6 are all based from SDXL 1.0, but none of them success.
+
+- Meanwhile, I have discovered some extreme values since 256c, and preventing me for the rebasin merge, which doubling the magnitude will lead to `nan`. There may be no impact on the performance of the merged model (it is actually better), but I don't sure if it can be trained easily afterward. This 2 incident may be related, because it is appeared in multiple recipes already.
+
+![xyz_grid-0014-2752950130-5376-1081-4-64-20250823231917.jpg](./img/xyz_grid-0014-2752950130-5376-1081-4-64-20250823231917.jpg)
 
 ## Extra: "AstolfoCarmix": vpred merge ##
 
