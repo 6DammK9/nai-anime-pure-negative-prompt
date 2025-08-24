@@ -86,12 +86,12 @@
  
 - [Indigo Void Furry Vpred](https://civitai.com/models/1484845/indigo-void-furry-vpred-furry-noobai-v-pred) *Merged model*
 
-### Examples of CosXL###
+![xyz_grid-0021-1970245595-8448-1674-6-48-20250824160058.jpg](./img/xyz_grid-0021-1970245595-8448-1674-6-48-20250824160058.jpg)
+
+### Examples of CosXL ###
 
 - *cannot output images with my setting.*
 
 - [wdv-tests](https://huggingface.co/waifu-diffusion/wdv-tests)
 
-- [XLOmni-VPred](https://huggingface.co/Clybius/XLOmni-Models/blob/main/XLOmni-VPred_00001_.safetensors) *Merged model ov*
-
-![xyz_grid-0021-1970245595-8448-1674-6-48-20250824160058.jpg](./img/xyz_grid-0021-1970245595-8448-1674-6-48-20250824160058.jpg)
+- [XLOmni-VPred](https://huggingface.co/Clybius/XLOmni-Models/blob/main/XLOmni-VPred_00001_.safetensors) *Merged model*
