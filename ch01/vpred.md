@@ -47,3 +47,51 @@
 - Community got it wrong, meanwhile it was too late to rectify which SDXL came and put in halt for almost a year.
 
 - However even the trainer / runtime vpred is fixed, **the optimal training streadgy is still missing**. It is still a risky move even the theory sounds good.
+
+## Extra: SDXL vpred in A1111 ##
+
+- [The modified yaml](../ch06/sd-scripts-runtime/sd_xl_base_vpred.yaml)
+
+- [Difference between eps and vpred](https://www.diffchecker.com/c2ekLmwv/). [The YAML referred by A1111.](https://github.com/Stability-AI/generative-models/blob/main/configs/inference/sd_xl_base.yaml) [Class references](https://github.com/Stability-AI/generative-models/blob/main/sgm/modules/diffusionmodules/denoiser_weighting.py)
+
+- Intead of adding `parameterization: "v"`, change from `EpsScaling`, `EpsWeighting` to `VScaling`, `VWeighting`.
+
+- Duplicate and place `*.yaml` besides `*.safetensors`.
+
+- **DO NOT COUNFUSE WITH Flow Matching's v-prediction**. They are different maths.
+
+- **"SDXL VPRED" is incompatable with CosXL.**
+
+### Examples of SDXL VPRED ### 
+
+- Model choices are scarce.
+
+- [Illustrious-v0.1-vpred-test](https://huggingface.co/AngelBottomless/Illustrious-v0.1-vpred-test/blob/main/20250101_convert_H100bs256rate2e_2debiasoffset/20250101_convert_H100bs256rate2e_2debiasoffset-step00056350.safetensors)
+
+- [V-Pony](https://civitai.com/models/684052/v-pony)
+
+- [NoobAI XL (vpred branch)](https://civitai.com/models/833294?modelVersionId=1190596)
+
+- [Rouwei (vpred branch)](https://civitai.com/models/950531?modelVersionId=1882934)
+
+- [MDNT_NAI-XL_vPred](https://civitai.com/models/1209786/mdntnai-xlvpred)
+
+- [JANKUN v1.0](https://civitai.com/models/1365244/jankun-v10-based-on-noob-vpred-10-huge-improvements)
+
+- [ΣΙΗ](https://civitai.com/models/1217645/sih) *Merged model*
+
+- [Noob Vpred itercomp](https://civitai.com/models/980544/noob-vpred-itercomp-merge) *Merged model*
+
+- [2.5D Rouwei Blend v-pred](https://civitai.com/models/1622108/25d-rouwei-blend-v-pred) *Merged model*
+ 
+- [Indigo Void Furry Vpred](https://civitai.com/models/1484845/indigo-void-furry-vpred-furry-noobai-v-pred) *Merged model*
+
+### Examples of CosXL###
+
+- *cannot output images with my setting.*
+
+- [wdv-tests](https://huggingface.co/waifu-diffusion/wdv-tests)
+
+- [XLOmni-VPred](https://huggingface.co/Clybius/XLOmni-Models/blob/main/XLOmni-VPred_00001_.safetensors) *Merged model ov*
+
+![xyz_grid-0021-1970245595-8448-1674-6-48-20250824160058.jpg](./img/xyz_grid-0021-1970245595-8448-1674-6-48-20250824160058.jpg)

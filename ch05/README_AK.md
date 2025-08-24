@@ -54,12 +54,21 @@ This is the merging log for DGMIA. Based from `25022801`.
 - DGMLA: `25060802`. 7 models. `apply_isotropic=False`. Looks like karmix. *Improvement confirmed with around 12.5% of 1EP content.*
 - DGMIA: `25060901`. 7 models. `apply_isotropic=True, apply_exp=False, apply_high_dim=False`. Looks less like karmix, but feels strange.
 - DGMIA: `25060902`. 7 models. `apply_isotropic=True, apply_exp=True, apply_high_dim=True`. Looks less like karmix, but *more strange*.
-- DGMIZ: `25071601`. 7 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. Looks like `25060802`, details become more vivid.
-- DGMIZ: `25071602`. 7 models. `apply_isotropic=True, apply_exp=False, z_cof=2.0, apply_high_dim=True`. Looks like 215c, but preserved around 80% of AK's knowledge.
-- DGMIZ: `25072001`. 11 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. **IL2.0 base doesn't work.**
-- DGMIZ: `25072101`. 257 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. **Better than 215c, just redeemed from 255c.**
-- DGMIZ: `25072401`. 11 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. 256c base. Looks like 256c, but different content.
-- DGMIZ: `25072501`. 11 models. `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`. NoobAI base. Looks like v1.1, trade stability with varity.
+
+This is the merging log for DGMIZ. **Looking for base models.** All of them are `apply_isotropic=True, apply_exp=False, z_cof=0.8, apply_high_dim=True`.
+- DGMIZ: `25071601`. 7 models. Looks like `25060802`, details become more vivid.
+- DGMIZ: `25071602`. 7 models. Looks like 215c, but preserved around 80% of AK's knowledge.
+- DGMIZ: `25072001`. 11 models. **IL2.0 base doesn't work.**
+- DGMIZ: `25072101`. 257 models. **Better than 215c, just redeemed from 255c.**
+- DGMIZ: `25072401`. 11 models. 256c base. Looks like 256c, but different content.
+- DGMIZ: `25072501`. 11 models. NoobAI base. Slightly less predictive than v1.1, but it is cool.
+- DGMIZ: `25082201`. 10 models. "IL1.5" base. Better than IL1.5.
+- DGMIZ: `25082201`. 11 models. "IL1.5" base. **Doesn't work.**
+- DGMIZ: `25082301`. 10 models. "NIL1.5" base. Works fine.
+- DGMIZ: `25082301`. 11 models. "NIL1.5" base. Works as intended.
+- DGMIZ: `25082401`. 11 models. Pony base. Still AK clusters. **Failed.**
+- DGMIZ: `25082402`. 11 models. A4 base. Still AK clusters. **Failed.**
+- DGMIZ: `25082403`. 11 models. **NAI v-pred base.** Half vpred clusters (still keeping Astolfo side). **Failed.**
 
 ## Supplementary Contents ##
 
@@ -105,3 +114,19 @@ Mode                 LastWriteTime         Length Name
 - Finally it can recall and output rare images, which is absent from most models, no matter finetuned or merged.
 
 ![xyz_grid-0231-3479101101-4096-1327-4-48-20250726215036.jpg](./img/xyz_grid-0231-3479101101-4096-1327-4-48-20250726215036.jpg)
+
+## Extra: Exploring model bases ##
+
+- After examining the "model pool" of Karmix and the AK, I found that **average merging works already**
+
+$ NIL1.5= \frac{NoobAI + IL1.0 + IL2.0}{3}  $
+
+- I think this is just *majorly sheer luck*. Although all 3 of them are based from IL0.1, it is insufficient to explain the survival of this simple merge. For example, A3 / A4 / PonyV6 are all based from SDXL 1.0, but none of them success.
+
+## Extra: "AstolfoCarmix": vpred merge ##
+
+- Uncategorized: Will move to a distinct article. Maybe a new model name also.
+
+- [Got it running in A1111](../ch01/vpred.md#extra-sdxl-vpred-in-a1111), down downloaded a new model pool, but the findings doesn't align to the eps side (i.e. current work). Need to figure out what is the "survive condition" again.
+
+- *Hopefully not tunnelvision (especially I made quite a lot of drama / feud with others)*, it should points to some fundamental properties and conditions, instead of brute force / fancy algorithm. I should have enough information already to figure out how the merge works.
