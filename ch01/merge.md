@@ -24,6 +24,8 @@
 
 - [FusionBench: A Comprehensive Benchmark of Deep Model Fusion](https://arxiv.org/abs/2406.03280) *toolkit*
 
+- [FuseChat: Knowledge Fusion of Chat Models](https://arxiv.org/abs/2408.07990)
+
 - [No Task Left Behind: Isotropic Model Merging with Common and Task-Specific Subspaces](https://arxiv.org/abs/2502.04959) *Testing.*
 
 - [Model Merging in Pre-training of Large Language Models](https://arxiv.org/abs/2505.12082v1) *Tested* [Trained with 1EP.](../ch06)
