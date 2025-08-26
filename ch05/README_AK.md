@@ -141,3 +141,7 @@ $NIL1.5= \frac{NoobAI + IL1.0 + IL2.0}{3}$
 - Currently blending all vpred models together is working as intended (my eps model treated as outlier successfully).
 
 ![xyz_grid-0029-3011153084-4032-1098-3-64-20250825070002.jpg](./img/xyz_grid-0029-3011153084-4032-1098-3-64-20250825070002.jpg)
+
+- For "vpred vs eps" debate, I think vpred is overexaggerated. Colors are mostly from latent offset (model bias), meanwhile users are not aware / desire for rich contents.
+
+![xyz_grid-0034-1844435476-1536-1657-4-48-20250826080801.jpg](./img/xyz_grid-0034-1844435476-1536-1657-4-48-20250826080801.jpg)
