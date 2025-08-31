@@ -1,0 +1,14 @@
+version 0.1.0
+model "raw\\_x194-Illustrious-XL-v0.1.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "pick_component" &0 "vae"
+merge "subtract" &0 &0
+model "raw\\_x229-Illustrious-XL-v1.0.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &3 &0
+model "raw\\_x247-illustriousXL20_v20.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &5 &0
+model "raw\\_x250-noobaiXLNAIXL_epsilonPred11Version.safetensors" model_config="sdxl-sgm" merge_space="weight"
+merge "subtract" &7 &0
+merge "ties_sum_with_dropout" &2 &4 &6 &8 probability=0.1 della_eps=-0.1 rescale=0.0 k=1.0 vote_sgn=true apply_stock=false cos_eps=1e-06 apply_median=true eps=1e-06 maxiter=100 ftol=1e-20 seed=250829
+merge "isotropic_overrided" &9 0.8 false true
+merge "add_difference" &0 &10 1.0
+merge "fallback" &1 &11
