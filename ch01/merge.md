@@ -98,6 +98,8 @@
 
 ### MBW / LBW related topics ###
 
+- SDXL discussion: [prompt_injection/1](https://github.com/cubiq/prompt_injection/discussions/1)
+
 - Some explaination (how to use instead of why): [BlockMergeExplained](https://rentry.org/BlockMergeExplained)
 
 - Current meta: Merging multiple LoRAs. I don't know the procedure because I never do either LoRA or merging.
