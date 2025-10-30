@@ -16,6 +16,8 @@ Usually "not article".
 
 - A block diagram about "Enterprise MCP infrastructure": [mcp.md](mcp.md)
 
+- A block diagram about "Enterprise n8n infrastructure": [n8n.md](n8n.md)
+
 ## Scripts (Convert to diffuser and upload to HuggingFace later) ##
 
 - `convert_sdxl_to_diffusers.py`: My fork of [convert_sdxl_to_diffusers.py](https://github.com/Linaqruf/sdxl-model-converter/blob/main/convert_sdxl_to_diffusers.py). Added quick guide on the top.
