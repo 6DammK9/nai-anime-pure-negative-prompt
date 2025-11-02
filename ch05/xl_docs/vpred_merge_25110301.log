@@ -1,0 +1,19 @@
+> python merge_lycoris.py --is_sdxl --dtype fp16 --weight 0.55 "E:/NOVELAI/stable-diffusion-webui/stable-diffusion-webui/models/Stable-diffusion/x10a-AstolfoKarmix-25083001-3e3aea3.safetensors" "E:/NOVELAI/stable-diffusion-webui/stable-diffusion-webui/models/Lora/hinaAstolfoXL_NIL15_v12_vpred_Lora_v41.safetensors" "x11a-AstolfoCarmix-25110301-3e3aea3.safetensors"
+C:\Users\User\.conda\envs\kohyas-env\Lib\site-packages\diffusers\utils\outputs.py:63: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+2025-11-02 23:43:05 INFO     building U-Net                                                                               sdxl_model_util.py:198
+                    INFO     loading U-Net from checkpoint                                                                sdxl_model_util.py:202
+2025-11-02 23:43:08 INFO     U-Net: <All keys matched successfully>                                                       sdxl_model_util.py:208
+                    INFO     building text encoders                                                                       sdxl_model_util.py:211
+2025-11-02 23:43:09 INFO     loading text encoders from checkpoint                                                        sdxl_model_util.py:264
+                    INFO     text encoder 1: <All keys matched successfully>                                              sdxl_model_util.py:278
+2025-11-02 23:43:10 INFO     text encoder 2: <All keys matched successfully>                                              sdxl_model_util.py:282
+                    INFO     building VAE                                                                                 sdxl_model_util.py:285
+                    INFO     loading VAE from checkpoint                                                                  sdxl_model_util.py:290
+                    INFO     VAE: <All keys matched successfully>                                                         sdxl_model_util.py:293
+Converting Dtype and Device: 100%|███████████████████████████████████████████████████████████████████████| 3666/3666 [00:00<00:00, 8001.09it/s]
+Merging lora_te1: 100%|████████████████████████████████████████████████████████████████████████████████████| 152/152 [00:00<00:00, 1666.91it/s] 
+Merging lora_te2: 100%|████████████████████████████████████████████████████████████████████████████████████| 393/393 [00:00<00:00, 1046.53it/s] 
+Merging lora_unet: 100%|█████████████████████████████████████████████████████████████████████████████████| 1877/1877 [00:01<00:00, 1151.25it/s] 
+Unused state dict key: {}
+1307 Modules been merged
