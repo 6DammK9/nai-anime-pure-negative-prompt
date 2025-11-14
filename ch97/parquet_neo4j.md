@@ -12,11 +12,13 @@
 
 - *Until all SQL statements are obtained, and convert into specific language like GraphML and Cypher*, only data tables should be convert into graph. View tables becomes "query template with cache" instad. Triggers / Functions requires specific [translator](https://neo4j.com/docs/jdbc-manual/current/sql2cypher/) or [plugins](https://neo4j.com/docs/apoc/current/introduction/).
 
+- ~~(Logical statement?)~~ For a general graph imported successfully (or transformed from a general RDBS), any arbitrary iteration will able to proceed, discovering corrosponding relationships. It don't have to follow directions set by Foreign Key, yet it may be slow. Meanwhile, tree search / cycle search will be possible, without writing infinite amount of SQL query.
+
 ## Useful links as discussion ##
 
-- [Geldata Blog.](https://stackoverflow.com/questions/15527334/has-anyone-used-neo4j-node-ids-as-foreign-keys-to-other-databases-for-large-prop)
+- [Stackoverflow.](https://stackoverflow.com/questions/15527334/has-anyone-used-neo4j-node-ids-as-foreign-keys-to-other-databases-for-large-prop)
 
-- [Stackoverlow.](https://www.geldata.com/blog/the-graph-relational-database-defined#the-future-is-graph-relational)
+- [Geldata Blog.](https://www.geldata.com/blog/the-graph-relational-database-defined#the-future-is-graph-relational)
 
 - [Neo4j article.](https://neo4j.com/docs/getting-started/data-modeling/relational-to-graph-modeling/#model-transformation)
 
