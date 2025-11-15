@@ -138,31 +138,8 @@ $NIL1.5= \frac{NoobAI + IL1.0 + IL2.0}{3}$
 
 ![xyz_grid-0055-3839849196-9216-2512-3-48-20250831000219](./img/xyz_grid-0055-3839849196-9216-2512-3-48-20250831000219.jpg)
 
+## Next: "AstolfoCarmix": vpred merge ##
 
-## Extra: "AstolfoCarmix": vpred merge ##
+It is moved to a dedicated new chapter ["Chapter 05-AC": AstolfoCarmix](./README_AC.md).
 
-- Uncategorized: Will move to a distinct article. Maybe a new model name also.
-
-- [Got it running in A1111](../ch01/vpred.md#extra-sdxl-vpred-in-a1111), down downloaded a new model pool, but the findings doesn't align to the eps side (i.e. current work). Need to figure out what is the "survive condition" again.
-
-- *Hopefully not tunnelvision (especially I made quite a lot of drama / feud with others)*, it should points to some fundamental properties and conditions, instead of brute force / fancy algorithm. I should have enough information already to figure out how the merge works.
-
-- Currently blending all vpred models together is working as intended (my eps model treated as outlier successfully).
-
-![xyz_grid-0029-3011153084-4032-1098-3-64-20250825070002.jpg](./img/xyz_grid-0029-3011153084-4032-1098-3-64-20250825070002.jpg)
-
-- For "vpred vs eps" debate, I think vpred is overexaggerated. Colors are mostly from latent offset (model bias), meanwhile users are not aware / desire for rich contents.
-
-![xyz_grid-0034-1844435476-1536-1657-4-48-20250826080801.jpg](./img/xyz_grid-0034-1844435476-1536-1657-4-48-20250826080801.jpg)
-
-## Extra: Merging burnt VPred Lycoris with AK ##
-
-- *Written after 2 months of hiatus because of other hobbies kicking in (and busy daytime job). The contents may be inaccurate.*
-
-- The hypothesis is something like "EPS to VPRED conversion" is a "relatively easy task (ML task)" which only touchs little model weights. [It was verified in 250902](https://discord.com/channels/1077423770106597386/1093732075355525331/1412429017868537887). However to protect the author (yet the LoRA itself is unuseable other than this niche task), the "LoRA weight" remains private (closest approximation is [this IL2.0 based LoRA](https://civitai.com/models/536954?modelVersionId=2173556)). Instead, [merge log](./xl_docs/vpred_merge_25110301.log) can be released.
-
-- I'll release the merged full model (LoRA with NIL) as `x11a-AstolfoCarmix-25110301-3e3aea3.safetensors` and train my own VPRED version this time. It is an analogy of the previous Carmix `x11a-AstolfoCarmix-25082501-3e3aea3`, which is still vpred and 11 (10+1) models. The "Karmix" content exists but has been trained already, even the base model is not NoobAI VPred (instead, it is NIL 1.5).
-
-![25110301.png](./img/25110301.png)
-
-![xyz_grid-0060-2739800406-4032-1081-4-48-20251103012833.jpg](./img/xyz_grid-0060-2739800406-4032-1081-4-48-20251103012833.jpg)
+The discovery is way too much for me and it should be seperated new chapeter. Probably it will blend with [AstolfoVpredXL-1EP](../ch06/gallery.md).
