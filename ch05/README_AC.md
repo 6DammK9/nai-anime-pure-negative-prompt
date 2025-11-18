@@ -54,4 +54,14 @@
 
 ![xyz_grid-0111-750033958-8064-1039-4-48-20251115165850.jpg](./img/xyz_grid-0111-750033958-8064-1039-4-48-20251115165850.jpg)
 
-- *Under progress.*
+- After my friend [hinablue](https://civitai.com/user/hinablue/models) decided to take my codes ~~and an A100x1 instance~~ to have a few EPs with his "1girl 1k 10x repeat" dataset, I confirm that it will be good to perform the mega 1EP finetune with a [grid search](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) on merge ratio.
+
+![xyz_grid-0000-1781861418-9408-1081-4-48-20251117225526.jpg](./img/xyz_grid-0000-1781861418-9408-1081-4-48-20251117225526.jpg)
+
+![xyz_grid-0001-1781861418-6720-1097-4-48-20251117231637.jpg](./img/xyz_grid-0001-1781861418-6720-1097-4-48-20251117231637.jpg)
+
+![xyz_grid-0002-1781861418-6720-1039-4-48-20251117233009.jpg](./img/xyz_grid-0002-1781861418-6720-1039-4-48-20251117233009.jpg)
+
+- After 11k / 778k of "production run", I can still barely see the progress, however it may not working at all.
+
+![xyz_grid-0003-1921513145-5120-1343-4-48-20251118234829.jpg](./img/xyz_grid-0003-1921513145-5120-1343-4-48-20251118234829.jpg)
