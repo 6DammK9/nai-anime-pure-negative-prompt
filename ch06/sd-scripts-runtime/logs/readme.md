@@ -89,7 +89,7 @@ Total steps = 12.4M / (4GPU * BS1 * GA 4 step) = 778k steps.
 
 ## AstolfoVpredXL: 2511 to 2602 ##
 
-### 2511: Cracking the way how vpred works ###
+### 2511a: Cracking the way how vpred works ###
 
 Unless specified: SDXL, AK-NIL-1.2 base, AdamW8bit, 6k dataset, 10EP, Dual Tag (concat, a1111 token trick), 4GPU, BS1, GA 4 step. VPred mode, zstnr, min gamma 5.
 
@@ -103,4 +103,17 @@ Merge as "weighted sum", 1.0 = full trained weight, 0.0 = base model weight.
 - `model_out_25111202`: **AC-NoobAI-1.0.** TTE off + 100% UNET, 1.5e-6. min gamma off. Success.
 - `model_out_25111301`: **AC-NIL-0.1.**. TTE on + 71% UNET, 1.5e-6 + 1.2e-5. Sucess after merge (0.55).
 - Honorable mention: Merge "AC-NoobAI-1.0" with "AK-NIL-1.2", success only when AC = 0.9.
-- `model_out_25111501`: TTE on + 71% UNET, **1.0e-5 + 1.0e-5.** Pending.
+- `model_out_25111501`: **AC-NIL-0.1.**. TTE on + 71% UNET, **1.0e-5 + 1.0e-5.** Kinda works.
+- `model_out_25111601`: TTE off, **1.0e-5.** Kinda works.
+
+### 2511b: Full dataset goes south ###
+
+Unless specified: SDXL, AK-NIL-1.2 base, AdamW8bit, 12.4M dataset, 1EP, Dual Tag (concat, a1111 token trick), 4GPU, BS1, GA 4 step. VPred mode, zstnr, min gamma 5. 1.5e-6 + 1.2e-5.
+
+Quick reference: AK = eps model, AC = vpred model. Target is turn eps model to vpred model. eps model with vpred runtime = blur image (no content).
+
+Merge as "weighted sum", 1.0 = full trained weight, 0.0 = base model weight.
+
+- `model_out_25111701`: Failed. Stopped after 55k steps.
+- `model_out_25112101`: **AC-NIL-0.11.** (unreleased, the `25111701h-05-10k-75`). Got `nan` after 14k steps.
+- `model_out_25112201`: **Return to eps mode.** Pending.
