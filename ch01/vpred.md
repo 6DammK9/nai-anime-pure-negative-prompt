@@ -12,7 +12,7 @@
 
 ## History of the issue (chronological order) ##
 
-- From [official SD2.0 github repository](https://github.com/Stability-AI/stablediffusion?tab=readme-ov-file), [this paper](https://arxiv.org/abs/2202.00512) is cited directly. **The "v" here refers to the variable used in SNR weighting.** [zh-cn article](https://zhuanlan.zhihu.com/p/678942992)
+- From [official SD2.0 github repository](https://github.com/Stability-AI/stablediffusion?tab=readme-ov-file), [this paper](https://arxiv.org/abs/2202.00512) is cited directly. **The "v" here refers to the variable used in SNR weighting.**
 
 ![25112601.jpg](./img/25112601.jpg)
 
@@ -53,6 +53,10 @@
 - Community got it wrong, meanwhile it was too late to rectify which SDXL came and put in halt for almost a year.
 
 - However even the trainer / runtime vpred is fixed, **the optimal training streadgy is still missing**. It is still a risky move even the theory sounds good.
+
+- (251126) After searching again, most articles are written in late 2023 and even in 2024, which is too late: [Medium article in 2310](https://medium.com/@zljdanceholic/three-stable-diffusion-training-losses-x0-epsilon-and-v-prediction-126de920eb73), [zh-cn article in 2404](https://zhuanlan.zhihu.com/p/694632441)
+
+- (extra) x-pred in [the paper in 2511](https://arxiv.org/abs/2511.13720) is really "return to basic": The citation of x-pred is still the [same paper as v-pred](https://arxiv.org/abs/2202.00512). This time I don't highlight the actual session. They were discussed as approaches of score metching.
 
 ## Extra: SDXL vpred in A1111 ##
 
