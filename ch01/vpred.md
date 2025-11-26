@@ -12,9 +12,15 @@
 
 ## History of the issue (chronological order) ##
 
-- vpred was initially applied in [SD2 in 2211](https://huggingface.co/stabilityai/stable-diffusion-2-base/commit/d65c7580f058a24da4fee25ce948c25147d3bd1f). *All SD2 / 2.1 models will have vpred enforced since then, until SDXL.*
+- From [official SD2.0 github repository](https://github.com/Stability-AI/stablediffusion?tab=readme-ov-file), [this paper](https://arxiv.org/abs/2202.00512) is cited directly. **The "v" here refers to the variable used in SNR weigthing.** [zh-cn article](https://zhuanlan.zhihu.com/p/678942992)
 
-- The [Min-SNR paper](https://arxiv.org/abs/2303.09556) was published in 2303, mentioning the "SNR + 1" issue, **without code implementation.**
+![25112601.jpg](./img/25112601.jpg)
+
+- vpred was applied in [SD2 in 2211](https://huggingface.co/stabilityai/stable-diffusion-2-base/commit/d65c7580f058a24da4fee25ce948c25147d3bd1f). *All SD2 / 2.1 models will have vpred enforced since then, until SDXL.*
+
+- The [Min-SNR paper](https://arxiv.org/abs/2303.09556) was published in 2303, mentioning the "SNR + 1" issue, **without code implementation.** Then the [ZTSNR paper](https://arxiv.org/pdf/2305.08891) was published in 2305, however it was still **without code implementation.**
+
+![25112602.jpg](./img/25112602.jpg)
 
 - vpred was introduced to [kohyas trainer](https://github.com/kohya-ss/sd-scripts/pull/308) in 2304. **The "SNR + 1" part was still missing.**
 
