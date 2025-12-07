@@ -80,6 +80,6 @@
 
 ![25112301.png](./img/ac/25112301.png)
 
-- *Currently returning to EPS trainning.* I have watched some generation preview (available in A1111) and find that the denoise process just snapped in early steps, which implies that it probably really can't handle my raw dataset. Same issue appears in the "working vpred merge" which the model may need a strong bias to generate with vpred process instead of the low bias in eps (eps blur but vpred just go straight into noise).
+- *Currently returning to [EPS trainning](../ch06/gallery_2511.md).* I have watched some generation preview (available in A1111) and find that the denoise process just snapped in early steps, which implies that it probably really can't handle my raw dataset. Same issue appears in the "working vpred merge" which the model may need a strong bias to generate with vpred process instead of the low bias in eps (eps blur but vpred just go straight into noise).
 
 ![25112302.jpg](./img/ac/25112302.jpg)

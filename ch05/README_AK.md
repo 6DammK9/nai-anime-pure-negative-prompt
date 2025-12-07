@@ -132,11 +132,11 @@ $NIL1.5= \frac{NoobAI + IL1.0 + IL2.0}{3}$
 
 - Soon I found that it is still unstable, which random `nan` will propagate into glitched images. Although reboot the WebUI process will fix the problem, I better remake the NIL1.5 with algorithm, and named as NIL1.5-AK.
 
-![25083101.jpg](./img/25083101.jpg)
+![25083101.jpg](./img/ac/25083101.jpg)
 
 - Content has changed quite a bit, but the image contents are more clear, and less likely to glitch out again.
 
-![xyz_grid-0055-3839849196-9216-2512-3-48-20250831000219](./img/xyz_grid-0055-3839849196-9216-2512-3-48-20250831000219.jpg)
+![xyz_grid-0055-3839849196-9216-2512-3-48-20250831000219](./img/ac/xyz_grid-0055-3839849196-9216-2512-3-48-20250831000219.jpg)
 
 ## Next: "AstolfoCarmix": vpred merge ##
 
