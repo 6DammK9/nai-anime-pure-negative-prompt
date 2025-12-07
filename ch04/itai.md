@@ -4,9 +4,11 @@
 
 ## Gallery / BuildsGG mirror ##
 
-- `:soon: :tm:`
+- [builds.gg](https://builds.gg/dammk/semi-itai-build-china-hardware-with-major-linux-distribution-39402)
 
-- But I have a brunch of [Youtube Shorts](https://youtube.com/shorts/m-L19Y-dzfA?si=ToQjtdEzMf1AxDL8)
+- [Google Drive](https://drive.google.com/drive/folders/1XuQUYO9rmrrHIraU35kwTN3ZFxvvYDtk?usp=sharing)
+
+- [Youtube Shorts](https://youtube.com/shorts/m-L19Y-dzfA?si=ToQjtdEzMf1AxDL8)
 
 ## Hardware list ##
 
@@ -14,7 +16,7 @@
 
 - CPU: Huawei Kunpeng 920 8 Core "2251K". Sold as [D920L11K](https://support.huawei.com/enterprise/en/bulletins-product/ENEWS2000023442). It is the server variant of [D920S10](https://e.huawei.com/en/products/computing/kunpeng/desktop-board/d920s10). PCIE 3.0 instead of 4.0 from full server version.
 
-- Motherboard: ["BC32MBHB"](https://world.taobao.com/lang/zh-tw/goods/11814911.htm), bundled with [Powerleader PT620K](http://ec.ctiforum.com/jishu/qiye/qiye_news/591335.html) 2U server (shown in BIOS logo). **Supports 4Rx4 64G RDIMM, and 3200Mhz.** Soldered with CPU. *Desktop uATX board layout.*
+- Motherboard: ["BC32MBHB"](https://world.taobao.com/lang/zh-tw/goods/11814911.htm), bundled with [Powerleader PT620K](http://ec.ctiforum.com/jishu/qiye/qiye_news/591335.html) 2U server (shown in BIOS logo). **Supports 4Rx4 64G RDIMM, and 3200Mhz.** Soldered with CPU. *Desktop uATX board layout.* Also, **only AMD / ITAI GPU will boot!** Tested with multiple Nvidia and even Aspeed GPU, all boot with no screen.
 
 - Memory: 2x [UNILC DDR4 2666Mhz 8G 1RX8 UDIMM "SCE08GU03H1F1C-26V"](https://product.yesky.com/product/1100/1100448/). Note: Probably using [skhynix die](https://zhuanlan.zhihu.com/p/34562360), hiding under purple metal case. *The only module escaped the [price surge](https://www.tomshardware.com/pc-components/ram/ddr4-costs-soar-as-manufacturers-pull-the-plug).*
 
@@ -30,23 +32,23 @@
 
 - Case fan: [Thermalight TL-B8](https://www.thermalright.com/product/tl-b8/) with [Thermalight TL-B4020](https://www.thermalright.com/product/tl-b4020/). **The motherboard only supports PWM fan, even 2 pin fan won't spin.**
 
-- Case: [GTR S608-S](http://www.gtr.com.hk/GTR/case/micro_sfx/master.htm). Micro SFX Case / OEM Desktop SFF case in common size. *Explains the less popular size above.* Original 2U server was using Flex 1u PSU instead. 
+- Case: [GTR S608-S](http://www.gtr.com.hk/GTR/case/micro_sfx/master.htm). Micro SFX Case / OEM Desktop SFF case in common size. *Explains the less popular size above.* Original 2U server was using Flex 1u PSU instead.
 
 ## Software list ##
 
-### Match Linux Kernel Version first (5.x)! ###
+### Match Linux Kernel Version first (5.x) ###
 
-*This is the nightmare. Background timeline is important: Since the ITAI OS serves for utility services which aims for LTS support, kernel side integration is lacking behind, seriously.* 
+*This is the nightmare. Background timeline is important: Since the ITAI OS serves for utility services which aims for LTS support, kernel side integration is lacking behind, seriously.*
 
-- In 2405, [UOS claimed supporting dual kernel](https://faq.uniontech.com/solution/5cb3/39f8/05fd), which was still **4.19 and 5.10**. Similarly, commercial OS such as KylinOS and EulerOS, followed the **exact same version number**. 
+- In 2405, [UOS claimed supporting dual kernel](https://faq.uniontech.com/solution/5cb3/39f8/05fd), which was still **4.19 and 5.10**. Similarly, commercial OS such as KylinOS and EulerOS, followed the **exact same version number**.
 
-- At the same time, The opensource versions, [Deepin 23](https://www.deepin.org/zh/deepin-community-monthly-report-2024-08/), [openKylin 2.0](https://www.openatom.org/journalism/detail/wz0ZVCzcnOav), and [openEULER 24.03](https://www.openeuler.org/zh/interaction/summit-list/2403-version-release/), **all announced to load 6.6**. 
+- At the same time, The opensource versions, [Deepin 23](https://www.deepin.org/zh/deepin-community-monthly-report-2024-08/), [openKylin 2.0](https://www.openatom.org/journalism/detail/wz0ZVCzcnOav), and [openEULER 24.03](https://www.openeuler.org/zh/interaction/summit-list/2403-version-release/), **all announced to load 6.6**.
 
-- However, in [GPU driver page](https://www.jemoic.com/drive_67), when trying to **build the actual dkms driver**, all of them will throw error unless the Kernel is **5.x**, even the driver update date is very recent (e.g. 2510, 1 month ago). 
+- However, in [GPU driver page](https://www.jemoic.com/drive_67), when trying to **build the actual dkms driver**, all of them will throw error unless the Kernel is **5.x**, even the driver update date is very recent (e.g. 2510, 1 month ago).
 
-- Meanwhile, CPU archieture may screw things up. In this example, Kunpeng 920 use tsv110 as archieture, which is 64bit ARM v8.2. [openSUSE has a dedicated grub edit to install OS](https://zh.opensuse.org/index.php?title=%E9%B2%B2%E9%B9%8F920%E5%8F%B0%E5%BC%8F%E6%9C%BA%E5%AE%89%E8%A3%85&variant=zh), ubuntu 22.04 just hangs and refuse to install. 
+- Meanwhile, CPU archieture may screw things up. In this example, Kunpeng 920 use tsv110 as archieture, which is 64bit ARM v8.2. [openSUSE has a dedicated grub edit to install OS](https://zh.opensuse.org/index.php?title=%E9%B2%B2%E9%B9%8F920%E5%8F%B0%E5%BC%8F%E6%9C%BA%E5%AE%89%E8%A3%85&variant=zh), ubuntu 22.04 just hangs and refuse to install.
 
-```
+```sh
 linux /vmlinuz-5.4.18-53-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv initcall_blacklist=hisi_ddrc_pmu_module_init arm64.nompam
 ```
 
@@ -66,7 +68,7 @@ sudo lvextend -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv
 sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 ```
 
-- Then **add KylinOS repo and perform system update**. This will be useful to identify ITAI hardwares (it will identify and mark Kungpeng 920). 
+- Then **add KylinOS repo and perform system update**. This will be useful to identify ITAI hardwares (it will identify and mark Kungpeng 920).
 
 - The KylinOS V10 SP1 aarch64 is likely using [Kernel 5.4](https://www.hiascend.com/forum/thread-0201113562091848003-1-1.html), which match my own install. [However some of them may still stuck in 4.19](https://support.huaweicloud.com/intl/zh-cn/alaudacp-cnam/alaudacp_02.html)
 
