@@ -12,4 +12,6 @@
 
 ![25103002.jpg](./img/25103002.jpg)
 
-![25103001.jpg](./img/25103001.jpg)
+- (251209) n8n has moved to 2.0, but the [breaking changes](https://docs.n8n.io/2-0-breaking-changes/) has scared me off. This [article](https://www.cnblogs.com/vipstone/p/19309306) only covered some of my encountered crashes. Currently `2.0.0-rc.0` barely runs with `postgresdb`. Make sure enitre [n8n-task-runners.json](https://github.com/n8n-io/n8n/blob/master/docker/images/runners/n8n-task-runners.json) has been loded. 
+
+![25103001.jpg](./img/25120901.jpg)
