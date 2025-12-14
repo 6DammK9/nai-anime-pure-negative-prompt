@@ -250,7 +250,7 @@ Workers: hashing: 0 | get upload mode: 0 | pre-uploading: 39 | committing: 0 | w
 0999.tar: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 908M/908M [19:55<00:00, 760kB/s]
 ```
 
-``log
+```log
 ---------- 2025-01-18 21:25:05 (1:41:08) ----------
 Files:   hashed 1000/1000 (1.5T/1.5T) | pre-uploaded: 991/1000 (1.5T/1.5T) | committed: 946/1000 (1.5T/1.5T) | ignored: 0
 Workers: hashing: 0 | get upload mode: 0 | pre-uploading: 9 | committing: 0 | waiting: 117
