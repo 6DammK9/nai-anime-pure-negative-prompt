@@ -1,4 +1,4 @@
-# Quick Survey on the vpred patch (which killed WD1.5 and most SD2.1 models) #
+# Quick Survey on the v-predicton #
 
 ## TLDR ##
 
@@ -8,13 +8,17 @@
 
 - Despite current mixed review, it is more like a *parameter / streadgy issue* more than trainer issue.
 
-- Meanwhile, *SD2.1 can works properly and NSFW after the trainer fix.* [Vanilla approach](../ch06) should works.
+- Meanwhile, *SD2.1 works properly and NSFW after the trainer fix.* [Vanilla approach](../ch06) should works.
+
+- Months later, there are major SDXL finetunes using vpred.
 
 ## History of the issue (chronological order) ##
 
-- From [official SD2.0 github repository](https://github.com/Stability-AI/stablediffusion?tab=readme-ov-file), [this paper](https://arxiv.org/abs/2202.00512) is cited directly. **The "v" here refers to the variable used in SNR weighting.**
+- From [official SD2.0 github repository](https://github.com/Stability-AI/stablediffusion?tab=readme-ov-file), [this paper](https://arxiv.org/abs/2202.00512) is cited directly. **The "v" here refers to the variable used in SNR weighting, also claimed as "velocity".**
 
 ![25112601.jpg](./img/25112601.jpg)
+
+![26010402.jpg](./img/26010402.jpg)
 
 - vpred was applied in [SD2 in 2211](https://huggingface.co/stabilityai/stable-diffusion-2-base/commit/d65c7580f058a24da4fee25ce948c25147d3bd1f). *All SD2 / 2.1 models will have vpred enforced since then, until SDXL.*
 
