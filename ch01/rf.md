@@ -64,8 +64,8 @@
 
 - 48 steps as usual. The vpred config has applied (so I compared with [AC](../ch05/README_AC.md)).
 
-[xyz_grid-0081-1363847456-2112-2954-4-48-20260104124840.jpg](./img/xyz_grid-0081-1363847456-2112-2954-4-48-20260104124840.jpg)
+![xyz_grid-0081-1363847456-2112-2954-4-48-20260104124840.jpg](./img/xyz_grid-0081-1363847456-2112-2954-4-48-20260104124840.jpg)
 
 - Lowered to 8 steps. *I believe that A1111 should have some works to do for flow matching, however the VAE / vpred part is solved.*
 
-[xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg](./img/xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg)
+![xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg](./img/xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg)
