@@ -8,7 +8,7 @@
 
 - In contrast, original SD use *probability flow*. 
 
-- [A1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/16030) supports SD3 out of the box. From the [issue](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/16378) regarding flux support, sampler should be limited to [Euler](./k_euler.md) only. Besides A1111, ComfyUI and [ReForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) should support Flux out of the box, implies to Rectified Flow also.
+- [A1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/16030) supports SD3 out of the box. From the [issue](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/16378) regarding flux support, sampler should be limited to [Euler](./k_euler.md) only. Besides A1111, ComfyUI and [ReForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) should support Flux out of the box, implies to Rectified Flow also. See [flow matching](./flowmatching.md#training--inference-with-sdxl-models) for details.
 
 > (RD LoRA) Sampling method: Euler, DPM
 
@@ -69,3 +69,11 @@
 - Lowered to 8 steps. *I believe that A1111 should have some works to do for flow matching, however the VAE / vpred part is solved.*
 
 ![xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg](./img/xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg)
+
+- Joining the original [flow matching](https://huggingface.co/nyanko7/nyaflow-xl-alpha) model (non rectified). Notice the difference of sampling steps. *It is hard to imagine the middle model is trained from SDXL 0.9 instead of NoobAI, meanwhile approaches are very different. Model publish time: 2511, 2407, 2510.*
+
+![xyz_grid-0086-1363847456-2880-5706-4-4-20260104174810.jpg](./img/xyz_grid-0086-1363847456-2880-5706-4-4-20260104174810.jpg)
+
+- Switch to short prompt, in 8 steps.
+
+![xyz_grid-0085-2976896777-2304-1674-4-48-20260104173333.jpg](./img/xyz_grid-0085-2976896777-2304-1674-4-48-20260104173333.jpg)

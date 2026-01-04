@@ -20,6 +20,14 @@
 
 - Vector field can be easily rewritten as another [gradient](https://en.wikipedia.org/wiki/Gradient#Gradient_of_a_vector_field), **but do not confuse with the common gradient descent!** [Latent space](https://en.wikipedia.org/wiki/Latent_space) is different from [Parameter space](https://en.wikipedia.org/wiki/Parameter_space) even they are both [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space) and depends on data. Pixels are all real numbers without physical quantity / [geodesic](https://en.wikipedia.org/wiki/Geodesic). *Folding protein may consider quantum mechanic or gravity field, but in common folding models, they are still lies on classicial physics, which are still in Euclidean space.* Predicting the image via denoising is not considered as [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) which refers to [optimization algorithm](https://en.wikipedia.org/wiki/Global_optimization) instead of "following the continuity and probablity flow". **Repeat: No physical quantity involved.**
 
-## Guess ##
+## Training / Inference with SDXL models ##
 
-- *It is likely to implement flow matching on training SDXL (DDPM based model)*, without affecting the prediction / sampling process. However existing trainer codes (either [kohyas](https://github.com/kohya-ss/sd-scripts/tree/sd3) or [naifu](https://github.com/Mikubill/naifu)) are confusing.
+- *It is likely to implement flow matching on training SDXL (DDPM based model)*, without affecting the prediction / sampling process.
+
+- For trainer side, [naifu](https://github.com/Mikubill/naifu) is supported, leading to [nyaflow-xl-alpha](https://huggingface.co/nyanko7/nyaflow-xl-alpha) in 2411. kohyas has no dedicated integration, but [a fork](https://github.com/bluvoll/sd-scripts) has extended the work as [rectified flow](./rf.md), and lead to [the ongoing experimental model](https://huggingface.co/CabalResearch/NoobAI-RectifiedFlow-Experimental) in 2511.
+
+- For runtime (webui), [vpred](./vpred.md) config will work, despite having minor issue. The "velocity prediction" is loosely consistint across implementations. A dedicated "discrete model sampling" is required, and appears arch dependent. ["model_sampling" in reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/ldm_patched/modules/model_base.py#L72), ["ModelSamplingFlux" as A1111 PR](https://github.com/wkpark/stable-diffusion-webui/blob/minimal-flux-with-fp8-freeze/modules/models/flux/flux.py#L129), ["ModelSamplingDiscreteFlow" as A1111 SD3](https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/modules/models/sd3/sd3_impls.py#L15). Also, the "stochastic sampler" variant over plain Euler Method is tolerated, with "ancestral" sampler  being broken (not explored much).
+
+> The model is trained to predict the velocity V_t = \frac{dX_t}{dt}...
+
+- Image comparasion has moved to [rectified flow](./rf.md#image-comparasion) because the model development eventually groups multiple topics together (rectification is a seperated process). *This topic is stuck for so long because the implementation and citation of the v-prediction on SDXL took months to verify across users and eventually develop actual codes to run.* Meanwhile, SD3 / Flux1 got supressed by Qwen (and ComfyUI) eventually, making the discussion / experiment lacks of community support.
