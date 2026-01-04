@@ -2,6 +2,8 @@
 
 - Originated in [this paper](https://arxiv.org/abs/2209.03003). [Codebase](https://github.com/gnobitab/RectifiedFlow/blob/main/ImageGeneration/sampling.py#L68) shows that it expects plain Euler sampler only. It also expects [flow matching](./flowmatching.md) and [v-prediction](./vpred.md). This will be discussed again in below.
 
+- [Interactive article explaining the theory and comparasions.](https://diffusionflow.github.io/)
+
 ![26010403.jpg](./img/26010403.jpg)
 
 - Featured and cited in [SD3](https://arxiv.org/abs/2403.03206). 
@@ -40,7 +42,9 @@
 
 - [Wahtastic_FLOW_V10](https://huggingface.co/VelvetToroyashi/WahtasticMerge/blob/main/Wahtastic_FLOW_V10.safetensors) from [VelvetToroyashi/WahtasticMerge](https://huggingface.co/VelvetToroyashi/WahtasticMerge).
 
-- ["GRINP"](https://huggingface.co/yoinked/wan-22-experiments/blob/main/not-wan/GRINP.comfy.2.safetensors) *Added by request*
+### Examples of non-sdxl Rectified flow ### 
+
+- ["GRINP"](https://huggingface.co/yoinked/wan-22-experiments/blob/main/not-wan/GRINP.comfy.2.safetensors) *Added by request, unknown arch*
 
 ### Extra: EQ-VAE ###
 

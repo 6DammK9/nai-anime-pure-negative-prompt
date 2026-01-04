@@ -1,6 +1,6 @@
 # Chapter 01: Common content across models #
 
-General discovery. Theories, procedures, practices etc. However not model specific.
+General discovery. Theories, procedures, practices etc. They will seperate into sessions once they are forming to a big topic.
 
 - CFG-STEP scan: [cfg_step.md](./cfg_step.md)
 - Prior scan: [prior.md](./prior.md)
@@ -10,7 +10,6 @@ General discovery. Theories, procedures, practices etc. However not model specif
 - My procedure for making arts: [my_procedure.md](./my_procedure.md)
 - Materials on aesthetic analysis ~~and philosophy stuffs (Human value / aesthics / ambitious AI etc.)~~: [aesthetic.md](./aesthetic.md)
 - Extended use cases on AI art drawings: [controlnet.md](./controlnet.md)
-- "euler" is actually "momentum sampler" / "algorithm 2" : [k_euler.md](k_euler.md)
 - Findings on "Hi-Res" fix: [hires_fix.md](./hires_fix.md)
 - Findings on "Dynamic CFG / CFG rescale": [dynamic_cfg.md](./dynamic_cfg.md)
 - Findings on "Aspect Ratio Bucketing" (moved from CH98): [arb.md](./arb.md)
@@ -18,8 +17,14 @@ General discovery. Theories, procedures, practices etc. However not model specif
 - Findings on "FreeU": [freeu.md](freeu.md)
 - Findings on CFG along with "PAG" and "CHG": [cfg_pag_chg.md](./cfg_pag_chg.md)
 - Findings on precision "NF4": [nf4.md](./nf4.md)
-- Quick Survey on the "v-predicton", swapped parameter compared with eps / x0 prediction: [vpred.md](./vpred.md)
 - Findings on "Automagic Optimizer": [automagic.md](./automagic.md)
+
+This session is focus on [flow matching](https://diffusionflow.github.io/), which starts being the trend from the original "diffusion model" (DDPM in precise).
+
+*This repo will stay at SDXL (model arch), A1111 (runtime), kohyas (trainer), but keep envolving with the new technology and theories.*
+
+- "euler" is actually "stochastic sampler" / "algorithm 2" : [k_euler.md](k_euler.md)
+- Quick Survey on the "v-predicton", swapped parameter compared with eps / x0 prediction: [vpred.md](./vpred.md)
 - Findings on "flow matching": [flowmatching.md](./flowmatching.md)
 - Quick Survey on the rectified flow: [rf.md](./rf.md)
 
