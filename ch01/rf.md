@@ -1,6 +1,6 @@
 # Quick Survey on the rectified flow #
 
-- Originated in [this paper](https://arxiv.org/abs/2209.03003). [Codebase](https://github.com/gnobitab/RectifiedFlow/blob/main/ImageGeneration/sampling.py#L68) shows that it expects plain Euler sampler only. It also expects flow matching and v-prediction. This will be discussed again in below.
+- Originated in [this paper](https://arxiv.org/abs/2209.03003). [Codebase](https://github.com/gnobitab/RectifiedFlow/blob/main/ImageGeneration/sampling.py#L68) shows that it expects plain Euler sampler only. It also expects [flow matching](./flowmatching.md) and [v-prediction](./vpred.md). This will be discussed again in below.
 
 ![26010403.jpg](./img/26010403.jpg)
 
@@ -39,3 +39,33 @@
 - [WAI-illustrious-Rectified-4Steps](https://civitai.com/models/1355945). Note: *Rectified Diffusion*.
 
 - [Wahtastic_FLOW_V10](https://huggingface.co/VelvetToroyashi/WahtasticMerge/blob/main/Wahtastic_FLOW_V10.safetensors) from [VelvetToroyashi/WahtasticMerge](https://huggingface.co/VelvetToroyashi/WahtasticMerge).
+
+- ["GRINP"](https://huggingface.co/yoinked/wan-22-experiments/blob/main/not-wan/GRINP.comfy.2.safetensors) *Added by request*
+
+### Extra: EQ-VAE ###
+
+- Written to have any chance to run the bundled "NAI-RF" model.
+
+- Origin of EQ-VAE: [arxiv paper](https://arxiv.org/abs/2502.09509), [EQ-SDXL-VAE](https://huggingface.co/KBlueLeaf/EQ-SDXL-VAE).
+
+> This model is heavily finetuned from SDXL-VAE and introduce a totally new latent space. YOU CAN'T USE THIS ON YOUR SDXL MODEL.
+
+- ["EQB7" VAE](https://huggingface.co/Anzhc/MS-LC-EQ-D-VR_VAE/blob/main/EQB7.safetensors), bundled [Noobai11EQB7](https://huggingface.co/Anzhc/Noobai11-EQ/blob/main/Noobai11EQB7.safetensors). [CivitAI mirror](https://civitai.com/models/1835161/noob11eps-eq).
+
+- The behaviour matches the model description. Both "oversharpening and ringing" and "blurry" are identified.
+
+> This is a finetuned SDXL VAE, adapted with new regularization, and other techniques. You can use this with your existing SDXL model, but image will be quite artefacting, particularly - oversharpening and ringing. This VAE is supposed to be used for finetune, after that images will become normal. But be aware, compatibility with old VAEs, that are not EQ, will be lost(They will become blurry).
+
+- However, the required *reflection padding* may tolerate *zero padding* as well. [Code reference in A1111.](https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/modules/sd_hijack.py#L318)
+
+![xyz_grid-0079-1363847456-2112-2954-4-48-20260104120802.jpg](./img/xyz_grid-0079-1363847456-2112-2954-4-48-20260104120802.jpg)
+
+### Image comparasion ###
+
+- 48 steps as usual. The vpred config has applied (so I compared with [AC](../ch05/README_AC.md)).
+
+[xyz_grid-0081-1363847456-2112-2954-4-48-20260104124840.jpg](./img/xyz_grid-0081-1363847456-2112-2954-4-48-20260104124840.jpg)
+
+- Lowered to 8 steps. *I believe that A1111 should have some works to do for flow matching, however the VAE / vpred part is solved.*
+
+[xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg](./img/xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg)
