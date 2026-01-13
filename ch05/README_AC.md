@@ -83,3 +83,29 @@
 - *Currently returning to [EPS trainning](../ch06/gallery_2511.md).* I have watched some generation preview (available in A1111) and find that the denoise process just snapped in early steps, which implies that it probably really can't handle my raw dataset. Same issue appears in the "working vpred merge" which the model may need a strong bias to generate with vpred process instead of the low bias in eps (eps blur but vpred just go straight into noise).
 
 ![25112302.jpg](./img/ac/25112302.jpg)
+
+## Retry with the AK-Evo 2EP ##
+
+- Vpred from 2EP is basically no luck.
+
+![xyz_grid-0118-1781861418-8064-1081-4-48-20260110225944.jpg](./img/ac/xyz_grid-0118-1781861418-8064-1081-4-48-20260110225944.jpg)
+
+- However, vpred from the merged AK-Evo 2EP, since it has already have the original dataset burnt in, the "6k Astolfo" **subset** works quite well.
+
+![xyz_grid-0123-1781861418-8064-1055-4-48-20260112073558.jpg](./img/ac/xyz_grid-0123-1781861418-8064-1055-4-48-20260112073558.jpg)
+
+- After some grid search on ratio, it fits with 0.85, which is between 0.75 and 0.9. *It looks like underfit, by comparing with the work in 2511.*
+
+![xyz_grid-0124-1781861418-6720-1055-4-48-20260112074918.jpg](./img/ac/xyz_grid-0124-1781861418-6720-1055-4-48-20260112074918.jpg)
+
+![xyz_grid-0132-1781861418-5376-1039-4-48-20260112225112.jpg](./img/ac/xyz_grid-0132-1781861418-5376-1039-4-48-20260112225112.jpg)
+
+- Switching prompts are having similar result. It is just uncertain for the optimal ratio.
+
+![xyz_grid-0126-1781861418-5376-1039-4-48-20260112221021.jpg](./img/ac/xyz_grid-0126-1781861418-5376-1039-4-48-20260112221021.jpg)
+
+![xyz_grid-0128-1781861418-5376-1039-4-48-20260112222931.jpg](./img/ac/xyz_grid-0128-1781861418-5376-1039-4-48-20260112222931.jpg)
+
+- By comparing with more prompts, the optimal ratio is more certain.
+
+![xyz_grid-0131-2934581839-4096-1327-4-48-20260112224654.jpg](./img/ac/xyz_grid-0131-2934581839-4096-1327-4-48-20260112224654.jpg)

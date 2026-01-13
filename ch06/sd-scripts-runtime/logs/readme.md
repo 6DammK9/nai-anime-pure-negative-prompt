@@ -116,4 +116,12 @@ Merge as "weighted sum", 1.0 = full trained weight, 0.0 = base model weight.
 
 - `model_out_25111701`: Failed. Stopped after 55k steps.
 - `model_out_25112101`: **AC-NIL-0.11.** (unreleased, the `25111701h-05-10k-75`). Got `nan` after 14k steps.
-- `model_out_25112201`: **Return to eps mode.** Pending.
+- `model_out_25112201`: **Return to eps mode.** steps 0-**1EP** (778k). **Works after merge.**
+
+### 2601: Try again ###
+
+Unless specified: SDXL, AK-Evo 2EP base, AdamW8bit, 6k dataset, Dual Tag (concat, a1111 token trick), 4GPU, BS1, GA 4 step. VPred mode, zstnr, min gamma 5. 1.0e-5, TTE off.
+
+- `model_out_25111001`: **2EP base.** 10EP. Failed. 
+- `model_out_25111101`: 8EP. Has hope after merge (0.85).
+- `model_out_25111102`: 8+49EP. Pending.
