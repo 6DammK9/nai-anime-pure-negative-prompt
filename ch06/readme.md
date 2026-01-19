@@ -65,3 +65,23 @@
 - [SanaeXL](https://huggingface.co/SanaeLab/SanaeXL-anime-v1.0). 1EP on "7.8M + 1.4M + 2.2M + 2.4M = 13.8M", lr unknown. ["4090x1 with 120+ days"](https://civitai.com/models/647664/sanaexl-anime-v10?dialog=commentThread&commentId=526387)
 
 - ["Ours"](https://huggingface.co/6DammK9/AstolfoXL) [(mirror)](https://civitai.com/models/1489964?modelVersionId=1771150) ~~draft~~: ~~At most~~ 1EP on "~~at most~~ 8M + 4.6M", "1.5e-6 + 1.2e-5". [3090x4 with 45+ days.](./sd-scripts-runtime/logs/readme.md) [2000 kWh with around 3000HKD spent.](https://www.clp.com.hk/en/residential/bills-payment-tariffs-residential/bill-calculator). *I will continue training when it gets enough impact, or it gets dirt cheap to rush to 5EP.*  ~~Obviously a lot cheaper than renting cloud because I own the cards (as hobby, take it or leave it).~~
+
+### Public Evaluation on my models ###
+
+- Scoreboard of [NoobAI based "weeb-arena"](https://huggingface.co/spaces/yoinked/weeb-arena-results), created by [yoinked](https://huggingface.co/yoinked). Many thanks for the kindness to include my model (and Karmix in s2).
+
+- Despite quite a naive approach of the arena design, which community use highly customized (ComfyUI) workflows, or extended (reForge) WebUI with extensions most of the time, it is very rare to have enough dedication and resources to organize such a open public evaluation. It is very valuable to record this event.
+
+- Since my approach is taking most varity with least bias, I expect for neutral result (or being middle / mediocre / ["golden mean"](https://en.wikipedia.org/wiki/Golden_mean_(philosophy)) ~~中庸~~), which is [ELO 1500 or 50% rate](https://en.wikipedia.org/wiki/Elo_rating_system), and s2 is quite towards that point.
+
+- *The meta bias towards "merged model (usually in multiple iterlations) > trained model (just once or twice)", "nice bias > no bias > wrong bias", which may change when rules / prompts / "cherrypicking images" are changed.*
+
+- The arena is not hosted for long time, so the links are not quite meaningful. Meanwhile they are just published Gradio App with random URLs.
+
+- My application model is the [AK-Evo 2EP](./gallery_2511.md#findings-after-train).
+
+![26011901.jpg](./img/26011901.jpg)
+
+![26011902.jpg](./img/26011902.jpg)
+
+![26011903.jpg](./img/26011903.jpg)
