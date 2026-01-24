@@ -109,3 +109,15 @@
 - By comparing with more prompts, the optimal ratio is more certain.
 
 ![xyz_grid-0131-2934581839-4096-1327-4-48-20260112224654.jpg](./img/ac/xyz_grid-0131-2934581839-4096-1327-4-48-20260112224654.jpg)
+
+- After monitoring the process, *situation is changed again*. Now the "working condition" is so complicated. [The draw.io file.](../ch02/26012401.drawio)
+
+![26012401.jpg](./img/ac/26012401.jpg)
+
+- Although the image content is not fully inherited, it is basically dodged the `nan` problem.
+
+- Since Astolfo has been trained for 57EP, I can't use him to judge the effective anymore. However, that step is crucial, unless I make a dedicated "1girl 1k 10x repeat" like Hina (it will take a few days to code and test, and I prefer relying on previous good configs, since entire project has no one else to reference...)
+
+![xyz_grid-0115-3257703891-7680-1673-4-48-20260124161514.jpg](./img/ac/xyz_grid-0115-3257703891-7680-1673-4-48-20260124161514.jpg)
+
+![xyz_grid-0116-4102532823-7680-1673-4-48-20260124163046.jpg](./img/ac/xyz_grid-0116-4102532823-7680-1673-4-48-20260124163046.jpg)
