@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.4">
   <diagram name="第 1 页" id="RCxT_jm2grQ6aDPCF8wK">
     <mxGraphModel dx="2066" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -48,7 +48,7 @@
         <mxCell id="9z8kOvHqldKRsNJPHwD9-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="hina vpred FFT, 1k 1girl 10 repeat 5EP" vertex="1">
           <mxGeometry height="60" width="280" x="460" y="250" as="geometry" />
         </mxCell>
-        <mxCell id="9z8kOvHqldKRsNJPHwD9-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&quot;Weighted Sum&quot; x0.55" vertex="1">
+        <mxCell id="9z8kOvHqldKRsNJPHwD9-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&quot;Weighted Sum&quot; x0.75" vertex="1">
           <mxGeometry height="50" width="80" x="600" y="340" as="geometry" />
         </mxCell>
         <mxCell id="9z8kOvHqldKRsNJPHwD9-21" edge="1" parent="1" source="9z8kOvHqldKRsNJPHwD9-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="9z8kOvHqldKRsNJPHwD9-18">
@@ -93,7 +93,7 @@
         <mxCell id="9z8kOvHqldKRsNJPHwD9-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="(intermediate model)" vertex="1">
           <mxGeometry height="60" width="120" x="120" y="760" as="geometry" />
         </mxCell>
-        <mxCell id="9z8kOvHqldKRsNJPHwD9-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="vpred FFT 12.4M 0.2EP" vertex="1">
+        <mxCell id="9z8kOvHqldKRsNJPHwD9-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="vpred FFT 12.4M 0.3EP" vertex="1">
           <mxGeometry height="50" width="180" x="180" y="710" as="geometry" />
         </mxCell>
         <mxCell id="9z8kOvHqldKRsNJPHwD9-44" edge="1" parent="1" source="9z8kOvHqldKRsNJPHwD9-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="9z8kOvHqldKRsNJPHwD9-43">

@@ -796,3 +796,7 @@ accelerate launch sdxl_train.py
 |Xeon W-2295 ES "QSU0"|Asus ROG R6E (*instable*)|200-235|2.092|
 |AMD EPYC 7302P|Tyan S8030|200-275|3.048|
 |AMD EPYC 7F52|Tyan S8030|225-275|**3.259**, 4.000 (grad accu = 64)|
+
+## Exploring SDXL-RF ##
+
+- Since there is no official implementation for SDXL-RF, which SD3 / Flux use RF but have entirely different codebase, I need to do another [code analysis](./kohyas.md#260125-code-analysis-before-training-sdxl-rf) and validate [my prior research findings](../../ch01/rf.md).

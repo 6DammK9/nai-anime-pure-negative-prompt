@@ -251,3 +251,46 @@ deepspeed_plugin = DeepSpeedPlugin(
     zero3_save_16bit_model=args.zero3_save_16bit_model,
 )
 ```
+
+## (260125) Code analysis before training SDXL-RF ##
+
+- Referring to [bluvoll's fork for RF training](../../ch01/rf.md).
+
+- RF code seems complicated and it is not easy to merge with my own fork. I would direct run the fork if it modified too many things.
+
+- *As an reminder to me*, I have already layered / refractored quite a bit. Tracking `train_network.py` is preferred. Meanwhile, it may cause conflict between my core functions (even they are just abstracted from original kohyas code).
+
+- It is enabled by `--flow_model` which is comparable to `--v_parameterization`. It modify `get_noise_noisy_latents_and_timesteps` for extracting more (math) parameters. Notice that RF is not compatable with vpred and related algorithms.
+
+- There is an advanced [OT-CFM](https://arxiv.org/abs/2302.00482) by `--flow_use_ot`, and `def cosine_optimal_transport`, which requries additional libraries. *Better not apply it for simplicity.*
+
+- Moreover, there is another CFM called [Contrastive Flow Matching](https://arxiv.org/abs/2506.05350) by `--contrastive_flow_matching` and `--cfm_lambda`. *Don't know why it ties with "per_pixel_loss", it should consider as FM exclusive algorithm.*
+
+> Note that ∆FM can be thought of as a generalization of flow matching, as ∆FM reduces to FM when λ = 0.
+
+- Besides RF, SD3 suggested **Logit-Normal Sampling**, by [Logit-normal distribution](https://en.wikipedia.org/wiki/Logit-normal_distribution), The default $(0,1)$ will be a safe bet, which is the default value of `--flow_logit_mean` and `--flow_logit_std`. 
+
+- SD3 (and [Flux 2](https://huggingface.co/blog/flux-2)) also suggested **Resolution-dependent shifting of timestep schedules** as [On the Importance of Noise Scheduling for Diffusion Models](https://arxiv.org/abs/2301.10972), which is implemented as `--flow_uniform_shift`, `--flow_uniform_base_pixels`, and `--flow_uniform_static_ratio`. *SD3 paper suggseted 3.0 but the code has a default value of live computing image resolution... which is close to 1.0 in ARB mode.* I will use `--flow_uniform_shift` only.
+
+```py
+#Original: Hardcoded as 3.0 for all resolutions
+model_sampling = sd3_utils.ModelSamplingDiscreteFlow(shift=3.0)  # 3.0 is for SD3
+return self.shift * timestep / (1 + (self.shift - 1) * timestep)
+#Bluboll: ratios = flow_uniform_static_ratio or calcaulted value (tends to 1.0)
+ratios = torch.sqrt(pixel_counts / base_pixels)
+t_ref = sigmas = ratios * t_ref / (1 + (ratios - 1) * t_ref)
+```
+
+- If the modified `sigma`, or `timestep` must be expanded for the modified `mu` = `shift` = `ratios` = `flow_uniform_static_ratio` = `sqrt(m/n)`, **I can disable it by setting it as 1.** 
+
+> (CN article) 总之，这个 mu 可能是训练的时候加的，用于给高分辨率图像加更多噪声，推理时也不得不带上这个变量。
+
+> (SD3) In our subsequent experiments, we thus use a shift value of α = 3.0 **both during training and sampling** at resolution 1024 × 1024.
+
+> (2301.10972) If the variance normalization is used during the training (not in RF), it should also be used during the sampling. Note that since we use a continuous timesteps $t∈[0,1]$, so the inference schedule does not need to be the same as training schedule.
+
+- The additional `huber_c` variable is the answer of the unimplemented Huber Loss (Logit-normal depends on timestep like Huber Loss). As the expansion, `def get_timesteps` is changed to `def get_timesteps_and_huber_c`.
+
+> (kohyas code) NOTE: if you're using the scheduled version, huber_c has to depend on the timesteps already
+
+- *Someone claimed that it patched the Dataloader to speed up the training process, however the code seems identical.*

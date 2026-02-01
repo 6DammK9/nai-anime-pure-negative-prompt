@@ -126,4 +126,4 @@
 
 - *The "furry femboy Astolfo with dojinshi face" is exactly the projection of the expectations, which is insanely high.* This time I use Mahiro instead.
 
-![260282-386546954-768-1344-4-48-20260124232822.jpg](./img/ac/260282-386546954-768-1344-4-48-20260124232822.jpg)
+![xyz_grid-0123-2520542416-8064-1081-4-48-20260129230217.jpg](./img/ac/xyz_grid-0123-2520542416-8064-1081-4-48-20260129230217.jpg)

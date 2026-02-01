@@ -14,7 +14,7 @@
 
 ## History of the issue (chronological order) ##
 
-- From [official SD2.0 github repository](https://github.com/Stability-AI/stablediffusion?tab=readme-ov-file), [this paper](https://arxiv.org/abs/2202.00512) is cited directly. **The "v" here refers to the variable used in SNR weighting, also claimed as "velocity".**
+- From [official SD2.0 github repository](https://github.com/Stability-AI/stablediffusion?tab=readme-ov-file) [(forked repo)](https://github.com/w-e-w/stablediffusion?tab=readme-ov-file), [this paper](https://arxiv.org/abs/2202.00512) is cited directly. **The "v" here refers to the variable used in SNR weighting, also claimed as "velocity".**
 
 ![25112601.jpg](./img/25112601.jpg)
 

@@ -10,6 +10,8 @@
 
 - Maybe just look at [Diffusion Model](https://en.wikipedia.org/wiki/Diffusion_model) in wiki (not applicable years ago!)
 
+- (260201 update) It is *similar* to [vpred](./vpred.md), but with reparamaterizing the timestep and sampling. The "continious time" representation can be eiher "interpolated (Diff2Flow)", or drop entirely to be [Rectified Flow](./rf.md) with *negligible difference*.
+
 ## Comparasion with "score matching" ##
 
 - *They can be easily validated by updated online LLM, because they just scrape all the contents above.*
@@ -22,12 +24,44 @@
 
 ## Training / Inference with SDXL models ##
 
-- *It is likely to implement flow matching on training SDXL (DDPM based model)*, without affecting the prediction / sampling process.
+**There is no "plain Flow Matching For SD". The "interpolation of (timestep) sampling trajectories" are undefined.** If we use linear [interpolation](https://en.wikipedia.org/wiki/Interpolation) instead of NN, we have Diff2Flow. When we drop the `alphas_cumprod[timesteps]`, we have Rectified Flow.
 
-- For trainer side, [naifu](https://github.com/Mikubill/naifu) is supported, leading to [nyaflow-xl-alpha](https://huggingface.co/nyanko7/nyaflow-xl-alpha) in 2411. kohyas has no dedicated integration, but [a fork](https://github.com/bluvoll/sd-scripts) has extended the work as [rectified flow](./rf.md), and lead to [the ongoing experimental model](https://huggingface.co/CabalResearch/NoobAI-RectifiedFlow-Experimental) in 2511.
+- For trainer side, [naifu](https://github.com/Mikubill/naifu) is ~~supported~~ **adapted from SD3's implementation** (i.e. RF + logit-normal + timestep shift), leading to [nyaflow-xl-alpha](https://huggingface.co/nyanko7/nyaflow-xl-alpha) in 2411. 
+
+- kohyas has no dedicated integration, but [a fork](https://github.com/bluvoll/sd-scripts) has further adapted from naifu code (instead of SD3 branch), claimed as [rectified flow](./rf.md), which is in fact "RF + logit-normal + timestep shift" also, and lead to [the ongoing experimental model](https://huggingface.co/CabalResearch/NoobAI-RectifiedFlow-Experimental) in 2511.
+
+![26020106.jpg](./img/26020106.jpg)
 
 - For runtime (webui), [vpred](./vpred.md) config will work, despite having minor issue. The "velocity prediction" is loosely consistint across implementations. A dedicated "discrete model sampling" is required, and appears arch dependent. ["model_sampling" in reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/ldm_patched/modules/model_base.py#L72), ["ModelSamplingFlux" as A1111 PR](https://github.com/wkpark/stable-diffusion-webui/blob/minimal-flux-with-fp8-freeze/modules/models/flux/flux.py#L129), ["ModelSamplingDiscreteFlow" as A1111 SD3](https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/modules/models/sd3/sd3_impls.py#L15). Also, the "stochastic sampler" variant over plain Euler Method is tolerated, with "ancestral" sampler  being broken (not explored much).
 
 > The model is trained to predict the velocity V_t = \frac{dX_t}{dt}...
 
 - Image comparasion has moved to [rectified flow](./rf.md#image-comparasion) because the model development eventually groups multiple topics together (rectification is a seperated process). *This topic is stuck for so long because the implementation and citation of the v-prediction on SDXL took months to verify across users and eventually develop actual codes to run.* Meanwhile, SD3 / Flux1 got supressed by Qwen (and ComfyUI) eventually, making the discussion / experiment lacks of community support.
+
+## "Equlivance / Similarity" between "velocity" (Diffusion) and "vector" (Flow Matching) ##
+
+- [Interactive article explaining the theory and comparasions.](https://diffusionflow.github.io/)
+
+> Using simple algebra, we can derive that for ..., where ... is the “velocity”, “flow”, or “vector field”. 
+
+> Flow matching weighting == diffusion weighting of v-MSE loss + cosine noise schedule.
+
+> Diffusion with DDIM sampler == Flow matching sampler (Euler).
+
+> Difference in network outputs: The network output proposed by flow matching is new, which nicely balances x-prediction and ϵ-prediction, similar to v-prediction.
+
+![26020103.jpg](./img/26020103.jpg)
+
+- [Lecture Notes (14)](https://cs231n.stanford.edu/slides/2025/lecture_14.pdf) in ["CS231n"](https://cs231n.stanford.edu/schedule.html)
+
+> Warning: Terminology and notation in this area is a mess!
+
+> We’ll just cover the basics of a modern “clean” implementation (Rectified Flow)
+
+- [Diff2Flow](https://arxiv.org/abs/2506.02221)
+
+> Our work extends this by explicitly formulating a method to map discrete diffusion trajectory to a continuous flow matching trajectory.
+
+![26020104.jpg](./img/26020104.jpg)
+
+![26020105.jpg](./img/26020105.jpg)

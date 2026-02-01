@@ -6,7 +6,7 @@
 
 ![26010403.jpg](./img/26010403.jpg)
 
-- Featured and cited in [SD3](https://arxiv.org/abs/2403.03206). 
+- Featured and cited in [SD3](https://arxiv.org/abs/2403.03206). [SD3 used many new theories, not just RF.](https://github.com/mini-sora/minisora/blob/main/notes/SD3_zh-CN.md)
 
 - In contrast, original SD use *probability flow*. 
 
@@ -31,6 +31,16 @@
 > (RD LoRA) *Sampling steps: 4. CFG scale: 1~1.5.*
 
 > (NAI-RF) Rectified Flow is indeed the next step in SDXL's improvement efforts... *Steps: 20-28*
+
+- From SD3 paper, it has perfomed some basic comparasion across `eps/linear`, `v/linear`, and `rf/lognorm(0,1)`.
+
+> Rectified flow formulations generally perform well and, compared to other formulations, their performance degrades less when reducing the number of sampling steps.
+
+![26012501.jpg](./img/26012501.jpg)
+
+- Meanwhile, there is no direct indication that *inference code must be adapted when the training timestep distribution has been changed.*
+
+- See [my further study](../ch06/sd-scripts-runtime/readme.md#260125-code-review-before-training) on additional algorithms used by SD3 / Flux, without switching models. [This blog](https://zhouyifan.net/2024/09/03/20240809-flux1/) and [this article](https://github.com/mini-sora/minisora/blob/main/notes/SD3_zh-CN.md) will be very useful to understand addtional concepts. I'll keep this article RF exclusive.
 
 ### Examples of SDXL Rectified flow ### 
 
@@ -74,7 +84,7 @@
 
 ![xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg](./img/xyz_grid-0082-1363847456-2112-2954-4-8-20260104125121.jpg)
 
-- Joining the original [flow matching](https://huggingface.co/nyanko7/nyaflow-xl-alpha) model (non rectified). Notice the difference of sampling steps. *It is hard to imagine the middle model is trained from SDXL 0.9 instead of NoobAI, meanwhile approaches are very different. Model publish time: 2511, 2407, 2510.*
+- Joining the original [~~flow matching~~ rf](https://huggingface.co/nyanko7/nyaflow-xl-alpha) model. Notice the difference of sampling steps. *It is hard to imagine the middle model is trained from SDXL 0.9 instead of NoobAI, meanwhile approaches are very different. Model publish time: 2511, 2407, 2510.*
 
 ![xyz_grid-0086-1363847456-2880-5706-4-4-20260104174810.jpg](./img/xyz_grid-0086-1363847456-2880-5706-4-4-20260104174810.jpg)
 
