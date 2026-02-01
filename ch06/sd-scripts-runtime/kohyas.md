@@ -262,7 +262,7 @@ deepspeed_plugin = DeepSpeedPlugin(
 
 - It is enabled by `--flow_model` which is comparable to `--v_parameterization`. It modify `get_noise_noisy_latents_and_timesteps` for extracting more (math) parameters. Notice that RF is not compatable with vpred and related algorithms.
 
-- There is an advanced [OT-CFM](https://arxiv.org/abs/2302.00482) by `--flow_use_ot`, and `def cosine_optimal_transport`, which requries additional libraries. *Better not apply it for simplicity.*
+- There is an advanced [OT-CFM](https://arxiv.org/abs/2302.00482) / [Difference between RF and OT-CFM](https://arxiv.org/abs/2505.19712) by `--flow_use_ot`, and `def cosine_optimal_transport`, which requries [additional libraries](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linear_sum_assignment.html) ([SOLVELAP](https://en.wikipedia.org/wiki/Assignment_problem) as in [ReBasin](../../ch01/rebasin.md)). *Better not apply it for simplicity.*
 
 - Moreover, there is another CFM called [Contrastive Flow Matching](https://arxiv.org/abs/2506.05350) by `--contrastive_flow_matching` and `--cfm_lambda`. *Don't know why it ties with "per_pixel_loss", it should consider as FM exclusive algorithm.*
 
