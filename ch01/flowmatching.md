@@ -30,6 +30,8 @@
 
 - kohyas has no dedicated integration, but [a fork](https://github.com/bluvoll/sd-scripts) has further adapted from naifu code (instead of SD3 branch), claimed as [rectified flow](./rf.md), which is in fact "RF + logit-normal + timestep shift" also, and lead to [the ongoing experimental model](https://huggingface.co/CabalResearch/NoobAI-RectifiedFlow-Experimental) in 2511.
 
+- Code reference: [forked kohyas](https://github.com/bluvoll/sd-scripts-f2vae/blob/main/train_network.py#L1108), [naifu](https://github.com/Mikubill/naifu/blob/main/modules/train_sdxl_flow.py#L115), [diff2flow](https://github.com/CompVis/diff2flow/blob/main/diff2flow/flow_obj.py#L134), [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/ldm_patched/modules/model_sampling.py#L256)
+
 ![26020106.jpg](./img/26020106.jpg)
 
 - For runtime (webui), [vpred](./vpred.md) config will work, despite having minor issue. The "velocity prediction" is loosely consistint across implementations. A dedicated "discrete model sampling" is required, and appears arch dependent. ["model_sampling" in reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/ldm_patched/modules/model_base.py#L72), ["ModelSamplingFlux" as A1111 PR](https://github.com/wkpark/stable-diffusion-webui/blob/minimal-flux-with-fp8-freeze/modules/models/flux/flux.py#L129), ["ModelSamplingDiscreteFlow" as A1111 SD3](https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/modules/models/sd3/sd3_impls.py#L15). Also, the "stochastic sampler" variant over plain Euler Method is tolerated, with "ancestral" sampler  being broken (not explored much).
