@@ -91,3 +91,7 @@
 - Switch to short prompt, in 8 steps.
 
 ![xyz_grid-0085-2976896777-2304-1674-4-48-20260104173333.jpg](./img/xyz_grid-0085-2976896777-2304-1674-4-48-20260104173333.jpg)
+
+- Further to confirm in ReForge with **Comfy Backend "ldm-patched" and the SD3 sampler (RF with timeshift)**. Corresponding old config is **Discrete sampler with v-prediction and zstnr**. It is very close to A1111 backend (however the yaml approach may be lost).
+
+![26020801.jpg](./img/26020801.jpg)
