@@ -18,6 +18,8 @@ Usually "not article".
 
 - A block diagram about "Enterprise n8n infrastructure": [n8n.md](n8n.md)
 
+- Mega rant on ComfyUI (with workflow): [comfy_workflow.md](comfy_workflow.md)
+
 ## Scripts (Convert to diffuser and upload to HuggingFace later) ##
 
 - `convert_sdxl_to_diffusers.py`: My fork of [convert_sdxl_to_diffusers.py](https://github.com/Linaqruf/sdxl-model-converter/blob/main/convert_sdxl_to_diffusers.py). Added quick guide on the top.
@@ -42,9 +44,3 @@ Usually "not article".
 
 - `extract_merge_info.js`: Extract the actual JSON from [safetensors_util](https://github.com/by321/safetensors_util). *Author closed my PR. Fine.*
 - `batch_extract.cmd`: By batch. *May fail a lot.*
-
-
-## ComfyUI Workflow ##
-
-- `Basic VPred.json`: A workflow for ComfyUI to support my model. Considered the [special case](../ch06/gallery_2602.md#hitting-the-math-corner) which eventually derives 2 models. However, [I won't edit my model for that placeholder layer.](https://github.com/Comfy-Org/ComfyUI/blame/master/comfy/supported_models.py#L214)
-
