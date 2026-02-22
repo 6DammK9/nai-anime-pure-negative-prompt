@@ -127,3 +127,5 @@
 - *The "furry femboy Astolfo with dojinshi face" is exactly the projection of the expectations, which is insanely high.* This time I use Mahiro instead.
 
 ![xyz_grid-0123-2520542416-8064-1081-4-48-20260129230217.jpg](./img/ac/xyz_grid-0123-2520542416-8064-1081-4-48-20260129230217.jpg)
+
+- Later, the training progress emerges again and I no longer needed merging with the "AC-hinaFT on 251117", which becomes purely Evo (and VL) 2.5EP series. The progress will continue as [AC-Evo 2.5EP](./gallery_2602.md#the-interleaved-past).

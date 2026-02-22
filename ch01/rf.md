@@ -95,3 +95,15 @@
 - Further to confirm in ReForge with **Comfy Backend "ldm-patched" and the SD3 sampler (RF with timeshift)**. Corresponding old config is **Discrete sampler with v-prediction and zstnr**. It is very close to A1111 backend (however the yaml approach may be lost).
 
 ![26020801.jpg](./img/26020801.jpg)
+
+## Extra: Inferencing weakened RF as VPred Models ##
+
+- Since most model weights are content focused instead of objective variable focused, slightly weakening them can predict as images a bit better.
+
+![xyz_grid-0132-2934581839-6144-1343-4-48-20260201182401](./img/xyz_grid-0132-2934581839-6144-1343-4-48-20260201182401.jpg)
+
+![xyz_grid-0133-3500631173-8064-1098-4-48-20260201201344](./img/xyz_grid-0133-3500631173-8064-1098-4-48-20260201201344.jpg)
+
+- Although the deepmind article stated that the conversion between DDPM (Euler) and DDIM, the end result shows minor difference only. It may be an issue in inferencing code, or the model (vector field) showing capabilities on multitasking. 
+
+![xyz_grid-0134-3500631173-3696-4756-4-48-20260202015143](./img/xyz_grid-0134-3500631173-3696-4756-4-48-20260202015143.jpg)
