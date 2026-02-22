@@ -42,3 +42,9 @@ Usually "not article".
 
 - `extract_merge_info.js`: Extract the actual JSON from [safetensors_util](https://github.com/by321/safetensors_util). *Author closed my PR. Fine.*
 - `batch_extract.cmd`: By batch. *May fail a lot.*
+
+
+## ComfyUI Workflow ##
+
+- `Basic VPred.json`: A workflow for ComfyUI to support my model. Considered the [special case](../ch06/gallery_2602.md#hitting-the-math-corner) which eventually derives 2 models. However, [I won't edit my model for that placeholder layer.](https://github.com/Comfy-Org/ComfyUI/blame/master/comfy/supported_models.py#L214)
+
