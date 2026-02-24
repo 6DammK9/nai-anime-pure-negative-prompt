@@ -122,6 +122,13 @@ Merge as "weighted sum", 1.0 = full trained weight, 0.0 = base model weight.
 
 Unless specified: SDXL, AK-Evo 2EP base, AdamW8bit, 6k dataset, Dual Tag (concat, a1111 token trick), 4GPU, BS1, GA 4 step. VPred mode, zstnr, min gamma 5. 1.0e-5, TTE off.
 
-- `model_out_25111001`: **2EP base.** 10EP. Failed. 
-- `model_out_25111101`: 8EP. Has hope after merge (0.85).
-- `model_out_25111102`: 8+49EP. Pending.
+- `model_out_26011001`: **2EP base.** 10EP. Failed. 
+- `model_out_26011101`: 8EP. Has hope after merge (0.85).
+- `model_out_26011102`: 8+49EP. Has hope after merge (0.82).
+- `model_out_26011501`: **Straight to 2.5EP VPred, 12.4M dataset**. "0 uncond" needs merge 0.82, "null uncond" works out of box.
+
+### 2602: Go RF ###
+
+Unless specified: SDXL, AstolfoVL 2.5EP base, AdamW8bit, 12.4M dataset, Dual Tag (concat, a1111 token trick), 4GPU, BS1, GA 4 step. Flow Matching / RF mode, logit-normal(0,1), timestep shift 3. LR 1.0e-5, TTE off.
+
+- `model_out_26022301`: **6k dataset 10EP, 1GPU**. Validation run in developement machine. Success.

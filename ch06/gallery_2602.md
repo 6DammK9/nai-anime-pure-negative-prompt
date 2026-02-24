@@ -61,3 +61,17 @@ uncond==te("")!=0 #torch.zeros_like
 - [Sampling additives](../ch01/cfgpp_pag_seg.md) show minor difference only, unless I use different samplers. Now I am highly confident for the next 0.5EP... which is RF instead of vpred.
 
 ![26022209.png](./img/3ep/26022209.png)
+
+## Feeling good and going to RF ##
+
+- Returning to small dataset, however *it is single 3090 since I'm using my RGB Windows Workstation now*. And... it seems too easy. Looks like the dataset alignment is real.
+
+- Since I still don't figure out how to make A1111 runs RF in native (the "SD3 sampling" has different code base), I'm using ReForge with plain settings.
+
+![xyz_grid-0000-1781861418-9408-1098-4-48-20260224212850.jpg](./img/3ep/xyz_grid-0000-1781861418-9408-1098-4-48-20260224212850.jpg)
+
+![xyz_grid-0003-1781861418-9408-1098-4-48-20260224214906.jpg](./img/3ep/xyz_grid-0003-1781861418-9408-1098-4-48-20260224214906.jpg)
+
+- The loss has been 8x to 0.633 (from 0.0863), meanwhile the *local color shifting patches* has been spotted. Otherwise it just looks great, and I'm feeling good to complete the remaining 0.5EP.
+
+![26022401.jpg](./img/3ep/26022401.jpg)
