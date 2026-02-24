@@ -68,7 +68,15 @@ uncond==te("")!=0 #torch.zeros_like
 
 - Since I still don't figure out how to make A1111 runs RF in native (the "SD3 sampling" has different code base), I'm using ReForge with plain settings.
 
+This is VPred + ZTSNR:
+
 ![xyz_grid-0000-1781861418-9408-1098-4-48-20260224212850.jpg](./img/3ep/xyz_grid-0000-1781861418-9408-1098-4-48-20260224212850.jpg)
+
+This is RF = SD3(3.0):
+
+![xyz_grid-0001-1781861418-9408-1098-4-48-20260224213349.jpg](./img/3ep/xyz_grid-0001-1781861418-9408-1098-4-48-20260224213349.jpg)
+
+Contents are preserved quite well.
 
 ![xyz_grid-0003-1781861418-9408-1098-4-48-20260224214906.jpg](./img/3ep/xyz_grid-0003-1781861418-9408-1098-4-48-20260224214906.jpg)
 
