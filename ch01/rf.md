@@ -126,6 +126,7 @@ https://github.com/Stability-AI/generative-models/blob/main/sgm/modules/diffusio
 
 [Comfy Custom Node using Diff2Flow, works like SD3 sampler.](https://github.com/Koratahiu/ComfyUI-Diff2Flow/blob/main/nodes/nodes_diff2flow.py#L315C70-L315C74)
 
+
 > tested it with chekin .2 vs checkin rf (latest), nothing special
 
 ```py
@@ -135,6 +136,8 @@ if self.is_diff2flow:
     sigma_for_callback = base_model.model_sampling.sigma(dm_t)
     denoised_for_preview = y0.unsqueeze(0)
 ```
+
+`def get_vector_field_from_v(self, v, x_t, t)`: [Diff2Flow](https://github.com/CompVis/diff2flow/blob/main/diff2flow/flow_obj.py#L156)
 
 [The A1111 SD3 PR.](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/16030) *Obviously doesn't help.*
 
