@@ -107,3 +107,35 @@
 - Although the deepmind article stated that the conversion between DDPM (Euler) and DDIM, the end result shows minor difference only. It may be an issue in inferencing code, or the model (vector field) showing capabilities on multitasking. 
 
 ![xyz_grid-0134-3500631173-3696-4756-4-48-20260202015143](./img/xyz_grid-0134-3500631173-3696-4756-4-48-20260202015143.jpg)
+
+## (260315) Attempt to implement the A1111 inference mechanism in RF ##
+
+- *Still no idea yet.*
+
+`ldm_patched.modules.model_sampling.ModelSamplingDiscreteFlow`: [ReForge > Comfy built-in > "ldm_patched"](
+https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/ldm_patched/contrib/nodes_model_advanced.py#L130)
+
+`class CompVisVDenoiser(DiscreteVDDPMDenoiser)`: [A1111 > k_diffusion > CompVis](
+https://github.com/crowsonkb/k-diffusion/blob/master/k_diffusion/external.py#L170) *SDXL use sgm not ldm*
+
+`class VWeighting(EDMWeighting)`: [sgm](
+https://github.com/Stability-AI/generative-models/blob/main/sgm/modules/diffusionmodules/denoiser_weighting.py#L17) *Note that weighting is a strange concept*
+
+`class Discretization`: [sgm](
+https://github.com/Stability-AI/generative-models/blob/main/sgm/modules/diffusionmodules/discretizer.py#L19C7-L19C51) *Probably the timestep - sigma part to convert*
+
+[Comfy Custom Node using Diff2Flow, works like SD3 sampler.](https://github.com/Koratahiu/ComfyUI-Diff2Flow/blob/main/nodes/nodes_diff2flow.py#L315C70-L315C74)
+
+> tested it with chekin .2 vs checkin rf (latest), nothing special
+
+```py
+if self.is_diff2flow:
+    base_model = self.model.inner_model
+    dm_t = base_model._df_convert_fm_t_to_dm_t(t0)
+    sigma_for_callback = base_model.model_sampling.sigma(dm_t)
+    denoised_for_preview = y0.unsqueeze(0)
+```
+
+[The A1111 SD3 PR.](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/16030) *Obviously doesn't help.*
+
+[Less satisfiable article](https://zhuanlan.zhihu.com/p/4116861550), [ASP2.5, bloated article with its own trainer](https://www.reddit.com/r/StableDiffusion/comments/1moh8ed/sd_15_with_flowmatch_released/)

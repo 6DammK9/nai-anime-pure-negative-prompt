@@ -83,3 +83,7 @@ Contents are preserved quite well.
 - The loss has been 8x to 0.633 (from 0.0863), meanwhile the *local color shifting patches* has been spotted. Otherwise it just looks great, and I'm feeling good to complete the remaining 0.5EP.
 
 ![26022401.jpg](./img/3ep/26022401.jpg)
+
+- Although I think it is too obvious and no need to show, well, swapping major quality tags to proof the ignoring of them is fun.
+
+![26030701.png](./img/3ep/26030701.png)
