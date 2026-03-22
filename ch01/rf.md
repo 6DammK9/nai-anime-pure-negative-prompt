@@ -112,14 +112,47 @@
 
 - *Still no idea yet.*
 
+- Short article on implementation of [EDM](https://valentinpratz.de/posts/2024-11-15-edm/) and [Trigflow](https://valentinpratz.de/posts/2024-11-14-trigflow/).
+
+`class ModelSamplingSD3:`: [ReForge > Comfy built-in > "ldm_patched"](https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/ldm_patched/contrib/nodes_model_advanced.py)
+
+```py
+sampling_base = ldm_patched.modules.model_sampling.ModelSamplingDiscreteFlow
+sampling_type = ldm_patched.modules.model_sampling.CONST
+```
+
+`class FlowMatchingDenoiser`: [advanced model sampling](https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/extensions-builtin/reForge-advanced_model_sampling/scripts/advanced_model_sampling_script.py)
+
 `ldm_patched.modules.model_sampling.ModelSamplingDiscreteFlow`: [ReForge > Comfy built-in > "ldm_patched"](
 https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/ldm_patched/contrib/nodes_model_advanced.py#L130)
 
 `class CompVisVDenoiser(DiscreteVDDPMDenoiser)`: [A1111 > k_diffusion > CompVis](
 https://github.com/crowsonkb/k-diffusion/blob/master/k_diffusion/external.py#L170) *SDXL use sgm not ldm*
 
+**sgm follows the VP in EDM framework.** See [EDM paper.](https://arxiv.org/abs/2206.00364). For glossary, *Variance Exploding (VE) vs dVariance Preserving (VP) SDEs.*
+
+```py
+# Equation 181, VP preconditioning
+c_skip, c_out, c_in, c_noise = self.scaling(sigma)
+denoise(network, input, sigma, cond) = network(input * c_in, c_noise, cond) * c_out + input * c_skip
+```
+
+![26032201.jpg](./img/26032201.jpg)
+
+![26032202.jpg](./img/26032202.jpg)
+
+So far only `denoiser_scaling` matters in A1111. `denoiser_weighting` and `discretizer` has no effect.
+
 `class VWeighting(EDMWeighting)`: [sgm](
-https://github.com/Stability-AI/generative-models/blob/main/sgm/modules/diffusionmodules/denoiser_weighting.py#L17) *Note that weighting is a strange concept*
+https://github.com/Stability-AI/generative-models/blob/main/sgm/modules/diffusionmodules/denoiser_weighting.py#L17) 
+
+`EDMWeighting` is plausible although there is no effect.
+
+> The Stable Diffusion 3 weighting, a reweighted version of flow matching, is very similar to the EDM weighting 
+ that is popular for diffusion models.
+
+`class VScaling`: [sgm](
+https://github.com/Stability-AI/generative-models/blob/main/sgm/modules/diffusionmodules/denoiser_scaling.py#L40) 
 
 `class Discretization`: [sgm](
 https://github.com/Stability-AI/generative-models/blob/main/sgm/modules/diffusionmodules/discretizer.py#L19C7-L19C51) *Probably the timestep - sigma part to convert*
@@ -142,3 +175,23 @@ if self.is_diff2flow:
 [The A1111 SD3 PR.](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/16030) *Obviously doesn't help.*
 
 [Less satisfiable article](https://zhuanlan.zhihu.com/p/4116861550), [ASP2.5, bloated article with its own trainer](https://www.reddit.com/r/StableDiffusion/comments/1moh8ed/sd_15_with_flowmatch_released/)
+
+### Not exactly flow matching but diffusion may be a kind of RF via DTMC ###
+
+![26032203.jpg](./img/26032203.jpg)
+
+- [This hand book](https://arxiv.org/abs/2412.17162) matches well with the [original vpred paper](https://arxiv.org/abs/2202.00512), which has mentioned "probability flow ODE" also. The idea is similar to [Trigflow](https://arxiv.org/abs/2410.11081v1)
+
+- Meanwhile, althgouh not being a T2I task, [this paper](https://arxiv.org/abs/2410.20587) has even try to bridge the concept between flow matching and diffusion models. *Warning: Many math.*
+
+- Sadly, it still doesn't solve my [attempt to bridge the codes in SD eco-system](#260315-attempt-to-implement-the-a1111-inference-mechanism-in-rf). The official code was written in [EDM parameterization](https://arxiv.org/abs/2206.00364) which requires more math.
+
+> EDM. The noising process simply sets αt = 1 and σt = t...
+
+> Flow Matching. The noising process uses differentiable coefficients αt and σt, with time derivatives denoted by α′ t and σ′ t (typically, αt = 1 − t and σt = t).
+
+> TrigFlow is a special case of flow matching (also known as stochastic interpolants or rectified flows) and v-prediction parameterization.
+
+![26032205.jpg](./img/26032205.jpg)
+
+- Same author as [SiD-DiT](https://github.com/apple/ml-sid-dit?tab=readme-ov-file), [paper](https://arxiv.org/abs/2509.25127v1)
