@@ -62,6 +62,10 @@ uncond==te("")!=0 #torch.zeros_like
 
 ![26022209.png](./img/3ep/26022209.png)
 
+- The loss curve has no suprise at all.
+
+![loss_full_2_5ep.png](./sd-scripts-runtime/img/loss_full_2_5ep.png)
+
 ## Feeling good and going to RF ##
 
 - Returning to small dataset, however *it is single 3090 since I'm using my RGB Windows Workstation now*. And... it seems too easy. Looks like the dataset alignment is real.
@@ -87,3 +91,25 @@ Contents are preserved quite well.
 - Although I think it is too obvious and no need to show, well, swapping major quality tags to proof the ignoring of them is fun.
 
 ![26030701.png](./img/3ep/26030701.png)
+
+## Findings after train ##
+
+- Yet the loss curve is still no suprise.
+
+![loss_3ep.png](./sd-scripts-runtime/img/loss_3ep.png)
+
+- The workflow is extended, meanwhile from the uncond issue before, I decided not to explore the 0-uncond version,
+
+![26032901.jpg](./img/3ep/26032901.jpg)
+
+- After releasing to CivitAI, "that dude" had it tested and it shows the great difference in image content.
+
+![26032902.png](./img/3ep/26032902.png)
+
+![26032901.png](./img/3ep/26032903.png)
+
+- No wonder, merging between RF models takes effect between eps and vpred models, which blurs a lot, but relieving the uncond issue.
+
+![xyz_grid-0003-692683909-2304-1673-4-48-20260329171055.jpg](./img/3ep/xyz_grid-0003-692683909-2304-1673-4-48-20260329171055.jpg)
+
+- *Currently I'm lacking in user response, possibly due to the rise of [Anima](https://huggingface.co/circlestone-labs/Anima)*, I found that the image suffers in glitching / aliasing in details (we may call it "broken fingers"). Besides falling into debate in dataset curation and training hours (which I have neither of them), [denoising additives](../ch01/cfg_pag_chg.md) somehow still works even it is in SD3 sampling.

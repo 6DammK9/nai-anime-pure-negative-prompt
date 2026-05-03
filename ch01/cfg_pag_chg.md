@@ -7,9 +7,10 @@
 |Abbr.|Full name|arXiv|A1111 Extension|
 |---|---|---|---|
 |CFG|Classifier-Free Diffusion Guidance|[2207.12598](https://arxiv.org/abs/2207.12598)|(Built in)|
-|Dyn|Dynamic CFG / CFG Rescale|[2305.08891](https://arxiv.org/abs/2305.08891)|[sd-dynamic-thresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|
-|FreeU|Free Lunch in Diffusion U-Net|[2309.11497](https://arxiv.org/abs/2309.11497)|[sd-webui-freeu](https://github.com/ljleb/sd-webui-freeu)|
+|Dyn|Dynamic CFG / CFG Rescale|[2305.08891](https://arxiv.org/abs/2305.08891)|[sd-dynamic-thresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding), *Built in* [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/extensions-builtin/sd_forge_dynamic_thresholding/scripts/forge_dynamic_thresholding.py)|
+|FreeU|Free Lunch in Diffusion U-Net|[2309.11497](https://arxiv.org/abs/2309.11497)|[sd-webui-freeu](https://github.com/ljleb/sd-webui-freeu), *Built in* [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/extensions-builtin/sd_forge_freeu/scripts/forge_freeu.py)|
 |PAG|Perturbed-Attention Guidance|[2403.17377](https://arxiv.org/abs/2403.17377)|[sd-webui-incantations](https://github.com/v0xie/sd-webui-incantations)|
+|SAG|Self-Attention Guidance|[2210.00939](https://arxiv.org/abs/2210.00939)|*Built in* [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/extensions-builtin/sd_forge_sag/scripts/forge_sag.py)|
 |CHG|Characteristic Guidance|[2312.07586](https://arxiv.org/abs/2312.07586)|[CharacteristicGuidanceWebUI](https://github.com/scraed/CharacteristicGuidanceWebUI)|
 
 ## Plots ##
@@ -42,6 +43,10 @@
 - Meanehile author has tested PAG + CFG also, recommending different number. However since OG SDXL is used, it varies on finetuned ~~fried~~ anime models.
 
 ![photo_2024-04-18_01-23-23.jpg](./img/photo_2024-04-18_01-23-23.jpg)
+
+- **New** SAG is acting similar to PAG in `scale` $s$, with an additional parameter `blur_sigma` $\bar{\alpha}_t$. Default value $s=0.5$ and $\bar{\alpha}_t=2$ is fine. *reForge supports Dynamic CFG also.*
+
+![26041201.jpg](./img/26041201.jpg)
 
 ## Finding of CHG ##
 

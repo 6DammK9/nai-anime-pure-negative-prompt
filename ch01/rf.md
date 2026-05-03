@@ -180,11 +180,13 @@ if self.is_diff2flow:
 
 ![26032203.jpg](./img/26032203.jpg)
 
-- [This hand book](https://arxiv.org/abs/2412.17162) matches well with the [original vpred paper](https://arxiv.org/abs/2202.00512), which has mentioned "probability flow ODE" also. The idea is similar to [Trigflow](https://arxiv.org/abs/2410.11081v1)
+- [This hand book](https://arxiv.org/abs/2412.17162) matches well with the [original vpred paper](https://arxiv.org/abs/2202.00512), which has mentioned "probability flow ODE" also. The idea is similar to [Trigflow](https://arxiv.org/abs/2410.11081v1).
 
 - Meanwhile, althgouh not being a T2I task, [this paper](https://arxiv.org/abs/2410.20587) has even try to bridge the concept between flow matching and diffusion models. *Warning: Many math.*
 
 - Sadly, it still doesn't solve my [attempt to bridge the codes in SD eco-system](#260315-attempt-to-implement-the-a1111-inference-mechanism-in-rf). The official code was written in [EDM parameterization](https://arxiv.org/abs/2206.00364) which requires more math.
+
+- Same author as [SiD-DiT](https://github.com/apple/ml-sid-dit?tab=readme-ov-file), [paper](https://arxiv.org/abs/2509.25127v1)
 
 > EDM. The noising process simply sets αt = 1 and σt = t...
 
@@ -192,6 +194,8 @@ if self.is_diff2flow:
 
 > TrigFlow is a special case of flow matching (also known as stochastic interpolants or rectified flows) and v-prediction parameterization.
 
+> Identity Time Transformation (cnoise(t) = t).
+
 ![26032205.jpg](./img/26032205.jpg)
 
-- Same author as [SiD-DiT](https://github.com/apple/ml-sid-dit?tab=readme-ov-file), [paper](https://arxiv.org/abs/2509.25127v1)
+- So... is `sgm` has implemented as it is already (did they derived like Trigflow independently)? Meanwhile the process is as close as it is?

@@ -1,3 +1,20 @@
+# "AstolfoRF" Unconditional Image Generation up to SDXL (and more) #
+
+![cover3.png](cover3.png)
+
+```
+parameters
+
+,
+Negative prompt: ,
+Steps: 64, Sampler: Euler, Schedule type: Automatic, CFG scale: 4, Seed: 1703748712, Size: 1024x1024, Model hash: 82e7f6bcb3, Model: x1a-AstolfoRF-3ep, VAE hash: 235745af8d, VAE: sdxl-vae-fp16-fix.vae.safetensors, Denoising strength: 0.7, Hires CFG Scale: 4, Hires upscale: 1.5, Hires upscaler: Latent, advanced_sampling_enabled: True, advanced_sampling_mode: SD3, sd3_shift: 3, dynthres_enabled: True, dynthres_simple_mode: False, dynthres_mimic_scale: 4, dynthres_threshold_percentile: 1, dynthres_mimic_mode: Constant, dynthres_mimic_scale_min: 0, dynthres_cfg_mode: Constant, dynthres_cfg_scale_min: 0, dynthres_sched_val: 1, dynthres_separate_feature_channels: enable, dynthres_scaling_startpoint: MEAN, dynthres_variability_measure: AD, dynthres_interpolate_phi: 0.3, sag_enabled: True, sag_scale: 0.5, sag_blur_sigma: 2, Version: f1.0.0v2-v1.10.1RC-latest-2502-g630cf49b
+```
+
+An *informal* research about [unconditional image generation](https://huggingface.co/tasks/unconditional-image-generation) with Stable Diffusion, or "AI", **up to UNet based SDXL**. Such observation may be useful for "data visualization" to show that how the "number" works. **Please be skeptic on this repo.** [My explanantion in CivitAI.](https://civitai.com/articles/5149/untitled-denoising-to-the-random-content)
+
+<details>
+    <summary> Title V2 in 2412. </summary>
+
 # "AstolfoMix" Unconditional Image Generation (and more) #
 
 ![cover2.png](cover2.png)
@@ -9,9 +26,10 @@ Steps: 48, Sampler: Euler, Schedule type: Automatic, CFG scale: 3, Seed: 3649863
 ```
 
 An *informal* research about [unconditional image generation](https://huggingface.co/tasks/unconditional-image-generation) with Stable Diffusion, or "AI". Such observation may be useful for "data visualization" to show that how the "number" works. **Please be skeptic on this repo.** [My explanantion in CivitAI.](https://civitai.com/articles/5149/untitled-denoising-to-the-random-content)
+</details>
 
 <details>
-    <summary> Old Title. Move on. </summary>
+    <summary> Title V1 in 2210. </summary>
 
 # "NAI Anine" Pure Negative Prompt (and more) #
 
@@ -54,6 +72,9 @@ An *informal* research about "NAI anime" art with pure negative prompt. Such obs
 
 ## So where to start? ##
 - Take the *blue pill* to return the major comminuty and continue drawing. Take the [red pill](ch00/red_pill.md) if you're prepared to my ~~observation with some legit ML / NLP / AI knowledge~~ complete non-sense (or somewhat closest to the ~~reality of bugs / expolits / [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior)~~ dystopia of the released AI models).
+
+## (260504) Capping of research topics ##
+- I am not going to continue exploring Diffusion / AutoRegressive models based from DiT e.g. [Anima](https://huggingface.co/circlestone-labs/Anima) or MoT e.g. [SenseNova-U1](https://huggingface.co/sensenova/SenseNova-U1-8B-MoT) because of **lacking of research support**. Math properies, scientitic study and engineering application should be studied from scratch. Relying on [designer tools / creator based community](https://comfy.org/) will not be sustainable. ~~I will fade out with A1111 which he is a great inventor by blending many useful tools within math properties.~~
 
 ## Contact ##
 **Seriously? I'm no different than a random anon in this field.**
