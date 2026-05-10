@@ -47,7 +47,7 @@ In theory, under such physical constraint, it should be compatable with most pro
 
 ### GPU ###
 
-- The [modded Gigabyte RTX3090](https://www.techpowerup.com/gpu-specs/gigabyte-rtx-3090-turbo.b8061) from the 4x 3090 rig has been moved here. Meanwhile I finally able to obtain a [RTX A400](https://www.techpowerup.com/gpu-specs/rtx-a400.c4212) with a reasonable price. It is a **SFF card supporting 4k144** and occupy little space only. The 22G 2080ti is officially pahsed out.
+The [modded Gigabyte RTX3090](https://www.techpowerup.com/gpu-specs/gigabyte-rtx-3090-turbo.b8061) from the 4x 3090 rig has been moved here. Meanwhile I finally able to obtain a [RTX A400](https://www.techpowerup.com/gpu-specs/rtx-a400.c4212) with a reasonable price. It is a **SFF card supporting 4k144** and occupy little space only. The 22G 2080ti is officially pahsed out.
 
 ### Storage ###
 
