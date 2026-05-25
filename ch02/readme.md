@@ -11,10 +11,11 @@ Some BS (which is too far from ground truth) will be removed.
 - Model history (drawn to introduce to a "realistic model" user how the model comes from): [history.md](history.md)
 - Observation from #NovelAIDiffusionV3: [nai_v3_sdxl.md](nai_v3_sdxl.md)
 - Observation from Pony Diffusion V6 XL: [pony_sd.md](pony_sd.md)
+- Observation from Anima: [anima.md](anima.md)
 
 ## Models from SDCN ##
 
-The model series I keep using as an Alpha User. "We never merge." 
+The model series I keep using as an Alpha User. "We never merge."
 
 - [AC: ACertainty](https://huggingface.co/JosephusCheung/ACertainty) = [888886dc.md](../ch99/888886dc.md)
 - [BP: The Big Pot](https://huggingface.co/Crosstyan/BPModel/blob/main/NMFSAN/README.md)
