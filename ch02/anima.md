@@ -15,14 +15,19 @@ tldr: Place `, @artist` in the front. No `score_9` required. Example in the bott
   - Scheduler: Ordinary RF [Trainer code reference](https://github.com/tdrussell/diffusion-pipe/blob/main/models/cosmos_predict2.py#L353)
 
 > `anima-base-v1.0.safetensors` goes in `ComfyUI/models/diffusion_models`
+>
 > `qwen_3_06b_base.safetensors` goes in `ComfyUI/models/text_encoders`
+>
 > `qwen_image_vae.safetensors` goes in `ComfyUI/models/vae` (this is the Qwen-Image VAE, you might already have it)
 
 - Trainer script: [tdrussell/diffusion-pipe](https://github.com/tdrussell/diffusion-pipe)
 
 > Note to myself / future readers:
+>
 > The timestep sampling, input construction, and loss function have a different formulation here than how Nvidia does it
+>
 > in the official code. It wasn't obvious at first, but if you work through the math you will see the this model is just
+>
 > a standard rectified flow model, the same as Flux, SD3, Lumina 2, etc.
 
 ## Modifications from Nvidia Cosmos Predict 2 ##
@@ -102,8 +107,11 @@ Unfourtunately, we have no where to guess why Cosmos2-Predict decided to [crop t
 It has already abondoned without discussion.
 
 > Update Notice
+>
 > The latest version of our Cosmos-Predict is now live!
+>
 > 👉 Cosmos-Predict2.5
+>
 > We recommend all users migrate to the new version for improved performance, features, and continued support.
 
 ## How it affect Anima ##
