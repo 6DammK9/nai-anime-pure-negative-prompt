@@ -9,8 +9,8 @@ tldr: Place `, @artist` in the front. No `score_9` required. Example in the bott
 - Official model page: [HuggingFace](https://huggingface.co/circlestone-labs/Anima), [CivitAI](https://civitai.com/models/2458426/anima)
 
 - Model structure:
-  - Diffusion Model: **2B DiT** based from [nvidia/Cosmos-Predict2-2B-Text2Image](https://huggingface.co/nvidia/Cosmos-Predict2-2B-Text2Image)
-  - Text Encoder: **0.6B (Transformer) Encoder** based from [Qwen/Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B)
+  - Diffusion Model: **2B DiT** based from [nvidia/Cosmos-Predict2-2B-Text2Image](https://huggingface.co/nvidia/Cosmos-Predict2-2B-Text2Image). Appended `llm_adapter`.
+  - Text Encoder: **0.6B LLM (Decoder based Transformer)** based from [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B). `lm_head.weight [151 936, 1 024]` is removed.
   - VAE: VAE stripped from [Qwen/Qwen-Image](https://huggingface.co/Qwen/Qwen-Image)
   - Scheduler: Ordinary RF [Trainer code reference](https://github.com/tdrussell/diffusion-pipe/blob/main/models/cosmos_predict2.py#L353)
 
@@ -63,7 +63,11 @@ However **switching the TE from T5 11B into Qwen3 0.6B will be a bold move.** Wi
 }
 ```
 
-From the model page in [Qwen/Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B), the vector length / sequence length / embedding dimension is already 1024.
+From the model page in [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B), the vector length / sequence length / embedding dimension is already 1024 (`model.embed_tokens.weight	[151936, 1024]`).
+
+> `"hidden_size": 1024`
+
+It is not even [Qwen/Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) which is focused in Embedding generation. The **embedding layer size doesn't match** (`embed_tokens.weight [151669, 1024]`).
 
 > Embedding Dimension: Up to 1024, supports user-defined output dimensions ranging from 32 to 1024
 
@@ -171,3 +175,16 @@ And finally verified by me, without following the official prompt syntax:
 Even I can inject `score_1` since I'm confident that the poor AI model is just learning bias and variance ~~which "trendy images" concentrates, it is neutral~~:
 
 ![26052412.jpg](./img/26052412.jpg)
+
+A few days later, I have found that the model also expects `_` instead of ` `, **with the same level of drastic difference**. It has **great conflict with major tag based dataset** like danbooru and e621. ComfyUI may have "custom node" to handle, for WebUIs, consider global replace in text editor first.
+
+*I guess there is no quantized method to show the ["accuracy" for art style or character details](../ch01/aesthetic.md). Therefore, what I can do is keep the prompt clean and precise to show the difference. ~~BTW Anima show no signs on trained on e621 contents. They are mostly comes from somewhere else.~~* 
+
+|Using `_`|Using ` `|
+|---|---|
+|![26053101.jpg](./img/26053101.jpg)|![26053102.jpg](./img/26053102.jpg)|
+|![26053103.jpg](./img/26053103.jpg)|![26053104.jpg](./img/26053104.jpg)|
+
+The only "personalized freedom" is you can rearrange the prompt sequence. Artist tags can be placed anywhere, I just keep my recent sequence inherited in [AstolfoRF](../ch06/gallery_2602.md). 
+
+![26053105.jpg](./img/26053105.jpg)
