@@ -185,6 +185,13 @@ A few days later, I have found that the model also expects `_` instead of ` `, *
 |![26053101.jpg](./img/26053101.jpg)|![26053102.jpg](./img/26053102.jpg)|
 |![26053103.jpg](./img/26053103.jpg)|![26053104.jpg](./img/26053104.jpg)|
 
+Even it is **case sensitive.**
+
+|`str.lower()`|`str`|
+|---|---|
+|![26060202.jpg](./img/26060202.jpg)|![26060201.jpg](./img/26060201.jpg)|
+|![26060204.jpg](./img/26060204.jpg)|![26060203.jpg](./img/26060203.jpg)|
+
 The only "personalized freedom" is you can rearrange the prompt sequence. Artist tags can be placed anywhere, I just keep my recent sequence inherited in [AstolfoRF](../ch06/gallery_2602.md). 
 
 ![26053105.jpg](./img/26053105.jpg)
