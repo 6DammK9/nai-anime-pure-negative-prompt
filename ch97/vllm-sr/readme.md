@@ -3,7 +3,9 @@
 - As in [#1845](https://github.com/vllm-project/semantic-router/issues/1845):
 
 > As a new comer in the vLLM eco-system, I see huge potential on such rule based / ML based smart routing, instead of relying on agentic systems which force us to use public services.
+>
 > ...
+>
 > We don't use the docker compose anymore, for local docker we directly use vllm-sr cli
 
 *Skipped the ranting and days of investigating.* I did started from looking at the VM for the `install.sh` approach. **Just clone it, checkout to the commit hash, then keep searching the codes.**
