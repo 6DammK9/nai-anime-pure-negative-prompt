@@ -1,0 +1,32 @@
+apiVersion: v1
+items:
+- apiVersion: networking.k8s.io/v1
+  kind: Ingress
+  metadata:
+    annotations:
+      higress.io/destination: my-headlamp.kube-public.svc.cluster.local:80
+      higress.io/ignore-path-case: "false"
+    creationTimestamp: "2026-06-10T07:12:30Z"
+    generation: 3
+    labels:
+      higress.io/domain_headlamp.acme-corp.local: "true"
+      higress.io/resource-definer: higress
+    name: headlamp-route-2
+    namespace: higress-system
+    resourceVersion: "3018343"
+    uid: e9125404-08b4-4132-99ea-588a61a429aa
+  spec:
+    ingressClassName: higress
+    rules:
+    - host: headlamp.acme-corp.local
+      http:
+        paths:
+        - backend:
+            resource:
+              apiGroup: networking.higress.io
+              kind: McpBridge
+              name: default
+          path: /
+          pathType: Prefix
+  status:
+    loadBalancer: {}

@@ -1,0 +1,56 @@
+services:
+  vllm-openai:
+    image: vllm/vllm-openai:latest-cu130
+    #image: vllm/vllm-openai:v0.14.1-cu130
+    ports:
+      - "8010:8010"
+    volumes:
+      - /mnt/cache/huggingface:/root/.cache/huggingface
+    env_file:
+      - .env
+    restart: always
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    command:
+      - "--model"
+      - ${VLLM_HF_MODEL}
+      - "--host"
+      - ${VLLM_HOST}
+      - "--port"
+      - ${VLLM_PORT}
+      - "--gpu-memory-utilization"
+      - ${VLLM_VRAM_LIMIT}
+      - "--max-model-len"
+      - ${VLLM_MAX_MODEL_LEN}
+      #- "--max-seq-len-to-capture"
+      #- ${VLLM_MAX_SEQ_LEN_TO_CAPTURE}
+      - "--max-num-seqs"
+      - ${VLLM_MAX_NUM_SEQS}
+      #- "--enable-reasoning"
+      #- "--reasoning-parser"
+      #- ${VLLM_REASONING_PARSER}
+      - "--tokenizer"
+      - ${VLLM_TOKENIZER}
+      #- "--quantization"
+      #- ${VLLM_QUANTIZATION}
+      - "--kv-cache-dtype"
+      - ${VLLM_KV_CACHE_DTYPE}
+      #- "--served-model-name"
+      #- ${VLLM_SERVE_MODEL_NAME}
+      - "--enable-auto-tool-choice"
+      - "--tool-call-parser"
+      - ${VLLM_TOOL_CALL_PARSER}
+      #- "--enable-expert-parallel"
+      #- "--mm-encoder-tp-mode" 
+      #- "data"
+      #- "--mm-processor-cache-type" 
+      #- "shm"
+      - "--moe-backend"
+      - ${VLLM_MOE_BACKEND}
+      #- "--cpu-offload-gb"
+      #- ${VLLM_CPU_OFFLOAD_GB}

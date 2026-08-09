@@ -1,0 +1,97 @@
+flowchart TB
+  subgraph cluster_Namespace_dbgate-system [Namespace: dbgate-system]
+    direction TB
+    style cluster_Namespace_dbgate-system fill:white,color:#2D3436,font:sans-serif,font-size:12pt,stroke:black,stroke-dasharray:7 7
+    subgraph cluster_K8s_Instance_dbgate [K8s Instance: dbgate]
+      direction TB
+      style cluster_K8s_Instance_dbgate fill:#E5F5FD,color:#2D3436,font:sans-serif,font-size:12pt,stroke:#AEB6BE
+      subgraph cluster_Helm_Chart_dbgate-0.1.8 [Helm Chart: dbgate-0.1.8]
+        direction TB
+        style cluster_Helm_Chart_dbgate-0.1.8 fill:#EBF3E7,color:#2D3436,font:sans-serif,font-size:12pt,stroke:#AEB6BE
+        subgraph cluster_K8s_Application_dbgate [K8s Application: dbgate]
+          direction TB
+          style cluster_K8s_Application_dbgate fill:#ECE8F6,color:#2D3436,font:sans-serif,font-size:12pt,stroke:#AEB6BE
+          55590c3c09d14320a7267de5be2de44b@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/network/ep.png", label: "dbgate", h: 120, constraint: "on" }
+          style 55590c3c09d14320a7267de5be2de44b fill:none,stroke:none
+          b80fd93bf8934e939e462b82ec46e520@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/compute/pod.png", label: "dbgate-55ddff4495-tl8nt", h: 120, constraint: "on" }
+          style b80fd93bf8934e939e462b82ec46e520 fill:none,stroke:none
+          b234b4f0420f42a79b9a2ae2043a7aa2@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/storage/pvc.png", label: "dbgate", h: 120, constraint: "on" }
+          style b234b4f0420f42a79b9a2ae2043a7aa2 fill:none,stroke:none
+          2fb6559a93984f63b1e221719a5dc954@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/rbac/sa.png", label: "dbgate", h: 120, constraint: "on" }
+          style 2fb6559a93984f63b1e221719a5dc954 fill:none,stroke:none
+          d3fa4b6b73a6489b91ecdd1acabdfb2e@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/network/svc.png", label: "dbgate", h: 120, constraint: "on" }
+          style d3fa4b6b73a6489b91ecdd1acabdfb2e fill:none,stroke:none
+          1de14a5f9b674f25a799b522a3e2c1dd@{ img: "https://raw.githubusercontent.com/philippemerle/KubeDiagrams/refs/heads/main/bin/icons/eps.png", label: "dbgate-bbz8d", h: 120, constraint: "on" }
+          style 1de14a5f9b674f25a799b522a3e2c1dd fill:none,stroke:none
+          99f36156a9974ba2af02f68b5279df0d@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/compute/deploy.png", label: "dbgate", h: 120, constraint: "on" }
+          style 99f36156a9974ba2af02f68b5279df0d fill:none,stroke:none
+          2707504f4e87464d86dd678d603b1df5@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/compute/rs.png", label: "dbgate-55ddff4495", h: 120, constraint: "on" }
+          style 2707504f4e87464d86dd678d603b1df5 fill:none,stroke:none
+        end
+      end
+    end
+    14bcde24a7c740c4b6774b781ddbafdb@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/podconfig/cm.png", label: "higress-ca-root-cert", h: 120, constraint: "on" }
+    style 14bcde24a7c740c4b6774b781ddbafdb fill:none,stroke:none
+    550b2e37f4c94b788b8ddd383448c7f2@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/podconfig/cm.png", label: "istio-ca-crl", h: 120, constraint: "on" }
+    style 550b2e37f4c94b788b8ddd383448c7f2 fill:none,stroke:none
+    506b6d1f035847e688f218b46fbdbc31@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/podconfig/cm.png", label: "istio-ca-root-cert", h: 120, constraint: "on" }
+    style 506b6d1f035847e688f218b46fbdbc31 fill:none,stroke:none
+    f44b61fbf83a4f3c8fdfbe3a73eddcfe@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/podconfig/cm.png", label: "kube-root-ca.crt", h: 120, constraint: "on" }
+    style f44b61fbf83a4f3c8fdfbe3a73eddcfe fill:none,stroke:none
+    d32fa420e6284915a4b7971c29ed0793@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/podconfig/secret.png", label: "sh.helm.release.v1.dbgate.v1", h: 120, constraint: "on" }
+    style d32fa420e6284915a4b7971c29ed0793 fill:none,stroke:none
+    628efbffa69844f1aafcd317c12404f3@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/podconfig/secret.png", label: "sh.helm.release.v1.dbgate.v2", h: 120, constraint: "on" }
+    style 628efbffa69844f1aafcd317c12404f3 fill:none,stroke:none
+    eea600b86cfb4231ae59527d50ef1029@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/podconfig/secret.png", label: "sh.helm.release.v1.dbgate.v3", h: 120, constraint: "on" }
+    style eea600b86cfb4231ae59527d50ef1029 fill:none,stroke:none
+    95d5f31705fb48b58b0f1ed03c4e6fe5@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/rbac/sa.png", label: "default", h: 120, constraint: "on" }
+    style 95d5f31705fb48b58b0f1ed03c4e6fe5 fill:none,stroke:none
+    0a6672f91fc542bcb7ed3772c0c53b09@{ img: "https://raw.githubusercontent.com/philippemerle/KubeDiagrams/refs/heads/main/bin/icons/HTTPRoute.png", label: "dbgate-route-2", h: 120, constraint: "on" }
+    style 0a6672f91fc542bcb7ed3772c0c53b09 fill:none,stroke:none
+  end
+  1722313494174a4fa04bdd82cf636f15@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/infra/node.png", label: "k8s-worker1", h: 120, constraint: "on" }
+  style 1722313494174a4fa04bdd82cf636f15 fill:none,stroke:none
+  30770267e879411d97e643fe497b538c@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/storage/sc.png", label: "csi-s3-s3fs", h: 120, constraint: "on" }
+  style 30770267e879411d97e643fe497b538c fill:none,stroke:none
+  330fa06a98ea42ee8dbc1387d431f6a9@{ img: "https://raw.githubusercontent.com/philippemerle/KubeDiagrams/refs/heads/main/bin/icons/csidriver.png", label: "stub.csi.k8s.io", h: 120, constraint: "on" }
+  style 330fa06a98ea42ee8dbc1387d431f6a9 fill:none,stroke:none
+  95a9bb344eed47edb07f0883d304268c@{ img: "https://raw.githubusercontent.com/mingrammer/diagrams/refs/heads/master/resources/k8s/storage/pv.png", label: "pvc-e1f860cd-10b7-4f0d-adf0-6a90b2169b6d", h: 120, constraint: "on" }
+  style 95a9bb344eed47edb07f0883d304268c fill:none,stroke:none
+  55590c3c09d14320a7267de5be2de44b --> b80fd93bf8934e939e462b82ec46e520
+  linkStyle 0 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  b80fd93bf8934e939e462b82ec46e520 --> b234b4f0420f42a79b9a2ae2043a7aa2
+  linkStyle 1 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  b80fd93bf8934e939e462b82ec46e520 --> 2fb6559a93984f63b1e221719a5dc954
+  linkStyle 2 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  b80fd93bf8934e939e462b82ec46e520 --> f44b61fbf83a4f3c8fdfbe3a73eddcfe
+  linkStyle 3 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  b80fd93bf8934e939e462b82ec46e520 --> 1722313494174a4fa04bdd82cf636f15
+  linkStyle 4 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  b234b4f0420f42a79b9a2ae2043a7aa2 --> 30770267e879411d97e643fe497b538c
+  linkStyle 5 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  b234b4f0420f42a79b9a2ae2043a7aa2 --> 95a9bb344eed47edb07f0883d304268c
+  linkStyle 6 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  d3fa4b6b73a6489b91ecdd1acabdfb2e --> 55590c3c09d14320a7267de5be2de44b
+  linkStyle 7 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  d3fa4b6b73a6489b91ecdd1acabdfb2e -- "3000->http/TCP" --> b80fd93bf8934e939e462b82ec46e520
+  linkStyle 8 stroke:black,color:#2D3436,font:sans-serif,font-size:10pt,stroke-dasharray:7 7
+  d3fa4b6b73a6489b91ecdd1acabdfb2e --> 1de14a5f9b674f25a799b522a3e2c1dd
+  linkStyle 9 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt,stroke-dasharray:7 7
+  1de14a5f9b674f25a799b522a3e2c1dd --> b80fd93bf8934e939e462b82ec46e520
+  linkStyle 10 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  99f36156a9974ba2af02f68b5279df0d --> b234b4f0420f42a79b9a2ae2043a7aa2
+  linkStyle 11 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  99f36156a9974ba2af02f68b5279df0d --> 2fb6559a93984f63b1e221719a5dc954
+  linkStyle 12 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  99f36156a9974ba2af02f68b5279df0d --> 2707504f4e87464d86dd678d603b1df5
+  linkStyle 13 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  2707504f4e87464d86dd678d603b1df5 --> b80fd93bf8934e939e462b82ec46e520
+  linkStyle 14 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  2707504f4e87464d86dd678d603b1df5 --> b234b4f0420f42a79b9a2ae2043a7aa2
+  linkStyle 15 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  2707504f4e87464d86dd678d603b1df5 --> 2fb6559a93984f63b1e221719a5dc954
+  linkStyle 16 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  0a6672f91fc542bcb7ed3772c0c53b09 --> d3fa4b6b73a6489b91ecdd1acabdfb2e
+  linkStyle 17 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt
+  30770267e879411d97e643fe497b538c --> 330fa06a98ea42ee8dbc1387d431f6a9
+  linkStyle 18 stroke:black,color:#2D3436,font:sans-serif,font-size:13pt

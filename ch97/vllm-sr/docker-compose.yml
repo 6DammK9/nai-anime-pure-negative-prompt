@@ -1,0 +1,233 @@
+services:
+
+  # Semantic Router External Processor Service
+  vllm-sr-router-container:
+    image: ghcr.io/vllm-project/semantic-router/vllm-sr:v0.3.0
+    container_name: vllm-sr-router-container
+    user: root
+    ports:
+      - "50051:50051"
+      - "9190:9190"
+      - "8180:8080"
+    volumes:
+      - ./vllm-sr/config.yaml:/app/config.yaml:z
+      - ./vllm-sr:/app/.vllm-sr:z
+      - ./models:/app/models:z
+      - ./models/mom-embedding-ultra:/app/models/mmbert-embed-32k-2d-matryoshka:z
+      # - ./kbs:/app/knowledge_bases:z
+      - ./state:/app/state:z
+      # - ./vllm-sr/token:/root/.cache/huggingface/token
+    restart: always
+    environment:
+      - VLLM_SR_DASHBOARD_CONTAINER_NAME=vllm-sr-dashboard-container
+      - DASHBOARD_SETUP_MODE=true
+      - TARGET_JAEGER_URL=http://192.168.1.115:16686
+      - TARGET_PROMETHEUS_URL=http://192.168.1.115:9090
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://192.168.1.115:4317
+      - TARGET_FLEET_SIM_URL=http://vllm-sr-sim-container:8000
+      - VLLM_SR_ROUTER_CONTAINER_NAME=vllm-sr-router-container
+      - VLLM_SR_SETUP_MODE=true
+      - VLLM_SR_SOURCE_CONFIG_PATH=/app/config.yaml
+      - TARGET_GRAFANA_URL=http://192.168.1.115:3000
+      - VLLM_SR_ENVOY_CONTAINER_NAME=vllm-sr-envoy-container
+      - PATH=/opt/vllm-sr-venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - VIRTUAL_ENV=/opt/vllm-sr-venv
+      - LD_LIBRARY_PATH=/usr/local/lib
+      - HF_TOKEN=${HF_TOKEN:-}
+    command: ["/app/config.yaml", "/app/.vllm-sr"]
+    networks:
+      - vllm-sr-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 60
+      start_period: 1800s
+
+  # Envoy Proxy Service
+  vllm-sr-envoy-container:
+    image: envoyproxy/envoy:v1.37-latest
+    container_name: vllm-sr-envoy-container
+    user: root
+    ports:
+      - "8899:8899"    # Main proxy port
+      - "9901:9901"    # Admin interface
+      - "10000:10000"  # UDP proxy port
+    volumes:
+      - ./vllm-sr/envoy.yaml:/etc/envoy/envoy.yaml
+      - /var/log/envoy_access.log:/var/log/envoy_access.log
+    restart: always  
+    command: ["-c", "/etc/envoy/envoy.yaml", "--log-level", "debug"]
+    depends_on:
+      vllm-sr-router-container:
+        condition: service_healthy
+    networks:
+      - vllm-sr-network
+    healthcheck:
+      test: ["CMD", "bash", "-c", "(echo -e 'GET /ready HTTP/1.1\\r\\nHost: localhost\\r\\n\\r\\n' >&3; timeout 2 cat <&3) 3<>/dev/tcp/localhost/9901 | grep -q LIVE"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # Semantic Router Simulator
+  vllm-sr-sim-container:
+    image: ghcr.io/vllm-project/semantic-router/vllm-sr-sim:7c8c9e2e1231631e7149f723b47790d9f479a53f-linux-amd64
+    container_name: vllm-sr-sim-container
+    user: root
+    ports: 
+      - "8810:8000"
+    volumes:
+      - ./vllm-sr/fleet-sim-state:/state
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+      - VLLM_SR_SIM_STATE_DIR=/state
+    command: ["vllm-sr-sim", "serve", "--host", "0.0.0.0", "--port", "8000"]
+    networks:
+      - vllm-sr-network
+    healthcheck:
+      test: ["CMD", "bash", "-c", "(echo -e 'GET /ready HTTP/1.1\\r\\nHost: localhost\\r\\n\\r\\n' >&3; timeout 2 cat <&3) 3<>/dev/tcp/localhost/8000 | grep -q Found"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # Semantic Router Dashboard
+  vllm-sr-dashboard-container:
+    image: ghcr.io/vllm-project/semantic-router/dashboard:v0.3.0
+    # image: ghcr.io/vllm-project/semantic-router/dashboard:acfaa8678996cd9c72df430a73abc98dfb6ac90e-linux-amd64
+    container_name: vllm-sr-dashboard-container
+    user: root
+    volumes:
+      - ./vllm-sr/config.yaml:/app/config/config.yaml:z
+      - ./vllm-sr/tools_db.json:/app/config/tools_db.json:z
+      - ./vllm-sr:/app/.vllm-sr:z
+      - ./vllm-sr/dashboard-data:/app/data:z
+      - ./vllm-sr/ml-data:/app/data/ml-pipeline:z
+      - ./vllm-sr/openclaw-data:/home/vllmuser/vllm-sr/vllm-sr/openclaw-data:z
+      # Cannot bind, consider copy them to somewhere mounted
+      - /home/vllmuser/vllm-sr/vllm-sr/auth.db:/app/auth.db
+      # - /home/vllmuser/vllm-sr/vllm-sr/evaluations.db:/app/evaluations.db
+      # - /home/vllmuser/vllm-sr/vllm-sr/workflow.sqlite:/app/workflow.sqlite
+      #- ./vllm-sr/tmp-data:/tmp/data:z
+      #- ./vllm-sr/tmp-db:/app/data/tmp-db
+      - ./vllm-sr/evaluation-results:/app/data/results:z
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/local/bin/docker:ro
+    restart: always  
+    environment:
+      - VLLM_SR_ROUTER_CONTAINER_NAME=vllm-sr-router-container
+      - TARGET_ENVOY_URL=http://vllm-sr-envoy-container:8899
+      # Will spawn openclaw gateway on TCP port 18788
+      # - OPENCLAW_DASHBOARD_CONTAINER_NAME=vllm-sr-dashboard-container
+      # - OPENCLAW_BASE_IMAGE=ghcr.io/openclaw/openclaw:latest
+      # - OPENCLAW_DATA_DIR=/home/vllmuser/vllm-sr/vllm-sr/openclaw-data
+      # - OPENCLAW_CONTAINER_RUNTIME=/usr/local/bin/docker
+      - TARGET_ROUTER_API_URL=http://vllm-sr-router-container:8080
+      - ENVOY_ROUTER_API_ADDRESS=vllm-sr-router-container
+      - OPENCLAW_MODEL_GATEWAY_CONTAINER_NAME=vllm-sr-envoy-container
+      - OPENCLAW_DEFAULT_NETWORK_MODE=vllm-sr-network
+      - TARGET_GRAFANA_URL=http://192.168.1.115:3000
+      - TARGET_FLEET_SIM_URL=http://vllm-sr-sim-container:8000
+      - VLLM_SR_ENVOY_CONTAINER_NAME=vllm-sr-envoy-container
+      - TARGET_ENVOY_ADMIN_URL=http://vllm-sr-envoy-container:9901
+      - VLLM_SR_ENVOY_CONFIG_PATH=/app/.vllm-sr/envoy.yaml
+      - VLLM_SR_SETUP_MODE=true
+      - VLLM_SR_SOURCE_CONFIG_PATH=/app/config.yaml
+      - TARGET_PROMETHEUS_URL=http://192.168.1.115:9090
+      - VLLM_SR_DASHBOARD_CONTAINER_NAME=vllm-sr-dashboard-container
+      - TARGET_ROUTER_METRICS_URL=http://vllm-sr-router-container:9190/metrics
+      - ENVOY_EXTPROC_ADDRESS=vllm-sr-router-container
+      - DASHBOARD_SETUP_MODE=true
+      - ML_PIPELINE_ENABLED=true
+      - TARGET_JAEGER_URL=http://192.168.1.115:16686
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://192.168.1.115:4317
+      - PATH=/opt/vllm-sr-dashboard-venv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    # command: ["/app/config.yaml"]
+    command: [
+      "/app/dashboard-backend", 
+      "-port=8700", 
+      "-static=/app/frontend", 
+      "-config=/app/config/config.yaml",
+      # Ugly docker fix: "mkdir -m 755 /tmp/data && sqlite3"
+      #"-auth-db", "/tmp/data/auth.db",
+      "-evaluation-db", "/tmp/data/evaluations.db",
+      "-workflow-db", "/tmp/data/workflow.sqlite",
+      # More ugly docker fix: skip hardcoded "mkdir -m 755 .", then sqlite3
+      "-auth-db", "./auth.db",
+      #"-evaluation-db", "./evaluations.db"
+      # Spawn openclaw instance. Not documented.
+      "-openclaw-url", "http://192.168.1.114:18788",
+      "-openclaw-data", "/home/vllmuser/vllm-sr/vllm-sr/openclaw-data",
+      "-openclaw-token", "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    ]
+    ports:
+      - "8700:8700"
+      # - "28788:18788" # Openclaw
+      # - "28789:18789" # Openclaw
+      # - "28790:18790" # Openclaw
+    networks:
+      - vllm-sr-network
+    # network_mode: "host"
+    depends_on:
+      vllm-sr-router-container:
+        condition: service_healthy
+      vllm-sr-envoy-container:
+        condition: service_started
+      vllm-sr-sim-container:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8700/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # Spam LLM calls. Do not start.
+  #leader-one:
+  #  image: ghcr.io/openclaw/openclaw:latest
+  #  container_name: leader-one
+  #  user: root
+  #  environment:
+  #    - OPENCLAW_CONFIG_PATH=/config/openclaw.json
+  #    - OPENCLAW_STATE_DIR=/state
+  #    - OPENCLAW_GATEWAY_TOKEN=${OPENCLAW_GATEWAY_TOKEN:-}
+  #    - LITELLM_API_KEY=${LITELLM_API_KEY:-}
+  #  volumes:
+  #    - ./vllm-sr/openclaw-data/containers/leader-one/workspace:/workspace
+  #    - ./claw-os/leader-one.json:/config/openclaw.json:ro
+  #    - ./vllm-sr/openclaw-data/openclaw-state-leader-one:/state
+  #  ports:
+  #    - "18788:18788"
+  #  restart: always
+  #  command:
+  #    [
+  #      "node",
+  #      "openclaw.mjs",
+  #      "gateway",
+  #      "--allow-unconfigured",
+  #      "--bind",
+  #      "lan"
+  #    ]
+  #  networks:
+  #    - vllm-sr-network
+  #  # network_mode: "host"
+  #  depends_on:
+  #    vllm-sr-envoy-container:
+  #      condition: service_healthy
+  #  healthcheck:
+  #    test:
+  #      [
+  #        "CMD-SHELL",
+  #        "node -e \"fetch('http://127.0.0.1:18788/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""
+  #      ]
+  #    interval: 30s
+  #    timeout: 5s
+  #    retries: 5
+  #    start_period: 20s
+
+networks:
+  vllm-sr-network:
+    driver: bridge
+    # attachable: true

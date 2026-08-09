@@ -1,0 +1,110 @@
+{
+    "agents": {
+        "defaults": {
+            "compaction": {
+                "mode": "safeguard"
+            },
+            "model": {
+                "primary": "litellm/MoM"
+            },
+            "workspace": "/workspace"
+        },
+        "list": [
+            {
+                "default": true,
+                "id": "vllm-sr",
+                "name": "vLLM-SR Powered Agent",
+                "workspace": "/workspace"
+            }
+        ]
+    },
+    "commands": {
+        "native": "auto",
+        "nativeSkills": "auto",
+        "restart": true
+    },
+    "gateway": {
+        "auth": {
+            "mode": "token",
+            "token": "${OPENCLAW_GATEWAY_TOKEN}"
+        },
+        "controlUi": {
+            "allowInsecureAuth": true,
+            "allowedOrigins": [
+                "*"
+            ],
+            "dangerouslyAllowHostHeaderOriginFallback": true,
+            "dangerouslyDisableDeviceAuth": true
+        },
+        "trustedProxies": [
+            "192.168.1.114"
+        ],
+        "allowRealIpFallback": true,
+        "http": {
+            "endpoints": {
+                "chatCompletions": {
+                    "enabled": true
+                },
+                "responses": {
+                    "enabled": true
+                }
+            }
+        },
+        "port": 18788
+    },
+    "memory": {
+        "backend": "builtin"
+    },
+    "auth": {
+        "profiles": {
+            "litellm:default": {
+                "provider": "litellm",
+                "mode": "api_key"
+            }
+        }
+    },
+    "browser": {
+        "ssrfPolicy": {
+            "dangerouslyAllowPrivateNetwork": true,
+            "hostnameAllowlist": [
+                "192.168.1.114",
+                "192.168.1.114:4000"
+            ],
+            "allowedHostnames": [
+                "localhost",
+                "192.168.1.114"
+            ]
+        }
+    },
+    "models": {
+        "providers": {
+            "litellm": {
+                "baseUrl": "http://192.168.1.114:4000",
+                "api": "openai-completions",
+                "apiKey": "${LITELLM_API_KEY}",
+                "request": {
+                    "allowPrivateNetwork": true
+                },
+                "models": [
+                    {
+                        "id": "MoM",
+                        "name": "vllm Semantic Router",
+                        "reasoning": false,
+                        "input": [
+                            "text",
+                            "image"
+                        ],
+                        "cost": {
+                            "cacheRead": 0,
+                            "cacheWrite": 0,
+                            "input": 0.15,
+                            "output": 0.6
+                        },
+                        "contextWindow": 49152,
+                        "maxTokens": 49152
+                    }
+                ]
+            }
+        }
+    }
+}

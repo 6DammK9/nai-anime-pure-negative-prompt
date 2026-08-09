@@ -44,3 +44,11 @@ Usually "not article".
 
 - `extract_merge_info.js`: Extract the actual JSON from [safetensors_util](https://github.com/by321/safetensors_util). *Author closed my PR. Fine.*
 - `batch_extract.cmd`: By batch. *May fail a lot.*
+
+## Section for "AI but not art" contents ##
+
+*I don't want to make seperated repos.*
+
+- [vllm-sr](./vllm-sr/): Docker compose deployment files for [vllm-project/semantic-router](https://github.com/vllm-project/semantic-router/issues/1845), which is `vllm-sr v0.3`.
+
+- [kube-diagram](./kube-diagram/): Vibe-coded scripts to make [philippemerle/KubeDiagrams](https://github.com/philippemerle/KubeDiagrams) able to report deployed k8s systems, down to node level.
