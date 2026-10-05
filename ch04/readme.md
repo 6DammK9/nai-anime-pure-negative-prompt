@@ -56,3 +56,11 @@ Self explained. Written for ex-mining rig if I can get one of them eventually.
 - If the "checkout process" is blocked in Taobao with official logistic agent (due to regulatory reason), **first dobule check the good is legit**. The condition changes frequently, which may not consistent across time. Sometimes it is blocked because of title (e.g. "T-Shirt with meme *A100 H100 advanced AI* generated image"). Other than language barrier, *be brave to notice sellers that you are not from [Mainland China](https://en.wikipedia.org/wiki/Mainland_China).* There should be "special arrangement" for the process. Many sellers have related experience and dedicated pracice especially for non-consumer parts. If you are buying parts from individuals, you may need to feed some "information" and let them decide. Skipping informing the seller, and sending to consolidator *may works* (**repeat, dobule check the good is legit first!**), but you may risk being rejected from there.
 
 - Finally, it is same as buying stuffs unseen. Warrenty is not likely. The goods can be DOA because of poor container. *Cheap price comes with risk.*
+
+## Chapter 04c: Going Kunpeng920 ##
+
+- Full ITAI desktop but with Ubuntu 20.04 or openSUSE: [BC32MBHB PT620](itai.md)
+
+- Full ITAI server but with Ubuntu 24.04 on RAID: [hisi_raid-sp686c-dkms](https://github.com/6DammK9/hisi_raid-sp686c-dkms)
+
+- Not ITAI desktop but with Win11 ARM 23H2: [BC32MBHB TK630](./tk630-win11-23h2/)
