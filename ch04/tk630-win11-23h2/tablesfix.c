@@ -474,7 +474,7 @@ int main(int argc, char **argv) {
             p_str = dmi_string(smbios_table, ((SMBIOS_TABLE_TYPE1 *) smbios_table)->ProductName);
             printf("System Product Name: %s\n", p_str);
             //2251K + TK630: un.akeo.le + ACPI_BIOS_ERROR
-            //2251K + PT620 (null): UEFI Shell OK
+            //2251K + PT620K (null): UEFI Shell OK + HANG, all branch tried
             if (p_str && (
                 memmem(p_str, strlen(p_str), "TK630", 5) ||
                 memmem(p_str, strlen(p_str), "W510", 4) ||
